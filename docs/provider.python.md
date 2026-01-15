@@ -1,15 +1,15 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-kubernetes.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-kubernetes.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### KubernetesProvider <a name="KubernetesProvider" id="@cdktf/provider-kubernetes.provider.KubernetesProvider"></a>
+### KubernetesProvider <a name="KubernetesProvider" id="@cdktn/provider-kubernetes.provider.KubernetesProvider"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs kubernetes}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import provider
+from cdktn_provider_kubernetes import provider
 
 provider.KubernetesProvider(
   scope: Construct,
@@ -39,32 +39,32 @@ provider.KubernetesProvider(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clientCertificate">client_certificate</a></code> | <code>str</code> | PEM-encoded client certificate for TLS authentication. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clientKey">client_key</a></code> | <code>str</code> | PEM-encoded client certificate key for TLS authentication. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clusterCaCertificate">cluster_ca_certificate</a></code> | <code>str</code> | PEM-encoded root certificates bundle for TLS authentication. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContext">config_context</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context KubernetesProvider#config_context}. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContextAuthInfo">config_context_auth_info</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context_auth_info KubernetesProvider#config_context_auth_info}. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContextCluster">config_context_cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context_cluster KubernetesProvider#config_context_cluster}. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configPath">config_path</a></code> | <code>str</code> | Path to the kube config file. Can be set with KUBE_CONFIG_PATH. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | A list of paths to kube config files. Can be set with KUBE_CONFIG_PATHS environment variable. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.exec">exec</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | exec block. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.experiments">experiments</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | experiments block. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | The hostname (in form of URI) of Kubernetes master. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.ignoreAnnotations">ignore_annotations</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata annotations to ignore across all resources handled by this provider for situations where external systems are managing certain resource annotations. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.ignoreLabels">ignore_labels</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata labels to ignore across all resources handled by this provider for situations where external systems are managing certain resource labels. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.proxyUrl">proxy_url</a></code> | <code>str</code> | URL to the proxy to be used for all API requests. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.tlsServerName">tls_server_name</a></code> | <code>str</code> | Server name passed to the server for SNI and is used in the client to check server certificates against. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Token to authenticate an service account. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clientCertificate">client_certificate</a></code> | <code>str</code> | PEM-encoded client certificate for TLS authentication. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clientKey">client_key</a></code> | <code>str</code> | PEM-encoded client certificate key for TLS authentication. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clusterCaCertificate">cluster_ca_certificate</a></code> | <code>str</code> | PEM-encoded root certificates bundle for TLS authentication. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContext">config_context</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context KubernetesProvider#config_context}. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContextAuthInfo">config_context_auth_info</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context_auth_info KubernetesProvider#config_context_auth_info}. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContextCluster">config_context_cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context_cluster KubernetesProvider#config_context_cluster}. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configPath">config_path</a></code> | <code>str</code> | Path to the kube config file. Can be set with KUBE_CONFIG_PATH. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | A list of paths to kube config files. Can be set with KUBE_CONFIG_PATHS environment variable. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.exec">exec</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | exec block. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.experiments">experiments</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | experiments block. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | The hostname (in form of URI) of Kubernetes master. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.ignoreAnnotations">ignore_annotations</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata annotations to ignore across all resources handled by this provider for situations where external systems are managing certain resource annotations. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.ignoreLabels">ignore_labels</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata labels to ignore across all resources handled by this provider for situations where external systems are managing certain resource labels. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.proxyUrl">proxy_url</a></code> | <code>str</code> | URL to the proxy to be used for all API requests. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.tlsServerName">tls_server_name</a></code> | <code>str</code> | Server name passed to the server for SNI and is used in the client to check server certificates against. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Token to authenticate an service account. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -72,7 +72,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -82,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.alias"></a>
 
 - *Type:* str
 
@@ -92,7 +92,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `client_certificate`<sup>Optional</sup> <a name="client_certificate" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clientCertificate"></a>
+##### `client_certificate`<sup>Optional</sup> <a name="client_certificate" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clientCertificate"></a>
 
 - *Type:* str
 
@@ -102,7 +102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `client_key`<sup>Optional</sup> <a name="client_key" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clientKey"></a>
+##### `client_key`<sup>Optional</sup> <a name="client_key" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clientKey"></a>
 
 - *Type:* str
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cluster_ca_certificate`<sup>Optional</sup> <a name="cluster_ca_certificate" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clusterCaCertificate"></a>
+##### `cluster_ca_certificate`<sup>Optional</sup> <a name="cluster_ca_certificate" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.clusterCaCertificate"></a>
 
 - *Type:* str
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_context`<sup>Optional</sup> <a name="config_context" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContext"></a>
+##### `config_context`<sup>Optional</sup> <a name="config_context" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContext"></a>
 
 - *Type:* str
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_context_auth_info`<sup>Optional</sup> <a name="config_context_auth_info" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContextAuthInfo"></a>
+##### `config_context_auth_info`<sup>Optional</sup> <a name="config_context_auth_info" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContextAuthInfo"></a>
 
 - *Type:* str
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_context_cluster`<sup>Optional</sup> <a name="config_context_cluster" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContextCluster"></a>
+##### `config_context_cluster`<sup>Optional</sup> <a name="config_context_cluster" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContextCluster"></a>
 
 - *Type:* str
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_path`<sup>Optional</sup> <a name="config_path" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configPath"></a>
+##### `config_path`<sup>Optional</sup> <a name="config_path" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configPath"></a>
 
 - *Type:* str
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_paths`<sup>Optional</sup> <a name="config_paths" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configPaths"></a>
+##### `config_paths`<sup>Optional</sup> <a name="config_paths" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configPaths"></a>
 
 - *Type:* typing.List[str]
 
@@ -166,9 +166,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.exec"></a>
+##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.exec"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
 
 exec block.
 
@@ -176,9 +176,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.experiments"></a>
+##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.experiments"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
 
 experiments block.
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.host"></a>
 
 - *Type:* str
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ignore_annotations`<sup>Optional</sup> <a name="ignore_annotations" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.ignoreAnnotations"></a>
+##### `ignore_annotations`<sup>Optional</sup> <a name="ignore_annotations" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.ignoreAnnotations"></a>
 
 - *Type:* typing.List[str]
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ignore_labels`<sup>Optional</sup> <a name="ignore_labels" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.ignoreLabels"></a>
+##### `ignore_labels`<sup>Optional</sup> <a name="ignore_labels" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.ignoreLabels"></a>
 
 - *Type:* typing.List[str]
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.insecure"></a>
+##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.insecure"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.password"></a>
 
 - *Type:* str
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `proxy_url`<sup>Optional</sup> <a name="proxy_url" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.proxyUrl"></a>
+##### `proxy_url`<sup>Optional</sup> <a name="proxy_url" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.proxyUrl"></a>
 
 - *Type:* str
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `tls_server_name`<sup>Optional</sup> <a name="tls_server_name" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.tlsServerName"></a>
+##### `tls_server_name`<sup>Optional</sup> <a name="tls_server_name" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.tlsServerName"></a>
 
 - *Type:* str
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.token"></a>
 
 - *Type:* str
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.username"></a>
 
 - *Type:* str
 
@@ -284,37 +284,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetAlias">reset_alias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetClientCertificate">reset_client_certificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetClientKey">reset_client_key</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetClusterCaCertificate">reset_cluster_ca_certificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetConfigContext">reset_config_context</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetConfigContextAuthInfo">reset_config_context_auth_info</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetConfigContextCluster">reset_config_context_cluster</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetConfigPath">reset_config_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetConfigPaths">reset_config_paths</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetExec">reset_exec</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetExperiments">reset_experiments</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetHost">reset_host</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetIgnoreAnnotations">reset_ignore_annotations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetIgnoreLabels">reset_ignore_labels</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetInsecure">reset_insecure</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetPassword">reset_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetProxyUrl">reset_proxy_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetTlsServerName">reset_tls_server_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetToken">reset_token</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.resetUsername">reset_username</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetAlias">reset_alias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetClientCertificate">reset_client_certificate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetClientKey">reset_client_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetClusterCaCertificate">reset_cluster_ca_certificate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetConfigContext">reset_config_context</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetConfigContextAuthInfo">reset_config_context_auth_info</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetConfigContextCluster">reset_config_context_cluster</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetConfigPath">reset_config_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetConfigPaths">reset_config_paths</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetExec">reset_exec</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetExperiments">reset_experiments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetHost">reset_host</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetIgnoreAnnotations">reset_ignore_annotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetIgnoreLabels">reset_ignore_labels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetInsecure">reset_insecure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetPassword">reset_password</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetProxyUrl">reset_proxy_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetTlsServerName">reset_tls_server_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetToken">reset_token</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.resetUsername">reset_username</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.toString"></a>
 
 ```python
 def to_string() -> str
@@ -322,7 +322,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.addOverride"></a>
 
 ```python
 def add_override(
@@ -331,19 +331,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -353,7 +353,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -361,7 +361,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -369,19 +369,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -389,121 +389,121 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `reset_alias` <a name="reset_alias" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetAlias"></a>
+##### `reset_alias` <a name="reset_alias" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetAlias"></a>
 
 ```python
 def reset_alias() -> None
 ```
 
-##### `reset_client_certificate` <a name="reset_client_certificate" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetClientCertificate"></a>
+##### `reset_client_certificate` <a name="reset_client_certificate" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetClientCertificate"></a>
 
 ```python
 def reset_client_certificate() -> None
 ```
 
-##### `reset_client_key` <a name="reset_client_key" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetClientKey"></a>
+##### `reset_client_key` <a name="reset_client_key" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetClientKey"></a>
 
 ```python
 def reset_client_key() -> None
 ```
 
-##### `reset_cluster_ca_certificate` <a name="reset_cluster_ca_certificate" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetClusterCaCertificate"></a>
+##### `reset_cluster_ca_certificate` <a name="reset_cluster_ca_certificate" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetClusterCaCertificate"></a>
 
 ```python
 def reset_cluster_ca_certificate() -> None
 ```
 
-##### `reset_config_context` <a name="reset_config_context" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetConfigContext"></a>
+##### `reset_config_context` <a name="reset_config_context" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetConfigContext"></a>
 
 ```python
 def reset_config_context() -> None
 ```
 
-##### `reset_config_context_auth_info` <a name="reset_config_context_auth_info" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetConfigContextAuthInfo"></a>
+##### `reset_config_context_auth_info` <a name="reset_config_context_auth_info" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetConfigContextAuthInfo"></a>
 
 ```python
 def reset_config_context_auth_info() -> None
 ```
 
-##### `reset_config_context_cluster` <a name="reset_config_context_cluster" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetConfigContextCluster"></a>
+##### `reset_config_context_cluster` <a name="reset_config_context_cluster" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetConfigContextCluster"></a>
 
 ```python
 def reset_config_context_cluster() -> None
 ```
 
-##### `reset_config_path` <a name="reset_config_path" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetConfigPath"></a>
+##### `reset_config_path` <a name="reset_config_path" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetConfigPath"></a>
 
 ```python
 def reset_config_path() -> None
 ```
 
-##### `reset_config_paths` <a name="reset_config_paths" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetConfigPaths"></a>
+##### `reset_config_paths` <a name="reset_config_paths" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetConfigPaths"></a>
 
 ```python
 def reset_config_paths() -> None
 ```
 
-##### `reset_exec` <a name="reset_exec" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetExec"></a>
+##### `reset_exec` <a name="reset_exec" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetExec"></a>
 
 ```python
 def reset_exec() -> None
 ```
 
-##### `reset_experiments` <a name="reset_experiments" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetExperiments"></a>
+##### `reset_experiments` <a name="reset_experiments" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetExperiments"></a>
 
 ```python
 def reset_experiments() -> None
 ```
 
-##### `reset_host` <a name="reset_host" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetHost"></a>
+##### `reset_host` <a name="reset_host" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetHost"></a>
 
 ```python
 def reset_host() -> None
 ```
 
-##### `reset_ignore_annotations` <a name="reset_ignore_annotations" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetIgnoreAnnotations"></a>
+##### `reset_ignore_annotations` <a name="reset_ignore_annotations" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetIgnoreAnnotations"></a>
 
 ```python
 def reset_ignore_annotations() -> None
 ```
 
-##### `reset_ignore_labels` <a name="reset_ignore_labels" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetIgnoreLabels"></a>
+##### `reset_ignore_labels` <a name="reset_ignore_labels" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetIgnoreLabels"></a>
 
 ```python
 def reset_ignore_labels() -> None
 ```
 
-##### `reset_insecure` <a name="reset_insecure" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetInsecure"></a>
+##### `reset_insecure` <a name="reset_insecure" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetInsecure"></a>
 
 ```python
 def reset_insecure() -> None
 ```
 
-##### `reset_password` <a name="reset_password" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetPassword"></a>
+##### `reset_password` <a name="reset_password" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetPassword"></a>
 
 ```python
 def reset_password() -> None
 ```
 
-##### `reset_proxy_url` <a name="reset_proxy_url" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetProxyUrl"></a>
+##### `reset_proxy_url` <a name="reset_proxy_url" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetProxyUrl"></a>
 
 ```python
 def reset_proxy_url() -> None
 ```
 
-##### `reset_tls_server_name` <a name="reset_tls_server_name" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetTlsServerName"></a>
+##### `reset_tls_server_name` <a name="reset_tls_server_name" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetTlsServerName"></a>
 
 ```python
 def reset_tls_server_name() -> None
 ```
 
-##### `reset_token` <a name="reset_token" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetToken"></a>
+##### `reset_token` <a name="reset_token" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetToken"></a>
 
 ```python
 def reset_token() -> None
 ```
 
-##### `reset_username` <a name="reset_username" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.resetUsername"></a>
+##### `reset_username` <a name="reset_username" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.resetUsername"></a>
 
 ```python
 def reset_username() -> None
@@ -513,17 +513,17 @@ def reset_username() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a KubernetesProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a KubernetesProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import provider
+from cdktn_provider_kubernetes import provider
 
 provider.KubernetesProvider.is_construct(
   x: typing.Any
@@ -546,7 +546,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -554,42 +554,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import provider
+from cdktn_provider_kubernetes import provider
 
 provider.KubernetesProvider.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_provider` <a name="is_terraform_provider" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.isTerraformProvider"></a>
+##### `is_terraform_provider` <a name="is_terraform_provider" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.isTerraformProvider"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import provider
+from cdktn_provider_kubernetes import provider
 
 provider.KubernetesProvider.is_terraform_provider(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import provider
+from cdktn_provider_kubernetes import provider
 
 provider.KubernetesProvider.generate_config_for_import(
   scope: Construct,
@@ -601,7 +601,7 @@ provider.KubernetesProvider.generate_config_for_import(
 
 Generates CDKTF code for importing a KubernetesProvider resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -609,7 +609,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the KubernetesProvider to impo
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -627,7 +627,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -639,58 +639,58 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clientCertificateInput">client_certificate_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clientKeyInput">client_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clusterCaCertificateInput">cluster_ca_certificate_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContextAuthInfoInput">config_context_auth_info_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContextClusterInput">config_context_cluster_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContextInput">config_context_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configPathInput">config_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configPathsInput">config_paths_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.execInput">exec_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.experimentsInput">experiments_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.ignoreAnnotationsInput">ignore_annotations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.ignoreLabelsInput">ignore_labels_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.insecureInput">insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.proxyUrlInput">proxy_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.tlsServerNameInput">tls_server_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clientCertificate">client_certificate</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clientKey">client_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clusterCaCertificate">cluster_ca_certificate</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContext">config_context</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContextAuthInfo">config_context_auth_info</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContextCluster">config_context_cluster</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configPath">config_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.exec">exec</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.experiments">experiments</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.ignoreAnnotations">ignore_annotations</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.ignoreLabels">ignore_labels</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.proxyUrl">proxy_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.tlsServerName">tls_server_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.username">username</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientCertificateInput">client_certificate_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientKeyInput">client_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clusterCaCertificateInput">cluster_ca_certificate_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextAuthInfoInput">config_context_auth_info_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextClusterInput">config_context_cluster_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextInput">config_context_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPathInput">config_path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPathsInput">config_paths_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.execInput">exec_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.experimentsInput">experiments_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreAnnotationsInput">ignore_annotations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreLabelsInput">ignore_labels_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.insecureInput">insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.proxyUrlInput">proxy_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.tlsServerNameInput">tls_server_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientCertificate">client_certificate</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientKey">client_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clusterCaCertificate">cluster_ca_certificate</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContext">config_context</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextAuthInfo">config_context_auth_info</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextCluster">config_context_cluster</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPath">config_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.exec">exec</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.experiments">experiments</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreAnnotations">ignore_annotations</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreLabels">ignore_labels</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.proxyUrl">proxy_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.tlsServerName">tls_server_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.username">username</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.node"></a>
 
 ```python
 node: Node
@@ -702,7 +702,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -712,7 +712,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.fqn"></a>
 
 ```python
 fqn: str
@@ -722,7 +722,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -732,7 +732,7 @@ friendly_unique_id: str
 
 ---
 
-##### `meta_attributes`<sup>Required</sup> <a name="meta_attributes" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.metaAttributes"></a>
+##### `meta_attributes`<sup>Required</sup> <a name="meta_attributes" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.metaAttributes"></a>
 
 ```python
 meta_attributes: typing.Mapping[typing.Any]
@@ -742,7 +742,7 @@ meta_attributes: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -752,7 +752,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -762,7 +762,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `terraform_provider_source`<sup>Optional</sup> <a name="terraform_provider_source" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.terraformProviderSource"></a>
+##### `terraform_provider_source`<sup>Optional</sup> <a name="terraform_provider_source" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformProviderSource"></a>
 
 ```python
 terraform_provider_source: str
@@ -772,7 +772,7 @@ terraform_provider_source: str
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.alias"></a>
 
 ```python
 alias: str
@@ -782,7 +782,7 @@ alias: str
 
 ---
 
-##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.aliasInput"></a>
+##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.aliasInput"></a>
 
 ```python
 alias_input: str
@@ -792,7 +792,7 @@ alias_input: str
 
 ---
 
-##### `client_certificate_input`<sup>Optional</sup> <a name="client_certificate_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clientCertificateInput"></a>
+##### `client_certificate_input`<sup>Optional</sup> <a name="client_certificate_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientCertificateInput"></a>
 
 ```python
 client_certificate_input: str
@@ -802,7 +802,7 @@ client_certificate_input: str
 
 ---
 
-##### `client_key_input`<sup>Optional</sup> <a name="client_key_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clientKeyInput"></a>
+##### `client_key_input`<sup>Optional</sup> <a name="client_key_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientKeyInput"></a>
 
 ```python
 client_key_input: str
@@ -812,7 +812,7 @@ client_key_input: str
 
 ---
 
-##### `cluster_ca_certificate_input`<sup>Optional</sup> <a name="cluster_ca_certificate_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clusterCaCertificateInput"></a>
+##### `cluster_ca_certificate_input`<sup>Optional</sup> <a name="cluster_ca_certificate_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clusterCaCertificateInput"></a>
 
 ```python
 cluster_ca_certificate_input: str
@@ -822,7 +822,7 @@ cluster_ca_certificate_input: str
 
 ---
 
-##### `config_context_auth_info_input`<sup>Optional</sup> <a name="config_context_auth_info_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContextAuthInfoInput"></a>
+##### `config_context_auth_info_input`<sup>Optional</sup> <a name="config_context_auth_info_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextAuthInfoInput"></a>
 
 ```python
 config_context_auth_info_input: str
@@ -832,7 +832,7 @@ config_context_auth_info_input: str
 
 ---
 
-##### `config_context_cluster_input`<sup>Optional</sup> <a name="config_context_cluster_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContextClusterInput"></a>
+##### `config_context_cluster_input`<sup>Optional</sup> <a name="config_context_cluster_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextClusterInput"></a>
 
 ```python
 config_context_cluster_input: str
@@ -842,7 +842,7 @@ config_context_cluster_input: str
 
 ---
 
-##### `config_context_input`<sup>Optional</sup> <a name="config_context_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContextInput"></a>
+##### `config_context_input`<sup>Optional</sup> <a name="config_context_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextInput"></a>
 
 ```python
 config_context_input: str
@@ -852,7 +852,7 @@ config_context_input: str
 
 ---
 
-##### `config_path_input`<sup>Optional</sup> <a name="config_path_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configPathInput"></a>
+##### `config_path_input`<sup>Optional</sup> <a name="config_path_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPathInput"></a>
 
 ```python
 config_path_input: str
@@ -862,7 +862,7 @@ config_path_input: str
 
 ---
 
-##### `config_paths_input`<sup>Optional</sup> <a name="config_paths_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configPathsInput"></a>
+##### `config_paths_input`<sup>Optional</sup> <a name="config_paths_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPathsInput"></a>
 
 ```python
 config_paths_input: typing.List[str]
@@ -872,27 +872,27 @@ config_paths_input: typing.List[str]
 
 ---
 
-##### `exec_input`<sup>Optional</sup> <a name="exec_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.execInput"></a>
+##### `exec_input`<sup>Optional</sup> <a name="exec_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.execInput"></a>
 
 ```python
 exec_input: IResolvable | typing.List[KubernetesProviderExec]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
 
 ---
 
-##### `experiments_input`<sup>Optional</sup> <a name="experiments_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.experimentsInput"></a>
+##### `experiments_input`<sup>Optional</sup> <a name="experiments_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.experimentsInput"></a>
 
 ```python
 experiments_input: IResolvable | typing.List[KubernetesProviderExperiments]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
 
 ---
 
-##### `host_input`<sup>Optional</sup> <a name="host_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.hostInput"></a>
+##### `host_input`<sup>Optional</sup> <a name="host_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.hostInput"></a>
 
 ```python
 host_input: str
@@ -902,7 +902,7 @@ host_input: str
 
 ---
 
-##### `ignore_annotations_input`<sup>Optional</sup> <a name="ignore_annotations_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.ignoreAnnotationsInput"></a>
+##### `ignore_annotations_input`<sup>Optional</sup> <a name="ignore_annotations_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreAnnotationsInput"></a>
 
 ```python
 ignore_annotations_input: typing.List[str]
@@ -912,7 +912,7 @@ ignore_annotations_input: typing.List[str]
 
 ---
 
-##### `ignore_labels_input`<sup>Optional</sup> <a name="ignore_labels_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.ignoreLabelsInput"></a>
+##### `ignore_labels_input`<sup>Optional</sup> <a name="ignore_labels_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreLabelsInput"></a>
 
 ```python
 ignore_labels_input: typing.List[str]
@@ -922,7 +922,7 @@ ignore_labels_input: typing.List[str]
 
 ---
 
-##### `insecure_input`<sup>Optional</sup> <a name="insecure_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.insecureInput"></a>
+##### `insecure_input`<sup>Optional</sup> <a name="insecure_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.insecureInput"></a>
 
 ```python
 insecure_input: bool | IResolvable
@@ -932,7 +932,7 @@ insecure_input: bool | IResolvable
 
 ---
 
-##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.passwordInput"></a>
+##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.passwordInput"></a>
 
 ```python
 password_input: str
@@ -942,7 +942,7 @@ password_input: str
 
 ---
 
-##### `proxy_url_input`<sup>Optional</sup> <a name="proxy_url_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.proxyUrlInput"></a>
+##### `proxy_url_input`<sup>Optional</sup> <a name="proxy_url_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.proxyUrlInput"></a>
 
 ```python
 proxy_url_input: str
@@ -952,7 +952,7 @@ proxy_url_input: str
 
 ---
 
-##### `tls_server_name_input`<sup>Optional</sup> <a name="tls_server_name_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.tlsServerNameInput"></a>
+##### `tls_server_name_input`<sup>Optional</sup> <a name="tls_server_name_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.tlsServerNameInput"></a>
 
 ```python
 tls_server_name_input: str
@@ -962,7 +962,7 @@ tls_server_name_input: str
 
 ---
 
-##### `token_input`<sup>Optional</sup> <a name="token_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.tokenInput"></a>
+##### `token_input`<sup>Optional</sup> <a name="token_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.tokenInput"></a>
 
 ```python
 token_input: str
@@ -972,7 +972,7 @@ token_input: str
 
 ---
 
-##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.usernameInput"></a>
+##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.usernameInput"></a>
 
 ```python
 username_input: str
@@ -982,7 +982,7 @@ username_input: str
 
 ---
 
-##### `client_certificate`<sup>Optional</sup> <a name="client_certificate" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clientCertificate"></a>
+##### `client_certificate`<sup>Optional</sup> <a name="client_certificate" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientCertificate"></a>
 
 ```python
 client_certificate: str
@@ -992,7 +992,7 @@ client_certificate: str
 
 ---
 
-##### `client_key`<sup>Optional</sup> <a name="client_key" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clientKey"></a>
+##### `client_key`<sup>Optional</sup> <a name="client_key" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientKey"></a>
 
 ```python
 client_key: str
@@ -1002,7 +1002,7 @@ client_key: str
 
 ---
 
-##### `cluster_ca_certificate`<sup>Optional</sup> <a name="cluster_ca_certificate" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.clusterCaCertificate"></a>
+##### `cluster_ca_certificate`<sup>Optional</sup> <a name="cluster_ca_certificate" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clusterCaCertificate"></a>
 
 ```python
 cluster_ca_certificate: str
@@ -1012,7 +1012,7 @@ cluster_ca_certificate: str
 
 ---
 
-##### `config_context`<sup>Optional</sup> <a name="config_context" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContext"></a>
+##### `config_context`<sup>Optional</sup> <a name="config_context" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContext"></a>
 
 ```python
 config_context: str
@@ -1022,7 +1022,7 @@ config_context: str
 
 ---
 
-##### `config_context_auth_info`<sup>Optional</sup> <a name="config_context_auth_info" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContextAuthInfo"></a>
+##### `config_context_auth_info`<sup>Optional</sup> <a name="config_context_auth_info" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextAuthInfo"></a>
 
 ```python
 config_context_auth_info: str
@@ -1032,7 +1032,7 @@ config_context_auth_info: str
 
 ---
 
-##### `config_context_cluster`<sup>Optional</sup> <a name="config_context_cluster" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configContextCluster"></a>
+##### `config_context_cluster`<sup>Optional</sup> <a name="config_context_cluster" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextCluster"></a>
 
 ```python
 config_context_cluster: str
@@ -1042,7 +1042,7 @@ config_context_cluster: str
 
 ---
 
-##### `config_path`<sup>Optional</sup> <a name="config_path" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configPath"></a>
+##### `config_path`<sup>Optional</sup> <a name="config_path" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPath"></a>
 
 ```python
 config_path: str
@@ -1052,7 +1052,7 @@ config_path: str
 
 ---
 
-##### `config_paths`<sup>Optional</sup> <a name="config_paths" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.configPaths"></a>
+##### `config_paths`<sup>Optional</sup> <a name="config_paths" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPaths"></a>
 
 ```python
 config_paths: typing.List[str]
@@ -1062,27 +1062,27 @@ config_paths: typing.List[str]
 
 ---
 
-##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.exec"></a>
+##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.exec"></a>
 
 ```python
 exec: IResolvable | typing.List[KubernetesProviderExec]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
 
 ---
 
-##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.experiments"></a>
+##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.experiments"></a>
 
 ```python
 experiments: IResolvable | typing.List[KubernetesProviderExperiments]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.host"></a>
 
 ```python
 host: str
@@ -1092,7 +1092,7 @@ host: str
 
 ---
 
-##### `ignore_annotations`<sup>Optional</sup> <a name="ignore_annotations" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.ignoreAnnotations"></a>
+##### `ignore_annotations`<sup>Optional</sup> <a name="ignore_annotations" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreAnnotations"></a>
 
 ```python
 ignore_annotations: typing.List[str]
@@ -1102,7 +1102,7 @@ ignore_annotations: typing.List[str]
 
 ---
 
-##### `ignore_labels`<sup>Optional</sup> <a name="ignore_labels" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.ignoreLabels"></a>
+##### `ignore_labels`<sup>Optional</sup> <a name="ignore_labels" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreLabels"></a>
 
 ```python
 ignore_labels: typing.List[str]
@@ -1112,7 +1112,7 @@ ignore_labels: typing.List[str]
 
 ---
 
-##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.insecure"></a>
+##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.insecure"></a>
 
 ```python
 insecure: bool | IResolvable
@@ -1122,7 +1122,7 @@ insecure: bool | IResolvable
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.password"></a>
 
 ```python
 password: str
@@ -1132,7 +1132,7 @@ password: str
 
 ---
 
-##### `proxy_url`<sup>Optional</sup> <a name="proxy_url" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.proxyUrl"></a>
+##### `proxy_url`<sup>Optional</sup> <a name="proxy_url" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.proxyUrl"></a>
 
 ```python
 proxy_url: str
@@ -1142,7 +1142,7 @@ proxy_url: str
 
 ---
 
-##### `tls_server_name`<sup>Optional</sup> <a name="tls_server_name" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.tlsServerName"></a>
+##### `tls_server_name`<sup>Optional</sup> <a name="tls_server_name" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.tlsServerName"></a>
 
 ```python
 tls_server_name: str
@@ -1152,7 +1152,7 @@ tls_server_name: str
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.token"></a>
 
 ```python
 token: str
@@ -1162,7 +1162,7 @@ token: str
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.username"></a>
 
 ```python
 username: str
@@ -1176,11 +1176,11 @@ username: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProvider.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-kubernetes.provider.KubernetesProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1192,12 +1192,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### KubernetesProviderConfig <a name="KubernetesProviderConfig" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig"></a>
+### KubernetesProviderConfig <a name="KubernetesProviderConfig" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import provider
+from cdktn_provider_kubernetes import provider
 
 provider.KubernetesProviderConfig(
   alias: str = None,
@@ -1227,30 +1227,30 @@ provider.KubernetesProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.clientCertificate">client_certificate</a></code> | <code>str</code> | PEM-encoded client certificate for TLS authentication. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.clientKey">client_key</a></code> | <code>str</code> | PEM-encoded client certificate key for TLS authentication. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.clusterCaCertificate">cluster_ca_certificate</a></code> | <code>str</code> | PEM-encoded root certificates bundle for TLS authentication. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.configContext">config_context</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context KubernetesProvider#config_context}. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.configContextAuthInfo">config_context_auth_info</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context_auth_info KubernetesProvider#config_context_auth_info}. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.configContextCluster">config_context_cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context_cluster KubernetesProvider#config_context_cluster}. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.configPath">config_path</a></code> | <code>str</code> | Path to the kube config file. Can be set with KUBE_CONFIG_PATH. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | A list of paths to kube config files. Can be set with KUBE_CONFIG_PATHS environment variable. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.exec">exec</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | exec block. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.experiments">experiments</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | experiments block. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.host">host</a></code> | <code>str</code> | The hostname (in form of URI) of Kubernetes master. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.ignoreAnnotations">ignore_annotations</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata annotations to ignore across all resources handled by this provider for situations where external systems are managing certain resource annotations. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.ignoreLabels">ignore_labels</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata labels to ignore across all resources handled by this provider for situations where external systems are managing certain resource labels. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.password">password</a></code> | <code>str</code> | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.proxyUrl">proxy_url</a></code> | <code>str</code> | URL to the proxy to be used for all API requests. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.tlsServerName">tls_server_name</a></code> | <code>str</code> | Server name passed to the server for SNI and is used in the client to check server certificates against. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.token">token</a></code> | <code>str</code> | Token to authenticate an service account. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.username">username</a></code> | <code>str</code> | The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.clientCertificate">client_certificate</a></code> | <code>str</code> | PEM-encoded client certificate for TLS authentication. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.clientKey">client_key</a></code> | <code>str</code> | PEM-encoded client certificate key for TLS authentication. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.clusterCaCertificate">cluster_ca_certificate</a></code> | <code>str</code> | PEM-encoded root certificates bundle for TLS authentication. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configContext">config_context</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context KubernetesProvider#config_context}. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configContextAuthInfo">config_context_auth_info</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context_auth_info KubernetesProvider#config_context_auth_info}. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configContextCluster">config_context_cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context_cluster KubernetesProvider#config_context_cluster}. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configPath">config_path</a></code> | <code>str</code> | Path to the kube config file. Can be set with KUBE_CONFIG_PATH. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | A list of paths to kube config files. Can be set with KUBE_CONFIG_PATHS environment variable. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.exec">exec</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | exec block. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.experiments">experiments</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | experiments block. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.host">host</a></code> | <code>str</code> | The hostname (in form of URI) of Kubernetes master. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.ignoreAnnotations">ignore_annotations</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata annotations to ignore across all resources handled by this provider for situations where external systems are managing certain resource annotations. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.ignoreLabels">ignore_labels</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata labels to ignore across all resources handled by this provider for situations where external systems are managing certain resource labels. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.password">password</a></code> | <code>str</code> | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.proxyUrl">proxy_url</a></code> | <code>str</code> | URL to the proxy to be used for all API requests. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.tlsServerName">tls_server_name</a></code> | <code>str</code> | Server name passed to the server for SNI and is used in the client to check server certificates against. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.token">token</a></code> | <code>str</code> | Token to authenticate an service account. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.username">username</a></code> | <code>str</code> | The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.alias"></a>
 
 ```python
 alias: str
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `client_certificate`<sup>Optional</sup> <a name="client_certificate" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.clientCertificate"></a>
+##### `client_certificate`<sup>Optional</sup> <a name="client_certificate" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.clientCertificate"></a>
 
 ```python
 client_certificate: str
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `client_key`<sup>Optional</sup> <a name="client_key" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.clientKey"></a>
+##### `client_key`<sup>Optional</sup> <a name="client_key" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.clientKey"></a>
 
 ```python
 client_key: str
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cluster_ca_certificate`<sup>Optional</sup> <a name="cluster_ca_certificate" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.clusterCaCertificate"></a>
+##### `cluster_ca_certificate`<sup>Optional</sup> <a name="cluster_ca_certificate" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.clusterCaCertificate"></a>
 
 ```python
 cluster_ca_certificate: str
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_context`<sup>Optional</sup> <a name="config_context" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.configContext"></a>
+##### `config_context`<sup>Optional</sup> <a name="config_context" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configContext"></a>
 
 ```python
 config_context: str
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_context_auth_info`<sup>Optional</sup> <a name="config_context_auth_info" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.configContextAuthInfo"></a>
+##### `config_context_auth_info`<sup>Optional</sup> <a name="config_context_auth_info" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configContextAuthInfo"></a>
 
 ```python
 config_context_auth_info: str
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_context_cluster`<sup>Optional</sup> <a name="config_context_cluster" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.configContextCluster"></a>
+##### `config_context_cluster`<sup>Optional</sup> <a name="config_context_cluster" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configContextCluster"></a>
 
 ```python
 config_context_cluster: str
@@ -1342,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_path`<sup>Optional</sup> <a name="config_path" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.configPath"></a>
+##### `config_path`<sup>Optional</sup> <a name="config_path" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configPath"></a>
 
 ```python
 config_path: str
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `config_paths`<sup>Optional</sup> <a name="config_paths" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.configPaths"></a>
+##### `config_paths`<sup>Optional</sup> <a name="config_paths" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configPaths"></a>
 
 ```python
 config_paths: typing.List[str]
@@ -1370,13 +1370,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.exec"></a>
+##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.exec"></a>
 
 ```python
 exec: IResolvable | typing.List[KubernetesProviderExec]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
 
 exec block.
 
@@ -1384,13 +1384,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.experiments"></a>
+##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.experiments"></a>
 
 ```python
 experiments: IResolvable | typing.List[KubernetesProviderExperiments]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
 
 experiments block.
 
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.host"></a>
 
 ```python
 host: str
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ignore_annotations`<sup>Optional</sup> <a name="ignore_annotations" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.ignoreAnnotations"></a>
+##### `ignore_annotations`<sup>Optional</sup> <a name="ignore_annotations" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.ignoreAnnotations"></a>
 
 ```python
 ignore_annotations: typing.List[str]
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ignore_labels`<sup>Optional</sup> <a name="ignore_labels" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.ignoreLabels"></a>
+##### `ignore_labels`<sup>Optional</sup> <a name="ignore_labels" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.ignoreLabels"></a>
 
 ```python
 ignore_labels: typing.List[str]
@@ -1444,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.insecure"></a>
+##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.insecure"></a>
 
 ```python
 insecure: bool | IResolvable
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.password"></a>
 
 ```python
 password: str
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `proxy_url`<sup>Optional</sup> <a name="proxy_url" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.proxyUrl"></a>
+##### `proxy_url`<sup>Optional</sup> <a name="proxy_url" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.proxyUrl"></a>
 
 ```python
 proxy_url: str
@@ -1486,7 +1486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `tls_server_name`<sup>Optional</sup> <a name="tls_server_name" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.tlsServerName"></a>
+##### `tls_server_name`<sup>Optional</sup> <a name="tls_server_name" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.tlsServerName"></a>
 
 ```python
 tls_server_name: str
@@ -1500,7 +1500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.token"></a>
 
 ```python
 token: str
@@ -1514,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-kubernetes.provider.KubernetesProviderConfig.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.username"></a>
 
 ```python
 username: str
@@ -1528,12 +1528,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### KubernetesProviderExec <a name="KubernetesProviderExec" id="@cdktf/provider-kubernetes.provider.KubernetesProviderExec"></a>
+### KubernetesProviderExec <a name="KubernetesProviderExec" id="@cdktn/provider-kubernetes.provider.KubernetesProviderExec"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-kubernetes.provider.KubernetesProviderExec.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.provider.KubernetesProviderExec.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import provider
+from cdktn_provider_kubernetes import provider
 
 provider.KubernetesProviderExec(
   api_version: str,
@@ -1547,14 +1547,14 @@ provider.KubernetesProviderExec(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec.property.apiVersion">api_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#api_version KubernetesProvider#api_version}. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec.property.command">command</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#command KubernetesProvider#command}. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec.property.args">args</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#args KubernetesProvider#args}. |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExec.property.env">env</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#env KubernetesProvider#env}. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec.property.apiVersion">api_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#api_version KubernetesProvider#api_version}. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec.property.command">command</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#command KubernetesProvider#command}. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec.property.args">args</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#args KubernetesProvider#args}. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec.property.env">env</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#env KubernetesProvider#env}. |
 
 ---
 
-##### `api_version`<sup>Required</sup> <a name="api_version" id="@cdktf/provider-kubernetes.provider.KubernetesProviderExec.property.apiVersion"></a>
+##### `api_version`<sup>Required</sup> <a name="api_version" id="@cdktn/provider-kubernetes.provider.KubernetesProviderExec.property.apiVersion"></a>
 
 ```python
 api_version: str
@@ -1566,7 +1566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `command`<sup>Required</sup> <a name="command" id="@cdktf/provider-kubernetes.provider.KubernetesProviderExec.property.command"></a>
+##### `command`<sup>Required</sup> <a name="command" id="@cdktn/provider-kubernetes.provider.KubernetesProviderExec.property.command"></a>
 
 ```python
 command: str
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `args`<sup>Optional</sup> <a name="args" id="@cdktf/provider-kubernetes.provider.KubernetesProviderExec.property.args"></a>
+##### `args`<sup>Optional</sup> <a name="args" id="@cdktn/provider-kubernetes.provider.KubernetesProviderExec.property.args"></a>
 
 ```python
 args: typing.List[str]
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `env`<sup>Optional</sup> <a name="env" id="@cdktf/provider-kubernetes.provider.KubernetesProviderExec.property.env"></a>
+##### `env`<sup>Optional</sup> <a name="env" id="@cdktn/provider-kubernetes.provider.KubernetesProviderExec.property.env"></a>
 
 ```python
 env: typing.Mapping[str]
@@ -1602,12 +1602,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### KubernetesProviderExperiments <a name="KubernetesProviderExperiments" id="@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments"></a>
+### KubernetesProviderExperiments <a name="KubernetesProviderExperiments" id="@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import provider
+from cdktn_provider_kubernetes import provider
 
 provider.KubernetesProviderExperiments(
   manifest_resource: bool | IResolvable = None
@@ -1618,11 +1618,11 @@ provider.KubernetesProviderExperiments(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments.property.manifestResource">manifest_resource</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the `kubernetes_manifest` resource. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments.property.manifestResource">manifest_resource</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the `kubernetes_manifest` resource. |
 
 ---
 
-##### `manifest_resource`<sup>Optional</sup> <a name="manifest_resource" id="@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments.property.manifestResource"></a>
+##### `manifest_resource`<sup>Optional</sup> <a name="manifest_resource" id="@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments.property.manifestResource"></a>
 
 ```python
 manifest_resource: bool | IResolvable
