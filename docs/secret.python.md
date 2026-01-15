@@ -1,15 +1,15 @@
-# `secret` Submodule <a name="`secret` Submodule" id="@cdktf/provider-kubernetes.secret"></a>
+# `secret` Submodule <a name="`secret` Submodule" id="@cdktn/provider-kubernetes.secret"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Secret <a name="Secret" id="@cdktf/provider-kubernetes.secret.Secret"></a>
+### Secret <a name="Secret" id="@cdktn/provider-kubernetes.secret.Secret"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret kubernetes_secret}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-kubernetes.secret.Secret.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.secret.Secret.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import secret
+from cdktn_provider_kubernetes import secret
 
 secret.Secret(
   scope: Construct,
@@ -38,31 +38,31 @@ secret.Secret(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.binaryData">binary_data</a></code> | <code>typing.Mapping[str]</code> | A map of the secret data in base64 encoding. Use this for binary data. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.binaryDataWo">binary_data_wo</a></code> | <code>typing.Mapping[str]</code> | A write-only map of the secret data in base64 encoding. Use this for binary data. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.binaryDataWoRevision">binary_data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | The current revision of the write-only "binary_data_wo" attribute. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.data">data</a></code> | <code>typing.Mapping[str]</code> | A map of the secret data. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.dataWo">data_wo</a></code> | <code>typing.Mapping[str]</code> | A map write-only of the secret data. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.dataWoRevision">data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | The current revision of the write-only "data_wo" attribute. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret#id Secret#id}. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.immutable">immutable</a></code> | <code>bool \| cdktf.IResolvable</code> | Ensures that data stored in the Secret cannot be updated (only object metadata can be modified). |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of secret. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.waitForServiceAccountToken">wait_for_service_account_token</a></code> | <code>bool \| cdktf.IResolvable</code> | Terraform will wait for the service account token to be created. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a></code> | metadata block. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.binaryData">binary_data</a></code> | <code>typing.Mapping[str]</code> | A map of the secret data in base64 encoding. Use this for binary data. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.binaryDataWo">binary_data_wo</a></code> | <code>typing.Mapping[str]</code> | A write-only map of the secret data in base64 encoding. Use this for binary data. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.binaryDataWoRevision">binary_data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | The current revision of the write-only "binary_data_wo" attribute. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.data">data</a></code> | <code>typing.Mapping[str]</code> | A map of the secret data. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.dataWo">data_wo</a></code> | <code>typing.Mapping[str]</code> | A map write-only of the secret data. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.dataWoRevision">data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | The current revision of the write-only "data_wo" attribute. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret#id Secret#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.immutable">immutable</a></code> | <code>bool \| cdktf.IResolvable</code> | Ensures that data stored in the Secret cannot be updated (only object metadata can be modified). |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of secret. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.waitForServiceAccountToken">wait_for_service_account_token</a></code> | <code>bool \| cdktf.IResolvable</code> | Terraform will wait for the service account token to be created. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -70,7 +70,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -80,51 +80,51 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.metadata"></a>
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a>
 
 metadata block.
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `binary_data`<sup>Optional</sup> <a name="binary_data" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.binaryData"></a>
+##### `binary_data`<sup>Optional</sup> <a name="binary_data" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.binaryData"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `binary_data_wo`<sup>Optional</sup> <a name="binary_data_wo" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.binaryDataWo"></a>
+##### `binary_data_wo`<sup>Optional</sup> <a name="binary_data_wo" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.binaryDataWo"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `binary_data_wo_revision`<sup>Optional</sup> <a name="binary_data_wo_revision" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.binaryDataWoRevision"></a>
+##### `binary_data_wo_revision`<sup>Optional</sup> <a name="binary_data_wo_revision" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.binaryDataWoRevision"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `data`<sup>Optional</sup> <a name="data" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.data"></a>
+##### `data`<sup>Optional</sup> <a name="data" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.data"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `data_wo`<sup>Optional</sup> <a name="data_wo" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.dataWo"></a>
+##### `data_wo`<sup>Optional</sup> <a name="data_wo" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.dataWo"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `data_wo_revision`<sup>Optional</sup> <a name="data_wo_revision" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.dataWoRevision"></a>
+##### `data_wo_revision`<sup>Optional</sup> <a name="data_wo_revision" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.dataWoRevision"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -207,7 +207,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `immutable`<sup>Optional</sup> <a name="immutable" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.immutable"></a>
+##### `immutable`<sup>Optional</sup> <a name="immutable" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.immutable"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -217,9 +217,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a>
 
 timeouts block.
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.type"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.type"></a>
 
 - *Type:* str
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `wait_for_service_account_token`<sup>Optional</sup> <a name="wait_for_service_account_token" id="@cdktf/provider-kubernetes.secret.Secret.Initializer.parameter.waitForServiceAccountToken"></a>
+##### `wait_for_service_account_token`<sup>Optional</sup> <a name="wait_for_service_account_token" id="@cdktn/provider-kubernetes.secret.Secret.Initializer.parameter.waitForServiceAccountToken"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -251,46 +251,46 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.putMetadata">put_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetBinaryData">reset_binary_data</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetBinaryDataWo">reset_binary_data_wo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetBinaryDataWoRevision">reset_binary_data_wo_revision</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetData">reset_data</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetDataWo">reset_data_wo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetDataWoRevision">reset_data_wo_revision</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetImmutable">reset_immutable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetType">reset_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.resetWaitForServiceAccountToken">reset_wait_for_service_account_token</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.putMetadata">put_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetBinaryData">reset_binary_data</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetBinaryDataWo">reset_binary_data_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetBinaryDataWoRevision">reset_binary_data_wo_revision</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetData">reset_data</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetDataWo">reset_data_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetDataWoRevision">reset_data_wo_revision</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetImmutable">reset_immutable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetType">reset_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.resetWaitForServiceAccountToken">reset_wait_for_service_account_token</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-kubernetes.secret.Secret.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-kubernetes.secret.Secret.toString"></a>
 
 ```python
 def to_string() -> str
@@ -298,7 +298,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-kubernetes.secret.Secret.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-kubernetes.secret.Secret.addOverride"></a>
 
 ```python
 def add_override(
@@ -307,19 +307,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-kubernetes.secret.Secret.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-kubernetes.secret.Secret.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-kubernetes.secret.Secret.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.secret.Secret.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-kubernetes.secret.Secret.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-kubernetes.secret.Secret.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -329,7 +329,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-kubernetes.secret.Secret.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-kubernetes.secret.Secret.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -337,7 +337,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-kubernetes.secret.Secret.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-kubernetes.secret.Secret.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -345,19 +345,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-kubernetes.secret.Secret.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-kubernetes.secret.Secret.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-kubernetes.secret.Secret.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-kubernetes.secret.Secret.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-kubernetes.secret.Secret.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-kubernetes.secret.Secret.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -365,7 +365,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-kubernetes.secret.Secret.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-kubernetes.secret.Secret.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -375,7 +375,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-kubernetes.secret.Secret.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-kubernetes.secret.Secret.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -383,7 +383,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -391,13 +391,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -405,13 +405,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -419,13 +419,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -433,13 +433,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -447,13 +447,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -461,13 +461,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -475,13 +475,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -489,13 +489,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -503,19 +503,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.Secret.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.Secret.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-kubernetes.secret.Secret.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-kubernetes.secret.Secret.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-kubernetes.secret.Secret.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-kubernetes.secret.Secret.importFrom"></a>
 
 ```python
 def import_from(
@@ -524,19 +524,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.secret.Secret.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secret.Secret.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-kubernetes.secret.Secret.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.secret.Secret.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-kubernetes.secret.Secret.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-kubernetes.secret.Secret.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -544,13 +544,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.Secret.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.Secret.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-kubernetes.secret.Secret.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-kubernetes.secret.Secret.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -562,7 +562,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.secret.Secret.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secret.Secret.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -570,7 +570,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-kubernetes.secret.Secret.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-kubernetes.secret.Secret.moveTo"></a>
 
 ```python
 def move_to(
@@ -581,7 +581,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-kubernetes.secret.Secret.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-kubernetes.secret.Secret.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -589,7 +589,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-kubernetes.secret.Secret.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-kubernetes.secret.Secret.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -597,7 +597,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-kubernetes.secret.Secret.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-kubernetes.secret.Secret.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -607,7 +607,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.secret.Secret.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secret.Secret.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -615,7 +615,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_metadata` <a name="put_metadata" id="@cdktf/provider-kubernetes.secret.Secret.putMetadata"></a>
+##### `put_metadata` <a name="put_metadata" id="@cdktn/provider-kubernetes.secret.Secret.putMetadata"></a>
 
 ```python
 def put_metadata(
@@ -627,7 +627,7 @@ def put_metadata(
 ) -> None
 ```
 
-###### `annotations`<sup>Optional</sup> <a name="annotations" id="@cdktf/provider-kubernetes.secret.Secret.putMetadata.parameter.annotations"></a>
+###### `annotations`<sup>Optional</sup> <a name="annotations" id="@cdktn/provider-kubernetes.secret.Secret.putMetadata.parameter.annotations"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -639,7 +639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `generate_name`<sup>Optional</sup> <a name="generate_name" id="@cdktf/provider-kubernetes.secret.Secret.putMetadata.parameter.generateName"></a>
+###### `generate_name`<sup>Optional</sup> <a name="generate_name" id="@cdktn/provider-kubernetes.secret.Secret.putMetadata.parameter.generateName"></a>
 
 - *Type:* str
 
@@ -651,7 +651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-kubernetes.secret.Secret.putMetadata.parameter.labels"></a>
+###### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-kubernetes.secret.Secret.putMetadata.parameter.labels"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -663,7 +663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-kubernetes.secret.Secret.putMetadata.parameter.name"></a>
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-kubernetes.secret.Secret.putMetadata.parameter.name"></a>
 
 - *Type:* str
 
@@ -673,7 +673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-kubernetes.secret.Secret.putMetadata.parameter.namespace"></a>
+###### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-kubernetes.secret.Secret.putMetadata.parameter.namespace"></a>
 
 - *Type:* str
 
@@ -683,7 +683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-kubernetes.secret.Secret.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-kubernetes.secret.Secret.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -691,7 +691,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-kubernetes.secret.Secret.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-kubernetes.secret.Secret.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -699,67 +699,67 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_binary_data` <a name="reset_binary_data" id="@cdktf/provider-kubernetes.secret.Secret.resetBinaryData"></a>
+##### `reset_binary_data` <a name="reset_binary_data" id="@cdktn/provider-kubernetes.secret.Secret.resetBinaryData"></a>
 
 ```python
 def reset_binary_data() -> None
 ```
 
-##### `reset_binary_data_wo` <a name="reset_binary_data_wo" id="@cdktf/provider-kubernetes.secret.Secret.resetBinaryDataWo"></a>
+##### `reset_binary_data_wo` <a name="reset_binary_data_wo" id="@cdktn/provider-kubernetes.secret.Secret.resetBinaryDataWo"></a>
 
 ```python
 def reset_binary_data_wo() -> None
 ```
 
-##### `reset_binary_data_wo_revision` <a name="reset_binary_data_wo_revision" id="@cdktf/provider-kubernetes.secret.Secret.resetBinaryDataWoRevision"></a>
+##### `reset_binary_data_wo_revision` <a name="reset_binary_data_wo_revision" id="@cdktn/provider-kubernetes.secret.Secret.resetBinaryDataWoRevision"></a>
 
 ```python
 def reset_binary_data_wo_revision() -> None
 ```
 
-##### `reset_data` <a name="reset_data" id="@cdktf/provider-kubernetes.secret.Secret.resetData"></a>
+##### `reset_data` <a name="reset_data" id="@cdktn/provider-kubernetes.secret.Secret.resetData"></a>
 
 ```python
 def reset_data() -> None
 ```
 
-##### `reset_data_wo` <a name="reset_data_wo" id="@cdktf/provider-kubernetes.secret.Secret.resetDataWo"></a>
+##### `reset_data_wo` <a name="reset_data_wo" id="@cdktn/provider-kubernetes.secret.Secret.resetDataWo"></a>
 
 ```python
 def reset_data_wo() -> None
 ```
 
-##### `reset_data_wo_revision` <a name="reset_data_wo_revision" id="@cdktf/provider-kubernetes.secret.Secret.resetDataWoRevision"></a>
+##### `reset_data_wo_revision` <a name="reset_data_wo_revision" id="@cdktn/provider-kubernetes.secret.Secret.resetDataWoRevision"></a>
 
 ```python
 def reset_data_wo_revision() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-kubernetes.secret.Secret.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-kubernetes.secret.Secret.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_immutable` <a name="reset_immutable" id="@cdktf/provider-kubernetes.secret.Secret.resetImmutable"></a>
+##### `reset_immutable` <a name="reset_immutable" id="@cdktn/provider-kubernetes.secret.Secret.resetImmutable"></a>
 
 ```python
 def reset_immutable() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-kubernetes.secret.Secret.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-kubernetes.secret.Secret.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_type` <a name="reset_type" id="@cdktf/provider-kubernetes.secret.Secret.resetType"></a>
+##### `reset_type` <a name="reset_type" id="@cdktn/provider-kubernetes.secret.Secret.resetType"></a>
 
 ```python
 def reset_type() -> None
 ```
 
-##### `reset_wait_for_service_account_token` <a name="reset_wait_for_service_account_token" id="@cdktf/provider-kubernetes.secret.Secret.resetWaitForServiceAccountToken"></a>
+##### `reset_wait_for_service_account_token` <a name="reset_wait_for_service_account_token" id="@cdktn/provider-kubernetes.secret.Secret.resetWaitForServiceAccountToken"></a>
 
 ```python
 def reset_wait_for_service_account_token() -> None
@@ -769,17 +769,17 @@ def reset_wait_for_service_account_token() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Secret resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Secret resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-kubernetes.secret.Secret.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-kubernetes.secret.Secret.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import secret
+from cdktn_provider_kubernetes import secret
 
 secret.Secret.is_construct(
   x: typing.Any
@@ -802,7 +802,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-kubernetes.secret.Secret.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-kubernetes.secret.Secret.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -810,42 +810,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-kubernetes.secret.Secret.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-kubernetes.secret.Secret.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import secret
+from cdktn_provider_kubernetes import secret
 
 secret.Secret.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-kubernetes.secret.Secret.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-kubernetes.secret.Secret.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-kubernetes.secret.Secret.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-kubernetes.secret.Secret.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import secret
+from cdktn_provider_kubernetes import secret
 
 secret.Secret.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-kubernetes.secret.Secret.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-kubernetes.secret.Secret.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-kubernetes.secret.Secret.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-kubernetes.secret.Secret.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import secret
+from cdktn_provider_kubernetes import secret
 
 secret.Secret.generate_config_for_import(
   scope: Construct,
@@ -857,7 +857,7 @@ secret.Secret.generate_config_for_import(
 
 Generates CDKTF code for importing a Secret resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-kubernetes.secret.Secret.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-kubernetes.secret.Secret.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -865,7 +865,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-kubernetes.secret.Secret.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-kubernetes.secret.Secret.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -873,7 +873,7 @@ The construct id used in the generated config for the Secret to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-kubernetes.secret.Secret.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-kubernetes.secret.Secret.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -883,7 +883,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-kubernetes.secret.Secret.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.secret.Secret.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -895,48 +895,48 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference">SecretMetadataOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference">SecretTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.binaryDataInput">binary_data_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.binaryDataWoInput">binary_data_wo_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.binaryDataWoRevisionInput">binary_data_wo_revision_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.dataInput">data_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.dataWoInput">data_wo_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.dataWoRevisionInput">data_wo_revision_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.immutableInput">immutable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.metadataInput">metadata_input</a></code> | <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.waitForServiceAccountTokenInput">wait_for_service_account_token_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.binaryData">binary_data</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.binaryDataWo">binary_data_wo</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.binaryDataWoRevision">binary_data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.data">data</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.dataWo">data_wo</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.dataWoRevision">data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.immutable">immutable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.waitForServiceAccountToken">wait_for_service_account_token</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference">SecretMetadataOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference">SecretTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.binaryDataInput">binary_data_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWoInput">binary_data_wo_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWoRevisionInput">binary_data_wo_revision_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.dataInput">data_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.dataWoInput">data_wo_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.dataWoRevisionInput">data_wo_revision_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.immutableInput">immutable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.metadataInput">metadata_input</a></code> | <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.waitForServiceAccountTokenInput">wait_for_service_account_token_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.binaryData">binary_data</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWo">binary_data_wo</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWoRevision">binary_data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.data">data</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.dataWo">data_wo</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.dataWoRevision">data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.immutable">immutable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.waitForServiceAccountToken">wait_for_service_account_token</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-kubernetes.secret.Secret.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-kubernetes.secret.Secret.property.node"></a>
 
 ```python
 node: Node
@@ -948,7 +948,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-kubernetes.secret.Secret.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-kubernetes.secret.Secret.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -958,7 +958,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-kubernetes.secret.Secret.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.secret.Secret.property.fqn"></a>
 
 ```python
 fqn: str
@@ -968,7 +968,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-kubernetes.secret.Secret.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-kubernetes.secret.Secret.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -978,7 +978,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-kubernetes.secret.Secret.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-kubernetes.secret.Secret.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -988,7 +988,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-kubernetes.secret.Secret.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-kubernetes.secret.Secret.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -998,7 +998,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-kubernetes.secret.Secret.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-kubernetes.secret.Secret.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1008,7 +1008,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-kubernetes.secret.Secret.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-kubernetes.secret.Secret.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1018,7 +1018,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-kubernetes.secret.Secret.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-kubernetes.secret.Secret.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1028,7 +1028,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-kubernetes.secret.Secret.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-kubernetes.secret.Secret.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1038,7 +1038,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-kubernetes.secret.Secret.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-kubernetes.secret.Secret.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1048,7 +1048,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-kubernetes.secret.Secret.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-kubernetes.secret.Secret.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1058,7 +1058,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-kubernetes.secret.Secret.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.secret.Secret.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1068,7 +1068,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-kubernetes.secret.Secret.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-kubernetes.secret.Secret.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1078,27 +1078,27 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-kubernetes.secret.Secret.property.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.secret.Secret.property.metadata"></a>
 
 ```python
 metadata: SecretMetadataOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference">SecretMetadataOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference">SecretMetadataOutputReference</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-kubernetes.secret.Secret.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-kubernetes.secret.Secret.property.timeouts"></a>
 
 ```python
 timeouts: SecretTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference">SecretTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference">SecretTimeoutsOutputReference</a>
 
 ---
 
-##### `binary_data_input`<sup>Optional</sup> <a name="binary_data_input" id="@cdktf/provider-kubernetes.secret.Secret.property.binaryDataInput"></a>
+##### `binary_data_input`<sup>Optional</sup> <a name="binary_data_input" id="@cdktn/provider-kubernetes.secret.Secret.property.binaryDataInput"></a>
 
 ```python
 binary_data_input: typing.Mapping[str]
@@ -1108,7 +1108,7 @@ binary_data_input: typing.Mapping[str]
 
 ---
 
-##### `binary_data_wo_input`<sup>Optional</sup> <a name="binary_data_wo_input" id="@cdktf/provider-kubernetes.secret.Secret.property.binaryDataWoInput"></a>
+##### `binary_data_wo_input`<sup>Optional</sup> <a name="binary_data_wo_input" id="@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWoInput"></a>
 
 ```python
 binary_data_wo_input: typing.Mapping[str]
@@ -1118,7 +1118,7 @@ binary_data_wo_input: typing.Mapping[str]
 
 ---
 
-##### `binary_data_wo_revision_input`<sup>Optional</sup> <a name="binary_data_wo_revision_input" id="@cdktf/provider-kubernetes.secret.Secret.property.binaryDataWoRevisionInput"></a>
+##### `binary_data_wo_revision_input`<sup>Optional</sup> <a name="binary_data_wo_revision_input" id="@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWoRevisionInput"></a>
 
 ```python
 binary_data_wo_revision_input: typing.Union[int, float]
@@ -1128,7 +1128,7 @@ binary_data_wo_revision_input: typing.Union[int, float]
 
 ---
 
-##### `data_input`<sup>Optional</sup> <a name="data_input" id="@cdktf/provider-kubernetes.secret.Secret.property.dataInput"></a>
+##### `data_input`<sup>Optional</sup> <a name="data_input" id="@cdktn/provider-kubernetes.secret.Secret.property.dataInput"></a>
 
 ```python
 data_input: typing.Mapping[str]
@@ -1138,7 +1138,7 @@ data_input: typing.Mapping[str]
 
 ---
 
-##### `data_wo_input`<sup>Optional</sup> <a name="data_wo_input" id="@cdktf/provider-kubernetes.secret.Secret.property.dataWoInput"></a>
+##### `data_wo_input`<sup>Optional</sup> <a name="data_wo_input" id="@cdktn/provider-kubernetes.secret.Secret.property.dataWoInput"></a>
 
 ```python
 data_wo_input: typing.Mapping[str]
@@ -1148,7 +1148,7 @@ data_wo_input: typing.Mapping[str]
 
 ---
 
-##### `data_wo_revision_input`<sup>Optional</sup> <a name="data_wo_revision_input" id="@cdktf/provider-kubernetes.secret.Secret.property.dataWoRevisionInput"></a>
+##### `data_wo_revision_input`<sup>Optional</sup> <a name="data_wo_revision_input" id="@cdktn/provider-kubernetes.secret.Secret.property.dataWoRevisionInput"></a>
 
 ```python
 data_wo_revision_input: typing.Union[int, float]
@@ -1158,7 +1158,7 @@ data_wo_revision_input: typing.Union[int, float]
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-kubernetes.secret.Secret.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-kubernetes.secret.Secret.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1168,7 +1168,7 @@ id_input: str
 
 ---
 
-##### `immutable_input`<sup>Optional</sup> <a name="immutable_input" id="@cdktf/provider-kubernetes.secret.Secret.property.immutableInput"></a>
+##### `immutable_input`<sup>Optional</sup> <a name="immutable_input" id="@cdktn/provider-kubernetes.secret.Secret.property.immutableInput"></a>
 
 ```python
 immutable_input: bool | IResolvable
@@ -1178,27 +1178,27 @@ immutable_input: bool | IResolvable
 
 ---
 
-##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktf/provider-kubernetes.secret.Secret.property.metadataInput"></a>
+##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktn/provider-kubernetes.secret.Secret.property.metadataInput"></a>
 
 ```python
 metadata_input: SecretMetadata
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a>
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-kubernetes.secret.Secret.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-kubernetes.secret.Secret.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | SecretTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a>
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-kubernetes.secret.Secret.property.typeInput"></a>
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-kubernetes.secret.Secret.property.typeInput"></a>
 
 ```python
 type_input: str
@@ -1208,7 +1208,7 @@ type_input: str
 
 ---
 
-##### `wait_for_service_account_token_input`<sup>Optional</sup> <a name="wait_for_service_account_token_input" id="@cdktf/provider-kubernetes.secret.Secret.property.waitForServiceAccountTokenInput"></a>
+##### `wait_for_service_account_token_input`<sup>Optional</sup> <a name="wait_for_service_account_token_input" id="@cdktn/provider-kubernetes.secret.Secret.property.waitForServiceAccountTokenInput"></a>
 
 ```python
 wait_for_service_account_token_input: bool | IResolvable
@@ -1218,7 +1218,7 @@ wait_for_service_account_token_input: bool | IResolvable
 
 ---
 
-##### `binary_data`<sup>Required</sup> <a name="binary_data" id="@cdktf/provider-kubernetes.secret.Secret.property.binaryData"></a>
+##### `binary_data`<sup>Required</sup> <a name="binary_data" id="@cdktn/provider-kubernetes.secret.Secret.property.binaryData"></a>
 
 ```python
 binary_data: typing.Mapping[str]
@@ -1228,7 +1228,7 @@ binary_data: typing.Mapping[str]
 
 ---
 
-##### `binary_data_wo`<sup>Required</sup> <a name="binary_data_wo" id="@cdktf/provider-kubernetes.secret.Secret.property.binaryDataWo"></a>
+##### `binary_data_wo`<sup>Required</sup> <a name="binary_data_wo" id="@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWo"></a>
 
 ```python
 binary_data_wo: typing.Mapping[str]
@@ -1238,7 +1238,7 @@ binary_data_wo: typing.Mapping[str]
 
 ---
 
-##### `binary_data_wo_revision`<sup>Required</sup> <a name="binary_data_wo_revision" id="@cdktf/provider-kubernetes.secret.Secret.property.binaryDataWoRevision"></a>
+##### `binary_data_wo_revision`<sup>Required</sup> <a name="binary_data_wo_revision" id="@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWoRevision"></a>
 
 ```python
 binary_data_wo_revision: typing.Union[int, float]
@@ -1248,7 +1248,7 @@ binary_data_wo_revision: typing.Union[int, float]
 
 ---
 
-##### `data`<sup>Required</sup> <a name="data" id="@cdktf/provider-kubernetes.secret.Secret.property.data"></a>
+##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-kubernetes.secret.Secret.property.data"></a>
 
 ```python
 data: typing.Mapping[str]
@@ -1258,7 +1258,7 @@ data: typing.Mapping[str]
 
 ---
 
-##### `data_wo`<sup>Required</sup> <a name="data_wo" id="@cdktf/provider-kubernetes.secret.Secret.property.dataWo"></a>
+##### `data_wo`<sup>Required</sup> <a name="data_wo" id="@cdktn/provider-kubernetes.secret.Secret.property.dataWo"></a>
 
 ```python
 data_wo: typing.Mapping[str]
@@ -1268,7 +1268,7 @@ data_wo: typing.Mapping[str]
 
 ---
 
-##### `data_wo_revision`<sup>Required</sup> <a name="data_wo_revision" id="@cdktf/provider-kubernetes.secret.Secret.property.dataWoRevision"></a>
+##### `data_wo_revision`<sup>Required</sup> <a name="data_wo_revision" id="@cdktn/provider-kubernetes.secret.Secret.property.dataWoRevision"></a>
 
 ```python
 data_wo_revision: typing.Union[int, float]
@@ -1278,7 +1278,7 @@ data_wo_revision: typing.Union[int, float]
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.secret.Secret.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secret.Secret.property.id"></a>
 
 ```python
 id: str
@@ -1288,7 +1288,7 @@ id: str
 
 ---
 
-##### `immutable`<sup>Required</sup> <a name="immutable" id="@cdktf/provider-kubernetes.secret.Secret.property.immutable"></a>
+##### `immutable`<sup>Required</sup> <a name="immutable" id="@cdktn/provider-kubernetes.secret.Secret.property.immutable"></a>
 
 ```python
 immutable: bool | IResolvable
@@ -1298,7 +1298,7 @@ immutable: bool | IResolvable
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-kubernetes.secret.Secret.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-kubernetes.secret.Secret.property.type"></a>
 
 ```python
 type: str
@@ -1308,7 +1308,7 @@ type: str
 
 ---
 
-##### `wait_for_service_account_token`<sup>Required</sup> <a name="wait_for_service_account_token" id="@cdktf/provider-kubernetes.secret.Secret.property.waitForServiceAccountToken"></a>
+##### `wait_for_service_account_token`<sup>Required</sup> <a name="wait_for_service_account_token" id="@cdktn/provider-kubernetes.secret.Secret.property.waitForServiceAccountToken"></a>
 
 ```python
 wait_for_service_account_token: bool | IResolvable
@@ -1322,11 +1322,11 @@ wait_for_service_account_token: bool | IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.Secret.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.Secret.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-kubernetes.secret.Secret.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-kubernetes.secret.Secret.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1338,12 +1338,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SecretConfig <a name="SecretConfig" id="@cdktf/provider-kubernetes.secret.SecretConfig"></a>
+### SecretConfig <a name="SecretConfig" id="@cdktn/provider-kubernetes.secret.SecretConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-kubernetes.secret.SecretConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.secret.SecretConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import secret
+from cdktn_provider_kubernetes import secret
 
 secret.SecretConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1372,29 +1372,29 @@ secret.SecretConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.binaryData">binary_data</a></code> | <code>typing.Mapping[str]</code> | A map of the secret data in base64 encoding. Use this for binary data. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.binaryDataWo">binary_data_wo</a></code> | <code>typing.Mapping[str]</code> | A write-only map of the secret data in base64 encoding. Use this for binary data. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.binaryDataWoRevision">binary_data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | The current revision of the write-only "binary_data_wo" attribute. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.data">data</a></code> | <code>typing.Mapping[str]</code> | A map of the secret data. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.dataWo">data_wo</a></code> | <code>typing.Mapping[str]</code> | A map write-only of the secret data. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.dataWoRevision">data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | The current revision of the write-only "data_wo" attribute. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret#id Secret#id}. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.immutable">immutable</a></code> | <code>bool \| cdktf.IResolvable</code> | Ensures that data stored in the Secret cannot be updated (only object metadata can be modified). |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.type">type</a></code> | <code>str</code> | Type of secret. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretConfig.property.waitForServiceAccountToken">wait_for_service_account_token</a></code> | <code>bool \| cdktf.IResolvable</code> | Terraform will wait for the service account token to be created. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a></code> | metadata block. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.binaryData">binary_data</a></code> | <code>typing.Mapping[str]</code> | A map of the secret data in base64 encoding. Use this for binary data. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.binaryDataWo">binary_data_wo</a></code> | <code>typing.Mapping[str]</code> | A write-only map of the secret data in base64 encoding. Use this for binary data. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.binaryDataWoRevision">binary_data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | The current revision of the write-only "binary_data_wo" attribute. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.data">data</a></code> | <code>typing.Mapping[str]</code> | A map of the secret data. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.dataWo">data_wo</a></code> | <code>typing.Mapping[str]</code> | A map write-only of the secret data. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.dataWoRevision">data_wo_revision</a></code> | <code>typing.Union[int, float]</code> | The current revision of the write-only "data_wo" attribute. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret#id Secret#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.immutable">immutable</a></code> | <code>bool \| cdktf.IResolvable</code> | Ensures that data stored in the Secret cannot be updated (only object metadata can be modified). |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.type">type</a></code> | <code>str</code> | Type of secret. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretConfig.property.waitForServiceAccountToken">wait_for_service_account_token</a></code> | <code>bool \| cdktf.IResolvable</code> | Terraform will wait for the service account token to be created. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1404,7 +1404,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1414,7 +1414,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1424,7 +1424,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1434,7 +1434,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1444,7 +1444,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1454,7 +1454,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1464,13 +1464,13 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.metadata"></a>
 
 ```python
 metadata: SecretMetadata
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a>
 
 metadata block.
 
@@ -1478,7 +1478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `binary_data`<sup>Optional</sup> <a name="binary_data" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.binaryData"></a>
+##### `binary_data`<sup>Optional</sup> <a name="binary_data" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.binaryData"></a>
 
 ```python
 binary_data: typing.Mapping[str]
@@ -1492,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `binary_data_wo`<sup>Optional</sup> <a name="binary_data_wo" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.binaryDataWo"></a>
+##### `binary_data_wo`<sup>Optional</sup> <a name="binary_data_wo" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.binaryDataWo"></a>
 
 ```python
 binary_data_wo: typing.Mapping[str]
@@ -1506,7 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `binary_data_wo_revision`<sup>Optional</sup> <a name="binary_data_wo_revision" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.binaryDataWoRevision"></a>
+##### `binary_data_wo_revision`<sup>Optional</sup> <a name="binary_data_wo_revision" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.binaryDataWoRevision"></a>
 
 ```python
 binary_data_wo_revision: typing.Union[int, float]
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `data`<sup>Optional</sup> <a name="data" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.data"></a>
+##### `data`<sup>Optional</sup> <a name="data" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.data"></a>
 
 ```python
 data: typing.Mapping[str]
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `data_wo`<sup>Optional</sup> <a name="data_wo" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.dataWo"></a>
+##### `data_wo`<sup>Optional</sup> <a name="data_wo" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.dataWo"></a>
 
 ```python
 data_wo: typing.Mapping[str]
@@ -1550,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `data_wo_revision`<sup>Optional</sup> <a name="data_wo_revision" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.dataWoRevision"></a>
+##### `data_wo_revision`<sup>Optional</sup> <a name="data_wo_revision" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.dataWoRevision"></a>
 
 ```python
 data_wo_revision: typing.Union[int, float]
@@ -1566,7 +1566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.id"></a>
 
 ```python
 id: str
@@ -1581,7 +1581,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `immutable`<sup>Optional</sup> <a name="immutable" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.immutable"></a>
+##### `immutable`<sup>Optional</sup> <a name="immutable" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.immutable"></a>
 
 ```python
 immutable: bool | IResolvable
@@ -1595,13 +1595,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.timeouts"></a>
 
 ```python
 timeouts: SecretTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a>
 
 timeouts block.
 
@@ -1609,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.type"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.type"></a>
 
 ```python
 type: str
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `wait_for_service_account_token`<sup>Optional</sup> <a name="wait_for_service_account_token" id="@cdktf/provider-kubernetes.secret.SecretConfig.property.waitForServiceAccountToken"></a>
+##### `wait_for_service_account_token`<sup>Optional</sup> <a name="wait_for_service_account_token" id="@cdktn/provider-kubernetes.secret.SecretConfig.property.waitForServiceAccountToken"></a>
 
 ```python
 wait_for_service_account_token: bool | IResolvable
@@ -1637,12 +1637,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### SecretMetadata <a name="SecretMetadata" id="@cdktf/provider-kubernetes.secret.SecretMetadata"></a>
+### SecretMetadata <a name="SecretMetadata" id="@cdktn/provider-kubernetes.secret.SecretMetadata"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-kubernetes.secret.SecretMetadata.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.secret.SecretMetadata.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import secret
+from cdktn_provider_kubernetes import secret
 
 secret.SecretMetadata(
   annotations: typing.Mapping[str] = None,
@@ -1657,15 +1657,15 @@ secret.SecretMetadata(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadata.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | An unstructured key value map stored with the secret that may be used to store arbitrary metadata. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadata.property.generateName">generate_name</a></code> | <code>str</code> | Prefix, used by the server, to generate a unique name ONLY IF the `name` field has not been provided. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadata.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Map of string keys and values that can be used to organize and categorize (scope and select) the secret. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadata.property.name">name</a></code> | <code>str</code> | Name of the secret, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadata.property.namespace">namespace</a></code> | <code>str</code> | Namespace defines the space within which name of the secret must be unique. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadata.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | An unstructured key value map stored with the secret that may be used to store arbitrary metadata. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadata.property.generateName">generate_name</a></code> | <code>str</code> | Prefix, used by the server, to generate a unique name ONLY IF the `name` field has not been provided. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadata.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Map of string keys and values that can be used to organize and categorize (scope and select) the secret. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadata.property.name">name</a></code> | <code>str</code> | Name of the secret, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadata.property.namespace">namespace</a></code> | <code>str</code> | Namespace defines the space within which name of the secret must be unique. |
 
 ---
 
-##### `annotations`<sup>Optional</sup> <a name="annotations" id="@cdktf/provider-kubernetes.secret.SecretMetadata.property.annotations"></a>
+##### `annotations`<sup>Optional</sup> <a name="annotations" id="@cdktn/provider-kubernetes.secret.SecretMetadata.property.annotations"></a>
 
 ```python
 annotations: typing.Mapping[str]
@@ -1681,7 +1681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `generate_name`<sup>Optional</sup> <a name="generate_name" id="@cdktf/provider-kubernetes.secret.SecretMetadata.property.generateName"></a>
+##### `generate_name`<sup>Optional</sup> <a name="generate_name" id="@cdktn/provider-kubernetes.secret.SecretMetadata.property.generateName"></a>
 
 ```python
 generate_name: str
@@ -1697,7 +1697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-kubernetes.secret.SecretMetadata.property.labels"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-kubernetes.secret.SecretMetadata.property.labels"></a>
 
 ```python
 labels: typing.Mapping[str]
@@ -1713,7 +1713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-kubernetes.secret.SecretMetadata.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-kubernetes.secret.SecretMetadata.property.name"></a>
 
 ```python
 name: str
@@ -1727,7 +1727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-kubernetes.secret.SecretMetadata.property.namespace"></a>
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-kubernetes.secret.SecretMetadata.property.namespace"></a>
 
 ```python
 namespace: str
@@ -1741,12 +1741,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### SecretTimeouts <a name="SecretTimeouts" id="@cdktf/provider-kubernetes.secret.SecretTimeouts"></a>
+### SecretTimeouts <a name="SecretTimeouts" id="@cdktn/provider-kubernetes.secret.SecretTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-kubernetes.secret.SecretTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.secret.SecretTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import secret
+from cdktn_provider_kubernetes import secret
 
 secret.SecretTimeouts(
   create: str = None
@@ -1757,11 +1757,11 @@ secret.SecretTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret#create Secret#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret#create Secret#create}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-kubernetes.secret.SecretTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-kubernetes.secret.SecretTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1775,12 +1775,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### SecretMetadataOutputReference <a name="SecretMetadataOutputReference" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference"></a>
+### SecretMetadataOutputReference <a name="SecretMetadataOutputReference" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import secret
+from cdktn_provider_kubernetes import secret
 
 secret.SecretMetadataOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1790,12 +1790,12 @@ secret.SecretMetadataOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1803,7 +1803,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1815,34 +1815,34 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resetAnnotations">reset_annotations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resetGenerateName">reset_generate_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resetLabels">reset_labels</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resetName">reset_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resetNamespace">reset_namespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resetAnnotations">reset_annotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resetGenerateName">reset_generate_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resetLabels">reset_labels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resetNamespace">reset_namespace</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1850,13 +1850,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1864,13 +1864,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1878,13 +1878,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1892,13 +1892,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1906,13 +1906,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1920,13 +1920,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1934,13 +1934,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1948,13 +1948,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1962,13 +1962,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1976,13 +1976,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1992,13 +1992,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2008,31 +2008,31 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_annotations` <a name="reset_annotations" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resetAnnotations"></a>
+##### `reset_annotations` <a name="reset_annotations" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resetAnnotations"></a>
 
 ```python
 def reset_annotations() -> None
 ```
 
-##### `reset_generate_name` <a name="reset_generate_name" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resetGenerateName"></a>
+##### `reset_generate_name` <a name="reset_generate_name" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resetGenerateName"></a>
 
 ```python
 def reset_generate_name() -> None
 ```
 
-##### `reset_labels` <a name="reset_labels" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resetLabels"></a>
+##### `reset_labels` <a name="reset_labels" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resetLabels"></a>
 
 ```python
 def reset_labels() -> None
 ```
 
-##### `reset_name` <a name="reset_name" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resetName"></a>
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resetName"></a>
 
 ```python
 def reset_name() -> None
 ```
 
-##### `reset_namespace` <a name="reset_namespace" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.resetNamespace"></a>
+##### `reset_namespace` <a name="reset_namespace" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.resetNamespace"></a>
 
 ```python
 def reset_namespace() -> None
@@ -2043,26 +2043,26 @@ def reset_namespace() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.generation">generation</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.resourceVersion">resource_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.uid">uid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.annotationsInput">annotations_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.generateNameInput">generate_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.generateName">generate_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.generation">generation</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.resourceVersion">resource_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.uid">uid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.annotationsInput">annotations_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.generateNameInput">generate_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.generateName">generate_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2076,7 +2076,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2086,7 +2086,7 @@ fqn: str
 
 ---
 
-##### `generation`<sup>Required</sup> <a name="generation" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.generation"></a>
+##### `generation`<sup>Required</sup> <a name="generation" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.generation"></a>
 
 ```python
 generation: typing.Union[int, float]
@@ -2096,7 +2096,7 @@ generation: typing.Union[int, float]
 
 ---
 
-##### `resource_version`<sup>Required</sup> <a name="resource_version" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.resourceVersion"></a>
+##### `resource_version`<sup>Required</sup> <a name="resource_version" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.resourceVersion"></a>
 
 ```python
 resource_version: str
@@ -2106,7 +2106,7 @@ resource_version: str
 
 ---
 
-##### `uid`<sup>Required</sup> <a name="uid" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.uid"></a>
+##### `uid`<sup>Required</sup> <a name="uid" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.uid"></a>
 
 ```python
 uid: str
@@ -2116,7 +2116,7 @@ uid: str
 
 ---
 
-##### `annotations_input`<sup>Optional</sup> <a name="annotations_input" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.annotationsInput"></a>
+##### `annotations_input`<sup>Optional</sup> <a name="annotations_input" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.annotationsInput"></a>
 
 ```python
 annotations_input: typing.Mapping[str]
@@ -2126,7 +2126,7 @@ annotations_input: typing.Mapping[str]
 
 ---
 
-##### `generate_name_input`<sup>Optional</sup> <a name="generate_name_input" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.generateNameInput"></a>
+##### `generate_name_input`<sup>Optional</sup> <a name="generate_name_input" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.generateNameInput"></a>
 
 ```python
 generate_name_input: str
@@ -2136,7 +2136,7 @@ generate_name_input: str
 
 ---
 
-##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.labelsInput"></a>
+##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.labelsInput"></a>
 
 ```python
 labels_input: typing.Mapping[str]
@@ -2146,7 +2146,7 @@ labels_input: typing.Mapping[str]
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -2156,7 +2156,7 @@ name_input: str
 
 ---
 
-##### `namespace_input`<sup>Optional</sup> <a name="namespace_input" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.namespaceInput"></a>
+##### `namespace_input`<sup>Optional</sup> <a name="namespace_input" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.namespaceInput"></a>
 
 ```python
 namespace_input: str
@@ -2166,7 +2166,7 @@ namespace_input: str
 
 ---
 
-##### `annotations`<sup>Required</sup> <a name="annotations" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.annotations"></a>
+##### `annotations`<sup>Required</sup> <a name="annotations" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.annotations"></a>
 
 ```python
 annotations: typing.Mapping[str]
@@ -2176,7 +2176,7 @@ annotations: typing.Mapping[str]
 
 ---
 
-##### `generate_name`<sup>Required</sup> <a name="generate_name" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.generateName"></a>
+##### `generate_name`<sup>Required</sup> <a name="generate_name" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.generateName"></a>
 
 ```python
 generate_name: str
@@ -2186,7 +2186,7 @@ generate_name: str
 
 ---
 
-##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.labels"></a>
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.labels"></a>
 
 ```python
 labels: typing.Mapping[str]
@@ -2196,7 +2196,7 @@ labels: typing.Mapping[str]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.name"></a>
 
 ```python
 name: str
@@ -2206,7 +2206,7 @@ name: str
 
 ---
 
-##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.namespace"></a>
+##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.namespace"></a>
 
 ```python
 namespace: str
@@ -2216,23 +2216,23 @@ namespace: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-kubernetes.secret.SecretMetadataOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-kubernetes.secret.SecretMetadataOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: SecretMetadata
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secret.SecretMetadata">SecretMetadata</a>
 
 ---
 
 
-### SecretTimeoutsOutputReference <a name="SecretTimeoutsOutputReference" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference"></a>
+### SecretTimeoutsOutputReference <a name="SecretTimeoutsOutputReference" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_kubernetes import secret
+from cdktn_provider_kubernetes import secret
 
 secret.SecretTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2242,12 +2242,12 @@ secret.SecretTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2255,7 +2255,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2267,30 +2267,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2298,13 +2298,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2312,13 +2312,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2326,13 +2326,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2340,13 +2340,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2354,13 +2354,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2368,13 +2368,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2382,13 +2382,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2396,13 +2396,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2410,13 +2410,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2424,13 +2424,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2440,13 +2440,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2456,7 +2456,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
@@ -2467,15 +2467,15 @@ def reset_create() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2489,7 +2489,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2499,7 +2499,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2509,7 +2509,7 @@ create_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2519,13 +2519,13 @@ create: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-kubernetes.secret.SecretTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | SecretTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.secret.SecretTimeouts">SecretTimeouts</a>
 
 ---
 

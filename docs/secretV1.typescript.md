@@ -1,28 +1,28 @@
-# `secretV1` Submodule <a name="`secretV1` Submodule" id="@cdktf/provider-kubernetes.secretV1"></a>
+# `secretV1` Submodule <a name="`secretV1` Submodule" id="@cdktn/provider-kubernetes.secretV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### SecretV1 <a name="SecretV1" id="@cdktf/provider-kubernetes.secretV1.SecretV1"></a>
+### SecretV1 <a name="SecretV1" id="@cdktn/provider-kubernetes.secretV1.SecretV1"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1 kubernetes_secret_v1}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-kubernetes.secretV1.SecretV1.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.secretV1.SecretV1.Initializer"></a>
 
 ```typescript
-import { secretV1 } from '@cdktf/provider-kubernetes'
+import { secretV1 } from '@cdktn/provider-kubernetes'
 
 new secretV1.SecretV1(scope: Construct, id: string, config: SecretV1Config)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config">SecretV1Config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config">SecretV1Config</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-kubernetes.secretV1.SecretV1.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config">SecretV1Config</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config">SecretV1Config</a>
 
 ---
 
@@ -50,46 +50,46 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.putMetadata">putMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetBinaryData">resetBinaryData</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetBinaryDataWo">resetBinaryDataWo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetBinaryDataWoRevision">resetBinaryDataWoRevision</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetData">resetData</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetDataWo">resetDataWo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetDataWoRevision">resetDataWoRevision</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetImmutable">resetImmutable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetTimeouts">resetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetType">resetType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.resetWaitForServiceAccountToken">resetWaitForServiceAccountToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.putMetadata">putMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetBinaryData">resetBinaryData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetBinaryDataWo">resetBinaryDataWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetBinaryDataWoRevision">resetBinaryDataWoRevision</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetData">resetData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetDataWo">resetDataWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetDataWoRevision">resetDataWoRevision</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetImmutable">resetImmutable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetType">resetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.resetWaitForServiceAccountToken">resetWaitForServiceAccountToken</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-kubernetes.secretV1.SecretV1.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-kubernetes.secretV1.SecretV1.toString"></a>
 
 ```typescript
 public toString(): string
@@ -97,25 +97,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-kubernetes.secretV1.SecretV1.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-kubernetes.secretV1.SecretV1.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-kubernetes.secretV1.SecretV1.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-kubernetes.secretV1.SecretV1.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-kubernetes.secretV1.SecretV1.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.secretV1.SecretV1.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-kubernetes.secretV1.SecretV1.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-kubernetes.secretV1.SecretV1.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -123,7 +123,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-kubernetes.secretV1.SecretV1.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-kubernetes.secretV1.SecretV1.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -131,7 +131,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -139,19 +139,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-kubernetes.secretV1.SecretV1.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-kubernetes.secretV1.SecretV1.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-kubernetes.secretV1.SecretV1.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-kubernetes.secretV1.SecretV1.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-kubernetes.secretV1.SecretV1.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-kubernetes.secretV1.SecretV1.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -159,7 +159,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-kubernetes.secretV1.SecretV1.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-kubernetes.secretV1.SecretV1.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -167,7 +167,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-kubernetes.secretV1.SecretV1.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-kubernetes.secretV1.SecretV1.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -175,151 +175,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-kubernetes.secretV1.SecretV1.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-kubernetes.secretV1.SecretV1.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-kubernetes.secretV1.SecretV1.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-kubernetes.secretV1.SecretV1.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.secretV1.SecretV1.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secretV1.SecretV1.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-kubernetes.secretV1.SecretV1.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.secretV1.SecretV1.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-kubernetes.secretV1.SecretV1.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-kubernetes.secretV1.SecretV1.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -329,7 +329,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.secretV1.SecretV1.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secretV1.SecretV1.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -337,7 +337,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-kubernetes.secretV1.SecretV1.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-kubernetes.secretV1.SecretV1.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -345,7 +345,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-kubernetes.secretV1.SecretV1.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-kubernetes.secretV1.SecretV1.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -353,7 +353,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-kubernetes.secretV1.SecretV1.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-kubernetes.secretV1.SecretV1.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -361,7 +361,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-kubernetes.secretV1.SecretV1.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-kubernetes.secretV1.SecretV1.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -369,7 +369,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.secretV1.SecretV1.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secretV1.SecretV1.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -377,91 +377,91 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putMetadata` <a name="putMetadata" id="@cdktf/provider-kubernetes.secretV1.SecretV1.putMetadata"></a>
+##### `putMetadata` <a name="putMetadata" id="@cdktn/provider-kubernetes.secretV1.SecretV1.putMetadata"></a>
 
 ```typescript
 public putMetadata(value: SecretV1Metadata): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-kubernetes.secretV1.SecretV1.putMetadata.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.secretV1.SecretV1.putMetadata.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a>
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-kubernetes.secretV1.SecretV1.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-kubernetes.secretV1.SecretV1.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: SecretV1Timeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-kubernetes.secretV1.SecretV1.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.secretV1.SecretV1.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a>
 
 ---
 
-##### `resetBinaryData` <a name="resetBinaryData" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetBinaryData"></a>
+##### `resetBinaryData` <a name="resetBinaryData" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetBinaryData"></a>
 
 ```typescript
 public resetBinaryData(): void
 ```
 
-##### `resetBinaryDataWo` <a name="resetBinaryDataWo" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetBinaryDataWo"></a>
+##### `resetBinaryDataWo` <a name="resetBinaryDataWo" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetBinaryDataWo"></a>
 
 ```typescript
 public resetBinaryDataWo(): void
 ```
 
-##### `resetBinaryDataWoRevision` <a name="resetBinaryDataWoRevision" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetBinaryDataWoRevision"></a>
+##### `resetBinaryDataWoRevision` <a name="resetBinaryDataWoRevision" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetBinaryDataWoRevision"></a>
 
 ```typescript
 public resetBinaryDataWoRevision(): void
 ```
 
-##### `resetData` <a name="resetData" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetData"></a>
+##### `resetData` <a name="resetData" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetData"></a>
 
 ```typescript
 public resetData(): void
 ```
 
-##### `resetDataWo` <a name="resetDataWo" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetDataWo"></a>
+##### `resetDataWo` <a name="resetDataWo" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetDataWo"></a>
 
 ```typescript
 public resetDataWo(): void
 ```
 
-##### `resetDataWoRevision` <a name="resetDataWoRevision" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetDataWoRevision"></a>
+##### `resetDataWoRevision` <a name="resetDataWoRevision" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetDataWoRevision"></a>
 
 ```typescript
 public resetDataWoRevision(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetImmutable` <a name="resetImmutable" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetImmutable"></a>
+##### `resetImmutable` <a name="resetImmutable" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetImmutable"></a>
 
 ```typescript
 public resetImmutable(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
 ```
 
-##### `resetType` <a name="resetType" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetType"></a>
+##### `resetType` <a name="resetType" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetType"></a>
 
 ```typescript
 public resetType(): void
 ```
 
-##### `resetWaitForServiceAccountToken` <a name="resetWaitForServiceAccountToken" id="@cdktf/provider-kubernetes.secretV1.SecretV1.resetWaitForServiceAccountToken"></a>
+##### `resetWaitForServiceAccountToken` <a name="resetWaitForServiceAccountToken" id="@cdktn/provider-kubernetes.secretV1.SecretV1.resetWaitForServiceAccountToken"></a>
 
 ```typescript
 public resetWaitForServiceAccountToken(): void
@@ -471,17 +471,17 @@ public resetWaitForServiceAccountToken(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a SecretV1 resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a SecretV1 resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-kubernetes.secretV1.SecretV1.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-kubernetes.secretV1.SecretV1.isConstruct"></a>
 
 ```typescript
-import { secretV1 } from '@cdktf/provider-kubernetes'
+import { secretV1 } from '@cdktn/provider-kubernetes'
 
 secretV1.SecretV1.isConstruct(x: any)
 ```
@@ -502,7 +502,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-kubernetes.secretV1.SecretV1.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-kubernetes.secretV1.SecretV1.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -510,45 +510,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-kubernetes.secretV1.SecretV1.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-kubernetes.secretV1.SecretV1.isTerraformElement"></a>
 
 ```typescript
-import { secretV1 } from '@cdktf/provider-kubernetes'
+import { secretV1 } from '@cdktn/provider-kubernetes'
 
 secretV1.SecretV1.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-kubernetes.secretV1.SecretV1.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-kubernetes.secretV1.SecretV1.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-kubernetes.secretV1.SecretV1.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-kubernetes.secretV1.SecretV1.isTerraformResource"></a>
 
 ```typescript
-import { secretV1 } from '@cdktf/provider-kubernetes'
+import { secretV1 } from '@cdktn/provider-kubernetes'
 
 secretV1.SecretV1.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-kubernetes.secretV1.SecretV1.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-kubernetes.secretV1.SecretV1.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-kubernetes.secretV1.SecretV1.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-kubernetes.secretV1.SecretV1.generateConfigForImport"></a>
 
 ```typescript
-import { secretV1 } from '@cdktf/provider-kubernetes'
+import { secretV1 } from '@cdktn/provider-kubernetes'
 
 secretV1.SecretV1.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a SecretV1 resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-kubernetes.secretV1.SecretV1.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-kubernetes.secretV1.SecretV1.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -556,7 +556,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-kubernetes.secretV1.SecretV1.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-kubernetes.secretV1.SecretV1.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the SecretV1 to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-kubernetes.secretV1.SecretV1.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-kubernetes.secretV1.SecretV1.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -574,7 +574,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-kubernetes.secretV1.SecretV1.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.secretV1.SecretV1.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -586,48 +586,48 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference">SecretV1MetadataOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference">SecretV1TimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryDataInput">binaryDataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoInput">binaryDataWoInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoRevisionInput">binaryDataWoRevisionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.dataInput">dataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.dataWoInput">dataWoInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.dataWoRevisionInput">dataWoRevisionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.immutableInput">immutableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.metadataInput">metadataInput</a></code> | <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.waitForServiceAccountTokenInput">waitForServiceAccountTokenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryData">binaryData</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryDataWo">binaryDataWo</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoRevision">binaryDataWoRevision</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.data">data</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.dataWo">dataWo</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.dataWoRevision">dataWoRevision</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.immutable">immutable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.waitForServiceAccountToken">waitForServiceAccountToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference">SecretV1MetadataOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference">SecretV1TimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataInput">binaryDataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoInput">binaryDataWoInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoRevisionInput">binaryDataWoRevisionInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataInput">dataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataWoInput">dataWoInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataWoRevisionInput">dataWoRevisionInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.immutableInput">immutableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.metadataInput">metadataInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.waitForServiceAccountTokenInput">waitForServiceAccountTokenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryData">binaryData</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataWo">binaryDataWo</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoRevision">binaryDataWoRevision</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.data">data</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataWo">dataWo</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataWoRevision">dataWoRevision</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.immutable">immutable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.waitForServiceAccountToken">waitForServiceAccountToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -639,7 +639,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -649,7 +649,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -659,7 +659,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -669,7 +669,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -679,7 +679,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -689,7 +689,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -699,7 +699,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -709,7 +709,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -719,7 +719,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -729,7 +729,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -739,7 +739,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -749,7 +749,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -759,7 +759,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -769,27 +769,27 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.metadata"></a>
 
 ```typescript
 public readonly metadata: SecretV1MetadataOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference">SecretV1MetadataOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference">SecretV1MetadataOutputReference</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: SecretV1TimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference">SecretV1TimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference">SecretV1TimeoutsOutputReference</a>
 
 ---
 
-##### `binaryDataInput`<sup>Optional</sup> <a name="binaryDataInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryDataInput"></a>
+##### `binaryDataInput`<sup>Optional</sup> <a name="binaryDataInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataInput"></a>
 
 ```typescript
 public readonly binaryDataInput: {[ key: string ]: string};
@@ -799,7 +799,7 @@ public readonly binaryDataInput: {[ key: string ]: string};
 
 ---
 
-##### `binaryDataWoInput`<sup>Optional</sup> <a name="binaryDataWoInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoInput"></a>
+##### `binaryDataWoInput`<sup>Optional</sup> <a name="binaryDataWoInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoInput"></a>
 
 ```typescript
 public readonly binaryDataWoInput: {[ key: string ]: string};
@@ -809,7 +809,7 @@ public readonly binaryDataWoInput: {[ key: string ]: string};
 
 ---
 
-##### `binaryDataWoRevisionInput`<sup>Optional</sup> <a name="binaryDataWoRevisionInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoRevisionInput"></a>
+##### `binaryDataWoRevisionInput`<sup>Optional</sup> <a name="binaryDataWoRevisionInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoRevisionInput"></a>
 
 ```typescript
 public readonly binaryDataWoRevisionInput: number;
@@ -819,7 +819,7 @@ public readonly binaryDataWoRevisionInput: number;
 
 ---
 
-##### `dataInput`<sup>Optional</sup> <a name="dataInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.dataInput"></a>
+##### `dataInput`<sup>Optional</sup> <a name="dataInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataInput"></a>
 
 ```typescript
 public readonly dataInput: {[ key: string ]: string};
@@ -829,7 +829,7 @@ public readonly dataInput: {[ key: string ]: string};
 
 ---
 
-##### `dataWoInput`<sup>Optional</sup> <a name="dataWoInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.dataWoInput"></a>
+##### `dataWoInput`<sup>Optional</sup> <a name="dataWoInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataWoInput"></a>
 
 ```typescript
 public readonly dataWoInput: {[ key: string ]: string};
@@ -839,7 +839,7 @@ public readonly dataWoInput: {[ key: string ]: string};
 
 ---
 
-##### `dataWoRevisionInput`<sup>Optional</sup> <a name="dataWoRevisionInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.dataWoRevisionInput"></a>
+##### `dataWoRevisionInput`<sup>Optional</sup> <a name="dataWoRevisionInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataWoRevisionInput"></a>
 
 ```typescript
 public readonly dataWoRevisionInput: number;
@@ -849,7 +849,7 @@ public readonly dataWoRevisionInput: number;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -859,7 +859,7 @@ public readonly idInput: string;
 
 ---
 
-##### `immutableInput`<sup>Optional</sup> <a name="immutableInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.immutableInput"></a>
+##### `immutableInput`<sup>Optional</sup> <a name="immutableInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.immutableInput"></a>
 
 ```typescript
 public readonly immutableInput: boolean | IResolvable;
@@ -869,27 +869,27 @@ public readonly immutableInput: boolean | IResolvable;
 
 ---
 
-##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.metadataInput"></a>
+##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.metadataInput"></a>
 
 ```typescript
 public readonly metadataInput: SecretV1Metadata;
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a>
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | SecretV1Timeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a>
 
 ---
 
-##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.typeInput"></a>
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.typeInput"></a>
 
 ```typescript
 public readonly typeInput: string;
@@ -899,7 +899,7 @@ public readonly typeInput: string;
 
 ---
 
-##### `waitForServiceAccountTokenInput`<sup>Optional</sup> <a name="waitForServiceAccountTokenInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.waitForServiceAccountTokenInput"></a>
+##### `waitForServiceAccountTokenInput`<sup>Optional</sup> <a name="waitForServiceAccountTokenInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.waitForServiceAccountTokenInput"></a>
 
 ```typescript
 public readonly waitForServiceAccountTokenInput: boolean | IResolvable;
@@ -909,7 +909,7 @@ public readonly waitForServiceAccountTokenInput: boolean | IResolvable;
 
 ---
 
-##### `binaryData`<sup>Required</sup> <a name="binaryData" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryData"></a>
+##### `binaryData`<sup>Required</sup> <a name="binaryData" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryData"></a>
 
 ```typescript
 public readonly binaryData: {[ key: string ]: string};
@@ -919,7 +919,7 @@ public readonly binaryData: {[ key: string ]: string};
 
 ---
 
-##### `binaryDataWo`<sup>Required</sup> <a name="binaryDataWo" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryDataWo"></a>
+##### `binaryDataWo`<sup>Required</sup> <a name="binaryDataWo" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataWo"></a>
 
 ```typescript
 public readonly binaryDataWo: {[ key: string ]: string};
@@ -929,7 +929,7 @@ public readonly binaryDataWo: {[ key: string ]: string};
 
 ---
 
-##### `binaryDataWoRevision`<sup>Required</sup> <a name="binaryDataWoRevision" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoRevision"></a>
+##### `binaryDataWoRevision`<sup>Required</sup> <a name="binaryDataWoRevision" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataWoRevision"></a>
 
 ```typescript
 public readonly binaryDataWoRevision: number;
@@ -939,7 +939,7 @@ public readonly binaryDataWoRevision: number;
 
 ---
 
-##### `data`<sup>Required</sup> <a name="data" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.data"></a>
+##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.data"></a>
 
 ```typescript
 public readonly data: {[ key: string ]: string};
@@ -949,7 +949,7 @@ public readonly data: {[ key: string ]: string};
 
 ---
 
-##### `dataWo`<sup>Required</sup> <a name="dataWo" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.dataWo"></a>
+##### `dataWo`<sup>Required</sup> <a name="dataWo" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataWo"></a>
 
 ```typescript
 public readonly dataWo: {[ key: string ]: string};
@@ -959,7 +959,7 @@ public readonly dataWo: {[ key: string ]: string};
 
 ---
 
-##### `dataWoRevision`<sup>Required</sup> <a name="dataWoRevision" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.dataWoRevision"></a>
+##### `dataWoRevision`<sup>Required</sup> <a name="dataWoRevision" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataWoRevision"></a>
 
 ```typescript
 public readonly dataWoRevision: number;
@@ -969,7 +969,7 @@ public readonly dataWoRevision: number;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -979,7 +979,7 @@ public readonly id: string;
 
 ---
 
-##### `immutable`<sup>Required</sup> <a name="immutable" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.immutable"></a>
+##### `immutable`<sup>Required</sup> <a name="immutable" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.immutable"></a>
 
 ```typescript
 public readonly immutable: boolean | IResolvable;
@@ -989,7 +989,7 @@ public readonly immutable: boolean | IResolvable;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -999,7 +999,7 @@ public readonly type: string;
 
 ---
 
-##### `waitForServiceAccountToken`<sup>Required</sup> <a name="waitForServiceAccountToken" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.waitForServiceAccountToken"></a>
+##### `waitForServiceAccountToken`<sup>Required</sup> <a name="waitForServiceAccountToken" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.waitForServiceAccountToken"></a>
 
 ```typescript
 public readonly waitForServiceAccountToken: boolean | IResolvable;
@@ -1013,11 +1013,11 @@ public readonly waitForServiceAccountToken: boolean | IResolvable;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-kubernetes.secretV1.SecretV1.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1029,12 +1029,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SecretV1Config <a name="SecretV1Config" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config"></a>
+### SecretV1Config <a name="SecretV1Config" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.Initializer"></a>
 
 ```typescript
-import { secretV1 } from '@cdktf/provider-kubernetes'
+import { secretV1 } from '@cdktn/provider-kubernetes'
 
 const secretV1Config: secretV1.SecretV1Config = { ... }
 ```
@@ -1043,29 +1043,29 @@ const secretV1Config: secretV1.SecretV1Config = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.binaryData">binaryData</a></code> | <code>{[ key: string ]: string}</code> | A map of the secret data in base64 encoding. Use this for binary data. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.binaryDataWo">binaryDataWo</a></code> | <code>{[ key: string ]: string}</code> | A write-only map of the secret data in base64 encoding. Use this for binary data. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.binaryDataWoRevision">binaryDataWoRevision</a></code> | <code>number</code> | The current revision of the write-only "binary_data_wo" attribute. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.data">data</a></code> | <code>{[ key: string ]: string}</code> | A map of the secret data. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.dataWo">dataWo</a></code> | <code>{[ key: string ]: string}</code> | A map write-only of the secret data. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.dataWoRevision">dataWoRevision</a></code> | <code>number</code> | The current revision of the write-only "data_wo" attribute. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1#id SecretV1#id}. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.immutable">immutable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ensures that data stored in the Secret cannot be updated (only object metadata can be modified). |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.type">type</a></code> | <code>string</code> | Type of secret. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.waitForServiceAccountToken">waitForServiceAccountToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | Terraform will wait for the service account token to be created. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a></code> | metadata block. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.binaryData">binaryData</a></code> | <code>{[ key: string ]: string}</code> | A map of the secret data in base64 encoding. Use this for binary data. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.binaryDataWo">binaryDataWo</a></code> | <code>{[ key: string ]: string}</code> | A write-only map of the secret data in base64 encoding. Use this for binary data. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.binaryDataWoRevision">binaryDataWoRevision</a></code> | <code>number</code> | The current revision of the write-only "binary_data_wo" attribute. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.data">data</a></code> | <code>{[ key: string ]: string}</code> | A map of the secret data. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.dataWo">dataWo</a></code> | <code>{[ key: string ]: string}</code> | A map write-only of the secret data. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.dataWoRevision">dataWoRevision</a></code> | <code>number</code> | The current revision of the write-only "data_wo" attribute. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1#id SecretV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.immutable">immutable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ensures that data stored in the Secret cannot be updated (only object metadata can be modified). |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.type">type</a></code> | <code>string</code> | Type of secret. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.waitForServiceAccountToken">waitForServiceAccountToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | Terraform will wait for the service account token to be created. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -1075,7 +1075,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -1085,7 +1085,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -1095,7 +1095,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1105,7 +1105,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1115,7 +1115,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1125,7 +1125,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1135,13 +1135,13 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.metadata"></a>
 
 ```typescript
 public readonly metadata: SecretV1Metadata;
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a>
 
 metadata block.
 
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `binaryData`<sup>Optional</sup> <a name="binaryData" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.binaryData"></a>
+##### `binaryData`<sup>Optional</sup> <a name="binaryData" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.binaryData"></a>
 
 ```typescript
 public readonly binaryData: {[ key: string ]: string};
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `binaryDataWo`<sup>Optional</sup> <a name="binaryDataWo" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.binaryDataWo"></a>
+##### `binaryDataWo`<sup>Optional</sup> <a name="binaryDataWo" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.binaryDataWo"></a>
 
 ```typescript
 public readonly binaryDataWo: {[ key: string ]: string};
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `binaryDataWoRevision`<sup>Optional</sup> <a name="binaryDataWoRevision" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.binaryDataWoRevision"></a>
+##### `binaryDataWoRevision`<sup>Optional</sup> <a name="binaryDataWoRevision" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.binaryDataWoRevision"></a>
 
 ```typescript
 public readonly binaryDataWoRevision: number;
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `data`<sup>Optional</sup> <a name="data" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.data"></a>
+##### `data`<sup>Optional</sup> <a name="data" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.data"></a>
 
 ```typescript
 public readonly data: {[ key: string ]: string};
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `dataWo`<sup>Optional</sup> <a name="dataWo" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.dataWo"></a>
+##### `dataWo`<sup>Optional</sup> <a name="dataWo" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.dataWo"></a>
 
 ```typescript
 public readonly dataWo: {[ key: string ]: string};
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `dataWoRevision`<sup>Optional</sup> <a name="dataWoRevision" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.dataWoRevision"></a>
+##### `dataWoRevision`<sup>Optional</sup> <a name="dataWoRevision" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.dataWoRevision"></a>
 
 ```typescript
 public readonly dataWoRevision: number;
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1252,7 +1252,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `immutable`<sup>Optional</sup> <a name="immutable" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.immutable"></a>
+##### `immutable`<sup>Optional</sup> <a name="immutable" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.immutable"></a>
 
 ```typescript
 public readonly immutable: boolean | IResolvable;
@@ -1266,13 +1266,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: SecretV1Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a>
 
 timeouts block.
 
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.type"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `waitForServiceAccountToken`<sup>Optional</sup> <a name="waitForServiceAccountToken" id="@cdktf/provider-kubernetes.secretV1.SecretV1Config.property.waitForServiceAccountToken"></a>
+##### `waitForServiceAccountToken`<sup>Optional</sup> <a name="waitForServiceAccountToken" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.property.waitForServiceAccountToken"></a>
 
 ```typescript
 public readonly waitForServiceAccountToken: boolean | IResolvable;
@@ -1308,12 +1308,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### SecretV1Metadata <a name="SecretV1Metadata" id="@cdktf/provider-kubernetes.secretV1.SecretV1Metadata"></a>
+### SecretV1Metadata <a name="SecretV1Metadata" id="@cdktn/provider-kubernetes.secretV1.SecretV1Metadata"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.Initializer"></a>
 
 ```typescript
-import { secretV1 } from '@cdktf/provider-kubernetes'
+import { secretV1 } from '@cdktn/provider-kubernetes'
 
 const secretV1Metadata: secretV1.SecretV1Metadata = { ... }
 ```
@@ -1322,15 +1322,15 @@ const secretV1Metadata: secretV1.SecretV1Metadata = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | An unstructured key value map stored with the secret that may be used to store arbitrary metadata. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.property.generateName">generateName</a></code> | <code>string</code> | Prefix, used by the server, to generate a unique name ONLY IF the `name` field has not been provided. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Map of string keys and values that can be used to organize and categorize (scope and select) the secret. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.property.name">name</a></code> | <code>string</code> | Name of the secret, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.property.namespace">namespace</a></code> | <code>string</code> | Namespace defines the space within which name of the secret must be unique. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | An unstructured key value map stored with the secret that may be used to store arbitrary metadata. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.property.generateName">generateName</a></code> | <code>string</code> | Prefix, used by the server, to generate a unique name ONLY IF the `name` field has not been provided. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Map of string keys and values that can be used to organize and categorize (scope and select) the secret. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.property.name">name</a></code> | <code>string</code> | Name of the secret, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.property.namespace">namespace</a></code> | <code>string</code> | Namespace defines the space within which name of the secret must be unique. |
 
 ---
 
-##### `annotations`<sup>Optional</sup> <a name="annotations" id="@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.property.annotations"></a>
+##### `annotations`<sup>Optional</sup> <a name="annotations" id="@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.property.annotations"></a>
 
 ```typescript
 public readonly annotations: {[ key: string ]: string};
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `generateName`<sup>Optional</sup> <a name="generateName" id="@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.property.generateName"></a>
+##### `generateName`<sup>Optional</sup> <a name="generateName" id="@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.property.generateName"></a>
 
 ```typescript
 public readonly generateName: string;
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.property.labels"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.property.labels"></a>
 
 ```typescript
 public readonly labels: {[ key: string ]: string};
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1392,7 +1392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-kubernetes.secretV1.SecretV1Metadata.property.namespace"></a>
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.property.namespace"></a>
 
 ```typescript
 public readonly namespace: string;
@@ -1406,12 +1406,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### SecretV1Timeouts <a name="SecretV1Timeouts" id="@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts"></a>
+### SecretV1Timeouts <a name="SecretV1Timeouts" id="@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts.Initializer"></a>
 
 ```typescript
-import { secretV1 } from '@cdktf/provider-kubernetes'
+import { secretV1 } from '@cdktn/provider-kubernetes'
 
 const secretV1Timeouts: secretV1.SecretV1Timeouts = { ... }
 ```
@@ -1420,11 +1420,11 @@ const secretV1Timeouts: secretV1.SecretV1Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1#create SecretV1#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1#create SecretV1#create}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1438,24 +1438,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### SecretV1MetadataOutputReference <a name="SecretV1MetadataOutputReference" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference"></a>
+### SecretV1MetadataOutputReference <a name="SecretV1MetadataOutputReference" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer"></a>
 
 ```typescript
-import { secretV1 } from '@cdktf/provider-kubernetes'
+import { secretV1 } from '@cdktn/provider-kubernetes'
 
 new secretV1.SecretV1MetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1463,7 +1463,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1475,154 +1475,154 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetAnnotations">resetAnnotations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetGenerateName">resetGenerateName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetLabels">resetLabels</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetName">resetName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetNamespace">resetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetAnnotations">resetAnnotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetGenerateName">resetGenerateName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetLabels">resetLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetNamespace">resetNamespace</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1630,13 +1630,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1646,31 +1646,31 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetAnnotations` <a name="resetAnnotations" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetAnnotations"></a>
+##### `resetAnnotations` <a name="resetAnnotations" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetAnnotations"></a>
 
 ```typescript
 public resetAnnotations(): void
 ```
 
-##### `resetGenerateName` <a name="resetGenerateName" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetGenerateName"></a>
+##### `resetGenerateName` <a name="resetGenerateName" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetGenerateName"></a>
 
 ```typescript
 public resetGenerateName(): void
 ```
 
-##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetLabels"></a>
+##### `resetLabels` <a name="resetLabels" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetLabels"></a>
 
 ```typescript
 public resetLabels(): void
 ```
 
-##### `resetName` <a name="resetName" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetName"></a>
+##### `resetName` <a name="resetName" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetName"></a>
 
 ```typescript
 public resetName(): void
 ```
 
-##### `resetNamespace` <a name="resetNamespace" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetNamespace"></a>
+##### `resetNamespace` <a name="resetNamespace" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.resetNamespace"></a>
 
 ```typescript
 public resetNamespace(): void
@@ -1681,26 +1681,26 @@ public resetNamespace(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generation">generation</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.resourceVersion">resourceVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.uid">uid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.annotationsInput">annotationsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generateNameInput">generateNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generateName">generateName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generation">generation</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.resourceVersion">resourceVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.uid">uid</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.annotationsInput">annotationsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generateNameInput">generateNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generateName">generateName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1714,7 +1714,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1724,7 +1724,7 @@ public readonly fqn: string;
 
 ---
 
-##### `generation`<sup>Required</sup> <a name="generation" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generation"></a>
+##### `generation`<sup>Required</sup> <a name="generation" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generation"></a>
 
 ```typescript
 public readonly generation: number;
@@ -1734,7 +1734,7 @@ public readonly generation: number;
 
 ---
 
-##### `resourceVersion`<sup>Required</sup> <a name="resourceVersion" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.resourceVersion"></a>
+##### `resourceVersion`<sup>Required</sup> <a name="resourceVersion" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.resourceVersion"></a>
 
 ```typescript
 public readonly resourceVersion: string;
@@ -1744,7 +1744,7 @@ public readonly resourceVersion: string;
 
 ---
 
-##### `uid`<sup>Required</sup> <a name="uid" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.uid"></a>
+##### `uid`<sup>Required</sup> <a name="uid" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.uid"></a>
 
 ```typescript
 public readonly uid: string;
@@ -1754,7 +1754,7 @@ public readonly uid: string;
 
 ---
 
-##### `annotationsInput`<sup>Optional</sup> <a name="annotationsInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.annotationsInput"></a>
+##### `annotationsInput`<sup>Optional</sup> <a name="annotationsInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.annotationsInput"></a>
 
 ```typescript
 public readonly annotationsInput: {[ key: string ]: string};
@@ -1764,7 +1764,7 @@ public readonly annotationsInput: {[ key: string ]: string};
 
 ---
 
-##### `generateNameInput`<sup>Optional</sup> <a name="generateNameInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generateNameInput"></a>
+##### `generateNameInput`<sup>Optional</sup> <a name="generateNameInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generateNameInput"></a>
 
 ```typescript
 public readonly generateNameInput: string;
@@ -1774,7 +1774,7 @@ public readonly generateNameInput: string;
 
 ---
 
-##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.labelsInput"></a>
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.labelsInput"></a>
 
 ```typescript
 public readonly labelsInput: {[ key: string ]: string};
@@ -1784,7 +1784,7 @@ public readonly labelsInput: {[ key: string ]: string};
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -1794,7 +1794,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `namespaceInput`<sup>Optional</sup> <a name="namespaceInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.namespaceInput"></a>
+##### `namespaceInput`<sup>Optional</sup> <a name="namespaceInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.namespaceInput"></a>
 
 ```typescript
 public readonly namespaceInput: string;
@@ -1804,7 +1804,7 @@ public readonly namespaceInput: string;
 
 ---
 
-##### `annotations`<sup>Required</sup> <a name="annotations" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.annotations"></a>
+##### `annotations`<sup>Required</sup> <a name="annotations" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.annotations"></a>
 
 ```typescript
 public readonly annotations: {[ key: string ]: string};
@@ -1814,7 +1814,7 @@ public readonly annotations: {[ key: string ]: string};
 
 ---
 
-##### `generateName`<sup>Required</sup> <a name="generateName" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generateName"></a>
+##### `generateName`<sup>Required</sup> <a name="generateName" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.generateName"></a>
 
 ```typescript
 public readonly generateName: string;
@@ -1824,7 +1824,7 @@ public readonly generateName: string;
 
 ---
 
-##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.labels"></a>
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.labels"></a>
 
 ```typescript
 public readonly labels: {[ key: string ]: string};
@@ -1834,7 +1834,7 @@ public readonly labels: {[ key: string ]: string};
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1844,7 +1844,7 @@ public readonly name: string;
 
 ---
 
-##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.namespace"></a>
+##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.namespace"></a>
 
 ```typescript
 public readonly namespace: string;
@@ -1854,35 +1854,35 @@ public readonly namespace: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: SecretV1Metadata;
 ```
 
-- *Type:* <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Metadata">SecretV1Metadata</a>
 
 ---
 
 
-### SecretV1TimeoutsOutputReference <a name="SecretV1TimeoutsOutputReference" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference"></a>
+### SecretV1TimeoutsOutputReference <a name="SecretV1TimeoutsOutputReference" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { secretV1 } from '@cdktf/provider-kubernetes'
+import { secretV1 } from '@cdktn/provider-kubernetes'
 
 new secretV1.SecretV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1890,7 +1890,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1902,150 +1902,150 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2053,13 +2053,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2069,7 +2069,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
@@ -2080,15 +2080,15 @@ public resetCreate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2102,7 +2102,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2112,7 +2112,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -2122,7 +2122,7 @@ public readonly createInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -2132,13 +2132,13 @@ public readonly create: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | SecretV1Timeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts">SecretV1Timeouts</a>
 
 ---
 
