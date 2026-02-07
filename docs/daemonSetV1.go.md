@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1(scope Construct, id *string, config DaemonSetV1Config) DaemonSetV1
 ```
@@ -438,7 +438,7 @@ func ResetWaitForRollout()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.DaemonSetV1_IsConstruct(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.DaemonSetV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ daemonsetv1.DaemonSetV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.DaemonSetV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ daemonsetv1.DaemonSetV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.DaemonSetV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1Config {
 	Connection: interface{},
@@ -847,10 +847,10 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonse
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1Metadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1Spec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1Metadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1Spec,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1Timeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1Timeouts,
 	WaitForRollout: interface{},
 }
 ```
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1Metadata {
 	Annotations: *map[string]*string,
@@ -1124,14 +1124,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Spec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1Spec {
-	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplate,
+	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplate,
 	MinReadySeconds: *f64,
 	RevisionHistoryLimit: *f64,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecSelector,
-	Strategy: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecStrategy,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecSelector,
+	Strategy: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecStrategy,
 }
 ```
 
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecSelector {
 	MatchExpressions: interface{},
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecSelectorMatchExpressions {
 	Key: *string,
@@ -1346,10 +1346,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecStrategy {
-	RollingUpdate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecStrategyRollingUpdate,
+	RollingUpdate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecStrategyRollingUpdate,
 	Type: *string,
 }
 ```
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecStrategyRollingUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecStrategyRollingUpdate {
 	MaxSurge: *string,
@@ -1450,11 +1450,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplate {
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpec,
 }
 ```
 
@@ -1500,7 +1500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -1604,14 +1604,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpec {
 	ActiveDeadlineSeconds: *f64,
-	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinity,
+	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinity,
 	AutomountServiceAccountToken: interface{},
 	Container: interface{},
-	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfig,
+	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfig,
 	DnsPolicy: *string,
 	EnableServiceLinks: interface{},
 	HostAliases: interface{},
@@ -1623,13 +1623,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonse
 	InitContainer: interface{},
 	NodeName: *string,
 	NodeSelector: *map[string]*string,
-	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecOs,
+	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecOs,
 	PriorityClassName: *string,
 	ReadinessGate: interface{},
 	RestartPolicy: *string,
 	RuntimeClassName: *string,
 	SchedulerName: *string,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContext,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContext,
 	ServiceAccountName: *string,
 	ShareProcessNamespace: interface{},
 	Subdomain: *string,
@@ -2122,12 +2122,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinity {
-	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinity,
-	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinity,
-	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinity,
+	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinity,
+	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinity,
+	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinity,
 }
 ```
 
@@ -2188,11 +2188,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
-	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
+	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
 }
 ```
 
@@ -2238,10 +2238,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
+	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
 	Weight: *f64,
 }
 ```
@@ -2288,7 +2288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference {
 	MatchExpressions: interface{},
@@ -2338,7 +2338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions {
 	Key: *string,
@@ -2408,7 +2408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields {
 	Key: *string,
@@ -2476,7 +2476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	NodeSelectorTerm: interface{},
@@ -2510,7 +2510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm {
 	MatchExpressions: interface{},
@@ -2560,7 +2560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions {
 	Key: *string,
@@ -2630,7 +2630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields {
 	Key: *string,
@@ -2698,7 +2698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -2748,10 +2748,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -2798,7 +2798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -2880,7 +2880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -2932,7 +2932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3000,7 +3000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3052,7 +3052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3120,7 +3120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -3202,7 +3202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -3254,7 +3254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3322,7 +3322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3374,7 +3374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3442,7 +3442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -3492,10 +3492,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -3542,7 +3542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -3624,7 +3624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -3676,7 +3676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3744,7 +3744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3796,7 +3796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3864,7 +3864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -3946,7 +3946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -3998,7 +3998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -4066,7 +4066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -4118,7 +4118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -4186,7 +4186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainer {
 	Name: *string,
@@ -4196,13 +4196,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonse
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerResources,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -4574,12 +4574,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFrom,
 }
 ```
 
@@ -4642,12 +4642,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFromSecretRef,
 }
 ```
 
@@ -4708,7 +4708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -4758,7 +4758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerEnvFromSecretRef {
 	Name: *string,
@@ -4808,13 +4808,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -4890,7 +4890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -4956,7 +4956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -5006,7 +5006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -5068,7 +5068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -5134,7 +5134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecycle {
 	PostStart: interface{},
@@ -5184,11 +5184,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5250,7 +5250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -5286,7 +5286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -5386,7 +5386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -5436,7 +5436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -5472,11 +5472,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5538,7 +5538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -5574,7 +5574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -5674,7 +5674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -5724,7 +5724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -5760,13 +5760,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -5922,7 +5922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -5958,7 +5958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -6008,7 +6008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -6108,7 +6108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -6158,7 +6158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -6194,7 +6194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerPort {
 	ContainerPort: *f64,
@@ -6298,13 +6298,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -6460,7 +6460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -6496,7 +6496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -6546,7 +6546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -6646,7 +6646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -6696,7 +6696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -6732,7 +6732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerResources {
 	Limits: *map[string]*string,
@@ -6784,18 +6784,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -6956,7 +6956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -7006,7 +7006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -7058,7 +7058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -7140,13 +7140,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -7302,7 +7302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerStartupProbeExec {
 	Command: *[]*string,
@@ -7338,7 +7338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerStartupProbeGrpc {
 	Port: *f64,
@@ -7388,7 +7388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGet {
 	Host: *string,
@@ -7488,7 +7488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -7538,7 +7538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -7574,7 +7574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerVolumeDevice {
 	DevicePath: *string,
@@ -7624,7 +7624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecContainerVolumeMount {
 	MountPath: *string,
@@ -7740,7 +7740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecDnsConfig {
 	Nameservers: *[]*string,
@@ -7810,7 +7810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfigOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecDnsConfigOption {
 	Name: *string,
@@ -7860,7 +7860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecHostAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecHostAliases {
 	Hostnames: *[]*string,
@@ -7910,7 +7910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecImagePullSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecImagePullSecrets {
 	Name: *string,
@@ -7944,7 +7944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainer {
 	Name: *string,
@@ -7954,13 +7954,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonse
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerResources,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -8332,12 +8332,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFrom,
 }
 ```
 
@@ -8400,12 +8400,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromSecretRef,
 }
 ```
 
@@ -8466,7 +8466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -8516,7 +8516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromSecretRef {
 	Name: *string,
@@ -8566,13 +8566,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -8648,7 +8648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -8714,7 +8714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -8764,7 +8764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -8826,7 +8826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -8892,7 +8892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecycle {
 	PostStart: interface{},
@@ -8942,11 +8942,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -9008,7 +9008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -9044,7 +9044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -9144,7 +9144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -9194,7 +9194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -9230,11 +9230,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -9296,7 +9296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -9332,7 +9332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -9432,7 +9432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -9482,7 +9482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -9518,13 +9518,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -9680,7 +9680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -9716,7 +9716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -9766,7 +9766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -9866,7 +9866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -9916,7 +9916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -9952,7 +9952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerPort {
 	ContainerPort: *f64,
@@ -10056,13 +10056,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -10218,7 +10218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -10254,7 +10254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -10304,7 +10304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -10404,7 +10404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -10454,7 +10454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -10490,7 +10490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerResources {
 	Limits: *map[string]*string,
@@ -10542,18 +10542,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -10714,7 +10714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -10764,7 +10764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -10816,7 +10816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -10898,13 +10898,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -11060,7 +11060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeExec {
 	Command: *[]*string,
@@ -11096,7 +11096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeGrpc {
 	Port: *f64,
@@ -11146,7 +11146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGet {
 	Host: *string,
@@ -11246,7 +11246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -11296,7 +11296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -11332,7 +11332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerVolumeDevice {
 	DevicePath: *string,
@@ -11382,7 +11382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecInitContainerVolumeMount {
 	MountPath: *string,
@@ -11498,7 +11498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecOs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecOs {
 	Name: *string,
@@ -11532,7 +11532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecReadinessGate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecReadinessGate {
 	ConditionType: *string,
@@ -11566,7 +11566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecSecurityContext {
 	FsGroup: *string,
@@ -11574,11 +11574,11 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonse
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptions,
 	SupplementalGroups: *[]*f64,
 	Sysctl: interface{},
-	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextWindowsOptions,
+	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextWindowsOptions,
 }
 ```
 
@@ -11756,7 +11756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -11808,7 +11808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -11890,7 +11890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSysctl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecSecurityContextSysctl {
 	Name: *string,
@@ -11940,7 +11940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextWindowsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecSecurityContextWindowsOptions {
 	GmsaCredentialSpec: *string,
@@ -12024,7 +12024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecToleration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecToleration {
 	Effect: *string,
@@ -12132,7 +12132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraint {
 	LabelSelector: interface{},
@@ -12280,7 +12280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelector {
 	MatchExpressions: interface{},
@@ -12332,7 +12332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions {
 	Key: *string,
@@ -12400,37 +12400,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolume {
-	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAwsElasticBlockStore,
-	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureDisk,
-	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureFile,
-	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCephFs,
-	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCinder,
-	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeConfigMap,
-	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsi,
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApi,
-	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEmptyDir,
-	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeral,
-	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFc,
-	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlexVolume,
-	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlocker,
-	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDisk,
-	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGitRepo,
-	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGlusterfs,
-	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeHostPath,
-	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeIscsi,
-	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeLocal,
+	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAwsElasticBlockStore,
+	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureDisk,
+	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureFile,
+	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCephFs,
+	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCinder,
+	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeConfigMap,
+	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApi,
+	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEmptyDir,
+	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeral,
+	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFc,
+	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlexVolume,
+	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlocker,
+	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDisk,
+	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGitRepo,
+	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGlusterfs,
+	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeHostPath,
+	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeIscsi,
+	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeLocal,
 	Name: *string,
-	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeNfs,
-	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePersistentVolumeClaim,
-	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDisk,
+	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeNfs,
+	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePersistentVolumeClaim,
+	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDisk,
 	Projected: interface{},
-	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeQuobyte,
-	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeRbd,
-	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeSecret,
-	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeVsphereVolume,
+	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeQuobyte,
+	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeRbd,
+	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeSecret,
+	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeVsphereVolume,
 }
 ```
 
@@ -12866,7 +12866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAwsElasticBlockStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeAwsElasticBlockStore {
 	VolumeId: *string,
@@ -12952,7 +12952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeAzureDisk {
 	CachingMode: *string,
@@ -13068,7 +13068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeAzureFile {
 	SecretName: *string,
@@ -13152,14 +13152,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCephFs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeCephFs {
 	Monitors: *[]*string,
 	Path: *string,
 	ReadOnly: interface{},
 	SecretFile: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCephFsSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCephFsSecretRef,
 	User: *string,
 }
 ```
@@ -13266,7 +13266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCephFsSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeCephFsSecretRef {
 	Name: *string,
@@ -13316,7 +13316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCinder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeCinder {
 	VolumeId: *string,
@@ -13384,7 +13384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeConfigMap {
 	DefaultMode: *string,
@@ -13468,7 +13468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeConfigMapItems {
 	Key: *string,
@@ -13538,12 +13538,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeCsi {
 	Driver: *string,
 	FsType: *string,
-	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRef,
+	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRef,
 	ReadOnly: interface{},
 	VolumeAttributes: *map[string]*string,
 }
@@ -13638,7 +13638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRef {
 	Name: *string,
@@ -13672,7 +13672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeDownwardApi {
 	DefaultMode: *string,
@@ -13724,13 +13724,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItems {
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef,
 	Path: *string,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -13810,7 +13810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -13860,7 +13860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -13922,7 +13922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeEmptyDir {
 	Medium: *string,
@@ -13974,10 +13974,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeral.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeEphemeral {
-	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
+	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
 }
 ```
 
@@ -14008,11 +14008,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate {
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
 }
 ```
 
@@ -14058,7 +14058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -14112,12 +14112,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec {
 	AccessModes: *[]*string,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
 	StorageClassName: *string,
 	VolumeMode: *string,
 	VolumeName: *string,
@@ -14226,7 +14226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources {
 	Limits: *map[string]*string,
@@ -14278,7 +14278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector {
 	MatchExpressions: interface{},
@@ -14330,7 +14330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions {
 	Key: *string,
@@ -14398,7 +14398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeFc {
 	Lun: *f64,
@@ -14482,14 +14482,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlexVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeFlexVolume {
 	Driver: *string,
 	FsType: *string,
 	Options: *map[string]*string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRef,
 }
 ```
 
@@ -14582,7 +14582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRef {
 	Name: *string,
@@ -14632,7 +14632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlocker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeFlocker {
 	DatasetName: *string,
@@ -14682,7 +14682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDisk {
 	PdName: *string,
@@ -14768,7 +14768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGitRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeGitRepo {
 	Directory: *string,
@@ -14836,7 +14836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGlusterfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeGlusterfs {
 	EndpointsName: *string,
@@ -14902,7 +14902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeHostPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeHostPath {
 	Path: *string,
@@ -14952,7 +14952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeIscsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeIscsi {
 	Iqn: *string,
@@ -15070,7 +15070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeLocal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeLocal {
 	Path: *string,
@@ -15104,7 +15104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeNfs {
 	Path: *string,
@@ -15170,7 +15170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePersistentVolumeClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumePersistentVolumeClaim {
 	ClaimName: *string,
@@ -15220,7 +15220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDisk {
 	PdId: *string,
@@ -15272,7 +15272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjected.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjected {
 	Sources: interface{},
@@ -15324,13 +15324,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjectedSources {
 	ConfigMap: interface{},
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi,
 	Secret: interface{},
-	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
+	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
 }
 ```
 
@@ -15406,7 +15406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMap {
 	Items: interface{},
@@ -15472,7 +15472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItems {
 	Key: *string,
@@ -15542,7 +15542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi {
 	Items: interface{},
@@ -15576,13 +15576,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems {
 	Path: *string,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -15662,7 +15662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -15712,7 +15712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -15774,7 +15774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecret {
 	Items: interface{},
@@ -15840,7 +15840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItems {
 	Key: *string,
@@ -15910,7 +15910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken {
 	Path: *string,
@@ -15978,7 +15978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeQuobyte.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeQuobyte {
 	Registry: *string,
@@ -16076,7 +16076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeRbd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeRbd {
 	CephMonitors: *[]*string,
@@ -16086,7 +16086,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonse
 	RadosUser: *string,
 	RbdPool: *string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeRbdSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeRbdSecretRef,
 }
 ```
 
@@ -16224,7 +16224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeRbdSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeRbdSecretRef {
 	Name: *string,
@@ -16274,7 +16274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeSecret {
 	DefaultMode: *string,
@@ -16358,7 +16358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeSecretItems {
 	Key: *string,
@@ -16428,7 +16428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeVsphereVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1SpecTemplateSpecVolumeVsphereVolume {
 	VolumePath: *string,
@@ -16480,7 +16480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 &daemonsetv1.DaemonSetV1Timeouts {
 	Create: *string,
@@ -16542,7 +16542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1MetadataOutputReference
 ```
@@ -16969,7 +16969,7 @@ func InternalValue() DaemonSetV1Metadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecOutputReference
 ```
@@ -17395,7 +17395,7 @@ func InternalValue() DaemonSetV1Spec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecSelectorMatchExpressionsList
 ```
@@ -17555,7 +17555,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecSelectorMatchExpressionsOutputReference
 ```
@@ -17909,7 +17909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecSelectorOutputReference
 ```
@@ -18229,7 +18229,7 @@ func InternalValue() DaemonSetV1SpecSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecStrategyOutputReference
 ```
@@ -18549,7 +18549,7 @@ func InternalValue() DaemonSetV1SpecStrategy
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecStrategyRollingUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecStrategyRollingUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecStrategyRollingUpdateOutputReference
 ```
@@ -18856,7 +18856,7 @@ func InternalValue() DaemonSetV1SpecStrategyRollingUpdate
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateMetadataOutputReference
 ```
@@ -19283,7 +19283,7 @@ func InternalValue() DaemonSetV1SpecTemplateMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateOutputReference
 ```
@@ -19609,7 +19609,7 @@ func InternalValue() DaemonSetV1SpecTemplate
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference
 ```
@@ -19942,7 +19942,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecAffinityNodeAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -20102,7 +20102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -20426,7 +20426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList
 ```
@@ -20586,7 +20586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference
 ```
@@ -20940,7 +20940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList
 ```
@@ -21100,7 +21100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference
 ```
@@ -21440,7 +21440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference
 ```
@@ -21773,7 +21773,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDur
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList
 ```
@@ -21933,7 +21933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList
 ```
@@ -22093,7 +22093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference
 ```
@@ -22447,7 +22447,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
 ```
@@ -22607,7 +22607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference
 ```
@@ -22947,7 +22947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference
 ```
@@ -23298,7 +23298,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -23589,7 +23589,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuri
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecAffinityOutputReference
 ```
@@ -23964,7 +23964,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecAffinityPodAffinityOutputReference
 ```
@@ -24297,7 +24297,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -24457,7 +24457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -24781,7 +24781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -24941,7 +24941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -25101,7 +25101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -25455,7 +25455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -25793,7 +25793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -25953,7 +25953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -26113,7 +26113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -26467,7 +26467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -26805,7 +26805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -27189,7 +27189,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuri
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -27349,7 +27349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -27509,7 +27509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -27863,7 +27863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -28201,7 +28201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -28361,7 +28361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -28521,7 +28521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -28681,7 +28681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -29035,7 +29035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -29373,7 +29373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -29775,7 +29775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference
 ```
@@ -30108,7 +30108,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -30268,7 +30268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -30592,7 +30592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -30752,7 +30752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -30912,7 +30912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -31266,7 +31266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -31604,7 +31604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -31764,7 +31764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -31924,7 +31924,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -32278,7 +32278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -32616,7 +32616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -33000,7 +33000,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferred
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -33160,7 +33160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -33320,7 +33320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -33674,7 +33674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -34012,7 +34012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -34172,7 +34172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -34332,7 +34332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -34492,7 +34492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -34846,7 +34846,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -35184,7 +35184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -35586,7 +35586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerEnvFromConfigMapRefOutputReference
 ```
@@ -35886,7 +35886,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerEnvFromConfigMapRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerEnvFromList
 ```
@@ -36046,7 +36046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerEnvFromOutputReference
 ```
@@ -36426,7 +36426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference
 ```
@@ -36726,7 +36726,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerEnvFromSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerEnvList
 ```
@@ -36886,7 +36886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerEnvOutputReference
 ```
@@ -37246,7 +37246,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -37582,7 +37582,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference
 ```
@@ -37889,7 +37889,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerEnvValueFromFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerEnvValueFromOutputReference
 ```
@@ -38306,7 +38306,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerEnvValueFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -38635,7 +38635,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFie
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -38971,7 +38971,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference
 ```
@@ -39304,7 +39304,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference
 ```
@@ -39582,7 +39582,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -39742,7 +39742,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -40067,7 +40067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -40474,7 +40474,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpG
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartList
 ```
@@ -40634,7 +40634,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartOutputReference
 ```
@@ -41027,7 +41027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketList
 ```
@@ -41187,7 +41187,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -41476,7 +41476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference
 ```
@@ -41754,7 +41754,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -41914,7 +41914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -42239,7 +42239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -42646,7 +42646,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopList
 ```
@@ -42806,7 +42806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference
 ```
@@ -43199,7 +43199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketList
 ```
@@ -43359,7 +43359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -43648,7 +43648,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerList
 ```
@@ -43808,7 +43808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerLivenessProbeExecOutputReference
 ```
@@ -44086,7 +44086,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerLivenessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerLivenessProbeGrpcList
 ```
@@ -44246,7 +44246,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerLivenessProbeGrpcOutputReference
 ```
@@ -44564,7 +44564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -44724,7 +44724,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -45049,7 +45049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference
 ```
@@ -45456,7 +45456,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerLivenessProbeOutputReference
 ```
@@ -46018,7 +46018,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketList
 ```
@@ -46178,7 +46178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -46467,7 +46467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerOutputReference
 ```
@@ -47508,7 +47508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerPortList
 ```
@@ -47668,7 +47668,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerPortOutputReference
 ```
@@ -48073,7 +48073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerReadinessProbeExecOutputReference
 ```
@@ -48351,7 +48351,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerReadinessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerReadinessProbeGrpcList
 ```
@@ -48511,7 +48511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerReadinessProbeGrpcOutputReference
 ```
@@ -48829,7 +48829,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -48989,7 +48989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -49314,7 +49314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGetOutputReference
 ```
@@ -49721,7 +49721,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerReadinessProbeOutputReference
 ```
@@ -50283,7 +50283,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerReadinessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList
 ```
@@ -50443,7 +50443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -50732,7 +50732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerResourcesOutputReference
 ```
@@ -51039,7 +51039,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -51346,7 +51346,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerSecurityContextCapabili
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerSecurityContextOutputReference
 ```
@@ -51895,7 +51895,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -52202,7 +52202,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerSecurityContextSeccompP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -52567,7 +52567,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerSecurityContextSeLinuxO
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerStartupProbeExecOutputReference
 ```
@@ -52845,7 +52845,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerStartupProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerStartupProbeGrpcList
 ```
@@ -53005,7 +53005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerStartupProbeGrpcOutputReference
 ```
@@ -53323,7 +53323,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -53483,7 +53483,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -53808,7 +53808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference
 ```
@@ -54215,7 +54215,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecContainerStartupProbeOutputReference
 ```
@@ -54777,7 +54777,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecContainerStartupProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerStartupProbeTcpSocketList
 ```
@@ -54937,7 +54937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference
 ```
@@ -55226,7 +55226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerVolumeDeviceList
 ```
@@ -55386,7 +55386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerVolumeDeviceOutputReference
 ```
@@ -55697,7 +55697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecContainerVolumeMountList
 ```
@@ -55857,7 +55857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecContainerVolumeMountOutputReference
 ```
@@ -56284,7 +56284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfigOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecDnsConfigOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecDnsConfigOptionList
 ```
@@ -56444,7 +56444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfigOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecDnsConfigOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecDnsConfigOptionOutputReference
 ```
@@ -56762,7 +56762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecDnsConfigOutputReference
 ```
@@ -57111,7 +57111,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecDnsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecHostAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecHostAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecHostAliasesList
 ```
@@ -57271,7 +57271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecHostAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecHostAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecHostAliasesOutputReference
 ```
@@ -57582,7 +57582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecImagePullSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecImagePullSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecImagePullSecretsList
 ```
@@ -57742,7 +57742,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecImagePullSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecImagePullSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecImagePullSecretsOutputReference
 ```
@@ -58031,7 +58031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference
 ```
@@ -58331,7 +58331,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerEnvFromList
 ```
@@ -58491,7 +58491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerEnvFromOutputReference
 ```
@@ -58871,7 +58871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference
 ```
@@ -59171,7 +59171,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerEnvFromSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerEnvList
 ```
@@ -59331,7 +59331,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerEnvOutputReference
 ```
@@ -59691,7 +59691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -60027,7 +60027,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromConfigM
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference
 ```
@@ -60334,7 +60334,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromOutputReference
 ```
@@ -60751,7 +60751,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerEnvValueFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -61080,7 +61080,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -61416,7 +61416,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromSecretK
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerLifecycleOutputReference
 ```
@@ -61749,7 +61749,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference
 ```
@@ -62027,7 +62027,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartE
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -62187,7 +62187,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -62512,7 +62512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -62919,7 +62919,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartH
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartList
 ```
@@ -63079,7 +63079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference
 ```
@@ -63472,7 +63472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList
 ```
@@ -63632,7 +63632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -63921,7 +63921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference
 ```
@@ -64199,7 +64199,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -64359,7 +64359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -64684,7 +64684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -65091,7 +65091,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHtt
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopList
 ```
@@ -65251,7 +65251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference
 ```
@@ -65644,7 +65644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList
 ```
@@ -65804,7 +65804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -66093,7 +66093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerList
 ```
@@ -66253,7 +66253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference
 ```
@@ -66531,7 +66531,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeGrpcList
 ```
@@ -66691,7 +66691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference
 ```
@@ -67009,7 +67009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -67169,7 +67169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -67494,7 +67494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference
 ```
@@ -67901,7 +67901,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeOutputReference
 ```
@@ -68463,7 +68463,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList
 ```
@@ -68623,7 +68623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -68912,7 +68912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerOutputReference
 ```
@@ -69953,7 +69953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerPortList
 ```
@@ -70113,7 +70113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerPortOutputReference
 ```
@@ -70518,7 +70518,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference
 ```
@@ -70796,7 +70796,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeGrpcList
 ```
@@ -70956,7 +70956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference
 ```
@@ -71274,7 +71274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -71434,7 +71434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -71759,7 +71759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference
 ```
@@ -72166,7 +72166,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpG
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeOutputReference
 ```
@@ -72728,7 +72728,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList
 ```
@@ -72888,7 +72888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -73177,7 +73177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerResourcesOutputReference
 ```
@@ -73484,7 +73484,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -73791,7 +73791,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerSecurityContextCapa
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference
 ```
@@ -74340,7 +74340,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -74647,7 +74647,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSecc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -75012,7 +75012,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference
 ```
@@ -75290,7 +75290,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerStartupProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerStartupProbeGrpcList
 ```
@@ -75450,7 +75450,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerStartupProbeGrpcOutputReference
 ```
@@ -75768,7 +75768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -75928,7 +75928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -76253,7 +76253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference
 ```
@@ -76660,7 +76660,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerStartupProbeOutputReference
 ```
@@ -77222,7 +77222,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecInitContainerStartupProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketList
 ```
@@ -77382,7 +77382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference
 ```
@@ -77671,7 +77671,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerVolumeDeviceList
 ```
@@ -77831,7 +77831,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerVolumeDeviceOutputReference
 ```
@@ -78142,7 +78142,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecInitContainerVolumeMountList
 ```
@@ -78302,7 +78302,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecInitContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecInitContainerVolumeMountOutputReference
 ```
@@ -78729,7 +78729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecOsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecOsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecOsOutputReference
 ```
@@ -79000,7 +79000,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecOs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecOutputReference
 ```
@@ -80275,7 +80275,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecReadinessGateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecReadinessGateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecReadinessGateList
 ```
@@ -80435,7 +80435,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecReadinessGateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecReadinessGateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecReadinessGateOutputReference
 ```
@@ -80724,7 +80724,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecSecurityContextOutputReference
 ```
@@ -81315,7 +81315,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference
 ```
@@ -81622,7 +81622,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecSecurityContextSeccompProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -81987,7 +81987,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSysctlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecSecurityContextSysctlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecSecurityContextSysctlList
 ```
@@ -82147,7 +82147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSysctlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecSecurityContextSysctlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecSecurityContextSysctlOutputReference
 ```
@@ -82458,7 +82458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference
 ```
@@ -82823,7 +82823,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecSecurityContextWindowsOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTolerationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecTolerationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecTolerationList
 ```
@@ -82983,7 +82983,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTolerationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecTolerationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecTolerationOutputReference
 ```
@@ -83395,7 +83395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList
 ```
@@ -83555,7 +83555,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList
 ```
@@ -83715,7 +83715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference
 ```
@@ -84069,7 +84069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference
 ```
@@ -84407,7 +84407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecTopologySpreadConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList
 ```
@@ -84567,7 +84567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference
 ```
@@ -85079,7 +85079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference
 ```
@@ -85437,7 +85437,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeAwsElasticBlockStore
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeAzureDiskOutputReference
 ```
@@ -85839,7 +85839,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeAzureDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeAzureFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeAzureFileOutputReference
 ```
@@ -86190,7 +86190,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeAzureFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCephFsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeCephFsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeCephFsOutputReference
 ```
@@ -86619,7 +86619,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeCephFs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference
 ```
@@ -86926,7 +86926,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeCephFsSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCinderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeCinderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeCinderOutputReference
 ```
@@ -87255,7 +87255,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeCinder
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeConfigMapItemsList
 ```
@@ -87415,7 +87415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeConfigMapItemsOutputReference
 ```
@@ -87769,7 +87769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeConfigMapOutputReference
 ```
@@ -88147,7 +88147,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeConfigMap
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference
 ```
@@ -88425,7 +88425,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeCsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeCsiOutputReference
 ```
@@ -88825,7 +88825,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeCsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference
 ```
@@ -89132,7 +89132,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsList
 ```
@@ -89292,7 +89292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference
 ```
@@ -89687,7 +89687,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -90009,7 +90009,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeDownwardApiOutputReference
 ```
@@ -90329,7 +90329,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference
 ```
@@ -90636,7 +90636,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeEmptyDir
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeEphemeralOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeEphemeralOutputReference
 ```
@@ -90920,7 +90920,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeEphemeral
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference
 ```
@@ -91227,7 +91227,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTempla
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference
 ```
@@ -91553,7 +91553,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTempla
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference
 ```
@@ -91988,7 +91988,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTempla
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference
 ```
@@ -92295,7 +92295,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTempla
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList
 ```
@@ -92455,7 +92455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference
 ```
@@ -92809,7 +92809,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference
 ```
@@ -93129,7 +93129,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTempla
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeFcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeFcOutputReference
 ```
@@ -93480,7 +93480,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeFc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlexVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeFlexVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeFlexVolumeOutputReference
 ```
@@ -93880,7 +93880,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeFlexVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference
 ```
@@ -94187,7 +94187,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlockerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeFlockerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeFlockerOutputReference
 ```
@@ -94494,7 +94494,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeFlocker
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference
 ```
@@ -94852,7 +94852,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeGcePersistentDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGitRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeGitRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeGitRepoOutputReference
 ```
@@ -95188,7 +95188,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeGitRepo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGlusterfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeGlusterfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeGlusterfsOutputReference
 ```
@@ -95510,7 +95510,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeGlusterfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference
 ```
@@ -95817,7 +95817,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeHostPath
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference
 ```
@@ -96226,7 +96226,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeIscsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeList
 ```
@@ -96386,7 +96386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeLocalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeLocalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeLocalOutputReference
 ```
@@ -96664,7 +96664,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeLocal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeNfsOutputReference
 ```
@@ -96986,7 +96986,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeNfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeOutputReference
 ```
@@ -98416,7 +98416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference
 ```
@@ -98723,7 +98723,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumePersistentVolumeClaim
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference
 ```
@@ -99023,7 +99023,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedList
 ```
@@ -99183,7 +99183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedOutputReference
 ```
@@ -99514,7 +99514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList
 ```
@@ -99674,7 +99674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference
 ```
@@ -100028,7 +100028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapList
 ```
@@ -100188,7 +100188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference
 ```
@@ -100555,7 +100555,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference
 ```
@@ -100862,7 +100862,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardAp
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList
 ```
@@ -101022,7 +101022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference
 ```
@@ -101424,7 +101424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -101746,7 +101746,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardAp
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference
 ```
@@ -102037,7 +102037,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardAp
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesList
 ```
@@ -102197,7 +102197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference
 ```
@@ -102632,7 +102632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList
 ```
@@ -102792,7 +102792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference
 ```
@@ -103146,7 +103146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretList
 ```
@@ -103306,7 +103306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesSecretOutputReference
 ```
@@ -103673,7 +103673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference
 ```
@@ -104002,7 +104002,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAcc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeQuobyteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeQuobyteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeQuobyteOutputReference
 ```
@@ -104382,7 +104382,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeQuobyte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeRbdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeRbdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeRbdOutputReference
 ```
@@ -104862,7 +104862,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeRbd
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeRbdSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeRbdSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeRbdSecretRefOutputReference
 ```
@@ -105169,7 +105169,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeRbdSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaemonSetV1SpecTemplateSpecVolumeSecretItemsList
 ```
@@ -105329,7 +105329,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeSecretItemsOutputReference
 ```
@@ -105683,7 +105683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeSecretOutputReference
 ```
@@ -106061,7 +106061,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeVsphereVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1SpecTemplateSpecVolumeVsphereVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeVsphereVolumeOutputReference
 ```
@@ -106361,7 +106361,7 @@ func InternalValue() DaemonSetV1SpecTemplateSpecVolumeVsphereVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v12/daemonsetv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/daemonsetv1"
 
 daemonsetv1.NewDaemonSetV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DaemonSetV1TimeoutsOutputReference
 ```
