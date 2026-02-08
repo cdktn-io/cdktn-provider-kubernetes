@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -278,7 +278,7 @@ export class KubernetesProvider extends cdktf.TerraformProvider {
         providerVersion: '2.38.0',
         providerVersionConstraint: '~> 2.0'
       },
-      terraformProviderSource: 'kubernetes'
+      terraformProviderSource: 'hashicorp/kubernetes'
     });
     this._clientCertificate = config.clientCertificate;
     this._clientKey = config.clientKey;

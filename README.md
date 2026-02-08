@@ -19,17 +19,17 @@ The PyPI package is available at [https://pypi.org/project/cdktn-provider-kubern
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Kubernetes](https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Kubernetes).
+The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Providers.Kubernetes](https://www.nuget.org/packages/Io.Cdktn.Providers.Kubernetes).
 
-`dotnet add package Io.Cdktn.Cdktn.Providers.Kubernetes`
+`dotnet add package Io.Cdktn.Providers.Kubernetes`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-kubernetes](https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-kubernetes).
+The Maven package is available at [https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-kubernetes](https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-kubernetes).
 
 ```
 <dependency>
-    <groupId>com.Io.Cdktn</groupId>
+    <groupId>io.cdktn</groupId>
     <artifactId>cdktn-provider-kubernetes</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>
