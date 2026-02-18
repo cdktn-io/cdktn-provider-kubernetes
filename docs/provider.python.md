@@ -50,12 +50,12 @@ provider.KubernetesProvider(
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configContextCluster">config_context_cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context_cluster KubernetesProvider#config_context_cluster}. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configPath">config_path</a></code> | <code>str</code> | Path to the kube config file. Can be set with KUBE_CONFIG_PATH. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | A list of paths to kube config files. Can be set with KUBE_CONFIG_PATHS environment variable. |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.exec">exec</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | exec block. |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.experiments">experiments</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | experiments block. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.exec">exec</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | exec block. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.experiments">experiments</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | experiments block. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | The hostname (in form of URI) of Kubernetes master. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.ignoreAnnotations">ignore_annotations</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata annotations to ignore across all resources handled by this provider for situations where external systems are managing certain resource annotations. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.ignoreLabels">ignore_labels</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata labels to ignore across all resources handled by this provider for situations where external systems are managing certain resource labels. |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.insecure">insecure</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.proxyUrl">proxy_url</a></code> | <code>str</code> | URL to the proxy to be used for all API requests. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.tlsServerName">tls_server_name</a></code> | <code>str</code> | Server name passed to the server for SNI and is used in the client to check server certificates against. |
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `exec`<sup>Optional</sup> <a name="exec" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.exec"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
 
 exec block.
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `experiments`<sup>Optional</sup> <a name="experiments" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.experiments"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
 
 experiments block.
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.Initializer.parameter.insecure"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether server should be accessed without verifying the TLS certificate.
 
@@ -516,7 +516,7 @@ def reset_username() -> None
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a KubernetesProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a KubernetesProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -599,7 +599,7 @@ provider.KubernetesProvider.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a KubernetesProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a KubernetesProvider resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport.parameter.scope"></a>
 
@@ -629,7 +629,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the KubernetesProvider to import is found.
 
@@ -640,12 +640,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
@@ -657,12 +657,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextInput">config_context_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPathInput">config_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPathsInput">config_paths_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.execInput">exec_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.experimentsInput">experiments_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.execInput">exec_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.experimentsInput">experiments_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreAnnotationsInput">ignore_annotations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreLabelsInput">ignore_labels_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.insecureInput">insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.insecureInput">insecure_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.proxyUrlInput">proxy_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.tlsServerNameInput">tls_server_name_input</a></code> | <code>str</code> | *No description.* |
@@ -676,12 +676,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configContextCluster">config_context_cluster</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPath">config_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.exec">exec</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.experiments">experiments</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.exec">exec</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.experiments">experiments</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreAnnotations">ignore_annotations</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.ignoreLabels">ignore_labels</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.insecure">insecure</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.proxyUrl">proxy_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.tlsServerName">tls_server_name</a></code> | <code>str</code> | *No description.* |
@@ -708,7 +708,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -758,7 +758,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -878,7 +878,7 @@ config_paths_input: typing.List[str]
 exec_input: IResolvable | typing.List[KubernetesProviderExec]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
 
 ---
 
@@ -888,7 +888,7 @@ exec_input: IResolvable | typing.List[KubernetesProviderExec]
 experiments_input: IResolvable | typing.List[KubernetesProviderExperiments]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
 
 ---
 
@@ -928,7 +928,7 @@ ignore_labels_input: typing.List[str]
 insecure_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1068,7 +1068,7 @@ config_paths: typing.List[str]
 exec: IResolvable | typing.List[KubernetesProviderExec]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
 
 ---
 
@@ -1078,7 +1078,7 @@ exec: IResolvable | typing.List[KubernetesProviderExec]
 experiments: IResolvable | typing.List[KubernetesProviderExperiments]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
 
 ---
 
@@ -1118,7 +1118,7 @@ ignore_labels: typing.List[str]
 insecure: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1236,12 +1236,12 @@ provider.KubernetesProviderConfig(
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configContextCluster">config_context_cluster</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs#config_context_cluster KubernetesProvider#config_context_cluster}. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configPath">config_path</a></code> | <code>str</code> | Path to the kube config file. Can be set with KUBE_CONFIG_PATH. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.configPaths">config_paths</a></code> | <code>typing.List[str]</code> | A list of paths to kube config files. Can be set with KUBE_CONFIG_PATHS environment variable. |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.exec">exec</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | exec block. |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.experiments">experiments</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | experiments block. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.exec">exec</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]</code> | exec block. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.experiments">experiments</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]</code> | experiments block. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.host">host</a></code> | <code>str</code> | The hostname (in form of URI) of Kubernetes master. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.ignoreAnnotations">ignore_annotations</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata annotations to ignore across all resources handled by this provider for situations where external systems are managing certain resource annotations. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.ignoreLabels">ignore_labels</a></code> | <code>typing.List[str]</code> | List of Kubernetes metadata labels to ignore across all resources handled by this provider for situations where external systems are managing certain resource labels. |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.insecure">insecure</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether server should be accessed without verifying the TLS certificate. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.password">password</a></code> | <code>str</code> | The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.proxyUrl">proxy_url</a></code> | <code>str</code> | URL to the proxy to be used for all API requests. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderConfig.property.tlsServerName">tls_server_name</a></code> | <code>str</code> | Server name passed to the server for SNI and is used in the client to check server certificates against. |
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 exec: IResolvable | typing.List[KubernetesProviderExec]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExec">KubernetesProviderExec</a>]
 
 exec block.
 
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 experiments: IResolvable | typing.List[KubernetesProviderExperiments]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments">KubernetesProviderExperiments</a>]
 
 experiments block.
 
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 insecure: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether server should be accessed without verifying the TLS certificate.
 
@@ -1618,7 +1618,7 @@ provider.KubernetesProviderExperiments(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments.property.manifestResource">manifest_resource</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the `kubernetes_manifest` resource. |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments.property.manifestResource">manifest_resource</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable the `kubernetes_manifest` resource. |
 
 ---
 
@@ -1628,7 +1628,7 @@ provider.KubernetesProviderExperiments(
 manifest_resource: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable the `kubernetes_manifest` resource.
 
