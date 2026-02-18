@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataKubernetesServiceAccountConfig extends cdktf.TerraformMetaArguments {
+export interface DataKubernetesServiceAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/service_account#id DataKubernetesServiceAccount#id}
   *
@@ -30,8 +30,8 @@ export interface DataKubernetesServiceAccountImagePullSecret {
 }
 
 export function dataKubernetesServiceAccountImagePullSecretToTerraform(struct?: DataKubernetesServiceAccountImagePullSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -40,8 +40,8 @@ export function dataKubernetesServiceAccountImagePullSecretToTerraform(struct?: 
 
 
 export function dataKubernetesServiceAccountImagePullSecretToHclTerraform(struct?: DataKubernetesServiceAccountImagePullSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -49,7 +49,7 @@ export function dataKubernetesServiceAccountImagePullSecretToHclTerraform(struct
   return attrs;
 }
 
-export class DataKubernetesServiceAccountImagePullSecretOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesServiceAccountImagePullSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -58,7 +58,7 @@ export class DataKubernetesServiceAccountImagePullSecretOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -83,14 +83,14 @@ export class DataKubernetesServiceAccountImagePullSecretOutputReference extends 
   }
 }
 
-export class DataKubernetesServiceAccountImagePullSecretList extends cdktf.ComplexList {
+export class DataKubernetesServiceAccountImagePullSecretList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -105,8 +105,8 @@ export interface DataKubernetesServiceAccountSecret {
 }
 
 export function dataKubernetesServiceAccountSecretToTerraform(struct?: DataKubernetesServiceAccountSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -115,8 +115,8 @@ export function dataKubernetesServiceAccountSecretToTerraform(struct?: DataKuber
 
 
 export function dataKubernetesServiceAccountSecretToHclTerraform(struct?: DataKubernetesServiceAccountSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -124,7 +124,7 @@ export function dataKubernetesServiceAccountSecretToHclTerraform(struct?: DataKu
   return attrs;
 }
 
-export class DataKubernetesServiceAccountSecretOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesServiceAccountSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -133,7 +133,7 @@ export class DataKubernetesServiceAccountSecretOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -158,14 +158,14 @@ export class DataKubernetesServiceAccountSecretOutputReference extends cdktf.Com
   }
 }
 
-export class DataKubernetesServiceAccountSecretList extends cdktf.ComplexList {
+export class DataKubernetesServiceAccountSecretList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,45 +204,45 @@ export interface DataKubernetesServiceAccountMetadata {
 }
 
 export function dataKubernetesServiceAccountMetadataToTerraform(struct?: DataKubernetesServiceAccountMetadataOutputReference | DataKubernetesServiceAccountMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function dataKubernetesServiceAccountMetadataToHclTerraform(struct?: DataKubernetesServiceAccountMetadataOutputReference | DataKubernetesServiceAccountMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -253,14 +253,14 @@ export function dataKubernetesServiceAccountMetadataToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataKubernetesServiceAccountMetadataOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesServiceAccountMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -386,7 +386,7 @@ export class DataKubernetesServiceAccountMetadataOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/service_account kubernetes_service_account}
 */
-export class DataKubernetesServiceAccount extends cdktf.TerraformDataSource {
+export class DataKubernetesServiceAccount extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -397,14 +397,14 @@ export class DataKubernetesServiceAccount extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataKubernetesServiceAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataKubernetesServiceAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataKubernetesServiceAccount to import
   * @param importFromId The id of the existing DataKubernetesServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/service_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataKubernetesServiceAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_service_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_service_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -499,7 +499,7 @@ export class DataKubernetesServiceAccount extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: dataKubernetesServiceAccountMetadataToTerraform(this._metadata.internalValue),
     };
   }
@@ -507,7 +507,7 @@ export class DataKubernetesServiceAccount extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

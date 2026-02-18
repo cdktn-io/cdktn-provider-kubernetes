@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretV1DataConfig extends cdktf.TerraformMetaArguments {
+export interface SecretV1DataConfig extends cdktn.TerraformMetaArguments {
   /**
   * Data to be stored in the Kubernetes Secret.
   *
@@ -29,7 +29,7 @@ export interface SecretV1DataConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1_data#force SecretV1Data#force}
   */
-  readonly force?: boolean | cdktf.IResolvable;
+  readonly force?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1_data#id SecretV1Data#id}
   *
@@ -60,31 +60,31 @@ export interface SecretV1DataMetadata {
 }
 
 export function secretV1DataMetadataToTerraform(struct?: SecretV1DataMetadataOutputReference | SecretV1DataMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function secretV1DataMetadataToHclTerraform(struct?: SecretV1DataMetadataOutputReference | SecretV1DataMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,14 +95,14 @@ export function secretV1DataMetadataToHclTerraform(struct?: SecretV1DataMetadata
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretV1DataMetadataOutputReference extends cdktf.ComplexObject {
+export class SecretV1DataMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -166,7 +166,7 @@ export class SecretV1DataMetadataOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1_data kubernetes_secret_v1_data}
 */
-export class SecretV1Data extends cdktf.TerraformResource {
+export class SecretV1Data extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -177,14 +177,14 @@ export class SecretV1Data extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecretV1Data resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecretV1Data resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretV1Data to import
   * @param importFromId The id of the existing SecretV1Data that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1_data#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretV1Data to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_secret_v1_data", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_secret_v1_data", importId: importFromId, provider });
       }
 
   // ===========
@@ -255,11 +255,11 @@ export class SecretV1Data extends cdktf.TerraformResource {
   }
 
   // force - computed: false, optional: true, required: false
-  private _force?: boolean | cdktf.IResolvable; 
+  private _force?: boolean | cdktn.IResolvable; 
   public get force() {
     return this.getBooleanAttribute('force');
   }
-  public set force(value: boolean | cdktf.IResolvable) {
+  public set force(value: boolean | cdktn.IResolvable) {
     this._force = value;
   }
   public resetForce() {
@@ -305,10 +305,10 @@ export class SecretV1Data extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data: cdktf.hashMapper(cdktf.stringToTerraform)(this._data),
-      field_manager: cdktf.stringToTerraform(this._fieldManager),
-      force: cdktf.booleanToTerraform(this._force),
-      id: cdktf.stringToTerraform(this._id),
+      data: cdktn.hashMapper(cdktn.stringToTerraform)(this._data),
+      field_manager: cdktn.stringToTerraform(this._fieldManager),
+      force: cdktn.booleanToTerraform(this._force),
+      id: cdktn.stringToTerraform(this._id),
       metadata: secretV1DataMetadataToTerraform(this._metadata.internalValue),
     };
   }
@@ -316,25 +316,25 @@ export class SecretV1Data extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._data),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._data),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       field_manager: {
-        value: cdktf.stringToHclTerraform(this._fieldManager),
+        value: cdktn.stringToHclTerraform(this._fieldManager),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force: {
-        value: cdktf.booleanToHclTerraform(this._force),
+        value: cdktn.booleanToHclTerraform(this._force),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

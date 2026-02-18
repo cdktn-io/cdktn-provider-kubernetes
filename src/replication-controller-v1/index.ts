@@ -19,8 +19,8 @@ replicationControllerV1TimeoutsToHclTerraform,
 ReplicationControllerV1TimeoutsOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface ReplicationControllerV1Config extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface ReplicationControllerV1Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller_v1#id ReplicationControllerV1#id}
   *
@@ -51,7 +51,7 @@ export interface ReplicationControllerV1Config extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller_v1 kubernetes_replication_controller_v1}
 */
-export class ReplicationControllerV1 extends cdktf.TerraformResource {
+export class ReplicationControllerV1 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -62,14 +62,14 @@ export class ReplicationControllerV1 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ReplicationControllerV1 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ReplicationControllerV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ReplicationControllerV1 to import
   * @param importFromId The id of the existing ReplicationControllerV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ReplicationControllerV1 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_replication_controller_v1", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_replication_controller_v1", importId: importFromId, provider });
       }
 
   // ===========
@@ -173,7 +173,7 @@ export class ReplicationControllerV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: replicationControllerV1MetadataToTerraform(this._metadata.internalValue),
       spec: replicationControllerV1SpecToTerraform(this._spec.internalValue),
       timeouts: replicationControllerV1TimeoutsToTerraform(this._timeouts.internalValue),
@@ -183,7 +183,7 @@ export class ReplicationControllerV1 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

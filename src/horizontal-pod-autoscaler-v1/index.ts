@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface HorizontalPodAutoscalerV1Config extends cdktf.TerraformMetaArguments {
+export interface HorizontalPodAutoscalerV1Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/horizontal_pod_autoscaler_v1#id HorizontalPodAutoscalerV1#id}
   *
@@ -66,52 +66,52 @@ export interface HorizontalPodAutoscalerV1Metadata {
 }
 
 export function horizontalPodAutoscalerV1MetadataToTerraform(struct?: HorizontalPodAutoscalerV1MetadataOutputReference | HorizontalPodAutoscalerV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function horizontalPodAutoscalerV1MetadataToHclTerraform(struct?: HorizontalPodAutoscalerV1MetadataOutputReference | HorizontalPodAutoscalerV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,14 +122,14 @@ export function horizontalPodAutoscalerV1MetadataToHclTerraform(struct?: Horizon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HorizontalPodAutoscalerV1MetadataOutputReference extends cdktf.ComplexObject {
+export class HorizontalPodAutoscalerV1MetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -295,38 +295,38 @@ export interface HorizontalPodAutoscalerV1SpecScaleTargetRef {
 }
 
 export function horizontalPodAutoscalerV1SpecScaleTargetRefToTerraform(struct?: HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference | HorizontalPodAutoscalerV1SpecScaleTargetRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    name: cdktf.stringToTerraform(struct!.name),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function horizontalPodAutoscalerV1SpecScaleTargetRefToHclTerraform(struct?: HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference | HorizontalPodAutoscalerV1SpecScaleTargetRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -337,14 +337,14 @@ export function horizontalPodAutoscalerV1SpecScaleTargetRefToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference extends cdktf.ComplexObject {
+export class HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -451,39 +451,39 @@ export interface HorizontalPodAutoscalerV1Spec {
 }
 
 export function horizontalPodAutoscalerV1SpecToTerraform(struct?: HorizontalPodAutoscalerV1SpecOutputReference | HorizontalPodAutoscalerV1Spec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_replicas: cdktf.numberToTerraform(struct!.maxReplicas),
-    min_replicas: cdktf.numberToTerraform(struct!.minReplicas),
-    target_cpu_utilization_percentage: cdktf.numberToTerraform(struct!.targetCpuUtilizationPercentage),
+    max_replicas: cdktn.numberToTerraform(struct!.maxReplicas),
+    min_replicas: cdktn.numberToTerraform(struct!.minReplicas),
+    target_cpu_utilization_percentage: cdktn.numberToTerraform(struct!.targetCpuUtilizationPercentage),
     scale_target_ref: horizontalPodAutoscalerV1SpecScaleTargetRefToTerraform(struct!.scaleTargetRef),
   }
 }
 
 
 export function horizontalPodAutoscalerV1SpecToHclTerraform(struct?: HorizontalPodAutoscalerV1SpecOutputReference | HorizontalPodAutoscalerV1Spec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_replicas: {
-      value: cdktf.numberToHclTerraform(struct!.maxReplicas),
+      value: cdktn.numberToHclTerraform(struct!.maxReplicas),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_replicas: {
-      value: cdktf.numberToHclTerraform(struct!.minReplicas),
+      value: cdktn.numberToHclTerraform(struct!.minReplicas),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     target_cpu_utilization_percentage: {
-      value: cdktf.numberToHclTerraform(struct!.targetCpuUtilizationPercentage),
+      value: cdktn.numberToHclTerraform(struct!.targetCpuUtilizationPercentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -500,14 +500,14 @@ export function horizontalPodAutoscalerV1SpecToHclTerraform(struct?: HorizontalP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HorizontalPodAutoscalerV1SpecOutputReference extends cdktf.ComplexObject {
+export class HorizontalPodAutoscalerV1SpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -612,7 +612,7 @@ export class HorizontalPodAutoscalerV1SpecOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/horizontal_pod_autoscaler_v1 kubernetes_horizontal_pod_autoscaler_v1}
 */
-export class HorizontalPodAutoscalerV1 extends cdktf.TerraformResource {
+export class HorizontalPodAutoscalerV1 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -623,14 +623,14 @@ export class HorizontalPodAutoscalerV1 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HorizontalPodAutoscalerV1 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HorizontalPodAutoscalerV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HorizontalPodAutoscalerV1 to import
   * @param importFromId The id of the existing HorizontalPodAutoscalerV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/horizontal_pod_autoscaler_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HorizontalPodAutoscalerV1 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_horizontal_pod_autoscaler_v1", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_horizontal_pod_autoscaler_v1", importId: importFromId, provider });
       }
 
   // ===========
@@ -717,7 +717,7 @@ export class HorizontalPodAutoscalerV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: horizontalPodAutoscalerV1MetadataToTerraform(this._metadata.internalValue),
       spec: horizontalPodAutoscalerV1SpecToTerraform(this._spec.internalValue),
     };
@@ -726,7 +726,7 @@ export class HorizontalPodAutoscalerV1 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

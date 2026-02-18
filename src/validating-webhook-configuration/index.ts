@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ValidatingWebhookConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface ValidatingWebhookConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/validating_webhook_configuration#id ValidatingWebhookConfiguration#id}
   *
@@ -30,7 +30,7 @@ export interface ValidatingWebhookConfigurationConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/validating_webhook_configuration#webhook ValidatingWebhookConfiguration#webhook}
   */
-  readonly webhook: ValidatingWebhookConfigurationWebhook[] | cdktf.IResolvable;
+  readonly webhook: ValidatingWebhookConfigurationWebhook[] | cdktn.IResolvable;
 }
 export interface ValidatingWebhookConfigurationMetadata {
   /**
@@ -60,45 +60,45 @@ export interface ValidatingWebhookConfigurationMetadata {
 }
 
 export function validatingWebhookConfigurationMetadataToTerraform(struct?: ValidatingWebhookConfigurationMetadataOutputReference | ValidatingWebhookConfigurationMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function validatingWebhookConfigurationMetadataToHclTerraform(struct?: ValidatingWebhookConfigurationMetadataOutputReference | ValidatingWebhookConfigurationMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function validatingWebhookConfigurationMetadataToHclTerraform(struct?: Va
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ValidatingWebhookConfigurationMetadataOutputReference extends cdktf.ComplexObject {
+export class ValidatingWebhookConfigurationMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -266,45 +266,45 @@ export interface ValidatingWebhookConfigurationWebhookClientConfigService {
 }
 
 export function validatingWebhookConfigurationWebhookClientConfigServiceToTerraform(struct?: ValidatingWebhookConfigurationWebhookClientConfigServiceOutputReference | ValidatingWebhookConfigurationWebhookClientConfigService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.numberToTerraform(struct!.port),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function validatingWebhookConfigurationWebhookClientConfigServiceToHclTerraform(struct?: ValidatingWebhookConfigurationWebhookClientConfigServiceOutputReference | ValidatingWebhookConfigurationWebhookClientConfigService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -315,14 +315,14 @@ export function validatingWebhookConfigurationWebhookClientConfigServiceToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ValidatingWebhookConfigurationWebhookClientConfigServiceOutputReference extends cdktf.ComplexObject {
+export class ValidatingWebhookConfigurationWebhookClientConfigServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -455,32 +455,32 @@ export interface ValidatingWebhookConfigurationWebhookClientConfig {
 }
 
 export function validatingWebhookConfigurationWebhookClientConfigToTerraform(struct?: ValidatingWebhookConfigurationWebhookClientConfigOutputReference | ValidatingWebhookConfigurationWebhookClientConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ca_bundle: cdktf.stringToTerraform(struct!.caBundle),
-    url: cdktf.stringToTerraform(struct!.url),
+    ca_bundle: cdktn.stringToTerraform(struct!.caBundle),
+    url: cdktn.stringToTerraform(struct!.url),
     service: validatingWebhookConfigurationWebhookClientConfigServiceToTerraform(struct!.service),
   }
 }
 
 
 export function validatingWebhookConfigurationWebhookClientConfigToHclTerraform(struct?: ValidatingWebhookConfigurationWebhookClientConfigOutputReference | ValidatingWebhookConfigurationWebhookClientConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ca_bundle: {
-      value: cdktf.stringToHclTerraform(struct!.caBundle),
+      value: cdktn.stringToHclTerraform(struct!.caBundle),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -497,14 +497,14 @@ export function validatingWebhookConfigurationWebhookClientConfigToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ValidatingWebhookConfigurationWebhookClientConfigOutputReference extends cdktf.ComplexObject {
+export class ValidatingWebhookConfigurationWebhookClientConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -610,39 +610,39 @@ export interface ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpr
   readonly values?: string[];
 }
 
-export function validatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsToTerraform(struct?: ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function validatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsToTerraform(struct?: ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function validatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsToHclTerraform(struct?: ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function validatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsToHclTerraform(struct?: ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -653,9 +653,9 @@ export function validatingWebhookConfigurationWebhookNamespaceSelectorMatchExpre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -663,11 +663,11 @@ export class ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -688,7 +688,7 @@ export class ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -696,7 +696,7 @@ export class ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressi
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -744,7 +744,7 @@ export class ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressi
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -758,15 +758,15 @@ export class ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressi
   }
 }
 
-export class ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions[] | cdktf.IResolvable
+export class ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -789,35 +789,35 @@ export interface ValidatingWebhookConfigurationWebhookNamespaceSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/validating_webhook_configuration#match_expressions ValidatingWebhookConfiguration#match_expressions}
   */
-  readonly matchExpressions?: ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function validatingWebhookConfigurationWebhookNamespaceSelectorToTerraform(struct?: ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference | ValidatingWebhookConfigurationWebhookNamespaceSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(validatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(validatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function validatingWebhookConfigurationWebhookNamespaceSelectorToHclTerraform(struct?: ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference | ValidatingWebhookConfigurationWebhookNamespaceSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(validatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(validatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList",
@@ -828,14 +828,14 @@ export function validatingWebhookConfigurationWebhookNamespaceSelectorToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference extends cdktf.ComplexObject {
+export class ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -887,7 +887,7 @@ export class ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReferen
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -919,39 +919,39 @@ export interface ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpress
   readonly values?: string[];
 }
 
-export function validatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsToTerraform(struct?: ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function validatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsToTerraform(struct?: ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function validatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsToHclTerraform(struct?: ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function validatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsToHclTerraform(struct?: ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -962,9 +962,9 @@ export function validatingWebhookConfigurationWebhookObjectSelectorMatchExpressi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -972,11 +972,11 @@ export class ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -997,7 +997,7 @@ export class ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1005,7 +1005,7 @@ export class ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1053,7 +1053,7 @@ export class ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1067,15 +1067,15 @@ export class ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions
   }
 }
 
-export class ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions[] | cdktf.IResolvable
+export class ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1098,35 +1098,35 @@ export interface ValidatingWebhookConfigurationWebhookObjectSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/validating_webhook_configuration#match_expressions ValidatingWebhookConfiguration#match_expressions}
   */
-  readonly matchExpressions?: ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function validatingWebhookConfigurationWebhookObjectSelectorToTerraform(struct?: ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference | ValidatingWebhookConfigurationWebhookObjectSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(validatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(validatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function validatingWebhookConfigurationWebhookObjectSelectorToHclTerraform(struct?: ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference | ValidatingWebhookConfigurationWebhookObjectSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(validatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(validatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsList",
@@ -1137,14 +1137,14 @@ export function validatingWebhookConfigurationWebhookObjectSelectorToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference extends cdktf.ComplexObject {
+export class ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1196,7 +1196,7 @@ export class ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference 
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -1232,53 +1232,53 @@ export interface ValidatingWebhookConfigurationWebhookRule {
   readonly scope?: string;
 }
 
-export function validatingWebhookConfigurationWebhookRuleToTerraform(struct?: ValidatingWebhookConfigurationWebhookRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function validatingWebhookConfigurationWebhookRuleToTerraform(struct?: ValidatingWebhookConfigurationWebhookRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.apiGroups),
-    api_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.apiVersions),
-    operations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.operations),
-    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
-    scope: cdktf.stringToTerraform(struct!.scope),
+    api_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.apiGroups),
+    api_versions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.apiVersions),
+    operations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.operations),
+    resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resources),
+    scope: cdktn.stringToTerraform(struct!.scope),
   }
 }
 
 
-export function validatingWebhookConfigurationWebhookRuleToHclTerraform(struct?: ValidatingWebhookConfigurationWebhookRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function validatingWebhookConfigurationWebhookRuleToHclTerraform(struct?: ValidatingWebhookConfigurationWebhookRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.apiGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.apiGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     api_versions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.apiVersions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.apiVersions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     operations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.operations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.operations),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1289,9 +1289,9 @@ export function validatingWebhookConfigurationWebhookRuleToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ValidatingWebhookConfigurationWebhookRuleOutputReference extends cdktf.ComplexObject {
+export class ValidatingWebhookConfigurationWebhookRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1299,11 +1299,11 @@ export class ValidatingWebhookConfigurationWebhookRuleOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ValidatingWebhookConfigurationWebhookRule | cdktf.IResolvable | undefined {
+  public get internalValue(): ValidatingWebhookConfigurationWebhookRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1332,7 +1332,7 @@ export class ValidatingWebhookConfigurationWebhookRuleOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ValidatingWebhookConfigurationWebhookRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ValidatingWebhookConfigurationWebhookRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1342,7 +1342,7 @@ export class ValidatingWebhookConfigurationWebhookRuleOutputReference extends cd
       this._resources = undefined;
       this._scope = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1426,15 +1426,15 @@ export class ValidatingWebhookConfigurationWebhookRuleOutputReference extends cd
   }
 }
 
-export class ValidatingWebhookConfigurationWebhookRuleList extends cdktf.ComplexList {
-  public internalValue? : ValidatingWebhookConfigurationWebhookRule[] | cdktf.IResolvable
+export class ValidatingWebhookConfigurationWebhookRuleList extends cdktn.ComplexList {
+  public internalValue? : ValidatingWebhookConfigurationWebhookRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1511,67 +1511,67 @@ export interface ValidatingWebhookConfigurationWebhook {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/validating_webhook_configuration#rule ValidatingWebhookConfiguration#rule}
   */
-  readonly rule?: ValidatingWebhookConfigurationWebhookRule[] | cdktf.IResolvable;
+  readonly rule?: ValidatingWebhookConfigurationWebhookRule[] | cdktn.IResolvable;
 }
 
-export function validatingWebhookConfigurationWebhookToTerraform(struct?: ValidatingWebhookConfigurationWebhook | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function validatingWebhookConfigurationWebhookToTerraform(struct?: ValidatingWebhookConfigurationWebhook | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admission_review_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.admissionReviewVersions),
-    failure_policy: cdktf.stringToTerraform(struct!.failurePolicy),
-    match_policy: cdktf.stringToTerraform(struct!.matchPolicy),
-    name: cdktf.stringToTerraform(struct!.name),
-    side_effects: cdktf.stringToTerraform(struct!.sideEffects),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    admission_review_versions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.admissionReviewVersions),
+    failure_policy: cdktn.stringToTerraform(struct!.failurePolicy),
+    match_policy: cdktn.stringToTerraform(struct!.matchPolicy),
+    name: cdktn.stringToTerraform(struct!.name),
+    side_effects: cdktn.stringToTerraform(struct!.sideEffects),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     client_config: validatingWebhookConfigurationWebhookClientConfigToTerraform(struct!.clientConfig),
     namespace_selector: validatingWebhookConfigurationWebhookNamespaceSelectorToTerraform(struct!.namespaceSelector),
     object_selector: validatingWebhookConfigurationWebhookObjectSelectorToTerraform(struct!.objectSelector),
-    rule: cdktf.listMapper(validatingWebhookConfigurationWebhookRuleToTerraform, true)(struct!.rule),
+    rule: cdktn.listMapper(validatingWebhookConfigurationWebhookRuleToTerraform, true)(struct!.rule),
   }
 }
 
 
-export function validatingWebhookConfigurationWebhookToHclTerraform(struct?: ValidatingWebhookConfigurationWebhook | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function validatingWebhookConfigurationWebhookToHclTerraform(struct?: ValidatingWebhookConfigurationWebhook | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admission_review_versions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.admissionReviewVersions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.admissionReviewVersions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     failure_policy: {
-      value: cdktf.stringToHclTerraform(struct!.failurePolicy),
+      value: cdktn.stringToHclTerraform(struct!.failurePolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_policy: {
-      value: cdktf.stringToHclTerraform(struct!.matchPolicy),
+      value: cdktn.stringToHclTerraform(struct!.matchPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     side_effects: {
-      value: cdktf.stringToHclTerraform(struct!.sideEffects),
+      value: cdktn.stringToHclTerraform(struct!.sideEffects),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1595,7 +1595,7 @@ export function validatingWebhookConfigurationWebhookToHclTerraform(struct?: Val
       storageClassType: "ValidatingWebhookConfigurationWebhookObjectSelectorList",
     },
     rule: {
-      value: cdktf.listMapperHcl(validatingWebhookConfigurationWebhookRuleToHclTerraform, true)(struct!.rule),
+      value: cdktn.listMapperHcl(validatingWebhookConfigurationWebhookRuleToHclTerraform, true)(struct!.rule),
       isBlock: true,
       type: "list",
       storageClassType: "ValidatingWebhookConfigurationWebhookRuleList",
@@ -1606,9 +1606,9 @@ export function validatingWebhookConfigurationWebhookToHclTerraform(struct?: Val
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ValidatingWebhookConfigurationWebhookOutputReference extends cdktf.ComplexObject {
+export class ValidatingWebhookConfigurationWebhookOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1616,11 +1616,11 @@ export class ValidatingWebhookConfigurationWebhookOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ValidatingWebhookConfigurationWebhook | cdktf.IResolvable | undefined {
+  public get internalValue(): ValidatingWebhookConfigurationWebhook | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1669,7 +1669,7 @@ export class ValidatingWebhookConfigurationWebhookOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ValidatingWebhookConfigurationWebhook | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ValidatingWebhookConfigurationWebhook | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1684,7 +1684,7 @@ export class ValidatingWebhookConfigurationWebhookOutputReference extends cdktf.
       this._objectSelector.internalValue = undefined;
       this._rule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1847,7 +1847,7 @@ export class ValidatingWebhookConfigurationWebhookOutputReference extends cdktf.
   public get rule() {
     return this._rule;
   }
-  public putRule(value: ValidatingWebhookConfigurationWebhookRule[] | cdktf.IResolvable) {
+  public putRule(value: ValidatingWebhookConfigurationWebhookRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -1859,15 +1859,15 @@ export class ValidatingWebhookConfigurationWebhookOutputReference extends cdktf.
   }
 }
 
-export class ValidatingWebhookConfigurationWebhookList extends cdktf.ComplexList {
-  public internalValue? : ValidatingWebhookConfigurationWebhook[] | cdktf.IResolvable
+export class ValidatingWebhookConfigurationWebhookList extends cdktn.ComplexList {
+  public internalValue? : ValidatingWebhookConfigurationWebhook[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1882,7 +1882,7 @@ export class ValidatingWebhookConfigurationWebhookList extends cdktf.ComplexList
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/validating_webhook_configuration kubernetes_validating_webhook_configuration}
 */
-export class ValidatingWebhookConfiguration extends cdktf.TerraformResource {
+export class ValidatingWebhookConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1893,14 +1893,14 @@ export class ValidatingWebhookConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ValidatingWebhookConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ValidatingWebhookConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ValidatingWebhookConfiguration to import
   * @param importFromId The id of the existing ValidatingWebhookConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/validating_webhook_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ValidatingWebhookConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_validating_webhook_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_validating_webhook_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -1973,7 +1973,7 @@ export class ValidatingWebhookConfiguration extends cdktf.TerraformResource {
   public get webhook() {
     return this._webhook;
   }
-  public putWebhook(value: ValidatingWebhookConfigurationWebhook[] | cdktf.IResolvable) {
+  public putWebhook(value: ValidatingWebhookConfigurationWebhook[] | cdktn.IResolvable) {
     this._webhook.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1987,16 +1987,16 @@ export class ValidatingWebhookConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: validatingWebhookConfigurationMetadataToTerraform(this._metadata.internalValue),
-      webhook: cdktf.listMapper(validatingWebhookConfigurationWebhookToTerraform, true)(this._webhook.internalValue),
+      webhook: cdktn.listMapper(validatingWebhookConfigurationWebhookToTerraform, true)(this._webhook.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2008,7 +2008,7 @@ export class ValidatingWebhookConfiguration extends cdktf.TerraformResource {
         storageClassType: "ValidatingWebhookConfigurationMetadataList",
       },
       webhook: {
-        value: cdktf.listMapperHcl(validatingWebhookConfigurationWebhookToHclTerraform, true)(this._webhook.internalValue),
+        value: cdktn.listMapperHcl(validatingWebhookConfigurationWebhookToHclTerraform, true)(this._webhook.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ValidatingWebhookConfigurationWebhookList",

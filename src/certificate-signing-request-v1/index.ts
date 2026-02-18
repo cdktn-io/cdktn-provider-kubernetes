@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CertificateSigningRequestV1Config extends cdktf.TerraformMetaArguments {
+export interface CertificateSigningRequestV1Config extends cdktn.TerraformMetaArguments {
   /**
   * Automatically approve the CertificateSigningRequest
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/certificate_signing_request_v1#auto_approve CertificateSigningRequestV1#auto_approve}
   */
-  readonly autoApprove?: boolean | cdktf.IResolvable;
+  readonly autoApprove?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/certificate_signing_request_v1#id CertificateSigningRequestV1#id}
   *
@@ -72,45 +72,45 @@ export interface CertificateSigningRequestV1Metadata {
 }
 
 export function certificateSigningRequestV1MetadataToTerraform(struct?: CertificateSigningRequestV1MetadataOutputReference | CertificateSigningRequestV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function certificateSigningRequestV1MetadataToHclTerraform(struct?: CertificateSigningRequestV1MetadataOutputReference | CertificateSigningRequestV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -121,14 +121,14 @@ export function certificateSigningRequestV1MetadataToHclTerraform(struct?: Certi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateSigningRequestV1MetadataOutputReference extends cdktf.ComplexObject {
+export class CertificateSigningRequestV1MetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -322,45 +322,45 @@ export interface CertificateSigningRequestV1Spec {
 }
 
 export function certificateSigningRequestV1SpecToTerraform(struct?: CertificateSigningRequestV1SpecOutputReference | CertificateSigningRequestV1Spec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expiration_seconds: cdktf.numberToTerraform(struct!.expirationSeconds),
-    request: cdktf.stringToTerraform(struct!.request),
-    signer_name: cdktf.stringToTerraform(struct!.signerName),
-    usages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.usages),
+    expiration_seconds: cdktn.numberToTerraform(struct!.expirationSeconds),
+    request: cdktn.stringToTerraform(struct!.request),
+    signer_name: cdktn.stringToTerraform(struct!.signerName),
+    usages: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.usages),
   }
 }
 
 
 export function certificateSigningRequestV1SpecToHclTerraform(struct?: CertificateSigningRequestV1SpecOutputReference | CertificateSigningRequestV1Spec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expiration_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.expirationSeconds),
+      value: cdktn.numberToHclTerraform(struct!.expirationSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     request: {
-      value: cdktf.stringToHclTerraform(struct!.request),
+      value: cdktn.stringToHclTerraform(struct!.request),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     signer_name: {
-      value: cdktf.stringToHclTerraform(struct!.signerName),
+      value: cdktn.stringToHclTerraform(struct!.signerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     usages: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.usages),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.usages),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -371,14 +371,14 @@ export function certificateSigningRequestV1SpecToHclTerraform(struct?: Certifica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateSigningRequestV1SpecOutputReference extends cdktf.ComplexObject {
+export class CertificateSigningRequestV1SpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -466,7 +466,7 @@ export class CertificateSigningRequestV1SpecOutputReference extends cdktf.Comple
   // usages - computed: false, optional: true, required: false
   private _usages?: string[]; 
   public get usages() {
-    return cdktf.Fn.tolist(this.getListAttribute('usages'));
+    return cdktn.Fn.tolist(this.getListAttribute('usages'));
   }
   public set usages(value: string[]) {
     this._usages = value;
@@ -486,25 +486,25 @@ export interface CertificateSigningRequestV1Timeouts {
   readonly create?: string;
 }
 
-export function certificateSigningRequestV1TimeoutsToTerraform(struct?: CertificateSigningRequestV1Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateSigningRequestV1TimeoutsToTerraform(struct?: CertificateSigningRequestV1Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function certificateSigningRequestV1TimeoutsToHclTerraform(struct?: CertificateSigningRequestV1Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function certificateSigningRequestV1TimeoutsToHclTerraform(struct?: CertificateSigningRequestV1Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -515,19 +515,19 @@ export function certificateSigningRequestV1TimeoutsToHclTerraform(struct?: Certi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CertificateSigningRequestV1TimeoutsOutputReference extends cdktf.ComplexObject {
+export class CertificateSigningRequestV1TimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CertificateSigningRequestV1Timeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CertificateSigningRequestV1Timeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -540,13 +540,13 @@ export class CertificateSigningRequestV1TimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CertificateSigningRequestV1Timeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CertificateSigningRequestV1Timeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -577,7 +577,7 @@ export class CertificateSigningRequestV1TimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/certificate_signing_request_v1 kubernetes_certificate_signing_request_v1}
 */
-export class CertificateSigningRequestV1 extends cdktf.TerraformResource {
+export class CertificateSigningRequestV1 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -588,14 +588,14 @@ export class CertificateSigningRequestV1 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CertificateSigningRequestV1 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CertificateSigningRequestV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CertificateSigningRequestV1 to import
   * @param importFromId The id of the existing CertificateSigningRequestV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/certificate_signing_request_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CertificateSigningRequestV1 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_certificate_signing_request_v1", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_certificate_signing_request_v1", importId: importFromId, provider });
       }
 
   // ===========
@@ -637,11 +637,11 @@ export class CertificateSigningRequestV1 extends cdktf.TerraformResource {
   // ==========
 
   // auto_approve - computed: false, optional: true, required: false
-  private _autoApprove?: boolean | cdktf.IResolvable; 
+  private _autoApprove?: boolean | cdktn.IResolvable; 
   public get autoApprove() {
     return this.getBooleanAttribute('auto_approve');
   }
-  public set autoApprove(value: boolean | cdktf.IResolvable) {
+  public set autoApprove(value: boolean | cdktn.IResolvable) {
     this._autoApprove = value;
   }
   public resetAutoApprove() {
@@ -721,8 +721,8 @@ export class CertificateSigningRequestV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_approve: cdktf.booleanToTerraform(this._autoApprove),
-      id: cdktf.stringToTerraform(this._id),
+      auto_approve: cdktn.booleanToTerraform(this._autoApprove),
+      id: cdktn.stringToTerraform(this._id),
       metadata: certificateSigningRequestV1MetadataToTerraform(this._metadata.internalValue),
       spec: certificateSigningRequestV1SpecToTerraform(this._spec.internalValue),
       timeouts: certificateSigningRequestV1TimeoutsToTerraform(this._timeouts.internalValue),
@@ -732,13 +732,13 @@ export class CertificateSigningRequestV1 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_approve: {
-        value: cdktf.booleanToHclTerraform(this._autoApprove),
+        value: cdktn.booleanToHclTerraform(this._autoApprove),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

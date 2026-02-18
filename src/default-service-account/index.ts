@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DefaultServiceAccountConfig extends cdktf.TerraformMetaArguments {
+export interface DefaultServiceAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Enable automatic mounting of the service account token
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#automount_service_account_token DefaultServiceAccount#automount_service_account_token}
   */
-  readonly automountServiceAccountToken?: boolean | cdktf.IResolvable;
+  readonly automountServiceAccountToken?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#id DefaultServiceAccount#id}
   *
@@ -30,7 +30,7 @@ export interface DefaultServiceAccountConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#image_pull_secret DefaultServiceAccount#image_pull_secret}
   */
-  readonly imagePullSecret?: DefaultServiceAccountImagePullSecret[] | cdktf.IResolvable;
+  readonly imagePullSecret?: DefaultServiceAccountImagePullSecret[] | cdktn.IResolvable;
   /**
   * metadata block
   *
@@ -42,7 +42,7 @@ export interface DefaultServiceAccountConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#secret DefaultServiceAccount#secret}
   */
-  readonly secret?: DefaultServiceAccountSecret[] | cdktf.IResolvable;
+  readonly secret?: DefaultServiceAccountSecret[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -59,25 +59,25 @@ export interface DefaultServiceAccountImagePullSecret {
   readonly name?: string;
 }
 
-export function defaultServiceAccountImagePullSecretToTerraform(struct?: DefaultServiceAccountImagePullSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function defaultServiceAccountImagePullSecretToTerraform(struct?: DefaultServiceAccountImagePullSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function defaultServiceAccountImagePullSecretToHclTerraform(struct?: DefaultServiceAccountImagePullSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function defaultServiceAccountImagePullSecretToHclTerraform(struct?: DefaultServiceAccountImagePullSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -88,9 +88,9 @@ export function defaultServiceAccountImagePullSecretToHclTerraform(struct?: Defa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DefaultServiceAccountImagePullSecretOutputReference extends cdktf.ComplexObject {
+export class DefaultServiceAccountImagePullSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -98,11 +98,11 @@ export class DefaultServiceAccountImagePullSecretOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DefaultServiceAccountImagePullSecret | cdktf.IResolvable | undefined {
+  public get internalValue(): DefaultServiceAccountImagePullSecret | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -115,13 +115,13 @@ export class DefaultServiceAccountImagePullSecretOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DefaultServiceAccountImagePullSecret | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DefaultServiceAccountImagePullSecret | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -149,15 +149,15 @@ export class DefaultServiceAccountImagePullSecretOutputReference extends cdktf.C
   }
 }
 
-export class DefaultServiceAccountImagePullSecretList extends cdktf.ComplexList {
-  public internalValue? : DefaultServiceAccountImagePullSecret[] | cdktf.IResolvable
+export class DefaultServiceAccountImagePullSecretList extends cdktn.ComplexList {
+  public internalValue? : DefaultServiceAccountImagePullSecret[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -196,45 +196,45 @@ export interface DefaultServiceAccountMetadata {
 }
 
 export function defaultServiceAccountMetadataToTerraform(struct?: DefaultServiceAccountMetadataOutputReference | DefaultServiceAccountMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function defaultServiceAccountMetadataToHclTerraform(struct?: DefaultServiceAccountMetadataOutputReference | DefaultServiceAccountMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -245,14 +245,14 @@ export function defaultServiceAccountMetadataToHclTerraform(struct?: DefaultServ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DefaultServiceAccountMetadataOutputReference extends cdktf.ComplexObject {
+export class DefaultServiceAccountMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -383,25 +383,25 @@ export interface DefaultServiceAccountSecret {
   readonly name?: string;
 }
 
-export function defaultServiceAccountSecretToTerraform(struct?: DefaultServiceAccountSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function defaultServiceAccountSecretToTerraform(struct?: DefaultServiceAccountSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function defaultServiceAccountSecretToHclTerraform(struct?: DefaultServiceAccountSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function defaultServiceAccountSecretToHclTerraform(struct?: DefaultServiceAccountSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -412,9 +412,9 @@ export function defaultServiceAccountSecretToHclTerraform(struct?: DefaultServic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DefaultServiceAccountSecretOutputReference extends cdktf.ComplexObject {
+export class DefaultServiceAccountSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -422,11 +422,11 @@ export class DefaultServiceAccountSecretOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DefaultServiceAccountSecret | cdktf.IResolvable | undefined {
+  public get internalValue(): DefaultServiceAccountSecret | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -439,13 +439,13 @@ export class DefaultServiceAccountSecretOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DefaultServiceAccountSecret | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DefaultServiceAccountSecret | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -473,15 +473,15 @@ export class DefaultServiceAccountSecretOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class DefaultServiceAccountSecretList extends cdktf.ComplexList {
-  public internalValue? : DefaultServiceAccountSecret[] | cdktf.IResolvable
+export class DefaultServiceAccountSecretList extends cdktn.ComplexList {
+  public internalValue? : DefaultServiceAccountSecret[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -499,25 +499,25 @@ export interface DefaultServiceAccountTimeouts {
   readonly create?: string;
 }
 
-export function defaultServiceAccountTimeoutsToTerraform(struct?: DefaultServiceAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function defaultServiceAccountTimeoutsToTerraform(struct?: DefaultServiceAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function defaultServiceAccountTimeoutsToHclTerraform(struct?: DefaultServiceAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function defaultServiceAccountTimeoutsToHclTerraform(struct?: DefaultServiceAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -528,19 +528,19 @@ export function defaultServiceAccountTimeoutsToHclTerraform(struct?: DefaultServ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DefaultServiceAccountTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DefaultServiceAccountTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DefaultServiceAccountTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DefaultServiceAccountTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -553,13 +553,13 @@ export class DefaultServiceAccountTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DefaultServiceAccountTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DefaultServiceAccountTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -590,7 +590,7 @@ export class DefaultServiceAccountTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account kubernetes_default_service_account}
 */
-export class DefaultServiceAccount extends cdktf.TerraformResource {
+export class DefaultServiceAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -601,14 +601,14 @@ export class DefaultServiceAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DefaultServiceAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DefaultServiceAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DefaultServiceAccount to import
   * @param importFromId The id of the existing DefaultServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DefaultServiceAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_default_service_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_default_service_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -651,11 +651,11 @@ export class DefaultServiceAccount extends cdktf.TerraformResource {
   // ==========
 
   // automount_service_account_token - computed: false, optional: true, required: false
-  private _automountServiceAccountToken?: boolean | cdktf.IResolvable; 
+  private _automountServiceAccountToken?: boolean | cdktn.IResolvable; 
   public get automountServiceAccountToken() {
     return this.getBooleanAttribute('automount_service_account_token');
   }
-  public set automountServiceAccountToken(value: boolean | cdktf.IResolvable) {
+  public set automountServiceAccountToken(value: boolean | cdktn.IResolvable) {
     this._automountServiceAccountToken = value;
   }
   public resetAutomountServiceAccountToken() {
@@ -692,7 +692,7 @@ export class DefaultServiceAccount extends cdktf.TerraformResource {
   public get imagePullSecret() {
     return this._imagePullSecret;
   }
-  public putImagePullSecret(value: DefaultServiceAccountImagePullSecret[] | cdktf.IResolvable) {
+  public putImagePullSecret(value: DefaultServiceAccountImagePullSecret[] | cdktn.IResolvable) {
     this._imagePullSecret.internalValue = value;
   }
   public resetImagePullSecret() {
@@ -721,7 +721,7 @@ export class DefaultServiceAccount extends cdktf.TerraformResource {
   public get secret() {
     return this._secret;
   }
-  public putSecret(value: DefaultServiceAccountSecret[] | cdktf.IResolvable) {
+  public putSecret(value: DefaultServiceAccountSecret[] | cdktn.IResolvable) {
     this._secret.internalValue = value;
   }
   public resetSecret() {
@@ -754,11 +754,11 @@ export class DefaultServiceAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automount_service_account_token: cdktf.booleanToTerraform(this._automountServiceAccountToken),
-      id: cdktf.stringToTerraform(this._id),
-      image_pull_secret: cdktf.listMapper(defaultServiceAccountImagePullSecretToTerraform, true)(this._imagePullSecret.internalValue),
+      automount_service_account_token: cdktn.booleanToTerraform(this._automountServiceAccountToken),
+      id: cdktn.stringToTerraform(this._id),
+      image_pull_secret: cdktn.listMapper(defaultServiceAccountImagePullSecretToTerraform, true)(this._imagePullSecret.internalValue),
       metadata: defaultServiceAccountMetadataToTerraform(this._metadata.internalValue),
-      secret: cdktf.listMapper(defaultServiceAccountSecretToTerraform, true)(this._secret.internalValue),
+      secret: cdktn.listMapper(defaultServiceAccountSecretToTerraform, true)(this._secret.internalValue),
       timeouts: defaultServiceAccountTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -766,19 +766,19 @@ export class DefaultServiceAccount extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automount_service_account_token: {
-        value: cdktf.booleanToHclTerraform(this._automountServiceAccountToken),
+        value: cdktn.booleanToHclTerraform(this._automountServiceAccountToken),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_pull_secret: {
-        value: cdktf.listMapperHcl(defaultServiceAccountImagePullSecretToHclTerraform, true)(this._imagePullSecret.internalValue),
+        value: cdktn.listMapperHcl(defaultServiceAccountImagePullSecretToHclTerraform, true)(this._imagePullSecret.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DefaultServiceAccountImagePullSecretList",
@@ -790,7 +790,7 @@ export class DefaultServiceAccount extends cdktf.TerraformResource {
         storageClassType: "DefaultServiceAccountMetadataList",
       },
       secret: {
-        value: cdktf.listMapperHcl(defaultServiceAccountSecretToHclTerraform, true)(this._secret.internalValue),
+        value: cdktn.listMapperHcl(defaultServiceAccountSecretToHclTerraform, true)(this._secret.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DefaultServiceAccountSecretList",

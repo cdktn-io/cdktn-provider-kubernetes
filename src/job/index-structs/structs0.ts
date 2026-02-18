@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 export interface JobMetadata {
   /**
   * An unstructured key value map stored with the job that may be used to store arbitrary metadata. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
@@ -38,52 +38,52 @@ export interface JobMetadata {
 }
 
 export function jobMetadataToTerraform(struct?: JobMetadataOutputReference | JobMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function jobMetadataToHclTerraform(struct?: JobMetadataOutputReference | JobMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -94,14 +94,14 @@ export function jobMetadataToHclTerraform(struct?: JobMetadataOutputReference | 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobMetadataOutputReference extends cdktf.ComplexObject {
+export class JobMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -261,38 +261,38 @@ export interface JobSpecPodFailurePolicyRuleOnExitCodes {
 }
 
 export function jobSpecPodFailurePolicyRuleOnExitCodesToTerraform(struct?: JobSpecPodFailurePolicyRuleOnExitCodesOutputReference | JobSpecPodFailurePolicyRuleOnExitCodes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.values),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.values),
   }
 }
 
 
 export function jobSpecPodFailurePolicyRuleOnExitCodesToHclTerraform(struct?: JobSpecPodFailurePolicyRuleOnExitCodesOutputReference | JobSpecPodFailurePolicyRuleOnExitCodes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -303,14 +303,14 @@ export function jobSpecPodFailurePolicyRuleOnExitCodesToHclTerraform(struct?: Jo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecPodFailurePolicyRuleOnExitCodesOutputReference extends cdktf.ComplexObject {
+export class JobSpecPodFailurePolicyRuleOnExitCodesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -403,32 +403,32 @@ export interface JobSpecPodFailurePolicyRuleOnPodCondition {
   readonly type?: string;
 }
 
-export function jobSpecPodFailurePolicyRuleOnPodConditionToTerraform(struct?: JobSpecPodFailurePolicyRuleOnPodCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecPodFailurePolicyRuleOnPodConditionToTerraform(struct?: JobSpecPodFailurePolicyRuleOnPodCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
-    type: cdktf.stringToTerraform(struct!.type),
+    status: cdktn.stringToTerraform(struct!.status),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function jobSpecPodFailurePolicyRuleOnPodConditionToHclTerraform(struct?: JobSpecPodFailurePolicyRuleOnPodCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecPodFailurePolicyRuleOnPodConditionToHclTerraform(struct?: JobSpecPodFailurePolicyRuleOnPodCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -439,9 +439,9 @@ export function jobSpecPodFailurePolicyRuleOnPodConditionToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecPodFailurePolicyRuleOnPodConditionOutputReference extends cdktf.ComplexObject {
+export class JobSpecPodFailurePolicyRuleOnPodConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -449,11 +449,11 @@ export class JobSpecPodFailurePolicyRuleOnPodConditionOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecPodFailurePolicyRuleOnPodCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecPodFailurePolicyRuleOnPodCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -470,14 +470,14 @@ export class JobSpecPodFailurePolicyRuleOnPodConditionOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecPodFailurePolicyRuleOnPodCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecPodFailurePolicyRuleOnPodCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._status = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -522,15 +522,15 @@ export class JobSpecPodFailurePolicyRuleOnPodConditionOutputReference extends cd
   }
 }
 
-export class JobSpecPodFailurePolicyRuleOnPodConditionList extends cdktf.ComplexList {
-  public internalValue? : JobSpecPodFailurePolicyRuleOnPodCondition[] | cdktf.IResolvable
+export class JobSpecPodFailurePolicyRuleOnPodConditionList extends cdktn.ComplexList {
+  public internalValue? : JobSpecPodFailurePolicyRuleOnPodCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -557,30 +557,30 @@ export interface JobSpecPodFailurePolicyRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#on_pod_condition Job#on_pod_condition}
   */
-  readonly onPodCondition?: JobSpecPodFailurePolicyRuleOnPodCondition[] | cdktf.IResolvable;
+  readonly onPodCondition?: JobSpecPodFailurePolicyRuleOnPodCondition[] | cdktn.IResolvable;
 }
 
-export function jobSpecPodFailurePolicyRuleToTerraform(struct?: JobSpecPodFailurePolicyRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecPodFailurePolicyRuleToTerraform(struct?: JobSpecPodFailurePolicyRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
+    action: cdktn.stringToTerraform(struct!.action),
     on_exit_codes: jobSpecPodFailurePolicyRuleOnExitCodesToTerraform(struct!.onExitCodes),
-    on_pod_condition: cdktf.listMapper(jobSpecPodFailurePolicyRuleOnPodConditionToTerraform, true)(struct!.onPodCondition),
+    on_pod_condition: cdktn.listMapper(jobSpecPodFailurePolicyRuleOnPodConditionToTerraform, true)(struct!.onPodCondition),
   }
 }
 
 
-export function jobSpecPodFailurePolicyRuleToHclTerraform(struct?: JobSpecPodFailurePolicyRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecPodFailurePolicyRuleToHclTerraform(struct?: JobSpecPodFailurePolicyRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -592,7 +592,7 @@ export function jobSpecPodFailurePolicyRuleToHclTerraform(struct?: JobSpecPodFai
       storageClassType: "JobSpecPodFailurePolicyRuleOnExitCodesList",
     },
     on_pod_condition: {
-      value: cdktf.listMapperHcl(jobSpecPodFailurePolicyRuleOnPodConditionToHclTerraform, true)(struct!.onPodCondition),
+      value: cdktn.listMapperHcl(jobSpecPodFailurePolicyRuleOnPodConditionToHclTerraform, true)(struct!.onPodCondition),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecPodFailurePolicyRuleOnPodConditionList",
@@ -603,9 +603,9 @@ export function jobSpecPodFailurePolicyRuleToHclTerraform(struct?: JobSpecPodFai
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecPodFailurePolicyRuleOutputReference extends cdktf.ComplexObject {
+export class JobSpecPodFailurePolicyRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -613,11 +613,11 @@ export class JobSpecPodFailurePolicyRuleOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecPodFailurePolicyRule | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecPodFailurePolicyRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -638,7 +638,7 @@ export class JobSpecPodFailurePolicyRuleOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecPodFailurePolicyRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecPodFailurePolicyRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -646,7 +646,7 @@ export class JobSpecPodFailurePolicyRuleOutputReference extends cdktf.ComplexObj
       this._onExitCodes.internalValue = undefined;
       this._onPodCondition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -696,7 +696,7 @@ export class JobSpecPodFailurePolicyRuleOutputReference extends cdktf.ComplexObj
   public get onPodCondition() {
     return this._onPodCondition;
   }
-  public putOnPodCondition(value: JobSpecPodFailurePolicyRuleOnPodCondition[] | cdktf.IResolvable) {
+  public putOnPodCondition(value: JobSpecPodFailurePolicyRuleOnPodCondition[] | cdktn.IResolvable) {
     this._onPodCondition.internalValue = value;
   }
   public resetOnPodCondition() {
@@ -708,15 +708,15 @@ export class JobSpecPodFailurePolicyRuleOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class JobSpecPodFailurePolicyRuleList extends cdktf.ComplexList {
-  public internalValue? : JobSpecPodFailurePolicyRule[] | cdktf.IResolvable
+export class JobSpecPodFailurePolicyRuleList extends cdktn.ComplexList {
+  public internalValue? : JobSpecPodFailurePolicyRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -733,28 +733,28 @@ export interface JobSpecPodFailurePolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#rule Job#rule}
   */
-  readonly rule: JobSpecPodFailurePolicyRule[] | cdktf.IResolvable;
+  readonly rule: JobSpecPodFailurePolicyRule[] | cdktn.IResolvable;
 }
 
 export function jobSpecPodFailurePolicyToTerraform(struct?: JobSpecPodFailurePolicyOutputReference | JobSpecPodFailurePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule: cdktf.listMapper(jobSpecPodFailurePolicyRuleToTerraform, true)(struct!.rule),
+    rule: cdktn.listMapper(jobSpecPodFailurePolicyRuleToTerraform, true)(struct!.rule),
   }
 }
 
 
 export function jobSpecPodFailurePolicyToHclTerraform(struct?: JobSpecPodFailurePolicyOutputReference | JobSpecPodFailurePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rule: {
-      value: cdktf.listMapperHcl(jobSpecPodFailurePolicyRuleToHclTerraform, true)(struct!.rule),
+      value: cdktn.listMapperHcl(jobSpecPodFailurePolicyRuleToHclTerraform, true)(struct!.rule),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecPodFailurePolicyRuleList",
@@ -765,14 +765,14 @@ export function jobSpecPodFailurePolicyToHclTerraform(struct?: JobSpecPodFailure
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecPodFailurePolicyOutputReference extends cdktf.ComplexObject {
+export class JobSpecPodFailurePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -802,7 +802,7 @@ export class JobSpecPodFailurePolicyOutputReference extends cdktf.ComplexObject 
   public get rule() {
     return this._rule;
   }
-  public putRule(value: JobSpecPodFailurePolicyRule[] | cdktf.IResolvable) {
+  public putRule(value: JobSpecPodFailurePolicyRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -831,39 +831,39 @@ export interface JobSpecSelectorMatchExpressions {
   readonly values?: string[];
 }
 
-export function jobSpecSelectorMatchExpressionsToTerraform(struct?: JobSpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecSelectorMatchExpressionsToTerraform(struct?: JobSpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecSelectorMatchExpressionsToHclTerraform(struct?: JobSpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecSelectorMatchExpressionsToHclTerraform(struct?: JobSpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -874,9 +874,9 @@ export function jobSpecSelectorMatchExpressionsToHclTerraform(struct?: JobSpecSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -884,11 +884,11 @@ export class JobSpecSelectorMatchExpressionsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -909,7 +909,7 @@ export class JobSpecSelectorMatchExpressionsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -917,7 +917,7 @@ export class JobSpecSelectorMatchExpressionsOutputReference extends cdktf.Comple
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -965,7 +965,7 @@ export class JobSpecSelectorMatchExpressionsOutputReference extends cdktf.Comple
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -979,15 +979,15 @@ export class JobSpecSelectorMatchExpressionsOutputReference extends cdktf.Comple
   }
 }
 
-export class JobSpecSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecSelectorMatchExpressions[] | cdktf.IResolvable
+export class JobSpecSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1010,35 +1010,35 @@ export interface JobSpecSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function jobSpecSelectorToTerraform(struct?: JobSpecSelectorOutputReference | JobSpecSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(jobSpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(jobSpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function jobSpecSelectorToHclTerraform(struct?: JobSpecSelectorOutputReference | JobSpecSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecSelectorMatchExpressionsList",
@@ -1049,14 +1049,14 @@ export function jobSpecSelectorToHclTerraform(struct?: JobSpecSelectorOutputRefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecSelectorOutputReference extends cdktf.ComplexObject {
+export class JobSpecSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1108,7 +1108,7 @@ export class JobSpecSelectorOutputReference extends cdktf.ComplexObject {
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -1147,45 +1147,45 @@ export interface JobSpecTemplateMetadata {
 }
 
 export function jobSpecTemplateMetadataToTerraform(struct?: JobSpecTemplateMetadataOutputReference | JobSpecTemplateMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function jobSpecTemplateMetadataToHclTerraform(struct?: JobSpecTemplateMetadataOutputReference | JobSpecTemplateMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1196,14 +1196,14 @@ export function jobSpecTemplateMetadataToHclTerraform(struct?: JobSpecTemplateMe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateMetadataOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1346,39 +1346,39 @@ export interface JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulin
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1389,9 +1389,9 @@ export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringScheduling
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1399,11 +1399,11 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1424,7 +1424,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1432,7 +1432,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1480,7 +1480,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1494,15 +1494,15 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
   }
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1534,39 +1534,39 @@ export interface JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulin
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1577,9 +1577,9 @@ export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringScheduling
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1587,11 +1587,11 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1612,7 +1612,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1620,7 +1620,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1662,7 +1662,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1676,15 +1676,15 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
   }
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1701,41 +1701,41 @@ export interface JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulin
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions[] | cdktn.IResolvable;
   /**
   * match_fields block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_fields Job#match_fields}
   */
-  readonly matchFields?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields[] | cdktf.IResolvable;
+  readonly matchFields?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference | JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_expressions: cdktf.listMapper(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsToTerraform, true)(struct!.matchExpressions),
-    match_fields: cdktf.listMapper(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsToTerraform, true)(struct!.matchFields),
+    match_expressions: cdktn.listMapper(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_fields: cdktn.listMapper(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsToTerraform, true)(struct!.matchFields),
   }
 }
 
 
 export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference | JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList",
     },
     match_fields: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsToHclTerraform, true)(struct!.matchFields),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsToHclTerraform, true)(struct!.matchFields),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList",
@@ -1746,14 +1746,14 @@ export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringScheduling
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1789,7 +1789,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -1805,7 +1805,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
   public get matchFields() {
     return this._matchFields;
   }
-  public putMatchFields(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields[] | cdktf.IResolvable) {
+  public putMatchFields(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields[] | cdktn.IResolvable) {
     this._matchFields.internalValue = value;
   }
   public resetMatchFields() {
@@ -1831,26 +1831,26 @@ export interface JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulin
   readonly preference: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference;
 }
 
-export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    weight: cdktf.numberToTerraform(struct!.weight),
+    weight: cdktn.numberToTerraform(struct!.weight),
     preference: jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceToTerraform(struct!.preference),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1867,9 +1867,9 @@ export function jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringScheduling
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1877,11 +1877,11 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1898,14 +1898,14 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._weight = undefined;
       this._preference.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1944,15 +1944,15 @@ export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
   }
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1984,39 +1984,39 @@ export interface JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringScheduling
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2027,9 +2027,9 @@ export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2037,11 +2037,11 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2062,7 +2062,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2070,7 +2070,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2118,7 +2118,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2132,15 +2132,15 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   }
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2172,39 +2172,39 @@ export interface JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringScheduling
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2215,9 +2215,9 @@ export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2225,11 +2225,11 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2250,7 +2250,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2258,7 +2258,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2300,7 +2300,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2314,15 +2314,15 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   }
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2339,41 +2339,41 @@ export interface JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringScheduling
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions[] | cdktn.IResolvable;
   /**
   * match_fields block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_fields Job#match_fields}
   */
-  readonly matchFields?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields[] | cdktf.IResolvable;
+  readonly matchFields?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_expressions: cdktf.listMapper(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsToTerraform, true)(struct!.matchExpressions),
-    match_fields: cdktf.listMapper(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsToTerraform, true)(struct!.matchFields),
+    match_expressions: cdktn.listMapper(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_fields: cdktn.listMapper(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsToTerraform, true)(struct!.matchFields),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList",
     },
     match_fields: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsToHclTerraform, true)(struct!.matchFields),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsToHclTerraform, true)(struct!.matchFields),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList",
@@ -2384,9 +2384,9 @@ export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2394,11 +2394,11 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2415,14 +2415,14 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchExpressions.internalValue = undefined;
       this._matchFields.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2439,7 +2439,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -2455,7 +2455,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   public get matchFields() {
     return this._matchFields;
   }
-  public putMatchFields(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields[] | cdktf.IResolvable) {
+  public putMatchFields(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields[] | cdktn.IResolvable) {
     this._matchFields.internalValue = value;
   }
   public resetMatchFields() {
@@ -2467,15 +2467,15 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   }
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2492,28 +2492,28 @@ export interface JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringScheduling
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#node_selector_term Job#node_selector_term}
   */
-  readonly nodeSelectorTerm?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm[] | cdktf.IResolvable;
+  readonly nodeSelectorTerm?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference | JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    node_selector_term: cdktf.listMapper(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermToTerraform, true)(struct!.nodeSelectorTerm),
+    node_selector_term: cdktn.listMapper(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermToTerraform, true)(struct!.nodeSelectorTerm),
   }
 }
 
 
 export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference | JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     node_selector_term: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermToHclTerraform, true)(struct!.nodeSelectorTerm),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermToHclTerraform, true)(struct!.nodeSelectorTerm),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList",
@@ -2524,14 +2524,14 @@ export function jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2561,7 +2561,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgno
   public get nodeSelectorTerm() {
     return this._nodeSelectorTerm;
   }
-  public putNodeSelectorTerm(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm[] | cdktf.IResolvable) {
+  public putNodeSelectorTerm(value: JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm[] | cdktn.IResolvable) {
     this._nodeSelectorTerm.internalValue = value;
   }
   public resetNodeSelectorTerm() {
@@ -2578,7 +2578,7 @@ export interface JobSpecTemplateSpecAffinityNodeAffinity {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#preferred_during_scheduling_ignored_during_execution Job#preferred_during_scheduling_ignored_during_execution}
   */
-  readonly preferredDuringSchedulingIgnoredDuringExecution?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable;
+  readonly preferredDuringSchedulingIgnoredDuringExecution?: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable;
   /**
   * required_during_scheduling_ignored_during_execution block
   *
@@ -2588,25 +2588,25 @@ export interface JobSpecTemplateSpecAffinityNodeAffinity {
 }
 
 export function jobSpecTemplateSpecAffinityNodeAffinityToTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityOutputReference | JobSpecTemplateSpecAffinityNodeAffinity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    preferred_during_scheduling_ignored_during_execution: cdktf.listMapper(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
+    preferred_during_scheduling_ignored_during_execution: cdktn.listMapper(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
     required_during_scheduling_ignored_during_execution: jobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionToTerraform(struct!.requiredDuringSchedulingIgnoredDuringExecution),
   }
 }
 
 
 export function jobSpecTemplateSpecAffinityNodeAffinityToHclTerraform(struct?: JobSpecTemplateSpecAffinityNodeAffinityOutputReference | JobSpecTemplateSpecAffinityNodeAffinity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     preferred_during_scheduling_ignored_during_execution: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
@@ -2623,14 +2623,14 @@ export function jobSpecTemplateSpecAffinityNodeAffinityToHclTerraform(struct?: J
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityNodeAffinityOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityNodeAffinityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2666,7 +2666,7 @@ export class JobSpecTemplateSpecAffinityNodeAffinityOutputReference extends cdkt
   public get preferredDuringSchedulingIgnoredDuringExecution() {
     return this._preferredDuringSchedulingIgnoredDuringExecution;
   }
-  public putPreferredDuringSchedulingIgnoredDuringExecution(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable) {
+  public putPreferredDuringSchedulingIgnoredDuringExecution(value: JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable) {
     this._preferredDuringSchedulingIgnoredDuringExecution.internalValue = value;
   }
   public resetPreferredDuringSchedulingIgnoredDuringExecution() {
@@ -2714,39 +2714,39 @@ export interface JobSpecTemplateSpecAffinityPodAffinityPreferredDuringScheduling
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2757,9 +2757,9 @@ export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2767,11 +2767,11 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2792,7 +2792,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2800,7 +2800,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2848,7 +2848,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2862,15 +2862,15 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2893,35 +2893,35 @@ export interface JobSpecTemplateSpecAffinityPodAffinityPreferredDuringScheduling
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
@@ -2932,9 +2932,9 @@ export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2942,11 +2942,11 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2963,14 +2963,14 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3003,7 +3003,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -3015,15 +3015,15 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3055,39 +3055,39 @@ export interface JobSpecTemplateSpecAffinityPodAffinityPreferredDuringScheduling
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3098,9 +3098,9 @@ export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3108,11 +3108,11 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3133,7 +3133,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3141,7 +3141,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3189,7 +3189,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -3203,15 +3203,15 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3234,35 +3234,35 @@ export interface JobSpecTemplateSpecAffinityPodAffinityPreferredDuringScheduling
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList",
@@ -3273,9 +3273,9 @@ export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3283,11 +3283,11 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3304,14 +3304,14 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3344,7 +3344,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -3356,15 +3356,15 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3393,55 +3393,55 @@ export interface JobSpecTemplateSpecAffinityPodAffinityPreferredDuringScheduling
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#label_selector Job#label_selector}
   */
-  readonly labelSelector?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktf.IResolvable;
+  readonly labelSelector?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktn.IResolvable;
   /**
   * namespace_selector block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#namespace_selector Job#namespace_selector}
   */
-  readonly namespaceSelector?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktf.IResolvable;
+  readonly namespaceSelector?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference | JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.namespaces),
-    topology_key: cdktf.stringToTerraform(struct!.topologyKey),
-    label_selector: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToTerraform, true)(struct!.labelSelector),
-    namespace_selector: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToTerraform, true)(struct!.namespaceSelector),
+    namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.namespaces),
+    topology_key: cdktn.stringToTerraform(struct!.topologyKey),
+    label_selector: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToTerraform, true)(struct!.labelSelector),
+    namespace_selector: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToTerraform, true)(struct!.namespaceSelector),
   }
 }
 
 
 export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference | JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespaces: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.namespaces),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.namespaces),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     topology_key: {
-      value: cdktf.stringToHclTerraform(struct!.topologyKey),
+      value: cdktn.stringToHclTerraform(struct!.topologyKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label_selector: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToHclTerraform, true)(struct!.labelSelector),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToHclTerraform, true)(struct!.labelSelector),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
     },
     namespace_selector: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToHclTerraform, true)(struct!.namespaceSelector),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToHclTerraform, true)(struct!.namespaceSelector),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList",
@@ -3452,14 +3452,14 @@ export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3505,7 +3505,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   // namespaces - computed: false, optional: true, required: false
   private _namespaces?: string[]; 
   public get namespaces() {
-    return cdktf.Fn.tolist(this.getListAttribute('namespaces'));
+    return cdktn.Fn.tolist(this.getListAttribute('namespaces'));
   }
   public set namespaces(value: string[]) {
     this._namespaces = value;
@@ -3536,7 +3536,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   public get labelSelector() {
     return this._labelSelector;
   }
-  public putLabelSelector(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktf.IResolvable) {
+  public putLabelSelector(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktn.IResolvable) {
     this._labelSelector.internalValue = value;
   }
   public resetLabelSelector() {
@@ -3552,7 +3552,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   public get namespaceSelector() {
     return this._namespaceSelector;
   }
-  public putNamespaceSelector(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktf.IResolvable) {
+  public putNamespaceSelector(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktn.IResolvable) {
     this._namespaceSelector.internalValue = value;
   }
   public resetNamespaceSelector() {
@@ -3578,26 +3578,26 @@ export interface JobSpecTemplateSpecAffinityPodAffinityPreferredDuringScheduling
   readonly podAffinityTerm: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm;
 }
 
-export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    weight: cdktf.numberToTerraform(struct!.weight),
+    weight: cdktn.numberToTerraform(struct!.weight),
     pod_affinity_term: jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermToTerraform(struct!.podAffinityTerm),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3614,9 +3614,9 @@ export function jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3624,11 +3624,11 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3645,14 +3645,14 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._weight = undefined;
       this._podAffinityTerm.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3691,15 +3691,15 @@ export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgno
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3731,39 +3731,39 @@ export interface JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingI
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -3774,9 +3774,9 @@ export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3784,11 +3784,11 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3809,7 +3809,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3817,7 +3817,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3865,7 +3865,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -3879,15 +3879,15 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3910,35 +3910,35 @@ export interface JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingI
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
@@ -3949,9 +3949,9 @@ export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3959,11 +3959,11 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3980,14 +3980,14 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4020,7 +4020,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -4032,15 +4032,15 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4072,39 +4072,39 @@ export interface JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingI
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -4115,9 +4115,9 @@ export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4125,11 +4125,11 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4150,7 +4150,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4158,7 +4158,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4206,7 +4206,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -4220,15 +4220,15 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4251,35 +4251,35 @@ export interface JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingI
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList",
@@ -4290,9 +4290,9 @@ export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4300,11 +4300,11 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4321,14 +4321,14 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4361,7 +4361,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -4373,15 +4373,15 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4410,55 +4410,55 @@ export interface JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingI
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#label_selector Job#label_selector}
   */
-  readonly labelSelector?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktf.IResolvable;
+  readonly labelSelector?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktn.IResolvable;
   /**
   * namespace_selector block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#namespace_selector Job#namespace_selector}
   */
-  readonly namespaceSelector?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktf.IResolvable;
+  readonly namespaceSelector?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.namespaces),
-    topology_key: cdktf.stringToTerraform(struct!.topologyKey),
-    label_selector: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToTerraform, true)(struct!.labelSelector),
-    namespace_selector: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToTerraform, true)(struct!.namespaceSelector),
+    namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.namespaces),
+    topology_key: cdktn.stringToTerraform(struct!.topologyKey),
+    label_selector: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToTerraform, true)(struct!.labelSelector),
+    namespace_selector: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToTerraform, true)(struct!.namespaceSelector),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespaces: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.namespaces),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.namespaces),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     topology_key: {
-      value: cdktf.stringToHclTerraform(struct!.topologyKey),
+      value: cdktn.stringToHclTerraform(struct!.topologyKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label_selector: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToHclTerraform, true)(struct!.labelSelector),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToHclTerraform, true)(struct!.labelSelector),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
     },
     namespace_selector: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToHclTerraform, true)(struct!.namespaceSelector),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToHclTerraform, true)(struct!.namespaceSelector),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList",
@@ -4469,9 +4469,9 @@ export function jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4479,11 +4479,11 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4508,7 +4508,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4517,7 +4517,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
       this._labelSelector.internalValue = undefined;
       this._namespaceSelector.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4534,7 +4534,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   // namespaces - computed: false, optional: true, required: false
   private _namespaces?: string[]; 
   public get namespaces() {
-    return cdktf.Fn.tolist(this.getListAttribute('namespaces'));
+    return cdktn.Fn.tolist(this.getListAttribute('namespaces'));
   }
   public set namespaces(value: string[]) {
     this._namespaces = value;
@@ -4565,7 +4565,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   public get labelSelector() {
     return this._labelSelector;
   }
-  public putLabelSelector(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktf.IResolvable) {
+  public putLabelSelector(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktn.IResolvable) {
     this._labelSelector.internalValue = value;
   }
   public resetLabelSelector() {
@@ -4581,7 +4581,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   public get namespaceSelector() {
     return this._namespaceSelector;
   }
-  public putNamespaceSelector(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktf.IResolvable) {
+  public putNamespaceSelector(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktn.IResolvable) {
     this._namespaceSelector.internalValue = value;
   }
   public resetNamespaceSelector() {
@@ -4593,15 +4593,15 @@ export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnor
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4618,41 +4618,41 @@ export interface JobSpecTemplateSpecAffinityPodAffinity {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#preferred_during_scheduling_ignored_during_execution Job#preferred_during_scheduling_ignored_during_execution}
   */
-  readonly preferredDuringSchedulingIgnoredDuringExecution?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable;
+  readonly preferredDuringSchedulingIgnoredDuringExecution?: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable;
   /**
   * required_during_scheduling_ignored_during_execution block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#required_during_scheduling_ignored_during_execution Job#required_during_scheduling_ignored_during_execution}
   */
-  readonly requiredDuringSchedulingIgnoredDuringExecution?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable;
+  readonly requiredDuringSchedulingIgnoredDuringExecution?: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecAffinityPodAffinityToTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityOutputReference | JobSpecTemplateSpecAffinityPodAffinity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    preferred_during_scheduling_ignored_during_execution: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
-    required_during_scheduling_ignored_during_execution: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionToTerraform, true)(struct!.requiredDuringSchedulingIgnoredDuringExecution),
+    preferred_during_scheduling_ignored_during_execution: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
+    required_during_scheduling_ignored_during_execution: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionToTerraform, true)(struct!.requiredDuringSchedulingIgnoredDuringExecution),
   }
 }
 
 
 export function jobSpecTemplateSpecAffinityPodAffinityToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAffinityOutputReference | JobSpecTemplateSpecAffinityPodAffinity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     preferred_during_scheduling_ignored_during_execution: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
     },
     required_during_scheduling_ignored_during_execution: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionToHclTerraform, true)(struct!.requiredDuringSchedulingIgnoredDuringExecution),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionToHclTerraform, true)(struct!.requiredDuringSchedulingIgnoredDuringExecution),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
@@ -4663,14 +4663,14 @@ export function jobSpecTemplateSpecAffinityPodAffinityToHclTerraform(struct?: Jo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAffinityOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAffinityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4706,7 +4706,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityOutputReference extends cdktf
   public get preferredDuringSchedulingIgnoredDuringExecution() {
     return this._preferredDuringSchedulingIgnoredDuringExecution;
   }
-  public putPreferredDuringSchedulingIgnoredDuringExecution(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable) {
+  public putPreferredDuringSchedulingIgnoredDuringExecution(value: JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable) {
     this._preferredDuringSchedulingIgnoredDuringExecution.internalValue = value;
   }
   public resetPreferredDuringSchedulingIgnoredDuringExecution() {
@@ -4722,7 +4722,7 @@ export class JobSpecTemplateSpecAffinityPodAffinityOutputReference extends cdktf
   public get requiredDuringSchedulingIgnoredDuringExecution() {
     return this._requiredDuringSchedulingIgnoredDuringExecution;
   }
-  public putRequiredDuringSchedulingIgnoredDuringExecution(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable) {
+  public putRequiredDuringSchedulingIgnoredDuringExecution(value: JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable) {
     this._requiredDuringSchedulingIgnoredDuringExecution.internalValue = value;
   }
   public resetRequiredDuringSchedulingIgnoredDuringExecution() {
@@ -4754,39 +4754,39 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedu
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -4797,9 +4797,9 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4807,11 +4807,11 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4832,7 +4832,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4840,7 +4840,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4888,7 +4888,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -4902,15 +4902,15 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4933,35 +4933,35 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
@@ -4972,9 +4972,9 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4982,11 +4982,11 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5003,14 +5003,14 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5043,7 +5043,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -5055,15 +5055,15 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5095,39 +5095,39 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedu
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -5138,9 +5138,9 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5148,11 +5148,11 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5173,7 +5173,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5181,7 +5181,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5229,7 +5229,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -5243,15 +5243,15 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5274,35 +5274,35 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList",
@@ -5313,9 +5313,9 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5323,11 +5323,11 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5344,14 +5344,14 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5384,7 +5384,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -5396,15 +5396,15 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5433,55 +5433,55 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#label_selector Job#label_selector}
   */
-  readonly labelSelector?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktf.IResolvable;
+  readonly labelSelector?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktn.IResolvable;
   /**
   * namespace_selector block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#namespace_selector Job#namespace_selector}
   */
-  readonly namespaceSelector?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktf.IResolvable;
+  readonly namespaceSelector?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference | JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.namespaces),
-    topology_key: cdktf.stringToTerraform(struct!.topologyKey),
-    label_selector: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToTerraform, true)(struct!.labelSelector),
-    namespace_selector: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToTerraform, true)(struct!.namespaceSelector),
+    namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.namespaces),
+    topology_key: cdktn.stringToTerraform(struct!.topologyKey),
+    label_selector: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToTerraform, true)(struct!.labelSelector),
+    namespace_selector: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToTerraform, true)(struct!.namespaceSelector),
   }
 }
 
 
 export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference | JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespaces: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.namespaces),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.namespaces),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     topology_key: {
-      value: cdktf.stringToHclTerraform(struct!.topologyKey),
+      value: cdktn.stringToHclTerraform(struct!.topologyKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label_selector: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToHclTerraform, true)(struct!.labelSelector),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorToHclTerraform, true)(struct!.labelSelector),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
     },
     namespace_selector: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToHclTerraform, true)(struct!.namespaceSelector),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorToHclTerraform, true)(struct!.namespaceSelector),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList",
@@ -5492,14 +5492,14 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5545,7 +5545,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   // namespaces - computed: false, optional: true, required: false
   private _namespaces?: string[]; 
   public get namespaces() {
-    return cdktf.Fn.tolist(this.getListAttribute('namespaces'));
+    return cdktn.Fn.tolist(this.getListAttribute('namespaces'));
   }
   public set namespaces(value: string[]) {
     this._namespaces = value;
@@ -5576,7 +5576,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   public get labelSelector() {
     return this._labelSelector;
   }
-  public putLabelSelector(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktf.IResolvable) {
+  public putLabelSelector(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector[] | cdktn.IResolvable) {
     this._labelSelector.internalValue = value;
   }
   public resetLabelSelector() {
@@ -5592,7 +5592,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   public get namespaceSelector() {
     return this._namespaceSelector;
   }
-  public putNamespaceSelector(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktf.IResolvable) {
+  public putNamespaceSelector(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector[] | cdktn.IResolvable) {
     this._namespaceSelector.internalValue = value;
   }
   public resetNamespaceSelector() {
@@ -5618,26 +5618,26 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedu
   readonly podAffinityTerm: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm;
 }
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    weight: cdktf.numberToTerraform(struct!.weight),
+    weight: cdktn.numberToTerraform(struct!.weight),
     pod_affinity_term: jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermToTerraform(struct!.podAffinityTerm),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5654,9 +5654,9 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5664,11 +5664,11 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5685,14 +5685,14 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._weight = undefined;
       this._podAffinityTerm.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5731,15 +5731,15 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduling
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5771,39 +5771,39 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedul
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -5814,9 +5814,9 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringScheduli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5824,11 +5824,11 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5849,7 +5849,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5857,7 +5857,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5905,7 +5905,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -5919,15 +5919,15 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5950,35 +5950,35 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedul
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
@@ -5989,9 +5989,9 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringScheduli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5999,11 +5999,11 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6020,14 +6020,14 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6060,7 +6060,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -6072,15 +6072,15 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6112,39 +6112,39 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedul
   readonly values?: string[];
 }
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -6155,9 +6155,9 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringScheduli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6165,11 +6165,11 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6190,7 +6190,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6198,7 +6198,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6246,7 +6246,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -6260,15 +6260,15 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6291,35 +6291,35 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedul
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#match_expressions Job#match_expressions}
   */
-  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList",
@@ -6330,9 +6330,9 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringScheduli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6340,11 +6340,11 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6361,14 +6361,14 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6401,7 +6401,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -6413,15 +6413,15 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6450,55 +6450,55 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedul
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#label_selector Job#label_selector}
   */
-  readonly labelSelector?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktf.IResolvable;
+  readonly labelSelector?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktn.IResolvable;
   /**
   * namespace_selector block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#namespace_selector Job#namespace_selector}
   */
-  readonly namespaceSelector?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktf.IResolvable;
+  readonly namespaceSelector?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.namespaces),
-    topology_key: cdktf.stringToTerraform(struct!.topologyKey),
-    label_selector: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToTerraform, true)(struct!.labelSelector),
-    namespace_selector: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToTerraform, true)(struct!.namespaceSelector),
+    namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.namespaces),
+    topology_key: cdktn.stringToTerraform(struct!.topologyKey),
+    label_selector: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToTerraform, true)(struct!.labelSelector),
+    namespace_selector: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToTerraform, true)(struct!.namespaceSelector),
   }
 }
 
 
-export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespaces: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.namespaces),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.namespaces),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     topology_key: {
-      value: cdktf.stringToHclTerraform(struct!.topologyKey),
+      value: cdktn.stringToHclTerraform(struct!.topologyKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label_selector: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToHclTerraform, true)(struct!.labelSelector),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorToHclTerraform, true)(struct!.labelSelector),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
     },
     namespace_selector: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToHclTerraform, true)(struct!.namespaceSelector),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorToHclTerraform, true)(struct!.namespaceSelector),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList",
@@ -6509,9 +6509,9 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringScheduli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6519,11 +6519,11 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6548,7 +6548,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6557,7 +6557,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
       this._labelSelector.internalValue = undefined;
       this._namespaceSelector.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6574,7 +6574,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   // namespaces - computed: false, optional: true, required: false
   private _namespaces?: string[]; 
   public get namespaces() {
-    return cdktf.Fn.tolist(this.getListAttribute('namespaces'));
+    return cdktn.Fn.tolist(this.getListAttribute('namespaces'));
   }
   public set namespaces(value: string[]) {
     this._namespaces = value;
@@ -6605,7 +6605,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   public get labelSelector() {
     return this._labelSelector;
   }
-  public putLabelSelector(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktf.IResolvable) {
+  public putLabelSelector(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector[] | cdktn.IResolvable) {
     this._labelSelector.internalValue = value;
   }
   public resetLabelSelector() {
@@ -6621,7 +6621,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   public get namespaceSelector() {
     return this._namespaceSelector;
   }
-  public putNamespaceSelector(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktf.IResolvable) {
+  public putNamespaceSelector(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector[] | cdktn.IResolvable) {
     this._namespaceSelector.internalValue = value;
   }
   public resetNamespaceSelector() {
@@ -6633,15 +6633,15 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingI
   }
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable
+export class JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6658,41 +6658,41 @@ export interface JobSpecTemplateSpecAffinityPodAntiAffinity {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#preferred_during_scheduling_ignored_during_execution Job#preferred_during_scheduling_ignored_during_execution}
   */
-  readonly preferredDuringSchedulingIgnoredDuringExecution?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable;
+  readonly preferredDuringSchedulingIgnoredDuringExecution?: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable;
   /**
   * required_during_scheduling_ignored_during_execution block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#required_during_scheduling_ignored_during_execution Job#required_during_scheduling_ignored_during_execution}
   */
-  readonly requiredDuringSchedulingIgnoredDuringExecution?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable;
+  readonly requiredDuringSchedulingIgnoredDuringExecution?: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecAffinityPodAntiAffinityToTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference | JobSpecTemplateSpecAffinityPodAntiAffinity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    preferred_during_scheduling_ignored_during_execution: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
-    required_during_scheduling_ignored_during_execution: cdktf.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionToTerraform, true)(struct!.requiredDuringSchedulingIgnoredDuringExecution),
+    preferred_during_scheduling_ignored_during_execution: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionToTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
+    required_during_scheduling_ignored_during_execution: cdktn.listMapper(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionToTerraform, true)(struct!.requiredDuringSchedulingIgnoredDuringExecution),
   }
 }
 
 
 export function jobSpecTemplateSpecAffinityPodAntiAffinityToHclTerraform(struct?: JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference | JobSpecTemplateSpecAffinityPodAntiAffinity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     preferred_during_scheduling_ignored_during_execution: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionToHclTerraform, true)(struct!.preferredDuringSchedulingIgnoredDuringExecution),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
     },
     required_during_scheduling_ignored_during_execution: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionToHclTerraform, true)(struct!.requiredDuringSchedulingIgnoredDuringExecution),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionToHclTerraform, true)(struct!.requiredDuringSchedulingIgnoredDuringExecution),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
@@ -6703,14 +6703,14 @@ export function jobSpecTemplateSpecAffinityPodAntiAffinityToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6746,7 +6746,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference extends c
   public get preferredDuringSchedulingIgnoredDuringExecution() {
     return this._preferredDuringSchedulingIgnoredDuringExecution;
   }
-  public putPreferredDuringSchedulingIgnoredDuringExecution(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable) {
+  public putPreferredDuringSchedulingIgnoredDuringExecution(value: JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable) {
     this._preferredDuringSchedulingIgnoredDuringExecution.internalValue = value;
   }
   public resetPreferredDuringSchedulingIgnoredDuringExecution() {
@@ -6762,7 +6762,7 @@ export class JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference extends c
   public get requiredDuringSchedulingIgnoredDuringExecution() {
     return this._requiredDuringSchedulingIgnoredDuringExecution;
   }
-  public putRequiredDuringSchedulingIgnoredDuringExecution(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktf.IResolvable) {
+  public putRequiredDuringSchedulingIgnoredDuringExecution(value: JobSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution[] | cdktn.IResolvable) {
     this._requiredDuringSchedulingIgnoredDuringExecution.internalValue = value;
   }
   public resetRequiredDuringSchedulingIgnoredDuringExecution() {
@@ -6795,8 +6795,8 @@ export interface JobSpecTemplateSpecAffinity {
 }
 
 export function jobSpecTemplateSpecAffinityToTerraform(struct?: JobSpecTemplateSpecAffinityOutputReference | JobSpecTemplateSpecAffinity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6808,8 +6808,8 @@ export function jobSpecTemplateSpecAffinityToTerraform(struct?: JobSpecTemplateS
 
 
 export function jobSpecTemplateSpecAffinityToHclTerraform(struct?: JobSpecTemplateSpecAffinityOutputReference | JobSpecTemplateSpecAffinity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6837,14 +6837,14 @@ export function jobSpecTemplateSpecAffinityToHclTerraform(struct?: JobSpecTempla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecAffinityOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecAffinityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6947,42 +6947,42 @@ export interface JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#optional Job#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefToTerraform(struct?: JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference | JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
+    key: cdktn.stringToTerraform(struct!.key),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefToHclTerraform(struct?: JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference | JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -6993,14 +6993,14 @@ export function jobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7070,11 +7070,11 @@ export class JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputRefere
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -7101,31 +7101,31 @@ export interface JobSpecTemplateSpecContainerEnvValueFromFieldRef {
 }
 
 export function jobSpecTemplateSpecContainerEnvValueFromFieldRefToTerraform(struct?: JobSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference | JobSpecTemplateSpecContainerEnvValueFromFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    field_path: cdktf.stringToTerraform(struct!.fieldPath),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    field_path: cdktn.stringToTerraform(struct!.fieldPath),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerEnvValueFromFieldRefToHclTerraform(struct?: JobSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference | JobSpecTemplateSpecContainerEnvValueFromFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_path: {
-      value: cdktf.stringToHclTerraform(struct!.fieldPath),
+      value: cdktn.stringToHclTerraform(struct!.fieldPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7136,14 +7136,14 @@ export function jobSpecTemplateSpecContainerEnvValueFromFieldRefToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7224,38 +7224,38 @@ export interface JobSpecTemplateSpecContainerEnvValueFromResourceFieldRef {
 }
 
 export function jobSpecTemplateSpecContainerEnvValueFromResourceFieldRefToTerraform(struct?: JobSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference | JobSpecTemplateSpecContainerEnvValueFromResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    divisor: cdktf.stringToTerraform(struct!.divisor),
-    resource: cdktf.stringToTerraform(struct!.resource),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    divisor: cdktn.stringToTerraform(struct!.divisor),
+    resource: cdktn.stringToTerraform(struct!.resource),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerEnvValueFromResourceFieldRefToHclTerraform(struct?: JobSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference | JobSpecTemplateSpecContainerEnvValueFromResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     divisor: {
-      value: cdktf.stringToHclTerraform(struct!.divisor),
+      value: cdktn.stringToHclTerraform(struct!.divisor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7266,14 +7266,14 @@ export function jobSpecTemplateSpecContainerEnvValueFromResourceFieldRefToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7373,42 +7373,42 @@ export interface JobSpecTemplateSpecContainerEnvValueFromSecretKeyRef {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#optional Job#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerEnvValueFromSecretKeyRefToTerraform(struct?: JobSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference | JobSpecTemplateSpecContainerEnvValueFromSecretKeyRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
+    key: cdktn.stringToTerraform(struct!.key),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerEnvValueFromSecretKeyRefToHclTerraform(struct?: JobSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference | JobSpecTemplateSpecContainerEnvValueFromSecretKeyRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -7419,14 +7419,14 @@ export function jobSpecTemplateSpecContainerEnvValueFromSecretKeyRefToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7496,11 +7496,11 @@ export class JobSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -7539,8 +7539,8 @@ export interface JobSpecTemplateSpecContainerEnvValueFrom {
 }
 
 export function jobSpecTemplateSpecContainerEnvValueFromToTerraform(struct?: JobSpecTemplateSpecContainerEnvValueFromOutputReference | JobSpecTemplateSpecContainerEnvValueFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7553,8 +7553,8 @@ export function jobSpecTemplateSpecContainerEnvValueFromToTerraform(struct?: Job
 
 
 export function jobSpecTemplateSpecContainerEnvValueFromToHclTerraform(struct?: JobSpecTemplateSpecContainerEnvValueFromOutputReference | JobSpecTemplateSpecContainerEnvValueFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7588,14 +7588,14 @@ export function jobSpecTemplateSpecContainerEnvValueFromToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerEnvValueFromOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerEnvValueFromOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7723,33 +7723,33 @@ export interface JobSpecTemplateSpecContainerEnv {
   readonly valueFrom?: JobSpecTemplateSpecContainerEnvValueFrom;
 }
 
-export function jobSpecTemplateSpecContainerEnvToTerraform(struct?: JobSpecTemplateSpecContainerEnv | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerEnvToTerraform(struct?: JobSpecTemplateSpecContainerEnv | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
     value_from: jobSpecTemplateSpecContainerEnvValueFromToTerraform(struct!.valueFrom),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerEnvToHclTerraform(struct?: JobSpecTemplateSpecContainerEnv | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerEnvToHclTerraform(struct?: JobSpecTemplateSpecContainerEnv | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7766,9 +7766,9 @@ export function jobSpecTemplateSpecContainerEnvToHclTerraform(struct?: JobSpecTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerEnvOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerEnvOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7776,11 +7776,11 @@ export class JobSpecTemplateSpecContainerEnvOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerEnv | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerEnv | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7801,7 +7801,7 @@ export class JobSpecTemplateSpecContainerEnvOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerEnv | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerEnv | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7809,7 +7809,7 @@ export class JobSpecTemplateSpecContainerEnvOutputReference extends cdktf.Comple
       this._value = undefined;
       this._valueFrom.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7868,15 +7868,15 @@ export class JobSpecTemplateSpecContainerEnvOutputReference extends cdktf.Comple
   }
 }
 
-export class JobSpecTemplateSpecContainerEnvList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerEnv[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerEnvList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerEnv[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7899,35 +7899,35 @@ export interface JobSpecTemplateSpecContainerEnvFromConfigMapRef {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#optional Job#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerEnvFromConfigMapRefToTerraform(struct?: JobSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference | JobSpecTemplateSpecContainerEnvFromConfigMapRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerEnvFromConfigMapRefToHclTerraform(struct?: JobSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference | JobSpecTemplateSpecContainerEnvFromConfigMapRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -7938,14 +7938,14 @@ export function jobSpecTemplateSpecContainerEnvFromConfigMapRefToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7990,11 +7990,11 @@ export class JobSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference exte
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -8017,35 +8017,35 @@ export interface JobSpecTemplateSpecContainerEnvFromSecretRef {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#optional Job#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerEnvFromSecretRefToTerraform(struct?: JobSpecTemplateSpecContainerEnvFromSecretRefOutputReference | JobSpecTemplateSpecContainerEnvFromSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerEnvFromSecretRefToHclTerraform(struct?: JobSpecTemplateSpecContainerEnvFromSecretRefOutputReference | JobSpecTemplateSpecContainerEnvFromSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -8056,14 +8056,14 @@ export function jobSpecTemplateSpecContainerEnvFromSecretRefToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerEnvFromSecretRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerEnvFromSecretRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8108,11 +8108,11 @@ export class JobSpecTemplateSpecContainerEnvFromSecretRefOutputReference extends
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -8144,27 +8144,27 @@ export interface JobSpecTemplateSpecContainerEnvFrom {
   readonly secretRef?: JobSpecTemplateSpecContainerEnvFromSecretRef;
 }
 
-export function jobSpecTemplateSpecContainerEnvFromToTerraform(struct?: JobSpecTemplateSpecContainerEnvFrom | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerEnvFromToTerraform(struct?: JobSpecTemplateSpecContainerEnvFrom | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
     config_map_ref: jobSpecTemplateSpecContainerEnvFromConfigMapRefToTerraform(struct!.configMapRef),
     secret_ref: jobSpecTemplateSpecContainerEnvFromSecretRefToTerraform(struct!.secretRef),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerEnvFromToHclTerraform(struct?: JobSpecTemplateSpecContainerEnvFrom | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerEnvFromToHclTerraform(struct?: JobSpecTemplateSpecContainerEnvFrom | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8187,9 +8187,9 @@ export function jobSpecTemplateSpecContainerEnvFromToHclTerraform(struct?: JobSp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerEnvFromOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerEnvFromOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8197,11 +8197,11 @@ export class JobSpecTemplateSpecContainerEnvFromOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerEnvFrom | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerEnvFrom | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8222,7 +8222,7 @@ export class JobSpecTemplateSpecContainerEnvFromOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerEnvFrom | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerEnvFrom | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8230,7 +8230,7 @@ export class JobSpecTemplateSpecContainerEnvFromOutputReference extends cdktf.Co
       this._configMapRef.internalValue = undefined;
       this._secretRef.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8292,15 +8292,15 @@ export class JobSpecTemplateSpecContainerEnvFromOutputReference extends cdktf.Co
   }
 }
 
-export class JobSpecTemplateSpecContainerEnvFromList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerEnvFrom[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerEnvFromList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerEnvFrom[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8321,24 +8321,24 @@ export interface JobSpecTemplateSpecContainerLifecyclePostStartExec {
 }
 
 export function jobSpecTemplateSpecContainerLifecyclePostStartExecToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartExecOutputReference | JobSpecTemplateSpecContainerLifecyclePostStartExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerLifecyclePostStartExecToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartExecOutputReference | JobSpecTemplateSpecContainerLifecyclePostStartExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -8349,14 +8349,14 @@ export function jobSpecTemplateSpecContainerLifecyclePostStartExecToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePostStartExecOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecyclePostStartExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8412,32 +8412,32 @@ export interface JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader
   readonly value?: string;
 }
 
-export function jobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8448,9 +8448,9 @@ export function jobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8458,11 +8458,11 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8479,14 +8479,14 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8531,15 +8531,15 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutp
   }
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8580,56 +8580,56 @@ export interface JobSpecTemplateSpecContainerLifecyclePostStartHttpGet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#http_header Job#http_header}
   */
-  readonly httpHeader?: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerLifecyclePostStartHttpGetToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference | JobSpecTemplateSpecContainerLifecyclePostStartHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(jobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(jobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerLifecyclePostStartHttpGetToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference | JobSpecTemplateSpecContainerLifecyclePostStartHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
@@ -8640,14 +8640,14 @@ export function jobSpecTemplateSpecContainerLifecyclePostStartHttpGetToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8765,7 +8765,7 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReferenc
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: JobSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -8785,25 +8785,25 @@ export interface JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket {
   readonly port: string;
 }
 
-export function jobSpecTemplateSpecContainerLifecyclePostStartTcpSocketToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePostStartTcpSocketToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerLifecyclePostStartTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePostStartTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8814,9 +8814,9 @@ export function jobSpecTemplateSpecContainerLifecyclePostStartTcpSocketToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8824,11 +8824,11 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8841,13 +8841,13 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8872,15 +8872,15 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputRefere
   }
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8909,25 +8909,25 @@ export interface JobSpecTemplateSpecContainerLifecyclePostStart {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#tcp_socket Job#tcp_socket}
   */
-  readonly tcpSocket?: JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecContainerLifecyclePostStartToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePostStartToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     exec: jobSpecTemplateSpecContainerLifecyclePostStartExecToTerraform(struct!.exec),
     http_get: jobSpecTemplateSpecContainerLifecyclePostStartHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(jobSpecTemplateSpecContainerLifecyclePostStartTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(jobSpecTemplateSpecContainerLifecyclePostStartTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerLifecyclePostStartToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePostStartToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePostStart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -8944,7 +8944,7 @@ export function jobSpecTemplateSpecContainerLifecyclePostStartToHclTerraform(str
       storageClassType: "JobSpecTemplateSpecContainerLifecyclePostStartHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePostStartTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePostStartTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketList",
@@ -8955,9 +8955,9 @@ export function jobSpecTemplateSpecContainerLifecyclePostStartToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePostStartOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecyclePostStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8965,11 +8965,11 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePostStart | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePostStart | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8990,7 +8990,7 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePostStart | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePostStart | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8998,7 +8998,7 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartOutputReference exten
       this._httpGet.internalValue = undefined;
       this._tcpSocket.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9048,7 +9048,7 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartOutputReference exten
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: JobSpecTemplateSpecContainerLifecyclePostStartTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -9060,15 +9060,15 @@ export class JobSpecTemplateSpecContainerLifecyclePostStartOutputReference exten
   }
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePostStartList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerLifecyclePostStart[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerLifecyclePostStartList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerLifecyclePostStart[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9089,24 +9089,24 @@ export interface JobSpecTemplateSpecContainerLifecyclePreStopExec {
 }
 
 export function jobSpecTemplateSpecContainerLifecyclePreStopExecToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopExecOutputReference | JobSpecTemplateSpecContainerLifecyclePreStopExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerLifecyclePreStopExecToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopExecOutputReference | JobSpecTemplateSpecContainerLifecyclePreStopExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -9117,14 +9117,14 @@ export function jobSpecTemplateSpecContainerLifecyclePreStopExecToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePreStopExecOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecyclePreStopExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9180,32 +9180,32 @@ export interface JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader {
   readonly value?: string;
 }
 
-export function jobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9216,9 +9216,9 @@ export function jobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9226,11 +9226,11 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9247,14 +9247,14 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9299,15 +9299,15 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutput
   }
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9348,56 +9348,56 @@ export interface JobSpecTemplateSpecContainerLifecyclePreStopHttpGet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#http_header Job#http_header}
   */
-  readonly httpHeader?: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerLifecyclePreStopHttpGetToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference | JobSpecTemplateSpecContainerLifecyclePreStopHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(jobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(jobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerLifecyclePreStopHttpGetToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference | JobSpecTemplateSpecContainerLifecyclePreStopHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
@@ -9408,14 +9408,14 @@ export function jobSpecTemplateSpecContainerLifecyclePreStopHttpGetToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9533,7 +9533,7 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference 
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -9553,25 +9553,25 @@ export interface JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket {
   readonly port: string;
 }
 
-export function jobSpecTemplateSpecContainerLifecyclePreStopTcpSocketToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePreStopTcpSocketToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerLifecyclePreStopTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePreStopTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9582,9 +9582,9 @@ export function jobSpecTemplateSpecContainerLifecyclePreStopTcpSocketToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9592,11 +9592,11 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9609,13 +9609,13 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9640,15 +9640,15 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReferenc
   }
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9677,25 +9677,25 @@ export interface JobSpecTemplateSpecContainerLifecyclePreStop {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#tcp_socket Job#tcp_socket}
   */
-  readonly tcpSocket?: JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecContainerLifecyclePreStopToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStop | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePreStopToTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStop | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     exec: jobSpecTemplateSpecContainerLifecyclePreStopExecToTerraform(struct!.exec),
     http_get: jobSpecTemplateSpecContainerLifecyclePreStopHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(jobSpecTemplateSpecContainerLifecyclePreStopTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(jobSpecTemplateSpecContainerLifecyclePreStopTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerLifecyclePreStopToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStop | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLifecyclePreStopToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecyclePreStop | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -9712,7 +9712,7 @@ export function jobSpecTemplateSpecContainerLifecyclePreStopToHclTerraform(struc
       storageClassType: "JobSpecTemplateSpecContainerLifecyclePreStopHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePreStopTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePreStopTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketList",
@@ -9723,9 +9723,9 @@ export function jobSpecTemplateSpecContainerLifecyclePreStopToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePreStopOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecyclePreStopOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9733,11 +9733,11 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePreStop | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerLifecyclePreStop | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9758,7 +9758,7 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePreStop | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerLifecyclePreStop | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9766,7 +9766,7 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopOutputReference extends
       this._httpGet.internalValue = undefined;
       this._tcpSocket.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9816,7 +9816,7 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopOutputReference extends
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: JobSpecTemplateSpecContainerLifecyclePreStopTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -9828,15 +9828,15 @@ export class JobSpecTemplateSpecContainerLifecyclePreStopOutputReference extends
   }
 }
 
-export class JobSpecTemplateSpecContainerLifecyclePreStopList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerLifecyclePreStop[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerLifecyclePreStopList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerLifecyclePreStop[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9853,41 +9853,41 @@ export interface JobSpecTemplateSpecContainerLifecycle {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#post_start Job#post_start}
   */
-  readonly postStart?: JobSpecTemplateSpecContainerLifecyclePostStart[] | cdktf.IResolvable;
+  readonly postStart?: JobSpecTemplateSpecContainerLifecyclePostStart[] | cdktn.IResolvable;
   /**
   * pre_stop block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#pre_stop Job#pre_stop}
   */
-  readonly preStop?: JobSpecTemplateSpecContainerLifecyclePreStop[] | cdktf.IResolvable;
+  readonly preStop?: JobSpecTemplateSpecContainerLifecyclePreStop[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerLifecycleToTerraform(struct?: JobSpecTemplateSpecContainerLifecycleOutputReference | JobSpecTemplateSpecContainerLifecycle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    post_start: cdktf.listMapper(jobSpecTemplateSpecContainerLifecyclePostStartToTerraform, true)(struct!.postStart),
-    pre_stop: cdktf.listMapper(jobSpecTemplateSpecContainerLifecyclePreStopToTerraform, true)(struct!.preStop),
+    post_start: cdktn.listMapper(jobSpecTemplateSpecContainerLifecyclePostStartToTerraform, true)(struct!.postStart),
+    pre_stop: cdktn.listMapper(jobSpecTemplateSpecContainerLifecyclePreStopToTerraform, true)(struct!.preStop),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerLifecycleToHclTerraform(struct?: JobSpecTemplateSpecContainerLifecycleOutputReference | JobSpecTemplateSpecContainerLifecycle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     post_start: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePostStartToHclTerraform, true)(struct!.postStart),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePostStartToHclTerraform, true)(struct!.postStart),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerLifecyclePostStartList",
     },
     pre_stop: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePreStopToHclTerraform, true)(struct!.preStop),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerLifecyclePreStopToHclTerraform, true)(struct!.preStop),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerLifecyclePreStopList",
@@ -9898,14 +9898,14 @@ export function jobSpecTemplateSpecContainerLifecycleToHclTerraform(struct?: Job
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLifecycleOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLifecycleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9941,7 +9941,7 @@ export class JobSpecTemplateSpecContainerLifecycleOutputReference extends cdktf.
   public get postStart() {
     return this._postStart;
   }
-  public putPostStart(value: JobSpecTemplateSpecContainerLifecyclePostStart[] | cdktf.IResolvable) {
+  public putPostStart(value: JobSpecTemplateSpecContainerLifecyclePostStart[] | cdktn.IResolvable) {
     this._postStart.internalValue = value;
   }
   public resetPostStart() {
@@ -9957,7 +9957,7 @@ export class JobSpecTemplateSpecContainerLifecycleOutputReference extends cdktf.
   public get preStop() {
     return this._preStop;
   }
-  public putPreStop(value: JobSpecTemplateSpecContainerLifecyclePreStop[] | cdktf.IResolvable) {
+  public putPreStop(value: JobSpecTemplateSpecContainerLifecyclePreStop[] | cdktn.IResolvable) {
     this._preStop.internalValue = value;
   }
   public resetPreStop() {
@@ -9978,24 +9978,24 @@ export interface JobSpecTemplateSpecContainerLivenessProbeExec {
 }
 
 export function jobSpecTemplateSpecContainerLivenessProbeExecToTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeExecOutputReference | JobSpecTemplateSpecContainerLivenessProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerLivenessProbeExecToHclTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeExecOutputReference | JobSpecTemplateSpecContainerLivenessProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -10006,14 +10006,14 @@ export function jobSpecTemplateSpecContainerLivenessProbeExecToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLivenessProbeExecOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLivenessProbeExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10069,32 +10069,32 @@ export interface JobSpecTemplateSpecContainerLivenessProbeGrpc {
   readonly service?: string;
 }
 
-export function jobSpecTemplateSpecContainerLivenessProbeGrpcToTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLivenessProbeGrpcToTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    service: cdktf.stringToTerraform(struct!.service),
+    port: cdktn.numberToTerraform(struct!.port),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerLivenessProbeGrpcToHclTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLivenessProbeGrpcToHclTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10105,9 +10105,9 @@ export function jobSpecTemplateSpecContainerLivenessProbeGrpcToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLivenessProbeGrpcOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLivenessProbeGrpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10115,11 +10115,11 @@ export class JobSpecTemplateSpecContainerLivenessProbeGrpcOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerLivenessProbeGrpc | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerLivenessProbeGrpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10136,14 +10136,14 @@ export class JobSpecTemplateSpecContainerLivenessProbeGrpcOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerLivenessProbeGrpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerLivenessProbeGrpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10185,15 +10185,15 @@ export class JobSpecTemplateSpecContainerLivenessProbeGrpcOutputReference extend
   }
 }
 
-export class JobSpecTemplateSpecContainerLivenessProbeGrpcList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerLivenessProbeGrpc[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerLivenessProbeGrpcList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerLivenessProbeGrpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10219,32 +10219,32 @@ export interface JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader {
   readonly value?: string;
 }
 
-export function jobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10255,9 +10255,9 @@ export function jobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10265,11 +10265,11 @@ export class JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10286,14 +10286,14 @@ export class JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10338,15 +10338,15 @@ export class JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputRef
   }
 }
 
-export class JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10387,56 +10387,56 @@ export interface JobSpecTemplateSpecContainerLivenessProbeHttpGet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#http_header Job#http_header}
   */
-  readonly httpHeader?: JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerLivenessProbeHttpGetToTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference | JobSpecTemplateSpecContainerLivenessProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(jobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(jobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerLivenessProbeHttpGetToHclTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference | JobSpecTemplateSpecContainerLivenessProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
@@ -10447,14 +10447,14 @@ export function jobSpecTemplateSpecContainerLivenessProbeHttpGetToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10572,7 +10572,7 @@ export class JobSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference ext
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: JobSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -10592,25 +10592,25 @@ export interface JobSpecTemplateSpecContainerLivenessProbeTcpSocket {
   readonly port: string;
 }
 
-export function jobSpecTemplateSpecContainerLivenessProbeTcpSocketToTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLivenessProbeTcpSocketToTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerLivenessProbeTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerLivenessProbeTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10621,9 +10621,9 @@ export function jobSpecTemplateSpecContainerLivenessProbeTcpSocketToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10631,11 +10631,11 @@ export class JobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerLivenessProbeTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerLivenessProbeTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10648,13 +10648,13 @@ export class JobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerLivenessProbeTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerLivenessProbeTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10679,15 +10679,15 @@ export class JobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference e
   }
 }
 
-export class JobSpecTemplateSpecContainerLivenessProbeTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerLivenessProbeTcpSocket[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerLivenessProbeTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerLivenessProbeTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10740,7 +10740,7 @@ export interface JobSpecTemplateSpecContainerLivenessProbe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#grpc Job#grpc}
   */
-  readonly grpc?: JobSpecTemplateSpecContainerLivenessProbeGrpc[] | cdktf.IResolvable;
+  readonly grpc?: JobSpecTemplateSpecContainerLivenessProbeGrpc[] | cdktn.IResolvable;
   /**
   * http_get block
   *
@@ -10752,60 +10752,60 @@ export interface JobSpecTemplateSpecContainerLivenessProbe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#tcp_socket Job#tcp_socket}
   */
-  readonly tcpSocket?: JobSpecTemplateSpecContainerLivenessProbeTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: JobSpecTemplateSpecContainerLivenessProbeTcpSocket[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerLivenessProbeToTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeOutputReference | JobSpecTemplateSpecContainerLivenessProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
-    initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
-    period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
-    success_threshold: cdktf.numberToTerraform(struct!.successThreshold),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktn.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
+    success_threshold: cdktn.numberToTerraform(struct!.successThreshold),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     exec: jobSpecTemplateSpecContainerLivenessProbeExecToTerraform(struct!.exec),
-    grpc: cdktf.listMapper(jobSpecTemplateSpecContainerLivenessProbeGrpcToTerraform, true)(struct!.grpc),
+    grpc: cdktn.listMapper(jobSpecTemplateSpecContainerLivenessProbeGrpcToTerraform, true)(struct!.grpc),
     http_get: jobSpecTemplateSpecContainerLivenessProbeHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(jobSpecTemplateSpecContainerLivenessProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(jobSpecTemplateSpecContainerLivenessProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerLivenessProbeToHclTerraform(struct?: JobSpecTemplateSpecContainerLivenessProbeOutputReference | JobSpecTemplateSpecContainerLivenessProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failure_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.failureThreshold),
+      value: cdktn.numberToHclTerraform(struct!.failureThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     initial_delay_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.initialDelaySeconds),
+      value: cdktn.numberToHclTerraform(struct!.initialDelaySeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.periodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.periodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     success_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.successThreshold),
+      value: cdktn.numberToHclTerraform(struct!.successThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -10817,7 +10817,7 @@ export function jobSpecTemplateSpecContainerLivenessProbeToHclTerraform(struct?:
       storageClassType: "JobSpecTemplateSpecContainerLivenessProbeExecList",
     },
     grpc: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerLivenessProbeGrpcToHclTerraform, true)(struct!.grpc),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerLivenessProbeGrpcToHclTerraform, true)(struct!.grpc),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerLivenessProbeGrpcList",
@@ -10829,7 +10829,7 @@ export function jobSpecTemplateSpecContainerLivenessProbeToHclTerraform(struct?:
       storageClassType: "JobSpecTemplateSpecContainerLivenessProbeHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerLivenessProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerLivenessProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerLivenessProbeTcpSocketList",
@@ -10840,14 +10840,14 @@ export function jobSpecTemplateSpecContainerLivenessProbeToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerLivenessProbeOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerLivenessProbeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11021,7 +11021,7 @@ export class JobSpecTemplateSpecContainerLivenessProbeOutputReference extends cd
   public get grpc() {
     return this._grpc;
   }
-  public putGrpc(value: JobSpecTemplateSpecContainerLivenessProbeGrpc[] | cdktf.IResolvable) {
+  public putGrpc(value: JobSpecTemplateSpecContainerLivenessProbeGrpc[] | cdktn.IResolvable) {
     this._grpc.internalValue = value;
   }
   public resetGrpc() {
@@ -11053,7 +11053,7 @@ export class JobSpecTemplateSpecContainerLivenessProbeOutputReference extends cd
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: JobSpecTemplateSpecContainerLivenessProbeTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: JobSpecTemplateSpecContainerLivenessProbeTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -11097,53 +11097,53 @@ export interface JobSpecTemplateSpecContainerPort {
   readonly protocol?: string;
 }
 
-export function jobSpecTemplateSpecContainerPortToTerraform(struct?: JobSpecTemplateSpecContainerPort | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerPortToTerraform(struct?: JobSpecTemplateSpecContainerPort | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_port: cdktf.numberToTerraform(struct!.containerPort),
-    host_ip: cdktf.stringToTerraform(struct!.hostIp),
-    host_port: cdktf.numberToTerraform(struct!.hostPort),
-    name: cdktf.stringToTerraform(struct!.name),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    container_port: cdktn.numberToTerraform(struct!.containerPort),
+    host_ip: cdktn.stringToTerraform(struct!.hostIp),
+    host_port: cdktn.numberToTerraform(struct!.hostPort),
+    name: cdktn.stringToTerraform(struct!.name),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerPortToHclTerraform(struct?: JobSpecTemplateSpecContainerPort | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerPortToHclTerraform(struct?: JobSpecTemplateSpecContainerPort | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_port: {
-      value: cdktf.numberToHclTerraform(struct!.containerPort),
+      value: cdktn.numberToHclTerraform(struct!.containerPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     host_ip: {
-      value: cdktf.stringToHclTerraform(struct!.hostIp),
+      value: cdktn.stringToHclTerraform(struct!.hostIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_port: {
-      value: cdktf.numberToHclTerraform(struct!.hostPort),
+      value: cdktn.numberToHclTerraform(struct!.hostPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11154,9 +11154,9 @@ export function jobSpecTemplateSpecContainerPortToHclTerraform(struct?: JobSpecT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerPortOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerPortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11164,11 +11164,11 @@ export class JobSpecTemplateSpecContainerPortOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerPort | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerPort | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11197,7 +11197,7 @@ export class JobSpecTemplateSpecContainerPortOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerPort | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerPort | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11207,7 +11207,7 @@ export class JobSpecTemplateSpecContainerPortOutputReference extends cdktf.Compl
       this._name = undefined;
       this._protocol = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11300,15 +11300,15 @@ export class JobSpecTemplateSpecContainerPortOutputReference extends cdktf.Compl
   }
 }
 
-export class JobSpecTemplateSpecContainerPortList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerPort[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerPortList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerPort[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11329,24 +11329,24 @@ export interface JobSpecTemplateSpecContainerReadinessProbeExec {
 }
 
 export function jobSpecTemplateSpecContainerReadinessProbeExecToTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeExecOutputReference | JobSpecTemplateSpecContainerReadinessProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerReadinessProbeExecToHclTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeExecOutputReference | JobSpecTemplateSpecContainerReadinessProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -11357,14 +11357,14 @@ export function jobSpecTemplateSpecContainerReadinessProbeExecToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerReadinessProbeExecOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerReadinessProbeExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11420,32 +11420,32 @@ export interface JobSpecTemplateSpecContainerReadinessProbeGrpc {
   readonly service?: string;
 }
 
-export function jobSpecTemplateSpecContainerReadinessProbeGrpcToTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerReadinessProbeGrpcToTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    service: cdktf.stringToTerraform(struct!.service),
+    port: cdktn.numberToTerraform(struct!.port),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerReadinessProbeGrpcToHclTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerReadinessProbeGrpcToHclTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11456,9 +11456,9 @@ export function jobSpecTemplateSpecContainerReadinessProbeGrpcToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerReadinessProbeGrpcOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerReadinessProbeGrpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11466,11 +11466,11 @@ export class JobSpecTemplateSpecContainerReadinessProbeGrpcOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerReadinessProbeGrpc | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerReadinessProbeGrpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11487,14 +11487,14 @@ export class JobSpecTemplateSpecContainerReadinessProbeGrpcOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerReadinessProbeGrpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerReadinessProbeGrpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11536,15 +11536,15 @@ export class JobSpecTemplateSpecContainerReadinessProbeGrpcOutputReference exten
   }
 }
 
-export class JobSpecTemplateSpecContainerReadinessProbeGrpcList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerReadinessProbeGrpc[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerReadinessProbeGrpcList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerReadinessProbeGrpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11570,32 +11570,32 @@ export interface JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader {
   readonly value?: string;
 }
 
-export function jobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11606,9 +11606,9 @@ export function jobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11616,11 +11616,11 @@ export class JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11637,14 +11637,14 @@ export class JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11689,15 +11689,15 @@ export class JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputRe
   }
 }
 
-export class JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11738,56 +11738,56 @@ export interface JobSpecTemplateSpecContainerReadinessProbeHttpGet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#http_header Job#http_header}
   */
-  readonly httpHeader?: JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerReadinessProbeHttpGetToTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference | JobSpecTemplateSpecContainerReadinessProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(jobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(jobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerReadinessProbeHttpGetToHclTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference | JobSpecTemplateSpecContainerReadinessProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
@@ -11798,14 +11798,14 @@ export function jobSpecTemplateSpecContainerReadinessProbeHttpGetToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11923,7 +11923,7 @@ export class JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference ex
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: JobSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -11943,25 +11943,25 @@ export interface JobSpecTemplateSpecContainerReadinessProbeTcpSocket {
   readonly port: string;
 }
 
-export function jobSpecTemplateSpecContainerReadinessProbeTcpSocketToTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerReadinessProbeTcpSocketToTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerReadinessProbeTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerReadinessProbeTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11972,9 +11972,9 @@ export function jobSpecTemplateSpecContainerReadinessProbeTcpSocketToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11982,11 +11982,11 @@ export class JobSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerReadinessProbeTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerReadinessProbeTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11999,13 +11999,13 @@ export class JobSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerReadinessProbeTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerReadinessProbeTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -12030,15 +12030,15 @@ export class JobSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference 
   }
 }
 
-export class JobSpecTemplateSpecContainerReadinessProbeTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerReadinessProbeTcpSocket[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerReadinessProbeTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerReadinessProbeTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12091,7 +12091,7 @@ export interface JobSpecTemplateSpecContainerReadinessProbe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#grpc Job#grpc}
   */
-  readonly grpc?: JobSpecTemplateSpecContainerReadinessProbeGrpc[] | cdktf.IResolvable;
+  readonly grpc?: JobSpecTemplateSpecContainerReadinessProbeGrpc[] | cdktn.IResolvable;
   /**
   * http_get block
   *
@@ -12103,60 +12103,60 @@ export interface JobSpecTemplateSpecContainerReadinessProbe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#tcp_socket Job#tcp_socket}
   */
-  readonly tcpSocket?: JobSpecTemplateSpecContainerReadinessProbeTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: JobSpecTemplateSpecContainerReadinessProbeTcpSocket[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerReadinessProbeToTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeOutputReference | JobSpecTemplateSpecContainerReadinessProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
-    initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
-    period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
-    success_threshold: cdktf.numberToTerraform(struct!.successThreshold),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktn.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
+    success_threshold: cdktn.numberToTerraform(struct!.successThreshold),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     exec: jobSpecTemplateSpecContainerReadinessProbeExecToTerraform(struct!.exec),
-    grpc: cdktf.listMapper(jobSpecTemplateSpecContainerReadinessProbeGrpcToTerraform, true)(struct!.grpc),
+    grpc: cdktn.listMapper(jobSpecTemplateSpecContainerReadinessProbeGrpcToTerraform, true)(struct!.grpc),
     http_get: jobSpecTemplateSpecContainerReadinessProbeHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(jobSpecTemplateSpecContainerReadinessProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(jobSpecTemplateSpecContainerReadinessProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerReadinessProbeToHclTerraform(struct?: JobSpecTemplateSpecContainerReadinessProbeOutputReference | JobSpecTemplateSpecContainerReadinessProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failure_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.failureThreshold),
+      value: cdktn.numberToHclTerraform(struct!.failureThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     initial_delay_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.initialDelaySeconds),
+      value: cdktn.numberToHclTerraform(struct!.initialDelaySeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.periodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.periodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     success_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.successThreshold),
+      value: cdktn.numberToHclTerraform(struct!.successThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -12168,7 +12168,7 @@ export function jobSpecTemplateSpecContainerReadinessProbeToHclTerraform(struct?
       storageClassType: "JobSpecTemplateSpecContainerReadinessProbeExecList",
     },
     grpc: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerReadinessProbeGrpcToHclTerraform, true)(struct!.grpc),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerReadinessProbeGrpcToHclTerraform, true)(struct!.grpc),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerReadinessProbeGrpcList",
@@ -12180,7 +12180,7 @@ export function jobSpecTemplateSpecContainerReadinessProbeToHclTerraform(struct?
       storageClassType: "JobSpecTemplateSpecContainerReadinessProbeHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerReadinessProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerReadinessProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerReadinessProbeTcpSocketList",
@@ -12191,14 +12191,14 @@ export function jobSpecTemplateSpecContainerReadinessProbeToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerReadinessProbeOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerReadinessProbeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12372,7 +12372,7 @@ export class JobSpecTemplateSpecContainerReadinessProbeOutputReference extends c
   public get grpc() {
     return this._grpc;
   }
-  public putGrpc(value: JobSpecTemplateSpecContainerReadinessProbeGrpc[] | cdktf.IResolvable) {
+  public putGrpc(value: JobSpecTemplateSpecContainerReadinessProbeGrpc[] | cdktn.IResolvable) {
     this._grpc.internalValue = value;
   }
   public resetGrpc() {
@@ -12404,7 +12404,7 @@ export class JobSpecTemplateSpecContainerReadinessProbeOutputReference extends c
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: JobSpecTemplateSpecContainerReadinessProbeTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: JobSpecTemplateSpecContainerReadinessProbeTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -12431,31 +12431,31 @@ export interface JobSpecTemplateSpecContainerResources {
 }
 
 export function jobSpecTemplateSpecContainerResourcesToTerraform(struct?: JobSpecTemplateSpecContainerResourcesOutputReference | JobSpecTemplateSpecContainerResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    limits: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.limits),
-    requests: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requests),
+    limits: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.limits),
+    requests: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.requests),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerResourcesToHclTerraform(struct?: JobSpecTemplateSpecContainerResourcesOutputReference | JobSpecTemplateSpecContainerResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     limits: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.limits),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.limits),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     requests: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requests),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.requests),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -12466,14 +12466,14 @@ export function jobSpecTemplateSpecContainerResourcesToHclTerraform(struct?: Job
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerResourcesOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12552,31 +12552,31 @@ export interface JobSpecTemplateSpecContainerSecurityContextCapabilities {
 }
 
 export function jobSpecTemplateSpecContainerSecurityContextCapabilitiesToTerraform(struct?: JobSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference | JobSpecTemplateSpecContainerSecurityContextCapabilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    add: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.add),
-    drop: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.drop),
+    add: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.add),
+    drop: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.drop),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerSecurityContextCapabilitiesToHclTerraform(struct?: JobSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference | JobSpecTemplateSpecContainerSecurityContextCapabilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     add: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.add),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.add),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     drop: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.drop),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.drop),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -12587,14 +12587,14 @@ export function jobSpecTemplateSpecContainerSecurityContextCapabilitiesToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12685,45 +12685,45 @@ export interface JobSpecTemplateSpecContainerSecurityContextSeLinuxOptions {
 }
 
 export function jobSpecTemplateSpecContainerSecurityContextSeLinuxOptionsToTerraform(struct?: JobSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference | JobSpecTemplateSpecContainerSecurityContextSeLinuxOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    level: cdktf.stringToTerraform(struct!.level),
-    role: cdktf.stringToTerraform(struct!.role),
-    type: cdktf.stringToTerraform(struct!.type),
-    user: cdktf.stringToTerraform(struct!.user),
+    level: cdktn.stringToTerraform(struct!.level),
+    role: cdktn.stringToTerraform(struct!.role),
+    type: cdktn.stringToTerraform(struct!.type),
+    user: cdktn.stringToTerraform(struct!.user),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerSecurityContextSeLinuxOptionsToHclTerraform(struct?: JobSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference | JobSpecTemplateSpecContainerSecurityContextSeLinuxOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     level: {
-      value: cdktf.stringToHclTerraform(struct!.level),
+      value: cdktn.stringToHclTerraform(struct!.level),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12734,14 +12734,14 @@ export function jobSpecTemplateSpecContainerSecurityContextSeLinuxOptionsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12864,31 +12864,31 @@ export interface JobSpecTemplateSpecContainerSecurityContextSeccompProfile {
 }
 
 export function jobSpecTemplateSpecContainerSecurityContextSeccompProfileToTerraform(struct?: JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference | JobSpecTemplateSpecContainerSecurityContextSeccompProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    localhost_profile: cdktf.stringToTerraform(struct!.localhostProfile),
-    type: cdktf.stringToTerraform(struct!.type),
+    localhost_profile: cdktn.stringToTerraform(struct!.localhostProfile),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerSecurityContextSeccompProfileToHclTerraform(struct?: JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference | JobSpecTemplateSpecContainerSecurityContextSeccompProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     localhost_profile: {
-      value: cdktf.stringToHclTerraform(struct!.localhostProfile),
+      value: cdktn.stringToHclTerraform(struct!.localhostProfile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12899,14 +12899,14 @@ export function jobSpecTemplateSpecContainerSecurityContextSeccompProfileToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12975,19 +12975,19 @@ export interface JobSpecTemplateSpecContainerSecurityContext {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#allow_privilege_escalation Job#allow_privilege_escalation}
   */
-  readonly allowPrivilegeEscalation?: boolean | cdktf.IResolvable;
+  readonly allowPrivilegeEscalation?: boolean | cdktn.IResolvable;
   /**
   * Run container in privileged mode. Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#privileged Job#privileged}
   */
-  readonly privileged?: boolean | cdktf.IResolvable;
+  readonly privileged?: boolean | cdktn.IResolvable;
   /**
   * Whether this container has a read-only root filesystem. Default is false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#read_only_root_filesystem Job#read_only_root_filesystem}
   */
-  readonly readOnlyRootFilesystem?: boolean | cdktf.IResolvable;
+  readonly readOnlyRootFilesystem?: boolean | cdktn.IResolvable;
   /**
   * The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
   *
@@ -12999,7 +12999,7 @@ export interface JobSpecTemplateSpecContainerSecurityContext {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#run_as_non_root Job#run_as_non_root}
   */
-  readonly runAsNonRoot?: boolean | cdktf.IResolvable;
+  readonly runAsNonRoot?: boolean | cdktn.IResolvable;
   /**
   * The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
   *
@@ -13027,17 +13027,17 @@ export interface JobSpecTemplateSpecContainerSecurityContext {
 }
 
 export function jobSpecTemplateSpecContainerSecurityContextToTerraform(struct?: JobSpecTemplateSpecContainerSecurityContextOutputReference | JobSpecTemplateSpecContainerSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_privilege_escalation: cdktf.booleanToTerraform(struct!.allowPrivilegeEscalation),
-    privileged: cdktf.booleanToTerraform(struct!.privileged),
-    read_only_root_filesystem: cdktf.booleanToTerraform(struct!.readOnlyRootFilesystem),
-    run_as_group: cdktf.stringToTerraform(struct!.runAsGroup),
-    run_as_non_root: cdktf.booleanToTerraform(struct!.runAsNonRoot),
-    run_as_user: cdktf.stringToTerraform(struct!.runAsUser),
+    allow_privilege_escalation: cdktn.booleanToTerraform(struct!.allowPrivilegeEscalation),
+    privileged: cdktn.booleanToTerraform(struct!.privileged),
+    read_only_root_filesystem: cdktn.booleanToTerraform(struct!.readOnlyRootFilesystem),
+    run_as_group: cdktn.stringToTerraform(struct!.runAsGroup),
+    run_as_non_root: cdktn.booleanToTerraform(struct!.runAsNonRoot),
+    run_as_user: cdktn.stringToTerraform(struct!.runAsUser),
     capabilities: jobSpecTemplateSpecContainerSecurityContextCapabilitiesToTerraform(struct!.capabilities),
     se_linux_options: jobSpecTemplateSpecContainerSecurityContextSeLinuxOptionsToTerraform(struct!.seLinuxOptions),
     seccomp_profile: jobSpecTemplateSpecContainerSecurityContextSeccompProfileToTerraform(struct!.seccompProfile),
@@ -13046,43 +13046,43 @@ export function jobSpecTemplateSpecContainerSecurityContextToTerraform(struct?: 
 
 
 export function jobSpecTemplateSpecContainerSecurityContextToHclTerraform(struct?: JobSpecTemplateSpecContainerSecurityContextOutputReference | JobSpecTemplateSpecContainerSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_privilege_escalation: {
-      value: cdktf.booleanToHclTerraform(struct!.allowPrivilegeEscalation),
+      value: cdktn.booleanToHclTerraform(struct!.allowPrivilegeEscalation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     privileged: {
-      value: cdktf.booleanToHclTerraform(struct!.privileged),
+      value: cdktn.booleanToHclTerraform(struct!.privileged),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     read_only_root_filesystem: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnlyRootFilesystem),
+      value: cdktn.booleanToHclTerraform(struct!.readOnlyRootFilesystem),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_as_group: {
-      value: cdktf.stringToHclTerraform(struct!.runAsGroup),
+      value: cdktn.stringToHclTerraform(struct!.runAsGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     run_as_non_root: {
-      value: cdktf.booleanToHclTerraform(struct!.runAsNonRoot),
+      value: cdktn.booleanToHclTerraform(struct!.runAsNonRoot),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_as_user: {
-      value: cdktf.stringToHclTerraform(struct!.runAsUser),
+      value: cdktn.stringToHclTerraform(struct!.runAsUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13111,14 +13111,14 @@ export function jobSpecTemplateSpecContainerSecurityContextToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerSecurityContextOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerSecurityContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13192,11 +13192,11 @@ export class JobSpecTemplateSpecContainerSecurityContextOutputReference extends 
   }
 
   // allow_privilege_escalation - computed: false, optional: true, required: false
-  private _allowPrivilegeEscalation?: boolean | cdktf.IResolvable; 
+  private _allowPrivilegeEscalation?: boolean | cdktn.IResolvable; 
   public get allowPrivilegeEscalation() {
     return this.getBooleanAttribute('allow_privilege_escalation');
   }
-  public set allowPrivilegeEscalation(value: boolean | cdktf.IResolvable) {
+  public set allowPrivilegeEscalation(value: boolean | cdktn.IResolvable) {
     this._allowPrivilegeEscalation = value;
   }
   public resetAllowPrivilegeEscalation() {
@@ -13208,11 +13208,11 @@ export class JobSpecTemplateSpecContainerSecurityContextOutputReference extends 
   }
 
   // privileged - computed: false, optional: true, required: false
-  private _privileged?: boolean | cdktf.IResolvable; 
+  private _privileged?: boolean | cdktn.IResolvable; 
   public get privileged() {
     return this.getBooleanAttribute('privileged');
   }
-  public set privileged(value: boolean | cdktf.IResolvable) {
+  public set privileged(value: boolean | cdktn.IResolvable) {
     this._privileged = value;
   }
   public resetPrivileged() {
@@ -13224,11 +13224,11 @@ export class JobSpecTemplateSpecContainerSecurityContextOutputReference extends 
   }
 
   // read_only_root_filesystem - computed: false, optional: true, required: false
-  private _readOnlyRootFilesystem?: boolean | cdktf.IResolvable; 
+  private _readOnlyRootFilesystem?: boolean | cdktn.IResolvable; 
   public get readOnlyRootFilesystem() {
     return this.getBooleanAttribute('read_only_root_filesystem');
   }
-  public set readOnlyRootFilesystem(value: boolean | cdktf.IResolvable) {
+  public set readOnlyRootFilesystem(value: boolean | cdktn.IResolvable) {
     this._readOnlyRootFilesystem = value;
   }
   public resetReadOnlyRootFilesystem() {
@@ -13256,11 +13256,11 @@ export class JobSpecTemplateSpecContainerSecurityContextOutputReference extends 
   }
 
   // run_as_non_root - computed: false, optional: true, required: false
-  private _runAsNonRoot?: boolean | cdktf.IResolvable; 
+  private _runAsNonRoot?: boolean | cdktn.IResolvable; 
   public get runAsNonRoot() {
     return this.getBooleanAttribute('run_as_non_root');
   }
-  public set runAsNonRoot(value: boolean | cdktf.IResolvable) {
+  public set runAsNonRoot(value: boolean | cdktn.IResolvable) {
     this._runAsNonRoot = value;
   }
   public resetRunAsNonRoot() {
@@ -13345,24 +13345,24 @@ export interface JobSpecTemplateSpecContainerStartupProbeExec {
 }
 
 export function jobSpecTemplateSpecContainerStartupProbeExecToTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeExecOutputReference | JobSpecTemplateSpecContainerStartupProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerStartupProbeExecToHclTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeExecOutputReference | JobSpecTemplateSpecContainerStartupProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -13373,14 +13373,14 @@ export function jobSpecTemplateSpecContainerStartupProbeExecToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerStartupProbeExecOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerStartupProbeExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13436,32 +13436,32 @@ export interface JobSpecTemplateSpecContainerStartupProbeGrpc {
   readonly service?: string;
 }
 
-export function jobSpecTemplateSpecContainerStartupProbeGrpcToTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerStartupProbeGrpcToTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    service: cdktf.stringToTerraform(struct!.service),
+    port: cdktn.numberToTerraform(struct!.port),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerStartupProbeGrpcToHclTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerStartupProbeGrpcToHclTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13472,9 +13472,9 @@ export function jobSpecTemplateSpecContainerStartupProbeGrpcToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerStartupProbeGrpcOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerStartupProbeGrpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13482,11 +13482,11 @@ export class JobSpecTemplateSpecContainerStartupProbeGrpcOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerStartupProbeGrpc | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerStartupProbeGrpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13503,14 +13503,14 @@ export class JobSpecTemplateSpecContainerStartupProbeGrpcOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerStartupProbeGrpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerStartupProbeGrpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13552,15 +13552,15 @@ export class JobSpecTemplateSpecContainerStartupProbeGrpcOutputReference extends
   }
 }
 
-export class JobSpecTemplateSpecContainerStartupProbeGrpcList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerStartupProbeGrpc[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerStartupProbeGrpcList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerStartupProbeGrpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13586,32 +13586,32 @@ export interface JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader {
   readonly value?: string;
 }
 
-export function jobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13622,9 +13622,9 @@ export function jobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13632,11 +13632,11 @@ export class JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13653,14 +13653,14 @@ export class JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13705,15 +13705,15 @@ export class JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputRefe
   }
 }
 
-export class JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13754,56 +13754,56 @@ export interface JobSpecTemplateSpecContainerStartupProbeHttpGet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#http_header Job#http_header}
   */
-  readonly httpHeader?: JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerStartupProbeHttpGetToTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeHttpGetOutputReference | JobSpecTemplateSpecContainerStartupProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(jobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(jobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerStartupProbeHttpGetToHclTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeHttpGetOutputReference | JobSpecTemplateSpecContainerStartupProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
@@ -13814,14 +13814,14 @@ export function jobSpecTemplateSpecContainerStartupProbeHttpGetToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerStartupProbeHttpGetOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerStartupProbeHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13939,7 +13939,7 @@ export class JobSpecTemplateSpecContainerStartupProbeHttpGetOutputReference exte
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: JobSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -13959,25 +13959,25 @@ export interface JobSpecTemplateSpecContainerStartupProbeTcpSocket {
   readonly port: string;
 }
 
-export function jobSpecTemplateSpecContainerStartupProbeTcpSocketToTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerStartupProbeTcpSocketToTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerStartupProbeTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerStartupProbeTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13988,9 +13988,9 @@ export function jobSpecTemplateSpecContainerStartupProbeTcpSocketToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13998,11 +13998,11 @@ export class JobSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerStartupProbeTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerStartupProbeTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14015,13 +14015,13 @@ export class JobSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerStartupProbeTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerStartupProbeTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14046,15 +14046,15 @@ export class JobSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference ex
   }
 }
 
-export class JobSpecTemplateSpecContainerStartupProbeTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerStartupProbeTcpSocket[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerStartupProbeTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerStartupProbeTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14107,7 +14107,7 @@ export interface JobSpecTemplateSpecContainerStartupProbe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#grpc Job#grpc}
   */
-  readonly grpc?: JobSpecTemplateSpecContainerStartupProbeGrpc[] | cdktf.IResolvable;
+  readonly grpc?: JobSpecTemplateSpecContainerStartupProbeGrpc[] | cdktn.IResolvable;
   /**
   * http_get block
   *
@@ -14119,60 +14119,60 @@ export interface JobSpecTemplateSpecContainerStartupProbe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#tcp_socket Job#tcp_socket}
   */
-  readonly tcpSocket?: JobSpecTemplateSpecContainerStartupProbeTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: JobSpecTemplateSpecContainerStartupProbeTcpSocket[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecContainerStartupProbeToTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeOutputReference | JobSpecTemplateSpecContainerStartupProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
-    initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
-    period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
-    success_threshold: cdktf.numberToTerraform(struct!.successThreshold),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktn.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
+    success_threshold: cdktn.numberToTerraform(struct!.successThreshold),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     exec: jobSpecTemplateSpecContainerStartupProbeExecToTerraform(struct!.exec),
-    grpc: cdktf.listMapper(jobSpecTemplateSpecContainerStartupProbeGrpcToTerraform, true)(struct!.grpc),
+    grpc: cdktn.listMapper(jobSpecTemplateSpecContainerStartupProbeGrpcToTerraform, true)(struct!.grpc),
     http_get: jobSpecTemplateSpecContainerStartupProbeHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(jobSpecTemplateSpecContainerStartupProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(jobSpecTemplateSpecContainerStartupProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
 export function jobSpecTemplateSpecContainerStartupProbeToHclTerraform(struct?: JobSpecTemplateSpecContainerStartupProbeOutputReference | JobSpecTemplateSpecContainerStartupProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failure_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.failureThreshold),
+      value: cdktn.numberToHclTerraform(struct!.failureThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     initial_delay_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.initialDelaySeconds),
+      value: cdktn.numberToHclTerraform(struct!.initialDelaySeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.periodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.periodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     success_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.successThreshold),
+      value: cdktn.numberToHclTerraform(struct!.successThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -14184,7 +14184,7 @@ export function jobSpecTemplateSpecContainerStartupProbeToHclTerraform(struct?: 
       storageClassType: "JobSpecTemplateSpecContainerStartupProbeExecList",
     },
     grpc: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerStartupProbeGrpcToHclTerraform, true)(struct!.grpc),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerStartupProbeGrpcToHclTerraform, true)(struct!.grpc),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerStartupProbeGrpcList",
@@ -14196,7 +14196,7 @@ export function jobSpecTemplateSpecContainerStartupProbeToHclTerraform(struct?: 
       storageClassType: "JobSpecTemplateSpecContainerStartupProbeHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerStartupProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerStartupProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerStartupProbeTcpSocketList",
@@ -14207,14 +14207,14 @@ export function jobSpecTemplateSpecContainerStartupProbeToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerStartupProbeOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerStartupProbeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14388,7 +14388,7 @@ export class JobSpecTemplateSpecContainerStartupProbeOutputReference extends cdk
   public get grpc() {
     return this._grpc;
   }
-  public putGrpc(value: JobSpecTemplateSpecContainerStartupProbeGrpc[] | cdktf.IResolvable) {
+  public putGrpc(value: JobSpecTemplateSpecContainerStartupProbeGrpc[] | cdktn.IResolvable) {
     this._grpc.internalValue = value;
   }
   public resetGrpc() {
@@ -14420,7 +14420,7 @@ export class JobSpecTemplateSpecContainerStartupProbeOutputReference extends cdk
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: JobSpecTemplateSpecContainerStartupProbeTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: JobSpecTemplateSpecContainerStartupProbeTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -14446,32 +14446,32 @@ export interface JobSpecTemplateSpecContainerVolumeDevice {
   readonly name: string;
 }
 
-export function jobSpecTemplateSpecContainerVolumeDeviceToTerraform(struct?: JobSpecTemplateSpecContainerVolumeDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerVolumeDeviceToTerraform(struct?: JobSpecTemplateSpecContainerVolumeDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    device_path: cdktf.stringToTerraform(struct!.devicePath),
-    name: cdktf.stringToTerraform(struct!.name),
+    device_path: cdktn.stringToTerraform(struct!.devicePath),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerVolumeDeviceToHclTerraform(struct?: JobSpecTemplateSpecContainerVolumeDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerVolumeDeviceToHclTerraform(struct?: JobSpecTemplateSpecContainerVolumeDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     device_path: {
-      value: cdktf.stringToHclTerraform(struct!.devicePath),
+      value: cdktn.stringToHclTerraform(struct!.devicePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14482,9 +14482,9 @@ export function jobSpecTemplateSpecContainerVolumeDeviceToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerVolumeDeviceOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerVolumeDeviceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14492,11 +14492,11 @@ export class JobSpecTemplateSpecContainerVolumeDeviceOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerVolumeDevice | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerVolumeDevice | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14513,14 +14513,14 @@ export class JobSpecTemplateSpecContainerVolumeDeviceOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerVolumeDevice | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerVolumeDevice | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._devicePath = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14559,15 +14559,15 @@ export class JobSpecTemplateSpecContainerVolumeDeviceOutputReference extends cdk
   }
 }
 
-export class JobSpecTemplateSpecContainerVolumeDeviceList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerVolumeDevice[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerVolumeDeviceList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerVolumeDevice[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14602,7 +14602,7 @@ export interface JobSpecTemplateSpecContainerVolumeMount {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#read_only Job#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
   *
@@ -14617,60 +14617,60 @@ export interface JobSpecTemplateSpecContainerVolumeMount {
   readonly subPathExpr?: string;
 }
 
-export function jobSpecTemplateSpecContainerVolumeMountToTerraform(struct?: JobSpecTemplateSpecContainerVolumeMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerVolumeMountToTerraform(struct?: JobSpecTemplateSpecContainerVolumeMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_path: cdktf.stringToTerraform(struct!.mountPath),
-    mount_propagation: cdktf.stringToTerraform(struct!.mountPropagation),
-    name: cdktf.stringToTerraform(struct!.name),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    sub_path: cdktf.stringToTerraform(struct!.subPath),
-    sub_path_expr: cdktf.stringToTerraform(struct!.subPathExpr),
+    mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    mount_propagation: cdktn.stringToTerraform(struct!.mountPropagation),
+    name: cdktn.stringToTerraform(struct!.name),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    sub_path: cdktn.stringToTerraform(struct!.subPath),
+    sub_path_expr: cdktn.stringToTerraform(struct!.subPathExpr),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerVolumeMountToHclTerraform(struct?: JobSpecTemplateSpecContainerVolumeMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerVolumeMountToHclTerraform(struct?: JobSpecTemplateSpecContainerVolumeMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.mountPath),
+      value: cdktn.stringToHclTerraform(struct!.mountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount_propagation: {
-      value: cdktf.stringToHclTerraform(struct!.mountPropagation),
+      value: cdktn.stringToHclTerraform(struct!.mountPropagation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sub_path: {
-      value: cdktf.stringToHclTerraform(struct!.subPath),
+      value: cdktn.stringToHclTerraform(struct!.subPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sub_path_expr: {
-      value: cdktf.stringToHclTerraform(struct!.subPathExpr),
+      value: cdktn.stringToHclTerraform(struct!.subPathExpr),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14681,9 +14681,9 @@ export function jobSpecTemplateSpecContainerVolumeMountToHclTerraform(struct?: J
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerVolumeMountOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerVolumeMountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14691,11 +14691,11 @@ export class JobSpecTemplateSpecContainerVolumeMountOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainerVolumeMount | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainerVolumeMount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14728,7 +14728,7 @@ export class JobSpecTemplateSpecContainerVolumeMountOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainerVolumeMount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainerVolumeMount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14739,7 +14739,7 @@ export class JobSpecTemplateSpecContainerVolumeMountOutputReference extends cdkt
       this._subPath = undefined;
       this._subPathExpr = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14798,11 +14798,11 @@ export class JobSpecTemplateSpecContainerVolumeMountOutputReference extends cdkt
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -14846,15 +14846,15 @@ export class JobSpecTemplateSpecContainerVolumeMountOutputReference extends cdkt
   }
 }
 
-export class JobSpecTemplateSpecContainerVolumeMountList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainerVolumeMount[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerVolumeMountList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainerVolumeMount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14901,13 +14901,13 @@ export interface JobSpecTemplateSpecContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#stdin Job#stdin}
   */
-  readonly stdin?: boolean | cdktf.IResolvable;
+  readonly stdin?: boolean | cdktn.IResolvable;
   /**
   * Whether the container runtime should close the stdin channel after it has been opened by a single attach. When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#stdin_once Job#stdin_once}
   */
-  readonly stdinOnce?: boolean | cdktf.IResolvable;
+  readonly stdinOnce?: boolean | cdktn.IResolvable;
   /**
   * Optional: Path at which the file to which the container's termination message will be written is mounted into the container's filesystem. Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
   *
@@ -14925,7 +14925,7 @@ export interface JobSpecTemplateSpecContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#tty Job#tty}
   */
-  readonly tty?: boolean | cdktf.IResolvable;
+  readonly tty?: boolean | cdktn.IResolvable;
   /**
   * Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
   *
@@ -14937,13 +14937,13 @@ export interface JobSpecTemplateSpecContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#env Job#env}
   */
-  readonly env?: JobSpecTemplateSpecContainerEnv[] | cdktf.IResolvable;
+  readonly env?: JobSpecTemplateSpecContainerEnv[] | cdktn.IResolvable;
   /**
   * env_from block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#env_from Job#env_from}
   */
-  readonly envFrom?: JobSpecTemplateSpecContainerEnvFrom[] | cdktf.IResolvable;
+  readonly envFrom?: JobSpecTemplateSpecContainerEnvFrom[] | cdktn.IResolvable;
   /**
   * lifecycle block
   *
@@ -14961,7 +14961,7 @@ export interface JobSpecTemplateSpecContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#port Job#port}
   */
-  readonly port?: JobSpecTemplateSpecContainerPort[] | cdktf.IResolvable;
+  readonly port?: JobSpecTemplateSpecContainerPort[] | cdktn.IResolvable;
   /**
   * readiness_probe block
   *
@@ -14991,127 +14991,127 @@ export interface JobSpecTemplateSpecContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#volume_device Job#volume_device}
   */
-  readonly volumeDevice?: JobSpecTemplateSpecContainerVolumeDevice[] | cdktf.IResolvable;
+  readonly volumeDevice?: JobSpecTemplateSpecContainerVolumeDevice[] | cdktn.IResolvable;
   /**
   * volume_mount block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#volume_mount Job#volume_mount}
   */
-  readonly volumeMount?: JobSpecTemplateSpecContainerVolumeMount[] | cdktf.IResolvable;
+  readonly volumeMount?: JobSpecTemplateSpecContainerVolumeMount[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecContainerToTerraform(struct?: JobSpecTemplateSpecContainer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerToTerraform(struct?: JobSpecTemplateSpecContainer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
-    image: cdktf.stringToTerraform(struct!.image),
-    image_pull_policy: cdktf.stringToTerraform(struct!.imagePullPolicy),
-    name: cdktf.stringToTerraform(struct!.name),
-    stdin: cdktf.booleanToTerraform(struct!.stdin),
-    stdin_once: cdktf.booleanToTerraform(struct!.stdinOnce),
-    termination_message_path: cdktf.stringToTerraform(struct!.terminationMessagePath),
-    termination_message_policy: cdktf.stringToTerraform(struct!.terminationMessagePolicy),
-    tty: cdktf.booleanToTerraform(struct!.tty),
-    working_dir: cdktf.stringToTerraform(struct!.workingDir),
-    env: cdktf.listMapper(jobSpecTemplateSpecContainerEnvToTerraform, true)(struct!.env),
-    env_from: cdktf.listMapper(jobSpecTemplateSpecContainerEnvFromToTerraform, true)(struct!.envFrom),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
+    image: cdktn.stringToTerraform(struct!.image),
+    image_pull_policy: cdktn.stringToTerraform(struct!.imagePullPolicy),
+    name: cdktn.stringToTerraform(struct!.name),
+    stdin: cdktn.booleanToTerraform(struct!.stdin),
+    stdin_once: cdktn.booleanToTerraform(struct!.stdinOnce),
+    termination_message_path: cdktn.stringToTerraform(struct!.terminationMessagePath),
+    termination_message_policy: cdktn.stringToTerraform(struct!.terminationMessagePolicy),
+    tty: cdktn.booleanToTerraform(struct!.tty),
+    working_dir: cdktn.stringToTerraform(struct!.workingDir),
+    env: cdktn.listMapper(jobSpecTemplateSpecContainerEnvToTerraform, true)(struct!.env),
+    env_from: cdktn.listMapper(jobSpecTemplateSpecContainerEnvFromToTerraform, true)(struct!.envFrom),
     lifecycle: jobSpecTemplateSpecContainerLifecycleToTerraform(struct!.lifecycle),
     liveness_probe: jobSpecTemplateSpecContainerLivenessProbeToTerraform(struct!.livenessProbe),
-    port: cdktf.listMapper(jobSpecTemplateSpecContainerPortToTerraform, true)(struct!.port),
+    port: cdktn.listMapper(jobSpecTemplateSpecContainerPortToTerraform, true)(struct!.port),
     readiness_probe: jobSpecTemplateSpecContainerReadinessProbeToTerraform(struct!.readinessProbe),
     resources: jobSpecTemplateSpecContainerResourcesToTerraform(struct!.resources),
     security_context: jobSpecTemplateSpecContainerSecurityContextToTerraform(struct!.securityContext),
     startup_probe: jobSpecTemplateSpecContainerStartupProbeToTerraform(struct!.startupProbe),
-    volume_device: cdktf.listMapper(jobSpecTemplateSpecContainerVolumeDeviceToTerraform, true)(struct!.volumeDevice),
-    volume_mount: cdktf.listMapper(jobSpecTemplateSpecContainerVolumeMountToTerraform, true)(struct!.volumeMount),
+    volume_device: cdktn.listMapper(jobSpecTemplateSpecContainerVolumeDeviceToTerraform, true)(struct!.volumeDevice),
+    volume_mount: cdktn.listMapper(jobSpecTemplateSpecContainerVolumeMountToTerraform, true)(struct!.volumeMount),
   }
 }
 
 
-export function jobSpecTemplateSpecContainerToHclTerraform(struct?: JobSpecTemplateSpecContainer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecContainerToHclTerraform(struct?: JobSpecTemplateSpecContainer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     image: {
-      value: cdktf.stringToHclTerraform(struct!.image),
+      value: cdktn.stringToHclTerraform(struct!.image),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_pull_policy: {
-      value: cdktf.stringToHclTerraform(struct!.imagePullPolicy),
+      value: cdktn.stringToHclTerraform(struct!.imagePullPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stdin: {
-      value: cdktf.booleanToHclTerraform(struct!.stdin),
+      value: cdktn.booleanToHclTerraform(struct!.stdin),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     stdin_once: {
-      value: cdktf.booleanToHclTerraform(struct!.stdinOnce),
+      value: cdktn.booleanToHclTerraform(struct!.stdinOnce),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     termination_message_path: {
-      value: cdktf.stringToHclTerraform(struct!.terminationMessagePath),
+      value: cdktn.stringToHclTerraform(struct!.terminationMessagePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     termination_message_policy: {
-      value: cdktf.stringToHclTerraform(struct!.terminationMessagePolicy),
+      value: cdktn.stringToHclTerraform(struct!.terminationMessagePolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tty: {
-      value: cdktf.booleanToHclTerraform(struct!.tty),
+      value: cdktn.booleanToHclTerraform(struct!.tty),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     working_dir: {
-      value: cdktf.stringToHclTerraform(struct!.workingDir),
+      value: cdktn.stringToHclTerraform(struct!.workingDir),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     env: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerEnvToHclTerraform, true)(struct!.env),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerEnvToHclTerraform, true)(struct!.env),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerEnvList",
     },
     env_from: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerEnvFromToHclTerraform, true)(struct!.envFrom),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerEnvFromToHclTerraform, true)(struct!.envFrom),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerEnvFromList",
@@ -15129,7 +15129,7 @@ export function jobSpecTemplateSpecContainerToHclTerraform(struct?: JobSpecTempl
       storageClassType: "JobSpecTemplateSpecContainerLivenessProbeList",
     },
     port: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerPortToHclTerraform, true)(struct!.port),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerPortToHclTerraform, true)(struct!.port),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerPortList",
@@ -15159,13 +15159,13 @@ export function jobSpecTemplateSpecContainerToHclTerraform(struct?: JobSpecTempl
       storageClassType: "JobSpecTemplateSpecContainerStartupProbeList",
     },
     volume_device: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerVolumeDeviceToHclTerraform, true)(struct!.volumeDevice),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerVolumeDeviceToHclTerraform, true)(struct!.volumeDevice),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerVolumeDeviceList",
     },
     volume_mount: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecContainerVolumeMountToHclTerraform, true)(struct!.volumeMount),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecContainerVolumeMountToHclTerraform, true)(struct!.volumeMount),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecContainerVolumeMountList",
@@ -15176,9 +15176,9 @@ export function jobSpecTemplateSpecContainerToHclTerraform(struct?: JobSpecTempl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecContainerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15186,11 +15186,11 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecContainer | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecContainer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15287,7 +15287,7 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecContainer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecContainer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -15314,7 +15314,7 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
       this._volumeDevice.internalValue = undefined;
       this._volumeMount.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -15424,11 +15424,11 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
   }
 
   // stdin - computed: false, optional: true, required: false
-  private _stdin?: boolean | cdktf.IResolvable; 
+  private _stdin?: boolean | cdktn.IResolvable; 
   public get stdin() {
     return this.getBooleanAttribute('stdin');
   }
-  public set stdin(value: boolean | cdktf.IResolvable) {
+  public set stdin(value: boolean | cdktn.IResolvable) {
     this._stdin = value;
   }
   public resetStdin() {
@@ -15440,11 +15440,11 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
   }
 
   // stdin_once - computed: false, optional: true, required: false
-  private _stdinOnce?: boolean | cdktf.IResolvable; 
+  private _stdinOnce?: boolean | cdktn.IResolvable; 
   public get stdinOnce() {
     return this.getBooleanAttribute('stdin_once');
   }
-  public set stdinOnce(value: boolean | cdktf.IResolvable) {
+  public set stdinOnce(value: boolean | cdktn.IResolvable) {
     this._stdinOnce = value;
   }
   public resetStdinOnce() {
@@ -15488,11 +15488,11 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
   }
 
   // tty - computed: false, optional: true, required: false
-  private _tty?: boolean | cdktf.IResolvable; 
+  private _tty?: boolean | cdktn.IResolvable; 
   public get tty() {
     return this.getBooleanAttribute('tty');
   }
-  public set tty(value: boolean | cdktf.IResolvable) {
+  public set tty(value: boolean | cdktn.IResolvable) {
     this._tty = value;
   }
   public resetTty() {
@@ -15524,7 +15524,7 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
   public get env() {
     return this._env;
   }
-  public putEnv(value: JobSpecTemplateSpecContainerEnv[] | cdktf.IResolvable) {
+  public putEnv(value: JobSpecTemplateSpecContainerEnv[] | cdktn.IResolvable) {
     this._env.internalValue = value;
   }
   public resetEnv() {
@@ -15540,7 +15540,7 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
   public get envFrom() {
     return this._envFrom;
   }
-  public putEnvFrom(value: JobSpecTemplateSpecContainerEnvFrom[] | cdktf.IResolvable) {
+  public putEnvFrom(value: JobSpecTemplateSpecContainerEnvFrom[] | cdktn.IResolvable) {
     this._envFrom.internalValue = value;
   }
   public resetEnvFrom() {
@@ -15588,7 +15588,7 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
   public get port() {
     return this._port;
   }
-  public putPort(value: JobSpecTemplateSpecContainerPort[] | cdktf.IResolvable) {
+  public putPort(value: JobSpecTemplateSpecContainerPort[] | cdktn.IResolvable) {
     this._port.internalValue = value;
   }
   public resetPort() {
@@ -15668,7 +15668,7 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
   public get volumeDevice() {
     return this._volumeDevice;
   }
-  public putVolumeDevice(value: JobSpecTemplateSpecContainerVolumeDevice[] | cdktf.IResolvable) {
+  public putVolumeDevice(value: JobSpecTemplateSpecContainerVolumeDevice[] | cdktn.IResolvable) {
     this._volumeDevice.internalValue = value;
   }
   public resetVolumeDevice() {
@@ -15684,7 +15684,7 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
   public get volumeMount() {
     return this._volumeMount;
   }
-  public putVolumeMount(value: JobSpecTemplateSpecContainerVolumeMount[] | cdktf.IResolvable) {
+  public putVolumeMount(value: JobSpecTemplateSpecContainerVolumeMount[] | cdktn.IResolvable) {
     this._volumeMount.internalValue = value;
   }
   public resetVolumeMount() {
@@ -15696,15 +15696,15 @@ export class JobSpecTemplateSpecContainerOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class JobSpecTemplateSpecContainerList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecContainer[] | cdktf.IResolvable
+export class JobSpecTemplateSpecContainerList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecContainer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15730,32 +15730,32 @@ export interface JobSpecTemplateSpecDnsConfigOption {
   readonly value?: string;
 }
 
-export function jobSpecTemplateSpecDnsConfigOptionToTerraform(struct?: JobSpecTemplateSpecDnsConfigOption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecDnsConfigOptionToTerraform(struct?: JobSpecTemplateSpecDnsConfigOption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function jobSpecTemplateSpecDnsConfigOptionToHclTerraform(struct?: JobSpecTemplateSpecDnsConfigOption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecDnsConfigOptionToHclTerraform(struct?: JobSpecTemplateSpecDnsConfigOption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15766,9 +15766,9 @@ export function jobSpecTemplateSpecDnsConfigOptionToHclTerraform(struct?: JobSpe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecDnsConfigOptionOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecDnsConfigOptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15776,11 +15776,11 @@ export class JobSpecTemplateSpecDnsConfigOptionOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecDnsConfigOption | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecDnsConfigOption | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15797,14 +15797,14 @@ export class JobSpecTemplateSpecDnsConfigOptionOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecDnsConfigOption | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecDnsConfigOption | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -15846,15 +15846,15 @@ export class JobSpecTemplateSpecDnsConfigOptionOutputReference extends cdktf.Com
   }
 }
 
-export class JobSpecTemplateSpecDnsConfigOptionList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecDnsConfigOption[] | cdktf.IResolvable
+export class JobSpecTemplateSpecDnsConfigOptionList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecDnsConfigOption[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15883,42 +15883,42 @@ export interface JobSpecTemplateSpecDnsConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#option Job#option}
   */
-  readonly option?: JobSpecTemplateSpecDnsConfigOption[] | cdktf.IResolvable;
+  readonly option?: JobSpecTemplateSpecDnsConfigOption[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecDnsConfigToTerraform(struct?: JobSpecTemplateSpecDnsConfigOutputReference | JobSpecTemplateSpecDnsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    nameservers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.nameservers),
-    searches: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.searches),
-    option: cdktf.listMapper(jobSpecTemplateSpecDnsConfigOptionToTerraform, true)(struct!.option),
+    nameservers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.nameservers),
+    searches: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.searches),
+    option: cdktn.listMapper(jobSpecTemplateSpecDnsConfigOptionToTerraform, true)(struct!.option),
   }
 }
 
 
 export function jobSpecTemplateSpecDnsConfigToHclTerraform(struct?: JobSpecTemplateSpecDnsConfigOutputReference | JobSpecTemplateSpecDnsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     nameservers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.nameservers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.nameservers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     searches: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.searches),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.searches),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     option: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecDnsConfigOptionToHclTerraform, true)(struct!.option),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecDnsConfigOptionToHclTerraform, true)(struct!.option),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecDnsConfigOptionList",
@@ -15929,14 +15929,14 @@ export function jobSpecTemplateSpecDnsConfigToHclTerraform(struct?: JobSpecTempl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecDnsConfigOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecDnsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16010,7 +16010,7 @@ export class JobSpecTemplateSpecDnsConfigOutputReference extends cdktf.ComplexOb
   public get option() {
     return this._option;
   }
-  public putOption(value: JobSpecTemplateSpecDnsConfigOption[] | cdktf.IResolvable) {
+  public putOption(value: JobSpecTemplateSpecDnsConfigOption[] | cdktn.IResolvable) {
     this._option.internalValue = value;
   }
   public resetOption() {
@@ -16036,32 +16036,32 @@ export interface JobSpecTemplateSpecHostAliases {
   readonly ip: string;
 }
 
-export function jobSpecTemplateSpecHostAliasesToTerraform(struct?: JobSpecTemplateSpecHostAliases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecHostAliasesToTerraform(struct?: JobSpecTemplateSpecHostAliases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hostnames: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hostnames),
-    ip: cdktf.stringToTerraform(struct!.ip),
+    hostnames: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hostnames),
+    ip: cdktn.stringToTerraform(struct!.ip),
   }
 }
 
 
-export function jobSpecTemplateSpecHostAliasesToHclTerraform(struct?: JobSpecTemplateSpecHostAliases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecHostAliasesToHclTerraform(struct?: JobSpecTemplateSpecHostAliases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hostnames: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hostnames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.hostnames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ip: {
-      value: cdktf.stringToHclTerraform(struct!.ip),
+      value: cdktn.stringToHclTerraform(struct!.ip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16072,9 +16072,9 @@ export function jobSpecTemplateSpecHostAliasesToHclTerraform(struct?: JobSpecTem
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecHostAliasesOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecHostAliasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -16082,11 +16082,11 @@ export class JobSpecTemplateSpecHostAliasesOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecHostAliases | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecHostAliases | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -16103,14 +16103,14 @@ export class JobSpecTemplateSpecHostAliasesOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecHostAliases | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecHostAliases | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hostnames = undefined;
       this._ip = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -16149,15 +16149,15 @@ export class JobSpecTemplateSpecHostAliasesOutputReference extends cdktf.Complex
   }
 }
 
-export class JobSpecTemplateSpecHostAliasesList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecHostAliases[] | cdktf.IResolvable
+export class JobSpecTemplateSpecHostAliasesList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecHostAliases[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -16177,25 +16177,25 @@ export interface JobSpecTemplateSpecImagePullSecrets {
   readonly name: string;
 }
 
-export function jobSpecTemplateSpecImagePullSecretsToTerraform(struct?: JobSpecTemplateSpecImagePullSecrets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecImagePullSecretsToTerraform(struct?: JobSpecTemplateSpecImagePullSecrets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function jobSpecTemplateSpecImagePullSecretsToHclTerraform(struct?: JobSpecTemplateSpecImagePullSecrets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecImagePullSecretsToHclTerraform(struct?: JobSpecTemplateSpecImagePullSecrets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16206,9 +16206,9 @@ export function jobSpecTemplateSpecImagePullSecretsToHclTerraform(struct?: JobSp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecImagePullSecretsOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecImagePullSecretsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -16216,11 +16216,11 @@ export class JobSpecTemplateSpecImagePullSecretsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecImagePullSecrets | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecImagePullSecrets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -16233,13 +16233,13 @@ export class JobSpecTemplateSpecImagePullSecretsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecImagePullSecrets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecImagePullSecrets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -16264,15 +16264,15 @@ export class JobSpecTemplateSpecImagePullSecretsOutputReference extends cdktf.Co
   }
 }
 
-export class JobSpecTemplateSpecImagePullSecretsList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecImagePullSecrets[] | cdktf.IResolvable
+export class JobSpecTemplateSpecImagePullSecretsList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecImagePullSecrets[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -16301,42 +16301,42 @@ export interface JobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#optional Job#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefToTerraform(struct?: JobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference | JobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
+    key: cdktn.stringToTerraform(struct!.key),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference | JobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -16347,14 +16347,14 @@ export function jobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16424,11 +16424,11 @@ export class JobSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputRe
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -16455,31 +16455,31 @@ export interface JobSpecTemplateSpecInitContainerEnvValueFromFieldRef {
 }
 
 export function jobSpecTemplateSpecInitContainerEnvValueFromFieldRefToTerraform(struct?: JobSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference | JobSpecTemplateSpecInitContainerEnvValueFromFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    field_path: cdktf.stringToTerraform(struct!.fieldPath),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    field_path: cdktn.stringToTerraform(struct!.fieldPath),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerEnvValueFromFieldRefToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference | JobSpecTemplateSpecInitContainerEnvValueFromFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_path: {
-      value: cdktf.stringToHclTerraform(struct!.fieldPath),
+      value: cdktn.stringToHclTerraform(struct!.fieldPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16490,14 +16490,14 @@ export function jobSpecTemplateSpecInitContainerEnvValueFromFieldRefToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16578,38 +16578,38 @@ export interface JobSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef {
 }
 
 export function jobSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefToTerraform(struct?: JobSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference | JobSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    divisor: cdktf.stringToTerraform(struct!.divisor),
-    resource: cdktf.stringToTerraform(struct!.resource),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    divisor: cdktn.stringToTerraform(struct!.divisor),
+    resource: cdktn.stringToTerraform(struct!.resource),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference | JobSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     divisor: {
-      value: cdktf.stringToHclTerraform(struct!.divisor),
+      value: cdktn.stringToHclTerraform(struct!.divisor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16620,14 +16620,14 @@ export function jobSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16727,42 +16727,42 @@ export interface JobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#optional Job#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefToTerraform(struct?: JobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference | JobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
+    key: cdktn.stringToTerraform(struct!.key),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference | JobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -16773,14 +16773,14 @@ export function jobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16850,11 +16850,11 @@ export class JobSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputRefer
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -16893,8 +16893,8 @@ export interface JobSpecTemplateSpecInitContainerEnvValueFrom {
 }
 
 export function jobSpecTemplateSpecInitContainerEnvValueFromToTerraform(struct?: JobSpecTemplateSpecInitContainerEnvValueFromOutputReference | JobSpecTemplateSpecInitContainerEnvValueFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -16907,8 +16907,8 @@ export function jobSpecTemplateSpecInitContainerEnvValueFromToTerraform(struct?:
 
 
 export function jobSpecTemplateSpecInitContainerEnvValueFromToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnvValueFromOutputReference | JobSpecTemplateSpecInitContainerEnvValueFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -16942,14 +16942,14 @@ export function jobSpecTemplateSpecInitContainerEnvValueFromToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerEnvValueFromOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerEnvValueFromOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17077,33 +17077,33 @@ export interface JobSpecTemplateSpecInitContainerEnv {
   readonly valueFrom?: JobSpecTemplateSpecInitContainerEnvValueFrom;
 }
 
-export function jobSpecTemplateSpecInitContainerEnvToTerraform(struct?: JobSpecTemplateSpecInitContainerEnv | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerEnvToTerraform(struct?: JobSpecTemplateSpecInitContainerEnv | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
     value_from: jobSpecTemplateSpecInitContainerEnvValueFromToTerraform(struct!.valueFrom),
   }
 }
 
 
-export function jobSpecTemplateSpecInitContainerEnvToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnv | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerEnvToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnv | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17120,9 +17120,9 @@ export function jobSpecTemplateSpecInitContainerEnvToHclTerraform(struct?: JobSp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerEnvOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerEnvOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -17130,11 +17130,11 @@ export class JobSpecTemplateSpecInitContainerEnvOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecInitContainerEnv | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecInitContainerEnv | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17155,7 +17155,7 @@ export class JobSpecTemplateSpecInitContainerEnvOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecInitContainerEnv | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecInitContainerEnv | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -17163,7 +17163,7 @@ export class JobSpecTemplateSpecInitContainerEnvOutputReference extends cdktf.Co
       this._value = undefined;
       this._valueFrom.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -17222,15 +17222,15 @@ export class JobSpecTemplateSpecInitContainerEnvOutputReference extends cdktf.Co
   }
 }
 
-export class JobSpecTemplateSpecInitContainerEnvList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecInitContainerEnv[] | cdktf.IResolvable
+export class JobSpecTemplateSpecInitContainerEnvList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecInitContainerEnv[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -17253,35 +17253,35 @@ export interface JobSpecTemplateSpecInitContainerEnvFromConfigMapRef {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#optional Job#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecInitContainerEnvFromConfigMapRefToTerraform(struct?: JobSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference | JobSpecTemplateSpecInitContainerEnvFromConfigMapRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerEnvFromConfigMapRefToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference | JobSpecTemplateSpecInitContainerEnvFromConfigMapRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -17292,14 +17292,14 @@ export function jobSpecTemplateSpecInitContainerEnvFromConfigMapRefToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17344,11 +17344,11 @@ export class JobSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference 
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -17371,35 +17371,35 @@ export interface JobSpecTemplateSpecInitContainerEnvFromSecretRef {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#optional Job#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecInitContainerEnvFromSecretRefToTerraform(struct?: JobSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference | JobSpecTemplateSpecInitContainerEnvFromSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerEnvFromSecretRefToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference | JobSpecTemplateSpecInitContainerEnvFromSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -17410,14 +17410,14 @@ export function jobSpecTemplateSpecInitContainerEnvFromSecretRefToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17462,11 +17462,11 @@ export class JobSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference ext
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -17498,27 +17498,27 @@ export interface JobSpecTemplateSpecInitContainerEnvFrom {
   readonly secretRef?: JobSpecTemplateSpecInitContainerEnvFromSecretRef;
 }
 
-export function jobSpecTemplateSpecInitContainerEnvFromToTerraform(struct?: JobSpecTemplateSpecInitContainerEnvFrom | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerEnvFromToTerraform(struct?: JobSpecTemplateSpecInitContainerEnvFrom | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
     config_map_ref: jobSpecTemplateSpecInitContainerEnvFromConfigMapRefToTerraform(struct!.configMapRef),
     secret_ref: jobSpecTemplateSpecInitContainerEnvFromSecretRefToTerraform(struct!.secretRef),
   }
 }
 
 
-export function jobSpecTemplateSpecInitContainerEnvFromToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnvFrom | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerEnvFromToHclTerraform(struct?: JobSpecTemplateSpecInitContainerEnvFrom | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17541,9 +17541,9 @@ export function jobSpecTemplateSpecInitContainerEnvFromToHclTerraform(struct?: J
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerEnvFromOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerEnvFromOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -17551,11 +17551,11 @@ export class JobSpecTemplateSpecInitContainerEnvFromOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecInitContainerEnvFrom | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecInitContainerEnvFrom | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17576,7 +17576,7 @@ export class JobSpecTemplateSpecInitContainerEnvFromOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecInitContainerEnvFrom | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecInitContainerEnvFrom | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -17584,7 +17584,7 @@ export class JobSpecTemplateSpecInitContainerEnvFromOutputReference extends cdkt
       this._configMapRef.internalValue = undefined;
       this._secretRef.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -17646,15 +17646,15 @@ export class JobSpecTemplateSpecInitContainerEnvFromOutputReference extends cdkt
   }
 }
 
-export class JobSpecTemplateSpecInitContainerEnvFromList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecInitContainerEnvFrom[] | cdktf.IResolvable
+export class JobSpecTemplateSpecInitContainerEnvFromList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecInitContainerEnvFrom[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -17675,24 +17675,24 @@ export interface JobSpecTemplateSpecInitContainerLifecyclePostStartExec {
 }
 
 export function jobSpecTemplateSpecInitContainerLifecyclePostStartExecToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference | JobSpecTemplateSpecInitContainerLifecyclePostStartExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerLifecyclePostStartExecToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference | JobSpecTemplateSpecInitContainerLifecyclePostStartExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -17703,14 +17703,14 @@ export function jobSpecTemplateSpecInitContainerLifecyclePostStartExecToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17766,32 +17766,32 @@ export interface JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHe
   readonly value?: string;
 }
 
-export function jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17802,9 +17802,9 @@ export function jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHea
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -17812,11 +17812,11 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17833,14 +17833,14 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -17885,15 +17885,15 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader
   }
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader[] | cdktf.IResolvable
+export class JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -17934,56 +17934,56 @@ export interface JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#http_header Job#http_header}
   */
-  readonly httpHeader?: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference | JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference | JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
@@ -17994,14 +17994,14 @@ export function jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18119,7 +18119,7 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputRefe
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -18139,25 +18139,25 @@ export interface JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket {
   readonly port: string;
 }
 
-export function jobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function jobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18168,9 +18168,9 @@ export function jobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -18178,11 +18178,11 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -18195,13 +18195,13 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -18226,15 +18226,15 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputRe
   }
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket[] | cdktf.IResolvable
+export class JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -18263,25 +18263,25 @@ export interface JobSpecTemplateSpecInitContainerLifecyclePostStart {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#tcp_socket Job#tcp_socket}
   */
-  readonly tcpSocket?: JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecInitContainerLifecyclePostStartToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePostStartToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     exec: jobSpecTemplateSpecInitContainerLifecyclePostStartExecToTerraform(struct!.exec),
     http_get: jobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(jobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(jobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
-export function jobSpecTemplateSpecInitContainerLifecyclePostStartToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePostStartToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePostStart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -18298,7 +18298,7 @@ export function jobSpecTemplateSpecInitContainerLifecyclePostStartToHclTerraform
       storageClassType: "JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
@@ -18309,9 +18309,9 @@ export function jobSpecTemplateSpecInitContainerLifecyclePostStartToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -18319,11 +18319,11 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePostStart | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePostStart | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -18344,7 +18344,7 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePostStart | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePostStart | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -18352,7 +18352,7 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference e
       this._httpGet.internalValue = undefined;
       this._tcpSocket.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -18402,7 +18402,7 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference e
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: JobSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -18414,15 +18414,15 @@ export class JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference e
   }
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePostStartList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePostStart[] | cdktf.IResolvable
+export class JobSpecTemplateSpecInitContainerLifecyclePostStartList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePostStart[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -18443,24 +18443,24 @@ export interface JobSpecTemplateSpecInitContainerLifecyclePreStopExec {
 }
 
 export function jobSpecTemplateSpecInitContainerLifecyclePreStopExecToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference | JobSpecTemplateSpecInitContainerLifecyclePreStopExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerLifecyclePreStopExecToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference | JobSpecTemplateSpecInitContainerLifecyclePreStopExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -18471,14 +18471,14 @@ export function jobSpecTemplateSpecInitContainerLifecyclePreStopExecToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18534,32 +18534,32 @@ export interface JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHead
   readonly value?: string;
 }
 
-export function jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18570,9 +18570,9 @@ export function jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeade
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -18580,11 +18580,11 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -18601,14 +18601,14 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -18653,15 +18653,15 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOu
   }
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader[] | cdktf.IResolvable
+export class JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -18702,56 +18702,56 @@ export interface JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#http_header Job#http_header}
   */
-  readonly httpHeader?: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference | JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference | JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList",
@@ -18762,14 +18762,14 @@ export function jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18887,7 +18887,7 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputRefere
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -18907,25 +18907,25 @@ export interface JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket {
   readonly port: string;
 }
 
-export function jobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function jobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18936,9 +18936,9 @@ export function jobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -18946,11 +18946,11 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -18963,13 +18963,13 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -18994,15 +18994,15 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputRefe
   }
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket[] | cdktf.IResolvable
+export class JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -19031,25 +19031,25 @@ export interface JobSpecTemplateSpecInitContainerLifecyclePreStop {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#tcp_socket Job#tcp_socket}
   */
-  readonly tcpSocket?: JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket[] | cdktn.IResolvable;
 }
 
-export function jobSpecTemplateSpecInitContainerLifecyclePreStopToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStop | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePreStopToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStop | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     exec: jobSpecTemplateSpecInitContainerLifecyclePreStopExecToTerraform(struct!.exec),
     http_get: jobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(jobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(jobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
-export function jobSpecTemplateSpecInitContainerLifecyclePreStopToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStop | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobSpecTemplateSpecInitContainerLifecyclePreStopToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecyclePreStop | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -19066,7 +19066,7 @@ export function jobSpecTemplateSpecInitContainerLifecyclePreStopToHclTerraform(s
       storageClassType: "JobSpecTemplateSpecInitContainerLifecyclePreStopHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
@@ -19077,9 +19077,9 @@ export function jobSpecTemplateSpecInitContainerLifecyclePreStopToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePreStopOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecyclePreStopOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -19087,11 +19087,11 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePreStop | cdktf.IResolvable | undefined {
+  public get internalValue(): JobSpecTemplateSpecInitContainerLifecyclePreStop | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -19112,7 +19112,7 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePreStop | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobSpecTemplateSpecInitContainerLifecyclePreStop | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -19120,7 +19120,7 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopOutputReference ext
       this._httpGet.internalValue = undefined;
       this._tcpSocket.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -19170,7 +19170,7 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopOutputReference ext
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -19182,15 +19182,15 @@ export class JobSpecTemplateSpecInitContainerLifecyclePreStopOutputReference ext
   }
 }
 
-export class JobSpecTemplateSpecInitContainerLifecyclePreStopList extends cdktf.ComplexList {
-  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePreStop[] | cdktf.IResolvable
+export class JobSpecTemplateSpecInitContainerLifecyclePreStopList extends cdktn.ComplexList {
+  public internalValue? : JobSpecTemplateSpecInitContainerLifecyclePreStop[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -19207,41 +19207,41 @@ export interface JobSpecTemplateSpecInitContainerLifecycle {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#post_start Job#post_start}
   */
-  readonly postStart?: JobSpecTemplateSpecInitContainerLifecyclePostStart[] | cdktf.IResolvable;
+  readonly postStart?: JobSpecTemplateSpecInitContainerLifecyclePostStart[] | cdktn.IResolvable;
   /**
   * pre_stop block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#pre_stop Job#pre_stop}
   */
-  readonly preStop?: JobSpecTemplateSpecInitContainerLifecyclePreStop[] | cdktf.IResolvable;
+  readonly preStop?: JobSpecTemplateSpecInitContainerLifecyclePreStop[] | cdktn.IResolvable;
 }
 
 export function jobSpecTemplateSpecInitContainerLifecycleToTerraform(struct?: JobSpecTemplateSpecInitContainerLifecycleOutputReference | JobSpecTemplateSpecInitContainerLifecycle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    post_start: cdktf.listMapper(jobSpecTemplateSpecInitContainerLifecyclePostStartToTerraform, true)(struct!.postStart),
-    pre_stop: cdktf.listMapper(jobSpecTemplateSpecInitContainerLifecyclePreStopToTerraform, true)(struct!.preStop),
+    post_start: cdktn.listMapper(jobSpecTemplateSpecInitContainerLifecyclePostStartToTerraform, true)(struct!.postStart),
+    pre_stop: cdktn.listMapper(jobSpecTemplateSpecInitContainerLifecyclePreStopToTerraform, true)(struct!.preStop),
   }
 }
 
 
 export function jobSpecTemplateSpecInitContainerLifecycleToHclTerraform(struct?: JobSpecTemplateSpecInitContainerLifecycleOutputReference | JobSpecTemplateSpecInitContainerLifecycle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     post_start: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePostStartToHclTerraform, true)(struct!.postStart),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePostStartToHclTerraform, true)(struct!.postStart),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecInitContainerLifecyclePostStartList",
     },
     pre_stop: {
-      value: cdktf.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePreStopToHclTerraform, true)(struct!.preStop),
+      value: cdktn.listMapperHcl(jobSpecTemplateSpecInitContainerLifecyclePreStopToHclTerraform, true)(struct!.preStop),
       isBlock: true,
       type: "list",
       storageClassType: "JobSpecTemplateSpecInitContainerLifecyclePreStopList",
@@ -19252,14 +19252,14 @@ export function jobSpecTemplateSpecInitContainerLifecycleToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobSpecTemplateSpecInitContainerLifecycleOutputReference extends cdktf.ComplexObject {
+export class JobSpecTemplateSpecInitContainerLifecycleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19295,7 +19295,7 @@ export class JobSpecTemplateSpecInitContainerLifecycleOutputReference extends cd
   public get postStart() {
     return this._postStart;
   }
-  public putPostStart(value: JobSpecTemplateSpecInitContainerLifecyclePostStart[] | cdktf.IResolvable) {
+  public putPostStart(value: JobSpecTemplateSpecInitContainerLifecyclePostStart[] | cdktn.IResolvable) {
     this._postStart.internalValue = value;
   }
   public resetPostStart() {
@@ -19311,7 +19311,7 @@ export class JobSpecTemplateSpecInitContainerLifecycleOutputReference extends cd
   public get preStop() {
     return this._preStop;
   }
-  public putPreStop(value: JobSpecTemplateSpecInitContainerLifecyclePreStop[] | cdktf.IResolvable) {
+  public putPreStop(value: JobSpecTemplateSpecInitContainerLifecyclePreStop[] | cdktn.IResolvable) {
     this._preStop.internalValue = value;
   }
   public resetPreStop() {

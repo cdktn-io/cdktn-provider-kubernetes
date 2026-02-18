@@ -19,8 +19,8 @@ jobV1TimeoutsToHclTerraform,
 JobV1TimeoutsOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface JobV1Config extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface JobV1Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#id JobV1#id}
   *
@@ -31,7 +31,7 @@ export interface JobV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#wait_for_completion JobV1#wait_for_completion}
   */
-  readonly waitForCompletion?: boolean | cdktf.IResolvable;
+  readonly waitForCompletion?: boolean | cdktn.IResolvable;
   /**
   * metadata block
   *
@@ -55,7 +55,7 @@ export interface JobV1Config extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1 kubernetes_job_v1}
 */
-export class JobV1 extends cdktf.TerraformResource {
+export class JobV1 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -66,14 +66,14 @@ export class JobV1 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a JobV1 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a JobV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the JobV1 to import
   * @param importFromId The id of the existing JobV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the JobV1 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_job_v1", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_job_v1", importId: importFromId, provider });
       }
 
   // ===========
@@ -131,11 +131,11 @@ export class JobV1 extends cdktf.TerraformResource {
   }
 
   // wait_for_completion - computed: false, optional: true, required: false
-  private _waitForCompletion?: boolean | cdktf.IResolvable; 
+  private _waitForCompletion?: boolean | cdktn.IResolvable; 
   public get waitForCompletion() {
     return this.getBooleanAttribute('wait_for_completion');
   }
-  public set waitForCompletion(value: boolean | cdktf.IResolvable) {
+  public set waitForCompletion(value: boolean | cdktn.IResolvable) {
     this._waitForCompletion = value;
   }
   public resetWaitForCompletion() {
@@ -194,8 +194,8 @@ export class JobV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      wait_for_completion: cdktf.booleanToTerraform(this._waitForCompletion),
+      id: cdktn.stringToTerraform(this._id),
+      wait_for_completion: cdktn.booleanToTerraform(this._waitForCompletion),
       metadata: jobV1MetadataToTerraform(this._metadata.internalValue),
       spec: jobV1SpecToTerraform(this._spec.internalValue),
       timeouts: jobV1TimeoutsToTerraform(this._timeouts.internalValue),
@@ -205,13 +205,13 @@ export class JobV1 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       wait_for_completion: {
-        value: cdktf.booleanToHclTerraform(this._waitForCompletion),
+        value: cdktn.booleanToHclTerraform(this._waitForCompletion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

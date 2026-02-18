@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#id NetworkPolicy#id}
   *
@@ -66,52 +66,52 @@ export interface NetworkPolicyMetadata {
 }
 
 export function networkPolicyMetadataToTerraform(struct?: NetworkPolicyMetadataOutputReference | NetworkPolicyMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function networkPolicyMetadataToHclTerraform(struct?: NetworkPolicyMetadataOutputReference | NetworkPolicyMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,14 +122,14 @@ export function networkPolicyMetadataToHclTerraform(struct?: NetworkPolicyMetada
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicyMetadataOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicyMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -294,39 +294,39 @@ export interface NetworkPolicySpecEgressPorts {
   readonly protocol?: string;
 }
 
-export function networkPolicySpecEgressPortsToTerraform(struct?: NetworkPolicySpecEgressPorts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecEgressPortsToTerraform(struct?: NetworkPolicySpecEgressPorts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_port: cdktf.numberToTerraform(struct!.endPort),
-    port: cdktf.stringToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    end_port: cdktn.numberToTerraform(struct!.endPort),
+    port: cdktn.stringToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
   }
 }
 
 
-export function networkPolicySpecEgressPortsToHclTerraform(struct?: NetworkPolicySpecEgressPorts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecEgressPortsToHclTerraform(struct?: NetworkPolicySpecEgressPorts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_port: {
-      value: cdktf.numberToHclTerraform(struct!.endPort),
+      value: cdktn.numberToHclTerraform(struct!.endPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -337,9 +337,9 @@ export function networkPolicySpecEgressPortsToHclTerraform(struct?: NetworkPolic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecEgressPortsOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecEgressPortsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -347,11 +347,11 @@ export class NetworkPolicySpecEgressPortsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecEgressPorts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecEgressPorts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -372,7 +372,7 @@ export class NetworkPolicySpecEgressPortsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecEgressPorts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecEgressPorts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -380,7 +380,7 @@ export class NetworkPolicySpecEgressPortsOutputReference extends cdktf.ComplexOb
       this._port = undefined;
       this._protocol = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -442,15 +442,15 @@ export class NetworkPolicySpecEgressPortsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class NetworkPolicySpecEgressPortsList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecEgressPorts[] | cdktf.IResolvable
+export class NetworkPolicySpecEgressPortsList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecEgressPorts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -477,31 +477,31 @@ export interface NetworkPolicySpecEgressToIpBlock {
 }
 
 export function networkPolicySpecEgressToIpBlockToTerraform(struct?: NetworkPolicySpecEgressToIpBlockOutputReference | NetworkPolicySpecEgressToIpBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr: cdktf.stringToTerraform(struct!.cidr),
-    except: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.except),
+    cidr: cdktn.stringToTerraform(struct!.cidr),
+    except: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.except),
   }
 }
 
 
 export function networkPolicySpecEgressToIpBlockToHclTerraform(struct?: NetworkPolicySpecEgressToIpBlockOutputReference | NetworkPolicySpecEgressToIpBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr: {
-      value: cdktf.stringToHclTerraform(struct!.cidr),
+      value: cdktn.stringToHclTerraform(struct!.cidr),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     except: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.except),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.except),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -512,14 +512,14 @@ export function networkPolicySpecEgressToIpBlockToHclTerraform(struct?: NetworkP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecEgressToIpBlockOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecEgressToIpBlockOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -603,39 +603,39 @@ export interface NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions {
   readonly values?: string[];
 }
 
-export function networkPolicySpecEgressToNamespaceSelectorMatchExpressionsToTerraform(struct?: NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecEgressToNamespaceSelectorMatchExpressionsToTerraform(struct?: NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function networkPolicySpecEgressToNamespaceSelectorMatchExpressionsToHclTerraform(struct?: NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecEgressToNamespaceSelectorMatchExpressionsToHclTerraform(struct?: NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -646,9 +646,9 @@ export function networkPolicySpecEgressToNamespaceSelectorMatchExpressionsToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -656,11 +656,11 @@ export class NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -681,7 +681,7 @@ export class NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -689,7 +689,7 @@ export class NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputRef
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -737,7 +737,7 @@ export class NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputRef
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -751,15 +751,15 @@ export class NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputRef
   }
 }
 
-export class NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions[] | cdktf.IResolvable
+export class NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -782,35 +782,35 @@ export interface NetworkPolicySpecEgressToNamespaceSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
   */
-  readonly matchExpressions?: NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function networkPolicySpecEgressToNamespaceSelectorToTerraform(struct?: NetworkPolicySpecEgressToNamespaceSelectorOutputReference | NetworkPolicySpecEgressToNamespaceSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(networkPolicySpecEgressToNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(networkPolicySpecEgressToNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function networkPolicySpecEgressToNamespaceSelectorToHclTerraform(struct?: NetworkPolicySpecEgressToNamespaceSelectorOutputReference | NetworkPolicySpecEgressToNamespaceSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(networkPolicySpecEgressToNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(networkPolicySpecEgressToNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList",
@@ -821,14 +821,14 @@ export function networkPolicySpecEgressToNamespaceSelectorToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecEgressToNamespaceSelectorOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecEgressToNamespaceSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -880,7 +880,7 @@ export class NetworkPolicySpecEgressToNamespaceSelectorOutputReference extends c
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -912,39 +912,39 @@ export interface NetworkPolicySpecEgressToPodSelectorMatchExpressions {
   readonly values?: string[];
 }
 
-export function networkPolicySpecEgressToPodSelectorMatchExpressionsToTerraform(struct?: NetworkPolicySpecEgressToPodSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecEgressToPodSelectorMatchExpressionsToTerraform(struct?: NetworkPolicySpecEgressToPodSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function networkPolicySpecEgressToPodSelectorMatchExpressionsToHclTerraform(struct?: NetworkPolicySpecEgressToPodSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecEgressToPodSelectorMatchExpressionsToHclTerraform(struct?: NetworkPolicySpecEgressToPodSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -955,9 +955,9 @@ export function networkPolicySpecEgressToPodSelectorMatchExpressionsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecEgressToPodSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecEgressToPodSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -965,11 +965,11 @@ export class NetworkPolicySpecEgressToPodSelectorMatchExpressionsOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecEgressToPodSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecEgressToPodSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -990,7 +990,7 @@ export class NetworkPolicySpecEgressToPodSelectorMatchExpressionsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecEgressToPodSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecEgressToPodSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -998,7 +998,7 @@ export class NetworkPolicySpecEgressToPodSelectorMatchExpressionsOutputReference
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1046,7 +1046,7 @@ export class NetworkPolicySpecEgressToPodSelectorMatchExpressionsOutputReference
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1060,15 +1060,15 @@ export class NetworkPolicySpecEgressToPodSelectorMatchExpressionsOutputReference
   }
 }
 
-export class NetworkPolicySpecEgressToPodSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecEgressToPodSelectorMatchExpressions[] | cdktf.IResolvable
+export class NetworkPolicySpecEgressToPodSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecEgressToPodSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1091,35 +1091,35 @@ export interface NetworkPolicySpecEgressToPodSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
   */
-  readonly matchExpressions?: NetworkPolicySpecEgressToPodSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: NetworkPolicySpecEgressToPodSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function networkPolicySpecEgressToPodSelectorToTerraform(struct?: NetworkPolicySpecEgressToPodSelectorOutputReference | NetworkPolicySpecEgressToPodSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(networkPolicySpecEgressToPodSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(networkPolicySpecEgressToPodSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function networkPolicySpecEgressToPodSelectorToHclTerraform(struct?: NetworkPolicySpecEgressToPodSelectorOutputReference | NetworkPolicySpecEgressToPodSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(networkPolicySpecEgressToPodSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(networkPolicySpecEgressToPodSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecEgressToPodSelectorMatchExpressionsList",
@@ -1130,14 +1130,14 @@ export function networkPolicySpecEgressToPodSelectorToHclTerraform(struct?: Netw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecEgressToPodSelectorOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecEgressToPodSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1189,7 +1189,7 @@ export class NetworkPolicySpecEgressToPodSelectorOutputReference extends cdktf.C
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: NetworkPolicySpecEgressToPodSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: NetworkPolicySpecEgressToPodSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -1221,9 +1221,9 @@ export interface NetworkPolicySpecEgressTo {
   readonly podSelector?: NetworkPolicySpecEgressToPodSelector;
 }
 
-export function networkPolicySpecEgressToToTerraform(struct?: NetworkPolicySpecEgressTo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecEgressToToTerraform(struct?: NetworkPolicySpecEgressTo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1234,9 +1234,9 @@ export function networkPolicySpecEgressToToTerraform(struct?: NetworkPolicySpecE
 }
 
 
-export function networkPolicySpecEgressToToHclTerraform(struct?: NetworkPolicySpecEgressTo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecEgressToToHclTerraform(struct?: NetworkPolicySpecEgressTo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1264,9 +1264,9 @@ export function networkPolicySpecEgressToToHclTerraform(struct?: NetworkPolicySp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecEgressToOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecEgressToOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1274,11 +1274,11 @@ export class NetworkPolicySpecEgressToOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecEgressTo | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecEgressTo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1299,7 +1299,7 @@ export class NetworkPolicySpecEgressToOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecEgressTo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecEgressTo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1307,7 +1307,7 @@ export class NetworkPolicySpecEgressToOutputReference extends cdktf.ComplexObjec
       this._namespaceSelector.internalValue = undefined;
       this._podSelector.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1369,15 +1369,15 @@ export class NetworkPolicySpecEgressToOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class NetworkPolicySpecEgressToList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecEgressTo[] | cdktf.IResolvable
+export class NetworkPolicySpecEgressToList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecEgressTo[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1394,41 +1394,41 @@ export interface NetworkPolicySpecEgress {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#ports NetworkPolicy#ports}
   */
-  readonly ports?: NetworkPolicySpecEgressPorts[] | cdktf.IResolvable;
+  readonly ports?: NetworkPolicySpecEgressPorts[] | cdktn.IResolvable;
   /**
   * to block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#to NetworkPolicy#to}
   */
-  readonly to?: NetworkPolicySpecEgressTo[] | cdktf.IResolvable;
+  readonly to?: NetworkPolicySpecEgressTo[] | cdktn.IResolvable;
 }
 
-export function networkPolicySpecEgressToTerraform(struct?: NetworkPolicySpecEgress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecEgressToTerraform(struct?: NetworkPolicySpecEgress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ports: cdktf.listMapper(networkPolicySpecEgressPortsToTerraform, true)(struct!.ports),
-    to: cdktf.listMapper(networkPolicySpecEgressToToTerraform, true)(struct!.to),
+    ports: cdktn.listMapper(networkPolicySpecEgressPortsToTerraform, true)(struct!.ports),
+    to: cdktn.listMapper(networkPolicySpecEgressToToTerraform, true)(struct!.to),
   }
 }
 
 
-export function networkPolicySpecEgressToHclTerraform(struct?: NetworkPolicySpecEgress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecEgressToHclTerraform(struct?: NetworkPolicySpecEgress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ports: {
-      value: cdktf.listMapperHcl(networkPolicySpecEgressPortsToHclTerraform, true)(struct!.ports),
+      value: cdktn.listMapperHcl(networkPolicySpecEgressPortsToHclTerraform, true)(struct!.ports),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecEgressPortsList",
     },
     to: {
-      value: cdktf.listMapperHcl(networkPolicySpecEgressToToHclTerraform, true)(struct!.to),
+      value: cdktn.listMapperHcl(networkPolicySpecEgressToToHclTerraform, true)(struct!.to),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecEgressToList",
@@ -1439,9 +1439,9 @@ export function networkPolicySpecEgressToHclTerraform(struct?: NetworkPolicySpec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecEgressOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecEgressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1449,11 +1449,11 @@ export class NetworkPolicySpecEgressOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecEgress | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecEgress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1470,14 +1470,14 @@ export class NetworkPolicySpecEgressOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecEgress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecEgress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ports.internalValue = undefined;
       this._to.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1494,7 +1494,7 @@ export class NetworkPolicySpecEgressOutputReference extends cdktf.ComplexObject 
   public get ports() {
     return this._ports;
   }
-  public putPorts(value: NetworkPolicySpecEgressPorts[] | cdktf.IResolvable) {
+  public putPorts(value: NetworkPolicySpecEgressPorts[] | cdktn.IResolvable) {
     this._ports.internalValue = value;
   }
   public resetPorts() {
@@ -1510,7 +1510,7 @@ export class NetworkPolicySpecEgressOutputReference extends cdktf.ComplexObject 
   public get to() {
     return this._to;
   }
-  public putTo(value: NetworkPolicySpecEgressTo[] | cdktf.IResolvable) {
+  public putTo(value: NetworkPolicySpecEgressTo[] | cdktn.IResolvable) {
     this._to.internalValue = value;
   }
   public resetTo() {
@@ -1522,15 +1522,15 @@ export class NetworkPolicySpecEgressOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class NetworkPolicySpecEgressList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecEgress[] | cdktf.IResolvable
+export class NetworkPolicySpecEgressList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecEgress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1557,31 +1557,31 @@ export interface NetworkPolicySpecIngressFromIpBlock {
 }
 
 export function networkPolicySpecIngressFromIpBlockToTerraform(struct?: NetworkPolicySpecIngressFromIpBlockOutputReference | NetworkPolicySpecIngressFromIpBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr: cdktf.stringToTerraform(struct!.cidr),
-    except: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.except),
+    cidr: cdktn.stringToTerraform(struct!.cidr),
+    except: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.except),
   }
 }
 
 
 export function networkPolicySpecIngressFromIpBlockToHclTerraform(struct?: NetworkPolicySpecIngressFromIpBlockOutputReference | NetworkPolicySpecIngressFromIpBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr: {
-      value: cdktf.stringToHclTerraform(struct!.cidr),
+      value: cdktn.stringToHclTerraform(struct!.cidr),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     except: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.except),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.except),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1592,14 +1592,14 @@ export function networkPolicySpecIngressFromIpBlockToHclTerraform(struct?: Netwo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecIngressFromIpBlockOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecIngressFromIpBlockOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1683,39 +1683,39 @@ export interface NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions {
   readonly values?: string[];
 }
 
-export function networkPolicySpecIngressFromNamespaceSelectorMatchExpressionsToTerraform(struct?: NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecIngressFromNamespaceSelectorMatchExpressionsToTerraform(struct?: NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function networkPolicySpecIngressFromNamespaceSelectorMatchExpressionsToHclTerraform(struct?: NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecIngressFromNamespaceSelectorMatchExpressionsToHclTerraform(struct?: NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1726,9 +1726,9 @@ export function networkPolicySpecIngressFromNamespaceSelectorMatchExpressionsToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1736,11 +1736,11 @@ export class NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1761,7 +1761,7 @@ export class NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1769,7 +1769,7 @@ export class NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutput
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1817,7 +1817,7 @@ export class NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutput
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -1831,15 +1831,15 @@ export class NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutput
   }
 }
 
-export class NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions[] | cdktf.IResolvable
+export class NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1862,35 +1862,35 @@ export interface NetworkPolicySpecIngressFromNamespaceSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
   */
-  readonly matchExpressions?: NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function networkPolicySpecIngressFromNamespaceSelectorToTerraform(struct?: NetworkPolicySpecIngressFromNamespaceSelectorOutputReference | NetworkPolicySpecIngressFromNamespaceSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(networkPolicySpecIngressFromNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(networkPolicySpecIngressFromNamespaceSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function networkPolicySpecIngressFromNamespaceSelectorToHclTerraform(struct?: NetworkPolicySpecIngressFromNamespaceSelectorOutputReference | NetworkPolicySpecIngressFromNamespaceSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(networkPolicySpecIngressFromNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(networkPolicySpecIngressFromNamespaceSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsList",
@@ -1901,14 +1901,14 @@ export function networkPolicySpecIngressFromNamespaceSelectorToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecIngressFromNamespaceSelectorOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecIngressFromNamespaceSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1960,7 +1960,7 @@ export class NetworkPolicySpecIngressFromNamespaceSelectorOutputReference extend
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -1992,39 +1992,39 @@ export interface NetworkPolicySpecIngressFromPodSelectorMatchExpressions {
   readonly values?: string[];
 }
 
-export function networkPolicySpecIngressFromPodSelectorMatchExpressionsToTerraform(struct?: NetworkPolicySpecIngressFromPodSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecIngressFromPodSelectorMatchExpressionsToTerraform(struct?: NetworkPolicySpecIngressFromPodSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function networkPolicySpecIngressFromPodSelectorMatchExpressionsToHclTerraform(struct?: NetworkPolicySpecIngressFromPodSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecIngressFromPodSelectorMatchExpressionsToHclTerraform(struct?: NetworkPolicySpecIngressFromPodSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2035,9 +2035,9 @@ export function networkPolicySpecIngressFromPodSelectorMatchExpressionsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecIngressFromPodSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecIngressFromPodSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2045,11 +2045,11 @@ export class NetworkPolicySpecIngressFromPodSelectorMatchExpressionsOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecIngressFromPodSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecIngressFromPodSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2070,7 +2070,7 @@ export class NetworkPolicySpecIngressFromPodSelectorMatchExpressionsOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecIngressFromPodSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecIngressFromPodSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2078,7 +2078,7 @@ export class NetworkPolicySpecIngressFromPodSelectorMatchExpressionsOutputRefere
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2126,7 +2126,7 @@ export class NetworkPolicySpecIngressFromPodSelectorMatchExpressionsOutputRefere
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2140,15 +2140,15 @@ export class NetworkPolicySpecIngressFromPodSelectorMatchExpressionsOutputRefere
   }
 }
 
-export class NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecIngressFromPodSelectorMatchExpressions[] | cdktf.IResolvable
+export class NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecIngressFromPodSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2171,35 +2171,35 @@ export interface NetworkPolicySpecIngressFromPodSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
   */
-  readonly matchExpressions?: NetworkPolicySpecIngressFromPodSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: NetworkPolicySpecIngressFromPodSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function networkPolicySpecIngressFromPodSelectorToTerraform(struct?: NetworkPolicySpecIngressFromPodSelectorOutputReference | NetworkPolicySpecIngressFromPodSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(networkPolicySpecIngressFromPodSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(networkPolicySpecIngressFromPodSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function networkPolicySpecIngressFromPodSelectorToHclTerraform(struct?: NetworkPolicySpecIngressFromPodSelectorOutputReference | NetworkPolicySpecIngressFromPodSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(networkPolicySpecIngressFromPodSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(networkPolicySpecIngressFromPodSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList",
@@ -2210,14 +2210,14 @@ export function networkPolicySpecIngressFromPodSelectorToHclTerraform(struct?: N
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecIngressFromPodSelectorOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecIngressFromPodSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2269,7 +2269,7 @@ export class NetworkPolicySpecIngressFromPodSelectorOutputReference extends cdkt
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: NetworkPolicySpecIngressFromPodSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: NetworkPolicySpecIngressFromPodSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -2301,9 +2301,9 @@ export interface NetworkPolicySpecIngressFrom {
   readonly podSelector?: NetworkPolicySpecIngressFromPodSelector;
 }
 
-export function networkPolicySpecIngressFromToTerraform(struct?: NetworkPolicySpecIngressFrom | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecIngressFromToTerraform(struct?: NetworkPolicySpecIngressFrom | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2314,9 +2314,9 @@ export function networkPolicySpecIngressFromToTerraform(struct?: NetworkPolicySp
 }
 
 
-export function networkPolicySpecIngressFromToHclTerraform(struct?: NetworkPolicySpecIngressFrom | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecIngressFromToHclTerraform(struct?: NetworkPolicySpecIngressFrom | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2344,9 +2344,9 @@ export function networkPolicySpecIngressFromToHclTerraform(struct?: NetworkPolic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecIngressFromOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecIngressFromOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2354,11 +2354,11 @@ export class NetworkPolicySpecIngressFromOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecIngressFrom | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecIngressFrom | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2379,7 +2379,7 @@ export class NetworkPolicySpecIngressFromOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecIngressFrom | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecIngressFrom | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2387,7 +2387,7 @@ export class NetworkPolicySpecIngressFromOutputReference extends cdktf.ComplexOb
       this._namespaceSelector.internalValue = undefined;
       this._podSelector.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2449,15 +2449,15 @@ export class NetworkPolicySpecIngressFromOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class NetworkPolicySpecIngressFromList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecIngressFrom[] | cdktf.IResolvable
+export class NetworkPolicySpecIngressFromList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecIngressFrom[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2489,39 +2489,39 @@ export interface NetworkPolicySpecIngressPorts {
   readonly protocol?: string;
 }
 
-export function networkPolicySpecIngressPortsToTerraform(struct?: NetworkPolicySpecIngressPorts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecIngressPortsToTerraform(struct?: NetworkPolicySpecIngressPorts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_port: cdktf.numberToTerraform(struct!.endPort),
-    port: cdktf.stringToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    end_port: cdktn.numberToTerraform(struct!.endPort),
+    port: cdktn.stringToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
   }
 }
 
 
-export function networkPolicySpecIngressPortsToHclTerraform(struct?: NetworkPolicySpecIngressPorts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecIngressPortsToHclTerraform(struct?: NetworkPolicySpecIngressPorts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_port: {
-      value: cdktf.numberToHclTerraform(struct!.endPort),
+      value: cdktn.numberToHclTerraform(struct!.endPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2532,9 +2532,9 @@ export function networkPolicySpecIngressPortsToHclTerraform(struct?: NetworkPoli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecIngressPortsOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecIngressPortsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2542,11 +2542,11 @@ export class NetworkPolicySpecIngressPortsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecIngressPorts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecIngressPorts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2567,7 +2567,7 @@ export class NetworkPolicySpecIngressPortsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecIngressPorts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecIngressPorts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2575,7 +2575,7 @@ export class NetworkPolicySpecIngressPortsOutputReference extends cdktf.ComplexO
       this._port = undefined;
       this._protocol = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2637,15 +2637,15 @@ export class NetworkPolicySpecIngressPortsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class NetworkPolicySpecIngressPortsList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecIngressPorts[] | cdktf.IResolvable
+export class NetworkPolicySpecIngressPortsList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecIngressPorts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2662,41 +2662,41 @@ export interface NetworkPolicySpecIngress {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#from NetworkPolicy#from}
   */
-  readonly from?: NetworkPolicySpecIngressFrom[] | cdktf.IResolvable;
+  readonly from?: NetworkPolicySpecIngressFrom[] | cdktn.IResolvable;
   /**
   * ports block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#ports NetworkPolicy#ports}
   */
-  readonly ports?: NetworkPolicySpecIngressPorts[] | cdktf.IResolvable;
+  readonly ports?: NetworkPolicySpecIngressPorts[] | cdktn.IResolvable;
 }
 
-export function networkPolicySpecIngressToTerraform(struct?: NetworkPolicySpecIngress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecIngressToTerraform(struct?: NetworkPolicySpecIngress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.listMapper(networkPolicySpecIngressFromToTerraform, true)(struct!.from),
-    ports: cdktf.listMapper(networkPolicySpecIngressPortsToTerraform, true)(struct!.ports),
+    from: cdktn.listMapper(networkPolicySpecIngressFromToTerraform, true)(struct!.from),
+    ports: cdktn.listMapper(networkPolicySpecIngressPortsToTerraform, true)(struct!.ports),
   }
 }
 
 
-export function networkPolicySpecIngressToHclTerraform(struct?: NetworkPolicySpecIngress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecIngressToHclTerraform(struct?: NetworkPolicySpecIngress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.listMapperHcl(networkPolicySpecIngressFromToHclTerraform, true)(struct!.from),
+      value: cdktn.listMapperHcl(networkPolicySpecIngressFromToHclTerraform, true)(struct!.from),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecIngressFromList",
     },
     ports: {
-      value: cdktf.listMapperHcl(networkPolicySpecIngressPortsToHclTerraform, true)(struct!.ports),
+      value: cdktn.listMapperHcl(networkPolicySpecIngressPortsToHclTerraform, true)(struct!.ports),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecIngressPortsList",
@@ -2707,9 +2707,9 @@ export function networkPolicySpecIngressToHclTerraform(struct?: NetworkPolicySpe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecIngressOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecIngressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2717,11 +2717,11 @@ export class NetworkPolicySpecIngressOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecIngress | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecIngress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2738,14 +2738,14 @@ export class NetworkPolicySpecIngressOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecIngress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecIngress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._from.internalValue = undefined;
       this._ports.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2762,7 +2762,7 @@ export class NetworkPolicySpecIngressOutputReference extends cdktf.ComplexObject
   public get from() {
     return this._from;
   }
-  public putFrom(value: NetworkPolicySpecIngressFrom[] | cdktf.IResolvable) {
+  public putFrom(value: NetworkPolicySpecIngressFrom[] | cdktn.IResolvable) {
     this._from.internalValue = value;
   }
   public resetFrom() {
@@ -2778,7 +2778,7 @@ export class NetworkPolicySpecIngressOutputReference extends cdktf.ComplexObject
   public get ports() {
     return this._ports;
   }
-  public putPorts(value: NetworkPolicySpecIngressPorts[] | cdktf.IResolvable) {
+  public putPorts(value: NetworkPolicySpecIngressPorts[] | cdktn.IResolvable) {
     this._ports.internalValue = value;
   }
   public resetPorts() {
@@ -2790,15 +2790,15 @@ export class NetworkPolicySpecIngressOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class NetworkPolicySpecIngressList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecIngress[] | cdktf.IResolvable
+export class NetworkPolicySpecIngressList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecIngress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2830,39 +2830,39 @@ export interface NetworkPolicySpecPodSelectorMatchExpressions {
   readonly values?: string[];
 }
 
-export function networkPolicySpecPodSelectorMatchExpressionsToTerraform(struct?: NetworkPolicySpecPodSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecPodSelectorMatchExpressionsToTerraform(struct?: NetworkPolicySpecPodSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function networkPolicySpecPodSelectorMatchExpressionsToHclTerraform(struct?: NetworkPolicySpecPodSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicySpecPodSelectorMatchExpressionsToHclTerraform(struct?: NetworkPolicySpecPodSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2873,9 +2873,9 @@ export function networkPolicySpecPodSelectorMatchExpressionsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecPodSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecPodSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2883,11 +2883,11 @@ export class NetworkPolicySpecPodSelectorMatchExpressionsOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkPolicySpecPodSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicySpecPodSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2908,7 +2908,7 @@ export class NetworkPolicySpecPodSelectorMatchExpressionsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicySpecPodSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicySpecPodSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2916,7 +2916,7 @@ export class NetworkPolicySpecPodSelectorMatchExpressionsOutputReference extends
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2964,7 +2964,7 @@ export class NetworkPolicySpecPodSelectorMatchExpressionsOutputReference extends
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -2978,15 +2978,15 @@ export class NetworkPolicySpecPodSelectorMatchExpressionsOutputReference extends
   }
 }
 
-export class NetworkPolicySpecPodSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : NetworkPolicySpecPodSelectorMatchExpressions[] | cdktf.IResolvable
+export class NetworkPolicySpecPodSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : NetworkPolicySpecPodSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3009,35 +3009,35 @@ export interface NetworkPolicySpecPodSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
   */
-  readonly matchExpressions?: NetworkPolicySpecPodSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: NetworkPolicySpecPodSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function networkPolicySpecPodSelectorToTerraform(struct?: NetworkPolicySpecPodSelectorOutputReference | NetworkPolicySpecPodSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(networkPolicySpecPodSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(networkPolicySpecPodSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function networkPolicySpecPodSelectorToHclTerraform(struct?: NetworkPolicySpecPodSelectorOutputReference | NetworkPolicySpecPodSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(networkPolicySpecPodSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(networkPolicySpecPodSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecPodSelectorMatchExpressionsList",
@@ -3048,14 +3048,14 @@ export function networkPolicySpecPodSelectorToHclTerraform(struct?: NetworkPolic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecPodSelectorOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecPodSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3107,7 +3107,7 @@ export class NetworkPolicySpecPodSelectorOutputReference extends cdktf.ComplexOb
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: NetworkPolicySpecPodSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: NetworkPolicySpecPodSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -3130,13 +3130,13 @@ export interface NetworkPolicySpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#egress NetworkPolicy#egress}
   */
-  readonly egress?: NetworkPolicySpecEgress[] | cdktf.IResolvable;
+  readonly egress?: NetworkPolicySpecEgress[] | cdktn.IResolvable;
   /**
   * ingress block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#ingress NetworkPolicy#ingress}
   */
-  readonly ingress?: NetworkPolicySpecIngress[] | cdktf.IResolvable;
+  readonly ingress?: NetworkPolicySpecIngress[] | cdktn.IResolvable;
   /**
   * pod_selector block
   *
@@ -3146,39 +3146,39 @@ export interface NetworkPolicySpec {
 }
 
 export function networkPolicySpecToTerraform(struct?: NetworkPolicySpecOutputReference | NetworkPolicySpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    policy_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.policyTypes),
-    egress: cdktf.listMapper(networkPolicySpecEgressToTerraform, true)(struct!.egress),
-    ingress: cdktf.listMapper(networkPolicySpecIngressToTerraform, true)(struct!.ingress),
+    policy_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.policyTypes),
+    egress: cdktn.listMapper(networkPolicySpecEgressToTerraform, true)(struct!.egress),
+    ingress: cdktn.listMapper(networkPolicySpecIngressToTerraform, true)(struct!.ingress),
     pod_selector: networkPolicySpecPodSelectorToTerraform(struct!.podSelector),
   }
 }
 
 
 export function networkPolicySpecToHclTerraform(struct?: NetworkPolicySpecOutputReference | NetworkPolicySpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     policy_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.policyTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.policyTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     egress: {
-      value: cdktf.listMapperHcl(networkPolicySpecEgressToHclTerraform, true)(struct!.egress),
+      value: cdktn.listMapperHcl(networkPolicySpecEgressToHclTerraform, true)(struct!.egress),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecEgressList",
     },
     ingress: {
-      value: cdktf.listMapperHcl(networkPolicySpecIngressToHclTerraform, true)(struct!.ingress),
+      value: cdktn.listMapperHcl(networkPolicySpecIngressToHclTerraform, true)(struct!.ingress),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkPolicySpecIngressList",
@@ -3195,14 +3195,14 @@ export function networkPolicySpecToHclTerraform(struct?: NetworkPolicySpecOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicySpecOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicySpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3263,7 +3263,7 @@ export class NetworkPolicySpecOutputReference extends cdktf.ComplexObject {
   public get egress() {
     return this._egress;
   }
-  public putEgress(value: NetworkPolicySpecEgress[] | cdktf.IResolvable) {
+  public putEgress(value: NetworkPolicySpecEgress[] | cdktn.IResolvable) {
     this._egress.internalValue = value;
   }
   public resetEgress() {
@@ -3279,7 +3279,7 @@ export class NetworkPolicySpecOutputReference extends cdktf.ComplexObject {
   public get ingress() {
     return this._ingress;
   }
-  public putIngress(value: NetworkPolicySpecIngress[] | cdktf.IResolvable) {
+  public putIngress(value: NetworkPolicySpecIngress[] | cdktn.IResolvable) {
     this._ingress.internalValue = value;
   }
   public resetIngress() {
@@ -3307,7 +3307,7 @@ export class NetworkPolicySpecOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy kubernetes_network_policy}
 */
-export class NetworkPolicy extends cdktf.TerraformResource {
+export class NetworkPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3318,14 +3318,14 @@ export class NetworkPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkPolicy to import
   * @param importFromId The id of the existing NetworkPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/network_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_network_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_network_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -3412,7 +3412,7 @@ export class NetworkPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: networkPolicyMetadataToTerraform(this._metadata.internalValue),
       spec: networkPolicySpecToTerraform(this._spec.internalValue),
     };
@@ -3421,7 +3421,7 @@ export class NetworkPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

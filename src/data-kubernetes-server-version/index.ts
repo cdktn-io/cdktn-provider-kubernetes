@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataKubernetesServerVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataKubernetesServerVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/server_version#id DataKubernetesServerVersion#id}
   *
@@ -24,7 +24,7 @@ export interface DataKubernetesServerVersionConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/server_version kubernetes_server_version}
 */
-export class DataKubernetesServerVersion extends cdktf.TerraformDataSource {
+export class DataKubernetesServerVersion extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -35,14 +35,14 @@ export class DataKubernetesServerVersion extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataKubernetesServerVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataKubernetesServerVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataKubernetesServerVersion to import
   * @param importFromId The id of the existing DataKubernetesServerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/server_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataKubernetesServerVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_server_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_server_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -151,14 +151,14 @@ export class DataKubernetesServerVersion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

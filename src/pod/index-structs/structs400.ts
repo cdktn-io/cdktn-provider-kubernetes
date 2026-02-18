@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 import { PodSpecInitContainerEnv,
 podSpecInitContainerEnvToTerraform,
 podSpecInitContainerEnvToHclTerraform,
@@ -73,53 +73,53 @@ export interface PodSpecInitContainerPort {
   readonly protocol?: string;
 }
 
-export function podSpecInitContainerPortToTerraform(struct?: PodSpecInitContainerPort | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerPortToTerraform(struct?: PodSpecInitContainerPort | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_port: cdktf.numberToTerraform(struct!.containerPort),
-    host_ip: cdktf.stringToTerraform(struct!.hostIp),
-    host_port: cdktf.numberToTerraform(struct!.hostPort),
-    name: cdktf.stringToTerraform(struct!.name),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    container_port: cdktn.numberToTerraform(struct!.containerPort),
+    host_ip: cdktn.stringToTerraform(struct!.hostIp),
+    host_port: cdktn.numberToTerraform(struct!.hostPort),
+    name: cdktn.stringToTerraform(struct!.name),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
   }
 }
 
 
-export function podSpecInitContainerPortToHclTerraform(struct?: PodSpecInitContainerPort | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerPortToHclTerraform(struct?: PodSpecInitContainerPort | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_port: {
-      value: cdktf.numberToHclTerraform(struct!.containerPort),
+      value: cdktn.numberToHclTerraform(struct!.containerPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     host_ip: {
-      value: cdktf.stringToHclTerraform(struct!.hostIp),
+      value: cdktn.stringToHclTerraform(struct!.hostIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_port: {
-      value: cdktf.numberToHclTerraform(struct!.hostPort),
+      value: cdktn.numberToHclTerraform(struct!.hostPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -130,9 +130,9 @@ export function podSpecInitContainerPortToHclTerraform(struct?: PodSpecInitConta
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerPortOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerPortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -140,11 +140,11 @@ export class PodSpecInitContainerPortOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecInitContainerPort | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecInitContainerPort | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -173,7 +173,7 @@ export class PodSpecInitContainerPortOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecInitContainerPort | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecInitContainerPort | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -183,7 +183,7 @@ export class PodSpecInitContainerPortOutputReference extends cdktf.ComplexObject
       this._name = undefined;
       this._protocol = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -276,15 +276,15 @@ export class PodSpecInitContainerPortOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class PodSpecInitContainerPortList extends cdktf.ComplexList {
-  public internalValue? : PodSpecInitContainerPort[] | cdktf.IResolvable
+export class PodSpecInitContainerPortList extends cdktn.ComplexList {
+  public internalValue? : PodSpecInitContainerPort[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -305,24 +305,24 @@ export interface PodSpecInitContainerReadinessProbeExec {
 }
 
 export function podSpecInitContainerReadinessProbeExecToTerraform(struct?: PodSpecInitContainerReadinessProbeExecOutputReference | PodSpecInitContainerReadinessProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function podSpecInitContainerReadinessProbeExecToHclTerraform(struct?: PodSpecInitContainerReadinessProbeExecOutputReference | PodSpecInitContainerReadinessProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -333,14 +333,14 @@ export function podSpecInitContainerReadinessProbeExecToHclTerraform(struct?: Po
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerReadinessProbeExecOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerReadinessProbeExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -396,32 +396,32 @@ export interface PodSpecInitContainerReadinessProbeGrpc {
   readonly service?: string;
 }
 
-export function podSpecInitContainerReadinessProbeGrpcToTerraform(struct?: PodSpecInitContainerReadinessProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerReadinessProbeGrpcToTerraform(struct?: PodSpecInitContainerReadinessProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    service: cdktf.stringToTerraform(struct!.service),
+    port: cdktn.numberToTerraform(struct!.port),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function podSpecInitContainerReadinessProbeGrpcToHclTerraform(struct?: PodSpecInitContainerReadinessProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerReadinessProbeGrpcToHclTerraform(struct?: PodSpecInitContainerReadinessProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -432,9 +432,9 @@ export function podSpecInitContainerReadinessProbeGrpcToHclTerraform(struct?: Po
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerReadinessProbeGrpcOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerReadinessProbeGrpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -442,11 +442,11 @@ export class PodSpecInitContainerReadinessProbeGrpcOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecInitContainerReadinessProbeGrpc | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecInitContainerReadinessProbeGrpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -463,14 +463,14 @@ export class PodSpecInitContainerReadinessProbeGrpcOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecInitContainerReadinessProbeGrpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecInitContainerReadinessProbeGrpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -512,15 +512,15 @@ export class PodSpecInitContainerReadinessProbeGrpcOutputReference extends cdktf
   }
 }
 
-export class PodSpecInitContainerReadinessProbeGrpcList extends cdktf.ComplexList {
-  public internalValue? : PodSpecInitContainerReadinessProbeGrpc[] | cdktf.IResolvable
+export class PodSpecInitContainerReadinessProbeGrpcList extends cdktn.ComplexList {
+  public internalValue? : PodSpecInitContainerReadinessProbeGrpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -546,32 +546,32 @@ export interface PodSpecInitContainerReadinessProbeHttpGetHttpHeader {
   readonly value?: string;
 }
 
-export function podSpecInitContainerReadinessProbeHttpGetHttpHeaderToTerraform(struct?: PodSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerReadinessProbeHttpGetHttpHeaderToTerraform(struct?: PodSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function podSpecInitContainerReadinessProbeHttpGetHttpHeaderToHclTerraform(struct?: PodSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerReadinessProbeHttpGetHttpHeaderToHclTerraform(struct?: PodSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -582,9 +582,9 @@ export function podSpecInitContainerReadinessProbeHttpGetHttpHeaderToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -592,11 +592,11 @@ export class PodSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -613,14 +613,14 @@ export class PodSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -665,15 +665,15 @@ export class PodSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference 
   }
 }
 
-export class PodSpecInitContainerReadinessProbeHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : PodSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktf.IResolvable
+export class PodSpecInitContainerReadinessProbeHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : PodSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -714,56 +714,56 @@ export interface PodSpecInitContainerReadinessProbeHttpGet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#http_header Pod#http_header}
   */
-  readonly httpHeader?: PodSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: PodSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function podSpecInitContainerReadinessProbeHttpGetToTerraform(struct?: PodSpecInitContainerReadinessProbeHttpGetOutputReference | PodSpecInitContainerReadinessProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(podSpecInitContainerReadinessProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(podSpecInitContainerReadinessProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function podSpecInitContainerReadinessProbeHttpGetToHclTerraform(struct?: PodSpecInitContainerReadinessProbeHttpGetOutputReference | PodSpecInitContainerReadinessProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(podSpecInitContainerReadinessProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(podSpecInitContainerReadinessProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerReadinessProbeHttpGetHttpHeaderList",
@@ -774,14 +774,14 @@ export function podSpecInitContainerReadinessProbeHttpGetToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerReadinessProbeHttpGetOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerReadinessProbeHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -899,7 +899,7 @@ export class PodSpecInitContainerReadinessProbeHttpGetOutputReference extends cd
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: PodSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: PodSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -919,25 +919,25 @@ export interface PodSpecInitContainerReadinessProbeTcpSocket {
   readonly port: string;
 }
 
-export function podSpecInitContainerReadinessProbeTcpSocketToTerraform(struct?: PodSpecInitContainerReadinessProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerReadinessProbeTcpSocketToTerraform(struct?: PodSpecInitContainerReadinessProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function podSpecInitContainerReadinessProbeTcpSocketToHclTerraform(struct?: PodSpecInitContainerReadinessProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerReadinessProbeTcpSocketToHclTerraform(struct?: PodSpecInitContainerReadinessProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -948,9 +948,9 @@ export function podSpecInitContainerReadinessProbeTcpSocketToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerReadinessProbeTcpSocketOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerReadinessProbeTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -958,11 +958,11 @@ export class PodSpecInitContainerReadinessProbeTcpSocketOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecInitContainerReadinessProbeTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecInitContainerReadinessProbeTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -975,13 +975,13 @@ export class PodSpecInitContainerReadinessProbeTcpSocketOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecInitContainerReadinessProbeTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecInitContainerReadinessProbeTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1006,15 +1006,15 @@ export class PodSpecInitContainerReadinessProbeTcpSocketOutputReference extends 
   }
 }
 
-export class PodSpecInitContainerReadinessProbeTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : PodSpecInitContainerReadinessProbeTcpSocket[] | cdktf.IResolvable
+export class PodSpecInitContainerReadinessProbeTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : PodSpecInitContainerReadinessProbeTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1067,7 +1067,7 @@ export interface PodSpecInitContainerReadinessProbe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#grpc Pod#grpc}
   */
-  readonly grpc?: PodSpecInitContainerReadinessProbeGrpc[] | cdktf.IResolvable;
+  readonly grpc?: PodSpecInitContainerReadinessProbeGrpc[] | cdktn.IResolvable;
   /**
   * http_get block
   *
@@ -1079,60 +1079,60 @@ export interface PodSpecInitContainerReadinessProbe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#tcp_socket Pod#tcp_socket}
   */
-  readonly tcpSocket?: PodSpecInitContainerReadinessProbeTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: PodSpecInitContainerReadinessProbeTcpSocket[] | cdktn.IResolvable;
 }
 
 export function podSpecInitContainerReadinessProbeToTerraform(struct?: PodSpecInitContainerReadinessProbeOutputReference | PodSpecInitContainerReadinessProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
-    initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
-    period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
-    success_threshold: cdktf.numberToTerraform(struct!.successThreshold),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktn.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
+    success_threshold: cdktn.numberToTerraform(struct!.successThreshold),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     exec: podSpecInitContainerReadinessProbeExecToTerraform(struct!.exec),
-    grpc: cdktf.listMapper(podSpecInitContainerReadinessProbeGrpcToTerraform, true)(struct!.grpc),
+    grpc: cdktn.listMapper(podSpecInitContainerReadinessProbeGrpcToTerraform, true)(struct!.grpc),
     http_get: podSpecInitContainerReadinessProbeHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(podSpecInitContainerReadinessProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(podSpecInitContainerReadinessProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
 export function podSpecInitContainerReadinessProbeToHclTerraform(struct?: PodSpecInitContainerReadinessProbeOutputReference | PodSpecInitContainerReadinessProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failure_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.failureThreshold),
+      value: cdktn.numberToHclTerraform(struct!.failureThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     initial_delay_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.initialDelaySeconds),
+      value: cdktn.numberToHclTerraform(struct!.initialDelaySeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.periodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.periodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     success_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.successThreshold),
+      value: cdktn.numberToHclTerraform(struct!.successThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1144,7 +1144,7 @@ export function podSpecInitContainerReadinessProbeToHclTerraform(struct?: PodSpe
       storageClassType: "PodSpecInitContainerReadinessProbeExecList",
     },
     grpc: {
-      value: cdktf.listMapperHcl(podSpecInitContainerReadinessProbeGrpcToHclTerraform, true)(struct!.grpc),
+      value: cdktn.listMapperHcl(podSpecInitContainerReadinessProbeGrpcToHclTerraform, true)(struct!.grpc),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerReadinessProbeGrpcList",
@@ -1156,7 +1156,7 @@ export function podSpecInitContainerReadinessProbeToHclTerraform(struct?: PodSpe
       storageClassType: "PodSpecInitContainerReadinessProbeHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(podSpecInitContainerReadinessProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(podSpecInitContainerReadinessProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerReadinessProbeTcpSocketList",
@@ -1167,14 +1167,14 @@ export function podSpecInitContainerReadinessProbeToHclTerraform(struct?: PodSpe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerReadinessProbeOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerReadinessProbeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1348,7 +1348,7 @@ export class PodSpecInitContainerReadinessProbeOutputReference extends cdktf.Com
   public get grpc() {
     return this._grpc;
   }
-  public putGrpc(value: PodSpecInitContainerReadinessProbeGrpc[] | cdktf.IResolvable) {
+  public putGrpc(value: PodSpecInitContainerReadinessProbeGrpc[] | cdktn.IResolvable) {
     this._grpc.internalValue = value;
   }
   public resetGrpc() {
@@ -1380,7 +1380,7 @@ export class PodSpecInitContainerReadinessProbeOutputReference extends cdktf.Com
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: PodSpecInitContainerReadinessProbeTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: PodSpecInitContainerReadinessProbeTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -1407,31 +1407,31 @@ export interface PodSpecInitContainerResources {
 }
 
 export function podSpecInitContainerResourcesToTerraform(struct?: PodSpecInitContainerResourcesOutputReference | PodSpecInitContainerResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    limits: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.limits),
-    requests: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requests),
+    limits: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.limits),
+    requests: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.requests),
   }
 }
 
 
 export function podSpecInitContainerResourcesToHclTerraform(struct?: PodSpecInitContainerResourcesOutputReference | PodSpecInitContainerResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     limits: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.limits),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.limits),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     requests: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requests),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.requests),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -1442,14 +1442,14 @@ export function podSpecInitContainerResourcesToHclTerraform(struct?: PodSpecInit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerResourcesOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1528,31 +1528,31 @@ export interface PodSpecInitContainerSecurityContextCapabilities {
 }
 
 export function podSpecInitContainerSecurityContextCapabilitiesToTerraform(struct?: PodSpecInitContainerSecurityContextCapabilitiesOutputReference | PodSpecInitContainerSecurityContextCapabilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    add: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.add),
-    drop: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.drop),
+    add: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.add),
+    drop: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.drop),
   }
 }
 
 
 export function podSpecInitContainerSecurityContextCapabilitiesToHclTerraform(struct?: PodSpecInitContainerSecurityContextCapabilitiesOutputReference | PodSpecInitContainerSecurityContextCapabilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     add: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.add),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.add),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     drop: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.drop),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.drop),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1563,14 +1563,14 @@ export function podSpecInitContainerSecurityContextCapabilitiesToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerSecurityContextCapabilitiesOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerSecurityContextCapabilitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1661,45 +1661,45 @@ export interface PodSpecInitContainerSecurityContextSeLinuxOptions {
 }
 
 export function podSpecInitContainerSecurityContextSeLinuxOptionsToTerraform(struct?: PodSpecInitContainerSecurityContextSeLinuxOptionsOutputReference | PodSpecInitContainerSecurityContextSeLinuxOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    level: cdktf.stringToTerraform(struct!.level),
-    role: cdktf.stringToTerraform(struct!.role),
-    type: cdktf.stringToTerraform(struct!.type),
-    user: cdktf.stringToTerraform(struct!.user),
+    level: cdktn.stringToTerraform(struct!.level),
+    role: cdktn.stringToTerraform(struct!.role),
+    type: cdktn.stringToTerraform(struct!.type),
+    user: cdktn.stringToTerraform(struct!.user),
   }
 }
 
 
 export function podSpecInitContainerSecurityContextSeLinuxOptionsToHclTerraform(struct?: PodSpecInitContainerSecurityContextSeLinuxOptionsOutputReference | PodSpecInitContainerSecurityContextSeLinuxOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     level: {
-      value: cdktf.stringToHclTerraform(struct!.level),
+      value: cdktn.stringToHclTerraform(struct!.level),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1710,14 +1710,14 @@ export function podSpecInitContainerSecurityContextSeLinuxOptionsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerSecurityContextSeLinuxOptionsOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerSecurityContextSeLinuxOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1840,31 +1840,31 @@ export interface PodSpecInitContainerSecurityContextSeccompProfile {
 }
 
 export function podSpecInitContainerSecurityContextSeccompProfileToTerraform(struct?: PodSpecInitContainerSecurityContextSeccompProfileOutputReference | PodSpecInitContainerSecurityContextSeccompProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    localhost_profile: cdktf.stringToTerraform(struct!.localhostProfile),
-    type: cdktf.stringToTerraform(struct!.type),
+    localhost_profile: cdktn.stringToTerraform(struct!.localhostProfile),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function podSpecInitContainerSecurityContextSeccompProfileToHclTerraform(struct?: PodSpecInitContainerSecurityContextSeccompProfileOutputReference | PodSpecInitContainerSecurityContextSeccompProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     localhost_profile: {
-      value: cdktf.stringToHclTerraform(struct!.localhostProfile),
+      value: cdktn.stringToHclTerraform(struct!.localhostProfile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1875,14 +1875,14 @@ export function podSpecInitContainerSecurityContextSeccompProfileToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerSecurityContextSeccompProfileOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerSecurityContextSeccompProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1951,19 +1951,19 @@ export interface PodSpecInitContainerSecurityContext {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#allow_privilege_escalation Pod#allow_privilege_escalation}
   */
-  readonly allowPrivilegeEscalation?: boolean | cdktf.IResolvable;
+  readonly allowPrivilegeEscalation?: boolean | cdktn.IResolvable;
   /**
   * Run container in privileged mode. Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#privileged Pod#privileged}
   */
-  readonly privileged?: boolean | cdktf.IResolvable;
+  readonly privileged?: boolean | cdktn.IResolvable;
   /**
   * Whether this container has a read-only root filesystem. Default is false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only_root_filesystem Pod#read_only_root_filesystem}
   */
-  readonly readOnlyRootFilesystem?: boolean | cdktf.IResolvable;
+  readonly readOnlyRootFilesystem?: boolean | cdktn.IResolvable;
   /**
   * The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
   *
@@ -1975,7 +1975,7 @@ export interface PodSpecInitContainerSecurityContext {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#run_as_non_root Pod#run_as_non_root}
   */
-  readonly runAsNonRoot?: boolean | cdktf.IResolvable;
+  readonly runAsNonRoot?: boolean | cdktn.IResolvable;
   /**
   * The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
   *
@@ -2003,17 +2003,17 @@ export interface PodSpecInitContainerSecurityContext {
 }
 
 export function podSpecInitContainerSecurityContextToTerraform(struct?: PodSpecInitContainerSecurityContextOutputReference | PodSpecInitContainerSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_privilege_escalation: cdktf.booleanToTerraform(struct!.allowPrivilegeEscalation),
-    privileged: cdktf.booleanToTerraform(struct!.privileged),
-    read_only_root_filesystem: cdktf.booleanToTerraform(struct!.readOnlyRootFilesystem),
-    run_as_group: cdktf.stringToTerraform(struct!.runAsGroup),
-    run_as_non_root: cdktf.booleanToTerraform(struct!.runAsNonRoot),
-    run_as_user: cdktf.stringToTerraform(struct!.runAsUser),
+    allow_privilege_escalation: cdktn.booleanToTerraform(struct!.allowPrivilegeEscalation),
+    privileged: cdktn.booleanToTerraform(struct!.privileged),
+    read_only_root_filesystem: cdktn.booleanToTerraform(struct!.readOnlyRootFilesystem),
+    run_as_group: cdktn.stringToTerraform(struct!.runAsGroup),
+    run_as_non_root: cdktn.booleanToTerraform(struct!.runAsNonRoot),
+    run_as_user: cdktn.stringToTerraform(struct!.runAsUser),
     capabilities: podSpecInitContainerSecurityContextCapabilitiesToTerraform(struct!.capabilities),
     se_linux_options: podSpecInitContainerSecurityContextSeLinuxOptionsToTerraform(struct!.seLinuxOptions),
     seccomp_profile: podSpecInitContainerSecurityContextSeccompProfileToTerraform(struct!.seccompProfile),
@@ -2022,43 +2022,43 @@ export function podSpecInitContainerSecurityContextToTerraform(struct?: PodSpecI
 
 
 export function podSpecInitContainerSecurityContextToHclTerraform(struct?: PodSpecInitContainerSecurityContextOutputReference | PodSpecInitContainerSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_privilege_escalation: {
-      value: cdktf.booleanToHclTerraform(struct!.allowPrivilegeEscalation),
+      value: cdktn.booleanToHclTerraform(struct!.allowPrivilegeEscalation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     privileged: {
-      value: cdktf.booleanToHclTerraform(struct!.privileged),
+      value: cdktn.booleanToHclTerraform(struct!.privileged),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     read_only_root_filesystem: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnlyRootFilesystem),
+      value: cdktn.booleanToHclTerraform(struct!.readOnlyRootFilesystem),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_as_group: {
-      value: cdktf.stringToHclTerraform(struct!.runAsGroup),
+      value: cdktn.stringToHclTerraform(struct!.runAsGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     run_as_non_root: {
-      value: cdktf.booleanToHclTerraform(struct!.runAsNonRoot),
+      value: cdktn.booleanToHclTerraform(struct!.runAsNonRoot),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_as_user: {
-      value: cdktf.stringToHclTerraform(struct!.runAsUser),
+      value: cdktn.stringToHclTerraform(struct!.runAsUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2087,14 +2087,14 @@ export function podSpecInitContainerSecurityContextToHclTerraform(struct?: PodSp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerSecurityContextOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerSecurityContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2168,11 +2168,11 @@ export class PodSpecInitContainerSecurityContextOutputReference extends cdktf.Co
   }
 
   // allow_privilege_escalation - computed: false, optional: true, required: false
-  private _allowPrivilegeEscalation?: boolean | cdktf.IResolvable; 
+  private _allowPrivilegeEscalation?: boolean | cdktn.IResolvable; 
   public get allowPrivilegeEscalation() {
     return this.getBooleanAttribute('allow_privilege_escalation');
   }
-  public set allowPrivilegeEscalation(value: boolean | cdktf.IResolvable) {
+  public set allowPrivilegeEscalation(value: boolean | cdktn.IResolvable) {
     this._allowPrivilegeEscalation = value;
   }
   public resetAllowPrivilegeEscalation() {
@@ -2184,11 +2184,11 @@ export class PodSpecInitContainerSecurityContextOutputReference extends cdktf.Co
   }
 
   // privileged - computed: false, optional: true, required: false
-  private _privileged?: boolean | cdktf.IResolvable; 
+  private _privileged?: boolean | cdktn.IResolvable; 
   public get privileged() {
     return this.getBooleanAttribute('privileged');
   }
-  public set privileged(value: boolean | cdktf.IResolvable) {
+  public set privileged(value: boolean | cdktn.IResolvable) {
     this._privileged = value;
   }
   public resetPrivileged() {
@@ -2200,11 +2200,11 @@ export class PodSpecInitContainerSecurityContextOutputReference extends cdktf.Co
   }
 
   // read_only_root_filesystem - computed: false, optional: true, required: false
-  private _readOnlyRootFilesystem?: boolean | cdktf.IResolvable; 
+  private _readOnlyRootFilesystem?: boolean | cdktn.IResolvable; 
   public get readOnlyRootFilesystem() {
     return this.getBooleanAttribute('read_only_root_filesystem');
   }
-  public set readOnlyRootFilesystem(value: boolean | cdktf.IResolvable) {
+  public set readOnlyRootFilesystem(value: boolean | cdktn.IResolvable) {
     this._readOnlyRootFilesystem = value;
   }
   public resetReadOnlyRootFilesystem() {
@@ -2232,11 +2232,11 @@ export class PodSpecInitContainerSecurityContextOutputReference extends cdktf.Co
   }
 
   // run_as_non_root - computed: false, optional: true, required: false
-  private _runAsNonRoot?: boolean | cdktf.IResolvable; 
+  private _runAsNonRoot?: boolean | cdktn.IResolvable; 
   public get runAsNonRoot() {
     return this.getBooleanAttribute('run_as_non_root');
   }
-  public set runAsNonRoot(value: boolean | cdktf.IResolvable) {
+  public set runAsNonRoot(value: boolean | cdktn.IResolvable) {
     this._runAsNonRoot = value;
   }
   public resetRunAsNonRoot() {
@@ -2321,24 +2321,24 @@ export interface PodSpecInitContainerStartupProbeExec {
 }
 
 export function podSpecInitContainerStartupProbeExecToTerraform(struct?: PodSpecInitContainerStartupProbeExecOutputReference | PodSpecInitContainerStartupProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function podSpecInitContainerStartupProbeExecToHclTerraform(struct?: PodSpecInitContainerStartupProbeExecOutputReference | PodSpecInitContainerStartupProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2349,14 +2349,14 @@ export function podSpecInitContainerStartupProbeExecToHclTerraform(struct?: PodS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerStartupProbeExecOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerStartupProbeExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2412,32 +2412,32 @@ export interface PodSpecInitContainerStartupProbeGrpc {
   readonly service?: string;
 }
 
-export function podSpecInitContainerStartupProbeGrpcToTerraform(struct?: PodSpecInitContainerStartupProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerStartupProbeGrpcToTerraform(struct?: PodSpecInitContainerStartupProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    service: cdktf.stringToTerraform(struct!.service),
+    port: cdktn.numberToTerraform(struct!.port),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function podSpecInitContainerStartupProbeGrpcToHclTerraform(struct?: PodSpecInitContainerStartupProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerStartupProbeGrpcToHclTerraform(struct?: PodSpecInitContainerStartupProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2448,9 +2448,9 @@ export function podSpecInitContainerStartupProbeGrpcToHclTerraform(struct?: PodS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerStartupProbeGrpcOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerStartupProbeGrpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2458,11 +2458,11 @@ export class PodSpecInitContainerStartupProbeGrpcOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecInitContainerStartupProbeGrpc | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecInitContainerStartupProbeGrpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2479,14 +2479,14 @@ export class PodSpecInitContainerStartupProbeGrpcOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecInitContainerStartupProbeGrpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecInitContainerStartupProbeGrpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2528,15 +2528,15 @@ export class PodSpecInitContainerStartupProbeGrpcOutputReference extends cdktf.C
   }
 }
 
-export class PodSpecInitContainerStartupProbeGrpcList extends cdktf.ComplexList {
-  public internalValue? : PodSpecInitContainerStartupProbeGrpc[] | cdktf.IResolvable
+export class PodSpecInitContainerStartupProbeGrpcList extends cdktn.ComplexList {
+  public internalValue? : PodSpecInitContainerStartupProbeGrpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2562,32 +2562,32 @@ export interface PodSpecInitContainerStartupProbeHttpGetHttpHeader {
   readonly value?: string;
 }
 
-export function podSpecInitContainerStartupProbeHttpGetHttpHeaderToTerraform(struct?: PodSpecInitContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerStartupProbeHttpGetHttpHeaderToTerraform(struct?: PodSpecInitContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function podSpecInitContainerStartupProbeHttpGetHttpHeaderToHclTerraform(struct?: PodSpecInitContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerStartupProbeHttpGetHttpHeaderToHclTerraform(struct?: PodSpecInitContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2598,9 +2598,9 @@ export function podSpecInitContainerStartupProbeHttpGetHttpHeaderToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2608,11 +2608,11 @@ export class PodSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecInitContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecInitContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2629,14 +2629,14 @@ export class PodSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecInitContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecInitContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2681,15 +2681,15 @@ export class PodSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference ex
   }
 }
 
-export class PodSpecInitContainerStartupProbeHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : PodSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktf.IResolvable
+export class PodSpecInitContainerStartupProbeHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : PodSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2730,56 +2730,56 @@ export interface PodSpecInitContainerStartupProbeHttpGet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#http_header Pod#http_header}
   */
-  readonly httpHeader?: PodSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: PodSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function podSpecInitContainerStartupProbeHttpGetToTerraform(struct?: PodSpecInitContainerStartupProbeHttpGetOutputReference | PodSpecInitContainerStartupProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(podSpecInitContainerStartupProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(podSpecInitContainerStartupProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function podSpecInitContainerStartupProbeHttpGetToHclTerraform(struct?: PodSpecInitContainerStartupProbeHttpGetOutputReference | PodSpecInitContainerStartupProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(podSpecInitContainerStartupProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(podSpecInitContainerStartupProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerStartupProbeHttpGetHttpHeaderList",
@@ -2790,14 +2790,14 @@ export function podSpecInitContainerStartupProbeHttpGetToHclTerraform(struct?: P
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerStartupProbeHttpGetOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerStartupProbeHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2915,7 +2915,7 @@ export class PodSpecInitContainerStartupProbeHttpGetOutputReference extends cdkt
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: PodSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: PodSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -2935,25 +2935,25 @@ export interface PodSpecInitContainerStartupProbeTcpSocket {
   readonly port: string;
 }
 
-export function podSpecInitContainerStartupProbeTcpSocketToTerraform(struct?: PodSpecInitContainerStartupProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerStartupProbeTcpSocketToTerraform(struct?: PodSpecInitContainerStartupProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function podSpecInitContainerStartupProbeTcpSocketToHclTerraform(struct?: PodSpecInitContainerStartupProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerStartupProbeTcpSocketToHclTerraform(struct?: PodSpecInitContainerStartupProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2964,9 +2964,9 @@ export function podSpecInitContainerStartupProbeTcpSocketToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerStartupProbeTcpSocketOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerStartupProbeTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2974,11 +2974,11 @@ export class PodSpecInitContainerStartupProbeTcpSocketOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecInitContainerStartupProbeTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecInitContainerStartupProbeTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2991,13 +2991,13 @@ export class PodSpecInitContainerStartupProbeTcpSocketOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecInitContainerStartupProbeTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecInitContainerStartupProbeTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3022,15 +3022,15 @@ export class PodSpecInitContainerStartupProbeTcpSocketOutputReference extends cd
   }
 }
 
-export class PodSpecInitContainerStartupProbeTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : PodSpecInitContainerStartupProbeTcpSocket[] | cdktf.IResolvable
+export class PodSpecInitContainerStartupProbeTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : PodSpecInitContainerStartupProbeTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3083,7 +3083,7 @@ export interface PodSpecInitContainerStartupProbe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#grpc Pod#grpc}
   */
-  readonly grpc?: PodSpecInitContainerStartupProbeGrpc[] | cdktf.IResolvable;
+  readonly grpc?: PodSpecInitContainerStartupProbeGrpc[] | cdktn.IResolvable;
   /**
   * http_get block
   *
@@ -3095,60 +3095,60 @@ export interface PodSpecInitContainerStartupProbe {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#tcp_socket Pod#tcp_socket}
   */
-  readonly tcpSocket?: PodSpecInitContainerStartupProbeTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: PodSpecInitContainerStartupProbeTcpSocket[] | cdktn.IResolvable;
 }
 
 export function podSpecInitContainerStartupProbeToTerraform(struct?: PodSpecInitContainerStartupProbeOutputReference | PodSpecInitContainerStartupProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
-    initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
-    period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
-    success_threshold: cdktf.numberToTerraform(struct!.successThreshold),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktn.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
+    success_threshold: cdktn.numberToTerraform(struct!.successThreshold),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     exec: podSpecInitContainerStartupProbeExecToTerraform(struct!.exec),
-    grpc: cdktf.listMapper(podSpecInitContainerStartupProbeGrpcToTerraform, true)(struct!.grpc),
+    grpc: cdktn.listMapper(podSpecInitContainerStartupProbeGrpcToTerraform, true)(struct!.grpc),
     http_get: podSpecInitContainerStartupProbeHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(podSpecInitContainerStartupProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(podSpecInitContainerStartupProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
 export function podSpecInitContainerStartupProbeToHclTerraform(struct?: PodSpecInitContainerStartupProbeOutputReference | PodSpecInitContainerStartupProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failure_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.failureThreshold),
+      value: cdktn.numberToHclTerraform(struct!.failureThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     initial_delay_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.initialDelaySeconds),
+      value: cdktn.numberToHclTerraform(struct!.initialDelaySeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.periodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.periodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     success_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.successThreshold),
+      value: cdktn.numberToHclTerraform(struct!.successThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3160,7 +3160,7 @@ export function podSpecInitContainerStartupProbeToHclTerraform(struct?: PodSpecI
       storageClassType: "PodSpecInitContainerStartupProbeExecList",
     },
     grpc: {
-      value: cdktf.listMapperHcl(podSpecInitContainerStartupProbeGrpcToHclTerraform, true)(struct!.grpc),
+      value: cdktn.listMapperHcl(podSpecInitContainerStartupProbeGrpcToHclTerraform, true)(struct!.grpc),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerStartupProbeGrpcList",
@@ -3172,7 +3172,7 @@ export function podSpecInitContainerStartupProbeToHclTerraform(struct?: PodSpecI
       storageClassType: "PodSpecInitContainerStartupProbeHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(podSpecInitContainerStartupProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(podSpecInitContainerStartupProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerStartupProbeTcpSocketList",
@@ -3183,14 +3183,14 @@ export function podSpecInitContainerStartupProbeToHclTerraform(struct?: PodSpecI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerStartupProbeOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerStartupProbeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3364,7 +3364,7 @@ export class PodSpecInitContainerStartupProbeOutputReference extends cdktf.Compl
   public get grpc() {
     return this._grpc;
   }
-  public putGrpc(value: PodSpecInitContainerStartupProbeGrpc[] | cdktf.IResolvable) {
+  public putGrpc(value: PodSpecInitContainerStartupProbeGrpc[] | cdktn.IResolvable) {
     this._grpc.internalValue = value;
   }
   public resetGrpc() {
@@ -3396,7 +3396,7 @@ export class PodSpecInitContainerStartupProbeOutputReference extends cdktf.Compl
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: PodSpecInitContainerStartupProbeTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: PodSpecInitContainerStartupProbeTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -3422,32 +3422,32 @@ export interface PodSpecInitContainerVolumeDevice {
   readonly name: string;
 }
 
-export function podSpecInitContainerVolumeDeviceToTerraform(struct?: PodSpecInitContainerVolumeDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerVolumeDeviceToTerraform(struct?: PodSpecInitContainerVolumeDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    device_path: cdktf.stringToTerraform(struct!.devicePath),
-    name: cdktf.stringToTerraform(struct!.name),
+    device_path: cdktn.stringToTerraform(struct!.devicePath),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function podSpecInitContainerVolumeDeviceToHclTerraform(struct?: PodSpecInitContainerVolumeDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerVolumeDeviceToHclTerraform(struct?: PodSpecInitContainerVolumeDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     device_path: {
-      value: cdktf.stringToHclTerraform(struct!.devicePath),
+      value: cdktn.stringToHclTerraform(struct!.devicePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3458,9 +3458,9 @@ export function podSpecInitContainerVolumeDeviceToHclTerraform(struct?: PodSpecI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerVolumeDeviceOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerVolumeDeviceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3468,11 +3468,11 @@ export class PodSpecInitContainerVolumeDeviceOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecInitContainerVolumeDevice | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecInitContainerVolumeDevice | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3489,14 +3489,14 @@ export class PodSpecInitContainerVolumeDeviceOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecInitContainerVolumeDevice | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecInitContainerVolumeDevice | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._devicePath = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3535,15 +3535,15 @@ export class PodSpecInitContainerVolumeDeviceOutputReference extends cdktf.Compl
   }
 }
 
-export class PodSpecInitContainerVolumeDeviceList extends cdktf.ComplexList {
-  public internalValue? : PodSpecInitContainerVolumeDevice[] | cdktf.IResolvable
+export class PodSpecInitContainerVolumeDeviceList extends cdktn.ComplexList {
+  public internalValue? : PodSpecInitContainerVolumeDevice[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3578,7 +3578,7 @@ export interface PodSpecInitContainerVolumeMount {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
   *
@@ -3593,60 +3593,60 @@ export interface PodSpecInitContainerVolumeMount {
   readonly subPathExpr?: string;
 }
 
-export function podSpecInitContainerVolumeMountToTerraform(struct?: PodSpecInitContainerVolumeMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerVolumeMountToTerraform(struct?: PodSpecInitContainerVolumeMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_path: cdktf.stringToTerraform(struct!.mountPath),
-    mount_propagation: cdktf.stringToTerraform(struct!.mountPropagation),
-    name: cdktf.stringToTerraform(struct!.name),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    sub_path: cdktf.stringToTerraform(struct!.subPath),
-    sub_path_expr: cdktf.stringToTerraform(struct!.subPathExpr),
+    mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    mount_propagation: cdktn.stringToTerraform(struct!.mountPropagation),
+    name: cdktn.stringToTerraform(struct!.name),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    sub_path: cdktn.stringToTerraform(struct!.subPath),
+    sub_path_expr: cdktn.stringToTerraform(struct!.subPathExpr),
   }
 }
 
 
-export function podSpecInitContainerVolumeMountToHclTerraform(struct?: PodSpecInitContainerVolumeMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerVolumeMountToHclTerraform(struct?: PodSpecInitContainerVolumeMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.mountPath),
+      value: cdktn.stringToHclTerraform(struct!.mountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount_propagation: {
-      value: cdktf.stringToHclTerraform(struct!.mountPropagation),
+      value: cdktn.stringToHclTerraform(struct!.mountPropagation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sub_path: {
-      value: cdktf.stringToHclTerraform(struct!.subPath),
+      value: cdktn.stringToHclTerraform(struct!.subPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sub_path_expr: {
-      value: cdktf.stringToHclTerraform(struct!.subPathExpr),
+      value: cdktn.stringToHclTerraform(struct!.subPathExpr),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3657,9 +3657,9 @@ export function podSpecInitContainerVolumeMountToHclTerraform(struct?: PodSpecIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerVolumeMountOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerVolumeMountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3667,11 +3667,11 @@ export class PodSpecInitContainerVolumeMountOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecInitContainerVolumeMount | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecInitContainerVolumeMount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3704,7 +3704,7 @@ export class PodSpecInitContainerVolumeMountOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecInitContainerVolumeMount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecInitContainerVolumeMount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3715,7 +3715,7 @@ export class PodSpecInitContainerVolumeMountOutputReference extends cdktf.Comple
       this._subPath = undefined;
       this._subPathExpr = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3774,11 +3774,11 @@ export class PodSpecInitContainerVolumeMountOutputReference extends cdktf.Comple
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -3822,15 +3822,15 @@ export class PodSpecInitContainerVolumeMountOutputReference extends cdktf.Comple
   }
 }
 
-export class PodSpecInitContainerVolumeMountList extends cdktf.ComplexList {
-  public internalValue? : PodSpecInitContainerVolumeMount[] | cdktf.IResolvable
+export class PodSpecInitContainerVolumeMountList extends cdktn.ComplexList {
+  public internalValue? : PodSpecInitContainerVolumeMount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3877,13 +3877,13 @@ export interface PodSpecInitContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#stdin Pod#stdin}
   */
-  readonly stdin?: boolean | cdktf.IResolvable;
+  readonly stdin?: boolean | cdktn.IResolvable;
   /**
   * Whether the container runtime should close the stdin channel after it has been opened by a single attach. When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#stdin_once Pod#stdin_once}
   */
-  readonly stdinOnce?: boolean | cdktf.IResolvable;
+  readonly stdinOnce?: boolean | cdktn.IResolvable;
   /**
   * Optional: Path at which the file to which the container's termination message will be written is mounted into the container's filesystem. Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
   *
@@ -3901,7 +3901,7 @@ export interface PodSpecInitContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#tty Pod#tty}
   */
-  readonly tty?: boolean | cdktf.IResolvable;
+  readonly tty?: boolean | cdktn.IResolvable;
   /**
   * Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
   *
@@ -3913,13 +3913,13 @@ export interface PodSpecInitContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#env Pod#env}
   */
-  readonly env?: PodSpecInitContainerEnv[] | cdktf.IResolvable;
+  readonly env?: PodSpecInitContainerEnv[] | cdktn.IResolvable;
   /**
   * env_from block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#env_from Pod#env_from}
   */
-  readonly envFrom?: PodSpecInitContainerEnvFrom[] | cdktf.IResolvable;
+  readonly envFrom?: PodSpecInitContainerEnvFrom[] | cdktn.IResolvable;
   /**
   * lifecycle block
   *
@@ -3937,7 +3937,7 @@ export interface PodSpecInitContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#port Pod#port}
   */
-  readonly port?: PodSpecInitContainerPort[] | cdktf.IResolvable;
+  readonly port?: PodSpecInitContainerPort[] | cdktn.IResolvable;
   /**
   * readiness_probe block
   *
@@ -3967,127 +3967,127 @@ export interface PodSpecInitContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#volume_device Pod#volume_device}
   */
-  readonly volumeDevice?: PodSpecInitContainerVolumeDevice[] | cdktf.IResolvable;
+  readonly volumeDevice?: PodSpecInitContainerVolumeDevice[] | cdktn.IResolvable;
   /**
   * volume_mount block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#volume_mount Pod#volume_mount}
   */
-  readonly volumeMount?: PodSpecInitContainerVolumeMount[] | cdktf.IResolvable;
+  readonly volumeMount?: PodSpecInitContainerVolumeMount[] | cdktn.IResolvable;
 }
 
-export function podSpecInitContainerToTerraform(struct?: PodSpecInitContainer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerToTerraform(struct?: PodSpecInitContainer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
-    image: cdktf.stringToTerraform(struct!.image),
-    image_pull_policy: cdktf.stringToTerraform(struct!.imagePullPolicy),
-    name: cdktf.stringToTerraform(struct!.name),
-    stdin: cdktf.booleanToTerraform(struct!.stdin),
-    stdin_once: cdktf.booleanToTerraform(struct!.stdinOnce),
-    termination_message_path: cdktf.stringToTerraform(struct!.terminationMessagePath),
-    termination_message_policy: cdktf.stringToTerraform(struct!.terminationMessagePolicy),
-    tty: cdktf.booleanToTerraform(struct!.tty),
-    working_dir: cdktf.stringToTerraform(struct!.workingDir),
-    env: cdktf.listMapper(podSpecInitContainerEnvToTerraform, true)(struct!.env),
-    env_from: cdktf.listMapper(podSpecInitContainerEnvFromToTerraform, true)(struct!.envFrom),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
+    image: cdktn.stringToTerraform(struct!.image),
+    image_pull_policy: cdktn.stringToTerraform(struct!.imagePullPolicy),
+    name: cdktn.stringToTerraform(struct!.name),
+    stdin: cdktn.booleanToTerraform(struct!.stdin),
+    stdin_once: cdktn.booleanToTerraform(struct!.stdinOnce),
+    termination_message_path: cdktn.stringToTerraform(struct!.terminationMessagePath),
+    termination_message_policy: cdktn.stringToTerraform(struct!.terminationMessagePolicy),
+    tty: cdktn.booleanToTerraform(struct!.tty),
+    working_dir: cdktn.stringToTerraform(struct!.workingDir),
+    env: cdktn.listMapper(podSpecInitContainerEnvToTerraform, true)(struct!.env),
+    env_from: cdktn.listMapper(podSpecInitContainerEnvFromToTerraform, true)(struct!.envFrom),
     lifecycle: podSpecInitContainerLifecycleToTerraform(struct!.lifecycle),
     liveness_probe: podSpecInitContainerLivenessProbeToTerraform(struct!.livenessProbe),
-    port: cdktf.listMapper(podSpecInitContainerPortToTerraform, true)(struct!.port),
+    port: cdktn.listMapper(podSpecInitContainerPortToTerraform, true)(struct!.port),
     readiness_probe: podSpecInitContainerReadinessProbeToTerraform(struct!.readinessProbe),
     resources: podSpecInitContainerResourcesToTerraform(struct!.resources),
     security_context: podSpecInitContainerSecurityContextToTerraform(struct!.securityContext),
     startup_probe: podSpecInitContainerStartupProbeToTerraform(struct!.startupProbe),
-    volume_device: cdktf.listMapper(podSpecInitContainerVolumeDeviceToTerraform, true)(struct!.volumeDevice),
-    volume_mount: cdktf.listMapper(podSpecInitContainerVolumeMountToTerraform, true)(struct!.volumeMount),
+    volume_device: cdktn.listMapper(podSpecInitContainerVolumeDeviceToTerraform, true)(struct!.volumeDevice),
+    volume_mount: cdktn.listMapper(podSpecInitContainerVolumeMountToTerraform, true)(struct!.volumeMount),
   }
 }
 
 
-export function podSpecInitContainerToHclTerraform(struct?: PodSpecInitContainer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecInitContainerToHclTerraform(struct?: PodSpecInitContainer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     image: {
-      value: cdktf.stringToHclTerraform(struct!.image),
+      value: cdktn.stringToHclTerraform(struct!.image),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_pull_policy: {
-      value: cdktf.stringToHclTerraform(struct!.imagePullPolicy),
+      value: cdktn.stringToHclTerraform(struct!.imagePullPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stdin: {
-      value: cdktf.booleanToHclTerraform(struct!.stdin),
+      value: cdktn.booleanToHclTerraform(struct!.stdin),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     stdin_once: {
-      value: cdktf.booleanToHclTerraform(struct!.stdinOnce),
+      value: cdktn.booleanToHclTerraform(struct!.stdinOnce),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     termination_message_path: {
-      value: cdktf.stringToHclTerraform(struct!.terminationMessagePath),
+      value: cdktn.stringToHclTerraform(struct!.terminationMessagePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     termination_message_policy: {
-      value: cdktf.stringToHclTerraform(struct!.terminationMessagePolicy),
+      value: cdktn.stringToHclTerraform(struct!.terminationMessagePolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tty: {
-      value: cdktf.booleanToHclTerraform(struct!.tty),
+      value: cdktn.booleanToHclTerraform(struct!.tty),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     working_dir: {
-      value: cdktf.stringToHclTerraform(struct!.workingDir),
+      value: cdktn.stringToHclTerraform(struct!.workingDir),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     env: {
-      value: cdktf.listMapperHcl(podSpecInitContainerEnvToHclTerraform, true)(struct!.env),
+      value: cdktn.listMapperHcl(podSpecInitContainerEnvToHclTerraform, true)(struct!.env),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerEnvList",
     },
     env_from: {
-      value: cdktf.listMapperHcl(podSpecInitContainerEnvFromToHclTerraform, true)(struct!.envFrom),
+      value: cdktn.listMapperHcl(podSpecInitContainerEnvFromToHclTerraform, true)(struct!.envFrom),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerEnvFromList",
@@ -4105,7 +4105,7 @@ export function podSpecInitContainerToHclTerraform(struct?: PodSpecInitContainer
       storageClassType: "PodSpecInitContainerLivenessProbeList",
     },
     port: {
-      value: cdktf.listMapperHcl(podSpecInitContainerPortToHclTerraform, true)(struct!.port),
+      value: cdktn.listMapperHcl(podSpecInitContainerPortToHclTerraform, true)(struct!.port),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerPortList",
@@ -4135,13 +4135,13 @@ export function podSpecInitContainerToHclTerraform(struct?: PodSpecInitContainer
       storageClassType: "PodSpecInitContainerStartupProbeList",
     },
     volume_device: {
-      value: cdktf.listMapperHcl(podSpecInitContainerVolumeDeviceToHclTerraform, true)(struct!.volumeDevice),
+      value: cdktn.listMapperHcl(podSpecInitContainerVolumeDeviceToHclTerraform, true)(struct!.volumeDevice),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerVolumeDeviceList",
     },
     volume_mount: {
-      value: cdktf.listMapperHcl(podSpecInitContainerVolumeMountToHclTerraform, true)(struct!.volumeMount),
+      value: cdktn.listMapperHcl(podSpecInitContainerVolumeMountToHclTerraform, true)(struct!.volumeMount),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerVolumeMountList",
@@ -4152,9 +4152,9 @@ export function podSpecInitContainerToHclTerraform(struct?: PodSpecInitContainer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
+export class PodSpecInitContainerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4162,11 +4162,11 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecInitContainer | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecInitContainer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4263,7 +4263,7 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecInitContainer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecInitContainer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4290,7 +4290,7 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
       this._volumeDevice.internalValue = undefined;
       this._volumeMount.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4400,11 +4400,11 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
   }
 
   // stdin - computed: false, optional: true, required: false
-  private _stdin?: boolean | cdktf.IResolvable; 
+  private _stdin?: boolean | cdktn.IResolvable; 
   public get stdin() {
     return this.getBooleanAttribute('stdin');
   }
-  public set stdin(value: boolean | cdktf.IResolvable) {
+  public set stdin(value: boolean | cdktn.IResolvable) {
     this._stdin = value;
   }
   public resetStdin() {
@@ -4416,11 +4416,11 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
   }
 
   // stdin_once - computed: false, optional: true, required: false
-  private _stdinOnce?: boolean | cdktf.IResolvable; 
+  private _stdinOnce?: boolean | cdktn.IResolvable; 
   public get stdinOnce() {
     return this.getBooleanAttribute('stdin_once');
   }
-  public set stdinOnce(value: boolean | cdktf.IResolvable) {
+  public set stdinOnce(value: boolean | cdktn.IResolvable) {
     this._stdinOnce = value;
   }
   public resetStdinOnce() {
@@ -4464,11 +4464,11 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
   }
 
   // tty - computed: false, optional: true, required: false
-  private _tty?: boolean | cdktf.IResolvable; 
+  private _tty?: boolean | cdktn.IResolvable; 
   public get tty() {
     return this.getBooleanAttribute('tty');
   }
-  public set tty(value: boolean | cdktf.IResolvable) {
+  public set tty(value: boolean | cdktn.IResolvable) {
     this._tty = value;
   }
   public resetTty() {
@@ -4500,7 +4500,7 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
   public get env() {
     return this._env;
   }
-  public putEnv(value: PodSpecInitContainerEnv[] | cdktf.IResolvable) {
+  public putEnv(value: PodSpecInitContainerEnv[] | cdktn.IResolvable) {
     this._env.internalValue = value;
   }
   public resetEnv() {
@@ -4516,7 +4516,7 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
   public get envFrom() {
     return this._envFrom;
   }
-  public putEnvFrom(value: PodSpecInitContainerEnvFrom[] | cdktf.IResolvable) {
+  public putEnvFrom(value: PodSpecInitContainerEnvFrom[] | cdktn.IResolvable) {
     this._envFrom.internalValue = value;
   }
   public resetEnvFrom() {
@@ -4564,7 +4564,7 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
   public get port() {
     return this._port;
   }
-  public putPort(value: PodSpecInitContainerPort[] | cdktf.IResolvable) {
+  public putPort(value: PodSpecInitContainerPort[] | cdktn.IResolvable) {
     this._port.internalValue = value;
   }
   public resetPort() {
@@ -4644,7 +4644,7 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
   public get volumeDevice() {
     return this._volumeDevice;
   }
-  public putVolumeDevice(value: PodSpecInitContainerVolumeDevice[] | cdktf.IResolvable) {
+  public putVolumeDevice(value: PodSpecInitContainerVolumeDevice[] | cdktn.IResolvable) {
     this._volumeDevice.internalValue = value;
   }
   public resetVolumeDevice() {
@@ -4660,7 +4660,7 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
   public get volumeMount() {
     return this._volumeMount;
   }
-  public putVolumeMount(value: PodSpecInitContainerVolumeMount[] | cdktf.IResolvable) {
+  public putVolumeMount(value: PodSpecInitContainerVolumeMount[] | cdktn.IResolvable) {
     this._volumeMount.internalValue = value;
   }
   public resetVolumeMount() {
@@ -4672,15 +4672,15 @@ export class PodSpecInitContainerOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class PodSpecInitContainerList extends cdktf.ComplexList {
-  public internalValue? : PodSpecInitContainer[] | cdktf.IResolvable
+export class PodSpecInitContainerList extends cdktn.ComplexList {
+  public internalValue? : PodSpecInitContainer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4701,24 +4701,24 @@ export interface PodSpecOs {
 }
 
 export function podSpecOsToTerraform(struct?: PodSpecOsOutputReference | PodSpecOs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function podSpecOsToHclTerraform(struct?: PodSpecOsOutputReference | PodSpecOs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4729,14 +4729,14 @@ export function podSpecOsToHclTerraform(struct?: PodSpecOsOutputReference | PodS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecOsOutputReference extends cdktf.ComplexObject {
+export class PodSpecOsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4783,25 +4783,25 @@ export interface PodSpecReadinessGate {
   readonly conditionType: string;
 }
 
-export function podSpecReadinessGateToTerraform(struct?: PodSpecReadinessGate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecReadinessGateToTerraform(struct?: PodSpecReadinessGate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition_type: cdktf.stringToTerraform(struct!.conditionType),
+    condition_type: cdktn.stringToTerraform(struct!.conditionType),
   }
 }
 
 
-export function podSpecReadinessGateToHclTerraform(struct?: PodSpecReadinessGate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecReadinessGateToHclTerraform(struct?: PodSpecReadinessGate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition_type: {
-      value: cdktf.stringToHclTerraform(struct!.conditionType),
+      value: cdktn.stringToHclTerraform(struct!.conditionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4812,9 +4812,9 @@ export function podSpecReadinessGateToHclTerraform(struct?: PodSpecReadinessGate
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecReadinessGateOutputReference extends cdktf.ComplexObject {
+export class PodSpecReadinessGateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4822,11 +4822,11 @@ export class PodSpecReadinessGateOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecReadinessGate | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecReadinessGate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4839,13 +4839,13 @@ export class PodSpecReadinessGateOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecReadinessGate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecReadinessGate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._conditionType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4870,15 +4870,15 @@ export class PodSpecReadinessGateOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class PodSpecReadinessGateList extends cdktf.ComplexList {
-  public internalValue? : PodSpecReadinessGate[] | cdktf.IResolvable
+export class PodSpecReadinessGateList extends cdktn.ComplexList {
+  public internalValue? : PodSpecReadinessGate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4917,45 +4917,45 @@ export interface PodSpecSecurityContextSeLinuxOptions {
 }
 
 export function podSpecSecurityContextSeLinuxOptionsToTerraform(struct?: PodSpecSecurityContextSeLinuxOptionsOutputReference | PodSpecSecurityContextSeLinuxOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    level: cdktf.stringToTerraform(struct!.level),
-    role: cdktf.stringToTerraform(struct!.role),
-    type: cdktf.stringToTerraform(struct!.type),
-    user: cdktf.stringToTerraform(struct!.user),
+    level: cdktn.stringToTerraform(struct!.level),
+    role: cdktn.stringToTerraform(struct!.role),
+    type: cdktn.stringToTerraform(struct!.type),
+    user: cdktn.stringToTerraform(struct!.user),
   }
 }
 
 
 export function podSpecSecurityContextSeLinuxOptionsToHclTerraform(struct?: PodSpecSecurityContextSeLinuxOptionsOutputReference | PodSpecSecurityContextSeLinuxOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     level: {
-      value: cdktf.stringToHclTerraform(struct!.level),
+      value: cdktn.stringToHclTerraform(struct!.level),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4966,14 +4966,14 @@ export function podSpecSecurityContextSeLinuxOptionsToHclTerraform(struct?: PodS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecSecurityContextSeLinuxOptionsOutputReference extends cdktf.ComplexObject {
+export class PodSpecSecurityContextSeLinuxOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5096,31 +5096,31 @@ export interface PodSpecSecurityContextSeccompProfile {
 }
 
 export function podSpecSecurityContextSeccompProfileToTerraform(struct?: PodSpecSecurityContextSeccompProfileOutputReference | PodSpecSecurityContextSeccompProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    localhost_profile: cdktf.stringToTerraform(struct!.localhostProfile),
-    type: cdktf.stringToTerraform(struct!.type),
+    localhost_profile: cdktn.stringToTerraform(struct!.localhostProfile),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function podSpecSecurityContextSeccompProfileToHclTerraform(struct?: PodSpecSecurityContextSeccompProfileOutputReference | PodSpecSecurityContextSeccompProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     localhost_profile: {
-      value: cdktf.stringToHclTerraform(struct!.localhostProfile),
+      value: cdktn.stringToHclTerraform(struct!.localhostProfile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5131,14 +5131,14 @@ export function podSpecSecurityContextSeccompProfileToHclTerraform(struct?: PodS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecSecurityContextSeccompProfileOutputReference extends cdktf.ComplexObject {
+export class PodSpecSecurityContextSeccompProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5216,32 +5216,32 @@ export interface PodSpecSecurityContextSysctl {
   readonly value: string;
 }
 
-export function podSpecSecurityContextSysctlToTerraform(struct?: PodSpecSecurityContextSysctl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecSecurityContextSysctlToTerraform(struct?: PodSpecSecurityContextSysctl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function podSpecSecurityContextSysctlToHclTerraform(struct?: PodSpecSecurityContextSysctl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecSecurityContextSysctlToHclTerraform(struct?: PodSpecSecurityContextSysctl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5252,9 +5252,9 @@ export function podSpecSecurityContextSysctlToHclTerraform(struct?: PodSpecSecur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecSecurityContextSysctlOutputReference extends cdktf.ComplexObject {
+export class PodSpecSecurityContextSysctlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5262,11 +5262,11 @@ export class PodSpecSecurityContextSysctlOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecSecurityContextSysctl | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecSecurityContextSysctl | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5283,14 +5283,14 @@ export class PodSpecSecurityContextSysctlOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecSecurityContextSysctl | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecSecurityContextSysctl | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5329,15 +5329,15 @@ export class PodSpecSecurityContextSysctlOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class PodSpecSecurityContextSysctlList extends cdktf.ComplexList {
-  public internalValue? : PodSpecSecurityContextSysctl[] | cdktf.IResolvable
+export class PodSpecSecurityContextSysctlList extends cdktn.ComplexList {
+  public internalValue? : PodSpecSecurityContextSysctl[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5366,7 +5366,7 @@ export interface PodSpecSecurityContextWindowsOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#host_process Pod#host_process}
   */
-  readonly hostProcess?: boolean | cdktf.IResolvable;
+  readonly hostProcess?: boolean | cdktn.IResolvable;
   /**
   * The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
   *
@@ -5376,45 +5376,45 @@ export interface PodSpecSecurityContextWindowsOptions {
 }
 
 export function podSpecSecurityContextWindowsOptionsToTerraform(struct?: PodSpecSecurityContextWindowsOptionsOutputReference | PodSpecSecurityContextWindowsOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gmsa_credential_spec: cdktf.stringToTerraform(struct!.gmsaCredentialSpec),
-    gmsa_credential_spec_name: cdktf.stringToTerraform(struct!.gmsaCredentialSpecName),
-    host_process: cdktf.booleanToTerraform(struct!.hostProcess),
-    run_as_username: cdktf.stringToTerraform(struct!.runAsUsername),
+    gmsa_credential_spec: cdktn.stringToTerraform(struct!.gmsaCredentialSpec),
+    gmsa_credential_spec_name: cdktn.stringToTerraform(struct!.gmsaCredentialSpecName),
+    host_process: cdktn.booleanToTerraform(struct!.hostProcess),
+    run_as_username: cdktn.stringToTerraform(struct!.runAsUsername),
   }
 }
 
 
 export function podSpecSecurityContextWindowsOptionsToHclTerraform(struct?: PodSpecSecurityContextWindowsOptionsOutputReference | PodSpecSecurityContextWindowsOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gmsa_credential_spec: {
-      value: cdktf.stringToHclTerraform(struct!.gmsaCredentialSpec),
+      value: cdktn.stringToHclTerraform(struct!.gmsaCredentialSpec),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     gmsa_credential_spec_name: {
-      value: cdktf.stringToHclTerraform(struct!.gmsaCredentialSpecName),
+      value: cdktn.stringToHclTerraform(struct!.gmsaCredentialSpecName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_process: {
-      value: cdktf.booleanToHclTerraform(struct!.hostProcess),
+      value: cdktn.booleanToHclTerraform(struct!.hostProcess),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_as_username: {
-      value: cdktf.stringToHclTerraform(struct!.runAsUsername),
+      value: cdktn.stringToHclTerraform(struct!.runAsUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5425,14 +5425,14 @@ export function podSpecSecurityContextWindowsOptionsToHclTerraform(struct?: PodS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecSecurityContextWindowsOptionsOutputReference extends cdktf.ComplexObject {
+export class PodSpecSecurityContextWindowsOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5508,11 +5508,11 @@ export class PodSpecSecurityContextWindowsOptionsOutputReference extends cdktf.C
   }
 
   // host_process - computed: false, optional: true, required: false
-  private _hostProcess?: boolean | cdktf.IResolvable; 
+  private _hostProcess?: boolean | cdktn.IResolvable; 
   public get hostProcess() {
     return this.getBooleanAttribute('host_process');
   }
-  public set hostProcess(value: boolean | cdktf.IResolvable) {
+  public set hostProcess(value: boolean | cdktn.IResolvable) {
     this._hostProcess = value;
   }
   public resetHostProcess() {
@@ -5563,7 +5563,7 @@ export interface PodSpecSecurityContext {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#run_as_non_root Pod#run_as_non_root}
   */
-  readonly runAsNonRoot?: boolean | cdktf.IResolvable;
+  readonly runAsNonRoot?: boolean | cdktn.IResolvable;
   /**
   * The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
   *
@@ -5593,7 +5593,7 @@ export interface PodSpecSecurityContext {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#sysctl Pod#sysctl}
   */
-  readonly sysctl?: PodSpecSecurityContextSysctl[] | cdktf.IResolvable;
+  readonly sysctl?: PodSpecSecurityContextSysctl[] | cdktn.IResolvable;
   /**
   * windows_options block
   *
@@ -5603,63 +5603,63 @@ export interface PodSpecSecurityContext {
 }
 
 export function podSpecSecurityContextToTerraform(struct?: PodSpecSecurityContextOutputReference | PodSpecSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_group: cdktf.stringToTerraform(struct!.fsGroup),
-    fs_group_change_policy: cdktf.stringToTerraform(struct!.fsGroupChangePolicy),
-    run_as_group: cdktf.stringToTerraform(struct!.runAsGroup),
-    run_as_non_root: cdktf.booleanToTerraform(struct!.runAsNonRoot),
-    run_as_user: cdktf.stringToTerraform(struct!.runAsUser),
-    supplemental_groups: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.supplementalGroups),
+    fs_group: cdktn.stringToTerraform(struct!.fsGroup),
+    fs_group_change_policy: cdktn.stringToTerraform(struct!.fsGroupChangePolicy),
+    run_as_group: cdktn.stringToTerraform(struct!.runAsGroup),
+    run_as_non_root: cdktn.booleanToTerraform(struct!.runAsNonRoot),
+    run_as_user: cdktn.stringToTerraform(struct!.runAsUser),
+    supplemental_groups: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.supplementalGroups),
     se_linux_options: podSpecSecurityContextSeLinuxOptionsToTerraform(struct!.seLinuxOptions),
     seccomp_profile: podSpecSecurityContextSeccompProfileToTerraform(struct!.seccompProfile),
-    sysctl: cdktf.listMapper(podSpecSecurityContextSysctlToTerraform, true)(struct!.sysctl),
+    sysctl: cdktn.listMapper(podSpecSecurityContextSysctlToTerraform, true)(struct!.sysctl),
     windows_options: podSpecSecurityContextWindowsOptionsToTerraform(struct!.windowsOptions),
   }
 }
 
 
 export function podSpecSecurityContextToHclTerraform(struct?: PodSpecSecurityContextOutputReference | PodSpecSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_group: {
-      value: cdktf.stringToHclTerraform(struct!.fsGroup),
+      value: cdktn.stringToHclTerraform(struct!.fsGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fs_group_change_policy: {
-      value: cdktf.stringToHclTerraform(struct!.fsGroupChangePolicy),
+      value: cdktn.stringToHclTerraform(struct!.fsGroupChangePolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     run_as_group: {
-      value: cdktf.stringToHclTerraform(struct!.runAsGroup),
+      value: cdktn.stringToHclTerraform(struct!.runAsGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     run_as_non_root: {
-      value: cdktf.booleanToHclTerraform(struct!.runAsNonRoot),
+      value: cdktn.booleanToHclTerraform(struct!.runAsNonRoot),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_as_user: {
-      value: cdktf.stringToHclTerraform(struct!.runAsUser),
+      value: cdktn.stringToHclTerraform(struct!.runAsUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     supplemental_groups: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.supplementalGroups),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.supplementalGroups),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
@@ -5677,7 +5677,7 @@ export function podSpecSecurityContextToHclTerraform(struct?: PodSpecSecurityCon
       storageClassType: "PodSpecSecurityContextSeccompProfileList",
     },
     sysctl: {
-      value: cdktf.listMapperHcl(podSpecSecurityContextSysctlToHclTerraform, true)(struct!.sysctl),
+      value: cdktn.listMapperHcl(podSpecSecurityContextSysctlToHclTerraform, true)(struct!.sysctl),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecSecurityContextSysctlList",
@@ -5694,14 +5694,14 @@ export function podSpecSecurityContextToHclTerraform(struct?: PodSpecSecurityCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecSecurityContextOutputReference extends cdktf.ComplexObject {
+export class PodSpecSecurityContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5829,11 +5829,11 @@ export class PodSpecSecurityContextOutputReference extends cdktf.ComplexObject {
   }
 
   // run_as_non_root - computed: false, optional: true, required: false
-  private _runAsNonRoot?: boolean | cdktf.IResolvable; 
+  private _runAsNonRoot?: boolean | cdktn.IResolvable; 
   public get runAsNonRoot() {
     return this.getBooleanAttribute('run_as_non_root');
   }
-  public set runAsNonRoot(value: boolean | cdktf.IResolvable) {
+  public set runAsNonRoot(value: boolean | cdktn.IResolvable) {
     this._runAsNonRoot = value;
   }
   public resetRunAsNonRoot() {
@@ -5863,7 +5863,7 @@ export class PodSpecSecurityContextOutputReference extends cdktf.ComplexObject {
   // supplemental_groups - computed: false, optional: true, required: false
   private _supplementalGroups?: number[]; 
   public get supplementalGroups() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('supplemental_groups')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('supplemental_groups')));
   }
   public set supplementalGroups(value: number[]) {
     this._supplementalGroups = value;
@@ -5913,7 +5913,7 @@ export class PodSpecSecurityContextOutputReference extends cdktf.ComplexObject {
   public get sysctl() {
     return this._sysctl;
   }
-  public putSysctl(value: PodSpecSecurityContextSysctl[] | cdktf.IResolvable) {
+  public putSysctl(value: PodSpecSecurityContextSysctl[] | cdktn.IResolvable) {
     this._sysctl.internalValue = value;
   }
   public resetSysctl() {
@@ -5973,53 +5973,53 @@ export interface PodSpecToleration {
   readonly value?: string;
 }
 
-export function podSpecTolerationToTerraform(struct?: PodSpecToleration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecTolerationToTerraform(struct?: PodSpecToleration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    effect: cdktf.stringToTerraform(struct!.effect),
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    toleration_seconds: cdktf.stringToTerraform(struct!.tolerationSeconds),
-    value: cdktf.stringToTerraform(struct!.value),
+    effect: cdktn.stringToTerraform(struct!.effect),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    toleration_seconds: cdktn.stringToTerraform(struct!.tolerationSeconds),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function podSpecTolerationToHclTerraform(struct?: PodSpecToleration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecTolerationToHclTerraform(struct?: PodSpecToleration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     effect: {
-      value: cdktf.stringToHclTerraform(struct!.effect),
+      value: cdktn.stringToHclTerraform(struct!.effect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     toleration_seconds: {
-      value: cdktf.stringToHclTerraform(struct!.tolerationSeconds),
+      value: cdktn.stringToHclTerraform(struct!.tolerationSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6030,9 +6030,9 @@ export function podSpecTolerationToHclTerraform(struct?: PodSpecToleration | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecTolerationOutputReference extends cdktf.ComplexObject {
+export class PodSpecTolerationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6040,11 +6040,11 @@ export class PodSpecTolerationOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecToleration | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecToleration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6073,7 +6073,7 @@ export class PodSpecTolerationOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecToleration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecToleration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6083,7 +6083,7 @@ export class PodSpecTolerationOutputReference extends cdktf.ComplexObject {
       this._tolerationSeconds = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6179,15 +6179,15 @@ export class PodSpecTolerationOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class PodSpecTolerationList extends cdktf.ComplexList {
-  public internalValue? : PodSpecToleration[] | cdktf.IResolvable
+export class PodSpecTolerationList extends cdktn.ComplexList {
+  public internalValue? : PodSpecToleration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6219,39 +6219,39 @@ export interface PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions {
   readonly values?: string[];
 }
 
-export function podSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToTerraform(struct?: PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToTerraform(struct?: PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function podSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToHclTerraform(struct?: PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToHclTerraform(struct?: PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -6262,9 +6262,9 @@ export function podSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6272,11 +6272,11 @@ export class PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6297,7 +6297,7 @@ export class PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6305,7 +6305,7 @@ export class PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputR
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6353,7 +6353,7 @@ export class PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputR
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -6367,15 +6367,15 @@ export class PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputR
   }
 }
 
-export class PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktf.IResolvable
+export class PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6398,35 +6398,35 @@ export interface PodSpecTopologySpreadConstraintLabelSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#match_expressions Pod#match_expressions}
   */
-  readonly matchExpressions?: PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function podSpecTopologySpreadConstraintLabelSelectorToTerraform(struct?: PodSpecTopologySpreadConstraintLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecTopologySpreadConstraintLabelSelectorToTerraform(struct?: PodSpecTopologySpreadConstraintLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(podSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(podSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function podSpecTopologySpreadConstraintLabelSelectorToHclTerraform(struct?: PodSpecTopologySpreadConstraintLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecTopologySpreadConstraintLabelSelectorToHclTerraform(struct?: PodSpecTopologySpreadConstraintLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(podSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(podSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
@@ -6437,9 +6437,9 @@ export function podSpecTopologySpreadConstraintLabelSelectorToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecTopologySpreadConstraintLabelSelectorOutputReference extends cdktf.ComplexObject {
+export class PodSpecTopologySpreadConstraintLabelSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6447,11 +6447,11 @@ export class PodSpecTopologySpreadConstraintLabelSelectorOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecTopologySpreadConstraintLabelSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecTopologySpreadConstraintLabelSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6468,14 +6468,14 @@ export class PodSpecTopologySpreadConstraintLabelSelectorOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecTopologySpreadConstraintLabelSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecTopologySpreadConstraintLabelSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6508,7 +6508,7 @@ export class PodSpecTopologySpreadConstraintLabelSelectorOutputReference extends
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -6520,15 +6520,15 @@ export class PodSpecTopologySpreadConstraintLabelSelectorOutputReference extends
   }
 }
 
-export class PodSpecTopologySpreadConstraintLabelSelectorList extends cdktf.ComplexList {
-  public internalValue? : PodSpecTopologySpreadConstraintLabelSelector[] | cdktf.IResolvable
+export class PodSpecTopologySpreadConstraintLabelSelectorList extends cdktn.ComplexList {
+  public internalValue? : PodSpecTopologySpreadConstraintLabelSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6587,77 +6587,77 @@ export interface PodSpecTopologySpreadConstraint {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#label_selector Pod#label_selector}
   */
-  readonly labelSelector?: PodSpecTopologySpreadConstraintLabelSelector[] | cdktf.IResolvable;
+  readonly labelSelector?: PodSpecTopologySpreadConstraintLabelSelector[] | cdktn.IResolvable;
 }
 
-export function podSpecTopologySpreadConstraintToTerraform(struct?: PodSpecTopologySpreadConstraint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecTopologySpreadConstraintToTerraform(struct?: PodSpecTopologySpreadConstraint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_label_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchLabelKeys),
-    max_skew: cdktf.numberToTerraform(struct!.maxSkew),
-    min_domains: cdktf.numberToTerraform(struct!.minDomains),
-    node_affinity_policy: cdktf.stringToTerraform(struct!.nodeAffinityPolicy),
-    node_taints_policy: cdktf.stringToTerraform(struct!.nodeTaintsPolicy),
-    topology_key: cdktf.stringToTerraform(struct!.topologyKey),
-    when_unsatisfiable: cdktf.stringToTerraform(struct!.whenUnsatisfiable),
-    label_selector: cdktf.listMapper(podSpecTopologySpreadConstraintLabelSelectorToTerraform, true)(struct!.labelSelector),
+    match_label_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchLabelKeys),
+    max_skew: cdktn.numberToTerraform(struct!.maxSkew),
+    min_domains: cdktn.numberToTerraform(struct!.minDomains),
+    node_affinity_policy: cdktn.stringToTerraform(struct!.nodeAffinityPolicy),
+    node_taints_policy: cdktn.stringToTerraform(struct!.nodeTaintsPolicy),
+    topology_key: cdktn.stringToTerraform(struct!.topologyKey),
+    when_unsatisfiable: cdktn.stringToTerraform(struct!.whenUnsatisfiable),
+    label_selector: cdktn.listMapper(podSpecTopologySpreadConstraintLabelSelectorToTerraform, true)(struct!.labelSelector),
   }
 }
 
 
-export function podSpecTopologySpreadConstraintToHclTerraform(struct?: PodSpecTopologySpreadConstraint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecTopologySpreadConstraintToHclTerraform(struct?: PodSpecTopologySpreadConstraint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_label_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchLabelKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchLabelKeys),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     max_skew: {
-      value: cdktf.numberToHclTerraform(struct!.maxSkew),
+      value: cdktn.numberToHclTerraform(struct!.maxSkew),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_domains: {
-      value: cdktf.numberToHclTerraform(struct!.minDomains),
+      value: cdktn.numberToHclTerraform(struct!.minDomains),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     node_affinity_policy: {
-      value: cdktf.stringToHclTerraform(struct!.nodeAffinityPolicy),
+      value: cdktn.stringToHclTerraform(struct!.nodeAffinityPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_taints_policy: {
-      value: cdktf.stringToHclTerraform(struct!.nodeTaintsPolicy),
+      value: cdktn.stringToHclTerraform(struct!.nodeTaintsPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topology_key: {
-      value: cdktf.stringToHclTerraform(struct!.topologyKey),
+      value: cdktn.stringToHclTerraform(struct!.topologyKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     when_unsatisfiable: {
-      value: cdktf.stringToHclTerraform(struct!.whenUnsatisfiable),
+      value: cdktn.stringToHclTerraform(struct!.whenUnsatisfiable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label_selector: {
-      value: cdktf.listMapperHcl(podSpecTopologySpreadConstraintLabelSelectorToHclTerraform, true)(struct!.labelSelector),
+      value: cdktn.listMapperHcl(podSpecTopologySpreadConstraintLabelSelectorToHclTerraform, true)(struct!.labelSelector),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecTopologySpreadConstraintLabelSelectorList",
@@ -6668,9 +6668,9 @@ export function podSpecTopologySpreadConstraintToHclTerraform(struct?: PodSpecTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecTopologySpreadConstraintOutputReference extends cdktf.ComplexObject {
+export class PodSpecTopologySpreadConstraintOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6678,11 +6678,11 @@ export class PodSpecTopologySpreadConstraintOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecTopologySpreadConstraint | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecTopologySpreadConstraint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6723,7 +6723,7 @@ export class PodSpecTopologySpreadConstraintOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecTopologySpreadConstraint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecTopologySpreadConstraint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6736,7 +6736,7 @@ export class PodSpecTopologySpreadConstraintOutputReference extends cdktf.Comple
       this._whenUnsatisfiable = undefined;
       this._labelSelector.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6757,7 +6757,7 @@ export class PodSpecTopologySpreadConstraintOutputReference extends cdktf.Comple
   // match_label_keys - computed: false, optional: true, required: false
   private _matchLabelKeys?: string[]; 
   public get matchLabelKeys() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_label_keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_label_keys'));
   }
   public set matchLabelKeys(value: string[]) {
     this._matchLabelKeys = value;
@@ -6871,7 +6871,7 @@ export class PodSpecTopologySpreadConstraintOutputReference extends cdktf.Comple
   public get labelSelector() {
     return this._labelSelector;
   }
-  public putLabelSelector(value: PodSpecTopologySpreadConstraintLabelSelector[] | cdktf.IResolvable) {
+  public putLabelSelector(value: PodSpecTopologySpreadConstraintLabelSelector[] | cdktn.IResolvable) {
     this._labelSelector.internalValue = value;
   }
   public resetLabelSelector() {
@@ -6883,15 +6883,15 @@ export class PodSpecTopologySpreadConstraintOutputReference extends cdktf.Comple
   }
 }
 
-export class PodSpecTopologySpreadConstraintList extends cdktf.ComplexList {
-  public internalValue? : PodSpecTopologySpreadConstraint[] | cdktf.IResolvable
+export class PodSpecTopologySpreadConstraintList extends cdktn.ComplexList {
+  public internalValue? : PodSpecTopologySpreadConstraint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6920,7 +6920,7 @@ export interface PodSpecVolumeAwsElasticBlockStore {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
   *
@@ -6930,45 +6930,45 @@ export interface PodSpecVolumeAwsElasticBlockStore {
 }
 
 export function podSpecVolumeAwsElasticBlockStoreToTerraform(struct?: PodSpecVolumeAwsElasticBlockStoreOutputReference | PodSpecVolumeAwsElasticBlockStore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    partition: cdktf.numberToTerraform(struct!.partition),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    volume_id: cdktf.stringToTerraform(struct!.volumeId),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    partition: cdktn.numberToTerraform(struct!.partition),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    volume_id: cdktn.stringToTerraform(struct!.volumeId),
   }
 }
 
 
 export function podSpecVolumeAwsElasticBlockStoreToHclTerraform(struct?: PodSpecVolumeAwsElasticBlockStoreOutputReference | PodSpecVolumeAwsElasticBlockStore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partition: {
-      value: cdktf.numberToHclTerraform(struct!.partition),
+      value: cdktn.numberToHclTerraform(struct!.partition),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     volume_id: {
-      value: cdktf.stringToHclTerraform(struct!.volumeId),
+      value: cdktn.stringToHclTerraform(struct!.volumeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6979,14 +6979,14 @@ export function podSpecVolumeAwsElasticBlockStoreToHclTerraform(struct?: PodSpec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeAwsElasticBlockStoreOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeAwsElasticBlockStoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7062,11 +7062,11 @@ export class PodSpecVolumeAwsElasticBlockStoreOutputReference extends cdktf.Comp
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -7126,63 +7126,63 @@ export interface PodSpecVolumeAzureDisk {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
 }
 
 export function podSpecVolumeAzureDiskToTerraform(struct?: PodSpecVolumeAzureDiskOutputReference | PodSpecVolumeAzureDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    caching_mode: cdktf.stringToTerraform(struct!.cachingMode),
-    data_disk_uri: cdktf.stringToTerraform(struct!.dataDiskUri),
-    disk_name: cdktf.stringToTerraform(struct!.diskName),
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    caching_mode: cdktn.stringToTerraform(struct!.cachingMode),
+    data_disk_uri: cdktn.stringToTerraform(struct!.dataDiskUri),
+    disk_name: cdktn.stringToTerraform(struct!.diskName),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
   }
 }
 
 
 export function podSpecVolumeAzureDiskToHclTerraform(struct?: PodSpecVolumeAzureDiskOutputReference | PodSpecVolumeAzureDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     caching_mode: {
-      value: cdktf.stringToHclTerraform(struct!.cachingMode),
+      value: cdktn.stringToHclTerraform(struct!.cachingMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_disk_uri: {
-      value: cdktf.stringToHclTerraform(struct!.dataDiskUri),
+      value: cdktn.stringToHclTerraform(struct!.dataDiskUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_name: {
-      value: cdktf.stringToHclTerraform(struct!.diskName),
+      value: cdktn.stringToHclTerraform(struct!.diskName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -7193,14 +7193,14 @@ export function podSpecVolumeAzureDiskToHclTerraform(struct?: PodSpecVolumeAzure
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeAzureDiskOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeAzureDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7327,11 +7327,11 @@ export class PodSpecVolumeAzureDiskOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -7348,7 +7348,7 @@ export interface PodSpecVolumeAzureFile {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * The name of secret that contains Azure Storage Account Name and Key
   *
@@ -7370,45 +7370,45 @@ export interface PodSpecVolumeAzureFile {
 }
 
 export function podSpecVolumeAzureFileToTerraform(struct?: PodSpecVolumeAzureFileOutputReference | PodSpecVolumeAzureFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
-    secret_namespace: cdktf.stringToTerraform(struct!.secretNamespace),
-    share_name: cdktf.stringToTerraform(struct!.shareName),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
+    secret_namespace: cdktn.stringToTerraform(struct!.secretNamespace),
+    share_name: cdktn.stringToTerraform(struct!.shareName),
   }
 }
 
 
 export function podSpecVolumeAzureFileToHclTerraform(struct?: PodSpecVolumeAzureFileOutputReference | PodSpecVolumeAzureFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_namespace: {
-      value: cdktf.stringToHclTerraform(struct!.secretNamespace),
+      value: cdktn.stringToHclTerraform(struct!.secretNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_name: {
-      value: cdktf.stringToHclTerraform(struct!.shareName),
+      value: cdktn.stringToHclTerraform(struct!.shareName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7419,14 +7419,14 @@ export function podSpecVolumeAzureFileToHclTerraform(struct?: PodSpecVolumeAzure
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeAzureFileOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeAzureFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7470,11 +7470,11 @@ export class PodSpecVolumeAzureFileOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -7543,31 +7543,31 @@ export interface PodSpecVolumeCephFsSecretRef {
 }
 
 export function podSpecVolumeCephFsSecretRefToTerraform(struct?: PodSpecVolumeCephFsSecretRefOutputReference | PodSpecVolumeCephFsSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function podSpecVolumeCephFsSecretRefToHclTerraform(struct?: PodSpecVolumeCephFsSecretRefOutputReference | PodSpecVolumeCephFsSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7578,14 +7578,14 @@ export function podSpecVolumeCephFsSecretRefToHclTerraform(struct?: PodSpecVolum
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeCephFsSecretRefOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeCephFsSecretRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7666,7 +7666,7 @@ export interface PodSpecVolumeCephFs {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
   *
@@ -7688,53 +7688,53 @@ export interface PodSpecVolumeCephFs {
 }
 
 export function podSpecVolumeCephFsToTerraform(struct?: PodSpecVolumeCephFsOutputReference | PodSpecVolumeCephFs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    monitors: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.monitors),
-    path: cdktf.stringToTerraform(struct!.path),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    secret_file: cdktf.stringToTerraform(struct!.secretFile),
-    user: cdktf.stringToTerraform(struct!.user),
+    monitors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.monitors),
+    path: cdktn.stringToTerraform(struct!.path),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    secret_file: cdktn.stringToTerraform(struct!.secretFile),
+    user: cdktn.stringToTerraform(struct!.user),
     secret_ref: podSpecVolumeCephFsSecretRefToTerraform(struct!.secretRef),
   }
 }
 
 
 export function podSpecVolumeCephFsToHclTerraform(struct?: PodSpecVolumeCephFsOutputReference | PodSpecVolumeCephFs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     monitors: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.monitors),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.monitors),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     secret_file: {
-      value: cdktf.stringToHclTerraform(struct!.secretFile),
+      value: cdktn.stringToHclTerraform(struct!.secretFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7751,14 +7751,14 @@ export function podSpecVolumeCephFsToHclTerraform(struct?: PodSpecVolumeCephFsOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeCephFsOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeCephFsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7816,7 +7816,7 @@ export class PodSpecVolumeCephFsOutputReference extends cdktf.ComplexObject {
   // monitors - computed: false, optional: false, required: true
   private _monitors?: string[]; 
   public get monitors() {
-    return cdktf.Fn.tolist(this.getListAttribute('monitors'));
+    return cdktn.Fn.tolist(this.getListAttribute('monitors'));
   }
   public set monitors(value: string[]) {
     this._monitors = value;
@@ -7843,11 +7843,11 @@ export class PodSpecVolumeCephFsOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -7918,7 +7918,7 @@ export interface PodSpecVolumeCinder {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
   *
@@ -7928,38 +7928,38 @@ export interface PodSpecVolumeCinder {
 }
 
 export function podSpecVolumeCinderToTerraform(struct?: PodSpecVolumeCinderOutputReference | PodSpecVolumeCinder): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    volume_id: cdktf.stringToTerraform(struct!.volumeId),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    volume_id: cdktn.stringToTerraform(struct!.volumeId),
   }
 }
 
 
 export function podSpecVolumeCinderToHclTerraform(struct?: PodSpecVolumeCinderOutputReference | PodSpecVolumeCinder): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     volume_id: {
-      value: cdktf.stringToHclTerraform(struct!.volumeId),
+      value: cdktn.stringToHclTerraform(struct!.volumeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7970,14 +7970,14 @@ export function podSpecVolumeCinderToHclTerraform(struct?: PodSpecVolumeCinderOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeCinderOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeCinderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8031,11 +8031,11 @@ export class PodSpecVolumeCinderOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -8080,39 +8080,39 @@ export interface PodSpecVolumeConfigMapItems {
   readonly path?: string;
 }
 
-export function podSpecVolumeConfigMapItemsToTerraform(struct?: PodSpecVolumeConfigMapItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeConfigMapItemsToTerraform(struct?: PodSpecVolumeConfigMapItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    key: cdktn.stringToTerraform(struct!.key),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function podSpecVolumeConfigMapItemsToHclTerraform(struct?: PodSpecVolumeConfigMapItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeConfigMapItemsToHclTerraform(struct?: PodSpecVolumeConfigMapItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8123,9 +8123,9 @@ export function podSpecVolumeConfigMapItemsToHclTerraform(struct?: PodSpecVolume
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeConfigMapItemsOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeConfigMapItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8133,11 +8133,11 @@ export class PodSpecVolumeConfigMapItemsOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeConfigMapItems | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeConfigMapItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8158,7 +8158,7 @@ export class PodSpecVolumeConfigMapItemsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeConfigMapItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeConfigMapItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8166,7 +8166,7 @@ export class PodSpecVolumeConfigMapItemsOutputReference extends cdktf.ComplexObj
       this._mode = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8228,15 +8228,15 @@ export class PodSpecVolumeConfigMapItemsOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class PodSpecVolumeConfigMapItemsList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeConfigMapItems[] | cdktf.IResolvable
+export class PodSpecVolumeConfigMapItemsList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeConfigMapItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8265,55 +8265,55 @@ export interface PodSpecVolumeConfigMap {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#optional Pod#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
   /**
   * items block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#items Pod#items}
   */
-  readonly items?: PodSpecVolumeConfigMapItems[] | cdktf.IResolvable;
+  readonly items?: PodSpecVolumeConfigMapItems[] | cdktn.IResolvable;
 }
 
 export function podSpecVolumeConfigMapToTerraform(struct?: PodSpecVolumeConfigMapOutputReference | PodSpecVolumeConfigMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_mode: cdktf.stringToTerraform(struct!.defaultMode),
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
-    items: cdktf.listMapper(podSpecVolumeConfigMapItemsToTerraform, true)(struct!.items),
+    default_mode: cdktn.stringToTerraform(struct!.defaultMode),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
+    items: cdktn.listMapper(podSpecVolumeConfigMapItemsToTerraform, true)(struct!.items),
   }
 }
 
 
 export function podSpecVolumeConfigMapToHclTerraform(struct?: PodSpecVolumeConfigMapOutputReference | PodSpecVolumeConfigMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_mode: {
-      value: cdktf.stringToHclTerraform(struct!.defaultMode),
+      value: cdktn.stringToHclTerraform(struct!.defaultMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     items: {
-      value: cdktf.listMapperHcl(podSpecVolumeConfigMapItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(podSpecVolumeConfigMapItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeConfigMapItemsList",
@@ -8324,14 +8324,14 @@ export function podSpecVolumeConfigMapToHclTerraform(struct?: PodSpecVolumeConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeConfigMapOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeConfigMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8407,11 +8407,11 @@ export class PodSpecVolumeConfigMapOutputReference extends cdktf.ComplexObject {
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -8427,7 +8427,7 @@ export class PodSpecVolumeConfigMapOutputReference extends cdktf.ComplexObject {
   public get items() {
     return this._items;
   }
-  public putItems(value: PodSpecVolumeConfigMapItems[] | cdktf.IResolvable) {
+  public putItems(value: PodSpecVolumeConfigMapItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -8448,24 +8448,24 @@ export interface PodSpecVolumeCsiNodePublishSecretRef {
 }
 
 export function podSpecVolumeCsiNodePublishSecretRefToTerraform(struct?: PodSpecVolumeCsiNodePublishSecretRefOutputReference | PodSpecVolumeCsiNodePublishSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function podSpecVolumeCsiNodePublishSecretRefToHclTerraform(struct?: PodSpecVolumeCsiNodePublishSecretRefOutputReference | PodSpecVolumeCsiNodePublishSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8476,14 +8476,14 @@ export function podSpecVolumeCsiNodePublishSecretRefToHclTerraform(struct?: PodS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeCsiNodePublishSecretRefOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeCsiNodePublishSecretRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8542,7 +8542,7 @@ export interface PodSpecVolumeCsi {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Attributes of the volume to publish.
   *
@@ -8558,46 +8558,46 @@ export interface PodSpecVolumeCsi {
 }
 
 export function podSpecVolumeCsiToTerraform(struct?: PodSpecVolumeCsiOutputReference | PodSpecVolumeCsi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    driver: cdktf.stringToTerraform(struct!.driver),
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    volume_attributes: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.volumeAttributes),
+    driver: cdktn.stringToTerraform(struct!.driver),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    volume_attributes: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.volumeAttributes),
     node_publish_secret_ref: podSpecVolumeCsiNodePublishSecretRefToTerraform(struct!.nodePublishSecretRef),
   }
 }
 
 
 export function podSpecVolumeCsiToHclTerraform(struct?: PodSpecVolumeCsiOutputReference | PodSpecVolumeCsi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     driver: {
-      value: cdktf.stringToHclTerraform(struct!.driver),
+      value: cdktn.stringToHclTerraform(struct!.driver),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     volume_attributes: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.volumeAttributes),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.volumeAttributes),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -8614,14 +8614,14 @@ export function podSpecVolumeCsiToHclTerraform(struct?: PodSpecVolumeCsiOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeCsiOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeCsiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8700,11 +8700,11 @@ export class PodSpecVolumeCsiOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -8763,31 +8763,31 @@ export interface PodSpecVolumeDownwardApiItemsFieldRef {
 }
 
 export function podSpecVolumeDownwardApiItemsFieldRefToTerraform(struct?: PodSpecVolumeDownwardApiItemsFieldRefOutputReference | PodSpecVolumeDownwardApiItemsFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    field_path: cdktf.stringToTerraform(struct!.fieldPath),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    field_path: cdktn.stringToTerraform(struct!.fieldPath),
   }
 }
 
 
 export function podSpecVolumeDownwardApiItemsFieldRefToHclTerraform(struct?: PodSpecVolumeDownwardApiItemsFieldRefOutputReference | PodSpecVolumeDownwardApiItemsFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_path: {
-      value: cdktf.stringToHclTerraform(struct!.fieldPath),
+      value: cdktn.stringToHclTerraform(struct!.fieldPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8798,14 +8798,14 @@ export function podSpecVolumeDownwardApiItemsFieldRefToHclTerraform(struct?: Pod
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeDownwardApiItemsFieldRefOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeDownwardApiItemsFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8886,38 +8886,38 @@ export interface PodSpecVolumeDownwardApiItemsResourceFieldRef {
 }
 
 export function podSpecVolumeDownwardApiItemsResourceFieldRefToTerraform(struct?: PodSpecVolumeDownwardApiItemsResourceFieldRefOutputReference | PodSpecVolumeDownwardApiItemsResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    divisor: cdktf.stringToTerraform(struct!.divisor),
-    resource: cdktf.stringToTerraform(struct!.resource),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    divisor: cdktn.stringToTerraform(struct!.divisor),
+    resource: cdktn.stringToTerraform(struct!.resource),
   }
 }
 
 
 export function podSpecVolumeDownwardApiItemsResourceFieldRefToHclTerraform(struct?: PodSpecVolumeDownwardApiItemsResourceFieldRefOutputReference | PodSpecVolumeDownwardApiItemsResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     divisor: {
-      value: cdktf.stringToHclTerraform(struct!.divisor),
+      value: cdktn.stringToHclTerraform(struct!.divisor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8928,14 +8928,14 @@ export function podSpecVolumeDownwardApiItemsResourceFieldRefToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeDownwardApiItemsResourceFieldRefOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeDownwardApiItemsResourceFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9041,34 +9041,34 @@ export interface PodSpecVolumeDownwardApiItems {
   readonly resourceFieldRef?: PodSpecVolumeDownwardApiItemsResourceFieldRef;
 }
 
-export function podSpecVolumeDownwardApiItemsToTerraform(struct?: PodSpecVolumeDownwardApiItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeDownwardApiItemsToTerraform(struct?: PodSpecVolumeDownwardApiItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
     field_ref: podSpecVolumeDownwardApiItemsFieldRefToTerraform(struct!.fieldRef),
     resource_field_ref: podSpecVolumeDownwardApiItemsResourceFieldRefToTerraform(struct!.resourceFieldRef),
   }
 }
 
 
-export function podSpecVolumeDownwardApiItemsToHclTerraform(struct?: PodSpecVolumeDownwardApiItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeDownwardApiItemsToHclTerraform(struct?: PodSpecVolumeDownwardApiItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9091,9 +9091,9 @@ export function podSpecVolumeDownwardApiItemsToHclTerraform(struct?: PodSpecVolu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeDownwardApiItemsOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeDownwardApiItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9101,11 +9101,11 @@ export class PodSpecVolumeDownwardApiItemsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeDownwardApiItems | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeDownwardApiItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9130,7 +9130,7 @@ export class PodSpecVolumeDownwardApiItemsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeDownwardApiItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeDownwardApiItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9139,7 +9139,7 @@ export class PodSpecVolumeDownwardApiItemsOutputReference extends cdktf.ComplexO
       this._fieldRef.internalValue = undefined;
       this._resourceFieldRef.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9212,15 +9212,15 @@ export class PodSpecVolumeDownwardApiItemsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class PodSpecVolumeDownwardApiItemsList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeDownwardApiItems[] | cdktf.IResolvable
+export class PodSpecVolumeDownwardApiItemsList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeDownwardApiItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9243,35 +9243,35 @@ export interface PodSpecVolumeDownwardApi {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#items Pod#items}
   */
-  readonly items?: PodSpecVolumeDownwardApiItems[] | cdktf.IResolvable;
+  readonly items?: PodSpecVolumeDownwardApiItems[] | cdktn.IResolvable;
 }
 
 export function podSpecVolumeDownwardApiToTerraform(struct?: PodSpecVolumeDownwardApiOutputReference | PodSpecVolumeDownwardApi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_mode: cdktf.stringToTerraform(struct!.defaultMode),
-    items: cdktf.listMapper(podSpecVolumeDownwardApiItemsToTerraform, true)(struct!.items),
+    default_mode: cdktn.stringToTerraform(struct!.defaultMode),
+    items: cdktn.listMapper(podSpecVolumeDownwardApiItemsToTerraform, true)(struct!.items),
   }
 }
 
 
 export function podSpecVolumeDownwardApiToHclTerraform(struct?: PodSpecVolumeDownwardApiOutputReference | PodSpecVolumeDownwardApi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_mode: {
-      value: cdktf.stringToHclTerraform(struct!.defaultMode),
+      value: cdktn.stringToHclTerraform(struct!.defaultMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(podSpecVolumeDownwardApiItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(podSpecVolumeDownwardApiItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeDownwardApiItemsList",
@@ -9282,14 +9282,14 @@ export function podSpecVolumeDownwardApiToHclTerraform(struct?: PodSpecVolumeDow
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeDownwardApiOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeDownwardApiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9341,7 +9341,7 @@ export class PodSpecVolumeDownwardApiOutputReference extends cdktf.ComplexObject
   public get items() {
     return this._items;
   }
-  public putItems(value: PodSpecVolumeDownwardApiItems[] | cdktf.IResolvable) {
+  public putItems(value: PodSpecVolumeDownwardApiItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -9368,31 +9368,31 @@ export interface PodSpecVolumeEmptyDir {
 }
 
 export function podSpecVolumeEmptyDirToTerraform(struct?: PodSpecVolumeEmptyDirOutputReference | PodSpecVolumeEmptyDir): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    medium: cdktf.stringToTerraform(struct!.medium),
-    size_limit: cdktf.stringToTerraform(struct!.sizeLimit),
+    medium: cdktn.stringToTerraform(struct!.medium),
+    size_limit: cdktn.stringToTerraform(struct!.sizeLimit),
   }
 }
 
 
 export function podSpecVolumeEmptyDirToHclTerraform(struct?: PodSpecVolumeEmptyDirOutputReference | PodSpecVolumeEmptyDir): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     medium: {
-      value: cdktf.stringToHclTerraform(struct!.medium),
+      value: cdktn.stringToHclTerraform(struct!.medium),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     size_limit: {
-      value: cdktf.stringToHclTerraform(struct!.sizeLimit),
+      value: cdktn.stringToHclTerraform(struct!.sizeLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9403,14 +9403,14 @@ export function podSpecVolumeEmptyDirToHclTerraform(struct?: PodSpecVolumeEmptyD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeEmptyDirOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeEmptyDirOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9489,31 +9489,31 @@ export interface PodSpecVolumeEphemeralVolumeClaimTemplateMetadata {
 }
 
 export function podSpecVolumeEphemeralVolumeClaimTemplateMetadataToTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference | PodSpecVolumeEphemeralVolumeClaimTemplateMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
   }
 }
 
 
 export function podSpecVolumeEphemeralVolumeClaimTemplateMetadataToHclTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference | PodSpecVolumeEphemeralVolumeClaimTemplateMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -9524,14 +9524,14 @@ export function podSpecVolumeEphemeralVolumeClaimTemplateMetadataToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9610,31 +9610,31 @@ export interface PodSpecVolumeEphemeralVolumeClaimTemplateSpecResources {
 }
 
 export function podSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesToTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference | PodSpecVolumeEphemeralVolumeClaimTemplateSpecResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    limits: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.limits),
-    requests: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requests),
+    limits: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.limits),
+    requests: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.requests),
   }
 }
 
 
 export function podSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesToHclTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference | PodSpecVolumeEphemeralVolumeClaimTemplateSpecResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     limits: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.limits),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.limits),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     requests: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requests),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.requests),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -9645,14 +9645,14 @@ export function podSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9736,39 +9736,39 @@ export interface PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpre
   readonly values?: string[];
 }
 
-export function podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToHclTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToHclTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -9779,9 +9779,9 @@ export function podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpres
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9789,11 +9789,11 @@ export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressio
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9814,7 +9814,7 @@ export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressio
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9822,7 +9822,7 @@ export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressio
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9870,7 +9870,7 @@ export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressio
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -9884,15 +9884,15 @@ export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressio
   }
 }
 
-export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktf.IResolvable
+export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9915,35 +9915,35 @@ export interface PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#match_expressions Pod#match_expressions}
   */
-  readonly matchExpressions?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorToTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference | PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorToHclTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference | PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList",
@@ -9954,14 +9954,14 @@ export function podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10013,7 +10013,7 @@ export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReferenc
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -10064,15 +10064,15 @@ export interface PodSpecVolumeEphemeralVolumeClaimTemplateSpec {
 }
 
 export function podSpecVolumeEphemeralVolumeClaimTemplateSpecToTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference | PodSpecVolumeEphemeralVolumeClaimTemplateSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_modes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accessModes),
-    storage_class_name: cdktf.stringToTerraform(struct!.storageClassName),
-    volume_mode: cdktf.stringToTerraform(struct!.volumeMode),
-    volume_name: cdktf.stringToTerraform(struct!.volumeName),
+    access_modes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.accessModes),
+    storage_class_name: cdktn.stringToTerraform(struct!.storageClassName),
+    volume_mode: cdktn.stringToTerraform(struct!.volumeMode),
+    volume_name: cdktn.stringToTerraform(struct!.volumeName),
     resources: podSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesToTerraform(struct!.resources),
     selector: podSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorToTerraform(struct!.selector),
   }
@@ -10080,31 +10080,31 @@ export function podSpecVolumeEphemeralVolumeClaimTemplateSpecToTerraform(struct?
 
 
 export function podSpecVolumeEphemeralVolumeClaimTemplateSpecToHclTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference | PodSpecVolumeEphemeralVolumeClaimTemplateSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_modes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accessModes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.accessModes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     storage_class_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageClassName),
+      value: cdktn.stringToHclTerraform(struct!.storageClassName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_mode: {
-      value: cdktf.stringToHclTerraform(struct!.volumeMode),
+      value: cdktn.stringToHclTerraform(struct!.volumeMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_name: {
-      value: cdktf.stringToHclTerraform(struct!.volumeName),
+      value: cdktn.stringToHclTerraform(struct!.volumeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10127,14 +10127,14 @@ export function podSpecVolumeEphemeralVolumeClaimTemplateSpecToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10192,7 +10192,7 @@ export class PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference extend
   // access_modes - computed: false, optional: false, required: true
   private _accessModes?: string[]; 
   public get accessModes() {
-    return cdktf.Fn.tolist(this.getListAttribute('access_modes'));
+    return cdktn.Fn.tolist(this.getListAttribute('access_modes'));
   }
   public set accessModes(value: string[]) {
     this._accessModes = value;
@@ -10295,8 +10295,8 @@ export interface PodSpecVolumeEphemeralVolumeClaimTemplate {
 }
 
 export function podSpecVolumeEphemeralVolumeClaimTemplateToTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateOutputReference | PodSpecVolumeEphemeralVolumeClaimTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -10307,8 +10307,8 @@ export function podSpecVolumeEphemeralVolumeClaimTemplateToTerraform(struct?: Po
 
 
 export function podSpecVolumeEphemeralVolumeClaimTemplateToHclTerraform(struct?: PodSpecVolumeEphemeralVolumeClaimTemplateOutputReference | PodSpecVolumeEphemeralVolumeClaimTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -10330,14 +10330,14 @@ export function podSpecVolumeEphemeralVolumeClaimTemplateToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeEphemeralVolumeClaimTemplateOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeEphemeralVolumeClaimTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10407,8 +10407,8 @@ export interface PodSpecVolumeEphemeral {
 }
 
 export function podSpecVolumeEphemeralToTerraform(struct?: PodSpecVolumeEphemeralOutputReference | PodSpecVolumeEphemeral): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -10418,8 +10418,8 @@ export function podSpecVolumeEphemeralToTerraform(struct?: PodSpecVolumeEphemera
 
 
 export function podSpecVolumeEphemeralToHclTerraform(struct?: PodSpecVolumeEphemeralOutputReference | PodSpecVolumeEphemeral): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -10435,14 +10435,14 @@ export function podSpecVolumeEphemeralToHclTerraform(struct?: PodSpecVolumeEphem
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeEphemeralOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeEphemeralOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10498,7 +10498,7 @@ export interface PodSpecVolumeFc {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * FC target worldwide names (WWNs)
   *
@@ -10508,45 +10508,45 @@ export interface PodSpecVolumeFc {
 }
 
 export function podSpecVolumeFcToTerraform(struct?: PodSpecVolumeFcOutputReference | PodSpecVolumeFc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    lun: cdktf.numberToTerraform(struct!.lun),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    target_ww_ns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetWwNs),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    lun: cdktn.numberToTerraform(struct!.lun),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    target_ww_ns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetWwNs),
   }
 }
 
 
 export function podSpecVolumeFcToHclTerraform(struct?: PodSpecVolumeFcOutputReference | PodSpecVolumeFc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lun: {
-      value: cdktf.numberToHclTerraform(struct!.lun),
+      value: cdktn.numberToHclTerraform(struct!.lun),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     target_ww_ns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetWwNs),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targetWwNs),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -10557,14 +10557,14 @@ export function podSpecVolumeFcToHclTerraform(struct?: PodSpecVolumeFcOutputRefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeFcOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeFcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10637,11 +10637,11 @@ export class PodSpecVolumeFcOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -10655,7 +10655,7 @@ export class PodSpecVolumeFcOutputReference extends cdktf.ComplexObject {
   // target_ww_ns - computed: false, optional: false, required: true
   private _targetWwNs?: string[]; 
   public get targetWwNs() {
-    return cdktf.Fn.tolist(this.getListAttribute('target_ww_ns'));
+    return cdktn.Fn.tolist(this.getListAttribute('target_ww_ns'));
   }
   public set targetWwNs(value: string[]) {
     this._targetWwNs = value;
@@ -10681,31 +10681,31 @@ export interface PodSpecVolumeFlexVolumeSecretRef {
 }
 
 export function podSpecVolumeFlexVolumeSecretRefToTerraform(struct?: PodSpecVolumeFlexVolumeSecretRefOutputReference | PodSpecVolumeFlexVolumeSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function podSpecVolumeFlexVolumeSecretRefToHclTerraform(struct?: PodSpecVolumeFlexVolumeSecretRefOutputReference | PodSpecVolumeFlexVolumeSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10716,14 +10716,14 @@ export function podSpecVolumeFlexVolumeSecretRefToHclTerraform(struct?: PodSpecV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeFlexVolumeSecretRefOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeFlexVolumeSecretRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10810,7 +10810,7 @@ export interface PodSpecVolumeFlexVolume {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * secret_ref block
   *
@@ -10820,46 +10820,46 @@ export interface PodSpecVolumeFlexVolume {
 }
 
 export function podSpecVolumeFlexVolumeToTerraform(struct?: PodSpecVolumeFlexVolumeOutputReference | PodSpecVolumeFlexVolume): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    driver: cdktf.stringToTerraform(struct!.driver),
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    options: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.options),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    driver: cdktn.stringToTerraform(struct!.driver),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    options: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.options),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
     secret_ref: podSpecVolumeFlexVolumeSecretRefToTerraform(struct!.secretRef),
   }
 }
 
 
 export function podSpecVolumeFlexVolumeToHclTerraform(struct?: PodSpecVolumeFlexVolumeOutputReference | PodSpecVolumeFlexVolume): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     driver: {
-      value: cdktf.stringToHclTerraform(struct!.driver),
+      value: cdktn.stringToHclTerraform(struct!.driver),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     options: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.options),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.options),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -10876,14 +10876,14 @@ export function podSpecVolumeFlexVolumeToHclTerraform(struct?: PodSpecVolumeFlex
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeFlexVolumeOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeFlexVolumeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10978,11 +10978,11 @@ export class PodSpecVolumeFlexVolumeOutputReference extends cdktf.ComplexObject 
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -11025,31 +11025,31 @@ export interface PodSpecVolumeFlocker {
 }
 
 export function podSpecVolumeFlockerToTerraform(struct?: PodSpecVolumeFlockerOutputReference | PodSpecVolumeFlocker): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dataset_name: cdktf.stringToTerraform(struct!.datasetName),
-    dataset_uuid: cdktf.stringToTerraform(struct!.datasetUuid),
+    dataset_name: cdktn.stringToTerraform(struct!.datasetName),
+    dataset_uuid: cdktn.stringToTerraform(struct!.datasetUuid),
   }
 }
 
 
 export function podSpecVolumeFlockerToHclTerraform(struct?: PodSpecVolumeFlockerOutputReference | PodSpecVolumeFlocker): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dataset_name: {
-      value: cdktf.stringToHclTerraform(struct!.datasetName),
+      value: cdktn.stringToHclTerraform(struct!.datasetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dataset_uuid: {
-      value: cdktf.stringToHclTerraform(struct!.datasetUuid),
+      value: cdktn.stringToHclTerraform(struct!.datasetUuid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11060,14 +11060,14 @@ export function podSpecVolumeFlockerToHclTerraform(struct?: PodSpecVolumeFlocker
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeFlockerOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeFlockerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11154,49 +11154,49 @@ export interface PodSpecVolumeGcePersistentDisk {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
 }
 
 export function podSpecVolumeGcePersistentDiskToTerraform(struct?: PodSpecVolumeGcePersistentDiskOutputReference | PodSpecVolumeGcePersistentDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    partition: cdktf.numberToTerraform(struct!.partition),
-    pd_name: cdktf.stringToTerraform(struct!.pdName),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    partition: cdktn.numberToTerraform(struct!.partition),
+    pd_name: cdktn.stringToTerraform(struct!.pdName),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
   }
 }
 
 
 export function podSpecVolumeGcePersistentDiskToHclTerraform(struct?: PodSpecVolumeGcePersistentDiskOutputReference | PodSpecVolumeGcePersistentDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partition: {
-      value: cdktf.numberToHclTerraform(struct!.partition),
+      value: cdktn.numberToHclTerraform(struct!.partition),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     pd_name: {
-      value: cdktf.stringToHclTerraform(struct!.pdName),
+      value: cdktn.stringToHclTerraform(struct!.pdName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -11207,14 +11207,14 @@ export function podSpecVolumeGcePersistentDiskToHclTerraform(struct?: PodSpecVol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeGcePersistentDiskOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeGcePersistentDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11303,11 +11303,11 @@ export class PodSpecVolumeGcePersistentDiskOutputReference extends cdktf.Complex
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -11340,38 +11340,38 @@ export interface PodSpecVolumeGitRepo {
 }
 
 export function podSpecVolumeGitRepoToTerraform(struct?: PodSpecVolumeGitRepoOutputReference | PodSpecVolumeGitRepo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    directory: cdktf.stringToTerraform(struct!.directory),
-    repository: cdktf.stringToTerraform(struct!.repository),
-    revision: cdktf.stringToTerraform(struct!.revision),
+    directory: cdktn.stringToTerraform(struct!.directory),
+    repository: cdktn.stringToTerraform(struct!.repository),
+    revision: cdktn.stringToTerraform(struct!.revision),
   }
 }
 
 
 export function podSpecVolumeGitRepoToHclTerraform(struct?: PodSpecVolumeGitRepoOutputReference | PodSpecVolumeGitRepo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     directory: {
-      value: cdktf.stringToHclTerraform(struct!.directory),
+      value: cdktn.stringToHclTerraform(struct!.directory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repository: {
-      value: cdktf.stringToHclTerraform(struct!.repository),
+      value: cdktn.stringToHclTerraform(struct!.repository),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     revision: {
-      value: cdktf.stringToHclTerraform(struct!.revision),
+      value: cdktn.stringToHclTerraform(struct!.revision),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11382,14 +11382,14 @@ export function podSpecVolumeGitRepoToHclTerraform(struct?: PodSpecVolumeGitRepo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeGitRepoOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeGitRepoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11492,42 +11492,42 @@ export interface PodSpecVolumeGlusterfs {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
 }
 
 export function podSpecVolumeGlusterfsToTerraform(struct?: PodSpecVolumeGlusterfsOutputReference | PodSpecVolumeGlusterfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoints_name: cdktf.stringToTerraform(struct!.endpointsName),
-    path: cdktf.stringToTerraform(struct!.path),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    endpoints_name: cdktn.stringToTerraform(struct!.endpointsName),
+    path: cdktn.stringToTerraform(struct!.path),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
   }
 }
 
 
 export function podSpecVolumeGlusterfsToHclTerraform(struct?: PodSpecVolumeGlusterfsOutputReference | PodSpecVolumeGlusterfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoints_name: {
-      value: cdktf.stringToHclTerraform(struct!.endpointsName),
+      value: cdktn.stringToHclTerraform(struct!.endpointsName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -11538,14 +11538,14 @@ export function podSpecVolumeGlusterfsToHclTerraform(struct?: PodSpecVolumeGlust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeGlusterfsOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeGlusterfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11609,11 +11609,11 @@ export class PodSpecVolumeGlusterfsOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -11640,31 +11640,31 @@ export interface PodSpecVolumeHostPath {
 }
 
 export function podSpecVolumeHostPathToTerraform(struct?: PodSpecVolumeHostPathOutputReference | PodSpecVolumeHostPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    type: cdktf.stringToTerraform(struct!.type),
+    path: cdktn.stringToTerraform(struct!.path),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function podSpecVolumeHostPathToHclTerraform(struct?: PodSpecVolumeHostPathOutputReference | PodSpecVolumeHostPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11675,14 +11675,14 @@ export function podSpecVolumeHostPathToHclTerraform(struct?: PodSpecVolumeHostPa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeHostPathOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeHostPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11775,7 +11775,7 @@ export interface PodSpecVolumeIscsi {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * iSCSI target portal. The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
   *
@@ -11785,59 +11785,59 @@ export interface PodSpecVolumeIscsi {
 }
 
 export function podSpecVolumeIscsiToTerraform(struct?: PodSpecVolumeIscsiOutputReference | PodSpecVolumeIscsi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    iqn: cdktf.stringToTerraform(struct!.iqn),
-    iscsi_interface: cdktf.stringToTerraform(struct!.iscsiInterface),
-    lun: cdktf.numberToTerraform(struct!.lun),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    target_portal: cdktf.stringToTerraform(struct!.targetPortal),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    iqn: cdktn.stringToTerraform(struct!.iqn),
+    iscsi_interface: cdktn.stringToTerraform(struct!.iscsiInterface),
+    lun: cdktn.numberToTerraform(struct!.lun),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    target_portal: cdktn.stringToTerraform(struct!.targetPortal),
   }
 }
 
 
 export function podSpecVolumeIscsiToHclTerraform(struct?: PodSpecVolumeIscsiOutputReference | PodSpecVolumeIscsi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     iqn: {
-      value: cdktf.stringToHclTerraform(struct!.iqn),
+      value: cdktn.stringToHclTerraform(struct!.iqn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     iscsi_interface: {
-      value: cdktf.stringToHclTerraform(struct!.iscsiInterface),
+      value: cdktn.stringToHclTerraform(struct!.iscsiInterface),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lun: {
-      value: cdktf.numberToHclTerraform(struct!.lun),
+      value: cdktn.numberToHclTerraform(struct!.lun),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     target_portal: {
-      value: cdktf.stringToHclTerraform(struct!.targetPortal),
+      value: cdktn.stringToHclTerraform(struct!.targetPortal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11848,14 +11848,14 @@ export function podSpecVolumeIscsiToHclTerraform(struct?: PodSpecVolumeIscsiOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeIscsiOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeIscsiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11972,11 +11972,11 @@ export class PodSpecVolumeIscsiOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -12010,24 +12010,24 @@ export interface PodSpecVolumeLocal {
 }
 
 export function podSpecVolumeLocalToTerraform(struct?: PodSpecVolumeLocalOutputReference | PodSpecVolumeLocal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function podSpecVolumeLocalToHclTerraform(struct?: PodSpecVolumeLocalOutputReference | PodSpecVolumeLocal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12038,14 +12038,14 @@ export function podSpecVolumeLocalToHclTerraform(struct?: PodSpecVolumeLocalOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeLocalOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeLocalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12098,7 +12098,7 @@ export interface PodSpecVolumeNfs {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
   *
@@ -12108,38 +12108,38 @@ export interface PodSpecVolumeNfs {
 }
 
 export function podSpecVolumeNfsToTerraform(struct?: PodSpecVolumeNfsOutputReference | PodSpecVolumeNfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    server: cdktf.stringToTerraform(struct!.server),
+    path: cdktn.stringToTerraform(struct!.path),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    server: cdktn.stringToTerraform(struct!.server),
   }
 }
 
 
 export function podSpecVolumeNfsToHclTerraform(struct?: PodSpecVolumeNfsOutputReference | PodSpecVolumeNfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     server: {
-      value: cdktf.stringToHclTerraform(struct!.server),
+      value: cdktn.stringToHclTerraform(struct!.server),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12150,14 +12150,14 @@ export function podSpecVolumeNfsToHclTerraform(struct?: PodSpecVolumeNfsOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeNfsOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeNfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12208,11 +12208,11 @@ export class PodSpecVolumeNfsOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -12248,35 +12248,35 @@ export interface PodSpecVolumePersistentVolumeClaim {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
 }
 
 export function podSpecVolumePersistentVolumeClaimToTerraform(struct?: PodSpecVolumePersistentVolumeClaimOutputReference | PodSpecVolumePersistentVolumeClaim): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    claim_name: cdktf.stringToTerraform(struct!.claimName),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    claim_name: cdktn.stringToTerraform(struct!.claimName),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
   }
 }
 
 
 export function podSpecVolumePersistentVolumeClaimToHclTerraform(struct?: PodSpecVolumePersistentVolumeClaimOutputReference | PodSpecVolumePersistentVolumeClaim): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     claim_name: {
-      value: cdktf.stringToHclTerraform(struct!.claimName),
+      value: cdktn.stringToHclTerraform(struct!.claimName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -12287,14 +12287,14 @@ export function podSpecVolumePersistentVolumeClaimToHclTerraform(struct?: PodSpe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumePersistentVolumeClaimOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumePersistentVolumeClaimOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12342,11 +12342,11 @@ export class PodSpecVolumePersistentVolumeClaimOutputReference extends cdktf.Com
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -12373,31 +12373,31 @@ export interface PodSpecVolumePhotonPersistentDisk {
 }
 
 export function podSpecVolumePhotonPersistentDiskToTerraform(struct?: PodSpecVolumePhotonPersistentDiskOutputReference | PodSpecVolumePhotonPersistentDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    pd_id: cdktf.stringToTerraform(struct!.pdId),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    pd_id: cdktn.stringToTerraform(struct!.pdId),
   }
 }
 
 
 export function podSpecVolumePhotonPersistentDiskToHclTerraform(struct?: PodSpecVolumePhotonPersistentDiskOutputReference | PodSpecVolumePhotonPersistentDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pd_id: {
-      value: cdktf.stringToHclTerraform(struct!.pdId),
+      value: cdktn.stringToHclTerraform(struct!.pdId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12408,14 +12408,14 @@ export function podSpecVolumePhotonPersistentDiskToHclTerraform(struct?: PodSpec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumePhotonPersistentDiskOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumePhotonPersistentDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12496,39 +12496,39 @@ export interface PodSpecVolumeProjectedSourcesConfigMapItems {
   readonly path?: string;
 }
 
-export function podSpecVolumeProjectedSourcesConfigMapItemsToTerraform(struct?: PodSpecVolumeProjectedSourcesConfigMapItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesConfigMapItemsToTerraform(struct?: PodSpecVolumeProjectedSourcesConfigMapItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    key: cdktn.stringToTerraform(struct!.key),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function podSpecVolumeProjectedSourcesConfigMapItemsToHclTerraform(struct?: PodSpecVolumeProjectedSourcesConfigMapItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesConfigMapItemsToHclTerraform(struct?: PodSpecVolumeProjectedSourcesConfigMapItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12539,9 +12539,9 @@ export function podSpecVolumeProjectedSourcesConfigMapItemsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -12549,11 +12549,11 @@ export class PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeProjectedSourcesConfigMapItems | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeProjectedSourcesConfigMapItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -12574,7 +12574,7 @@ export class PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeProjectedSourcesConfigMapItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeProjectedSourcesConfigMapItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -12582,7 +12582,7 @@ export class PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference extends 
       this._mode = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -12644,15 +12644,15 @@ export class PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference extends 
   }
 }
 
-export class PodSpecVolumeProjectedSourcesConfigMapItemsList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeProjectedSourcesConfigMapItems[] | cdktf.IResolvable
+export class PodSpecVolumeProjectedSourcesConfigMapItemsList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeProjectedSourcesConfigMapItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12675,48 +12675,48 @@ export interface PodSpecVolumeProjectedSourcesConfigMap {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#optional Pod#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
   /**
   * items block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#items Pod#items}
   */
-  readonly items?: PodSpecVolumeProjectedSourcesConfigMapItems[] | cdktf.IResolvable;
+  readonly items?: PodSpecVolumeProjectedSourcesConfigMapItems[] | cdktn.IResolvable;
 }
 
-export function podSpecVolumeProjectedSourcesConfigMapToTerraform(struct?: PodSpecVolumeProjectedSourcesConfigMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesConfigMapToTerraform(struct?: PodSpecVolumeProjectedSourcesConfigMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
-    items: cdktf.listMapper(podSpecVolumeProjectedSourcesConfigMapItemsToTerraform, true)(struct!.items),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
+    items: cdktn.listMapper(podSpecVolumeProjectedSourcesConfigMapItemsToTerraform, true)(struct!.items),
   }
 }
 
 
-export function podSpecVolumeProjectedSourcesConfigMapToHclTerraform(struct?: PodSpecVolumeProjectedSourcesConfigMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesConfigMapToHclTerraform(struct?: PodSpecVolumeProjectedSourcesConfigMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     items: {
-      value: cdktf.listMapperHcl(podSpecVolumeProjectedSourcesConfigMapItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(podSpecVolumeProjectedSourcesConfigMapItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeProjectedSourcesConfigMapItemsList",
@@ -12727,9 +12727,9 @@ export function podSpecVolumeProjectedSourcesConfigMapToHclTerraform(struct?: Po
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedSourcesConfigMapOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedSourcesConfigMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -12737,11 +12737,11 @@ export class PodSpecVolumeProjectedSourcesConfigMapOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeProjectedSourcesConfigMap | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeProjectedSourcesConfigMap | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -12762,7 +12762,7 @@ export class PodSpecVolumeProjectedSourcesConfigMapOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeProjectedSourcesConfigMap | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeProjectedSourcesConfigMap | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -12770,7 +12770,7 @@ export class PodSpecVolumeProjectedSourcesConfigMapOutputReference extends cdktf
       this._optional = undefined;
       this._items.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -12800,11 +12800,11 @@ export class PodSpecVolumeProjectedSourcesConfigMapOutputReference extends cdktf
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -12820,7 +12820,7 @@ export class PodSpecVolumeProjectedSourcesConfigMapOutputReference extends cdktf
   public get items() {
     return this._items;
   }
-  public putItems(value: PodSpecVolumeProjectedSourcesConfigMapItems[] | cdktf.IResolvable) {
+  public putItems(value: PodSpecVolumeProjectedSourcesConfigMapItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -12832,15 +12832,15 @@ export class PodSpecVolumeProjectedSourcesConfigMapOutputReference extends cdktf
   }
 }
 
-export class PodSpecVolumeProjectedSourcesConfigMapList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeProjectedSourcesConfigMap[] | cdktf.IResolvable
+export class PodSpecVolumeProjectedSourcesConfigMapList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeProjectedSourcesConfigMap[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12867,31 +12867,31 @@ export interface PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRef {
 }
 
 export function podSpecVolumeProjectedSourcesDownwardApiItemsFieldRefToTerraform(struct?: PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference | PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    field_path: cdktf.stringToTerraform(struct!.fieldPath),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    field_path: cdktn.stringToTerraform(struct!.fieldPath),
   }
 }
 
 
 export function podSpecVolumeProjectedSourcesDownwardApiItemsFieldRefToHclTerraform(struct?: PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference | PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_path: {
-      value: cdktf.stringToHclTerraform(struct!.fieldPath),
+      value: cdktn.stringToHclTerraform(struct!.fieldPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12902,14 +12902,14 @@ export function podSpecVolumeProjectedSourcesDownwardApiItemsFieldRefToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12990,38 +12990,38 @@ export interface PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef {
 }
 
 export function podSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefToTerraform(struct?: PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference | PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    divisor: cdktf.stringToTerraform(struct!.divisor),
-    resource: cdktf.stringToTerraform(struct!.resource),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    divisor: cdktn.stringToTerraform(struct!.divisor),
+    resource: cdktn.stringToTerraform(struct!.resource),
   }
 }
 
 
 export function podSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefToHclTerraform(struct?: PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference | PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     divisor: {
-      value: cdktf.stringToHclTerraform(struct!.divisor),
+      value: cdktn.stringToHclTerraform(struct!.divisor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13032,14 +13032,14 @@ export function podSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13145,34 +13145,34 @@ export interface PodSpecVolumeProjectedSourcesDownwardApiItems {
   readonly resourceFieldRef?: PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef;
 }
 
-export function podSpecVolumeProjectedSourcesDownwardApiItemsToTerraform(struct?: PodSpecVolumeProjectedSourcesDownwardApiItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesDownwardApiItemsToTerraform(struct?: PodSpecVolumeProjectedSourcesDownwardApiItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
     field_ref: podSpecVolumeProjectedSourcesDownwardApiItemsFieldRefToTerraform(struct!.fieldRef),
     resource_field_ref: podSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefToTerraform(struct!.resourceFieldRef),
   }
 }
 
 
-export function podSpecVolumeProjectedSourcesDownwardApiItemsToHclTerraform(struct?: PodSpecVolumeProjectedSourcesDownwardApiItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesDownwardApiItemsToHclTerraform(struct?: PodSpecVolumeProjectedSourcesDownwardApiItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13195,9 +13195,9 @@ export function podSpecVolumeProjectedSourcesDownwardApiItemsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedSourcesDownwardApiItemsOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedSourcesDownwardApiItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13205,11 +13205,11 @@ export class PodSpecVolumeProjectedSourcesDownwardApiItemsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeProjectedSourcesDownwardApiItems | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeProjectedSourcesDownwardApiItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13234,7 +13234,7 @@ export class PodSpecVolumeProjectedSourcesDownwardApiItemsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeProjectedSourcesDownwardApiItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeProjectedSourcesDownwardApiItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13243,7 +13243,7 @@ export class PodSpecVolumeProjectedSourcesDownwardApiItemsOutputReference extend
       this._fieldRef.internalValue = undefined;
       this._resourceFieldRef.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13319,15 +13319,15 @@ export class PodSpecVolumeProjectedSourcesDownwardApiItemsOutputReference extend
   }
 }
 
-export class PodSpecVolumeProjectedSourcesDownwardApiItemsList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeProjectedSourcesDownwardApiItems[] | cdktf.IResolvable
+export class PodSpecVolumeProjectedSourcesDownwardApiItemsList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeProjectedSourcesDownwardApiItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13344,28 +13344,28 @@ export interface PodSpecVolumeProjectedSourcesDownwardApi {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#items Pod#items}
   */
-  readonly items?: PodSpecVolumeProjectedSourcesDownwardApiItems[] | cdktf.IResolvable;
+  readonly items?: PodSpecVolumeProjectedSourcesDownwardApiItems[] | cdktn.IResolvable;
 }
 
 export function podSpecVolumeProjectedSourcesDownwardApiToTerraform(struct?: PodSpecVolumeProjectedSourcesDownwardApiOutputReference | PodSpecVolumeProjectedSourcesDownwardApi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    items: cdktf.listMapper(podSpecVolumeProjectedSourcesDownwardApiItemsToTerraform, true)(struct!.items),
+    items: cdktn.listMapper(podSpecVolumeProjectedSourcesDownwardApiItemsToTerraform, true)(struct!.items),
   }
 }
 
 
 export function podSpecVolumeProjectedSourcesDownwardApiToHclTerraform(struct?: PodSpecVolumeProjectedSourcesDownwardApiOutputReference | PodSpecVolumeProjectedSourcesDownwardApi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     items: {
-      value: cdktf.listMapperHcl(podSpecVolumeProjectedSourcesDownwardApiItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(podSpecVolumeProjectedSourcesDownwardApiItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeProjectedSourcesDownwardApiItemsList",
@@ -13376,14 +13376,14 @@ export function podSpecVolumeProjectedSourcesDownwardApiToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedSourcesDownwardApiOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedSourcesDownwardApiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13413,7 +13413,7 @@ export class PodSpecVolumeProjectedSourcesDownwardApiOutputReference extends cdk
   public get items() {
     return this._items;
   }
-  public putItems(value: PodSpecVolumeProjectedSourcesDownwardApiItems[] | cdktf.IResolvable) {
+  public putItems(value: PodSpecVolumeProjectedSourcesDownwardApiItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -13445,39 +13445,39 @@ export interface PodSpecVolumeProjectedSourcesSecretItems {
   readonly path?: string;
 }
 
-export function podSpecVolumeProjectedSourcesSecretItemsToTerraform(struct?: PodSpecVolumeProjectedSourcesSecretItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesSecretItemsToTerraform(struct?: PodSpecVolumeProjectedSourcesSecretItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    key: cdktn.stringToTerraform(struct!.key),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function podSpecVolumeProjectedSourcesSecretItemsToHclTerraform(struct?: PodSpecVolumeProjectedSourcesSecretItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesSecretItemsToHclTerraform(struct?: PodSpecVolumeProjectedSourcesSecretItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13488,9 +13488,9 @@ export function podSpecVolumeProjectedSourcesSecretItemsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedSourcesSecretItemsOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedSourcesSecretItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13498,11 +13498,11 @@ export class PodSpecVolumeProjectedSourcesSecretItemsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeProjectedSourcesSecretItems | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeProjectedSourcesSecretItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13523,7 +13523,7 @@ export class PodSpecVolumeProjectedSourcesSecretItemsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeProjectedSourcesSecretItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeProjectedSourcesSecretItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13531,7 +13531,7 @@ export class PodSpecVolumeProjectedSourcesSecretItemsOutputReference extends cdk
       this._mode = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13593,15 +13593,15 @@ export class PodSpecVolumeProjectedSourcesSecretItemsOutputReference extends cdk
   }
 }
 
-export class PodSpecVolumeProjectedSourcesSecretItemsList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeProjectedSourcesSecretItems[] | cdktf.IResolvable
+export class PodSpecVolumeProjectedSourcesSecretItemsList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeProjectedSourcesSecretItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13624,48 +13624,48 @@ export interface PodSpecVolumeProjectedSourcesSecret {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#optional Pod#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
   /**
   * items block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#items Pod#items}
   */
-  readonly items?: PodSpecVolumeProjectedSourcesSecretItems[] | cdktf.IResolvable;
+  readonly items?: PodSpecVolumeProjectedSourcesSecretItems[] | cdktn.IResolvable;
 }
 
-export function podSpecVolumeProjectedSourcesSecretToTerraform(struct?: PodSpecVolumeProjectedSourcesSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesSecretToTerraform(struct?: PodSpecVolumeProjectedSourcesSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
-    items: cdktf.listMapper(podSpecVolumeProjectedSourcesSecretItemsToTerraform, true)(struct!.items),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
+    items: cdktn.listMapper(podSpecVolumeProjectedSourcesSecretItemsToTerraform, true)(struct!.items),
   }
 }
 
 
-export function podSpecVolumeProjectedSourcesSecretToHclTerraform(struct?: PodSpecVolumeProjectedSourcesSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesSecretToHclTerraform(struct?: PodSpecVolumeProjectedSourcesSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     items: {
-      value: cdktf.listMapperHcl(podSpecVolumeProjectedSourcesSecretItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(podSpecVolumeProjectedSourcesSecretItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeProjectedSourcesSecretItemsList",
@@ -13676,9 +13676,9 @@ export function podSpecVolumeProjectedSourcesSecretToHclTerraform(struct?: PodSp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedSourcesSecretOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedSourcesSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13686,11 +13686,11 @@ export class PodSpecVolumeProjectedSourcesSecretOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeProjectedSourcesSecret | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeProjectedSourcesSecret | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13711,7 +13711,7 @@ export class PodSpecVolumeProjectedSourcesSecretOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeProjectedSourcesSecret | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeProjectedSourcesSecret | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13719,7 +13719,7 @@ export class PodSpecVolumeProjectedSourcesSecretOutputReference extends cdktf.Co
       this._optional = undefined;
       this._items.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13749,11 +13749,11 @@ export class PodSpecVolumeProjectedSourcesSecretOutputReference extends cdktf.Co
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -13769,7 +13769,7 @@ export class PodSpecVolumeProjectedSourcesSecretOutputReference extends cdktf.Co
   public get items() {
     return this._items;
   }
-  public putItems(value: PodSpecVolumeProjectedSourcesSecretItems[] | cdktf.IResolvable) {
+  public putItems(value: PodSpecVolumeProjectedSourcesSecretItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -13781,15 +13781,15 @@ export class PodSpecVolumeProjectedSourcesSecretOutputReference extends cdktf.Co
   }
 }
 
-export class PodSpecVolumeProjectedSourcesSecretList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeProjectedSourcesSecret[] | cdktf.IResolvable
+export class PodSpecVolumeProjectedSourcesSecretList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeProjectedSourcesSecret[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13822,38 +13822,38 @@ export interface PodSpecVolumeProjectedSourcesServiceAccountToken {
 }
 
 export function podSpecVolumeProjectedSourcesServiceAccountTokenToTerraform(struct?: PodSpecVolumeProjectedSourcesServiceAccountTokenOutputReference | PodSpecVolumeProjectedSourcesServiceAccountToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audience: cdktf.stringToTerraform(struct!.audience),
-    expiration_seconds: cdktf.numberToTerraform(struct!.expirationSeconds),
-    path: cdktf.stringToTerraform(struct!.path),
+    audience: cdktn.stringToTerraform(struct!.audience),
+    expiration_seconds: cdktn.numberToTerraform(struct!.expirationSeconds),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function podSpecVolumeProjectedSourcesServiceAccountTokenToHclTerraform(struct?: PodSpecVolumeProjectedSourcesServiceAccountTokenOutputReference | PodSpecVolumeProjectedSourcesServiceAccountToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audience: {
-      value: cdktf.stringToHclTerraform(struct!.audience),
+      value: cdktn.stringToHclTerraform(struct!.audience),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expiration_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.expirationSeconds),
+      value: cdktn.numberToHclTerraform(struct!.expirationSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13864,14 +13864,14 @@ export function podSpecVolumeProjectedSourcesServiceAccountTokenToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedSourcesServiceAccountTokenOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedSourcesServiceAccountTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13959,7 +13959,7 @@ export interface PodSpecVolumeProjectedSources {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#config_map Pod#config_map}
   */
-  readonly configMap?: PodSpecVolumeProjectedSourcesConfigMap[] | cdktf.IResolvable;
+  readonly configMap?: PodSpecVolumeProjectedSourcesConfigMap[] | cdktn.IResolvable;
   /**
   * downward_api block
   *
@@ -13971,7 +13971,7 @@ export interface PodSpecVolumeProjectedSources {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#secret Pod#secret}
   */
-  readonly secret?: PodSpecVolumeProjectedSourcesSecret[] | cdktf.IResolvable;
+  readonly secret?: PodSpecVolumeProjectedSourcesSecret[] | cdktn.IResolvable;
   /**
   * service_account_token block
   *
@@ -13980,28 +13980,28 @@ export interface PodSpecVolumeProjectedSources {
   readonly serviceAccountToken?: PodSpecVolumeProjectedSourcesServiceAccountToken;
 }
 
-export function podSpecVolumeProjectedSourcesToTerraform(struct?: PodSpecVolumeProjectedSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesToTerraform(struct?: PodSpecVolumeProjectedSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    config_map: cdktf.listMapper(podSpecVolumeProjectedSourcesConfigMapToTerraform, true)(struct!.configMap),
+    config_map: cdktn.listMapper(podSpecVolumeProjectedSourcesConfigMapToTerraform, true)(struct!.configMap),
     downward_api: podSpecVolumeProjectedSourcesDownwardApiToTerraform(struct!.downwardApi),
-    secret: cdktf.listMapper(podSpecVolumeProjectedSourcesSecretToTerraform, true)(struct!.secret),
+    secret: cdktn.listMapper(podSpecVolumeProjectedSourcesSecretToTerraform, true)(struct!.secret),
     service_account_token: podSpecVolumeProjectedSourcesServiceAccountTokenToTerraform(struct!.serviceAccountToken),
   }
 }
 
 
-export function podSpecVolumeProjectedSourcesToHclTerraform(struct?: PodSpecVolumeProjectedSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedSourcesToHclTerraform(struct?: PodSpecVolumeProjectedSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     config_map: {
-      value: cdktf.listMapperHcl(podSpecVolumeProjectedSourcesConfigMapToHclTerraform, true)(struct!.configMap),
+      value: cdktn.listMapperHcl(podSpecVolumeProjectedSourcesConfigMapToHclTerraform, true)(struct!.configMap),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeProjectedSourcesConfigMapList",
@@ -14013,7 +14013,7 @@ export function podSpecVolumeProjectedSourcesToHclTerraform(struct?: PodSpecVolu
       storageClassType: "PodSpecVolumeProjectedSourcesDownwardApiList",
     },
     secret: {
-      value: cdktf.listMapperHcl(podSpecVolumeProjectedSourcesSecretToHclTerraform, true)(struct!.secret),
+      value: cdktn.listMapperHcl(podSpecVolumeProjectedSourcesSecretToHclTerraform, true)(struct!.secret),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeProjectedSourcesSecretList",
@@ -14030,9 +14030,9 @@ export function podSpecVolumeProjectedSourcesToHclTerraform(struct?: PodSpecVolu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedSourcesOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14040,11 +14040,11 @@ export class PodSpecVolumeProjectedSourcesOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeProjectedSources | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeProjectedSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14069,7 +14069,7 @@ export class PodSpecVolumeProjectedSourcesOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeProjectedSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeProjectedSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14078,7 +14078,7 @@ export class PodSpecVolumeProjectedSourcesOutputReference extends cdktf.ComplexO
       this._secret.internalValue = undefined;
       this._serviceAccountToken.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14097,7 +14097,7 @@ export class PodSpecVolumeProjectedSourcesOutputReference extends cdktf.ComplexO
   public get configMap() {
     return this._configMap;
   }
-  public putConfigMap(value: PodSpecVolumeProjectedSourcesConfigMap[] | cdktf.IResolvable) {
+  public putConfigMap(value: PodSpecVolumeProjectedSourcesConfigMap[] | cdktn.IResolvable) {
     this._configMap.internalValue = value;
   }
   public resetConfigMap() {
@@ -14129,7 +14129,7 @@ export class PodSpecVolumeProjectedSourcesOutputReference extends cdktf.ComplexO
   public get secret() {
     return this._secret;
   }
-  public putSecret(value: PodSpecVolumeProjectedSourcesSecret[] | cdktf.IResolvable) {
+  public putSecret(value: PodSpecVolumeProjectedSourcesSecret[] | cdktn.IResolvable) {
     this._secret.internalValue = value;
   }
   public resetSecret() {
@@ -14157,15 +14157,15 @@ export class PodSpecVolumeProjectedSourcesOutputReference extends cdktf.ComplexO
   }
 }
 
-export class PodSpecVolumeProjectedSourcesList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeProjectedSources[] | cdktf.IResolvable
+export class PodSpecVolumeProjectedSourcesList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeProjectedSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14188,35 +14188,35 @@ export interface PodSpecVolumeProjected {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#sources Pod#sources}
   */
-  readonly sources: PodSpecVolumeProjectedSources[] | cdktf.IResolvable;
+  readonly sources: PodSpecVolumeProjectedSources[] | cdktn.IResolvable;
 }
 
-export function podSpecVolumeProjectedToTerraform(struct?: PodSpecVolumeProjected | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedToTerraform(struct?: PodSpecVolumeProjected | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_mode: cdktf.stringToTerraform(struct!.defaultMode),
-    sources: cdktf.listMapper(podSpecVolumeProjectedSourcesToTerraform, true)(struct!.sources),
+    default_mode: cdktn.stringToTerraform(struct!.defaultMode),
+    sources: cdktn.listMapper(podSpecVolumeProjectedSourcesToTerraform, true)(struct!.sources),
   }
 }
 
 
-export function podSpecVolumeProjectedToHclTerraform(struct?: PodSpecVolumeProjected | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeProjectedToHclTerraform(struct?: PodSpecVolumeProjected | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_mode: {
-      value: cdktf.stringToHclTerraform(struct!.defaultMode),
+      value: cdktn.stringToHclTerraform(struct!.defaultMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(podSpecVolumeProjectedSourcesToHclTerraform, true)(struct!.sources),
+      value: cdktn.listMapperHcl(podSpecVolumeProjectedSourcesToHclTerraform, true)(struct!.sources),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeProjectedSourcesList",
@@ -14227,9 +14227,9 @@ export function podSpecVolumeProjectedToHclTerraform(struct?: PodSpecVolumeProje
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeProjectedOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeProjectedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14237,11 +14237,11 @@ export class PodSpecVolumeProjectedOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeProjected | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeProjected | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14258,14 +14258,14 @@ export class PodSpecVolumeProjectedOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeProjected | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeProjected | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._defaultMode = undefined;
       this._sources.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14298,7 +14298,7 @@ export class PodSpecVolumeProjectedOutputReference extends cdktf.ComplexObject {
   public get sources() {
     return this._sources;
   }
-  public putSources(value: PodSpecVolumeProjectedSources[] | cdktf.IResolvable) {
+  public putSources(value: PodSpecVolumeProjectedSources[] | cdktn.IResolvable) {
     this._sources.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -14307,15 +14307,15 @@ export class PodSpecVolumeProjectedOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class PodSpecVolumeProjectedList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeProjected[] | cdktf.IResolvable
+export class PodSpecVolumeProjectedList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeProjected[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14338,7 +14338,7 @@ export interface PodSpecVolumeQuobyte {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes
   *
@@ -14360,52 +14360,52 @@ export interface PodSpecVolumeQuobyte {
 }
 
 export function podSpecVolumeQuobyteToTerraform(struct?: PodSpecVolumeQuobyteOutputReference | PodSpecVolumeQuobyte): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group: cdktf.stringToTerraform(struct!.group),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    registry: cdktf.stringToTerraform(struct!.registry),
-    user: cdktf.stringToTerraform(struct!.user),
-    volume: cdktf.stringToTerraform(struct!.volume),
+    group: cdktn.stringToTerraform(struct!.group),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    registry: cdktn.stringToTerraform(struct!.registry),
+    user: cdktn.stringToTerraform(struct!.user),
+    volume: cdktn.stringToTerraform(struct!.volume),
   }
 }
 
 
 export function podSpecVolumeQuobyteToHclTerraform(struct?: PodSpecVolumeQuobyteOutputReference | PodSpecVolumeQuobyte): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group: {
-      value: cdktf.stringToHclTerraform(struct!.group),
+      value: cdktn.stringToHclTerraform(struct!.group),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     registry: {
-      value: cdktf.stringToHclTerraform(struct!.registry),
+      value: cdktn.stringToHclTerraform(struct!.registry),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume: {
-      value: cdktf.stringToHclTerraform(struct!.volume),
+      value: cdktn.stringToHclTerraform(struct!.volume),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14416,14 +14416,14 @@ export function podSpecVolumeQuobyteToHclTerraform(struct?: PodSpecVolumeQuobyte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeQuobyteOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeQuobyteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14489,11 +14489,11 @@ export class PodSpecVolumeQuobyteOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -14562,31 +14562,31 @@ export interface PodSpecVolumeRbdSecretRef {
 }
 
 export function podSpecVolumeRbdSecretRefToTerraform(struct?: PodSpecVolumeRbdSecretRefOutputReference | PodSpecVolumeRbdSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function podSpecVolumeRbdSecretRefToHclTerraform(struct?: PodSpecVolumeRbdSecretRefOutputReference | PodSpecVolumeRbdSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14597,14 +14597,14 @@ export function podSpecVolumeRbdSecretRefToHclTerraform(struct?: PodSpecVolumeRb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeRbdSecretRefOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeRbdSecretRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14709,7 +14709,7 @@ export interface PodSpecVolumeRbd {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#read_only Pod#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * secret_ref block
   *
@@ -14719,67 +14719,67 @@ export interface PodSpecVolumeRbd {
 }
 
 export function podSpecVolumeRbdToTerraform(struct?: PodSpecVolumeRbdOutputReference | PodSpecVolumeRbd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ceph_monitors: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cephMonitors),
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    keyring: cdktf.stringToTerraform(struct!.keyring),
-    rados_user: cdktf.stringToTerraform(struct!.radosUser),
-    rbd_image: cdktf.stringToTerraform(struct!.rbdImage),
-    rbd_pool: cdktf.stringToTerraform(struct!.rbdPool),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    ceph_monitors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cephMonitors),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    keyring: cdktn.stringToTerraform(struct!.keyring),
+    rados_user: cdktn.stringToTerraform(struct!.radosUser),
+    rbd_image: cdktn.stringToTerraform(struct!.rbdImage),
+    rbd_pool: cdktn.stringToTerraform(struct!.rbdPool),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
     secret_ref: podSpecVolumeRbdSecretRefToTerraform(struct!.secretRef),
   }
 }
 
 
 export function podSpecVolumeRbdToHclTerraform(struct?: PodSpecVolumeRbdOutputReference | PodSpecVolumeRbd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ceph_monitors: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cephMonitors),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cephMonitors),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     keyring: {
-      value: cdktf.stringToHclTerraform(struct!.keyring),
+      value: cdktn.stringToHclTerraform(struct!.keyring),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rados_user: {
-      value: cdktf.stringToHclTerraform(struct!.radosUser),
+      value: cdktn.stringToHclTerraform(struct!.radosUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rbd_image: {
-      value: cdktf.stringToHclTerraform(struct!.rbdImage),
+      value: cdktn.stringToHclTerraform(struct!.rbdImage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rbd_pool: {
-      value: cdktf.stringToHclTerraform(struct!.rbdPool),
+      value: cdktn.stringToHclTerraform(struct!.rbdPool),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -14796,14 +14796,14 @@ export function podSpecVolumeRbdToHclTerraform(struct?: PodSpecVolumeRbdOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeRbdOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeRbdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14873,7 +14873,7 @@ export class PodSpecVolumeRbdOutputReference extends cdktf.ComplexObject {
   // ceph_monitors - computed: false, optional: false, required: true
   private _cephMonitors?: string[]; 
   public get cephMonitors() {
-    return cdktf.Fn.tolist(this.getListAttribute('ceph_monitors'));
+    return cdktn.Fn.tolist(this.getListAttribute('ceph_monitors'));
   }
   public set cephMonitors(value: string[]) {
     this._cephMonitors = value;
@@ -14961,11 +14961,11 @@ export class PodSpecVolumeRbdOutputReference extends cdktf.ComplexObject {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -15013,39 +15013,39 @@ export interface PodSpecVolumeSecretItems {
   readonly path?: string;
 }
 
-export function podSpecVolumeSecretItemsToTerraform(struct?: PodSpecVolumeSecretItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeSecretItemsToTerraform(struct?: PodSpecVolumeSecretItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    key: cdktn.stringToTerraform(struct!.key),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function podSpecVolumeSecretItemsToHclTerraform(struct?: PodSpecVolumeSecretItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeSecretItemsToHclTerraform(struct?: PodSpecVolumeSecretItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15056,9 +15056,9 @@ export function podSpecVolumeSecretItemsToHclTerraform(struct?: PodSpecVolumeSec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeSecretItemsOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeSecretItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15066,11 +15066,11 @@ export class PodSpecVolumeSecretItemsOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolumeSecretItems | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolumeSecretItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15091,7 +15091,7 @@ export class PodSpecVolumeSecretItemsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolumeSecretItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolumeSecretItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -15099,7 +15099,7 @@ export class PodSpecVolumeSecretItemsOutputReference extends cdktf.ComplexObject
       this._mode = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -15161,15 +15161,15 @@ export class PodSpecVolumeSecretItemsOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class PodSpecVolumeSecretItemsList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolumeSecretItems[] | cdktf.IResolvable
+export class PodSpecVolumeSecretItemsList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolumeSecretItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15192,7 +15192,7 @@ export interface PodSpecVolumeSecret {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#optional Pod#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
   /**
   * Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets
   *
@@ -15204,49 +15204,49 @@ export interface PodSpecVolumeSecret {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#items Pod#items}
   */
-  readonly items?: PodSpecVolumeSecretItems[] | cdktf.IResolvable;
+  readonly items?: PodSpecVolumeSecretItems[] | cdktn.IResolvable;
 }
 
 export function podSpecVolumeSecretToTerraform(struct?: PodSpecVolumeSecretOutputReference | PodSpecVolumeSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_mode: cdktf.stringToTerraform(struct!.defaultMode),
-    optional: cdktf.booleanToTerraform(struct!.optional),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
-    items: cdktf.listMapper(podSpecVolumeSecretItemsToTerraform, true)(struct!.items),
+    default_mode: cdktn.stringToTerraform(struct!.defaultMode),
+    optional: cdktn.booleanToTerraform(struct!.optional),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
+    items: cdktn.listMapper(podSpecVolumeSecretItemsToTerraform, true)(struct!.items),
   }
 }
 
 
 export function podSpecVolumeSecretToHclTerraform(struct?: PodSpecVolumeSecretOutputReference | PodSpecVolumeSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_mode: {
-      value: cdktf.stringToHclTerraform(struct!.defaultMode),
+      value: cdktn.stringToHclTerraform(struct!.defaultMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(podSpecVolumeSecretItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(podSpecVolumeSecretItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeSecretItemsList",
@@ -15257,14 +15257,14 @@ export function podSpecVolumeSecretToHclTerraform(struct?: PodSpecVolumeSecretOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeSecretOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15324,11 +15324,11 @@ export class PodSpecVolumeSecretOutputReference extends cdktf.ComplexObject {
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -15360,7 +15360,7 @@ export class PodSpecVolumeSecretOutputReference extends cdktf.ComplexObject {
   public get items() {
     return this._items;
   }
-  public putItems(value: PodSpecVolumeSecretItems[] | cdktf.IResolvable) {
+  public putItems(value: PodSpecVolumeSecretItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -15387,31 +15387,31 @@ export interface PodSpecVolumeVsphereVolume {
 }
 
 export function podSpecVolumeVsphereVolumeToTerraform(struct?: PodSpecVolumeVsphereVolumeOutputReference | PodSpecVolumeVsphereVolume): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    volume_path: cdktf.stringToTerraform(struct!.volumePath),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    volume_path: cdktn.stringToTerraform(struct!.volumePath),
   }
 }
 
 
 export function podSpecVolumeVsphereVolumeToHclTerraform(struct?: PodSpecVolumeVsphereVolumeOutputReference | PodSpecVolumeVsphereVolume): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_path: {
-      value: cdktf.stringToHclTerraform(struct!.volumePath),
+      value: cdktn.stringToHclTerraform(struct!.volumePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15422,14 +15422,14 @@ export function podSpecVolumeVsphereVolumeToHclTerraform(struct?: PodSpecVolumeV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeVsphereVolumeOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeVsphereVolumeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15633,7 +15633,7 @@ export interface PodSpecVolume {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#projected Pod#projected}
   */
-  readonly projected?: PodSpecVolumeProjected[] | cdktf.IResolvable;
+  readonly projected?: PodSpecVolumeProjected[] | cdktn.IResolvable;
   /**
   * quobyte block
   *
@@ -15660,13 +15660,13 @@ export interface PodSpecVolume {
   readonly vsphereVolume?: PodSpecVolumeVsphereVolume;
 }
 
-export function podSpecVolumeToTerraform(struct?: PodSpecVolume | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeToTerraform(struct?: PodSpecVolume | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
     aws_elastic_block_store: podSpecVolumeAwsElasticBlockStoreToTerraform(struct!.awsElasticBlockStore),
     azure_disk: podSpecVolumeAzureDiskToTerraform(struct!.azureDisk),
     azure_file: podSpecVolumeAzureFileToTerraform(struct!.azureFile),
@@ -15689,7 +15689,7 @@ export function podSpecVolumeToTerraform(struct?: PodSpecVolume | cdktf.IResolva
     nfs: podSpecVolumeNfsToTerraform(struct!.nfs),
     persistent_volume_claim: podSpecVolumePersistentVolumeClaimToTerraform(struct!.persistentVolumeClaim),
     photon_persistent_disk: podSpecVolumePhotonPersistentDiskToTerraform(struct!.photonPersistentDisk),
-    projected: cdktf.listMapper(podSpecVolumeProjectedToTerraform, true)(struct!.projected),
+    projected: cdktn.listMapper(podSpecVolumeProjectedToTerraform, true)(struct!.projected),
     quobyte: podSpecVolumeQuobyteToTerraform(struct!.quobyte),
     rbd: podSpecVolumeRbdToTerraform(struct!.rbd),
     secret: podSpecVolumeSecretToTerraform(struct!.secret),
@@ -15698,14 +15698,14 @@ export function podSpecVolumeToTerraform(struct?: PodSpecVolume | cdktf.IResolva
 }
 
 
-export function podSpecVolumeToHclTerraform(struct?: PodSpecVolume | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podSpecVolumeToHclTerraform(struct?: PodSpecVolume | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15843,7 +15843,7 @@ export function podSpecVolumeToHclTerraform(struct?: PodSpecVolume | cdktf.IReso
       storageClassType: "PodSpecVolumePhotonPersistentDiskList",
     },
     projected: {
-      value: cdktf.listMapperHcl(podSpecVolumeProjectedToHclTerraform, true)(struct!.projected),
+      value: cdktn.listMapperHcl(podSpecVolumeProjectedToHclTerraform, true)(struct!.projected),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeProjectedList",
@@ -15878,9 +15878,9 @@ export function podSpecVolumeToHclTerraform(struct?: PodSpecVolume | cdktf.IReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecVolumeOutputReference extends cdktf.ComplexObject {
+export class PodSpecVolumeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15888,11 +15888,11 @@ export class PodSpecVolumeOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodSpecVolume | cdktf.IResolvable | undefined {
+  public get internalValue(): PodSpecVolume | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -16013,7 +16013,7 @@ export class PodSpecVolumeOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodSpecVolume | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodSpecVolume | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -16046,7 +16046,7 @@ export class PodSpecVolumeOutputReference extends cdktf.ComplexObject {
       this._secret.internalValue = undefined;
       this._vsphereVolume.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -16457,7 +16457,7 @@ export class PodSpecVolumeOutputReference extends cdktf.ComplexObject {
   public get projected() {
     return this._projected;
   }
-  public putProjected(value: PodSpecVolumeProjected[] | cdktf.IResolvable) {
+  public putProjected(value: PodSpecVolumeProjected[] | cdktn.IResolvable) {
     this._projected.internalValue = value;
   }
   public resetProjected() {
@@ -16533,15 +16533,15 @@ export class PodSpecVolumeOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class PodSpecVolumeList extends cdktf.ComplexList {
-  public internalValue? : PodSpecVolume[] | cdktf.IResolvable
+export class PodSpecVolumeList extends cdktn.ComplexList {
+  public internalValue? : PodSpecVolume[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -16564,7 +16564,7 @@ export interface PodSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#automount_service_account_token Pod#automount_service_account_token}
   */
-  readonly automountServiceAccountToken?: boolean | cdktf.IResolvable;
+  readonly automountServiceAccountToken?: boolean | cdktn.IResolvable;
   /**
   * Set DNS policy for containers within the pod. Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
   *
@@ -16576,25 +16576,25 @@ export interface PodSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#enable_service_links Pod#enable_service_links}
   */
-  readonly enableServiceLinks?: boolean | cdktf.IResolvable;
+  readonly enableServiceLinks?: boolean | cdktn.IResolvable;
   /**
   * Use the host's ipc namespace. Optional: Defaults to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#host_ipc Pod#host_ipc}
   */
-  readonly hostIpc?: boolean | cdktf.IResolvable;
+  readonly hostIpc?: boolean | cdktn.IResolvable;
   /**
   * Host networking requested for this pod. Use the host's network namespace. If this option is set, the ports that will be used must be specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#host_network Pod#host_network}
   */
-  readonly hostNetwork?: boolean | cdktf.IResolvable;
+  readonly hostNetwork?: boolean | cdktn.IResolvable;
   /**
   * Use the host's pid namespace.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#host_pid Pod#host_pid}
   */
-  readonly hostPid?: boolean | cdktf.IResolvable;
+  readonly hostPid?: boolean | cdktn.IResolvable;
   /**
   * Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
   *
@@ -16648,7 +16648,7 @@ export interface PodSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#share_process_namespace Pod#share_process_namespace}
   */
-  readonly shareProcessNamespace?: boolean | cdktf.IResolvable;
+  readonly shareProcessNamespace?: boolean | cdktn.IResolvable;
   /**
   * If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
   *
@@ -16672,7 +16672,7 @@ export interface PodSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#container Pod#container}
   */
-  readonly container?: PodSpecContainer[] | cdktf.IResolvable;
+  readonly container?: PodSpecContainer[] | cdktn.IResolvable;
   /**
   * dns_config block
   *
@@ -16684,19 +16684,19 @@ export interface PodSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#host_aliases Pod#host_aliases}
   */
-  readonly hostAliases?: PodSpecHostAliases[] | cdktf.IResolvable;
+  readonly hostAliases?: PodSpecHostAliases[] | cdktn.IResolvable;
   /**
   * image_pull_secrets block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#image_pull_secrets Pod#image_pull_secrets}
   */
-  readonly imagePullSecrets?: PodSpecImagePullSecrets[] | cdktf.IResolvable;
+  readonly imagePullSecrets?: PodSpecImagePullSecrets[] | cdktn.IResolvable;
   /**
   * init_container block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#init_container Pod#init_container}
   */
-  readonly initContainer?: PodSpecInitContainer[] | cdktf.IResolvable;
+  readonly initContainer?: PodSpecInitContainer[] | cdktn.IResolvable;
   /**
   * os block
   *
@@ -16708,7 +16708,7 @@ export interface PodSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#readiness_gate Pod#readiness_gate}
   */
-  readonly readinessGate?: PodSpecReadinessGate[] | cdktf.IResolvable;
+  readonly readinessGate?: PodSpecReadinessGate[] | cdktn.IResolvable;
   /**
   * security_context block
   *
@@ -16720,171 +16720,171 @@ export interface PodSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#toleration Pod#toleration}
   */
-  readonly toleration?: PodSpecToleration[] | cdktf.IResolvable;
+  readonly toleration?: PodSpecToleration[] | cdktn.IResolvable;
   /**
   * topology_spread_constraint block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#topology_spread_constraint Pod#topology_spread_constraint}
   */
-  readonly topologySpreadConstraint?: PodSpecTopologySpreadConstraint[] | cdktf.IResolvable;
+  readonly topologySpreadConstraint?: PodSpecTopologySpreadConstraint[] | cdktn.IResolvable;
   /**
   * volume block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod#volume Pod#volume}
   */
-  readonly volume?: PodSpecVolume[] | cdktf.IResolvable;
+  readonly volume?: PodSpecVolume[] | cdktn.IResolvable;
 }
 
 export function podSpecToTerraform(struct?: PodSpecOutputReference | PodSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_deadline_seconds: cdktf.numberToTerraform(struct!.activeDeadlineSeconds),
-    automount_service_account_token: cdktf.booleanToTerraform(struct!.automountServiceAccountToken),
-    dns_policy: cdktf.stringToTerraform(struct!.dnsPolicy),
-    enable_service_links: cdktf.booleanToTerraform(struct!.enableServiceLinks),
-    host_ipc: cdktf.booleanToTerraform(struct!.hostIpc),
-    host_network: cdktf.booleanToTerraform(struct!.hostNetwork),
-    host_pid: cdktf.booleanToTerraform(struct!.hostPid),
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    node_name: cdktf.stringToTerraform(struct!.nodeName),
-    node_selector: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.nodeSelector),
-    priority_class_name: cdktf.stringToTerraform(struct!.priorityClassName),
-    restart_policy: cdktf.stringToTerraform(struct!.restartPolicy),
-    runtime_class_name: cdktf.stringToTerraform(struct!.runtimeClassName),
-    scheduler_name: cdktf.stringToTerraform(struct!.schedulerName),
-    service_account_name: cdktf.stringToTerraform(struct!.serviceAccountName),
-    share_process_namespace: cdktf.booleanToTerraform(struct!.shareProcessNamespace),
-    subdomain: cdktf.stringToTerraform(struct!.subdomain),
-    termination_grace_period_seconds: cdktf.numberToTerraform(struct!.terminationGracePeriodSeconds),
+    active_deadline_seconds: cdktn.numberToTerraform(struct!.activeDeadlineSeconds),
+    automount_service_account_token: cdktn.booleanToTerraform(struct!.automountServiceAccountToken),
+    dns_policy: cdktn.stringToTerraform(struct!.dnsPolicy),
+    enable_service_links: cdktn.booleanToTerraform(struct!.enableServiceLinks),
+    host_ipc: cdktn.booleanToTerraform(struct!.hostIpc),
+    host_network: cdktn.booleanToTerraform(struct!.hostNetwork),
+    host_pid: cdktn.booleanToTerraform(struct!.hostPid),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    node_name: cdktn.stringToTerraform(struct!.nodeName),
+    node_selector: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.nodeSelector),
+    priority_class_name: cdktn.stringToTerraform(struct!.priorityClassName),
+    restart_policy: cdktn.stringToTerraform(struct!.restartPolicy),
+    runtime_class_name: cdktn.stringToTerraform(struct!.runtimeClassName),
+    scheduler_name: cdktn.stringToTerraform(struct!.schedulerName),
+    service_account_name: cdktn.stringToTerraform(struct!.serviceAccountName),
+    share_process_namespace: cdktn.booleanToTerraform(struct!.shareProcessNamespace),
+    subdomain: cdktn.stringToTerraform(struct!.subdomain),
+    termination_grace_period_seconds: cdktn.numberToTerraform(struct!.terminationGracePeriodSeconds),
     affinity: podSpecAffinityToTerraform(struct!.affinity),
-    container: cdktf.listMapper(podSpecContainerToTerraform, true)(struct!.container),
+    container: cdktn.listMapper(podSpecContainerToTerraform, true)(struct!.container),
     dns_config: podSpecDnsConfigToTerraform(struct!.dnsConfig),
-    host_aliases: cdktf.listMapper(podSpecHostAliasesToTerraform, true)(struct!.hostAliases),
-    image_pull_secrets: cdktf.listMapper(podSpecImagePullSecretsToTerraform, true)(struct!.imagePullSecrets),
-    init_container: cdktf.listMapper(podSpecInitContainerToTerraform, true)(struct!.initContainer),
+    host_aliases: cdktn.listMapper(podSpecHostAliasesToTerraform, true)(struct!.hostAliases),
+    image_pull_secrets: cdktn.listMapper(podSpecImagePullSecretsToTerraform, true)(struct!.imagePullSecrets),
+    init_container: cdktn.listMapper(podSpecInitContainerToTerraform, true)(struct!.initContainer),
     os: podSpecOsToTerraform(struct!.os),
-    readiness_gate: cdktf.listMapper(podSpecReadinessGateToTerraform, true)(struct!.readinessGate),
+    readiness_gate: cdktn.listMapper(podSpecReadinessGateToTerraform, true)(struct!.readinessGate),
     security_context: podSpecSecurityContextToTerraform(struct!.securityContext),
-    toleration: cdktf.listMapper(podSpecTolerationToTerraform, true)(struct!.toleration),
-    topology_spread_constraint: cdktf.listMapper(podSpecTopologySpreadConstraintToTerraform, true)(struct!.topologySpreadConstraint),
-    volume: cdktf.listMapper(podSpecVolumeToTerraform, true)(struct!.volume),
+    toleration: cdktn.listMapper(podSpecTolerationToTerraform, true)(struct!.toleration),
+    topology_spread_constraint: cdktn.listMapper(podSpecTopologySpreadConstraintToTerraform, true)(struct!.topologySpreadConstraint),
+    volume: cdktn.listMapper(podSpecVolumeToTerraform, true)(struct!.volume),
   }
 }
 
 
 export function podSpecToHclTerraform(struct?: PodSpecOutputReference | PodSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     active_deadline_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.activeDeadlineSeconds),
+      value: cdktn.numberToHclTerraform(struct!.activeDeadlineSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     automount_service_account_token: {
-      value: cdktf.booleanToHclTerraform(struct!.automountServiceAccountToken),
+      value: cdktn.booleanToHclTerraform(struct!.automountServiceAccountToken),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dns_policy: {
-      value: cdktf.stringToHclTerraform(struct!.dnsPolicy),
+      value: cdktn.stringToHclTerraform(struct!.dnsPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_service_links: {
-      value: cdktf.booleanToHclTerraform(struct!.enableServiceLinks),
+      value: cdktn.booleanToHclTerraform(struct!.enableServiceLinks),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host_ipc: {
-      value: cdktf.booleanToHclTerraform(struct!.hostIpc),
+      value: cdktn.booleanToHclTerraform(struct!.hostIpc),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host_network: {
-      value: cdktf.booleanToHclTerraform(struct!.hostNetwork),
+      value: cdktn.booleanToHclTerraform(struct!.hostNetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host_pid: {
-      value: cdktf.booleanToHclTerraform(struct!.hostPid),
+      value: cdktn.booleanToHclTerraform(struct!.hostPid),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_name: {
-      value: cdktf.stringToHclTerraform(struct!.nodeName),
+      value: cdktn.stringToHclTerraform(struct!.nodeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_selector: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.nodeSelector),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.nodeSelector),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     priority_class_name: {
-      value: cdktf.stringToHclTerraform(struct!.priorityClassName),
+      value: cdktn.stringToHclTerraform(struct!.priorityClassName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     restart_policy: {
-      value: cdktf.stringToHclTerraform(struct!.restartPolicy),
+      value: cdktn.stringToHclTerraform(struct!.restartPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runtime_class_name: {
-      value: cdktf.stringToHclTerraform(struct!.runtimeClassName),
+      value: cdktn.stringToHclTerraform(struct!.runtimeClassName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheduler_name: {
-      value: cdktf.stringToHclTerraform(struct!.schedulerName),
+      value: cdktn.stringToHclTerraform(struct!.schedulerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountName),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_process_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.shareProcessNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.shareProcessNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subdomain: {
-      value: cdktf.stringToHclTerraform(struct!.subdomain),
+      value: cdktn.stringToHclTerraform(struct!.subdomain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     termination_grace_period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.terminationGracePeriodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.terminationGracePeriodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -16896,7 +16896,7 @@ export function podSpecToHclTerraform(struct?: PodSpecOutputReference | PodSpec)
       storageClassType: "PodSpecAffinityList",
     },
     container: {
-      value: cdktf.listMapperHcl(podSpecContainerToHclTerraform, true)(struct!.container),
+      value: cdktn.listMapperHcl(podSpecContainerToHclTerraform, true)(struct!.container),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecContainerList",
@@ -16908,19 +16908,19 @@ export function podSpecToHclTerraform(struct?: PodSpecOutputReference | PodSpec)
       storageClassType: "PodSpecDnsConfigList",
     },
     host_aliases: {
-      value: cdktf.listMapperHcl(podSpecHostAliasesToHclTerraform, true)(struct!.hostAliases),
+      value: cdktn.listMapperHcl(podSpecHostAliasesToHclTerraform, true)(struct!.hostAliases),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecHostAliasesList",
     },
     image_pull_secrets: {
-      value: cdktf.listMapperHcl(podSpecImagePullSecretsToHclTerraform, true)(struct!.imagePullSecrets),
+      value: cdktn.listMapperHcl(podSpecImagePullSecretsToHclTerraform, true)(struct!.imagePullSecrets),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecImagePullSecretsList",
     },
     init_container: {
-      value: cdktf.listMapperHcl(podSpecInitContainerToHclTerraform, true)(struct!.initContainer),
+      value: cdktn.listMapperHcl(podSpecInitContainerToHclTerraform, true)(struct!.initContainer),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecInitContainerList",
@@ -16932,7 +16932,7 @@ export function podSpecToHclTerraform(struct?: PodSpecOutputReference | PodSpec)
       storageClassType: "PodSpecOsList",
     },
     readiness_gate: {
-      value: cdktf.listMapperHcl(podSpecReadinessGateToHclTerraform, true)(struct!.readinessGate),
+      value: cdktn.listMapperHcl(podSpecReadinessGateToHclTerraform, true)(struct!.readinessGate),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecReadinessGateList",
@@ -16944,19 +16944,19 @@ export function podSpecToHclTerraform(struct?: PodSpecOutputReference | PodSpec)
       storageClassType: "PodSpecSecurityContextList",
     },
     toleration: {
-      value: cdktf.listMapperHcl(podSpecTolerationToHclTerraform, true)(struct!.toleration),
+      value: cdktn.listMapperHcl(podSpecTolerationToHclTerraform, true)(struct!.toleration),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecTolerationList",
     },
     topology_spread_constraint: {
-      value: cdktf.listMapperHcl(podSpecTopologySpreadConstraintToHclTerraform, true)(struct!.topologySpreadConstraint),
+      value: cdktn.listMapperHcl(podSpecTopologySpreadConstraintToHclTerraform, true)(struct!.topologySpreadConstraint),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecTopologySpreadConstraintList",
     },
     volume: {
-      value: cdktf.listMapperHcl(podSpecVolumeToHclTerraform, true)(struct!.volume),
+      value: cdktn.listMapperHcl(podSpecVolumeToHclTerraform, true)(struct!.volume),
       isBlock: true,
       type: "list",
       storageClassType: "PodSpecVolumeList",
@@ -16967,14 +16967,14 @@ export function podSpecToHclTerraform(struct?: PodSpecOutputReference | PodSpec)
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodSpecOutputReference extends cdktf.ComplexObject {
+export class PodSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17190,11 +17190,11 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // automount_service_account_token - computed: false, optional: true, required: false
-  private _automountServiceAccountToken?: boolean | cdktf.IResolvable; 
+  private _automountServiceAccountToken?: boolean | cdktn.IResolvable; 
   public get automountServiceAccountToken() {
     return this.getBooleanAttribute('automount_service_account_token');
   }
-  public set automountServiceAccountToken(value: boolean | cdktf.IResolvable) {
+  public set automountServiceAccountToken(value: boolean | cdktn.IResolvable) {
     this._automountServiceAccountToken = value;
   }
   public resetAutomountServiceAccountToken() {
@@ -17222,11 +17222,11 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_service_links - computed: false, optional: true, required: false
-  private _enableServiceLinks?: boolean | cdktf.IResolvable; 
+  private _enableServiceLinks?: boolean | cdktn.IResolvable; 
   public get enableServiceLinks() {
     return this.getBooleanAttribute('enable_service_links');
   }
-  public set enableServiceLinks(value: boolean | cdktf.IResolvable) {
+  public set enableServiceLinks(value: boolean | cdktn.IResolvable) {
     this._enableServiceLinks = value;
   }
   public resetEnableServiceLinks() {
@@ -17238,11 +17238,11 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // host_ipc - computed: false, optional: true, required: false
-  private _hostIpc?: boolean | cdktf.IResolvable; 
+  private _hostIpc?: boolean | cdktn.IResolvable; 
   public get hostIpc() {
     return this.getBooleanAttribute('host_ipc');
   }
-  public set hostIpc(value: boolean | cdktf.IResolvable) {
+  public set hostIpc(value: boolean | cdktn.IResolvable) {
     this._hostIpc = value;
   }
   public resetHostIpc() {
@@ -17254,11 +17254,11 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // host_network - computed: false, optional: true, required: false
-  private _hostNetwork?: boolean | cdktf.IResolvable; 
+  private _hostNetwork?: boolean | cdktn.IResolvable; 
   public get hostNetwork() {
     return this.getBooleanAttribute('host_network');
   }
-  public set hostNetwork(value: boolean | cdktf.IResolvable) {
+  public set hostNetwork(value: boolean | cdktn.IResolvable) {
     this._hostNetwork = value;
   }
   public resetHostNetwork() {
@@ -17270,11 +17270,11 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // host_pid - computed: false, optional: true, required: false
-  private _hostPid?: boolean | cdktf.IResolvable; 
+  private _hostPid?: boolean | cdktn.IResolvable; 
   public get hostPid() {
     return this.getBooleanAttribute('host_pid');
   }
-  public set hostPid(value: boolean | cdktf.IResolvable) {
+  public set hostPid(value: boolean | cdktn.IResolvable) {
     this._hostPid = value;
   }
   public resetHostPid() {
@@ -17414,11 +17414,11 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // share_process_namespace - computed: false, optional: true, required: false
-  private _shareProcessNamespace?: boolean | cdktf.IResolvable; 
+  private _shareProcessNamespace?: boolean | cdktn.IResolvable; 
   public get shareProcessNamespace() {
     return this.getBooleanAttribute('share_process_namespace');
   }
-  public set shareProcessNamespace(value: boolean | cdktf.IResolvable) {
+  public set shareProcessNamespace(value: boolean | cdktn.IResolvable) {
     this._shareProcessNamespace = value;
   }
   public resetShareProcessNamespace() {
@@ -17482,7 +17482,7 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   public get container() {
     return this._container;
   }
-  public putContainer(value: PodSpecContainer[] | cdktf.IResolvable) {
+  public putContainer(value: PodSpecContainer[] | cdktn.IResolvable) {
     this._container.internalValue = value;
   }
   public resetContainer() {
@@ -17514,7 +17514,7 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   public get hostAliases() {
     return this._hostAliases;
   }
-  public putHostAliases(value: PodSpecHostAliases[] | cdktf.IResolvable) {
+  public putHostAliases(value: PodSpecHostAliases[] | cdktn.IResolvable) {
     this._hostAliases.internalValue = value;
   }
   public resetHostAliases() {
@@ -17530,7 +17530,7 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   public get imagePullSecrets() {
     return this._imagePullSecrets;
   }
-  public putImagePullSecrets(value: PodSpecImagePullSecrets[] | cdktf.IResolvable) {
+  public putImagePullSecrets(value: PodSpecImagePullSecrets[] | cdktn.IResolvable) {
     this._imagePullSecrets.internalValue = value;
   }
   public resetImagePullSecrets() {
@@ -17546,7 +17546,7 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   public get initContainer() {
     return this._initContainer;
   }
-  public putInitContainer(value: PodSpecInitContainer[] | cdktf.IResolvable) {
+  public putInitContainer(value: PodSpecInitContainer[] | cdktn.IResolvable) {
     this._initContainer.internalValue = value;
   }
   public resetInitContainer() {
@@ -17578,7 +17578,7 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   public get readinessGate() {
     return this._readinessGate;
   }
-  public putReadinessGate(value: PodSpecReadinessGate[] | cdktf.IResolvable) {
+  public putReadinessGate(value: PodSpecReadinessGate[] | cdktn.IResolvable) {
     this._readinessGate.internalValue = value;
   }
   public resetReadinessGate() {
@@ -17610,7 +17610,7 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   public get toleration() {
     return this._toleration;
   }
-  public putToleration(value: PodSpecToleration[] | cdktf.IResolvable) {
+  public putToleration(value: PodSpecToleration[] | cdktn.IResolvable) {
     this._toleration.internalValue = value;
   }
   public resetToleration() {
@@ -17626,7 +17626,7 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   public get topologySpreadConstraint() {
     return this._topologySpreadConstraint;
   }
-  public putTopologySpreadConstraint(value: PodSpecTopologySpreadConstraint[] | cdktf.IResolvable) {
+  public putTopologySpreadConstraint(value: PodSpecTopologySpreadConstraint[] | cdktn.IResolvable) {
     this._topologySpreadConstraint.internalValue = value;
   }
   public resetTopologySpreadConstraint() {
@@ -17642,7 +17642,7 @@ export class PodSpecOutputReference extends cdktf.ComplexObject {
   public get volume() {
     return this._volume;
   }
-  public putVolume(value: PodSpecVolume[] | cdktf.IResolvable) {
+  public putVolume(value: PodSpecVolume[] | cdktn.IResolvable) {
     this._volume.internalValue = value;
   }
   public resetVolume() {
@@ -17664,32 +17664,32 @@ export interface PodTimeouts {
   readonly delete?: string;
 }
 
-export function podTimeoutsToTerraform(struct?: PodTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podTimeoutsToTerraform(struct?: PodTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function podTimeoutsToHclTerraform(struct?: PodTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podTimeoutsToHclTerraform(struct?: PodTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17700,19 +17700,19 @@ export function podTimeoutsToHclTerraform(struct?: PodTimeouts | cdktf.IResolvab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PodTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PodTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PodTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17729,14 +17729,14 @@ export class PodTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }

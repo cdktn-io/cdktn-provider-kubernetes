@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PersistentVolumeClaimV1Config extends cdktf.TerraformMetaArguments {
+export interface PersistentVolumeClaimV1Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim_v1#id PersistentVolumeClaimV1#id}
   *
@@ -24,7 +24,7 @@ export interface PersistentVolumeClaimV1Config extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim_v1#wait_until_bound PersistentVolumeClaimV1#wait_until_bound}
   */
-  readonly waitUntilBound?: boolean | cdktf.IResolvable;
+  readonly waitUntilBound?: boolean | cdktn.IResolvable;
   /**
   * metadata block
   *
@@ -78,52 +78,52 @@ export interface PersistentVolumeClaimV1Metadata {
 }
 
 export function persistentVolumeClaimV1MetadataToTerraform(struct?: PersistentVolumeClaimV1MetadataOutputReference | PersistentVolumeClaimV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function persistentVolumeClaimV1MetadataToHclTerraform(struct?: PersistentVolumeClaimV1MetadataOutputReference | PersistentVolumeClaimV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -134,14 +134,14 @@ export function persistentVolumeClaimV1MetadataToHclTerraform(struct?: Persisten
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PersistentVolumeClaimV1MetadataOutputReference extends cdktf.ComplexObject {
+export class PersistentVolumeClaimV1MetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -301,31 +301,31 @@ export interface PersistentVolumeClaimV1SpecResources {
 }
 
 export function persistentVolumeClaimV1SpecResourcesToTerraform(struct?: PersistentVolumeClaimV1SpecResourcesOutputReference | PersistentVolumeClaimV1SpecResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    limits: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.limits),
-    requests: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requests),
+    limits: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.limits),
+    requests: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.requests),
   }
 }
 
 
 export function persistentVolumeClaimV1SpecResourcesToHclTerraform(struct?: PersistentVolumeClaimV1SpecResourcesOutputReference | PersistentVolumeClaimV1SpecResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     limits: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.limits),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.limits),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     requests: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requests),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.requests),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -336,14 +336,14 @@ export function persistentVolumeClaimV1SpecResourcesToHclTerraform(struct?: Pers
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PersistentVolumeClaimV1SpecResourcesOutputReference extends cdktf.ComplexObject {
+export class PersistentVolumeClaimV1SpecResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -427,39 +427,39 @@ export interface PersistentVolumeClaimV1SpecSelectorMatchExpressions {
   readonly values?: string[];
 }
 
-export function persistentVolumeClaimV1SpecSelectorMatchExpressionsToTerraform(struct?: PersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function persistentVolumeClaimV1SpecSelectorMatchExpressionsToTerraform(struct?: PersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function persistentVolumeClaimV1SpecSelectorMatchExpressionsToHclTerraform(struct?: PersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function persistentVolumeClaimV1SpecSelectorMatchExpressionsToHclTerraform(struct?: PersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -470,9 +470,9 @@ export function persistentVolumeClaimV1SpecSelectorMatchExpressionsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PersistentVolumeClaimV1SpecSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class PersistentVolumeClaimV1SpecSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -480,11 +480,11 @@ export class PersistentVolumeClaimV1SpecSelectorMatchExpressionsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): PersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -505,7 +505,7 @@ export class PersistentVolumeClaimV1SpecSelectorMatchExpressionsOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -513,7 +513,7 @@ export class PersistentVolumeClaimV1SpecSelectorMatchExpressionsOutputReference 
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -561,7 +561,7 @@ export class PersistentVolumeClaimV1SpecSelectorMatchExpressionsOutputReference 
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -575,15 +575,15 @@ export class PersistentVolumeClaimV1SpecSelectorMatchExpressionsOutputReference 
   }
 }
 
-export class PersistentVolumeClaimV1SpecSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : PersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktf.IResolvable
+export class PersistentVolumeClaimV1SpecSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : PersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -606,35 +606,35 @@ export interface PersistentVolumeClaimV1SpecSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim_v1#match_expressions PersistentVolumeClaimV1#match_expressions}
   */
-  readonly matchExpressions?: PersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: PersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function persistentVolumeClaimV1SpecSelectorToTerraform(struct?: PersistentVolumeClaimV1SpecSelectorOutputReference | PersistentVolumeClaimV1SpecSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(persistentVolumeClaimV1SpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(persistentVolumeClaimV1SpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function persistentVolumeClaimV1SpecSelectorToHclTerraform(struct?: PersistentVolumeClaimV1SpecSelectorOutputReference | PersistentVolumeClaimV1SpecSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(persistentVolumeClaimV1SpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(persistentVolumeClaimV1SpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "PersistentVolumeClaimV1SpecSelectorMatchExpressionsList",
@@ -645,14 +645,14 @@ export function persistentVolumeClaimV1SpecSelectorToHclTerraform(struct?: Persi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PersistentVolumeClaimV1SpecSelectorOutputReference extends cdktf.ComplexObject {
+export class PersistentVolumeClaimV1SpecSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -704,7 +704,7 @@ export class PersistentVolumeClaimV1SpecSelectorOutputReference extends cdktf.Co
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: PersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: PersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -755,15 +755,15 @@ export interface PersistentVolumeClaimV1Spec {
 }
 
 export function persistentVolumeClaimV1SpecToTerraform(struct?: PersistentVolumeClaimV1SpecOutputReference | PersistentVolumeClaimV1Spec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_modes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accessModes),
-    storage_class_name: cdktf.stringToTerraform(struct!.storageClassName),
-    volume_mode: cdktf.stringToTerraform(struct!.volumeMode),
-    volume_name: cdktf.stringToTerraform(struct!.volumeName),
+    access_modes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.accessModes),
+    storage_class_name: cdktn.stringToTerraform(struct!.storageClassName),
+    volume_mode: cdktn.stringToTerraform(struct!.volumeMode),
+    volume_name: cdktn.stringToTerraform(struct!.volumeName),
     resources: persistentVolumeClaimV1SpecResourcesToTerraform(struct!.resources),
     selector: persistentVolumeClaimV1SpecSelectorToTerraform(struct!.selector),
   }
@@ -771,31 +771,31 @@ export function persistentVolumeClaimV1SpecToTerraform(struct?: PersistentVolume
 
 
 export function persistentVolumeClaimV1SpecToHclTerraform(struct?: PersistentVolumeClaimV1SpecOutputReference | PersistentVolumeClaimV1Spec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_modes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accessModes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.accessModes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     storage_class_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageClassName),
+      value: cdktn.stringToHclTerraform(struct!.storageClassName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_mode: {
-      value: cdktf.stringToHclTerraform(struct!.volumeMode),
+      value: cdktn.stringToHclTerraform(struct!.volumeMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_name: {
-      value: cdktf.stringToHclTerraform(struct!.volumeName),
+      value: cdktn.stringToHclTerraform(struct!.volumeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -818,14 +818,14 @@ export function persistentVolumeClaimV1SpecToHclTerraform(struct?: PersistentVol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PersistentVolumeClaimV1SpecOutputReference extends cdktf.ComplexObject {
+export class PersistentVolumeClaimV1SpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -883,7 +883,7 @@ export class PersistentVolumeClaimV1SpecOutputReference extends cdktf.ComplexObj
   // access_modes - computed: false, optional: false, required: true
   private _accessModes?: string[]; 
   public get accessModes() {
-    return cdktf.Fn.tolist(this.getListAttribute('access_modes'));
+    return cdktn.Fn.tolist(this.getListAttribute('access_modes'));
   }
   public set accessModes(value: string[]) {
     this._accessModes = value;
@@ -977,25 +977,25 @@ export interface PersistentVolumeClaimV1Timeouts {
   readonly create?: string;
 }
 
-export function persistentVolumeClaimV1TimeoutsToTerraform(struct?: PersistentVolumeClaimV1Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function persistentVolumeClaimV1TimeoutsToTerraform(struct?: PersistentVolumeClaimV1Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function persistentVolumeClaimV1TimeoutsToHclTerraform(struct?: PersistentVolumeClaimV1Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function persistentVolumeClaimV1TimeoutsToHclTerraform(struct?: PersistentVolumeClaimV1Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1006,19 +1006,19 @@ export function persistentVolumeClaimV1TimeoutsToHclTerraform(struct?: Persisten
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PersistentVolumeClaimV1TimeoutsOutputReference extends cdktf.ComplexObject {
+export class PersistentVolumeClaimV1TimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PersistentVolumeClaimV1Timeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PersistentVolumeClaimV1Timeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1031,13 +1031,13 @@ export class PersistentVolumeClaimV1TimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PersistentVolumeClaimV1Timeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PersistentVolumeClaimV1Timeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1068,7 +1068,7 @@ export class PersistentVolumeClaimV1TimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim_v1 kubernetes_persistent_volume_claim_v1}
 */
-export class PersistentVolumeClaimV1 extends cdktf.TerraformResource {
+export class PersistentVolumeClaimV1 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1079,14 +1079,14 @@ export class PersistentVolumeClaimV1 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PersistentVolumeClaimV1 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PersistentVolumeClaimV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PersistentVolumeClaimV1 to import
   * @param importFromId The id of the existing PersistentVolumeClaimV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PersistentVolumeClaimV1 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_persistent_volume_claim_v1", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_persistent_volume_claim_v1", importId: importFromId, provider });
       }
 
   // ===========
@@ -1144,11 +1144,11 @@ export class PersistentVolumeClaimV1 extends cdktf.TerraformResource {
   }
 
   // wait_until_bound - computed: false, optional: true, required: false
-  private _waitUntilBound?: boolean | cdktf.IResolvable; 
+  private _waitUntilBound?: boolean | cdktn.IResolvable; 
   public get waitUntilBound() {
     return this.getBooleanAttribute('wait_until_bound');
   }
-  public set waitUntilBound(value: boolean | cdktf.IResolvable) {
+  public set waitUntilBound(value: boolean | cdktn.IResolvable) {
     this._waitUntilBound = value;
   }
   public resetWaitUntilBound() {
@@ -1207,8 +1207,8 @@ export class PersistentVolumeClaimV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      wait_until_bound: cdktf.booleanToTerraform(this._waitUntilBound),
+      id: cdktn.stringToTerraform(this._id),
+      wait_until_bound: cdktn.booleanToTerraform(this._waitUntilBound),
       metadata: persistentVolumeClaimV1MetadataToTerraform(this._metadata.internalValue),
       spec: persistentVolumeClaimV1SpecToTerraform(this._spec.internalValue),
       timeouts: persistentVolumeClaimV1TimeoutsToTerraform(this._timeouts.internalValue),
@@ -1218,13 +1218,13 @@ export class PersistentVolumeClaimV1 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       wait_until_bound: {
-        value: cdktf.booleanToHclTerraform(this._waitUntilBound),
+        value: cdktn.booleanToHclTerraform(this._waitUntilBound),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

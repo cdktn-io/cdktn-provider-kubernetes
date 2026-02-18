@@ -19,8 +19,8 @@ cronJobTimeoutsToHclTerraform,
 CronJobTimeoutsOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface CronJobConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface CronJobConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job#id CronJob#id}
   *
@@ -51,7 +51,7 @@ export interface CronJobConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job kubernetes_cron_job}
 */
-export class CronJob extends cdktf.TerraformResource {
+export class CronJob extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -62,14 +62,14 @@ export class CronJob extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CronJob resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CronJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CronJob to import
   * @param importFromId The id of the existing CronJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CronJob to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_cron_job", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_cron_job", importId: importFromId, provider });
       }
 
   // ===========
@@ -173,7 +173,7 @@ export class CronJob extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: cronJobMetadataToTerraform(this._metadata.internalValue),
       spec: cronJobSpecToTerraform(this._spec.internalValue),
       timeouts: cronJobTimeoutsToTerraform(this._timeouts.internalValue),
@@ -183,7 +183,7 @@ export class CronJob extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

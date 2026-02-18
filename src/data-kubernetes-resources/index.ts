@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataKubernetesResourcesConfig extends cdktf.TerraformMetaArguments {
+export interface DataKubernetesResourcesConfig extends cdktn.TerraformMetaArguments {
   /**
   * The resource apiVersion.
   *
@@ -59,7 +59,7 @@ export interface DataKubernetesResourcesConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/resources kubernetes_resources}
 */
-export class DataKubernetesResources extends cdktf.TerraformDataSource {
+export class DataKubernetesResources extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -70,14 +70,14 @@ export class DataKubernetesResources extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataKubernetesResources resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataKubernetesResources resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataKubernetesResources to import
   * @param importFromId The id of the existing DataKubernetesResources that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/resources#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataKubernetesResources to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_resources", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_resources", importId: importFromId, provider });
       }
 
   // ===========
@@ -232,56 +232,56 @@ export class DataKubernetesResources extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_version: cdktf.stringToTerraform(this._apiVersion),
-      field_selector: cdktf.stringToTerraform(this._fieldSelector),
-      kind: cdktf.stringToTerraform(this._kind),
-      label_selector: cdktf.stringToTerraform(this._labelSelector),
-      limit: cdktf.numberToTerraform(this._limit),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      objects: cdktf.hashMapper(cdktf.anyToTerraform)(this._objects),
+      api_version: cdktn.stringToTerraform(this._apiVersion),
+      field_selector: cdktn.stringToTerraform(this._fieldSelector),
+      kind: cdktn.stringToTerraform(this._kind),
+      label_selector: cdktn.stringToTerraform(this._labelSelector),
+      limit: cdktn.numberToTerraform(this._limit),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      objects: cdktn.hashMapper(cdktn.anyToTerraform)(this._objects),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_version: {
-        value: cdktf.stringToHclTerraform(this._apiVersion),
+        value: cdktn.stringToHclTerraform(this._apiVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       field_selector: {
-        value: cdktf.stringToHclTerraform(this._fieldSelector),
+        value: cdktn.stringToHclTerraform(this._fieldSelector),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       label_selector: {
-        value: cdktf.stringToHclTerraform(this._labelSelector),
+        value: cdktn.stringToHclTerraform(this._labelSelector),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       limit: {
-        value: cdktf.numberToHclTerraform(this._limit),
+        value: cdktn.numberToHclTerraform(this._limit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       objects: {
-        value: cdktf.hashMapperHcl(cdktf.anyToHclTerraform)(this._objects),
+        value: cdktn.hashMapperHcl(cdktn.anyToHclTerraform)(this._objects),
         isBlock: false,
         type: "map",
         storageClassType: "anyMap",

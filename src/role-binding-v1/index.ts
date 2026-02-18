@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RoleBindingV1Config extends cdktf.TerraformMetaArguments {
+export interface RoleBindingV1Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/role_binding_v1#id RoleBindingV1#id}
   *
@@ -36,7 +36,7 @@ export interface RoleBindingV1Config extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/role_binding_v1#subject RoleBindingV1#subject}
   */
-  readonly subject: RoleBindingV1Subject[] | cdktf.IResolvable;
+  readonly subject: RoleBindingV1Subject[] | cdktn.IResolvable;
 }
 export interface RoleBindingV1Metadata {
   /**
@@ -72,52 +72,52 @@ export interface RoleBindingV1Metadata {
 }
 
 export function roleBindingV1MetadataToTerraform(struct?: RoleBindingV1MetadataOutputReference | RoleBindingV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function roleBindingV1MetadataToHclTerraform(struct?: RoleBindingV1MetadataOutputReference | RoleBindingV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -128,14 +128,14 @@ export function roleBindingV1MetadataToHclTerraform(struct?: RoleBindingV1Metada
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RoleBindingV1MetadataOutputReference extends cdktf.ComplexObject {
+export class RoleBindingV1MetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -301,38 +301,38 @@ export interface RoleBindingV1RoleRef {
 }
 
 export function roleBindingV1RoleRefToTerraform(struct?: RoleBindingV1RoleRefOutputReference | RoleBindingV1RoleRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_group: cdktf.stringToTerraform(struct!.apiGroup),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    name: cdktf.stringToTerraform(struct!.name),
+    api_group: cdktn.stringToTerraform(struct!.apiGroup),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function roleBindingV1RoleRefToHclTerraform(struct?: RoleBindingV1RoleRefOutputReference | RoleBindingV1RoleRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_group: {
-      value: cdktf.stringToHclTerraform(struct!.apiGroup),
+      value: cdktn.stringToHclTerraform(struct!.apiGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -343,14 +343,14 @@ export function roleBindingV1RoleRefToHclTerraform(struct?: RoleBindingV1RoleRef
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RoleBindingV1RoleRefOutputReference extends cdktf.ComplexObject {
+export class RoleBindingV1RoleRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -453,46 +453,46 @@ export interface RoleBindingV1Subject {
   readonly namespace?: string;
 }
 
-export function roleBindingV1SubjectToTerraform(struct?: RoleBindingV1Subject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function roleBindingV1SubjectToTerraform(struct?: RoleBindingV1Subject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_group: cdktf.stringToTerraform(struct!.apiGroup),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    api_group: cdktn.stringToTerraform(struct!.apiGroup),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
-export function roleBindingV1SubjectToHclTerraform(struct?: RoleBindingV1Subject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function roleBindingV1SubjectToHclTerraform(struct?: RoleBindingV1Subject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_group: {
-      value: cdktf.stringToHclTerraform(struct!.apiGroup),
+      value: cdktn.stringToHclTerraform(struct!.apiGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -503,9 +503,9 @@ export function roleBindingV1SubjectToHclTerraform(struct?: RoleBindingV1Subject
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RoleBindingV1SubjectOutputReference extends cdktf.ComplexObject {
+export class RoleBindingV1SubjectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -513,11 +513,11 @@ export class RoleBindingV1SubjectOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RoleBindingV1Subject | cdktf.IResolvable | undefined {
+  public get internalValue(): RoleBindingV1Subject | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -542,7 +542,7 @@ export class RoleBindingV1SubjectOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RoleBindingV1Subject | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RoleBindingV1Subject | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -551,7 +551,7 @@ export class RoleBindingV1SubjectOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._namespace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -624,15 +624,15 @@ export class RoleBindingV1SubjectOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class RoleBindingV1SubjectList extends cdktf.ComplexList {
-  public internalValue? : RoleBindingV1Subject[] | cdktf.IResolvable
+export class RoleBindingV1SubjectList extends cdktn.ComplexList {
+  public internalValue? : RoleBindingV1Subject[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -647,7 +647,7 @@ export class RoleBindingV1SubjectList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/role_binding_v1 kubernetes_role_binding_v1}
 */
-export class RoleBindingV1 extends cdktf.TerraformResource {
+export class RoleBindingV1 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -658,14 +658,14 @@ export class RoleBindingV1 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RoleBindingV1 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RoleBindingV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RoleBindingV1 to import
   * @param importFromId The id of the existing RoleBindingV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/role_binding_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RoleBindingV1 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_role_binding_v1", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_role_binding_v1", importId: importFromId, provider });
       }
 
   // ===========
@@ -752,7 +752,7 @@ export class RoleBindingV1 extends cdktf.TerraformResource {
   public get subject() {
     return this._subject;
   }
-  public putSubject(value: RoleBindingV1Subject[] | cdktf.IResolvable) {
+  public putSubject(value: RoleBindingV1Subject[] | cdktn.IResolvable) {
     this._subject.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -766,17 +766,17 @@ export class RoleBindingV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: roleBindingV1MetadataToTerraform(this._metadata.internalValue),
       role_ref: roleBindingV1RoleRefToTerraform(this._roleRef.internalValue),
-      subject: cdktf.listMapper(roleBindingV1SubjectToTerraform, true)(this._subject.internalValue),
+      subject: cdktn.listMapper(roleBindingV1SubjectToTerraform, true)(this._subject.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -794,7 +794,7 @@ export class RoleBindingV1 extends cdktf.TerraformResource {
         storageClassType: "RoleBindingV1RoleRefList",
       },
       subject: {
-        value: cdktf.listMapperHcl(roleBindingV1SubjectToHclTerraform, true)(this._subject.internalValue),
+        value: cdktn.listMapperHcl(roleBindingV1SubjectToHclTerraform, true)(this._subject.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RoleBindingV1SubjectList",

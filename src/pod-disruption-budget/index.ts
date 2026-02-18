@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PodDisruptionBudgetConfig extends cdktf.TerraformMetaArguments {
+export interface PodDisruptionBudgetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_disruption_budget#id PodDisruptionBudget#id}
   *
@@ -66,52 +66,52 @@ export interface PodDisruptionBudgetMetadata {
 }
 
 export function podDisruptionBudgetMetadataToTerraform(struct?: PodDisruptionBudgetMetadataOutputReference | PodDisruptionBudgetMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function podDisruptionBudgetMetadataToHclTerraform(struct?: PodDisruptionBudgetMetadataOutputReference | PodDisruptionBudgetMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,14 +122,14 @@ export function podDisruptionBudgetMetadataToHclTerraform(struct?: PodDisruption
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodDisruptionBudgetMetadataOutputReference extends cdktf.ComplexObject {
+export class PodDisruptionBudgetMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -294,39 +294,39 @@ export interface PodDisruptionBudgetSpecSelectorMatchExpressions {
   readonly values?: string[];
 }
 
-export function podDisruptionBudgetSpecSelectorMatchExpressionsToTerraform(struct?: PodDisruptionBudgetSpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podDisruptionBudgetSpecSelectorMatchExpressionsToTerraform(struct?: PodDisruptionBudgetSpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function podDisruptionBudgetSpecSelectorMatchExpressionsToHclTerraform(struct?: PodDisruptionBudgetSpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function podDisruptionBudgetSpecSelectorMatchExpressionsToHclTerraform(struct?: PodDisruptionBudgetSpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -337,9 +337,9 @@ export function podDisruptionBudgetSpecSelectorMatchExpressionsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -347,11 +347,11 @@ export class PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PodDisruptionBudgetSpecSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): PodDisruptionBudgetSpecSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -372,7 +372,7 @@ export class PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PodDisruptionBudgetSpecSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PodDisruptionBudgetSpecSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -380,7 +380,7 @@ export class PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference exte
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -428,7 +428,7 @@ export class PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference exte
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -442,15 +442,15 @@ export class PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference exte
   }
 }
 
-export class PodDisruptionBudgetSpecSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : PodDisruptionBudgetSpecSelectorMatchExpressions[] | cdktf.IResolvable
+export class PodDisruptionBudgetSpecSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : PodDisruptionBudgetSpecSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -473,35 +473,35 @@ export interface PodDisruptionBudgetSpecSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_disruption_budget#match_expressions PodDisruptionBudget#match_expressions}
   */
-  readonly matchExpressions?: PodDisruptionBudgetSpecSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: PodDisruptionBudgetSpecSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function podDisruptionBudgetSpecSelectorToTerraform(struct?: PodDisruptionBudgetSpecSelectorOutputReference | PodDisruptionBudgetSpecSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(podDisruptionBudgetSpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(podDisruptionBudgetSpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function podDisruptionBudgetSpecSelectorToHclTerraform(struct?: PodDisruptionBudgetSpecSelectorOutputReference | PodDisruptionBudgetSpecSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(podDisruptionBudgetSpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(podDisruptionBudgetSpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "PodDisruptionBudgetSpecSelectorMatchExpressionsList",
@@ -512,14 +512,14 @@ export function podDisruptionBudgetSpecSelectorToHclTerraform(struct?: PodDisrup
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodDisruptionBudgetSpecSelectorOutputReference extends cdktf.ComplexObject {
+export class PodDisruptionBudgetSpecSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -571,7 +571,7 @@ export class PodDisruptionBudgetSpecSelectorOutputReference extends cdktf.Comple
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: PodDisruptionBudgetSpecSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: PodDisruptionBudgetSpecSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -600,32 +600,32 @@ export interface PodDisruptionBudgetSpec {
 }
 
 export function podDisruptionBudgetSpecToTerraform(struct?: PodDisruptionBudgetSpecOutputReference | PodDisruptionBudgetSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_unavailable: cdktf.stringToTerraform(struct!.maxUnavailable),
-    min_available: cdktf.stringToTerraform(struct!.minAvailable),
+    max_unavailable: cdktn.stringToTerraform(struct!.maxUnavailable),
+    min_available: cdktn.stringToTerraform(struct!.minAvailable),
     selector: podDisruptionBudgetSpecSelectorToTerraform(struct!.selector),
   }
 }
 
 
 export function podDisruptionBudgetSpecToHclTerraform(struct?: PodDisruptionBudgetSpecOutputReference | PodDisruptionBudgetSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_unavailable: {
-      value: cdktf.stringToHclTerraform(struct!.maxUnavailable),
+      value: cdktn.stringToHclTerraform(struct!.maxUnavailable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     min_available: {
-      value: cdktf.stringToHclTerraform(struct!.minAvailable),
+      value: cdktn.stringToHclTerraform(struct!.minAvailable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -642,14 +642,14 @@ export function podDisruptionBudgetSpecToHclTerraform(struct?: PodDisruptionBudg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PodDisruptionBudgetSpecOutputReference extends cdktf.ComplexObject {
+export class PodDisruptionBudgetSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -735,7 +735,7 @@ export class PodDisruptionBudgetSpecOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_disruption_budget kubernetes_pod_disruption_budget}
 */
-export class PodDisruptionBudget extends cdktf.TerraformResource {
+export class PodDisruptionBudget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -746,14 +746,14 @@ export class PodDisruptionBudget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PodDisruptionBudget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PodDisruptionBudget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PodDisruptionBudget to import
   * @param importFromId The id of the existing PodDisruptionBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_disruption_budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PodDisruptionBudget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_pod_disruption_budget", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_pod_disruption_budget", importId: importFromId, provider });
       }
 
   // ===========
@@ -840,7 +840,7 @@ export class PodDisruptionBudget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: podDisruptionBudgetMetadataToTerraform(this._metadata.internalValue),
       spec: podDisruptionBudgetSpecToTerraform(this._spec.internalValue),
     };
@@ -849,7 +849,7 @@ export class PodDisruptionBudget extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

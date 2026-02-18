@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataKubernetesConfigMapV1Config extends cdktf.TerraformMetaArguments {
+export interface DataKubernetesConfigMapV1Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/config_map_v1#id DataKubernetesConfigMapV1#id}
   *
@@ -24,7 +24,7 @@ export interface DataKubernetesConfigMapV1Config extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/config_map_v1#immutable DataKubernetesConfigMapV1#immutable}
   */
-  readonly immutable?: boolean | cdktf.IResolvable;
+  readonly immutable?: boolean | cdktn.IResolvable;
   /**
   * metadata block
   *
@@ -60,45 +60,45 @@ export interface DataKubernetesConfigMapV1Metadata {
 }
 
 export function dataKubernetesConfigMapV1MetadataToTerraform(struct?: DataKubernetesConfigMapV1MetadataOutputReference | DataKubernetesConfigMapV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function dataKubernetesConfigMapV1MetadataToHclTerraform(struct?: DataKubernetesConfigMapV1MetadataOutputReference | DataKubernetesConfigMapV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function dataKubernetesConfigMapV1MetadataToHclTerraform(struct?: DataKub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataKubernetesConfigMapV1MetadataOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesConfigMapV1MetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -242,7 +242,7 @@ export class DataKubernetesConfigMapV1MetadataOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/config_map_v1 kubernetes_config_map_v1}
 */
-export class DataKubernetesConfigMapV1 extends cdktf.TerraformDataSource {
+export class DataKubernetesConfigMapV1 extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -253,14 +253,14 @@ export class DataKubernetesConfigMapV1 extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataKubernetesConfigMapV1 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataKubernetesConfigMapV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataKubernetesConfigMapV1 to import
   * @param importFromId The id of the existing DataKubernetesConfigMapV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/config_map_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataKubernetesConfigMapV1 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_config_map_v1", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_config_map_v1", importId: importFromId, provider });
       }
 
   // ===========
@@ -300,13 +300,13 @@ export class DataKubernetesConfigMapV1 extends cdktf.TerraformDataSource {
   // ==========
 
   // binary_data - computed: true, optional: false, required: false
-  private _binaryData = new cdktf.StringMap(this, "binary_data");
+  private _binaryData = new cdktn.StringMap(this, "binary_data");
   public get binaryData() {
     return this._binaryData;
   }
 
   // data - computed: true, optional: false, required: false
-  private _data = new cdktf.StringMap(this, "data");
+  private _data = new cdktn.StringMap(this, "data");
   public get data() {
     return this._data;
   }
@@ -328,11 +328,11 @@ export class DataKubernetesConfigMapV1 extends cdktf.TerraformDataSource {
   }
 
   // immutable - computed: false, optional: true, required: false
-  private _immutable?: boolean | cdktf.IResolvable; 
+  private _immutable?: boolean | cdktn.IResolvable; 
   public get immutable() {
     return this.getBooleanAttribute('immutable');
   }
-  public set immutable(value: boolean | cdktf.IResolvable) {
+  public set immutable(value: boolean | cdktn.IResolvable) {
     this._immutable = value;
   }
   public resetImmutable() {
@@ -362,8 +362,8 @@ export class DataKubernetesConfigMapV1 extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      immutable: cdktf.booleanToTerraform(this._immutable),
+      id: cdktn.stringToTerraform(this._id),
+      immutable: cdktn.booleanToTerraform(this._immutable),
       metadata: dataKubernetesConfigMapV1MetadataToTerraform(this._metadata.internalValue),
     };
   }
@@ -371,13 +371,13 @@ export class DataKubernetesConfigMapV1 extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       immutable: {
-        value: cdktf.booleanToHclTerraform(this._immutable),
+        value: cdktn.booleanToHclTerraform(this._immutable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

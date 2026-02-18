@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataKubernetesPersistentVolumeClaimV1Config extends cdktf.TerraformMetaArguments {
+export interface DataKubernetesPersistentVolumeClaimV1Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim_v1#id DataKubernetesPersistentVolumeClaimV1#id}
   *
@@ -30,7 +30,7 @@ export interface DataKubernetesPersistentVolumeClaimV1Config extends cdktf.Terra
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim_v1#spec DataKubernetesPersistentVolumeClaimV1#spec}
   */
-  readonly spec?: DataKubernetesPersistentVolumeClaimV1Spec[] | cdktf.IResolvable;
+  readonly spec?: DataKubernetesPersistentVolumeClaimV1Spec[] | cdktn.IResolvable;
 }
 export interface DataKubernetesPersistentVolumeClaimV1Metadata {
   /**
@@ -66,52 +66,52 @@ export interface DataKubernetesPersistentVolumeClaimV1Metadata {
 }
 
 export function dataKubernetesPersistentVolumeClaimV1MetadataToTerraform(struct?: DataKubernetesPersistentVolumeClaimV1MetadataOutputReference | DataKubernetesPersistentVolumeClaimV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function dataKubernetesPersistentVolumeClaimV1MetadataToHclTerraform(struct?: DataKubernetesPersistentVolumeClaimV1MetadataOutputReference | DataKubernetesPersistentVolumeClaimV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,14 +122,14 @@ export function dataKubernetesPersistentVolumeClaimV1MetadataToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataKubernetesPersistentVolumeClaimV1MetadataOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesPersistentVolumeClaimV1MetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -277,8 +277,8 @@ export interface DataKubernetesPersistentVolumeClaimV1SpecResources {
 }
 
 export function dataKubernetesPersistentVolumeClaimV1SpecResourcesToTerraform(struct?: DataKubernetesPersistentVolumeClaimV1SpecResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -287,8 +287,8 @@ export function dataKubernetesPersistentVolumeClaimV1SpecResourcesToTerraform(st
 
 
 export function dataKubernetesPersistentVolumeClaimV1SpecResourcesToHclTerraform(struct?: DataKubernetesPersistentVolumeClaimV1SpecResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -296,7 +296,7 @@ export function dataKubernetesPersistentVolumeClaimV1SpecResourcesToHclTerraform
   return attrs;
 }
 
-export class DataKubernetesPersistentVolumeClaimV1SpecResourcesOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesPersistentVolumeClaimV1SpecResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -305,7 +305,7 @@ export class DataKubernetesPersistentVolumeClaimV1SpecResourcesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -325,26 +325,26 @@ export class DataKubernetesPersistentVolumeClaimV1SpecResourcesOutputReference e
   }
 
   // limits - computed: true, optional: false, required: false
-  private _limits = new cdktf.StringMap(this, "limits");
+  private _limits = new cdktn.StringMap(this, "limits");
   public get limits() {
     return this._limits;
   }
 
   // requests - computed: true, optional: false, required: false
-  private _requests = new cdktf.StringMap(this, "requests");
+  private _requests = new cdktn.StringMap(this, "requests");
   public get requests() {
     return this._requests;
   }
 }
 
-export class DataKubernetesPersistentVolumeClaimV1SpecResourcesList extends cdktf.ComplexList {
+export class DataKubernetesPersistentVolumeClaimV1SpecResourcesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -376,39 +376,39 @@ export interface DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressio
   readonly values?: string[];
 }
 
-export function dataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsToTerraform(struct?: DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsToTerraform(struct?: DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsToHclTerraform(struct?: DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsToHclTerraform(struct?: DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -419,9 +419,9 @@ export function dataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpression
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -429,11 +429,11 @@ export class DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -454,7 +454,7 @@ export class DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -462,7 +462,7 @@ export class DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsOu
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -510,7 +510,7 @@ export class DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsOu
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -524,15 +524,15 @@ export class DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsOu
   }
 }
 
-export class DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktf.IResolvable
+export class DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -555,35 +555,35 @@ export interface DataKubernetesPersistentVolumeClaimV1SpecSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim_v1#match_expressions DataKubernetesPersistentVolumeClaimV1#match_expressions}
   */
-  readonly matchExpressions?: DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function dataKubernetesPersistentVolumeClaimV1SpecSelectorToTerraform(struct?: DataKubernetesPersistentVolumeClaimV1SpecSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataKubernetesPersistentVolumeClaimV1SpecSelectorToTerraform(struct?: DataKubernetesPersistentVolumeClaimV1SpecSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(dataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(dataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function dataKubernetesPersistentVolumeClaimV1SpecSelectorToHclTerraform(struct?: DataKubernetesPersistentVolumeClaimV1SpecSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataKubernetesPersistentVolumeClaimV1SpecSelectorToHclTerraform(struct?: DataKubernetesPersistentVolumeClaimV1SpecSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(dataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(dataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsList",
@@ -594,9 +594,9 @@ export function dataKubernetesPersistentVolumeClaimV1SpecSelectorToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataKubernetesPersistentVolumeClaimV1SpecSelectorOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesPersistentVolumeClaimV1SpecSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -604,11 +604,11 @@ export class DataKubernetesPersistentVolumeClaimV1SpecSelectorOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataKubernetesPersistentVolumeClaimV1SpecSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): DataKubernetesPersistentVolumeClaimV1SpecSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -625,14 +625,14 @@ export class DataKubernetesPersistentVolumeClaimV1SpecSelectorOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataKubernetesPersistentVolumeClaimV1SpecSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataKubernetesPersistentVolumeClaimV1SpecSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -665,7 +665,7 @@ export class DataKubernetesPersistentVolumeClaimV1SpecSelectorOutputReference ex
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -677,15 +677,15 @@ export class DataKubernetesPersistentVolumeClaimV1SpecSelectorOutputReference ex
   }
 }
 
-export class DataKubernetesPersistentVolumeClaimV1SpecSelectorList extends cdktf.ComplexList {
-  public internalValue? : DataKubernetesPersistentVolumeClaimV1SpecSelector[] | cdktf.IResolvable
+export class DataKubernetesPersistentVolumeClaimV1SpecSelectorList extends cdktn.ComplexList {
+  public internalValue? : DataKubernetesPersistentVolumeClaimV1SpecSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -720,49 +720,49 @@ export interface DataKubernetesPersistentVolumeClaimV1Spec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim_v1#selector DataKubernetesPersistentVolumeClaimV1#selector}
   */
-  readonly selector?: DataKubernetesPersistentVolumeClaimV1SpecSelector[] | cdktf.IResolvable;
+  readonly selector?: DataKubernetesPersistentVolumeClaimV1SpecSelector[] | cdktn.IResolvable;
 }
 
-export function dataKubernetesPersistentVolumeClaimV1SpecToTerraform(struct?: DataKubernetesPersistentVolumeClaimV1Spec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataKubernetesPersistentVolumeClaimV1SpecToTerraform(struct?: DataKubernetesPersistentVolumeClaimV1Spec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    storage_class_name: cdktf.stringToTerraform(struct!.storageClassName),
-    volume_mode: cdktf.stringToTerraform(struct!.volumeMode),
-    volume_name: cdktf.stringToTerraform(struct!.volumeName),
-    selector: cdktf.listMapper(dataKubernetesPersistentVolumeClaimV1SpecSelectorToTerraform, true)(struct!.selector),
+    storage_class_name: cdktn.stringToTerraform(struct!.storageClassName),
+    volume_mode: cdktn.stringToTerraform(struct!.volumeMode),
+    volume_name: cdktn.stringToTerraform(struct!.volumeName),
+    selector: cdktn.listMapper(dataKubernetesPersistentVolumeClaimV1SpecSelectorToTerraform, true)(struct!.selector),
   }
 }
 
 
-export function dataKubernetesPersistentVolumeClaimV1SpecToHclTerraform(struct?: DataKubernetesPersistentVolumeClaimV1Spec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataKubernetesPersistentVolumeClaimV1SpecToHclTerraform(struct?: DataKubernetesPersistentVolumeClaimV1Spec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     storage_class_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageClassName),
+      value: cdktn.stringToHclTerraform(struct!.storageClassName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_mode: {
-      value: cdktf.stringToHclTerraform(struct!.volumeMode),
+      value: cdktn.stringToHclTerraform(struct!.volumeMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_name: {
-      value: cdktf.stringToHclTerraform(struct!.volumeName),
+      value: cdktn.stringToHclTerraform(struct!.volumeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     selector: {
-      value: cdktf.listMapperHcl(dataKubernetesPersistentVolumeClaimV1SpecSelectorToHclTerraform, true)(struct!.selector),
+      value: cdktn.listMapperHcl(dataKubernetesPersistentVolumeClaimV1SpecSelectorToHclTerraform, true)(struct!.selector),
       isBlock: true,
       type: "list",
       storageClassType: "DataKubernetesPersistentVolumeClaimV1SpecSelectorList",
@@ -773,9 +773,9 @@ export function dataKubernetesPersistentVolumeClaimV1SpecToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataKubernetesPersistentVolumeClaimV1SpecOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesPersistentVolumeClaimV1SpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -783,11 +783,11 @@ export class DataKubernetesPersistentVolumeClaimV1SpecOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataKubernetesPersistentVolumeClaimV1Spec | cdktf.IResolvable | undefined {
+  public get internalValue(): DataKubernetesPersistentVolumeClaimV1Spec | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -812,7 +812,7 @@ export class DataKubernetesPersistentVolumeClaimV1SpecOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataKubernetesPersistentVolumeClaimV1Spec | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataKubernetesPersistentVolumeClaimV1Spec | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -821,7 +821,7 @@ export class DataKubernetesPersistentVolumeClaimV1SpecOutputReference extends cd
       this._volumeName = undefined;
       this._selector.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -837,7 +837,7 @@ export class DataKubernetesPersistentVolumeClaimV1SpecOutputReference extends cd
 
   // access_modes - computed: true, optional: false, required: false
   public get accessModes() {
-    return cdktf.Fn.tolist(this.getListAttribute('access_modes'));
+    return cdktn.Fn.tolist(this.getListAttribute('access_modes'));
   }
 
   // resources - computed: true, optional: false, required: false
@@ -899,7 +899,7 @@ export class DataKubernetesPersistentVolumeClaimV1SpecOutputReference extends cd
   public get selector() {
     return this._selector;
   }
-  public putSelector(value: DataKubernetesPersistentVolumeClaimV1SpecSelector[] | cdktf.IResolvable) {
+  public putSelector(value: DataKubernetesPersistentVolumeClaimV1SpecSelector[] | cdktn.IResolvable) {
     this._selector.internalValue = value;
   }
   public resetSelector() {
@@ -911,15 +911,15 @@ export class DataKubernetesPersistentVolumeClaimV1SpecOutputReference extends cd
   }
 }
 
-export class DataKubernetesPersistentVolumeClaimV1SpecList extends cdktf.ComplexList {
-  public internalValue? : DataKubernetesPersistentVolumeClaimV1Spec[] | cdktf.IResolvable
+export class DataKubernetesPersistentVolumeClaimV1SpecList extends cdktn.ComplexList {
+  public internalValue? : DataKubernetesPersistentVolumeClaimV1Spec[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -934,7 +934,7 @@ export class DataKubernetesPersistentVolumeClaimV1SpecList extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim_v1 kubernetes_persistent_volume_claim_v1}
 */
-export class DataKubernetesPersistentVolumeClaimV1 extends cdktf.TerraformDataSource {
+export class DataKubernetesPersistentVolumeClaimV1 extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -945,14 +945,14 @@ export class DataKubernetesPersistentVolumeClaimV1 extends cdktf.TerraformDataSo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataKubernetesPersistentVolumeClaimV1 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataKubernetesPersistentVolumeClaimV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataKubernetesPersistentVolumeClaimV1 to import
   * @param importFromId The id of the existing DataKubernetesPersistentVolumeClaimV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataKubernetesPersistentVolumeClaimV1 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_persistent_volume_claim_v1", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_persistent_volume_claim_v1", importId: importFromId, provider });
       }
 
   // ===========
@@ -1025,7 +1025,7 @@ export class DataKubernetesPersistentVolumeClaimV1 extends cdktf.TerraformDataSo
   public get spec() {
     return this._spec;
   }
-  public putSpec(value: DataKubernetesPersistentVolumeClaimV1Spec[] | cdktf.IResolvable) {
+  public putSpec(value: DataKubernetesPersistentVolumeClaimV1Spec[] | cdktn.IResolvable) {
     this._spec.internalValue = value;
   }
   public resetSpec() {
@@ -1042,16 +1042,16 @@ export class DataKubernetesPersistentVolumeClaimV1 extends cdktf.TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: dataKubernetesPersistentVolumeClaimV1MetadataToTerraform(this._metadata.internalValue),
-      spec: cdktf.listMapper(dataKubernetesPersistentVolumeClaimV1SpecToTerraform, true)(this._spec.internalValue),
+      spec: cdktn.listMapper(dataKubernetesPersistentVolumeClaimV1SpecToTerraform, true)(this._spec.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1063,7 +1063,7 @@ export class DataKubernetesPersistentVolumeClaimV1 extends cdktf.TerraformDataSo
         storageClassType: "DataKubernetesPersistentVolumeClaimV1MetadataList",
       },
       spec: {
-        value: cdktf.listMapperHcl(dataKubernetesPersistentVolumeClaimV1SpecToHclTerraform, true)(this._spec.internalValue),
+        value: cdktn.listMapperHcl(dataKubernetesPersistentVolumeClaimV1SpecToHclTerraform, true)(this._spec.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataKubernetesPersistentVolumeClaimV1SpecList",
