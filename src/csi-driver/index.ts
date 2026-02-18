@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CsiDriverConfig extends cdktf.TerraformMetaArguments {
+export interface CsiDriverConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/csi_driver#id CsiDriver#id}
   *
@@ -60,45 +60,45 @@ export interface CsiDriverMetadata {
 }
 
 export function csiDriverMetadataToTerraform(struct?: CsiDriverMetadataOutputReference | CsiDriverMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function csiDriverMetadataToHclTerraform(struct?: CsiDriverMetadataOutputReference | CsiDriverMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function csiDriverMetadataToHclTerraform(struct?: CsiDriverMetadataOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CsiDriverMetadataOutputReference extends cdktf.ComplexObject {
+export class CsiDriverMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -244,13 +244,13 @@ export interface CsiDriverSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/csi_driver#attach_required CsiDriver#attach_required}
   */
-  readonly attachRequired: boolean | cdktf.IResolvable;
+  readonly attachRequired: boolean | cdktn.IResolvable;
   /**
   * Indicates that the CSI volume driver requires additional pod information (like podName, podUID, etc.) during mount operations
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/csi_driver#pod_info_on_mount CsiDriver#pod_info_on_mount}
   */
-  readonly podInfoOnMount?: boolean | cdktf.IResolvable;
+  readonly podInfoOnMount?: boolean | cdktn.IResolvable;
   /**
   * Defines what kind of volumes this CSI volume driver supports
   *
@@ -260,38 +260,38 @@ export interface CsiDriverSpec {
 }
 
 export function csiDriverSpecToTerraform(struct?: CsiDriverSpecOutputReference | CsiDriverSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attach_required: cdktf.booleanToTerraform(struct!.attachRequired),
-    pod_info_on_mount: cdktf.booleanToTerraform(struct!.podInfoOnMount),
-    volume_lifecycle_modes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.volumeLifecycleModes),
+    attach_required: cdktn.booleanToTerraform(struct!.attachRequired),
+    pod_info_on_mount: cdktn.booleanToTerraform(struct!.podInfoOnMount),
+    volume_lifecycle_modes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.volumeLifecycleModes),
   }
 }
 
 
 export function csiDriverSpecToHclTerraform(struct?: CsiDriverSpecOutputReference | CsiDriverSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attach_required: {
-      value: cdktf.booleanToHclTerraform(struct!.attachRequired),
+      value: cdktn.booleanToHclTerraform(struct!.attachRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     pod_info_on_mount: {
-      value: cdktf.booleanToHclTerraform(struct!.podInfoOnMount),
+      value: cdktn.booleanToHclTerraform(struct!.podInfoOnMount),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     volume_lifecycle_modes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.volumeLifecycleModes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.volumeLifecycleModes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -302,14 +302,14 @@ export function csiDriverSpecToHclTerraform(struct?: CsiDriverSpecOutputReferenc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CsiDriverSpecOutputReference extends cdktf.ComplexObject {
+export class CsiDriverSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -347,11 +347,11 @@ export class CsiDriverSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // attach_required - computed: false, optional: false, required: true
-  private _attachRequired?: boolean | cdktf.IResolvable; 
+  private _attachRequired?: boolean | cdktn.IResolvable; 
   public get attachRequired() {
     return this.getBooleanAttribute('attach_required');
   }
-  public set attachRequired(value: boolean | cdktf.IResolvable) {
+  public set attachRequired(value: boolean | cdktn.IResolvable) {
     this._attachRequired = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -360,11 +360,11 @@ export class CsiDriverSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // pod_info_on_mount - computed: false, optional: true, required: false
-  private _podInfoOnMount?: boolean | cdktf.IResolvable; 
+  private _podInfoOnMount?: boolean | cdktn.IResolvable; 
   public get podInfoOnMount() {
     return this.getBooleanAttribute('pod_info_on_mount');
   }
-  public set podInfoOnMount(value: boolean | cdktf.IResolvable) {
+  public set podInfoOnMount(value: boolean | cdktn.IResolvable) {
     this._podInfoOnMount = value;
   }
   public resetPodInfoOnMount() {
@@ -395,7 +395,7 @@ export class CsiDriverSpecOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/csi_driver kubernetes_csi_driver}
 */
-export class CsiDriver extends cdktf.TerraformResource {
+export class CsiDriver extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -406,14 +406,14 @@ export class CsiDriver extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CsiDriver resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CsiDriver resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CsiDriver to import
   * @param importFromId The id of the existing CsiDriver that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/csi_driver#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CsiDriver to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_csi_driver", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_csi_driver", importId: importFromId, provider });
       }
 
   // ===========
@@ -503,7 +503,7 @@ export class CsiDriver extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: csiDriverMetadataToTerraform(this._metadata.internalValue),
       spec: csiDriverSpecToTerraform(this._spec.internalValue),
     };
@@ -512,7 +512,7 @@ export class CsiDriver extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

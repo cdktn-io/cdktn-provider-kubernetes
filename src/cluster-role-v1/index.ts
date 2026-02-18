@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ClusterRoleV1Config extends cdktf.TerraformMetaArguments {
+export interface ClusterRoleV1Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_v1#id ClusterRoleV1#id}
   *
@@ -36,7 +36,7 @@ export interface ClusterRoleV1Config extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_v1#rule ClusterRoleV1#rule}
   */
-  readonly rule?: ClusterRoleV1Rule[] | cdktf.IResolvable;
+  readonly rule?: ClusterRoleV1Rule[] | cdktn.IResolvable;
 }
 export interface ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions {
   /**
@@ -59,39 +59,39 @@ export interface ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpression
   readonly values?: string[];
 }
 
-export function clusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsToTerraform(struct?: ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsToTerraform(struct?: ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function clusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsToHclTerraform(struct?: ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsToHclTerraform(struct?: ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -102,9 +102,9 @@ export function clusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -112,11 +112,11 @@ export class ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -137,7 +137,7 @@ export class ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -145,7 +145,7 @@ export class ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOut
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -193,7 +193,7 @@ export class ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOut
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -207,15 +207,15 @@ export class ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOut
   }
 }
 
-export class ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions[] | cdktf.IResolvable
+export class ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -238,35 +238,35 @@ export interface ClusterRoleV1AggregationRuleClusterRoleSelectors {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_v1#match_expressions ClusterRoleV1#match_expressions}
   */
-  readonly matchExpressions?: ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function clusterRoleV1AggregationRuleClusterRoleSelectorsToTerraform(struct?: ClusterRoleV1AggregationRuleClusterRoleSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterRoleV1AggregationRuleClusterRoleSelectorsToTerraform(struct?: ClusterRoleV1AggregationRuleClusterRoleSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(clusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(clusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function clusterRoleV1AggregationRuleClusterRoleSelectorsToHclTerraform(struct?: ClusterRoleV1AggregationRuleClusterRoleSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterRoleV1AggregationRuleClusterRoleSelectorsToHclTerraform(struct?: ClusterRoleV1AggregationRuleClusterRoleSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(clusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(clusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsList",
@@ -277,9 +277,9 @@ export function clusterRoleV1AggregationRuleClusterRoleSelectorsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference extends cdktf.ComplexObject {
+export class ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -287,11 +287,11 @@ export class ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClusterRoleV1AggregationRuleClusterRoleSelectors | cdktf.IResolvable | undefined {
+  public get internalValue(): ClusterRoleV1AggregationRuleClusterRoleSelectors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -308,14 +308,14 @@ export class ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClusterRoleV1AggregationRuleClusterRoleSelectors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClusterRoleV1AggregationRuleClusterRoleSelectors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -348,7 +348,7 @@ export class ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference ext
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -360,15 +360,15 @@ export class ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference ext
   }
 }
 
-export class ClusterRoleV1AggregationRuleClusterRoleSelectorsList extends cdktf.ComplexList {
-  public internalValue? : ClusterRoleV1AggregationRuleClusterRoleSelectors[] | cdktf.IResolvable
+export class ClusterRoleV1AggregationRuleClusterRoleSelectorsList extends cdktn.ComplexList {
+  public internalValue? : ClusterRoleV1AggregationRuleClusterRoleSelectors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -385,28 +385,28 @@ export interface ClusterRoleV1AggregationRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_v1#cluster_role_selectors ClusterRoleV1#cluster_role_selectors}
   */
-  readonly clusterRoleSelectors?: ClusterRoleV1AggregationRuleClusterRoleSelectors[] | cdktf.IResolvable;
+  readonly clusterRoleSelectors?: ClusterRoleV1AggregationRuleClusterRoleSelectors[] | cdktn.IResolvable;
 }
 
 export function clusterRoleV1AggregationRuleToTerraform(struct?: ClusterRoleV1AggregationRuleOutputReference | ClusterRoleV1AggregationRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_role_selectors: cdktf.listMapper(clusterRoleV1AggregationRuleClusterRoleSelectorsToTerraform, true)(struct!.clusterRoleSelectors),
+    cluster_role_selectors: cdktn.listMapper(clusterRoleV1AggregationRuleClusterRoleSelectorsToTerraform, true)(struct!.clusterRoleSelectors),
   }
 }
 
 
 export function clusterRoleV1AggregationRuleToHclTerraform(struct?: ClusterRoleV1AggregationRuleOutputReference | ClusterRoleV1AggregationRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_role_selectors: {
-      value: cdktf.listMapperHcl(clusterRoleV1AggregationRuleClusterRoleSelectorsToHclTerraform, true)(struct!.clusterRoleSelectors),
+      value: cdktn.listMapperHcl(clusterRoleV1AggregationRuleClusterRoleSelectorsToHclTerraform, true)(struct!.clusterRoleSelectors),
       isBlock: true,
       type: "list",
       storageClassType: "ClusterRoleV1AggregationRuleClusterRoleSelectorsList",
@@ -417,14 +417,14 @@ export function clusterRoleV1AggregationRuleToHclTerraform(struct?: ClusterRoleV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterRoleV1AggregationRuleOutputReference extends cdktf.ComplexObject {
+export class ClusterRoleV1AggregationRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -454,7 +454,7 @@ export class ClusterRoleV1AggregationRuleOutputReference extends cdktf.ComplexOb
   public get clusterRoleSelectors() {
     return this._clusterRoleSelectors;
   }
-  public putClusterRoleSelectors(value: ClusterRoleV1AggregationRuleClusterRoleSelectors[] | cdktf.IResolvable) {
+  public putClusterRoleSelectors(value: ClusterRoleV1AggregationRuleClusterRoleSelectors[] | cdktn.IResolvable) {
     this._clusterRoleSelectors.internalValue = value;
   }
   public resetClusterRoleSelectors() {
@@ -493,45 +493,45 @@ export interface ClusterRoleV1Metadata {
 }
 
 export function clusterRoleV1MetadataToTerraform(struct?: ClusterRoleV1MetadataOutputReference | ClusterRoleV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function clusterRoleV1MetadataToHclTerraform(struct?: ClusterRoleV1MetadataOutputReference | ClusterRoleV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -542,14 +542,14 @@ export function clusterRoleV1MetadataToHclTerraform(struct?: ClusterRoleV1Metada
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterRoleV1MetadataOutputReference extends cdktf.ComplexObject {
+export class ClusterRoleV1MetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -704,53 +704,53 @@ export interface ClusterRoleV1Rule {
   readonly verbs: string[];
 }
 
-export function clusterRoleV1RuleToTerraform(struct?: ClusterRoleV1Rule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterRoleV1RuleToTerraform(struct?: ClusterRoleV1Rule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.apiGroups),
-    non_resource_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.nonResourceUrls),
-    resource_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceNames),
-    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
-    verbs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.verbs),
+    api_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.apiGroups),
+    non_resource_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.nonResourceUrls),
+    resource_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceNames),
+    resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resources),
+    verbs: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.verbs),
   }
 }
 
 
-export function clusterRoleV1RuleToHclTerraform(struct?: ClusterRoleV1Rule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterRoleV1RuleToHclTerraform(struct?: ClusterRoleV1Rule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.apiGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.apiGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     non_resource_urls: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.nonResourceUrls),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.nonResourceUrls),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     verbs: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.verbs),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.verbs),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -761,9 +761,9 @@ export function clusterRoleV1RuleToHclTerraform(struct?: ClusterRoleV1Rule | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterRoleV1RuleOutputReference extends cdktf.ComplexObject {
+export class ClusterRoleV1RuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -771,11 +771,11 @@ export class ClusterRoleV1RuleOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClusterRoleV1Rule | cdktf.IResolvable | undefined {
+  public get internalValue(): ClusterRoleV1Rule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -804,7 +804,7 @@ export class ClusterRoleV1RuleOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClusterRoleV1Rule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClusterRoleV1Rule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -814,7 +814,7 @@ export class ClusterRoleV1RuleOutputReference extends cdktf.ComplexObject {
       this._resources = undefined;
       this._verbs = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -907,15 +907,15 @@ export class ClusterRoleV1RuleOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ClusterRoleV1RuleList extends cdktf.ComplexList {
-  public internalValue? : ClusterRoleV1Rule[] | cdktf.IResolvable
+export class ClusterRoleV1RuleList extends cdktn.ComplexList {
+  public internalValue? : ClusterRoleV1Rule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -930,7 +930,7 @@ export class ClusterRoleV1RuleList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_v1 kubernetes_cluster_role_v1}
 */
-export class ClusterRoleV1 extends cdktf.TerraformResource {
+export class ClusterRoleV1 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -941,14 +941,14 @@ export class ClusterRoleV1 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ClusterRoleV1 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ClusterRoleV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ClusterRoleV1 to import
   * @param importFromId The id of the existing ClusterRoleV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ClusterRoleV1 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_cluster_role_v1", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_cluster_role_v1", importId: importFromId, provider });
       }
 
   // ===========
@@ -1038,7 +1038,7 @@ export class ClusterRoleV1 extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: ClusterRoleV1Rule[] | cdktf.IResolvable) {
+  public putRule(value: ClusterRoleV1Rule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -1055,17 +1055,17 @@ export class ClusterRoleV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       aggregation_rule: clusterRoleV1AggregationRuleToTerraform(this._aggregationRule.internalValue),
       metadata: clusterRoleV1MetadataToTerraform(this._metadata.internalValue),
-      rule: cdktf.listMapper(clusterRoleV1RuleToTerraform, true)(this._rule.internalValue),
+      rule: cdktn.listMapper(clusterRoleV1RuleToTerraform, true)(this._rule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1083,7 +1083,7 @@ export class ClusterRoleV1 extends cdktf.TerraformResource {
         storageClassType: "ClusterRoleV1MetadataList",
       },
       rule: {
-        value: cdktf.listMapperHcl(clusterRoleV1RuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(clusterRoleV1RuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ClusterRoleV1RuleList",

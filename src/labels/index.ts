@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LabelsConfig extends cdktf.TerraformMetaArguments {
+export interface LabelsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The apiVersion of the resource to label.
   *
@@ -29,7 +29,7 @@ export interface LabelsConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#force Labels#force}
   */
-  readonly force?: boolean | cdktf.IResolvable;
+  readonly force?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#id Labels#id}
   *
@@ -72,31 +72,31 @@ export interface LabelsMetadata {
 }
 
 export function labelsMetadataToTerraform(struct?: LabelsMetadataOutputReference | LabelsMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function labelsMetadataToHclTerraform(struct?: LabelsMetadataOutputReference | LabelsMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,14 +107,14 @@ export function labelsMetadataToHclTerraform(struct?: LabelsMetadataOutputRefere
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LabelsMetadataOutputReference extends cdktf.ComplexObject {
+export class LabelsMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -178,7 +178,7 @@ export class LabelsMetadataOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels kubernetes_labels}
 */
-export class Labels extends cdktf.TerraformResource {
+export class Labels extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -189,14 +189,14 @@ export class Labels extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Labels resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Labels resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Labels to import
   * @param importFromId The id of the existing Labels that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Labels to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_labels", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_labels", importId: importFromId, provider });
       }
 
   // ===========
@@ -269,11 +269,11 @@ export class Labels extends cdktf.TerraformResource {
   }
 
   // force - computed: false, optional: true, required: false
-  private _force?: boolean | cdktf.IResolvable; 
+  private _force?: boolean | cdktn.IResolvable; 
   public get force() {
     return this.getBooleanAttribute('force');
   }
-  public set force(value: boolean | cdktf.IResolvable) {
+  public set force(value: boolean | cdktn.IResolvable) {
     this._force = value;
   }
   public resetForce() {
@@ -345,12 +345,12 @@ export class Labels extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_version: cdktf.stringToTerraform(this._apiVersion),
-      field_manager: cdktf.stringToTerraform(this._fieldManager),
-      force: cdktf.booleanToTerraform(this._force),
-      id: cdktf.stringToTerraform(this._id),
-      kind: cdktf.stringToTerraform(this._kind),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
+      api_version: cdktn.stringToTerraform(this._apiVersion),
+      field_manager: cdktn.stringToTerraform(this._fieldManager),
+      force: cdktn.booleanToTerraform(this._force),
+      id: cdktn.stringToTerraform(this._id),
+      kind: cdktn.stringToTerraform(this._kind),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
       metadata: labelsMetadataToTerraform(this._metadata.internalValue),
     };
   }
@@ -358,37 +358,37 @@ export class Labels extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_version: {
-        value: cdktf.stringToHclTerraform(this._apiVersion),
+        value: cdktn.stringToHclTerraform(this._apiVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       field_manager: {
-        value: cdktf.stringToHclTerraform(this._fieldManager),
+        value: cdktn.stringToHclTerraform(this._fieldManager),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force: {
-        value: cdktf.booleanToHclTerraform(this._force),
+        value: cdktn.booleanToHclTerraform(this._force),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

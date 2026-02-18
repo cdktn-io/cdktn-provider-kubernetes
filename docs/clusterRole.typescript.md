@@ -296,7 +296,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.clusterRole.ClusterRole.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -402,7 +402,7 @@ public putRule(value: IResolvable | ClusterRoleRule[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.clusterRole.ClusterRole.putRule.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]
 
 ---
 
@@ -431,7 +431,7 @@ public resetRule(): void
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ClusterRole resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ClusterRole resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -503,7 +503,7 @@ import { clusterRole } from '@cdktn/provider-kubernetes'
 clusterRole.ClusterRole.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ClusterRole resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ClusterRole resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-kubernetes.clusterRole.ClusterRole.generateConfigForImport.parameter.scope"></a>
 
@@ -533,7 +533,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.clusterRole.ClusterRole.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ClusterRole to import is found.
 
@@ -544,26 +544,26 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.aggregationRule">aggregationRule</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference">ClusterRoleAggregationRuleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleMetadataOutputReference">ClusterRoleMetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.rule">rule</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList">ClusterRoleRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.aggregationRuleInput">aggregationRuleInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRule">ClusterRoleAggregationRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.metadataInput">metadataInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleMetadata">ClusterRoleMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.ruleInput">ruleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.ruleInput">ruleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRole.property.id">id</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -586,7 +586,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -636,7 +636,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -646,7 +646,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -656,7 +656,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -676,7 +676,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -686,7 +686,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -696,7 +696,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -706,7 +706,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -776,7 +776,7 @@ public readonly metadataInput: ClusterRoleMetadata;
 public readonly ruleInput: IResolvable | ClusterRoleRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]
 
 ---
 
@@ -824,7 +824,7 @@ const clusterRoleAggregationRule: clusterRole.ClusterRoleAggregationRule = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRule.property.clusterRoleSelectors">clusterRoleSelectors</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]</code> | cluster_role_selectors block. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRule.property.clusterRoleSelectors">clusterRoleSelectors</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]</code> | cluster_role_selectors block. |
 
 ---
 
@@ -834,7 +834,7 @@ const clusterRoleAggregationRule: clusterRole.ClusterRoleAggregationRule = { ...
 public readonly clusterRoleSelectors: IResolvable | ClusterRoleAggregationRuleClusterRoleSelectors[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]
 
 cluster_role_selectors block.
 
@@ -856,7 +856,7 @@ const clusterRoleAggregationRuleClusterRoleSelectors: clusterRole.ClusterRoleAgg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors.property.matchExpressions">matchExpressions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]</code> | match_expressions block. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors.property.matchExpressions">matchExpressions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]</code> | match_expressions block. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors.property.matchLabels">matchLabels</a></code> | <code>{[ key: string ]: string}</code> | A map of {key,value} pairs. |
 
 ---
@@ -867,7 +867,7 @@ const clusterRoleAggregationRuleClusterRoleSelectors: clusterRole.ClusterRoleAgg
 public readonly matchExpressions: IResolvable | ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]
 
 match_expressions block.
 
@@ -969,17 +969,17 @@ const clusterRoleConfig: clusterRole.ClusterRoleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleMetadata">ClusterRoleMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.aggregationRule">aggregationRule</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRule">ClusterRoleAggregationRule</a></code> | aggregation_rule block. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role#id ClusterRole#id}. |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.rule">rule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]</code> | rule block. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.property.rule">rule</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]</code> | rule block. |
 
 ---
 
@@ -989,7 +989,7 @@ const clusterRoleConfig: clusterRole.ClusterRoleConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -999,7 +999,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1009,7 +1009,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1029,7 +1029,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1102,7 +1102,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly rule: IResolvable | ClusterRoleRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]
 
 rule block.
 
@@ -1307,7 +1307,7 @@ new clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1315,7 +1315,7 @@ new clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1381,7 +1381,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1416,7 +1416,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]</code> | *No description.* |
 
 ---
 
@@ -1450,7 +1450,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ClusterRoleAggregationRuleClusterRoleSelectors[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]
 
 ---
 
@@ -1467,7 +1467,7 @@ new clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1475,7 +1475,7 @@ new clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1541,7 +1541,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1576,7 +1576,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]</code> | *No description.* |
 
 ---
 
@@ -1610,7 +1610,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]
 
 ---
 
@@ -1627,7 +1627,7 @@ new clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1636,7 +1636,7 @@ new clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1825,7 +1825,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1870,7 +1870,7 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.property.operator">operator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a></code> | *No description.* |
 
 ---
 
@@ -1964,7 +1964,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>
 
 ---
 
@@ -1981,7 +1981,7 @@ new clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1990,7 +1990,7 @@ new clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2179,7 +2179,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2201,7 +2201,7 @@ public putMatchExpressions(value: IResolvable | ClusterRoleAggregationRuleCluste
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.putMatchExpressions.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]
 
 ---
 
@@ -2225,10 +2225,10 @@ public resetMatchLabels(): void
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.property.matchExpressions">matchExpressions</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.property.matchExpressionsInput">matchExpressionsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.property.matchExpressionsInput">matchExpressionsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.property.matchLabelsInput">matchLabelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.property.matchLabels">matchLabels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a></code> | *No description.* |
 
 ---
 
@@ -2272,7 +2272,7 @@ public readonly matchExpressions: ClusterRoleAggregationRuleClusterRoleSelectors
 public readonly matchExpressionsInput: IResolvable | ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions">ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions</a>[]
 
 ---
 
@@ -2302,7 +2302,7 @@ public readonly matchLabels: {[ key: string ]: string};
 public readonly internalValue: IResolvable | ClusterRoleAggregationRuleClusterRoleSelectors;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>
 
 ---
 
@@ -2319,14 +2319,14 @@ new clusterRole.ClusterRoleAggregationRuleOutputReference(terraformResource: IIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2498,7 +2498,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2520,7 +2520,7 @@ public putClusterRoleSelectors(value: IResolvable | ClusterRoleAggregationRuleCl
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.putClusterRoleSelectors.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]
 
 ---
 
@@ -2538,7 +2538,7 @@ public resetClusterRoleSelectors(): void
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.property.clusterRoleSelectors">clusterRoleSelectors</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList">ClusterRoleAggregationRuleClusterRoleSelectorsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.property.clusterRoleSelectorsInput">clusterRoleSelectorsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.property.clusterRoleSelectorsInput">clusterRoleSelectorsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRule">ClusterRoleAggregationRule</a></code> | *No description.* |
 
 ---
@@ -2583,7 +2583,7 @@ public readonly clusterRoleSelectors: ClusterRoleAggregationRuleClusterRoleSelec
 public readonly clusterRoleSelectorsInput: IResolvable | ClusterRoleAggregationRuleClusterRoleSelectors[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors">ClusterRoleAggregationRuleClusterRoleSelectors</a>[]
 
 ---
 
@@ -2610,14 +2610,14 @@ new clusterRole.ClusterRoleMetadataOutputReference(terraformResource: IInterpola
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleMetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleMetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleMetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleMetadataOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2791,7 +2791,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleMetadataOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3008,7 +3008,7 @@ new clusterRole.ClusterRoleRuleList(terraformResource: IInterpolatingParent, ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3016,7 +3016,7 @@ new clusterRole.ClusterRoleRuleList(terraformResource: IInterpolatingParent, ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3082,7 +3082,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3117,7 +3117,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -3151,7 +3151,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ClusterRoleRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>[]
 
 ---
 
@@ -3168,7 +3168,7 @@ new clusterRole.ClusterRoleRuleOutputReference(terraformResource: IInterpolating
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3177,7 +3177,7 @@ new clusterRole.ClusterRoleRuleOutputReference(terraformResource: IInterpolating
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3367,7 +3367,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3422,7 +3422,7 @@ public resetResources(): void
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.property.resourceNames">resourceNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.property.resources">resources</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.property.verbs">verbs</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a></code> | *No description.* |
 
 ---
 
@@ -3556,7 +3556,7 @@ public readonly verbs: string[];
 public readonly internalValue: IResolvable | ClusterRoleRule;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule">ClusterRoleRule</a>
 
 ---
 

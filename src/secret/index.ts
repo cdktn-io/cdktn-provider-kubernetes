@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretConfig extends cdktf.TerraformMetaArguments {
+export interface SecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * A map of the secret data in base64 encoding. Use this for binary data.
   *
@@ -60,7 +60,7 @@ export interface SecretConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret#immutable Secret#immutable}
   */
-  readonly immutable?: boolean | cdktf.IResolvable;
+  readonly immutable?: boolean | cdktn.IResolvable;
   /**
   * Type of secret
   *
@@ -72,7 +72,7 @@ export interface SecretConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret#wait_for_service_account_token Secret#wait_for_service_account_token}
   */
-  readonly waitForServiceAccountToken?: boolean | cdktf.IResolvable;
+  readonly waitForServiceAccountToken?: boolean | cdktn.IResolvable;
   /**
   * metadata block
   *
@@ -120,52 +120,52 @@ export interface SecretMetadata {
 }
 
 export function secretMetadataToTerraform(struct?: SecretMetadataOutputReference | SecretMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function secretMetadataToHclTerraform(struct?: SecretMetadataOutputReference | SecretMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -176,14 +176,14 @@ export function secretMetadataToHclTerraform(struct?: SecretMetadataOutputRefere
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretMetadataOutputReference extends cdktf.ComplexObject {
+export class SecretMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -334,25 +334,25 @@ export interface SecretTimeouts {
   readonly create?: string;
 }
 
-export function secretTimeoutsToTerraform(struct?: SecretTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretTimeoutsToTerraform(struct?: SecretTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function secretTimeoutsToHclTerraform(struct?: SecretTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretTimeoutsToHclTerraform(struct?: SecretTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -363,19 +363,19 @@ export function secretTimeoutsToHclTerraform(struct?: SecretTimeouts | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecretTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecretTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecretTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -388,13 +388,13 @@ export class SecretTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecretTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecretTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -425,7 +425,7 @@ export class SecretTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret kubernetes_secret}
 */
-export class Secret extends cdktf.TerraformResource {
+export class Secret extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -436,14 +436,14 @@ export class Secret extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Secret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Secret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Secret to import
   * @param importFromId The id of the existing Secret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Secret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -604,11 +604,11 @@ export class Secret extends cdktf.TerraformResource {
   }
 
   // immutable - computed: false, optional: true, required: false
-  private _immutable?: boolean | cdktf.IResolvable; 
+  private _immutable?: boolean | cdktn.IResolvable; 
   public get immutable() {
     return this.getBooleanAttribute('immutable');
   }
-  public set immutable(value: boolean | cdktf.IResolvable) {
+  public set immutable(value: boolean | cdktn.IResolvable) {
     this._immutable = value;
   }
   public resetImmutable() {
@@ -636,11 +636,11 @@ export class Secret extends cdktf.TerraformResource {
   }
 
   // wait_for_service_account_token - computed: false, optional: true, required: false
-  private _waitForServiceAccountToken?: boolean | cdktf.IResolvable; 
+  private _waitForServiceAccountToken?: boolean | cdktn.IResolvable; 
   public get waitForServiceAccountToken() {
     return this.getBooleanAttribute('wait_for_service_account_token');
   }
-  public set waitForServiceAccountToken(value: boolean | cdktf.IResolvable) {
+  public set waitForServiceAccountToken(value: boolean | cdktn.IResolvable) {
     this._waitForServiceAccountToken = value;
   }
   public resetWaitForServiceAccountToken() {
@@ -686,16 +686,16 @@ export class Secret extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      binary_data: cdktf.hashMapper(cdktf.stringToTerraform)(this._binaryData),
-      binary_data_wo: cdktf.hashMapper(cdktf.stringToTerraform)(this._binaryDataWo),
-      binary_data_wo_revision: cdktf.numberToTerraform(this._binaryDataWoRevision),
-      data: cdktf.hashMapper(cdktf.stringToTerraform)(this._data),
-      data_wo: cdktf.hashMapper(cdktf.stringToTerraform)(this._dataWo),
-      data_wo_revision: cdktf.numberToTerraform(this._dataWoRevision),
-      id: cdktf.stringToTerraform(this._id),
-      immutable: cdktf.booleanToTerraform(this._immutable),
-      type: cdktf.stringToTerraform(this._type),
-      wait_for_service_account_token: cdktf.booleanToTerraform(this._waitForServiceAccountToken),
+      binary_data: cdktn.hashMapper(cdktn.stringToTerraform)(this._binaryData),
+      binary_data_wo: cdktn.hashMapper(cdktn.stringToTerraform)(this._binaryDataWo),
+      binary_data_wo_revision: cdktn.numberToTerraform(this._binaryDataWoRevision),
+      data: cdktn.hashMapper(cdktn.stringToTerraform)(this._data),
+      data_wo: cdktn.hashMapper(cdktn.stringToTerraform)(this._dataWo),
+      data_wo_revision: cdktn.numberToTerraform(this._dataWoRevision),
+      id: cdktn.stringToTerraform(this._id),
+      immutable: cdktn.booleanToTerraform(this._immutable),
+      type: cdktn.stringToTerraform(this._type),
+      wait_for_service_account_token: cdktn.booleanToTerraform(this._waitForServiceAccountToken),
       metadata: secretMetadataToTerraform(this._metadata.internalValue),
       timeouts: secretTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -704,61 +704,61 @@ export class Secret extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       binary_data: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._binaryData),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._binaryData),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       binary_data_wo: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._binaryDataWo),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._binaryDataWo),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       binary_data_wo_revision: {
-        value: cdktf.numberToHclTerraform(this._binaryDataWoRevision),
+        value: cdktn.numberToHclTerraform(this._binaryDataWoRevision),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       data: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._data),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._data),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       data_wo: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._dataWo),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._dataWo),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       data_wo_revision: {
-        value: cdktf.numberToHclTerraform(this._dataWoRevision),
+        value: cdktn.numberToHclTerraform(this._dataWoRevision),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       immutable: {
-        value: cdktf.booleanToHclTerraform(this._immutable),
+        value: cdktn.booleanToHclTerraform(this._immutable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       wait_for_service_account_token: {
-        value: cdktf.booleanToHclTerraform(this._waitForServiceAccountToken),
+        value: cdktn.booleanToHclTerraform(this._waitForServiceAccountToken),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

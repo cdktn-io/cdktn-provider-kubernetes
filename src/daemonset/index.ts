@@ -19,8 +19,8 @@ daemonsetTimeoutsToHclTerraform,
 DaemonsetTimeoutsOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface DaemonsetConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface DaemonsetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemonset#id Daemonset#id}
   *
@@ -33,7 +33,7 @@ export interface DaemonsetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemonset#wait_for_rollout Daemonset#wait_for_rollout}
   */
-  readonly waitForRollout?: boolean | cdktf.IResolvable;
+  readonly waitForRollout?: boolean | cdktn.IResolvable;
   /**
   * metadata block
   *
@@ -57,7 +57,7 @@ export interface DaemonsetConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemonset kubernetes_daemonset}
 */
-export class Daemonset extends cdktf.TerraformResource {
+export class Daemonset extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -68,14 +68,14 @@ export class Daemonset extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Daemonset resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Daemonset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Daemonset to import
   * @param importFromId The id of the existing Daemonset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemonset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Daemonset to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_daemonset", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_daemonset", importId: importFromId, provider });
       }
 
   // ===========
@@ -133,11 +133,11 @@ export class Daemonset extends cdktf.TerraformResource {
   }
 
   // wait_for_rollout - computed: false, optional: true, required: false
-  private _waitForRollout?: boolean | cdktf.IResolvable; 
+  private _waitForRollout?: boolean | cdktn.IResolvable; 
   public get waitForRollout() {
     return this.getBooleanAttribute('wait_for_rollout');
   }
-  public set waitForRollout(value: boolean | cdktf.IResolvable) {
+  public set waitForRollout(value: boolean | cdktn.IResolvable) {
     this._waitForRollout = value;
   }
   public resetWaitForRollout() {
@@ -196,8 +196,8 @@ export class Daemonset extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      wait_for_rollout: cdktf.booleanToTerraform(this._waitForRollout),
+      id: cdktn.stringToTerraform(this._id),
+      wait_for_rollout: cdktn.booleanToTerraform(this._waitForRollout),
       metadata: daemonsetMetadataToTerraform(this._metadata.internalValue),
       spec: daemonsetSpecToTerraform(this._spec.internalValue),
       timeouts: daemonsetTimeoutsToTerraform(this._timeouts.internalValue),
@@ -207,13 +207,13 @@ export class Daemonset extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       wait_for_rollout: {
-        value: cdktf.booleanToHclTerraform(this._waitForRollout),
+        value: cdktn.booleanToHclTerraform(this._waitForRollout),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

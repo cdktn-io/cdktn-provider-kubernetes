@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 import { CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStart,
 cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartToTerraform,
 cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartToHclTerraform,
@@ -62,41 +62,41 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#post_start CronJobV1#post_start}
   */
-  readonly postStart?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStart[] | cdktf.IResolvable;
+  readonly postStart?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStart[] | cdktn.IResolvable;
   /**
   * pre_stop block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pre_stop CronJobV1#pre_stop}
   */
-  readonly preStop?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStop[] | cdktf.IResolvable;
+  readonly preStop?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStop[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    post_start: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartToTerraform, true)(struct!.postStart),
-    pre_stop: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopToTerraform, true)(struct!.preStop),
+    post_start: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartToTerraform, true)(struct!.postStart),
+    pre_stop: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopToTerraform, true)(struct!.preStop),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     post_start: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartToHclTerraform, true)(struct!.postStart),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartToHclTerraform, true)(struct!.postStart),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartList",
     },
     pre_stop: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopToHclTerraform, true)(struct!.preStop),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopToHclTerraform, true)(struct!.preStop),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopList",
@@ -107,14 +107,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -150,7 +150,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutpu
   public get postStart() {
     return this._postStart;
   }
-  public putPostStart(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStart[] | cdktf.IResolvable) {
+  public putPostStart(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStart[] | cdktn.IResolvable) {
     this._postStart.internalValue = value;
   }
   public resetPostStart() {
@@ -166,7 +166,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutpu
   public get preStop() {
     return this._preStop;
   }
-  public putPreStop(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStop[] | cdktf.IResolvable) {
+  public putPreStop(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStop[] | cdktn.IResolvable) {
     this._preStop.internalValue = value;
   }
   public resetPreStop() {
@@ -187,24 +187,24 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPr
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -215,14 +215,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -278,32 +278,32 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPr
   readonly service?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    service: cdktf.stringToTerraform(struct!.service),
+    port: cdktn.numberToTerraform(struct!.port),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -314,9 +314,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -324,11 +324,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeG
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -345,14 +345,14 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeG
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -394,15 +394,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeG
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -428,32 +428,32 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPr
   readonly value?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -464,9 +464,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -474,11 +474,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeH
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -495,14 +495,14 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeH
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -547,15 +547,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeH
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -596,56 +596,56 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
   */
-  readonly httpHeader?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList",
@@ -656,14 +656,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -781,7 +781,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeH
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -801,25 +801,25 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPr
   readonly port: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -830,9 +830,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -840,11 +840,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeT
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -857,13 +857,13 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeT
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -888,15 +888,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeT
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -949,7 +949,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
   */
-  readonly grpc?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc[] | cdktf.IResolvable;
+  readonly grpc?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc[] | cdktn.IResolvable;
   /**
   * http_get block
   *
@@ -961,60 +961,60 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
   */
-  readonly tcpSocket?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
-    initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
-    period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
-    success_threshold: cdktf.numberToTerraform(struct!.successThreshold),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktn.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
+    success_threshold: cdktn.numberToTerraform(struct!.successThreshold),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     exec: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecToTerraform(struct!.exec),
-    grpc: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcToTerraform, true)(struct!.grpc),
+    grpc: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcToTerraform, true)(struct!.grpc),
     http_get: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failure_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.failureThreshold),
+      value: cdktn.numberToHclTerraform(struct!.failureThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     initial_delay_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.initialDelaySeconds),
+      value: cdktn.numberToHclTerraform(struct!.initialDelaySeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.periodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.periodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     success_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.successThreshold),
+      value: cdktn.numberToHclTerraform(struct!.successThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1026,7 +1026,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPro
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecList",
     },
     grpc: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcToHclTerraform, true)(struct!.grpc),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcToHclTerraform, true)(struct!.grpc),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcList",
@@ -1038,7 +1038,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPro
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketList",
@@ -1049,14 +1049,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1230,7 +1230,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeO
   public get grpc() {
     return this._grpc;
   }
-  public putGrpc(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc[] | cdktf.IResolvable) {
+  public putGrpc(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc[] | cdktn.IResolvable) {
     this._grpc.internalValue = value;
   }
   public resetGrpc() {
@@ -1262,7 +1262,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeO
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -1306,53 +1306,53 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort {
   readonly protocol?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_port: cdktf.numberToTerraform(struct!.containerPort),
-    host_ip: cdktf.stringToTerraform(struct!.hostIp),
-    host_port: cdktf.numberToTerraform(struct!.hostPort),
-    name: cdktf.stringToTerraform(struct!.name),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    container_port: cdktn.numberToTerraform(struct!.containerPort),
+    host_ip: cdktn.stringToTerraform(struct!.hostIp),
+    host_port: cdktn.numberToTerraform(struct!.hostPort),
+    name: cdktn.stringToTerraform(struct!.name),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_port: {
-      value: cdktf.numberToHclTerraform(struct!.containerPort),
+      value: cdktn.numberToHclTerraform(struct!.containerPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     host_ip: {
-      value: cdktf.stringToHclTerraform(struct!.hostIp),
+      value: cdktn.stringToHclTerraform(struct!.hostIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_port: {
-      value: cdktf.numberToHclTerraform(struct!.hostPort),
+      value: cdktn.numberToHclTerraform(struct!.hostPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1363,9 +1363,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1373,11 +1373,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1406,7 +1406,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1416,7 +1416,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputRefe
       this._name = undefined;
       this._protocol = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1509,15 +1509,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputRefe
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1538,24 +1538,24 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessP
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1566,14 +1566,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1629,32 +1629,32 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessP
   readonly service?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    service: cdktf.stringToTerraform(struct!.service),
+    port: cdktn.numberToTerraform(struct!.port),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1665,9 +1665,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1675,11 +1675,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1696,14 +1696,14 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1745,15 +1745,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1779,32 +1779,32 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessP
   readonly value?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1815,9 +1815,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1825,11 +1825,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1846,14 +1846,14 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1898,15 +1898,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1947,56 +1947,56 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessP
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
   */
-  readonly httpHeader?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList",
@@ -2007,14 +2007,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2132,7 +2132,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -2152,25 +2152,25 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessP
   readonly port: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2181,9 +2181,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2191,11 +2191,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2208,13 +2208,13 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2239,15 +2239,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2300,7 +2300,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessP
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
   */
-  readonly grpc?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc[] | cdktf.IResolvable;
+  readonly grpc?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc[] | cdktn.IResolvable;
   /**
   * http_get block
   *
@@ -2312,60 +2312,60 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessP
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
   */
-  readonly tcpSocket?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
-    initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
-    period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
-    success_threshold: cdktf.numberToTerraform(struct!.successThreshold),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktn.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
+    success_threshold: cdktn.numberToTerraform(struct!.successThreshold),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     exec: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecToTerraform(struct!.exec),
-    grpc: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcToTerraform, true)(struct!.grpc),
+    grpc: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcToTerraform, true)(struct!.grpc),
     http_get: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failure_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.failureThreshold),
+      value: cdktn.numberToHclTerraform(struct!.failureThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     initial_delay_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.initialDelaySeconds),
+      value: cdktn.numberToHclTerraform(struct!.initialDelaySeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.periodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.periodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     success_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.successThreshold),
+      value: cdktn.numberToHclTerraform(struct!.successThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2377,7 +2377,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessPr
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecList",
     },
     grpc: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcToHclTerraform, true)(struct!.grpc),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcToHclTerraform, true)(struct!.grpc),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcList",
@@ -2389,7 +2389,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessPr
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
@@ -2400,14 +2400,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2581,7 +2581,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
   public get grpc() {
     return this._grpc;
   }
-  public putGrpc(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc[] | cdktf.IResolvable) {
+  public putGrpc(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc[] | cdktn.IResolvable) {
     this._grpc.internalValue = value;
   }
   public resetGrpc() {
@@ -2613,7 +2613,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -2640,31 +2640,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources 
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    limits: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.limits),
-    requests: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requests),
+    limits: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.limits),
+    requests: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.requests),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     limits: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.limits),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.limits),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     requests: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requests),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.requests),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -2675,14 +2675,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2761,31 +2761,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    add: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.add),
-    drop: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.drop),
+    add: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.add),
+    drop: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.drop),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     add: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.add),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.add),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     drop: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.drop),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.drop),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2796,14 +2796,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2894,45 +2894,45 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    level: cdktf.stringToTerraform(struct!.level),
-    role: cdktf.stringToTerraform(struct!.role),
-    type: cdktf.stringToTerraform(struct!.type),
-    user: cdktf.stringToTerraform(struct!.user),
+    level: cdktn.stringToTerraform(struct!.level),
+    role: cdktn.stringToTerraform(struct!.role),
+    type: cdktn.stringToTerraform(struct!.type),
+    user: cdktn.stringToTerraform(struct!.user),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     level: {
-      value: cdktf.stringToHclTerraform(struct!.level),
+      value: cdktn.stringToHclTerraform(struct!.level),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2943,14 +2943,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3073,31 +3073,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    localhost_profile: cdktf.stringToTerraform(struct!.localhostProfile),
-    type: cdktf.stringToTerraform(struct!.type),
+    localhost_profile: cdktn.stringToTerraform(struct!.localhostProfile),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     localhost_profile: {
-      value: cdktf.stringToHclTerraform(struct!.localhostProfile),
+      value: cdktn.stringToHclTerraform(struct!.localhostProfile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3108,14 +3108,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3184,19 +3184,19 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#allow_privilege_escalation CronJobV1#allow_privilege_escalation}
   */
-  readonly allowPrivilegeEscalation?: boolean | cdktf.IResolvable;
+  readonly allowPrivilegeEscalation?: boolean | cdktn.IResolvable;
   /**
   * Run container in privileged mode. Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#privileged CronJobV1#privileged}
   */
-  readonly privileged?: boolean | cdktf.IResolvable;
+  readonly privileged?: boolean | cdktn.IResolvable;
   /**
   * Whether this container has a read-only root filesystem. Default is false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only_root_filesystem CronJobV1#read_only_root_filesystem}
   */
-  readonly readOnlyRootFilesystem?: boolean | cdktf.IResolvable;
+  readonly readOnlyRootFilesystem?: boolean | cdktn.IResolvable;
   /**
   * The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
   *
@@ -3208,7 +3208,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
   */
-  readonly runAsNonRoot?: boolean | cdktf.IResolvable;
+  readonly runAsNonRoot?: boolean | cdktn.IResolvable;
   /**
   * The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
   *
@@ -3236,17 +3236,17 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_privilege_escalation: cdktf.booleanToTerraform(struct!.allowPrivilegeEscalation),
-    privileged: cdktf.booleanToTerraform(struct!.privileged),
-    read_only_root_filesystem: cdktf.booleanToTerraform(struct!.readOnlyRootFilesystem),
-    run_as_group: cdktf.stringToTerraform(struct!.runAsGroup),
-    run_as_non_root: cdktf.booleanToTerraform(struct!.runAsNonRoot),
-    run_as_user: cdktf.stringToTerraform(struct!.runAsUser),
+    allow_privilege_escalation: cdktn.booleanToTerraform(struct!.allowPrivilegeEscalation),
+    privileged: cdktn.booleanToTerraform(struct!.privileged),
+    read_only_root_filesystem: cdktn.booleanToTerraform(struct!.readOnlyRootFilesystem),
+    run_as_group: cdktn.stringToTerraform(struct!.runAsGroup),
+    run_as_non_root: cdktn.booleanToTerraform(struct!.runAsNonRoot),
+    run_as_user: cdktn.stringToTerraform(struct!.runAsUser),
     capabilities: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesToTerraform(struct!.capabilities),
     se_linux_options: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsToTerraform(struct!.seLinuxOptions),
     seccomp_profile: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileToTerraform(struct!.seccompProfile),
@@ -3255,43 +3255,43 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCon
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_privilege_escalation: {
-      value: cdktf.booleanToHclTerraform(struct!.allowPrivilegeEscalation),
+      value: cdktn.booleanToHclTerraform(struct!.allowPrivilegeEscalation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     privileged: {
-      value: cdktf.booleanToHclTerraform(struct!.privileged),
+      value: cdktn.booleanToHclTerraform(struct!.privileged),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     read_only_root_filesystem: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnlyRootFilesystem),
+      value: cdktn.booleanToHclTerraform(struct!.readOnlyRootFilesystem),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_as_group: {
-      value: cdktf.stringToHclTerraform(struct!.runAsGroup),
+      value: cdktn.stringToHclTerraform(struct!.runAsGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     run_as_non_root: {
-      value: cdktf.booleanToHclTerraform(struct!.runAsNonRoot),
+      value: cdktn.booleanToHclTerraform(struct!.runAsNonRoot),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_as_user: {
-      value: cdktf.stringToHclTerraform(struct!.runAsUser),
+      value: cdktn.stringToHclTerraform(struct!.runAsUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3320,14 +3320,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3401,11 +3401,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContex
   }
 
   // allow_privilege_escalation - computed: false, optional: true, required: false
-  private _allowPrivilegeEscalation?: boolean | cdktf.IResolvable; 
+  private _allowPrivilegeEscalation?: boolean | cdktn.IResolvable; 
   public get allowPrivilegeEscalation() {
     return this.getBooleanAttribute('allow_privilege_escalation');
   }
-  public set allowPrivilegeEscalation(value: boolean | cdktf.IResolvable) {
+  public set allowPrivilegeEscalation(value: boolean | cdktn.IResolvable) {
     this._allowPrivilegeEscalation = value;
   }
   public resetAllowPrivilegeEscalation() {
@@ -3417,11 +3417,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContex
   }
 
   // privileged - computed: false, optional: true, required: false
-  private _privileged?: boolean | cdktf.IResolvable; 
+  private _privileged?: boolean | cdktn.IResolvable; 
   public get privileged() {
     return this.getBooleanAttribute('privileged');
   }
-  public set privileged(value: boolean | cdktf.IResolvable) {
+  public set privileged(value: boolean | cdktn.IResolvable) {
     this._privileged = value;
   }
   public resetPrivileged() {
@@ -3433,11 +3433,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContex
   }
 
   // read_only_root_filesystem - computed: false, optional: true, required: false
-  private _readOnlyRootFilesystem?: boolean | cdktf.IResolvable; 
+  private _readOnlyRootFilesystem?: boolean | cdktn.IResolvable; 
   public get readOnlyRootFilesystem() {
     return this.getBooleanAttribute('read_only_root_filesystem');
   }
-  public set readOnlyRootFilesystem(value: boolean | cdktf.IResolvable) {
+  public set readOnlyRootFilesystem(value: boolean | cdktn.IResolvable) {
     this._readOnlyRootFilesystem = value;
   }
   public resetReadOnlyRootFilesystem() {
@@ -3465,11 +3465,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContex
   }
 
   // run_as_non_root - computed: false, optional: true, required: false
-  private _runAsNonRoot?: boolean | cdktf.IResolvable; 
+  private _runAsNonRoot?: boolean | cdktn.IResolvable; 
   public get runAsNonRoot() {
     return this.getBooleanAttribute('run_as_non_root');
   }
-  public set runAsNonRoot(value: boolean | cdktf.IResolvable) {
+  public set runAsNonRoot(value: boolean | cdktn.IResolvable) {
     this._runAsNonRoot = value;
   }
   public resetRunAsNonRoot() {
@@ -3554,24 +3554,24 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupPro
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -3582,14 +3582,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3645,32 +3645,32 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupPro
   readonly service?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    service: cdktf.stringToTerraform(struct!.service),
+    port: cdktn.numberToTerraform(struct!.port),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3681,9 +3681,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3691,11 +3691,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3712,14 +3712,14 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3761,15 +3761,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGr
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3795,32 +3795,32 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupPro
   readonly value?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3831,9 +3831,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3841,11 +3841,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3862,14 +3862,14 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3914,15 +3914,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHt
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3963,56 +3963,56 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupPro
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
   */
-  readonly httpHeader?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktf.IResolvable;
+  readonly httpHeader?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.stringToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    http_header: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.stringToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    http_header: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderToTerraform, true)(struct!.httpHeader),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_header: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderToHclTerraform, true)(struct!.httpHeader),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList",
@@ -4023,14 +4023,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4148,7 +4148,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHt
   public get httpHeader() {
     return this._httpHeader;
   }
-  public putHttpHeader(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktf.IResolvable) {
+  public putHttpHeader(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader[] | cdktn.IResolvable) {
     this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
@@ -4168,25 +4168,25 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupPro
   readonly port: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.stringToTerraform(struct!.port),
+    port: cdktn.stringToTerraform(struct!.port),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4197,9 +4197,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4207,11 +4207,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4224,13 +4224,13 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4255,15 +4255,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTc
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4316,7 +4316,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupPro
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
   */
-  readonly grpc?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc[] | cdktf.IResolvable;
+  readonly grpc?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc[] | cdktn.IResolvable;
   /**
   * http_get block
   *
@@ -4328,60 +4328,60 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupPro
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
   */
-  readonly tcpSocket?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket[] | cdktf.IResolvable;
+  readonly tcpSocket?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
-    initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
-    period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
-    success_threshold: cdktf.numberToTerraform(struct!.successThreshold),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktn.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
+    success_threshold: cdktn.numberToTerraform(struct!.successThreshold),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     exec: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecToTerraform(struct!.exec),
-    grpc: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcToTerraform, true)(struct!.grpc),
+    grpc: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcToTerraform, true)(struct!.grpc),
     http_get: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetToTerraform(struct!.httpGet),
-    tcp_socket: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
+    tcp_socket: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketToTerraform, true)(struct!.tcpSocket),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failure_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.failureThreshold),
+      value: cdktn.numberToHclTerraform(struct!.failureThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     initial_delay_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.initialDelaySeconds),
+      value: cdktn.numberToHclTerraform(struct!.initialDelaySeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.periodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.periodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     success_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.successThreshold),
+      value: cdktn.numberToHclTerraform(struct!.successThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4393,7 +4393,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProb
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecList",
     },
     grpc: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcToHclTerraform, true)(struct!.grpc),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcToHclTerraform, true)(struct!.grpc),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcList",
@@ -4405,7 +4405,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProb
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetList",
     },
     tcp_socket: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketToHclTerraform, true)(struct!.tcpSocket),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketList",
@@ -4416,14 +4416,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4597,7 +4597,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOu
   public get grpc() {
     return this._grpc;
   }
-  public putGrpc(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc[] | cdktf.IResolvable) {
+  public putGrpc(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc[] | cdktn.IResolvable) {
     this._grpc.internalValue = value;
   }
   public resetGrpc() {
@@ -4629,7 +4629,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOu
   public get tcpSocket() {
     return this._tcpSocket;
   }
-  public putTcpSocket(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket[] | cdktf.IResolvable) {
+  public putTcpSocket(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket[] | cdktn.IResolvable) {
     this._tcpSocket.internalValue = value;
   }
   public resetTcpSocket() {
@@ -4655,32 +4655,32 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevi
   readonly name: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    device_path: cdktf.stringToTerraform(struct!.devicePath),
-    name: cdktf.stringToTerraform(struct!.name),
+    device_path: cdktn.stringToTerraform(struct!.devicePath),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     device_path: {
-      value: cdktf.stringToHclTerraform(struct!.devicePath),
+      value: cdktn.stringToHclTerraform(struct!.devicePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4691,9 +4691,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4701,11 +4701,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4722,14 +4722,14 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._devicePath = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4768,15 +4768,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceOu
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4811,7 +4811,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMoun
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
   *
@@ -4826,60 +4826,60 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMoun
   readonly subPathExpr?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_path: cdktf.stringToTerraform(struct!.mountPath),
-    mount_propagation: cdktf.stringToTerraform(struct!.mountPropagation),
-    name: cdktf.stringToTerraform(struct!.name),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    sub_path: cdktf.stringToTerraform(struct!.subPath),
-    sub_path_expr: cdktf.stringToTerraform(struct!.subPathExpr),
+    mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    mount_propagation: cdktn.stringToTerraform(struct!.mountPropagation),
+    name: cdktn.stringToTerraform(struct!.name),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    sub_path: cdktn.stringToTerraform(struct!.subPath),
+    sub_path_expr: cdktn.stringToTerraform(struct!.subPathExpr),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.mountPath),
+      value: cdktn.stringToHclTerraform(struct!.mountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount_propagation: {
-      value: cdktf.stringToHclTerraform(struct!.mountPropagation),
+      value: cdktn.stringToHclTerraform(struct!.mountPropagation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sub_path: {
-      value: cdktf.stringToHclTerraform(struct!.subPath),
+      value: cdktn.stringToHclTerraform(struct!.subPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sub_path_expr: {
-      value: cdktf.stringToHclTerraform(struct!.subPathExpr),
+      value: cdktn.stringToHclTerraform(struct!.subPathExpr),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4890,9 +4890,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4900,11 +4900,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4937,7 +4937,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4948,7 +4948,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOut
       this._subPath = undefined;
       this._subPathExpr = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5007,11 +5007,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOut
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -5055,15 +5055,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOut
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5110,13 +5110,13 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#stdin CronJobV1#stdin}
   */
-  readonly stdin?: boolean | cdktf.IResolvable;
+  readonly stdin?: boolean | cdktn.IResolvable;
   /**
   * Whether the container runtime should close the stdin channel after it has been opened by a single attach. When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#stdin_once CronJobV1#stdin_once}
   */
-  readonly stdinOnce?: boolean | cdktf.IResolvable;
+  readonly stdinOnce?: boolean | cdktn.IResolvable;
   /**
   * Optional: Path at which the file to which the container's termination message will be written is mounted into the container's filesystem. Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
   *
@@ -5134,7 +5134,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tty CronJobV1#tty}
   */
-  readonly tty?: boolean | cdktf.IResolvable;
+  readonly tty?: boolean | cdktn.IResolvable;
   /**
   * Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
   *
@@ -5146,13 +5146,13 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#env CronJobV1#env}
   */
-  readonly env?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnv[] | cdktf.IResolvable;
+  readonly env?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnv[] | cdktn.IResolvable;
   /**
   * env_from block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#env_from CronJobV1#env_from}
   */
-  readonly envFrom?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFrom[] | cdktf.IResolvable;
+  readonly envFrom?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFrom[] | cdktn.IResolvable;
   /**
   * lifecycle block
   *
@@ -5170,7 +5170,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
   */
-  readonly port?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort[] | cdktf.IResolvable;
+  readonly port?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort[] | cdktn.IResolvable;
   /**
   * readiness_probe block
   *
@@ -5200,127 +5200,127 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_device CronJobV1#volume_device}
   */
-  readonly volumeDevice?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice[] | cdktf.IResolvable;
+  readonly volumeDevice?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice[] | cdktn.IResolvable;
   /**
   * volume_mount block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_mount CronJobV1#volume_mount}
   */
-  readonly volumeMount?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount[] | cdktf.IResolvable;
+  readonly volumeMount?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount[] | cdktn.IResolvable;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
-    image: cdktf.stringToTerraform(struct!.image),
-    image_pull_policy: cdktf.stringToTerraform(struct!.imagePullPolicy),
-    name: cdktf.stringToTerraform(struct!.name),
-    stdin: cdktf.booleanToTerraform(struct!.stdin),
-    stdin_once: cdktf.booleanToTerraform(struct!.stdinOnce),
-    termination_message_path: cdktf.stringToTerraform(struct!.terminationMessagePath),
-    termination_message_policy: cdktf.stringToTerraform(struct!.terminationMessagePolicy),
-    tty: cdktf.booleanToTerraform(struct!.tty),
-    working_dir: cdktf.stringToTerraform(struct!.workingDir),
-    env: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvToTerraform, true)(struct!.env),
-    env_from: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromToTerraform, true)(struct!.envFrom),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
+    image: cdktn.stringToTerraform(struct!.image),
+    image_pull_policy: cdktn.stringToTerraform(struct!.imagePullPolicy),
+    name: cdktn.stringToTerraform(struct!.name),
+    stdin: cdktn.booleanToTerraform(struct!.stdin),
+    stdin_once: cdktn.booleanToTerraform(struct!.stdinOnce),
+    termination_message_path: cdktn.stringToTerraform(struct!.terminationMessagePath),
+    termination_message_policy: cdktn.stringToTerraform(struct!.terminationMessagePolicy),
+    tty: cdktn.booleanToTerraform(struct!.tty),
+    working_dir: cdktn.stringToTerraform(struct!.workingDir),
+    env: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvToTerraform, true)(struct!.env),
+    env_from: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromToTerraform, true)(struct!.envFrom),
     lifecycle: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleToTerraform(struct!.lifecycle),
     liveness_probe: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeToTerraform(struct!.livenessProbe),
-    port: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortToTerraform, true)(struct!.port),
+    port: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortToTerraform, true)(struct!.port),
     readiness_probe: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeToTerraform(struct!.readinessProbe),
     resources: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesToTerraform(struct!.resources),
     security_context: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextToTerraform(struct!.securityContext),
     startup_probe: cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeToTerraform(struct!.startupProbe),
-    volume_device: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceToTerraform, true)(struct!.volumeDevice),
-    volume_mount: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountToTerraform, true)(struct!.volumeMount),
+    volume_device: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceToTerraform, true)(struct!.volumeDevice),
+    volume_mount: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountToTerraform, true)(struct!.volumeMount),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     command: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.command),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     image: {
-      value: cdktf.stringToHclTerraform(struct!.image),
+      value: cdktn.stringToHclTerraform(struct!.image),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_pull_policy: {
-      value: cdktf.stringToHclTerraform(struct!.imagePullPolicy),
+      value: cdktn.stringToHclTerraform(struct!.imagePullPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stdin: {
-      value: cdktf.booleanToHclTerraform(struct!.stdin),
+      value: cdktn.booleanToHclTerraform(struct!.stdin),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     stdin_once: {
-      value: cdktf.booleanToHclTerraform(struct!.stdinOnce),
+      value: cdktn.booleanToHclTerraform(struct!.stdinOnce),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     termination_message_path: {
-      value: cdktf.stringToHclTerraform(struct!.terminationMessagePath),
+      value: cdktn.stringToHclTerraform(struct!.terminationMessagePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     termination_message_policy: {
-      value: cdktf.stringToHclTerraform(struct!.terminationMessagePolicy),
+      value: cdktn.stringToHclTerraform(struct!.terminationMessagePolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tty: {
-      value: cdktf.booleanToHclTerraform(struct!.tty),
+      value: cdktn.booleanToHclTerraform(struct!.tty),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     working_dir: {
-      value: cdktf.stringToHclTerraform(struct!.workingDir),
+      value: cdktn.stringToHclTerraform(struct!.workingDir),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     env: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvToHclTerraform, true)(struct!.env),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvToHclTerraform, true)(struct!.env),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvList",
     },
     env_from: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromToHclTerraform, true)(struct!.envFrom),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromToHclTerraform, true)(struct!.envFrom),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromList",
@@ -5338,7 +5338,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToHclTerraf
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeList",
     },
     port: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortToHclTerraform, true)(struct!.port),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortToHclTerraform, true)(struct!.port),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortList",
@@ -5368,13 +5368,13 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToHclTerraf
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeList",
     },
     volume_device: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceToHclTerraform, true)(struct!.volumeDevice),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceToHclTerraform, true)(struct!.volumeDevice),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceList",
     },
     volume_mount: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountToHclTerraform, true)(struct!.volumeMount),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountToHclTerraform, true)(struct!.volumeMount),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountList",
@@ -5385,9 +5385,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5395,11 +5395,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5496,7 +5496,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5523,7 +5523,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
       this._volumeDevice.internalValue = undefined;
       this._volumeMount.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5633,11 +5633,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
   }
 
   // stdin - computed: false, optional: true, required: false
-  private _stdin?: boolean | cdktf.IResolvable; 
+  private _stdin?: boolean | cdktn.IResolvable; 
   public get stdin() {
     return this.getBooleanAttribute('stdin');
   }
-  public set stdin(value: boolean | cdktf.IResolvable) {
+  public set stdin(value: boolean | cdktn.IResolvable) {
     this._stdin = value;
   }
   public resetStdin() {
@@ -5649,11 +5649,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
   }
 
   // stdin_once - computed: false, optional: true, required: false
-  private _stdinOnce?: boolean | cdktf.IResolvable; 
+  private _stdinOnce?: boolean | cdktn.IResolvable; 
   public get stdinOnce() {
     return this.getBooleanAttribute('stdin_once');
   }
-  public set stdinOnce(value: boolean | cdktf.IResolvable) {
+  public set stdinOnce(value: boolean | cdktn.IResolvable) {
     this._stdinOnce = value;
   }
   public resetStdinOnce() {
@@ -5697,11 +5697,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
   }
 
   // tty - computed: false, optional: true, required: false
-  private _tty?: boolean | cdktf.IResolvable; 
+  private _tty?: boolean | cdktn.IResolvable; 
   public get tty() {
     return this.getBooleanAttribute('tty');
   }
-  public set tty(value: boolean | cdktf.IResolvable) {
+  public set tty(value: boolean | cdktn.IResolvable) {
     this._tty = value;
   }
   public resetTty() {
@@ -5733,7 +5733,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
   public get env() {
     return this._env;
   }
-  public putEnv(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnv[] | cdktf.IResolvable) {
+  public putEnv(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnv[] | cdktn.IResolvable) {
     this._env.internalValue = value;
   }
   public resetEnv() {
@@ -5749,7 +5749,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
   public get envFrom() {
     return this._envFrom;
   }
-  public putEnvFrom(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFrom[] | cdktf.IResolvable) {
+  public putEnvFrom(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFrom[] | cdktn.IResolvable) {
     this._envFrom.internalValue = value;
   }
   public resetEnvFrom() {
@@ -5797,7 +5797,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
   public get port() {
     return this._port;
   }
-  public putPort(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort[] | cdktf.IResolvable) {
+  public putPort(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort[] | cdktn.IResolvable) {
     this._port.internalValue = value;
   }
   public resetPort() {
@@ -5877,7 +5877,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
   public get volumeDevice() {
     return this._volumeDevice;
   }
-  public putVolumeDevice(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice[] | cdktf.IResolvable) {
+  public putVolumeDevice(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice[] | cdktn.IResolvable) {
     this._volumeDevice.internalValue = value;
   }
   public resetVolumeDevice() {
@@ -5893,7 +5893,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
   public get volumeMount() {
     return this._volumeMount;
   }
-  public putVolumeMount(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount[] | cdktf.IResolvable) {
+  public putVolumeMount(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount[] | cdktn.IResolvable) {
     this._volumeMount.internalValue = value;
   }
   public resetVolumeMount() {
@@ -5905,15 +5905,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReferenc
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5934,24 +5934,24 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecOs {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecOsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecOsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecOs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecOsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecOsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecOs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5962,14 +5962,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecOsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecOsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecOsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6016,25 +6016,25 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate {
   readonly conditionType: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition_type: cdktf.stringToTerraform(struct!.conditionType),
+    condition_type: cdktn.stringToTerraform(struct!.conditionType),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition_type: {
-      value: cdktf.stringToHclTerraform(struct!.conditionType),
+      value: cdktn.stringToHclTerraform(struct!.conditionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6045,9 +6045,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6055,11 +6055,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6072,13 +6072,13 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._conditionType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6103,15 +6103,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReferenc
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6150,45 +6150,45 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxO
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    level: cdktf.stringToTerraform(struct!.level),
-    role: cdktf.stringToTerraform(struct!.role),
-    type: cdktf.stringToTerraform(struct!.type),
-    user: cdktf.stringToTerraform(struct!.user),
+    level: cdktn.stringToTerraform(struct!.level),
+    role: cdktn.stringToTerraform(struct!.role),
+    type: cdktn.stringToTerraform(struct!.type),
+    user: cdktn.stringToTerraform(struct!.user),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     level: {
-      value: cdktf.stringToHclTerraform(struct!.level),
+      value: cdktn.stringToHclTerraform(struct!.level),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6199,14 +6199,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6329,31 +6329,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompP
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    localhost_profile: cdktf.stringToTerraform(struct!.localhostProfile),
-    type: cdktf.stringToTerraform(struct!.type),
+    localhost_profile: cdktn.stringToTerraform(struct!.localhostProfile),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     localhost_profile: {
-      value: cdktf.stringToHclTerraform(struct!.localhostProfile),
+      value: cdktn.stringToHclTerraform(struct!.localhostProfile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6364,14 +6364,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6449,32 +6449,32 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl {
   readonly value: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6485,9 +6485,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6495,11 +6495,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6516,14 +6516,14 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6562,15 +6562,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutput
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6599,7 +6599,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsO
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_process CronJobV1#host_process}
   */
-  readonly hostProcess?: boolean | cdktf.IResolvable;
+  readonly hostProcess?: boolean | cdktn.IResolvable;
   /**
   * The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
   *
@@ -6609,45 +6609,45 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsO
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptionsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptionsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gmsa_credential_spec: cdktf.stringToTerraform(struct!.gmsaCredentialSpec),
-    gmsa_credential_spec_name: cdktf.stringToTerraform(struct!.gmsaCredentialSpecName),
-    host_process: cdktf.booleanToTerraform(struct!.hostProcess),
-    run_as_username: cdktf.stringToTerraform(struct!.runAsUsername),
+    gmsa_credential_spec: cdktn.stringToTerraform(struct!.gmsaCredentialSpec),
+    gmsa_credential_spec_name: cdktn.stringToTerraform(struct!.gmsaCredentialSpecName),
+    host_process: cdktn.booleanToTerraform(struct!.hostProcess),
+    run_as_username: cdktn.stringToTerraform(struct!.runAsUsername),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptionsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptionsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gmsa_credential_spec: {
-      value: cdktf.stringToHclTerraform(struct!.gmsaCredentialSpec),
+      value: cdktn.stringToHclTerraform(struct!.gmsaCredentialSpec),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     gmsa_credential_spec_name: {
-      value: cdktf.stringToHclTerraform(struct!.gmsaCredentialSpecName),
+      value: cdktn.stringToHclTerraform(struct!.gmsaCredentialSpecName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_process: {
-      value: cdktf.booleanToHclTerraform(struct!.hostProcess),
+      value: cdktn.booleanToHclTerraform(struct!.hostProcess),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_as_username: {
-      value: cdktf.stringToHclTerraform(struct!.runAsUsername),
+      value: cdktn.stringToHclTerraform(struct!.runAsUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6658,14 +6658,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptionsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6741,11 +6741,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptio
   }
 
   // host_process - computed: false, optional: true, required: false
-  private _hostProcess?: boolean | cdktf.IResolvable; 
+  private _hostProcess?: boolean | cdktn.IResolvable; 
   public get hostProcess() {
     return this.getBooleanAttribute('host_process');
   }
-  public set hostProcess(value: boolean | cdktf.IResolvable) {
+  public set hostProcess(value: boolean | cdktn.IResolvable) {
     this._hostProcess = value;
   }
   public resetHostProcess() {
@@ -6796,7 +6796,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
   */
-  readonly runAsNonRoot?: boolean | cdktf.IResolvable;
+  readonly runAsNonRoot?: boolean | cdktn.IResolvable;
   /**
   * The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
   *
@@ -6826,7 +6826,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sysctl CronJobV1#sysctl}
   */
-  readonly sysctl?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl[] | cdktf.IResolvable;
+  readonly sysctl?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl[] | cdktn.IResolvable;
   /**
   * windows_options block
   *
@@ -6836,63 +6836,63 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_group: cdktf.stringToTerraform(struct!.fsGroup),
-    fs_group_change_policy: cdktf.stringToTerraform(struct!.fsGroupChangePolicy),
-    run_as_group: cdktf.stringToTerraform(struct!.runAsGroup),
-    run_as_non_root: cdktf.booleanToTerraform(struct!.runAsNonRoot),
-    run_as_user: cdktf.stringToTerraform(struct!.runAsUser),
-    supplemental_groups: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.supplementalGroups),
+    fs_group: cdktn.stringToTerraform(struct!.fsGroup),
+    fs_group_change_policy: cdktn.stringToTerraform(struct!.fsGroupChangePolicy),
+    run_as_group: cdktn.stringToTerraform(struct!.runAsGroup),
+    run_as_non_root: cdktn.booleanToTerraform(struct!.runAsNonRoot),
+    run_as_user: cdktn.stringToTerraform(struct!.runAsUser),
+    supplemental_groups: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.supplementalGroups),
     se_linux_options: cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsToTerraform(struct!.seLinuxOptions),
     seccomp_profile: cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileToTerraform(struct!.seccompProfile),
-    sysctl: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlToTerraform, true)(struct!.sysctl),
+    sysctl: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlToTerraform, true)(struct!.sysctl),
     windows_options: cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptionsToTerraform(struct!.windowsOptions),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_group: {
-      value: cdktf.stringToHclTerraform(struct!.fsGroup),
+      value: cdktn.stringToHclTerraform(struct!.fsGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fs_group_change_policy: {
-      value: cdktf.stringToHclTerraform(struct!.fsGroupChangePolicy),
+      value: cdktn.stringToHclTerraform(struct!.fsGroupChangePolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     run_as_group: {
-      value: cdktf.stringToHclTerraform(struct!.runAsGroup),
+      value: cdktn.stringToHclTerraform(struct!.runAsGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     run_as_non_root: {
-      value: cdktf.booleanToHclTerraform(struct!.runAsNonRoot),
+      value: cdktn.booleanToHclTerraform(struct!.runAsNonRoot),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_as_user: {
-      value: cdktf.stringToHclTerraform(struct!.runAsUser),
+      value: cdktn.stringToHclTerraform(struct!.runAsUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     supplemental_groups: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.supplementalGroups),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.supplementalGroups),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
@@ -6910,7 +6910,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextToHclTerr
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileList",
     },
     sysctl: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlToHclTerraform, true)(struct!.sysctl),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlToHclTerraform, true)(struct!.sysctl),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList",
@@ -6927,14 +6927,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7062,11 +7062,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputRefere
   }
 
   // run_as_non_root - computed: false, optional: true, required: false
-  private _runAsNonRoot?: boolean | cdktf.IResolvable; 
+  private _runAsNonRoot?: boolean | cdktn.IResolvable; 
   public get runAsNonRoot() {
     return this.getBooleanAttribute('run_as_non_root');
   }
-  public set runAsNonRoot(value: boolean | cdktf.IResolvable) {
+  public set runAsNonRoot(value: boolean | cdktn.IResolvable) {
     this._runAsNonRoot = value;
   }
   public resetRunAsNonRoot() {
@@ -7096,7 +7096,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputRefere
   // supplemental_groups - computed: false, optional: true, required: false
   private _supplementalGroups?: number[]; 
   public get supplementalGroups() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('supplemental_groups')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('supplemental_groups')));
   }
   public set supplementalGroups(value: number[]) {
     this._supplementalGroups = value;
@@ -7146,7 +7146,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputRefere
   public get sysctl() {
     return this._sysctl;
   }
-  public putSysctl(value: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl[] | cdktf.IResolvable) {
+  public putSysctl(value: CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl[] | cdktn.IResolvable) {
     this._sysctl.internalValue = value;
   }
   public resetSysctl() {
@@ -7206,53 +7206,53 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecToleration {
   readonly value?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecTolerationToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecToleration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecTolerationToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecToleration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    effect: cdktf.stringToTerraform(struct!.effect),
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    toleration_seconds: cdktf.stringToTerraform(struct!.tolerationSeconds),
-    value: cdktf.stringToTerraform(struct!.value),
+    effect: cdktn.stringToTerraform(struct!.effect),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    toleration_seconds: cdktn.stringToTerraform(struct!.tolerationSeconds),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecTolerationToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecToleration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecTolerationToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecToleration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     effect: {
-      value: cdktf.stringToHclTerraform(struct!.effect),
+      value: cdktn.stringToHclTerraform(struct!.effect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     toleration_seconds: {
-      value: cdktf.stringToHclTerraform(struct!.tolerationSeconds),
+      value: cdktn.stringToHclTerraform(struct!.tolerationSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7263,9 +7263,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecTolerationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7273,11 +7273,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecToleration | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecToleration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7306,7 +7306,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecToleration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecToleration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7316,7 +7316,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference e
       this._tolerationSeconds = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7412,15 +7412,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference e
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecTolerationList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecToleration[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecTolerationList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecToleration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7452,39 +7452,39 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstrain
   readonly values?: string[];
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -7495,9 +7495,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7505,11 +7505,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLab
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7530,7 +7530,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLab
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7538,7 +7538,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLab
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7586,7 +7586,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLab
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -7600,15 +7600,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLab
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7631,35 +7631,35 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstrain
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
   */
-  readonly matchExpressions?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
@@ -7670,9 +7670,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7680,11 +7680,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLab
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7701,14 +7701,14 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLab
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchLabels = undefined;
       this._matchExpressions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7741,7 +7741,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLab
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -7753,15 +7753,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLab
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7820,77 +7820,77 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstrain
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
   */
-  readonly labelSelector?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector[] | cdktf.IResolvable;
+  readonly labelSelector?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector[] | cdktn.IResolvable;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_label_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchLabelKeys),
-    max_skew: cdktf.numberToTerraform(struct!.maxSkew),
-    min_domains: cdktf.numberToTerraform(struct!.minDomains),
-    node_affinity_policy: cdktf.stringToTerraform(struct!.nodeAffinityPolicy),
-    node_taints_policy: cdktf.stringToTerraform(struct!.nodeTaintsPolicy),
-    topology_key: cdktf.stringToTerraform(struct!.topologyKey),
-    when_unsatisfiable: cdktf.stringToTerraform(struct!.whenUnsatisfiable),
-    label_selector: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorToTerraform, true)(struct!.labelSelector),
+    match_label_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchLabelKeys),
+    max_skew: cdktn.numberToTerraform(struct!.maxSkew),
+    min_domains: cdktn.numberToTerraform(struct!.minDomains),
+    node_affinity_policy: cdktn.stringToTerraform(struct!.nodeAffinityPolicy),
+    node_taints_policy: cdktn.stringToTerraform(struct!.nodeTaintsPolicy),
+    topology_key: cdktn.stringToTerraform(struct!.topologyKey),
+    when_unsatisfiable: cdktn.stringToTerraform(struct!.whenUnsatisfiable),
+    label_selector: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorToTerraform, true)(struct!.labelSelector),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_label_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchLabelKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchLabelKeys),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     max_skew: {
-      value: cdktf.numberToHclTerraform(struct!.maxSkew),
+      value: cdktn.numberToHclTerraform(struct!.maxSkew),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_domains: {
-      value: cdktf.numberToHclTerraform(struct!.minDomains),
+      value: cdktn.numberToHclTerraform(struct!.minDomains),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     node_affinity_policy: {
-      value: cdktf.stringToHclTerraform(struct!.nodeAffinityPolicy),
+      value: cdktn.stringToHclTerraform(struct!.nodeAffinityPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_taints_policy: {
-      value: cdktf.stringToHclTerraform(struct!.nodeTaintsPolicy),
+      value: cdktn.stringToHclTerraform(struct!.nodeTaintsPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topology_key: {
-      value: cdktf.stringToHclTerraform(struct!.topologyKey),
+      value: cdktn.stringToHclTerraform(struct!.topologyKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     when_unsatisfiable: {
-      value: cdktf.stringToHclTerraform(struct!.whenUnsatisfiable),
+      value: cdktn.stringToHclTerraform(struct!.whenUnsatisfiable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label_selector: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorToHclTerraform, true)(struct!.labelSelector),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorToHclTerraform, true)(struct!.labelSelector),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
@@ -7901,9 +7901,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7911,11 +7911,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7956,7 +7956,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7969,7 +7969,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOut
       this._whenUnsatisfiable = undefined;
       this._labelSelector.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7990,7 +7990,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOut
   // match_label_keys - computed: false, optional: true, required: false
   private _matchLabelKeys?: string[]; 
   public get matchLabelKeys() {
-    return cdktf.Fn.tolist(this.getListAttribute('match_label_keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('match_label_keys'));
   }
   public set matchLabelKeys(value: string[]) {
     this._matchLabelKeys = value;
@@ -8104,7 +8104,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOut
   public get labelSelector() {
     return this._labelSelector;
   }
-  public putLabelSelector(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector[] | cdktf.IResolvable) {
+  public putLabelSelector(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector[] | cdktn.IResolvable) {
     this._labelSelector.internalValue = value;
   }
   public resetLabelSelector() {
@@ -8116,15 +8116,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOut
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8153,7 +8153,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockSt
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
   *
@@ -8163,45 +8163,45 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockSt
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    partition: cdktf.numberToTerraform(struct!.partition),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    volume_id: cdktf.stringToTerraform(struct!.volumeId),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    partition: cdktn.numberToTerraform(struct!.partition),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    volume_id: cdktn.stringToTerraform(struct!.volumeId),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partition: {
-      value: cdktf.numberToHclTerraform(struct!.partition),
+      value: cdktn.numberToHclTerraform(struct!.partition),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     volume_id: {
-      value: cdktf.stringToHclTerraform(struct!.volumeId),
+      value: cdktn.stringToHclTerraform(struct!.volumeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8212,14 +8212,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockSto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8295,11 +8295,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreO
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -8359,63 +8359,63 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    caching_mode: cdktf.stringToTerraform(struct!.cachingMode),
-    data_disk_uri: cdktf.stringToTerraform(struct!.dataDiskUri),
-    disk_name: cdktf.stringToTerraform(struct!.diskName),
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    caching_mode: cdktn.stringToTerraform(struct!.cachingMode),
+    data_disk_uri: cdktn.stringToTerraform(struct!.dataDiskUri),
+    disk_name: cdktn.stringToTerraform(struct!.diskName),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     caching_mode: {
-      value: cdktf.stringToHclTerraform(struct!.cachingMode),
+      value: cdktn.stringToHclTerraform(struct!.cachingMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_disk_uri: {
-      value: cdktf.stringToHclTerraform(struct!.dataDiskUri),
+      value: cdktn.stringToHclTerraform(struct!.dataDiskUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_name: {
-      value: cdktf.stringToHclTerraform(struct!.diskName),
+      value: cdktn.stringToHclTerraform(struct!.diskName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -8426,14 +8426,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8560,11 +8560,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputRefere
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -8581,7 +8581,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * The name of secret that contains Azure Storage Account Name and Key
   *
@@ -8603,45 +8603,45 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
-    secret_namespace: cdktf.stringToTerraform(struct!.secretNamespace),
-    share_name: cdktf.stringToTerraform(struct!.shareName),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
+    secret_namespace: cdktn.stringToTerraform(struct!.secretNamespace),
+    share_name: cdktn.stringToTerraform(struct!.shareName),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_namespace: {
-      value: cdktf.stringToHclTerraform(struct!.secretNamespace),
+      value: cdktn.stringToHclTerraform(struct!.secretNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_name: {
-      value: cdktf.stringToHclTerraform(struct!.shareName),
+      value: cdktn.stringToHclTerraform(struct!.shareName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8652,14 +8652,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8703,11 +8703,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputRefere
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -8776,31 +8776,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8811,14 +8811,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8899,7 +8899,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
   *
@@ -8921,53 +8921,53 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    monitors: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.monitors),
-    path: cdktf.stringToTerraform(struct!.path),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    secret_file: cdktf.stringToTerraform(struct!.secretFile),
-    user: cdktf.stringToTerraform(struct!.user),
+    monitors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.monitors),
+    path: cdktn.stringToTerraform(struct!.path),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    secret_file: cdktn.stringToTerraform(struct!.secretFile),
+    user: cdktn.stringToTerraform(struct!.user),
     secret_ref: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefToTerraform(struct!.secretRef),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     monitors: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.monitors),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.monitors),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     secret_file: {
-      value: cdktf.stringToHclTerraform(struct!.secretFile),
+      value: cdktn.stringToHclTerraform(struct!.secretFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8984,14 +8984,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9049,7 +9049,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference
   // monitors - computed: false, optional: false, required: true
   private _monitors?: string[]; 
   public get monitors() {
-    return cdktf.Fn.tolist(this.getListAttribute('monitors'));
+    return cdktn.Fn.tolist(this.getListAttribute('monitors'));
   }
   public set monitors(value: string[]) {
     this._monitors = value;
@@ -9076,11 +9076,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -9151,7 +9151,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
   *
@@ -9161,38 +9161,38 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    volume_id: cdktf.stringToTerraform(struct!.volumeId),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    volume_id: cdktn.stringToTerraform(struct!.volumeId),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     volume_id: {
-      value: cdktf.stringToHclTerraform(struct!.volumeId),
+      value: cdktn.stringToHclTerraform(struct!.volumeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9203,14 +9203,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9264,11 +9264,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -9313,39 +9313,39 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems {
   readonly path?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    key: cdktn.stringToTerraform(struct!.key),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9356,9 +9356,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9366,11 +9366,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9391,7 +9391,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9399,7 +9399,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputR
       this._mode = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9461,15 +9461,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputR
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9498,55 +9498,55 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
   /**
   * items block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
   */
-  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems[] | cdktf.IResolvable;
+  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_mode: cdktf.stringToTerraform(struct!.defaultMode),
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
-    items: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsToTerraform, true)(struct!.items),
+    default_mode: cdktn.stringToTerraform(struct!.defaultMode),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
+    items: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsToTerraform, true)(struct!.items),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_mode: {
-      value: cdktf.stringToHclTerraform(struct!.defaultMode),
+      value: cdktn.stringToHclTerraform(struct!.defaultMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     items: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsList",
@@ -9557,14 +9557,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9640,11 +9640,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputRefere
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -9660,7 +9660,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputRefere
   public get items() {
     return this._items;
   }
-  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems[] | cdktf.IResolvable) {
+  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -9681,24 +9681,24 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSec
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9709,14 +9709,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9775,7 +9775,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Attributes of the volume to publish.
   *
@@ -9791,46 +9791,46 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    driver: cdktf.stringToTerraform(struct!.driver),
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    volume_attributes: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.volumeAttributes),
+    driver: cdktn.stringToTerraform(struct!.driver),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    volume_attributes: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.volumeAttributes),
     node_publish_secret_ref: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefToTerraform(struct!.nodePublishSecretRef),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     driver: {
-      value: cdktf.stringToHclTerraform(struct!.driver),
+      value: cdktn.stringToHclTerraform(struct!.driver),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     volume_attributes: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.volumeAttributes),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.volumeAttributes),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -9847,14 +9847,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9933,11 +9933,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference ex
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -9996,31 +9996,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsF
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    field_path: cdktf.stringToTerraform(struct!.fieldPath),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    field_path: cdktn.stringToTerraform(struct!.fieldPath),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_path: {
-      value: cdktf.stringToHclTerraform(struct!.fieldPath),
+      value: cdktn.stringToHclTerraform(struct!.fieldPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10031,14 +10031,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10119,38 +10119,38 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsR
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    divisor: cdktf.stringToTerraform(struct!.divisor),
-    resource: cdktf.stringToTerraform(struct!.resource),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    divisor: cdktn.stringToTerraform(struct!.divisor),
+    resource: cdktn.stringToTerraform(struct!.resource),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     divisor: {
-      value: cdktf.stringToHclTerraform(struct!.divisor),
+      value: cdktn.stringToHclTerraform(struct!.divisor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10161,14 +10161,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10274,34 +10274,34 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems 
   readonly resourceFieldRef?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
     field_ref: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefToTerraform(struct!.fieldRef),
     resource_field_ref: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefToTerraform(struct!.resourceFieldRef),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10324,9 +10324,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10334,11 +10334,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10363,7 +10363,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10372,7 +10372,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutpu
       this._fieldRef.internalValue = undefined;
       this._resourceFieldRef.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10445,15 +10445,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutpu
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10476,35 +10476,35 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
   */
-  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems[] | cdktf.IResolvable;
+  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_mode: cdktf.stringToTerraform(struct!.defaultMode),
-    items: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsToTerraform, true)(struct!.items),
+    default_mode: cdktn.stringToTerraform(struct!.defaultMode),
+    items: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsToTerraform, true)(struct!.items),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_mode: {
-      value: cdktf.stringToHclTerraform(struct!.defaultMode),
+      value: cdktn.stringToHclTerraform(struct!.defaultMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList",
@@ -10515,14 +10515,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10574,7 +10574,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputRefe
   public get items() {
     return this._items;
   }
-  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems[] | cdktf.IResolvable) {
+  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -10601,31 +10601,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    medium: cdktf.stringToTerraform(struct!.medium),
-    size_limit: cdktf.stringToTerraform(struct!.sizeLimit),
+    medium: cdktn.stringToTerraform(struct!.medium),
+    size_limit: cdktn.stringToTerraform(struct!.sizeLimit),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     medium: {
-      value: cdktf.stringToHclTerraform(struct!.medium),
+      value: cdktn.stringToHclTerraform(struct!.medium),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     size_limit: {
-      value: cdktf.stringToHclTerraform(struct!.sizeLimit),
+      value: cdktn.stringToHclTerraform(struct!.sizeLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10636,14 +10636,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10722,31 +10722,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCl
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -10757,14 +10757,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10843,31 +10843,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCl
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    limits: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.limits),
-    requests: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requests),
+    limits: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.limits),
+    requests: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.requests),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     limits: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.limits),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.limits),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     requests: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requests),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.requests),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -10878,14 +10878,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10969,39 +10969,39 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCl
   readonly values?: string[];
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -11012,9 +11012,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11022,11 +11022,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimT
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11047,7 +11047,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimT
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11055,7 +11055,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimT
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11103,7 +11103,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimT
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -11117,15 +11117,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimT
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11148,35 +11148,35 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCl
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
   */
-  readonly matchExpressions?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktf.IResolvable;
+  readonly matchExpressions?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchLabels),
-    match_expressions: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
+    match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
+    match_expressions: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToTerraform, true)(struct!.matchExpressions),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.matchLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.matchLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     match_expressions: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToHclTerraform, true)(struct!.matchExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList",
@@ -11187,14 +11187,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11246,7 +11246,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimT
   public get matchExpressions() {
     return this._matchExpressions;
   }
-  public putMatchExpressions(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktf.IResolvable) {
+  public putMatchExpressions(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions[] | cdktn.IResolvable) {
     this._matchExpressions.internalValue = value;
   }
   public resetMatchExpressions() {
@@ -11297,15 +11297,15 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCl
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_modes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accessModes),
-    storage_class_name: cdktf.stringToTerraform(struct!.storageClassName),
-    volume_mode: cdktf.stringToTerraform(struct!.volumeMode),
-    volume_name: cdktf.stringToTerraform(struct!.volumeName),
+    access_modes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.accessModes),
+    storage_class_name: cdktn.stringToTerraform(struct!.storageClassName),
+    volume_mode: cdktn.stringToTerraform(struct!.volumeMode),
+    volume_name: cdktn.stringToTerraform(struct!.volumeName),
     resources: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesToTerraform(struct!.resources),
     selector: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorToTerraform(struct!.selector),
   }
@@ -11313,31 +11313,31 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCla
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_modes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accessModes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.accessModes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     storage_class_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageClassName),
+      value: cdktn.stringToHclTerraform(struct!.storageClassName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_mode: {
-      value: cdktf.stringToHclTerraform(struct!.volumeMode),
+      value: cdktn.stringToHclTerraform(struct!.volumeMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_name: {
-      value: cdktf.stringToHclTerraform(struct!.volumeName),
+      value: cdktn.stringToHclTerraform(struct!.volumeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11360,14 +11360,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11425,7 +11425,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimT
   // access_modes - computed: false, optional: false, required: true
   private _accessModes?: string[]; 
   public get accessModes() {
-    return cdktf.Fn.tolist(this.getListAttribute('access_modes'));
+    return cdktn.Fn.tolist(this.getListAttribute('access_modes'));
   }
   public set accessModes(value: string[]) {
     this._accessModes = value;
@@ -11528,8 +11528,8 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCl
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -11540,8 +11540,8 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCla
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -11563,14 +11563,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11640,8 +11640,8 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeral {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeral): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -11651,8 +11651,8 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralToTerrafo
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeral): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -11668,14 +11668,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11731,7 +11731,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * FC target worldwide names (WWNs)
   *
@@ -11741,45 +11741,45 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    lun: cdktf.numberToTerraform(struct!.lun),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    target_ww_ns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetWwNs),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    lun: cdktn.numberToTerraform(struct!.lun),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    target_ww_ns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetWwNs),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lun: {
-      value: cdktf.numberToHclTerraform(struct!.lun),
+      value: cdktn.numberToHclTerraform(struct!.lun),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     target_ww_ns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetWwNs),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targetWwNs),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -11790,14 +11790,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11870,11 +11870,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference ext
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -11888,7 +11888,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference ext
   // target_ww_ns - computed: false, optional: false, required: true
   private _targetWwNs?: string[]; 
   public get targetWwNs() {
-    return cdktf.Fn.tolist(this.getListAttribute('target_ww_ns'));
+    return cdktn.Fn.tolist(this.getListAttribute('target_ww_ns'));
   }
   public set targetWwNs(value: string[]) {
     this._targetWwNs = value;
@@ -11914,31 +11914,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretR
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11949,14 +11949,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12043,7 +12043,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * secret_ref block
   *
@@ -12053,46 +12053,46 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    driver: cdktf.stringToTerraform(struct!.driver),
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    options: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.options),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    driver: cdktn.stringToTerraform(struct!.driver),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    options: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.options),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
     secret_ref: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefToTerraform(struct!.secretRef),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     driver: {
-      value: cdktf.stringToHclTerraform(struct!.driver),
+      value: cdktn.stringToHclTerraform(struct!.driver),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     options: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.options),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.options),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -12109,14 +12109,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12211,11 +12211,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputRefer
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -12258,31 +12258,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dataset_name: cdktf.stringToTerraform(struct!.datasetName),
-    dataset_uuid: cdktf.stringToTerraform(struct!.datasetUuid),
+    dataset_name: cdktn.stringToTerraform(struct!.datasetName),
+    dataset_uuid: cdktn.stringToTerraform(struct!.datasetUuid),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dataset_name: {
-      value: cdktf.stringToHclTerraform(struct!.datasetName),
+      value: cdktn.stringToHclTerraform(struct!.datasetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dataset_uuid: {
-      value: cdktf.stringToHclTerraform(struct!.datasetUuid),
+      value: cdktn.stringToHclTerraform(struct!.datasetUuid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12293,14 +12293,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12387,49 +12387,49 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDisk
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    partition: cdktf.numberToTerraform(struct!.partition),
-    pd_name: cdktf.stringToTerraform(struct!.pdName),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    partition: cdktn.numberToTerraform(struct!.partition),
+    pd_name: cdktn.stringToTerraform(struct!.pdName),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partition: {
-      value: cdktf.numberToHclTerraform(struct!.partition),
+      value: cdktn.numberToHclTerraform(struct!.partition),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     pd_name: {
-      value: cdktf.stringToHclTerraform(struct!.pdName),
+      value: cdktn.stringToHclTerraform(struct!.pdName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -12440,14 +12440,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12536,11 +12536,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutp
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -12573,38 +12573,38 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    directory: cdktf.stringToTerraform(struct!.directory),
-    repository: cdktf.stringToTerraform(struct!.repository),
-    revision: cdktf.stringToTerraform(struct!.revision),
+    directory: cdktn.stringToTerraform(struct!.directory),
+    repository: cdktn.stringToTerraform(struct!.repository),
+    revision: cdktn.stringToTerraform(struct!.revision),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     directory: {
-      value: cdktf.stringToHclTerraform(struct!.directory),
+      value: cdktn.stringToHclTerraform(struct!.directory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repository: {
-      value: cdktf.stringToHclTerraform(struct!.repository),
+      value: cdktn.stringToHclTerraform(struct!.repository),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     revision: {
-      value: cdktf.stringToHclTerraform(struct!.revision),
+      value: cdktn.stringToHclTerraform(struct!.revision),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12615,14 +12615,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12725,42 +12725,42 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoints_name: cdktf.stringToTerraform(struct!.endpointsName),
-    path: cdktf.stringToTerraform(struct!.path),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    endpoints_name: cdktn.stringToTerraform(struct!.endpointsName),
+    path: cdktn.stringToTerraform(struct!.path),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoints_name: {
-      value: cdktf.stringToHclTerraform(struct!.endpointsName),
+      value: cdktn.stringToHclTerraform(struct!.endpointsName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -12771,14 +12771,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12842,11 +12842,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputRefere
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -12873,31 +12873,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    type: cdktf.stringToTerraform(struct!.type),
+    path: cdktn.stringToTerraform(struct!.path),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12908,14 +12908,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13008,7 +13008,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * iSCSI target portal. The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
   *
@@ -13018,59 +13018,59 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    iqn: cdktf.stringToTerraform(struct!.iqn),
-    iscsi_interface: cdktf.stringToTerraform(struct!.iscsiInterface),
-    lun: cdktf.numberToTerraform(struct!.lun),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    target_portal: cdktf.stringToTerraform(struct!.targetPortal),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    iqn: cdktn.stringToTerraform(struct!.iqn),
+    iscsi_interface: cdktn.stringToTerraform(struct!.iscsiInterface),
+    lun: cdktn.numberToTerraform(struct!.lun),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    target_portal: cdktn.stringToTerraform(struct!.targetPortal),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     iqn: {
-      value: cdktf.stringToHclTerraform(struct!.iqn),
+      value: cdktn.stringToHclTerraform(struct!.iqn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     iscsi_interface: {
-      value: cdktf.stringToHclTerraform(struct!.iscsiInterface),
+      value: cdktn.stringToHclTerraform(struct!.iscsiInterface),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lun: {
-      value: cdktf.numberToHclTerraform(struct!.lun),
+      value: cdktn.numberToHclTerraform(struct!.lun),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     target_portal: {
-      value: cdktf.stringToHclTerraform(struct!.targetPortal),
+      value: cdktn.stringToHclTerraform(struct!.targetPortal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13081,14 +13081,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13205,11 +13205,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference 
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -13243,24 +13243,24 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13271,14 +13271,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13331,7 +13331,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
   *
@@ -13341,38 +13341,38 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    server: cdktf.stringToTerraform(struct!.server),
+    path: cdktn.stringToTerraform(struct!.path),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    server: cdktn.stringToTerraform(struct!.server),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     server: {
-      value: cdktf.stringToHclTerraform(struct!.server),
+      value: cdktn.stringToHclTerraform(struct!.server),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13383,14 +13383,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13441,11 +13441,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference ex
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -13481,35 +13481,35 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeC
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaim): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    claim_name: cdktf.stringToTerraform(struct!.claimName),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    claim_name: cdktn.stringToTerraform(struct!.claimName),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaim): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     claim_name: {
-      value: cdktf.stringToHclTerraform(struct!.claimName),
+      value: cdktn.stringToHclTerraform(struct!.claimName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -13520,14 +13520,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13575,11 +13575,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaim
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -13606,31 +13606,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentD
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    pd_id: cdktf.stringToTerraform(struct!.pdId),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    pd_id: cdktn.stringToTerraform(struct!.pdId),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pd_id: {
-      value: cdktf.stringToHclTerraform(struct!.pdId),
+      value: cdktn.stringToHclTerraform(struct!.pdId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13641,14 +13641,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13729,39 +13729,39 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesC
   readonly path?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    key: cdktn.stringToTerraform(struct!.key),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13772,9 +13772,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13782,11 +13782,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13807,7 +13807,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13815,7 +13815,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfi
       this._mode = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13877,15 +13877,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfi
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13908,48 +13908,48 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesC
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
   /**
   * items block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
   */
-  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems[] | cdktf.IResolvable;
+  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems[] | cdktn.IResolvable;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
-    items: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsToTerraform, true)(struct!.items),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
+    items: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsToTerraform, true)(struct!.items),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     items: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
@@ -13960,9 +13960,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13970,11 +13970,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13995,7 +13995,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14003,7 +14003,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfi
       this._optional = undefined;
       this._items.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14033,11 +14033,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfi
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -14053,7 +14053,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfi
   public get items() {
     return this._items;
   }
-  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems[] | cdktf.IResolvable) {
+  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -14065,15 +14065,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfi
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14100,31 +14100,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesD
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    field_path: cdktf.stringToTerraform(struct!.fieldPath),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    field_path: cdktn.stringToTerraform(struct!.fieldPath),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_path: {
-      value: cdktf.stringToHclTerraform(struct!.fieldPath),
+      value: cdktn.stringToHclTerraform(struct!.fieldPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14135,14 +14135,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14223,38 +14223,38 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesD
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    divisor: cdktf.stringToTerraform(struct!.divisor),
-    resource: cdktf.stringToTerraform(struct!.resource),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    divisor: cdktn.stringToTerraform(struct!.divisor),
+    resource: cdktn.stringToTerraform(struct!.resource),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     divisor: {
-      value: cdktf.stringToHclTerraform(struct!.divisor),
+      value: cdktn.stringToHclTerraform(struct!.divisor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14265,14 +14265,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14378,34 +14378,34 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesD
   readonly resourceFieldRef?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
     field_ref: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefToTerraform(struct!.fieldRef),
     resource_field_ref: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefToTerraform(struct!.resourceFieldRef),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14428,9 +14428,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14438,11 +14438,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownw
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14467,7 +14467,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownw
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14476,7 +14476,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownw
       this._fieldRef.internalValue = undefined;
       this._resourceFieldRef.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14552,15 +14552,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownw
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14577,28 +14577,28 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesD
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
   */
-  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems[] | cdktf.IResolvable;
+  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    items: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToTerraform, true)(struct!.items),
+    items: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToTerraform, true)(struct!.items),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     items: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList",
@@ -14609,14 +14609,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14646,7 +14646,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownw
   public get items() {
     return this._items;
   }
-  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems[] | cdktf.IResolvable) {
+  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -14678,39 +14678,39 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesS
   readonly path?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    key: cdktn.stringToTerraform(struct!.key),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14721,9 +14721,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14731,11 +14731,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecre
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14756,7 +14756,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecre
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14764,7 +14764,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecre
       this._mode = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14826,15 +14826,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecre
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14857,48 +14857,48 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesS
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
   /**
   * items block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
   */
-  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems[] | cdktf.IResolvable;
+  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems[] | cdktn.IResolvable;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    optional: cdktf.booleanToTerraform(struct!.optional),
-    items: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsToTerraform, true)(struct!.items),
+    name: cdktn.stringToTerraform(struct!.name),
+    optional: cdktn.booleanToTerraform(struct!.optional),
+    items: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsToTerraform, true)(struct!.items),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     items: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
@@ -14909,9 +14909,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14919,11 +14919,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecre
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14944,7 +14944,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecre
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14952,7 +14952,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecre
       this._optional = undefined;
       this._items.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14982,11 +14982,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecre
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -15002,7 +15002,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecre
   public get items() {
     return this._items;
   }
-  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems[] | cdktf.IResolvable) {
+  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -15014,15 +15014,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecre
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15055,38 +15055,38 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesS
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audience: cdktf.stringToTerraform(struct!.audience),
-    expiration_seconds: cdktf.numberToTerraform(struct!.expirationSeconds),
-    path: cdktf.stringToTerraform(struct!.path),
+    audience: cdktn.stringToTerraform(struct!.audience),
+    expiration_seconds: cdktn.numberToTerraform(struct!.expirationSeconds),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audience: {
-      value: cdktf.stringToHclTerraform(struct!.audience),
+      value: cdktn.stringToHclTerraform(struct!.audience),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expiration_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.expirationSeconds),
+      value: cdktn.numberToHclTerraform(struct!.expirationSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15097,14 +15097,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15192,7 +15192,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map CronJobV1#config_map}
   */
-  readonly configMap?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap[] | cdktf.IResolvable;
+  readonly configMap?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap[] | cdktn.IResolvable;
   /**
   * downward_api block
   *
@@ -15204,7 +15204,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret CronJobV1#secret}
   */
-  readonly secret?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret[] | cdktf.IResolvable;
+  readonly secret?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret[] | cdktn.IResolvable;
   /**
   * service_account_token block
   *
@@ -15213,28 +15213,28 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources 
   readonly serviceAccountToken?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    config_map: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapToTerraform, true)(struct!.configMap),
+    config_map: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapToTerraform, true)(struct!.configMap),
     downward_api: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiToTerraform(struct!.downwardApi),
-    secret: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretToTerraform, true)(struct!.secret),
+    secret: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretToTerraform, true)(struct!.secret),
     service_account_token: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenToTerraform(struct!.serviceAccountToken),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     config_map: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapToHclTerraform, true)(struct!.configMap),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapToHclTerraform, true)(struct!.configMap),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
@@ -15246,7 +15246,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesTo
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiList",
     },
     secret: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretToHclTerraform, true)(struct!.secret),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretToHclTerraform, true)(struct!.secret),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretList",
@@ -15263,9 +15263,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15273,11 +15273,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15302,7 +15302,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -15311,7 +15311,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutpu
       this._secret.internalValue = undefined;
       this._serviceAccountToken.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -15330,7 +15330,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutpu
   public get configMap() {
     return this._configMap;
   }
-  public putConfigMap(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap[] | cdktf.IResolvable) {
+  public putConfigMap(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap[] | cdktn.IResolvable) {
     this._configMap.internalValue = value;
   }
   public resetConfigMap() {
@@ -15362,7 +15362,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutpu
   public get secret() {
     return this._secret;
   }
-  public putSecret(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret[] | cdktf.IResolvable) {
+  public putSecret(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret[] | cdktn.IResolvable) {
     this._secret.internalValue = value;
   }
   public resetSecret() {
@@ -15390,15 +15390,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutpu
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15421,35 +15421,35 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sources CronJobV1#sources}
   */
-  readonly sources: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources[] | cdktf.IResolvable;
+  readonly sources: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources[] | cdktn.IResolvable;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_mode: cdktf.stringToTerraform(struct!.defaultMode),
-    sources: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesToTerraform, true)(struct!.sources),
+    default_mode: cdktn.stringToTerraform(struct!.defaultMode),
+    sources: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesToTerraform, true)(struct!.sources),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_mode: {
-      value: cdktf.stringToHclTerraform(struct!.defaultMode),
+      value: cdktn.stringToHclTerraform(struct!.defaultMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesToHclTerraform, true)(struct!.sources),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesToHclTerraform, true)(struct!.sources),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList",
@@ -15460,9 +15460,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15470,11 +15470,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15491,14 +15491,14 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._defaultMode = undefined;
       this._sources.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -15531,7 +15531,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputRefere
   public get sources() {
     return this._sources;
   }
-  public putSources(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources[] | cdktf.IResolvable) {
+  public putSources(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources[] | cdktn.IResolvable) {
     this._sources.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -15540,15 +15540,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputRefere
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15571,7 +15571,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes
   *
@@ -15593,52 +15593,52 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group: cdktf.stringToTerraform(struct!.group),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    registry: cdktf.stringToTerraform(struct!.registry),
-    user: cdktf.stringToTerraform(struct!.user),
-    volume: cdktf.stringToTerraform(struct!.volume),
+    group: cdktn.stringToTerraform(struct!.group),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    registry: cdktn.stringToTerraform(struct!.registry),
+    user: cdktn.stringToTerraform(struct!.user),
+    volume: cdktn.stringToTerraform(struct!.volume),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group: {
-      value: cdktf.stringToHclTerraform(struct!.group),
+      value: cdktn.stringToHclTerraform(struct!.group),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     registry: {
-      value: cdktf.stringToHclTerraform(struct!.registry),
+      value: cdktn.stringToHclTerraform(struct!.registry),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume: {
-      value: cdktf.stringToHclTerraform(struct!.volume),
+      value: cdktn.stringToHclTerraform(struct!.volume),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15649,14 +15649,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15722,11 +15722,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReferenc
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -15795,31 +15795,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15830,14 +15830,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15942,7 +15942,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * secret_ref block
   *
@@ -15952,67 +15952,67 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ceph_monitors: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cephMonitors),
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    keyring: cdktf.stringToTerraform(struct!.keyring),
-    rados_user: cdktf.stringToTerraform(struct!.radosUser),
-    rbd_image: cdktf.stringToTerraform(struct!.rbdImage),
-    rbd_pool: cdktf.stringToTerraform(struct!.rbdPool),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
+    ceph_monitors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cephMonitors),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    keyring: cdktn.stringToTerraform(struct!.keyring),
+    rados_user: cdktn.stringToTerraform(struct!.radosUser),
+    rbd_image: cdktn.stringToTerraform(struct!.rbdImage),
+    rbd_pool: cdktn.stringToTerraform(struct!.rbdPool),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
     secret_ref: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefToTerraform(struct!.secretRef),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ceph_monitors: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cephMonitors),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cephMonitors),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     keyring: {
-      value: cdktf.stringToHclTerraform(struct!.keyring),
+      value: cdktn.stringToHclTerraform(struct!.keyring),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rados_user: {
-      value: cdktf.stringToHclTerraform(struct!.radosUser),
+      value: cdktn.stringToHclTerraform(struct!.radosUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rbd_image: {
-      value: cdktf.stringToHclTerraform(struct!.rbdImage),
+      value: cdktn.stringToHclTerraform(struct!.rbdImage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rbd_pool: {
-      value: cdktf.stringToHclTerraform(struct!.rbdPool),
+      value: cdktn.stringToHclTerraform(struct!.rbdPool),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -16029,14 +16029,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16106,7 +16106,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference ex
   // ceph_monitors - computed: false, optional: false, required: true
   private _cephMonitors?: string[]; 
   public get cephMonitors() {
-    return cdktf.Fn.tolist(this.getListAttribute('ceph_monitors'));
+    return cdktn.Fn.tolist(this.getListAttribute('ceph_monitors'));
   }
   public set cephMonitors(value: string[]) {
     this._cephMonitors = value;
@@ -16194,11 +16194,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference ex
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -16246,39 +16246,39 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems {
   readonly path?: string;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    path: cdktf.stringToTerraform(struct!.path),
+    key: cdktn.stringToTerraform(struct!.key),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16289,9 +16289,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -16299,11 +16299,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -16324,7 +16324,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -16332,7 +16332,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputRefe
       this._mode = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -16394,15 +16394,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputRefe
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -16425,7 +16425,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
   */
-  readonly optional?: boolean | cdktf.IResolvable;
+  readonly optional?: boolean | cdktn.IResolvable;
   /**
   * Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets
   *
@@ -16437,49 +16437,49 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
   */
-  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems[] | cdktf.IResolvable;
+  readonly items?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_mode: cdktf.stringToTerraform(struct!.defaultMode),
-    optional: cdktf.booleanToTerraform(struct!.optional),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
-    items: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsToTerraform, true)(struct!.items),
+    default_mode: cdktn.stringToTerraform(struct!.defaultMode),
+    optional: cdktn.booleanToTerraform(struct!.optional),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
+    items: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsToTerraform, true)(struct!.items),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_mode: {
-      value: cdktf.stringToHclTerraform(struct!.defaultMode),
+      value: cdktn.stringToHclTerraform(struct!.defaultMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     optional: {
-      value: cdktf.booleanToHclTerraform(struct!.optional),
+      value: cdktn.booleanToHclTerraform(struct!.optional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     items: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsToHclTerraform, true)(struct!.items),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsToHclTerraform, true)(struct!.items),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsList",
@@ -16490,14 +16490,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16557,11 +16557,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference
   }
 
   // optional - computed: false, optional: true, required: false
-  private _optional?: boolean | cdktf.IResolvable; 
+  private _optional?: boolean | cdktn.IResolvable; 
   public get optional() {
     return this.getBooleanAttribute('optional');
   }
-  public set optional(value: boolean | cdktf.IResolvable) {
+  public set optional(value: boolean | cdktn.IResolvable) {
     this._optional = value;
   }
   public resetOptional() {
@@ -16593,7 +16593,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference
   public get items() {
     return this._items;
   }
-  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems[] | cdktf.IResolvable) {
+  public putItems(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems[] | cdktn.IResolvable) {
     this._items.internalValue = value;
   }
   public resetItems() {
@@ -16620,31 +16620,31 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fs_type: cdktf.stringToTerraform(struct!.fsType),
-    volume_path: cdktf.stringToTerraform(struct!.volumePath),
+    fs_type: cdktn.stringToTerraform(struct!.fsType),
+    volume_path: cdktn.stringToTerraform(struct!.volumePath),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fs_type: {
-      value: cdktf.stringToHclTerraform(struct!.fsType),
+      value: cdktn.stringToHclTerraform(struct!.fsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_path: {
-      value: cdktf.stringToHclTerraform(struct!.volumePath),
+      value: cdktn.stringToHclTerraform(struct!.volumePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16655,14 +16655,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16866,7 +16866,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolume {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#projected CronJobV1#projected}
   */
-  readonly projected?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected[] | cdktf.IResolvable;
+  readonly projected?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected[] | cdktn.IResolvable;
   /**
   * quobyte block
   *
@@ -16893,13 +16893,13 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpecVolume {
   readonly vsphereVolume?: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume;
 }
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolume | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolume | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
     aws_elastic_block_store: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreToTerraform(struct!.awsElasticBlockStore),
     azure_disk: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskToTerraform(struct!.azureDisk),
     azure_file: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileToTerraform(struct!.azureFile),
@@ -16922,7 +16922,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToTerraform(struct
     nfs: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsToTerraform(struct!.nfs),
     persistent_volume_claim: cronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimToTerraform(struct!.persistentVolumeClaim),
     photon_persistent_disk: cronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskToTerraform(struct!.photonPersistentDisk),
-    projected: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedToTerraform, true)(struct!.projected),
+    projected: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedToTerraform, true)(struct!.projected),
     quobyte: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteToTerraform(struct!.quobyte),
     rbd: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdToTerraform(struct!.rbd),
     secret: cronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretToTerraform(struct!.secret),
@@ -16931,14 +16931,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToTerraform(struct
 }
 
 
-export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolume | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecVolume | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17076,7 +17076,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToHclTerraform(str
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskList",
     },
     projected: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedToHclTerraform, true)(struct!.projected),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedToHclTerraform, true)(struct!.projected),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedList",
@@ -17111,9 +17111,9 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -17121,11 +17121,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolume | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1SpecJobTemplateSpecTemplateSpecVolume | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17246,7 +17246,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolume | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolume | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -17279,7 +17279,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference exten
       this._secret.internalValue = undefined;
       this._vsphereVolume.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -17690,7 +17690,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference exten
   public get projected() {
     return this._projected;
   }
-  public putProjected(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected[] | cdktf.IResolvable) {
+  public putProjected(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected[] | cdktn.IResolvable) {
     this._projected.internalValue = value;
   }
   public resetProjected() {
@@ -17766,15 +17766,15 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference exten
   }
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeList extends cdktf.ComplexList {
-  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolume[] | cdktf.IResolvable
+export class CronJobV1SpecJobTemplateSpecTemplateSpecVolumeList extends cdktn.ComplexList {
+  public internalValue? : CronJobV1SpecJobTemplateSpecTemplateSpecVolume[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -17797,7 +17797,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#automount_service_account_token CronJobV1#automount_service_account_token}
   */
-  readonly automountServiceAccountToken?: boolean | cdktf.IResolvable;
+  readonly automountServiceAccountToken?: boolean | cdktn.IResolvable;
   /**
   * Set DNS policy for containers within the pod. Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
   *
@@ -17809,25 +17809,25 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#enable_service_links CronJobV1#enable_service_links}
   */
-  readonly enableServiceLinks?: boolean | cdktf.IResolvable;
+  readonly enableServiceLinks?: boolean | cdktn.IResolvable;
   /**
   * Use the host's ipc namespace. Optional: Defaults to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_ipc CronJobV1#host_ipc}
   */
-  readonly hostIpc?: boolean | cdktf.IResolvable;
+  readonly hostIpc?: boolean | cdktn.IResolvable;
   /**
   * Host networking requested for this pod. Use the host's network namespace. If this option is set, the ports that will be used must be specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_network CronJobV1#host_network}
   */
-  readonly hostNetwork?: boolean | cdktf.IResolvable;
+  readonly hostNetwork?: boolean | cdktn.IResolvable;
   /**
   * Use the host's pid namespace.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_pid CronJobV1#host_pid}
   */
-  readonly hostPid?: boolean | cdktf.IResolvable;
+  readonly hostPid?: boolean | cdktn.IResolvable;
   /**
   * Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
   *
@@ -17881,7 +17881,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#share_process_namespace CronJobV1#share_process_namespace}
   */
-  readonly shareProcessNamespace?: boolean | cdktf.IResolvable;
+  readonly shareProcessNamespace?: boolean | cdktn.IResolvable;
   /**
   * If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
   *
@@ -17905,7 +17905,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container CronJobV1#container}
   */
-  readonly container?: CronJobV1SpecJobTemplateSpecTemplateSpecContainer[] | cdktf.IResolvable;
+  readonly container?: CronJobV1SpecJobTemplateSpecTemplateSpecContainer[] | cdktn.IResolvable;
   /**
   * dns_config block
   *
@@ -17917,19 +17917,19 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_aliases CronJobV1#host_aliases}
   */
-  readonly hostAliases?: CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases[] | cdktf.IResolvable;
+  readonly hostAliases?: CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases[] | cdktn.IResolvable;
   /**
   * image_pull_secrets block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image_pull_secrets CronJobV1#image_pull_secrets}
   */
-  readonly imagePullSecrets?: CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecrets[] | cdktf.IResolvable;
+  readonly imagePullSecrets?: CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecrets[] | cdktn.IResolvable;
   /**
   * init_container block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#init_container CronJobV1#init_container}
   */
-  readonly initContainer?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer[] | cdktf.IResolvable;
+  readonly initContainer?: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer[] | cdktn.IResolvable;
   /**
   * os block
   *
@@ -17941,7 +17941,7 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#readiness_gate CronJobV1#readiness_gate}
   */
-  readonly readinessGate?: CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate[] | cdktf.IResolvable;
+  readonly readinessGate?: CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate[] | cdktn.IResolvable;
   /**
   * security_context block
   *
@@ -17953,171 +17953,171 @@ export interface CronJobV1SpecJobTemplateSpecTemplateSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#toleration CronJobV1#toleration}
   */
-  readonly toleration?: CronJobV1SpecJobTemplateSpecTemplateSpecToleration[] | cdktf.IResolvable;
+  readonly toleration?: CronJobV1SpecJobTemplateSpecTemplateSpecToleration[] | cdktn.IResolvable;
   /**
   * topology_spread_constraint block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_spread_constraint CronJobV1#topology_spread_constraint}
   */
-  readonly topologySpreadConstraint?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint[] | cdktf.IResolvable;
+  readonly topologySpreadConstraint?: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint[] | cdktn.IResolvable;
   /**
   * volume block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume CronJobV1#volume}
   */
-  readonly volume?: CronJobV1SpecJobTemplateSpecTemplateSpecVolume[] | cdktf.IResolvable;
+  readonly volume?: CronJobV1SpecJobTemplateSpecTemplateSpecVolume[] | cdktn.IResolvable;
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_deadline_seconds: cdktf.numberToTerraform(struct!.activeDeadlineSeconds),
-    automount_service_account_token: cdktf.booleanToTerraform(struct!.automountServiceAccountToken),
-    dns_policy: cdktf.stringToTerraform(struct!.dnsPolicy),
-    enable_service_links: cdktf.booleanToTerraform(struct!.enableServiceLinks),
-    host_ipc: cdktf.booleanToTerraform(struct!.hostIpc),
-    host_network: cdktf.booleanToTerraform(struct!.hostNetwork),
-    host_pid: cdktf.booleanToTerraform(struct!.hostPid),
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    node_name: cdktf.stringToTerraform(struct!.nodeName),
-    node_selector: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.nodeSelector),
-    priority_class_name: cdktf.stringToTerraform(struct!.priorityClassName),
-    restart_policy: cdktf.stringToTerraform(struct!.restartPolicy),
-    runtime_class_name: cdktf.stringToTerraform(struct!.runtimeClassName),
-    scheduler_name: cdktf.stringToTerraform(struct!.schedulerName),
-    service_account_name: cdktf.stringToTerraform(struct!.serviceAccountName),
-    share_process_namespace: cdktf.booleanToTerraform(struct!.shareProcessNamespace),
-    subdomain: cdktf.stringToTerraform(struct!.subdomain),
-    termination_grace_period_seconds: cdktf.numberToTerraform(struct!.terminationGracePeriodSeconds),
+    active_deadline_seconds: cdktn.numberToTerraform(struct!.activeDeadlineSeconds),
+    automount_service_account_token: cdktn.booleanToTerraform(struct!.automountServiceAccountToken),
+    dns_policy: cdktn.stringToTerraform(struct!.dnsPolicy),
+    enable_service_links: cdktn.booleanToTerraform(struct!.enableServiceLinks),
+    host_ipc: cdktn.booleanToTerraform(struct!.hostIpc),
+    host_network: cdktn.booleanToTerraform(struct!.hostNetwork),
+    host_pid: cdktn.booleanToTerraform(struct!.hostPid),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    node_name: cdktn.stringToTerraform(struct!.nodeName),
+    node_selector: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.nodeSelector),
+    priority_class_name: cdktn.stringToTerraform(struct!.priorityClassName),
+    restart_policy: cdktn.stringToTerraform(struct!.restartPolicy),
+    runtime_class_name: cdktn.stringToTerraform(struct!.runtimeClassName),
+    scheduler_name: cdktn.stringToTerraform(struct!.schedulerName),
+    service_account_name: cdktn.stringToTerraform(struct!.serviceAccountName),
+    share_process_namespace: cdktn.booleanToTerraform(struct!.shareProcessNamespace),
+    subdomain: cdktn.stringToTerraform(struct!.subdomain),
+    termination_grace_period_seconds: cdktn.numberToTerraform(struct!.terminationGracePeriodSeconds),
     affinity: cronJobV1SpecJobTemplateSpecTemplateSpecAffinityToTerraform(struct!.affinity),
-    container: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecContainerToTerraform, true)(struct!.container),
+    container: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecContainerToTerraform, true)(struct!.container),
     dns_config: cronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigToTerraform(struct!.dnsConfig),
-    host_aliases: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesToTerraform, true)(struct!.hostAliases),
-    image_pull_secrets: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsToTerraform, true)(struct!.imagePullSecrets),
-    init_container: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToTerraform, true)(struct!.initContainer),
+    host_aliases: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesToTerraform, true)(struct!.hostAliases),
+    image_pull_secrets: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsToTerraform, true)(struct!.imagePullSecrets),
+    init_container: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToTerraform, true)(struct!.initContainer),
     os: cronJobV1SpecJobTemplateSpecTemplateSpecOsToTerraform(struct!.os),
-    readiness_gate: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateToTerraform, true)(struct!.readinessGate),
+    readiness_gate: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateToTerraform, true)(struct!.readinessGate),
     security_context: cronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextToTerraform(struct!.securityContext),
-    toleration: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecTolerationToTerraform, true)(struct!.toleration),
-    topology_spread_constraint: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintToTerraform, true)(struct!.topologySpreadConstraint),
-    volume: cdktf.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToTerraform, true)(struct!.volume),
+    toleration: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecTolerationToTerraform, true)(struct!.toleration),
+    topology_spread_constraint: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintToTerraform, true)(struct!.topologySpreadConstraint),
+    volume: cdktn.listMapper(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToTerraform, true)(struct!.volume),
   }
 }
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateSpecToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference | CronJobV1SpecJobTemplateSpecTemplateSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     active_deadline_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.activeDeadlineSeconds),
+      value: cdktn.numberToHclTerraform(struct!.activeDeadlineSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     automount_service_account_token: {
-      value: cdktf.booleanToHclTerraform(struct!.automountServiceAccountToken),
+      value: cdktn.booleanToHclTerraform(struct!.automountServiceAccountToken),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dns_policy: {
-      value: cdktf.stringToHclTerraform(struct!.dnsPolicy),
+      value: cdktn.stringToHclTerraform(struct!.dnsPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_service_links: {
-      value: cdktf.booleanToHclTerraform(struct!.enableServiceLinks),
+      value: cdktn.booleanToHclTerraform(struct!.enableServiceLinks),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host_ipc: {
-      value: cdktf.booleanToHclTerraform(struct!.hostIpc),
+      value: cdktn.booleanToHclTerraform(struct!.hostIpc),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host_network: {
-      value: cdktf.booleanToHclTerraform(struct!.hostNetwork),
+      value: cdktn.booleanToHclTerraform(struct!.hostNetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host_pid: {
-      value: cdktf.booleanToHclTerraform(struct!.hostPid),
+      value: cdktn.booleanToHclTerraform(struct!.hostPid),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_name: {
-      value: cdktf.stringToHclTerraform(struct!.nodeName),
+      value: cdktn.stringToHclTerraform(struct!.nodeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_selector: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.nodeSelector),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.nodeSelector),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     priority_class_name: {
-      value: cdktf.stringToHclTerraform(struct!.priorityClassName),
+      value: cdktn.stringToHclTerraform(struct!.priorityClassName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     restart_policy: {
-      value: cdktf.stringToHclTerraform(struct!.restartPolicy),
+      value: cdktn.stringToHclTerraform(struct!.restartPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runtime_class_name: {
-      value: cdktf.stringToHclTerraform(struct!.runtimeClassName),
+      value: cdktn.stringToHclTerraform(struct!.runtimeClassName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scheduler_name: {
-      value: cdktf.stringToHclTerraform(struct!.schedulerName),
+      value: cdktn.stringToHclTerraform(struct!.schedulerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountName),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_process_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.shareProcessNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.shareProcessNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subdomain: {
-      value: cdktf.stringToHclTerraform(struct!.subdomain),
+      value: cdktn.stringToHclTerraform(struct!.subdomain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     termination_grace_period_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.terminationGracePeriodSeconds),
+      value: cdktn.numberToHclTerraform(struct!.terminationGracePeriodSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -18129,7 +18129,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecToHclTerraform(struct?: 
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecAffinityList",
     },
     container: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecContainerToHclTerraform, true)(struct!.container),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecContainerToHclTerraform, true)(struct!.container),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecContainerList",
@@ -18141,19 +18141,19 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecToHclTerraform(struct?: 
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigList",
     },
     host_aliases: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesToHclTerraform, true)(struct!.hostAliases),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesToHclTerraform, true)(struct!.hostAliases),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesList",
     },
     image_pull_secrets: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsToHclTerraform, true)(struct!.imagePullSecrets),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsToHclTerraform, true)(struct!.imagePullSecrets),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsList",
     },
     init_container: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToHclTerraform, true)(struct!.initContainer),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerToHclTerraform, true)(struct!.initContainer),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerList",
@@ -18165,7 +18165,7 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecToHclTerraform(struct?: 
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecOsList",
     },
     readiness_gate: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateToHclTerraform, true)(struct!.readinessGate),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateToHclTerraform, true)(struct!.readinessGate),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateList",
@@ -18177,19 +18177,19 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecToHclTerraform(struct?: 
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextList",
     },
     toleration: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecTolerationToHclTerraform, true)(struct!.toleration),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecTolerationToHclTerraform, true)(struct!.toleration),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecTolerationList",
     },
     topology_spread_constraint: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintToHclTerraform, true)(struct!.topologySpreadConstraint),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintToHclTerraform, true)(struct!.topologySpreadConstraint),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintList",
     },
     volume: {
-      value: cdktf.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToHclTerraform, true)(struct!.volume),
+      value: cdktn.listMapperHcl(cronJobV1SpecJobTemplateSpecTemplateSpecVolumeToHclTerraform, true)(struct!.volume),
       isBlock: true,
       type: "list",
       storageClassType: "CronJobV1SpecJobTemplateSpecTemplateSpecVolumeList",
@@ -18200,14 +18200,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateSpecToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18423,11 +18423,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   }
 
   // automount_service_account_token - computed: false, optional: true, required: false
-  private _automountServiceAccountToken?: boolean | cdktf.IResolvable; 
+  private _automountServiceAccountToken?: boolean | cdktn.IResolvable; 
   public get automountServiceAccountToken() {
     return this.getBooleanAttribute('automount_service_account_token');
   }
-  public set automountServiceAccountToken(value: boolean | cdktf.IResolvable) {
+  public set automountServiceAccountToken(value: boolean | cdktn.IResolvable) {
     this._automountServiceAccountToken = value;
   }
   public resetAutomountServiceAccountToken() {
@@ -18455,11 +18455,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   }
 
   // enable_service_links - computed: false, optional: true, required: false
-  private _enableServiceLinks?: boolean | cdktf.IResolvable; 
+  private _enableServiceLinks?: boolean | cdktn.IResolvable; 
   public get enableServiceLinks() {
     return this.getBooleanAttribute('enable_service_links');
   }
-  public set enableServiceLinks(value: boolean | cdktf.IResolvable) {
+  public set enableServiceLinks(value: boolean | cdktn.IResolvable) {
     this._enableServiceLinks = value;
   }
   public resetEnableServiceLinks() {
@@ -18471,11 +18471,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   }
 
   // host_ipc - computed: false, optional: true, required: false
-  private _hostIpc?: boolean | cdktf.IResolvable; 
+  private _hostIpc?: boolean | cdktn.IResolvable; 
   public get hostIpc() {
     return this.getBooleanAttribute('host_ipc');
   }
-  public set hostIpc(value: boolean | cdktf.IResolvable) {
+  public set hostIpc(value: boolean | cdktn.IResolvable) {
     this._hostIpc = value;
   }
   public resetHostIpc() {
@@ -18487,11 +18487,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   }
 
   // host_network - computed: false, optional: true, required: false
-  private _hostNetwork?: boolean | cdktf.IResolvable; 
+  private _hostNetwork?: boolean | cdktn.IResolvable; 
   public get hostNetwork() {
     return this.getBooleanAttribute('host_network');
   }
-  public set hostNetwork(value: boolean | cdktf.IResolvable) {
+  public set hostNetwork(value: boolean | cdktn.IResolvable) {
     this._hostNetwork = value;
   }
   public resetHostNetwork() {
@@ -18503,11 +18503,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   }
 
   // host_pid - computed: false, optional: true, required: false
-  private _hostPid?: boolean | cdktf.IResolvable; 
+  private _hostPid?: boolean | cdktn.IResolvable; 
   public get hostPid() {
     return this.getBooleanAttribute('host_pid');
   }
-  public set hostPid(value: boolean | cdktf.IResolvable) {
+  public set hostPid(value: boolean | cdktn.IResolvable) {
     this._hostPid = value;
   }
   public resetHostPid() {
@@ -18647,11 +18647,11 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   }
 
   // share_process_namespace - computed: false, optional: true, required: false
-  private _shareProcessNamespace?: boolean | cdktf.IResolvable; 
+  private _shareProcessNamespace?: boolean | cdktn.IResolvable; 
   public get shareProcessNamespace() {
     return this.getBooleanAttribute('share_process_namespace');
   }
-  public set shareProcessNamespace(value: boolean | cdktf.IResolvable) {
+  public set shareProcessNamespace(value: boolean | cdktn.IResolvable) {
     this._shareProcessNamespace = value;
   }
   public resetShareProcessNamespace() {
@@ -18715,7 +18715,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   public get container() {
     return this._container;
   }
-  public putContainer(value: CronJobV1SpecJobTemplateSpecTemplateSpecContainer[] | cdktf.IResolvable) {
+  public putContainer(value: CronJobV1SpecJobTemplateSpecTemplateSpecContainer[] | cdktn.IResolvable) {
     this._container.internalValue = value;
   }
   public resetContainer() {
@@ -18747,7 +18747,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   public get hostAliases() {
     return this._hostAliases;
   }
-  public putHostAliases(value: CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases[] | cdktf.IResolvable) {
+  public putHostAliases(value: CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases[] | cdktn.IResolvable) {
     this._hostAliases.internalValue = value;
   }
   public resetHostAliases() {
@@ -18763,7 +18763,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   public get imagePullSecrets() {
     return this._imagePullSecrets;
   }
-  public putImagePullSecrets(value: CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecrets[] | cdktf.IResolvable) {
+  public putImagePullSecrets(value: CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecrets[] | cdktn.IResolvable) {
     this._imagePullSecrets.internalValue = value;
   }
   public resetImagePullSecrets() {
@@ -18779,7 +18779,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   public get initContainer() {
     return this._initContainer;
   }
-  public putInitContainer(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer[] | cdktf.IResolvable) {
+  public putInitContainer(value: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer[] | cdktn.IResolvable) {
     this._initContainer.internalValue = value;
   }
   public resetInitContainer() {
@@ -18811,7 +18811,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   public get readinessGate() {
     return this._readinessGate;
   }
-  public putReadinessGate(value: CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate[] | cdktf.IResolvable) {
+  public putReadinessGate(value: CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate[] | cdktn.IResolvable) {
     this._readinessGate.internalValue = value;
   }
   public resetReadinessGate() {
@@ -18843,7 +18843,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   public get toleration() {
     return this._toleration;
   }
-  public putToleration(value: CronJobV1SpecJobTemplateSpecTemplateSpecToleration[] | cdktf.IResolvable) {
+  public putToleration(value: CronJobV1SpecJobTemplateSpecTemplateSpecToleration[] | cdktn.IResolvable) {
     this._toleration.internalValue = value;
   }
   public resetToleration() {
@@ -18859,7 +18859,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   public get topologySpreadConstraint() {
     return this._topologySpreadConstraint;
   }
-  public putTopologySpreadConstraint(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint[] | cdktf.IResolvable) {
+  public putTopologySpreadConstraint(value: CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint[] | cdktn.IResolvable) {
     this._topologySpreadConstraint.internalValue = value;
   }
   public resetTopologySpreadConstraint() {
@@ -18875,7 +18875,7 @@ export class CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference extends cdk
   public get volume() {
     return this._volume;
   }
-  public putVolume(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolume[] | cdktf.IResolvable) {
+  public putVolume(value: CronJobV1SpecJobTemplateSpecTemplateSpecVolume[] | cdktn.IResolvable) {
     this._volume.internalValue = value;
   }
   public resetVolume() {
@@ -18902,8 +18902,8 @@ export interface CronJobV1SpecJobTemplateSpecTemplate {
 }
 
 export function cronJobV1SpecJobTemplateSpecTemplateToTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateOutputReference | CronJobV1SpecJobTemplateSpecTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -18914,8 +18914,8 @@ export function cronJobV1SpecJobTemplateSpecTemplateToTerraform(struct?: CronJob
 
 
 export function cronJobV1SpecJobTemplateSpecTemplateToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecTemplateOutputReference | CronJobV1SpecJobTemplateSpecTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -18937,14 +18937,14 @@ export function cronJobV1SpecJobTemplateSpecTemplateToHclTerraform(struct?: Cron
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecTemplateOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19040,7 +19040,7 @@ export interface CronJobV1SpecJobTemplateSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#manual_selector CronJobV1#manual_selector}
   */
-  readonly manualSelector?: boolean | cdktf.IResolvable;
+  readonly manualSelector?: boolean | cdktn.IResolvable;
   /**
   * Controls generation of pod labels and pod selectors. Leave unset unless you are certain what you are doing. When false or unset, the system pick labels unique to this job and appends those labels to the pod template. When true, the user is responsible for picking unique labels and specifying the selector. Failure to pick a unique label may cause this and other jobs to not function correctly. More info: https://git.k8s.io/community/contributors/design-proposals/selector-generation.md
   *
@@ -19080,20 +19080,20 @@ export interface CronJobV1SpecJobTemplateSpec {
 }
 
 export function cronJobV1SpecJobTemplateSpecToTerraform(struct?: CronJobV1SpecJobTemplateSpecOutputReference | CronJobV1SpecJobTemplateSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_deadline_seconds: cdktf.numberToTerraform(struct!.activeDeadlineSeconds),
-    backoff_limit: cdktf.numberToTerraform(struct!.backoffLimit),
-    backoff_limit_per_index: cdktf.numberToTerraform(struct!.backoffLimitPerIndex),
-    completion_mode: cdktf.stringToTerraform(struct!.completionMode),
-    completions: cdktf.numberToTerraform(struct!.completions),
-    manual_selector: cdktf.booleanToTerraform(struct!.manualSelector),
-    max_failed_indexes: cdktf.numberToTerraform(struct!.maxFailedIndexes),
-    parallelism: cdktf.numberToTerraform(struct!.parallelism),
-    ttl_seconds_after_finished: cdktf.stringToTerraform(struct!.ttlSecondsAfterFinished),
+    active_deadline_seconds: cdktn.numberToTerraform(struct!.activeDeadlineSeconds),
+    backoff_limit: cdktn.numberToTerraform(struct!.backoffLimit),
+    backoff_limit_per_index: cdktn.numberToTerraform(struct!.backoffLimitPerIndex),
+    completion_mode: cdktn.stringToTerraform(struct!.completionMode),
+    completions: cdktn.numberToTerraform(struct!.completions),
+    manual_selector: cdktn.booleanToTerraform(struct!.manualSelector),
+    max_failed_indexes: cdktn.numberToTerraform(struct!.maxFailedIndexes),
+    parallelism: cdktn.numberToTerraform(struct!.parallelism),
+    ttl_seconds_after_finished: cdktn.stringToTerraform(struct!.ttlSecondsAfterFinished),
     pod_failure_policy: cronJobV1SpecJobTemplateSpecPodFailurePolicyToTerraform(struct!.podFailurePolicy),
     selector: cronJobV1SpecJobTemplateSpecSelectorToTerraform(struct!.selector),
     template: cronJobV1SpecJobTemplateSpecTemplateToTerraform(struct!.template),
@@ -19102,61 +19102,61 @@ export function cronJobV1SpecJobTemplateSpecToTerraform(struct?: CronJobV1SpecJo
 
 
 export function cronJobV1SpecJobTemplateSpecToHclTerraform(struct?: CronJobV1SpecJobTemplateSpecOutputReference | CronJobV1SpecJobTemplateSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     active_deadline_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.activeDeadlineSeconds),
+      value: cdktn.numberToHclTerraform(struct!.activeDeadlineSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     backoff_limit: {
-      value: cdktf.numberToHclTerraform(struct!.backoffLimit),
+      value: cdktn.numberToHclTerraform(struct!.backoffLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     backoff_limit_per_index: {
-      value: cdktf.numberToHclTerraform(struct!.backoffLimitPerIndex),
+      value: cdktn.numberToHclTerraform(struct!.backoffLimitPerIndex),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     completion_mode: {
-      value: cdktf.stringToHclTerraform(struct!.completionMode),
+      value: cdktn.stringToHclTerraform(struct!.completionMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     completions: {
-      value: cdktf.numberToHclTerraform(struct!.completions),
+      value: cdktn.numberToHclTerraform(struct!.completions),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     manual_selector: {
-      value: cdktf.booleanToHclTerraform(struct!.manualSelector),
+      value: cdktn.booleanToHclTerraform(struct!.manualSelector),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_failed_indexes: {
-      value: cdktf.numberToHclTerraform(struct!.maxFailedIndexes),
+      value: cdktn.numberToHclTerraform(struct!.maxFailedIndexes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     parallelism: {
-      value: cdktf.numberToHclTerraform(struct!.parallelism),
+      value: cdktn.numberToHclTerraform(struct!.parallelism),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ttl_seconds_after_finished: {
-      value: cdktf.stringToHclTerraform(struct!.ttlSecondsAfterFinished),
+      value: cdktn.stringToHclTerraform(struct!.ttlSecondsAfterFinished),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19185,14 +19185,14 @@ export function cronJobV1SpecJobTemplateSpecToHclTerraform(struct?: CronJobV1Spe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateSpecOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19364,11 +19364,11 @@ export class CronJobV1SpecJobTemplateSpecOutputReference extends cdktf.ComplexOb
   }
 
   // manual_selector - computed: false, optional: true, required: false
-  private _manualSelector?: boolean | cdktf.IResolvable; 
+  private _manualSelector?: boolean | cdktn.IResolvable; 
   public get manualSelector() {
     return this.getBooleanAttribute('manual_selector');
   }
-  public set manualSelector(value: boolean | cdktf.IResolvable) {
+  public set manualSelector(value: boolean | cdktn.IResolvable) {
     this._manualSelector = value;
   }
   public resetManualSelector() {
@@ -19488,8 +19488,8 @@ export interface CronJobV1SpecJobTemplate {
 }
 
 export function cronJobV1SpecJobTemplateToTerraform(struct?: CronJobV1SpecJobTemplateOutputReference | CronJobV1SpecJobTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -19500,8 +19500,8 @@ export function cronJobV1SpecJobTemplateToTerraform(struct?: CronJobV1SpecJobTem
 
 
 export function cronJobV1SpecJobTemplateToHclTerraform(struct?: CronJobV1SpecJobTemplateOutputReference | CronJobV1SpecJobTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -19523,14 +19523,14 @@ export function cronJobV1SpecJobTemplateToHclTerraform(struct?: CronJobV1SpecJob
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecJobTemplateOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecJobTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19623,7 +19623,7 @@ export interface CronJobV1Spec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#suspend CronJobV1#suspend}
   */
-  readonly suspend?: boolean | cdktf.IResolvable;
+  readonly suspend?: boolean | cdktn.IResolvable;
   /**
   * The time zone for the given schedule. If not specified, this will rely on the time zone of the kube-controller-manager process. 
   *
@@ -19639,67 +19639,67 @@ export interface CronJobV1Spec {
 }
 
 export function cronJobV1SpecToTerraform(struct?: CronJobV1SpecOutputReference | CronJobV1Spec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    concurrency_policy: cdktf.stringToTerraform(struct!.concurrencyPolicy),
-    failed_jobs_history_limit: cdktf.numberToTerraform(struct!.failedJobsHistoryLimit),
-    schedule: cdktf.stringToTerraform(struct!.schedule),
-    starting_deadline_seconds: cdktf.numberToTerraform(struct!.startingDeadlineSeconds),
-    successful_jobs_history_limit: cdktf.numberToTerraform(struct!.successfulJobsHistoryLimit),
-    suspend: cdktf.booleanToTerraform(struct!.suspend),
-    timezone: cdktf.stringToTerraform(struct!.timezone),
+    concurrency_policy: cdktn.stringToTerraform(struct!.concurrencyPolicy),
+    failed_jobs_history_limit: cdktn.numberToTerraform(struct!.failedJobsHistoryLimit),
+    schedule: cdktn.stringToTerraform(struct!.schedule),
+    starting_deadline_seconds: cdktn.numberToTerraform(struct!.startingDeadlineSeconds),
+    successful_jobs_history_limit: cdktn.numberToTerraform(struct!.successfulJobsHistoryLimit),
+    suspend: cdktn.booleanToTerraform(struct!.suspend),
+    timezone: cdktn.stringToTerraform(struct!.timezone),
     job_template: cronJobV1SpecJobTemplateToTerraform(struct!.jobTemplate),
   }
 }
 
 
 export function cronJobV1SpecToHclTerraform(struct?: CronJobV1SpecOutputReference | CronJobV1Spec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     concurrency_policy: {
-      value: cdktf.stringToHclTerraform(struct!.concurrencyPolicy),
+      value: cdktn.stringToHclTerraform(struct!.concurrencyPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     failed_jobs_history_limit: {
-      value: cdktf.numberToHclTerraform(struct!.failedJobsHistoryLimit),
+      value: cdktn.numberToHclTerraform(struct!.failedJobsHistoryLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     schedule: {
-      value: cdktf.stringToHclTerraform(struct!.schedule),
+      value: cdktn.stringToHclTerraform(struct!.schedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     starting_deadline_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.startingDeadlineSeconds),
+      value: cdktn.numberToHclTerraform(struct!.startingDeadlineSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     successful_jobs_history_limit: {
-      value: cdktf.numberToHclTerraform(struct!.successfulJobsHistoryLimit),
+      value: cdktn.numberToHclTerraform(struct!.successfulJobsHistoryLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     suspend: {
-      value: cdktf.booleanToHclTerraform(struct!.suspend),
+      value: cdktn.booleanToHclTerraform(struct!.suspend),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     timezone: {
-      value: cdktf.stringToHclTerraform(struct!.timezone),
+      value: cdktn.stringToHclTerraform(struct!.timezone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19716,14 +19716,14 @@ export function cronJobV1SpecToHclTerraform(struct?: CronJobV1SpecOutputReferenc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1SpecOutputReference extends cdktf.ComplexObject {
+export class CronJobV1SpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19868,11 +19868,11 @@ export class CronJobV1SpecOutputReference extends cdktf.ComplexObject {
   }
 
   // suspend - computed: false, optional: true, required: false
-  private _suspend?: boolean | cdktf.IResolvable; 
+  private _suspend?: boolean | cdktn.IResolvable; 
   public get suspend() {
     return this.getBooleanAttribute('suspend');
   }
-  public set suspend(value: boolean | cdktf.IResolvable) {
+  public set suspend(value: boolean | cdktn.IResolvable) {
     this._suspend = value;
   }
   public resetSuspend() {
@@ -19919,25 +19919,25 @@ export interface CronJobV1Timeouts {
   readonly delete?: string;
 }
 
-export function cronJobV1TimeoutsToTerraform(struct?: CronJobV1Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1TimeoutsToTerraform(struct?: CronJobV1Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.stringToTerraform(struct!.delete),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function cronJobV1TimeoutsToHclTerraform(struct?: CronJobV1Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cronJobV1TimeoutsToHclTerraform(struct?: CronJobV1Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19948,19 +19948,19 @@ export function cronJobV1TimeoutsToHclTerraform(struct?: CronJobV1Timeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CronJobV1TimeoutsOutputReference extends cdktf.ComplexObject {
+export class CronJobV1TimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CronJobV1Timeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CronJobV1Timeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -19973,13 +19973,13 @@ export class CronJobV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CronJobV1Timeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CronJobV1Timeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }

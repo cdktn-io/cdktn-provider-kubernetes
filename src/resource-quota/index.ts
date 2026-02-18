@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ResourceQuotaConfig extends cdktf.TerraformMetaArguments {
+export interface ResourceQuotaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota#id ResourceQuota#id}
   *
@@ -72,52 +72,52 @@ export interface ResourceQuotaMetadata {
 }
 
 export function resourceQuotaMetadataToTerraform(struct?: ResourceQuotaMetadataOutputReference | ResourceQuotaMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function resourceQuotaMetadataToHclTerraform(struct?: ResourceQuotaMetadataOutputReference | ResourceQuotaMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -128,14 +128,14 @@ export function resourceQuotaMetadataToHclTerraform(struct?: ResourceQuotaMetada
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceQuotaMetadataOutputReference extends cdktf.ComplexObject {
+export class ResourceQuotaMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -300,39 +300,39 @@ export interface ResourceQuotaSpecScopeSelectorMatchExpression {
   readonly values?: string[];
 }
 
-export function resourceQuotaSpecScopeSelectorMatchExpressionToTerraform(struct?: ResourceQuotaSpecScopeSelectorMatchExpression | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceQuotaSpecScopeSelectorMatchExpressionToTerraform(struct?: ResourceQuotaSpecScopeSelectorMatchExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    scope_name: cdktf.stringToTerraform(struct!.scopeName),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    scope_name: cdktn.stringToTerraform(struct!.scopeName),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function resourceQuotaSpecScopeSelectorMatchExpressionToHclTerraform(struct?: ResourceQuotaSpecScopeSelectorMatchExpression | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceQuotaSpecScopeSelectorMatchExpressionToHclTerraform(struct?: ResourceQuotaSpecScopeSelectorMatchExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope_name: {
-      value: cdktf.stringToHclTerraform(struct!.scopeName),
+      value: cdktn.stringToHclTerraform(struct!.scopeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -343,9 +343,9 @@ export function resourceQuotaSpecScopeSelectorMatchExpressionToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference extends cdktf.ComplexObject {
+export class ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -353,11 +353,11 @@ export class ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ResourceQuotaSpecScopeSelectorMatchExpression | cdktf.IResolvable | undefined {
+  public get internalValue(): ResourceQuotaSpecScopeSelectorMatchExpression | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -378,7 +378,7 @@ export class ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResourceQuotaSpecScopeSelectorMatchExpression | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResourceQuotaSpecScopeSelectorMatchExpression | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -386,7 +386,7 @@ export class ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference extend
       this._scopeName = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -428,7 +428,7 @@ export class ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference extend
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -442,15 +442,15 @@ export class ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference extend
   }
 }
 
-export class ResourceQuotaSpecScopeSelectorMatchExpressionList extends cdktf.ComplexList {
-  public internalValue? : ResourceQuotaSpecScopeSelectorMatchExpression[] | cdktf.IResolvable
+export class ResourceQuotaSpecScopeSelectorMatchExpressionList extends cdktn.ComplexList {
+  public internalValue? : ResourceQuotaSpecScopeSelectorMatchExpression[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -467,28 +467,28 @@ export interface ResourceQuotaSpecScopeSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota#match_expression ResourceQuota#match_expression}
   */
-  readonly matchExpression?: ResourceQuotaSpecScopeSelectorMatchExpression[] | cdktf.IResolvable;
+  readonly matchExpression?: ResourceQuotaSpecScopeSelectorMatchExpression[] | cdktn.IResolvable;
 }
 
 export function resourceQuotaSpecScopeSelectorToTerraform(struct?: ResourceQuotaSpecScopeSelectorOutputReference | ResourceQuotaSpecScopeSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_expression: cdktf.listMapper(resourceQuotaSpecScopeSelectorMatchExpressionToTerraform, true)(struct!.matchExpression),
+    match_expression: cdktn.listMapper(resourceQuotaSpecScopeSelectorMatchExpressionToTerraform, true)(struct!.matchExpression),
   }
 }
 
 
 export function resourceQuotaSpecScopeSelectorToHclTerraform(struct?: ResourceQuotaSpecScopeSelectorOutputReference | ResourceQuotaSpecScopeSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_expression: {
-      value: cdktf.listMapperHcl(resourceQuotaSpecScopeSelectorMatchExpressionToHclTerraform, true)(struct!.matchExpression),
+      value: cdktn.listMapperHcl(resourceQuotaSpecScopeSelectorMatchExpressionToHclTerraform, true)(struct!.matchExpression),
       isBlock: true,
       type: "list",
       storageClassType: "ResourceQuotaSpecScopeSelectorMatchExpressionList",
@@ -499,14 +499,14 @@ export function resourceQuotaSpecScopeSelectorToHclTerraform(struct?: ResourceQu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceQuotaSpecScopeSelectorOutputReference extends cdktf.ComplexObject {
+export class ResourceQuotaSpecScopeSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -536,7 +536,7 @@ export class ResourceQuotaSpecScopeSelectorOutputReference extends cdktf.Complex
   public get matchExpression() {
     return this._matchExpression;
   }
-  public putMatchExpression(value: ResourceQuotaSpecScopeSelectorMatchExpression[] | cdktf.IResolvable) {
+  public putMatchExpression(value: ResourceQuotaSpecScopeSelectorMatchExpression[] | cdktn.IResolvable) {
     this._matchExpression.internalValue = value;
   }
   public resetMatchExpression() {
@@ -569,32 +569,32 @@ export interface ResourceQuotaSpec {
 }
 
 export function resourceQuotaSpecToTerraform(struct?: ResourceQuotaSpecOutputReference | ResourceQuotaSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hard: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.hard),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
+    hard: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.hard),
+    scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scopes),
     scope_selector: resourceQuotaSpecScopeSelectorToTerraform(struct!.scopeSelector),
   }
 }
 
 
 export function resourceQuotaSpecToHclTerraform(struct?: ResourceQuotaSpecOutputReference | ResourceQuotaSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hard: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.hard),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.hard),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scopes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -611,14 +611,14 @@ export function resourceQuotaSpecToHclTerraform(struct?: ResourceQuotaSpecOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceQuotaSpecOutputReference extends cdktf.ComplexObject {
+export class ResourceQuotaSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -674,7 +674,7 @@ export class ResourceQuotaSpecOutputReference extends cdktf.ComplexObject {
   // scopes - computed: false, optional: true, required: false
   private _scopes?: string[]; 
   public get scopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('scopes'));
   }
   public set scopes(value: string[]) {
     this._scopes = value;
@@ -714,32 +714,32 @@ export interface ResourceQuotaTimeouts {
   readonly update?: string;
 }
 
-export function resourceQuotaTimeoutsToTerraform(struct?: ResourceQuotaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceQuotaTimeoutsToTerraform(struct?: ResourceQuotaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function resourceQuotaTimeoutsToHclTerraform(struct?: ResourceQuotaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceQuotaTimeoutsToHclTerraform(struct?: ResourceQuotaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -750,19 +750,19 @@ export function resourceQuotaTimeoutsToHclTerraform(struct?: ResourceQuotaTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceQuotaTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ResourceQuotaTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ResourceQuotaTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ResourceQuotaTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -779,14 +779,14 @@ export class ResourceQuotaTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResourceQuotaTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResourceQuotaTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -834,7 +834,7 @@ export class ResourceQuotaTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota kubernetes_resource_quota}
 */
-export class ResourceQuota extends cdktf.TerraformResource {
+export class ResourceQuota extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -845,14 +845,14 @@ export class ResourceQuota extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ResourceQuota resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ResourceQuota resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResourceQuota to import
   * @param importFromId The id of the existing ResourceQuota that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResourceQuota to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_resource_quota", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_resource_quota", importId: importFromId, provider });
       }
 
   // ===========
@@ -959,7 +959,7 @@ export class ResourceQuota extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: resourceQuotaMetadataToTerraform(this._metadata.internalValue),
       spec: resourceQuotaSpecToTerraform(this._spec.internalValue),
       timeouts: resourceQuotaTimeoutsToTerraform(this._timeouts.internalValue),
@@ -969,7 +969,7 @@ export class ResourceQuota extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

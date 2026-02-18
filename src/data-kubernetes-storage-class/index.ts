@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataKubernetesStorageClassConfig extends cdktf.TerraformMetaArguments {
+export interface DataKubernetesStorageClassConfig extends cdktn.TerraformMetaArguments {
   /**
   * Indicates whether the storage class allow volume expand
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/storage_class#allow_volume_expansion DataKubernetesStorageClass#allow_volume_expansion}
   */
-  readonly allowVolumeExpansion?: boolean | cdktf.IResolvable;
+  readonly allowVolumeExpansion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/storage_class#id DataKubernetesStorageClass#id}
   *
@@ -77,32 +77,32 @@ export interface DataKubernetesStorageClassAllowedTopologiesMatchLabelExpression
   readonly values?: string[];
 }
 
-export function dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToTerraform(struct?: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToTerraform(struct?: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToHclTerraform(struct?: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToHclTerraform(struct?: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -113,9 +113,9 @@ export function dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,11 +123,11 @@ export class DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions | cdktf.IResolvable | undefined {
+  public get internalValue(): DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,14 +144,14 @@ export class DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -182,7 +182,7 @@ export class DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOut
   // values - computed: false, optional: true, required: false
   private _values?: string[]; 
   public get values() {
-    return cdktf.Fn.tolist(this.getListAttribute('values'));
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
   public set values(value: string[]) {
     this._values = value;
@@ -196,15 +196,15 @@ export class DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsOut
   }
 }
 
-export class DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList extends cdktf.ComplexList {
-  public internalValue? : DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions[] | cdktf.IResolvable
+export class DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList extends cdktn.ComplexList {
+  public internalValue? : DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -221,28 +221,28 @@ export interface DataKubernetesStorageClassAllowedTopologies {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/storage_class#match_label_expressions DataKubernetesStorageClass#match_label_expressions}
   */
-  readonly matchLabelExpressions?: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions[] | cdktf.IResolvable;
+  readonly matchLabelExpressions?: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions[] | cdktn.IResolvable;
 }
 
 export function dataKubernetesStorageClassAllowedTopologiesToTerraform(struct?: DataKubernetesStorageClassAllowedTopologiesOutputReference | DataKubernetesStorageClassAllowedTopologies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_label_expressions: cdktf.listMapper(dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToTerraform, true)(struct!.matchLabelExpressions),
+    match_label_expressions: cdktn.listMapper(dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToTerraform, true)(struct!.matchLabelExpressions),
   }
 }
 
 
 export function dataKubernetesStorageClassAllowedTopologiesToHclTerraform(struct?: DataKubernetesStorageClassAllowedTopologiesOutputReference | DataKubernetesStorageClassAllowedTopologies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_label_expressions: {
-      value: cdktf.listMapperHcl(dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToHclTerraform, true)(struct!.matchLabelExpressions),
+      value: cdktn.listMapperHcl(dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToHclTerraform, true)(struct!.matchLabelExpressions),
       isBlock: true,
       type: "list",
       storageClassType: "DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList",
@@ -253,14 +253,14 @@ export function dataKubernetesStorageClassAllowedTopologiesToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataKubernetesStorageClassAllowedTopologiesOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesStorageClassAllowedTopologiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -290,7 +290,7 @@ export class DataKubernetesStorageClassAllowedTopologiesOutputReference extends 
   public get matchLabelExpressions() {
     return this._matchLabelExpressions;
   }
-  public putMatchLabelExpressions(value: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions[] | cdktf.IResolvable) {
+  public putMatchLabelExpressions(value: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions[] | cdktn.IResolvable) {
     this._matchLabelExpressions.internalValue = value;
   }
   public resetMatchLabelExpressions() {
@@ -323,38 +323,38 @@ export interface DataKubernetesStorageClassMetadata {
 }
 
 export function dataKubernetesStorageClassMetadataToTerraform(struct?: DataKubernetesStorageClassMetadataOutputReference | DataKubernetesStorageClassMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function dataKubernetesStorageClassMetadataToHclTerraform(struct?: DataKubernetesStorageClassMetadataOutputReference | DataKubernetesStorageClassMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -365,14 +365,14 @@ export function dataKubernetesStorageClassMetadataToHclTerraform(struct?: DataKu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataKubernetesStorageClassMetadataOutputReference extends cdktf.ComplexObject {
+export class DataKubernetesStorageClassMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -476,7 +476,7 @@ export class DataKubernetesStorageClassMetadataOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/storage_class kubernetes_storage_class}
 */
-export class DataKubernetesStorageClass extends cdktf.TerraformDataSource {
+export class DataKubernetesStorageClass extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -487,14 +487,14 @@ export class DataKubernetesStorageClass extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataKubernetesStorageClass resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataKubernetesStorageClass resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataKubernetesStorageClass to import
   * @param importFromId The id of the existing DataKubernetesStorageClass that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/storage_class#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataKubernetesStorageClass to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_storage_class", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_storage_class", importId: importFromId, provider });
       }
 
   // ===========
@@ -539,11 +539,11 @@ export class DataKubernetesStorageClass extends cdktf.TerraformDataSource {
   // ==========
 
   // allow_volume_expansion - computed: true, optional: true, required: false
-  private _allowVolumeExpansion?: boolean | cdktf.IResolvable; 
+  private _allowVolumeExpansion?: boolean | cdktn.IResolvable; 
   public get allowVolumeExpansion() {
     return this.getBooleanAttribute('allow_volume_expansion');
   }
-  public set allowVolumeExpansion(value: boolean | cdktf.IResolvable) {
+  public set allowVolumeExpansion(value: boolean | cdktn.IResolvable) {
     this._allowVolumeExpansion = value;
   }
   public resetAllowVolumeExpansion() {
@@ -573,7 +573,7 @@ export class DataKubernetesStorageClass extends cdktf.TerraformDataSource {
   // mount_options - computed: true, optional: true, required: false
   private _mountOptions?: string[]; 
   public get mountOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('mount_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('mount_options'));
   }
   public set mountOptions(value: string[]) {
     this._mountOptions = value;
@@ -674,12 +674,12 @@ export class DataKubernetesStorageClass extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_volume_expansion: cdktf.booleanToTerraform(this._allowVolumeExpansion),
-      id: cdktf.stringToTerraform(this._id),
-      mount_options: cdktf.listMapper(cdktf.stringToTerraform, false)(this._mountOptions),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      reclaim_policy: cdktf.stringToTerraform(this._reclaimPolicy),
-      volume_binding_mode: cdktf.stringToTerraform(this._volumeBindingMode),
+      allow_volume_expansion: cdktn.booleanToTerraform(this._allowVolumeExpansion),
+      id: cdktn.stringToTerraform(this._id),
+      mount_options: cdktn.listMapper(cdktn.stringToTerraform, false)(this._mountOptions),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      reclaim_policy: cdktn.stringToTerraform(this._reclaimPolicy),
+      volume_binding_mode: cdktn.stringToTerraform(this._volumeBindingMode),
       allowed_topologies: dataKubernetesStorageClassAllowedTopologiesToTerraform(this._allowedTopologies.internalValue),
       metadata: dataKubernetesStorageClassMetadataToTerraform(this._metadata.internalValue),
     };
@@ -688,37 +688,37 @@ export class DataKubernetesStorageClass extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_volume_expansion: {
-        value: cdktf.booleanToHclTerraform(this._allowVolumeExpansion),
+        value: cdktn.booleanToHclTerraform(this._allowVolumeExpansion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mount_options: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._mountOptions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._mountOptions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       reclaim_policy: {
-        value: cdktf.stringToHclTerraform(this._reclaimPolicy),
+        value: cdktn.stringToHclTerraform(this._reclaimPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       volume_binding_mode: {
-        value: cdktf.stringToHclTerraform(this._volumeBindingMode),
+        value: cdktn.stringToHclTerraform(this._volumeBindingMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -294,7 +294,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -376,7 +376,7 @@ public putEndpoint(value: IResolvable | EndpointSliceV1Endpoint[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.putEndpoint.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]
 
 ---
 
@@ -400,7 +400,7 @@ public putPort(value: IResolvable | EndpointSliceV1Port[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.putPort.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]
 
 ---
 
@@ -417,7 +417,7 @@ public resetId(): void
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a EndpointSliceV1 resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a EndpointSliceV1 resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -489,7 +489,7 @@ import { endpointSliceV1 } from '@cdktn/provider-kubernetes'
 endpointSliceV1.EndpointSliceV1.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a EndpointSliceV1 resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a EndpointSliceV1 resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.generateConfigForImport.parameter.scope"></a>
 
@@ -519,7 +519,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the EndpointSliceV1 to import is found.
 
@@ -530,27 +530,27 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.endpoint">endpoint</a></code> | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList">EndpointSliceV1EndpointList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1MetadataOutputReference">EndpointSliceV1MetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.port">port</a></code> | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList">EndpointSliceV1PortList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.addressTypeInput">addressTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.endpointInput">endpointInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.endpointInput">endpointInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.metadataInput">metadataInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Metadata">EndpointSliceV1Metadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.portInput">portInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.portInput">portInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.addressType">addressType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1.property.id">id</a></code> | <code>string</code> | *No description.* |
 
@@ -574,7 +574,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -624,7 +624,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -634,7 +634,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -644,7 +644,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -664,7 +664,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -674,7 +674,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -684,7 +684,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -694,7 +694,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -744,7 +744,7 @@ public readonly addressTypeInput: string;
 public readonly endpointInput: IResolvable | EndpointSliceV1Endpoint[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]
 
 ---
 
@@ -774,7 +774,7 @@ public readonly metadataInput: EndpointSliceV1Metadata;
 public readonly portInput: IResolvable | EndpointSliceV1Port[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]
 
 ---
 
@@ -832,17 +832,17 @@ const endpointSliceV1Config: endpointSliceV1.EndpointSliceV1Config = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.addressType">addressType</a></code> | <code>string</code> | address_type specifies the type of address carried by this EndpointSlice. |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.endpoint">endpoint</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]</code> | endpoint block. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.endpoint">endpoint</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]</code> | endpoint block. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Metadata">EndpointSliceV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.port">port</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]</code> | port block. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.port">port</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/endpoint_slice_v1#id EndpointSliceV1#id}. |
 
 ---
@@ -853,7 +853,7 @@ const endpointSliceV1Config: endpointSliceV1.EndpointSliceV1Config = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -863,7 +863,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -873,7 +873,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -883,7 +883,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -893,7 +893,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -903,7 +903,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -913,7 +913,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly endpoint: IResolvable | EndpointSliceV1Endpoint[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]
 
 endpoint block.
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly port: IResolvable | EndpointSliceV1Port[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]
 
 port block.
 
@@ -1113,9 +1113,9 @@ const endpointSliceV1EndpointCondition: endpointSliceV1.EndpointSliceV1EndpointC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointCondition.property.ready">ready</a></code> | <code>boolean \| cdktf.IResolvable</code> | ready indicates that this endpoint is prepared to receive traffic, according to whatever system is managing the endpoint. |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointCondition.property.serving">serving</a></code> | <code>boolean \| cdktf.IResolvable</code> | serving is identical to ready except that it is set regardless of the terminating state of endpoints. |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointCondition.property.terminating">terminating</a></code> | <code>boolean \| cdktf.IResolvable</code> | terminating indicates that this endpoint is terminating. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointCondition.property.ready">ready</a></code> | <code>boolean \| cdktn.IResolvable</code> | ready indicates that this endpoint is prepared to receive traffic, according to whatever system is managing the endpoint. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointCondition.property.serving">serving</a></code> | <code>boolean \| cdktn.IResolvable</code> | serving is identical to ready except that it is set regardless of the terminating state of endpoints. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointCondition.property.terminating">terminating</a></code> | <code>boolean \| cdktn.IResolvable</code> | terminating indicates that this endpoint is terminating. |
 
 ---
 
@@ -1125,7 +1125,7 @@ const endpointSliceV1EndpointCondition: endpointSliceV1.EndpointSliceV1EndpointC
 public readonly ready: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ready indicates that this endpoint is prepared to receive traffic, according to whatever system is managing the endpoint.
 
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly serving: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 serving is identical to ready except that it is set regardless of the terminating state of endpoints.
 
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly terminating: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 terminating indicates that this endpoint is terminating.
 
@@ -1444,14 +1444,14 @@ new endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1624,7 +1624,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1663,12 +1663,12 @@ public resetTerminating(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.readyInput">readyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.servingInput">servingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.terminatingInput">terminatingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.ready">ready</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.serving">serving</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.terminating">terminating</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.readyInput">readyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.servingInput">servingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.terminatingInput">terminatingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.ready">ready</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.serving">serving</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.terminating">terminating</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointConditionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointCondition">EndpointSliceV1EndpointCondition</a></code> | *No description.* |
 
 ---
@@ -1703,7 +1703,7 @@ public readonly fqn: string;
 public readonly readyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1713,7 +1713,7 @@ public readonly readyInput: boolean | IResolvable;
 public readonly servingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1723,7 +1723,7 @@ public readonly servingInput: boolean | IResolvable;
 public readonly terminatingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1733,7 +1733,7 @@ public readonly terminatingInput: boolean | IResolvable;
 public readonly ready: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1743,7 +1743,7 @@ public readonly ready: boolean | IResolvable;
 public readonly serving: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1753,7 +1753,7 @@ public readonly serving: boolean | IResolvable;
 public readonly terminating: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1780,7 +1780,7 @@ new endpointSliceV1.EndpointSliceV1EndpointList(terraformResource: IInterpolatin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1788,7 +1788,7 @@ new endpointSliceV1.EndpointSliceV1EndpointList(terraformResource: IInterpolatin
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1854,7 +1854,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1889,7 +1889,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]</code> | *No description.* |
 
 ---
 
@@ -1923,7 +1923,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | EndpointSliceV1Endpoint[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>[]
 
 ---
 
@@ -1940,7 +1940,7 @@ new endpointSliceV1.EndpointSliceV1EndpointOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1949,7 +1949,7 @@ new endpointSliceV1.EndpointSliceV1EndpointOutputReference(terraformResource: II
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2142,7 +2142,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2229,7 +2229,7 @@ public resetZone(): void
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.property.hostname">hostname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.property.nodeName">nodeName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.property.zone">zone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a></code> | *No description.* |
 
 ---
 
@@ -2383,7 +2383,7 @@ public readonly zone: string;
 public readonly internalValue: IResolvable | EndpointSliceV1Endpoint;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Endpoint">EndpointSliceV1Endpoint</a>
 
 ---
 
@@ -2400,14 +2400,14 @@ new endpointSliceV1.EndpointSliceV1EndpointTargetRefOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointTargetRefOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointTargetRefOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointTargetRefOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointTargetRefOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2581,7 +2581,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1EndpointTargetRefOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2787,14 +2787,14 @@ new endpointSliceV1.EndpointSliceV1MetadataOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1MetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1MetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1MetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1MetadataOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2969,7 +2969,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1MetadataOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3214,7 +3214,7 @@ new endpointSliceV1.EndpointSliceV1PortList(terraformResource: IInterpolatingPar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3222,7 +3222,7 @@ new endpointSliceV1.EndpointSliceV1PortList(terraformResource: IInterpolatingPar
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3288,7 +3288,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3323,7 +3323,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]</code> | *No description.* |
 
 ---
 
@@ -3357,7 +3357,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | EndpointSliceV1Port[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>[]
 
 ---
 
@@ -3374,7 +3374,7 @@ new endpointSliceV1.EndpointSliceV1PortOutputReference(terraformResource: IInter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3383,7 +3383,7 @@ new endpointSliceV1.EndpointSliceV1PortOutputReference(terraformResource: IInter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3571,7 +3571,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3612,7 +3612,7 @@ public resetProtocol(): void
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.property.port">port</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.property.protocol">protocol</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1PortOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a></code> | *No description.* |
 
 ---
 
@@ -3726,7 +3726,7 @@ public readonly protocol: string;
 public readonly internalValue: IResolvable | EndpointSliceV1Port;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.endpointSliceV1.EndpointSliceV1Port">EndpointSliceV1Port</a>
 
 ---
 

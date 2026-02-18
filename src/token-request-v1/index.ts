@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TokenRequestV1Config extends cdktf.TerraformMetaArguments {
+export interface TokenRequestV1Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/token_request_v1#id TokenRequestV1#id}
   *
@@ -66,52 +66,52 @@ export interface TokenRequestV1Metadata {
 }
 
 export function tokenRequestV1MetadataToTerraform(struct?: TokenRequestV1MetadataOutputReference | TokenRequestV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function tokenRequestV1MetadataToHclTerraform(struct?: TokenRequestV1MetadataOutputReference | TokenRequestV1Metadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,14 +122,14 @@ export function tokenRequestV1MetadataToHclTerraform(struct?: TokenRequestV1Meta
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TokenRequestV1MetadataOutputReference extends cdktf.ComplexObject {
+export class TokenRequestV1MetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -301,45 +301,45 @@ export interface TokenRequestV1SpecBoundObjectRef {
 }
 
 export function tokenRequestV1SpecBoundObjectRefToTerraform(struct?: TokenRequestV1SpecBoundObjectRefOutputReference | TokenRequestV1SpecBoundObjectRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_version: cdktf.stringToTerraform(struct!.apiVersion),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    name: cdktf.stringToTerraform(struct!.name),
-    uid: cdktf.stringToTerraform(struct!.uid),
+    api_version: cdktn.stringToTerraform(struct!.apiVersion),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    name: cdktn.stringToTerraform(struct!.name),
+    uid: cdktn.stringToTerraform(struct!.uid),
   }
 }
 
 
 export function tokenRequestV1SpecBoundObjectRefToHclTerraform(struct?: TokenRequestV1SpecBoundObjectRefOutputReference | TokenRequestV1SpecBoundObjectRef): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_version: {
-      value: cdktf.stringToHclTerraform(struct!.apiVersion),
+      value: cdktn.stringToHclTerraform(struct!.apiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uid: {
-      value: cdktf.stringToHclTerraform(struct!.uid),
+      value: cdktn.stringToHclTerraform(struct!.uid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -350,14 +350,14 @@ export function tokenRequestV1SpecBoundObjectRefToHclTerraform(struct?: TokenReq
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TokenRequestV1SpecBoundObjectRefOutputReference extends cdktf.ComplexObject {
+export class TokenRequestV1SpecBoundObjectRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -486,32 +486,32 @@ export interface TokenRequestV1Spec {
 }
 
 export function tokenRequestV1SpecToTerraform(struct?: TokenRequestV1SpecOutputReference | TokenRequestV1Spec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.audiences),
-    expiration_seconds: cdktf.numberToTerraform(struct!.expirationSeconds),
+    audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.audiences),
+    expiration_seconds: cdktn.numberToTerraform(struct!.expirationSeconds),
     bound_object_ref: tokenRequestV1SpecBoundObjectRefToTerraform(struct!.boundObjectRef),
   }
 }
 
 
 export function tokenRequestV1SpecToHclTerraform(struct?: TokenRequestV1SpecOutputReference | TokenRequestV1Spec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audiences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audiences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.audiences),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     expiration_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.expirationSeconds),
+      value: cdktn.numberToHclTerraform(struct!.expirationSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -528,14 +528,14 @@ export function tokenRequestV1SpecToHclTerraform(struct?: TokenRequestV1SpecOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TokenRequestV1SpecOutputReference extends cdktf.ComplexObject {
+export class TokenRequestV1SpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -624,7 +624,7 @@ export class TokenRequestV1SpecOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/token_request_v1 kubernetes_token_request_v1}
 */
-export class TokenRequestV1 extends cdktf.TerraformResource {
+export class TokenRequestV1 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -635,14 +635,14 @@ export class TokenRequestV1 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TokenRequestV1 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TokenRequestV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TokenRequestV1 to import
   * @param importFromId The id of the existing TokenRequestV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/token_request_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TokenRequestV1 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_token_request_v1", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_token_request_v1", importId: importFromId, provider });
       }
 
   // ===========
@@ -737,7 +737,7 @@ export class TokenRequestV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: tokenRequestV1MetadataToTerraform(this._metadata.internalValue),
       spec: tokenRequestV1SpecToTerraform(this._spec.internalValue),
     };
@@ -746,7 +746,7 @@ export class TokenRequestV1 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

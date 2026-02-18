@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NodeTaintConfig extends cdktf.TerraformMetaArguments {
+export interface NodeTaintConfig extends cdktn.TerraformMetaArguments {
   /**
   * Set the name of the field manager for the node taint
   *
@@ -23,7 +23,7 @@ export interface NodeTaintConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/node_taint#force NodeTaint#force}
   */
-  readonly force?: boolean | cdktf.IResolvable;
+  readonly force?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/node_taint#id NodeTaint#id}
   *
@@ -42,7 +42,7 @@ export interface NodeTaintConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/node_taint#taint NodeTaint#taint}
   */
-  readonly taint: NodeTaintTaint[] | cdktf.IResolvable;
+  readonly taint: NodeTaintTaint[] | cdktn.IResolvable;
 }
 export interface NodeTaintMetadata {
   /**
@@ -54,24 +54,24 @@ export interface NodeTaintMetadata {
 }
 
 export function nodeTaintMetadataToTerraform(struct?: NodeTaintMetadataOutputReference | NodeTaintMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function nodeTaintMetadataToHclTerraform(struct?: NodeTaintMetadataOutputReference | NodeTaintMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -82,14 +82,14 @@ export function nodeTaintMetadataToHclTerraform(struct?: NodeTaintMetadataOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NodeTaintMetadataOutputReference extends cdktf.ComplexObject {
+export class NodeTaintMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -148,39 +148,39 @@ export interface NodeTaintTaint {
   readonly value: string;
 }
 
-export function nodeTaintTaintToTerraform(struct?: NodeTaintTaint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nodeTaintTaintToTerraform(struct?: NodeTaintTaint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    effect: cdktf.stringToTerraform(struct!.effect),
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    effect: cdktn.stringToTerraform(struct!.effect),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function nodeTaintTaintToHclTerraform(struct?: NodeTaintTaint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nodeTaintTaintToHclTerraform(struct?: NodeTaintTaint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     effect: {
-      value: cdktf.stringToHclTerraform(struct!.effect),
+      value: cdktn.stringToHclTerraform(struct!.effect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -191,9 +191,9 @@ export function nodeTaintTaintToHclTerraform(struct?: NodeTaintTaint | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NodeTaintTaintOutputReference extends cdktf.ComplexObject {
+export class NodeTaintTaintOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -201,11 +201,11 @@ export class NodeTaintTaintOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NodeTaintTaint | cdktf.IResolvable | undefined {
+  public get internalValue(): NodeTaintTaint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -226,7 +226,7 @@ export class NodeTaintTaintOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NodeTaintTaint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NodeTaintTaint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -234,7 +234,7 @@ export class NodeTaintTaintOutputReference extends cdktf.ComplexObject {
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -287,15 +287,15 @@ export class NodeTaintTaintOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class NodeTaintTaintList extends cdktf.ComplexList {
-  public internalValue? : NodeTaintTaint[] | cdktf.IResolvable
+export class NodeTaintTaintList extends cdktn.ComplexList {
+  public internalValue? : NodeTaintTaint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -310,7 +310,7 @@ export class NodeTaintTaintList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/node_taint kubernetes_node_taint}
 */
-export class NodeTaint extends cdktf.TerraformResource {
+export class NodeTaint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -321,14 +321,14 @@ export class NodeTaint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NodeTaint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NodeTaint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NodeTaint to import
   * @param importFromId The id of the existing NodeTaint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/node_taint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NodeTaint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_node_taint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_node_taint", importId: importFromId, provider });
       }
 
   // ===========
@@ -386,11 +386,11 @@ export class NodeTaint extends cdktf.TerraformResource {
   }
 
   // force - computed: false, optional: true, required: false
-  private _force?: boolean | cdktf.IResolvable; 
+  private _force?: boolean | cdktn.IResolvable; 
   public get force() {
     return this.getBooleanAttribute('force');
   }
-  public set force(value: boolean | cdktf.IResolvable) {
+  public set force(value: boolean | cdktn.IResolvable) {
     this._force = value;
   }
   public resetForce() {
@@ -435,7 +435,7 @@ export class NodeTaint extends cdktf.TerraformResource {
   public get taint() {
     return this._taint;
   }
-  public putTaint(value: NodeTaintTaint[] | cdktf.IResolvable) {
+  public putTaint(value: NodeTaintTaint[] | cdktn.IResolvable) {
     this._taint.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -449,30 +449,30 @@ export class NodeTaint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      field_manager: cdktf.stringToTerraform(this._fieldManager),
-      force: cdktf.booleanToTerraform(this._force),
-      id: cdktf.stringToTerraform(this._id),
+      field_manager: cdktn.stringToTerraform(this._fieldManager),
+      force: cdktn.booleanToTerraform(this._force),
+      id: cdktn.stringToTerraform(this._id),
       metadata: nodeTaintMetadataToTerraform(this._metadata.internalValue),
-      taint: cdktf.listMapper(nodeTaintTaintToTerraform, true)(this._taint.internalValue),
+      taint: cdktn.listMapper(nodeTaintTaintToTerraform, true)(this._taint.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       field_manager: {
-        value: cdktf.stringToHclTerraform(this._fieldManager),
+        value: cdktn.stringToHclTerraform(this._fieldManager),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force: {
-        value: cdktf.booleanToHclTerraform(this._force),
+        value: cdktn.booleanToHclTerraform(this._force),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -484,7 +484,7 @@ export class NodeTaint extends cdktf.TerraformResource {
         storageClassType: "NodeTaintMetadataList",
       },
       taint: {
-        value: cdktf.listMapperHcl(nodeTaintTaintToHclTerraform, true)(this._taint.internalValue),
+        value: cdktn.listMapperHcl(nodeTaintTaintToHclTerraform, true)(this._taint.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NodeTaintTaintList",

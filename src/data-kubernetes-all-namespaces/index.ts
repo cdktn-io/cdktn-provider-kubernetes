@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataKubernetesAllNamespacesConfig extends cdktf.TerraformMetaArguments {
+export interface DataKubernetesAllNamespacesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/all_namespaces#id DataKubernetesAllNamespaces#id}
   *
@@ -24,7 +24,7 @@ export interface DataKubernetesAllNamespacesConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/all_namespaces kubernetes_all_namespaces}
 */
-export class DataKubernetesAllNamespaces extends cdktf.TerraformDataSource {
+export class DataKubernetesAllNamespaces extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -35,14 +35,14 @@ export class DataKubernetesAllNamespaces extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataKubernetesAllNamespaces resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataKubernetesAllNamespaces resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataKubernetesAllNamespaces to import
   * @param importFromId The id of the existing DataKubernetesAllNamespaces that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/all_namespaces#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataKubernetesAllNamespaces to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_all_namespaces", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_all_namespaces", importId: importFromId, provider });
       }
 
   // ===========
@@ -106,14 +106,14 @@ export class DataKubernetesAllNamespaces extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

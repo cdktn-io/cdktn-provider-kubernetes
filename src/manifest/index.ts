@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ManifestConfig extends cdktf.TerraformMetaArguments {
+export interface ManifestConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of manifest fields whose values can be altered by the API server during 'apply'. Defaults to: ["metadata.annotations", "metadata.labels"]
   *
@@ -62,25 +62,25 @@ export interface ManifestWaitFor {
   readonly fields?: { [key: string]: string };
 }
 
-export function manifestWaitForToTerraform(struct?: ManifestWaitFor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function manifestWaitForToTerraform(struct?: ManifestWaitFor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fields: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.fields),
+    fields: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.fields),
   }
 }
 
 
-export function manifestWaitForToHclTerraform(struct?: ManifestWaitFor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function manifestWaitForToHclTerraform(struct?: ManifestWaitFor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fields: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.fields),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.fields),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -91,19 +91,19 @@ export function manifestWaitForToHclTerraform(struct?: ManifestWaitFor | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManifestWaitForOutputReference extends cdktf.ComplexObject {
+export class ManifestWaitForOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ManifestWaitFor | cdktf.IResolvable | undefined {
+  public get internalValue(): ManifestWaitFor | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -116,13 +116,13 @@ export class ManifestWaitForOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManifestWaitFor | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManifestWaitFor | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fields = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -155,7 +155,7 @@ export interface ManifestFieldManager {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/manifest#force_conflicts Manifest#force_conflicts}
   */
-  readonly forceConflicts?: boolean | cdktf.IResolvable;
+  readonly forceConflicts?: boolean | cdktn.IResolvable;
   /**
   * The name to use for the field manager when creating and updating the resource.
   *
@@ -165,31 +165,31 @@ export interface ManifestFieldManager {
 }
 
 export function manifestFieldManagerToTerraform(struct?: ManifestFieldManagerOutputReference | ManifestFieldManager): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    force_conflicts: cdktf.booleanToTerraform(struct!.forceConflicts),
-    name: cdktf.stringToTerraform(struct!.name),
+    force_conflicts: cdktn.booleanToTerraform(struct!.forceConflicts),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function manifestFieldManagerToHclTerraform(struct?: ManifestFieldManagerOutputReference | ManifestFieldManager): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     force_conflicts: {
-      value: cdktf.booleanToHclTerraform(struct!.forceConflicts),
+      value: cdktn.booleanToHclTerraform(struct!.forceConflicts),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -200,14 +200,14 @@ export function manifestFieldManagerToHclTerraform(struct?: ManifestFieldManager
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManifestFieldManagerOutputReference extends cdktf.ComplexObject {
+export class ManifestFieldManagerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -239,11 +239,11 @@ export class ManifestFieldManagerOutputReference extends cdktf.ComplexObject {
   }
 
   // force_conflicts - computed: false, optional: true, required: false
-  private _forceConflicts?: boolean | cdktf.IResolvable; 
+  private _forceConflicts?: boolean | cdktn.IResolvable; 
   public get forceConflicts() {
     return this.getBooleanAttribute('force_conflicts');
   }
-  public set forceConflicts(value: boolean | cdktf.IResolvable) {
+  public set forceConflicts(value: boolean | cdktn.IResolvable) {
     this._forceConflicts = value;
   }
   public resetForceConflicts() {
@@ -292,38 +292,38 @@ export interface ManifestTimeouts {
 }
 
 export function manifestTimeoutsToTerraform(struct?: ManifestTimeoutsOutputReference | ManifestTimeouts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
 export function manifestTimeoutsToHclTerraform(struct?: ManifestTimeoutsOutputReference | ManifestTimeouts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -334,14 +334,14 @@ export function manifestTimeoutsToHclTerraform(struct?: ManifestTimeoutsOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManifestTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ManifestTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -441,32 +441,32 @@ export interface ManifestWaitCondition {
   readonly type?: string;
 }
 
-export function manifestWaitConditionToTerraform(struct?: ManifestWaitCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function manifestWaitConditionToTerraform(struct?: ManifestWaitCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
-    type: cdktf.stringToTerraform(struct!.type),
+    status: cdktn.stringToTerraform(struct!.status),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function manifestWaitConditionToHclTerraform(struct?: ManifestWaitCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function manifestWaitConditionToHclTerraform(struct?: ManifestWaitCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -477,9 +477,9 @@ export function manifestWaitConditionToHclTerraform(struct?: ManifestWaitConditi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManifestWaitConditionOutputReference extends cdktf.ComplexObject {
+export class ManifestWaitConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -487,11 +487,11 @@ export class ManifestWaitConditionOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ManifestWaitCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): ManifestWaitCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -508,14 +508,14 @@ export class ManifestWaitConditionOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManifestWaitCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManifestWaitCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._status = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -560,15 +560,15 @@ export class ManifestWaitConditionOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ManifestWaitConditionList extends cdktf.ComplexList {
-  public internalValue? : ManifestWaitCondition[] | cdktf.IResolvable
+export class ManifestWaitConditionList extends cdktn.ComplexList {
+  public internalValue? : ManifestWaitCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -591,48 +591,48 @@ export interface ManifestWait {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/manifest#rollout Manifest#rollout}
   */
-  readonly rollout?: boolean | cdktf.IResolvable;
+  readonly rollout?: boolean | cdktn.IResolvable;
   /**
   * condition block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/manifest#condition Manifest#condition}
   */
-  readonly condition?: ManifestWaitCondition[] | cdktf.IResolvable;
+  readonly condition?: ManifestWaitCondition[] | cdktn.IResolvable;
 }
 
 export function manifestWaitToTerraform(struct?: ManifestWaitOutputReference | ManifestWait): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fields: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.fields),
-    rollout: cdktf.booleanToTerraform(struct!.rollout),
-    condition: cdktf.listMapper(manifestWaitConditionToTerraform, true)(struct!.condition),
+    fields: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.fields),
+    rollout: cdktn.booleanToTerraform(struct!.rollout),
+    condition: cdktn.listMapper(manifestWaitConditionToTerraform, true)(struct!.condition),
   }
 }
 
 
 export function manifestWaitToHclTerraform(struct?: ManifestWaitOutputReference | ManifestWait): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fields: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.fields),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.fields),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     rollout: {
-      value: cdktf.booleanToHclTerraform(struct!.rollout),
+      value: cdktn.booleanToHclTerraform(struct!.rollout),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     condition: {
-      value: cdktf.listMapperHcl(manifestWaitConditionToHclTerraform, true)(struct!.condition),
+      value: cdktn.listMapperHcl(manifestWaitConditionToHclTerraform, true)(struct!.condition),
       isBlock: true,
       type: "list",
       storageClassType: "ManifestWaitConditionList",
@@ -643,14 +643,14 @@ export function manifestWaitToHclTerraform(struct?: ManifestWaitOutputReference 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManifestWaitOutputReference extends cdktf.ComplexObject {
+export class ManifestWaitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -704,11 +704,11 @@ export class ManifestWaitOutputReference extends cdktf.ComplexObject {
   }
 
   // rollout - computed: false, optional: true, required: false
-  private _rollout?: boolean | cdktf.IResolvable; 
+  private _rollout?: boolean | cdktn.IResolvable; 
   public get rollout() {
     return this.getBooleanAttribute('rollout');
   }
-  public set rollout(value: boolean | cdktf.IResolvable) {
+  public set rollout(value: boolean | cdktn.IResolvable) {
     this._rollout = value;
   }
   public resetRollout() {
@@ -724,7 +724,7 @@ export class ManifestWaitOutputReference extends cdktf.ComplexObject {
   public get condition() {
     return this._condition;
   }
-  public putCondition(value: ManifestWaitCondition[] | cdktf.IResolvable) {
+  public putCondition(value: ManifestWaitCondition[] | cdktn.IResolvable) {
     this._condition.internalValue = value;
   }
   public resetCondition() {
@@ -739,7 +739,7 @@ export class ManifestWaitOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/manifest kubernetes_manifest}
 */
-export class Manifest extends cdktf.TerraformResource {
+export class Manifest extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -750,14 +750,14 @@ export class Manifest extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Manifest resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Manifest resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Manifest to import
   * @param importFromId The id of the existing Manifest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/manifest#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Manifest to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_manifest", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_manifest", importId: importFromId, provider });
       }
 
   // ===========
@@ -915,9 +915,9 @@ export class Manifest extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      computed_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._computedFields),
-      manifest: cdktf.hashMapper(cdktf.anyToTerraform)(this._manifest),
-      object: cdktf.hashMapper(cdktf.anyToTerraform)(this._object),
+      computed_fields: cdktn.listMapper(cdktn.stringToTerraform, false)(this._computedFields),
+      manifest: cdktn.hashMapper(cdktn.anyToTerraform)(this._manifest),
+      object: cdktn.hashMapper(cdktn.anyToTerraform)(this._object),
       wait_for: manifestWaitForToTerraform(this._waitFor.internalValue),
       field_manager: manifestFieldManagerToTerraform(this._fieldManager.internalValue),
       timeouts: manifestTimeoutsToTerraform(this._timeouts.internalValue),
@@ -928,19 +928,19 @@ export class Manifest extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       computed_fields: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._computedFields),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._computedFields),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       manifest: {
-        value: cdktf.hashMapperHcl(cdktf.anyToHclTerraform)(this._manifest),
+        value: cdktn.hashMapperHcl(cdktn.anyToHclTerraform)(this._manifest),
         isBlock: false,
         type: "map",
         storageClassType: "anyMap",
       },
       object: {
-        value: cdktf.hashMapperHcl(cdktf.anyToHclTerraform)(this._object),
+        value: cdktn.hashMapperHcl(cdktn.anyToHclTerraform)(this._object),
         isBlock: false,
         type: "map",
         storageClassType: "anyMap",

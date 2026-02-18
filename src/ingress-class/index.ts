@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IngressClassConfig extends cdktf.TerraformMetaArguments {
+export interface IngressClassConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/ingress_class#id IngressClass#id}
   *
@@ -60,45 +60,45 @@ export interface IngressClassMetadata {
 }
 
 export function ingressClassMetadataToTerraform(struct?: IngressClassMetadataOutputReference | IngressClassMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function ingressClassMetadataToHclTerraform(struct?: IngressClassMetadataOutputReference | IngressClassMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function ingressClassMetadataToHclTerraform(struct?: IngressClassMetadata
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IngressClassMetadataOutputReference extends cdktf.ComplexObject {
+export class IngressClassMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -267,53 +267,53 @@ export interface IngressClassSpecParameters {
   readonly scope?: string;
 }
 
-export function ingressClassSpecParametersToTerraform(struct?: IngressClassSpecParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ingressClassSpecParametersToTerraform(struct?: IngressClassSpecParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_group: cdktf.stringToTerraform(struct!.apiGroup),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    scope: cdktf.stringToTerraform(struct!.scope),
+    api_group: cdktn.stringToTerraform(struct!.apiGroup),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    scope: cdktn.stringToTerraform(struct!.scope),
   }
 }
 
 
-export function ingressClassSpecParametersToHclTerraform(struct?: IngressClassSpecParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function ingressClassSpecParametersToHclTerraform(struct?: IngressClassSpecParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_group: {
-      value: cdktf.stringToHclTerraform(struct!.apiGroup),
+      value: cdktn.stringToHclTerraform(struct!.apiGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -324,9 +324,9 @@ export function ingressClassSpecParametersToHclTerraform(struct?: IngressClassSp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IngressClassSpecParametersOutputReference extends cdktf.ComplexObject {
+export class IngressClassSpecParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -334,11 +334,11 @@ export class IngressClassSpecParametersOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IngressClassSpecParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): IngressClassSpecParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -367,7 +367,7 @@ export class IngressClassSpecParametersOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IngressClassSpecParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IngressClassSpecParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -377,7 +377,7 @@ export class IngressClassSpecParametersOutputReference extends cdktf.ComplexObje
       this._namespace = undefined;
       this._scope = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -467,15 +467,15 @@ export class IngressClassSpecParametersOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class IngressClassSpecParametersList extends cdktf.ComplexList {
-  public internalValue? : IngressClassSpecParameters[] | cdktf.IResolvable
+export class IngressClassSpecParametersList extends cdktn.ComplexList {
+  public internalValue? : IngressClassSpecParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -498,35 +498,35 @@ export interface IngressClassSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/ingress_class#parameters IngressClass#parameters}
   */
-  readonly parameters?: IngressClassSpecParameters[] | cdktf.IResolvable;
+  readonly parameters?: IngressClassSpecParameters[] | cdktn.IResolvable;
 }
 
 export function ingressClassSpecToTerraform(struct?: IngressClassSpecOutputReference | IngressClassSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    controller: cdktf.stringToTerraform(struct!.controller),
-    parameters: cdktf.listMapper(ingressClassSpecParametersToTerraform, true)(struct!.parameters),
+    controller: cdktn.stringToTerraform(struct!.controller),
+    parameters: cdktn.listMapper(ingressClassSpecParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
 export function ingressClassSpecToHclTerraform(struct?: IngressClassSpecOutputReference | IngressClassSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     controller: {
-      value: cdktf.stringToHclTerraform(struct!.controller),
+      value: cdktn.stringToHclTerraform(struct!.controller),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(ingressClassSpecParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(ingressClassSpecParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "list",
       storageClassType: "IngressClassSpecParametersList",
@@ -537,14 +537,14 @@ export function ingressClassSpecToHclTerraform(struct?: IngressClassSpecOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IngressClassSpecOutputReference extends cdktf.ComplexObject {
+export class IngressClassSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -596,7 +596,7 @@ export class IngressClassSpecOutputReference extends cdktf.ComplexObject {
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: IngressClassSpecParameters[] | cdktf.IResolvable) {
+  public putParameters(value: IngressClassSpecParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -611,7 +611,7 @@ export class IngressClassSpecOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/ingress_class kubernetes_ingress_class}
 */
-export class IngressClass extends cdktf.TerraformResource {
+export class IngressClass extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -622,14 +622,14 @@ export class IngressClass extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IngressClass resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IngressClass resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IngressClass to import
   * @param importFromId The id of the existing IngressClass that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/ingress_class#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IngressClass to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_ingress_class", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_ingress_class", importId: importFromId, provider });
       }
 
   // ===========
@@ -716,7 +716,7 @@ export class IngressClass extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: ingressClassMetadataToTerraform(this._metadata.internalValue),
       spec: ingressClassSpecToTerraform(this._spec.internalValue),
     };
@@ -725,7 +725,7 @@ export class IngressClass extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

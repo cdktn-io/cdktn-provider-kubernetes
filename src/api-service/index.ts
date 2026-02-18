@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiServiceConfig extends cdktf.TerraformMetaArguments {
+export interface ApiServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/api_service#id ApiService#id}
   *
@@ -60,45 +60,45 @@ export interface ApiServiceMetadata {
 }
 
 export function apiServiceMetadataToTerraform(struct?: ApiServiceMetadataOutputReference | ApiServiceMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotations: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.annotations),
-    generate_name: cdktf.stringToTerraform(struct!.generateName),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    name: cdktf.stringToTerraform(struct!.name),
+    annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
+    generate_name: cdktn.stringToTerraform(struct!.generateName),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function apiServiceMetadataToHclTerraform(struct?: ApiServiceMetadataOutputReference | ApiServiceMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     annotations: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.annotations),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.annotations),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     generate_name: {
-      value: cdktf.stringToHclTerraform(struct!.generateName),
+      value: cdktn.stringToHclTerraform(struct!.generateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function apiServiceMetadataToHclTerraform(struct?: ApiServiceMetadataOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiServiceMetadataOutputReference extends cdktf.ComplexObject {
+export class ApiServiceMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -260,38 +260,38 @@ export interface ApiServiceSpecService {
 }
 
 export function apiServiceSpecServiceToTerraform(struct?: ApiServiceSpecServiceOutputReference | ApiServiceSpecService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    port: cdktf.numberToTerraform(struct!.port),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
 export function apiServiceSpecServiceToHclTerraform(struct?: ApiServiceSpecServiceOutputReference | ApiServiceSpecService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -302,14 +302,14 @@ export function apiServiceSpecServiceToHclTerraform(struct?: ApiServiceSpecServi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiServiceSpecServiceOutputReference extends cdktf.ComplexObject {
+export class ApiServiceSpecServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -412,7 +412,7 @@ export interface ApiServiceSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/api_service#insecure_skip_tls_verify ApiService#insecure_skip_tls_verify}
   */
-  readonly insecureSkipTlsVerify?: boolean | cdktf.IResolvable;
+  readonly insecureSkipTlsVerify?: boolean | cdktn.IResolvable;
   /**
   * Version is the API version this server hosts. For example, `v1`.
   *
@@ -434,60 +434,60 @@ export interface ApiServiceSpec {
 }
 
 export function apiServiceSpecToTerraform(struct?: ApiServiceSpecOutputReference | ApiServiceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ca_bundle: cdktf.stringToTerraform(struct!.caBundle),
-    group: cdktf.stringToTerraform(struct!.group),
-    group_priority_minimum: cdktf.numberToTerraform(struct!.groupPriorityMinimum),
-    insecure_skip_tls_verify: cdktf.booleanToTerraform(struct!.insecureSkipTlsVerify),
-    version: cdktf.stringToTerraform(struct!.version),
-    version_priority: cdktf.numberToTerraform(struct!.versionPriority),
+    ca_bundle: cdktn.stringToTerraform(struct!.caBundle),
+    group: cdktn.stringToTerraform(struct!.group),
+    group_priority_minimum: cdktn.numberToTerraform(struct!.groupPriorityMinimum),
+    insecure_skip_tls_verify: cdktn.booleanToTerraform(struct!.insecureSkipTlsVerify),
+    version: cdktn.stringToTerraform(struct!.version),
+    version_priority: cdktn.numberToTerraform(struct!.versionPriority),
     service: apiServiceSpecServiceToTerraform(struct!.service),
   }
 }
 
 
 export function apiServiceSpecToHclTerraform(struct?: ApiServiceSpecOutputReference | ApiServiceSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ca_bundle: {
-      value: cdktf.stringToHclTerraform(struct!.caBundle),
+      value: cdktn.stringToHclTerraform(struct!.caBundle),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group: {
-      value: cdktf.stringToHclTerraform(struct!.group),
+      value: cdktn.stringToHclTerraform(struct!.group),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_priority_minimum: {
-      value: cdktf.numberToHclTerraform(struct!.groupPriorityMinimum),
+      value: cdktn.numberToHclTerraform(struct!.groupPriorityMinimum),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     insecure_skip_tls_verify: {
-      value: cdktf.booleanToHclTerraform(struct!.insecureSkipTlsVerify),
+      value: cdktn.booleanToHclTerraform(struct!.insecureSkipTlsVerify),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version_priority: {
-      value: cdktf.numberToHclTerraform(struct!.versionPriority),
+      value: cdktn.numberToHclTerraform(struct!.versionPriority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -504,14 +504,14 @@ export function apiServiceSpecToHclTerraform(struct?: ApiServiceSpecOutputRefere
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiServiceSpecOutputReference extends cdktf.ComplexObject {
+export class ApiServiceSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -615,11 +615,11 @@ export class ApiServiceSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // insecure_skip_tls_verify - computed: false, optional: true, required: false
-  private _insecureSkipTlsVerify?: boolean | cdktf.IResolvable; 
+  private _insecureSkipTlsVerify?: boolean | cdktn.IResolvable; 
   public get insecureSkipTlsVerify() {
     return this.getBooleanAttribute('insecure_skip_tls_verify');
   }
-  public set insecureSkipTlsVerify(value: boolean | cdktf.IResolvable) {
+  public set insecureSkipTlsVerify(value: boolean | cdktn.IResolvable) {
     this._insecureSkipTlsVerify = value;
   }
   public resetInsecureSkipTlsVerify() {
@@ -676,7 +676,7 @@ export class ApiServiceSpecOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/api_service kubernetes_api_service}
 */
-export class ApiService extends cdktf.TerraformResource {
+export class ApiService extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -687,14 +687,14 @@ export class ApiService extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiService to import
   * @param importFromId The id of the existing ApiService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/api_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_api_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "kubernetes_api_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -781,7 +781,7 @@ export class ApiService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       metadata: apiServiceMetadataToTerraform(this._metadata.internalValue),
       spec: apiServiceSpecToTerraform(this._spec.internalValue),
     };
@@ -790,7 +790,7 @@ export class ApiService extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
