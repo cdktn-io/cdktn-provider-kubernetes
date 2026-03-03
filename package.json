@@ -144,6 +144,13 @@
       }
     ]
   },
+  "cdktf": {
+    "isDeprecated": false,
+    "provider": {
+      "name": "registry.terraform.io/hashicorp/kubernetes",
+      "version": "2.38.0"
+    }
+  },
   "cdktn": {
     "isDeprecated": false,
     "provider": {
