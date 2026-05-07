@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/datakubernetesconfigmapv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesconfigmapv1"
 
 datakubernetesconfigmapv1.NewDataKubernetesConfigMapV1(scope Construct, id *string, config DataKubernetesConfigMapV1Config) DataKubernetesConfigMapV1
 ```
@@ -325,7 +325,7 @@ func ResetImmutable()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/datakubernetesconfigmapv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesconfigmapv1"
 
 datakubernetesconfigmapv1.DataKubernetesConfigMapV1_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/datakubernetesconfigmapv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesconfigmapv1"
 
 datakubernetesconfigmapv1.DataKubernetesConfigMapV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datakubernetesconfigmapv1.DataKubernetesConfigMapV1_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/datakubernetesconfigmapv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesconfigmapv1"
 
 datakubernetesconfigmapv1.DataKubernetesConfigMapV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datakubernetesconfigmapv1.DataKubernetesConfigMapV1_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/datakubernetesconfigmapv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesconfigmapv1"
 
 datakubernetesconfigmapv1.DataKubernetesConfigMapV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -680,7 +680,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/datakubernetesconfigmapv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesconfigmapv1"
 
 &datakubernetesconfigmapv1.DataKubernetesConfigMapV1Config {
 	Connection: interface{},
@@ -690,7 +690,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/datakube
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1Metadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1Metadata,
 	Id: *string,
 	Immutable: interface{},
 }
@@ -833,7 +833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/datakubernetesconfigmapv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesconfigmapv1"
 
 &datakubernetesconfigmapv1.DataKubernetesConfigMapV1Metadata {
 	Annotations: *map[string]*string,
@@ -921,7 +921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesConfigMapV1.DataKubernetesConfigMapV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/datakubernetesconfigmapv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesconfigmapv1"
 
 datakubernetesconfigmapv1.NewDataKubernetesConfigMapV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataKubernetesConfigMapV1MetadataOutputReference
 ```
