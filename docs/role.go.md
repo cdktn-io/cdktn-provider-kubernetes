@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.role.Role.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 role.NewRole(scope Construct, id *string, config RoleConfig) Role
 ```
@@ -433,7 +433,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.role.Role.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 role.Role_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.role.Role.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 role.Role_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ role.Role_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.role.Role.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 role.Role_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ role.Role_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.role.Role.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 role.Role_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.role.RoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 &role.RoleConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.role.RoleMetadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.role.RoleMetadata,
 	Rule: interface{},
 	Id: *string,
 }
@@ -939,7 +939,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.role.RoleMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 &role.RoleMetadata {
 	Annotations: *map[string]*string,
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.role.RoleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 &role.RoleRule {
 	ApiGroups: *[]*string,
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.role.RoleMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 role.NewRoleMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleMetadataOutputReference
 ```
@@ -1554,7 +1554,7 @@ func InternalValue() RoleMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.role.RoleRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 role.NewRoleRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RoleRuleList
 ```
@@ -1714,7 +1714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.role.RoleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/role"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/role"
 
 role.NewRoleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RoleRuleOutputReference
 ```

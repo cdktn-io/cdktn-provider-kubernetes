@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1(scope Construct, id *string, config ReplicationControllerV1Config) ReplicationControllerV1
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.ReplicationControllerV1_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.ReplicationControllerV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ replicationcontrollerv1.ReplicationControllerV1_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.ReplicationControllerV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ replicationcontrollerv1.ReplicationControllerV1_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.ReplicationControllerV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1Config {
 	Connection: interface{},
@@ -840,10 +840,10 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicat
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1Metadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1Spec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1Metadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1Spec,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1Timeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1Timeouts,
 }
 ```
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1Metadata {
 	Annotations: *map[string]*string,
@@ -1101,11 +1101,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1Spec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1Spec {
 	Selector: *map[string]*string,
-	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplate,
+	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplate,
 	MinReadySeconds: *f64,
 	Replicas: *f64,
 }
@@ -1187,11 +1187,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplate {
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpec,
 }
 ```
 
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -1341,14 +1341,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpec {
 	ActiveDeadlineSeconds: *f64,
-	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinity,
+	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinity,
 	AutomountServiceAccountToken: interface{},
 	Container: interface{},
-	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecDnsConfig,
+	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecDnsConfig,
 	DnsPolicy: *string,
 	EnableServiceLinks: interface{},
 	HostAliases: interface{},
@@ -1360,13 +1360,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicat
 	InitContainer: interface{},
 	NodeName: *string,
 	NodeSelector: *map[string]*string,
-	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecOs,
+	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecOs,
 	PriorityClassName: *string,
 	ReadinessGate: interface{},
 	RestartPolicy: *string,
 	RuntimeClassName: *string,
 	SchedulerName: *string,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContext,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContext,
 	ServiceAccountName: *string,
 	ShareProcessNamespace: interface{},
 	Subdomain: *string,
@@ -1859,12 +1859,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinity {
-	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinity,
-	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinity,
-	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinity,
+	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinity,
+	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinity,
+	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinity,
 }
 ```
 
@@ -1925,11 +1925,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
-	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
+	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
 }
 ```
 
@@ -1975,10 +1975,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
+	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
 	Weight: *f64,
 }
 ```
@@ -2025,7 +2025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference {
 	MatchExpressions: interface{},
@@ -2075,7 +2075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions {
 	Key: *string,
@@ -2145,7 +2145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields {
 	Key: *string,
@@ -2213,7 +2213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	NodeSelectorTerm: interface{},
@@ -2247,7 +2247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm {
 	MatchExpressions: interface{},
@@ -2297,7 +2297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions {
 	Key: *string,
@@ -2367,7 +2367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields {
 	Key: *string,
@@ -2435,7 +2435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -2485,10 +2485,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -2535,7 +2535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -2617,7 +2617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -2669,7 +2669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -2737,7 +2737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -2789,7 +2789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -2857,7 +2857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -2939,7 +2939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -2991,7 +2991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3059,7 +3059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3111,7 +3111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3179,7 +3179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -3229,10 +3229,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -3279,7 +3279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -3361,7 +3361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -3413,7 +3413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3481,7 +3481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3533,7 +3533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3601,7 +3601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -3683,7 +3683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -3735,7 +3735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3803,7 +3803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3855,7 +3855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3923,7 +3923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainer {
 	Name: *string,
@@ -3933,13 +3933,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicat
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerResources,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -4311,12 +4311,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFrom,
 }
 ```
 
@@ -4379,12 +4379,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRef,
 }
 ```
 
@@ -4445,7 +4445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -4495,7 +4495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRef {
 	Name: *string,
@@ -4545,13 +4545,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -4627,7 +4627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -4693,7 +4693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -4743,7 +4743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -4805,7 +4805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -4871,7 +4871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecycle {
 	PostStart: interface{},
@@ -4921,11 +4921,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -4987,7 +4987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -5023,7 +5023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -5123,7 +5123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -5173,7 +5173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -5209,11 +5209,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5275,7 +5275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -5311,7 +5311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -5411,7 +5411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -5461,7 +5461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -5497,13 +5497,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -5659,7 +5659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -5695,7 +5695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -5745,7 +5745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -5845,7 +5845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -5895,7 +5895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -5931,7 +5931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerPort {
 	ContainerPort: *f64,
@@ -6035,13 +6035,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -6197,7 +6197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -6233,7 +6233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -6283,7 +6283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -6383,7 +6383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -6433,7 +6433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -6469,7 +6469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerResources {
 	Limits: *map[string]*string,
@@ -6521,18 +6521,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -6693,7 +6693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -6743,7 +6743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -6795,7 +6795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -6877,13 +6877,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -7039,7 +7039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeExec {
 	Command: *[]*string,
@@ -7075,7 +7075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeGrpc {
 	Port: *f64,
@@ -7125,7 +7125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGet {
 	Host: *string,
@@ -7225,7 +7225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -7275,7 +7275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -7311,7 +7311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerVolumeDevice {
 	DevicePath: *string,
@@ -7361,7 +7361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecContainerVolumeMount {
 	MountPath: *string,
@@ -7477,7 +7477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecDnsConfig {
 	Nameservers: *[]*string,
@@ -7547,7 +7547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecDnsConfigOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecDnsConfigOption {
 	Name: *string,
@@ -7597,7 +7597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecHostAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecHostAliases {
 	Hostnames: *[]*string,
@@ -7647,7 +7647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecImagePullSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecImagePullSecrets {
 	Name: *string,
@@ -7681,7 +7681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainer {
 	Name: *string,
@@ -7691,13 +7691,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicat
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerResources,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -8069,12 +8069,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFrom,
 }
 ```
 
@@ -8137,12 +8137,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromSecretRef,
 }
 ```
 
@@ -8203,7 +8203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -8253,7 +8253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromSecretRef {
 	Name: *string,
@@ -8303,13 +8303,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -8385,7 +8385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -8451,7 +8451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -8501,7 +8501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -8563,7 +8563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -8629,7 +8629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecycle {
 	PostStart: interface{},
@@ -8679,11 +8679,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -8745,7 +8745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -8781,7 +8781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -8881,7 +8881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -8931,7 +8931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -8967,11 +8967,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -9033,7 +9033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -9069,7 +9069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -9169,7 +9169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -9219,7 +9219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -9255,13 +9255,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -9417,7 +9417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -9453,7 +9453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -9503,7 +9503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -9603,7 +9603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -9653,7 +9653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -9689,7 +9689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerPort {
 	ContainerPort: *f64,
@@ -9793,13 +9793,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -9955,7 +9955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -9991,7 +9991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -10041,7 +10041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -10141,7 +10141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -10191,7 +10191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -10227,7 +10227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerResources {
 	Limits: *map[string]*string,
@@ -10279,18 +10279,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -10451,7 +10451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -10501,7 +10501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -10553,7 +10553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -10635,13 +10635,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -10797,7 +10797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExec {
 	Command: *[]*string,
@@ -10833,7 +10833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpc {
 	Port: *f64,
@@ -10883,7 +10883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGet {
 	Host: *string,
@@ -10983,7 +10983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -11033,7 +11033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -11069,7 +11069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerVolumeDevice {
 	DevicePath: *string,
@@ -11119,7 +11119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecInitContainerVolumeMount {
 	MountPath: *string,
@@ -11235,7 +11235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecOs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecOs {
 	Name: *string,
@@ -11269,7 +11269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecReadinessGate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecReadinessGate {
 	ConditionType: *string,
@@ -11303,7 +11303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecSecurityContext {
 	FsGroup: *string,
@@ -11311,11 +11311,11 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicat
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptions,
 	SupplementalGroups: *[]*f64,
 	Sysctl: interface{},
-	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptions,
+	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptions,
 }
 ```
 
@@ -11493,7 +11493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -11545,7 +11545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -11627,7 +11627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSysctl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecSecurityContextSysctl {
 	Name: *string,
@@ -11677,7 +11677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptions {
 	GmsaCredentialSpec: *string,
@@ -11761,7 +11761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecToleration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecToleration {
 	Effect: *string,
@@ -11869,7 +11869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraint {
 	LabelSelector: interface{},
@@ -12017,7 +12017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelector {
 	MatchExpressions: interface{},
@@ -12069,7 +12069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions {
 	Key: *string,
@@ -12137,37 +12137,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolume {
-	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStore,
-	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAzureDisk,
-	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAzureFile,
-	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCephFs,
-	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCinder,
-	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMap,
-	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCsi,
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApi,
-	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEmptyDir,
-	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeral,
-	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFc,
-	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlexVolume,
-	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlocker,
-	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDisk,
-	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGitRepo,
-	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGlusterfs,
-	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeHostPath,
-	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeIscsi,
-	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeLocal,
+	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStore,
+	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAzureDisk,
+	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAzureFile,
+	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCephFs,
+	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCinder,
+	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMap,
+	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCsi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApi,
+	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEmptyDir,
+	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeral,
+	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFc,
+	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlexVolume,
+	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlocker,
+	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDisk,
+	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGitRepo,
+	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGlusterfs,
+	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeHostPath,
+	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeIscsi,
+	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeLocal,
 	Name: *string,
-	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeNfs,
-	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaim,
-	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDisk,
+	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeNfs,
+	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaim,
+	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDisk,
 	Projected: interface{},
-	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeQuobyte,
-	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeRbd,
-	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecret,
-	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolume,
+	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeQuobyte,
+	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeRbd,
+	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecret,
+	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolume,
 }
 ```
 
@@ -12603,7 +12603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStore {
 	VolumeId: *string,
@@ -12689,7 +12689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAzureDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeAzureDisk {
 	CachingMode: *string,
@@ -12805,7 +12805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAzureFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeAzureFile {
 	SecretName: *string,
@@ -12889,14 +12889,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCephFs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeCephFs {
 	Monitors: *[]*string,
 	Path: *string,
 	ReadOnly: interface{},
 	SecretFile: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRef,
 	User: *string,
 }
 ```
@@ -13003,7 +13003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRef {
 	Name: *string,
@@ -13053,7 +13053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCinder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeCinder {
 	VolumeId: *string,
@@ -13121,7 +13121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMap {
 	DefaultMode: *string,
@@ -13205,7 +13205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItems {
 	Key: *string,
@@ -13275,12 +13275,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeCsi {
 	Driver: *string,
 	FsType: *string,
-	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRef,
+	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRef,
 	ReadOnly: interface{},
 	VolumeAttributes: *map[string]*string,
 }
@@ -13375,7 +13375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRef {
 	Name: *string,
@@ -13409,7 +13409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApi {
 	DefaultMode: *string,
@@ -13461,13 +13461,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItems {
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef,
 	Path: *string,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -13547,7 +13547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -13597,7 +13597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -13659,7 +13659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeEmptyDir {
 	Medium: *string,
@@ -13711,10 +13711,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeral.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeral {
-	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
+	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
 }
 ```
 
@@ -13745,11 +13745,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate {
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
 }
 ```
 
@@ -13795,7 +13795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -13849,12 +13849,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec {
 	AccessModes: *[]*string,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
 	StorageClassName: *string,
 	VolumeMode: *string,
 	VolumeName: *string,
@@ -13963,7 +13963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources {
 	Limits: *map[string]*string,
@@ -14015,7 +14015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector {
 	MatchExpressions: interface{},
@@ -14067,7 +14067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions {
 	Key: *string,
@@ -14135,7 +14135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeFc {
 	Lun: *f64,
@@ -14219,14 +14219,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlexVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeFlexVolume {
 	Driver: *string,
 	FsType: *string,
 	Options: *map[string]*string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRef,
 }
 ```
 
@@ -14319,7 +14319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRef {
 	Name: *string,
@@ -14369,7 +14369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlocker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeFlocker {
 	DatasetName: *string,
@@ -14419,7 +14419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDisk {
 	PdName: *string,
@@ -14505,7 +14505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGitRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeGitRepo {
 	Directory: *string,
@@ -14573,7 +14573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGlusterfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeGlusterfs {
 	EndpointsName: *string,
@@ -14639,7 +14639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeHostPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeHostPath {
 	Path: *string,
@@ -14689,7 +14689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeIscsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeIscsi {
 	Iqn: *string,
@@ -14807,7 +14807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeLocal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeLocal {
 	Path: *string,
@@ -14841,7 +14841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeNfs {
 	Path: *string,
@@ -14907,7 +14907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaim {
 	ClaimName: *string,
@@ -14957,7 +14957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDisk {
 	PdId: *string,
@@ -15009,7 +15009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjected.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjected {
 	Sources: interface{},
@@ -15061,13 +15061,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSources {
 	ConfigMap: interface{},
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi,
 	Secret: interface{},
-	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
+	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
 }
 ```
 
@@ -15143,7 +15143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMap {
 	Items: interface{},
@@ -15209,7 +15209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItems {
 	Key: *string,
@@ -15279,7 +15279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi {
 	Items: interface{},
@@ -15313,13 +15313,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems {
 	Path: *string,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -15399,7 +15399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -15449,7 +15449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -15511,7 +15511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecret {
 	Items: interface{},
@@ -15577,7 +15577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItems {
 	Key: *string,
@@ -15647,7 +15647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken {
 	Path: *string,
@@ -15715,7 +15715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeQuobyte.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeQuobyte {
 	Registry: *string,
@@ -15813,7 +15813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeRbd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeRbd {
 	CephMonitors: *[]*string,
@@ -15823,7 +15823,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicat
 	RadosUser: *string,
 	RbdPool: *string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRef,
 }
 ```
 
@@ -15961,7 +15961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRef {
 	Name: *string,
@@ -16011,7 +16011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeSecret {
 	DefaultMode: *string,
@@ -16095,7 +16095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeSecretItems {
 	Key: *string,
@@ -16165,7 +16165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolume {
 	VolumePath: *string,
@@ -16217,7 +16217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 &replicationcontrollerv1.ReplicationControllerV1Timeouts {
 	Create: *string,
@@ -16279,7 +16279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1MetadataOutputReference
 ```
@@ -16706,7 +16706,7 @@ func InternalValue() ReplicationControllerV1Metadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecOutputReference
 ```
@@ -17070,7 +17070,7 @@ func InternalValue() ReplicationControllerV1Spec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateMetadataOutputReference
 ```
@@ -17497,7 +17497,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateOutputReference
 ```
@@ -17816,7 +17816,7 @@ func InternalValue() ReplicationControllerV1SpecTemplate
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityOutputReference
 ```
@@ -18149,7 +18149,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -18309,7 +18309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -18633,7 +18633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList
 ```
@@ -18793,7 +18793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference
 ```
@@ -19147,7 +19147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList
 ```
@@ -19307,7 +19307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference
 ```
@@ -19647,7 +19647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference
 ```
@@ -19980,7 +19980,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList
 ```
@@ -20140,7 +20140,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList
 ```
@@ -20300,7 +20300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference
 ```
@@ -20654,7 +20654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
 ```
@@ -20814,7 +20814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference
 ```
@@ -21154,7 +21154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference
 ```
@@ -21505,7 +21505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -21796,7 +21796,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecAffinityNodeAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecAffinityOutputReference
 ```
@@ -22171,7 +22171,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityOutputReference
 ```
@@ -22504,7 +22504,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecAffinityPodAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -22664,7 +22664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -22988,7 +22988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -23148,7 +23148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -23308,7 +23308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -23662,7 +23662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -24000,7 +24000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -24160,7 +24160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -24320,7 +24320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -24674,7 +24674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -25012,7 +25012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -25396,7 +25396,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -25556,7 +25556,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -25716,7 +25716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -26070,7 +26070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -26408,7 +26408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -26568,7 +26568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -26728,7 +26728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -26888,7 +26888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -27242,7 +27242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -27580,7 +27580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -27982,7 +27982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference
 ```
@@ -28315,7 +28315,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffin
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -28475,7 +28475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -28799,7 +28799,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -28959,7 +28959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -29119,7 +29119,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -29473,7 +29473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -29811,7 +29811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -29971,7 +29971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -30131,7 +30131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -30485,7 +30485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -30823,7 +30823,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -31207,7 +31207,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffin
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -31367,7 +31367,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -31527,7 +31527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -31881,7 +31881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -32219,7 +32219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -32379,7 +32379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -32539,7 +32539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -32699,7 +32699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -33053,7 +33053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -33391,7 +33391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -33793,7 +33793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerEnvFromConfigMapRefOutputReference
 ```
@@ -34093,7 +34093,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerEnvFromConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerEnvFromList
 ```
@@ -34253,7 +34253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerEnvFromOutputReference
 ```
@@ -34633,7 +34633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference
 ```
@@ -34933,7 +34933,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerEnvFromSecr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerEnvList
 ```
@@ -35093,7 +35093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerEnvOutputReference
 ```
@@ -35453,7 +35453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -35789,7 +35789,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerEnvValueFro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference
 ```
@@ -36096,7 +36096,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerEnvValueFro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromOutputReference
 ```
@@ -36513,7 +36513,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerEnvValueFro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -36842,7 +36842,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerEnvValueFro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -37178,7 +37178,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerEnvValueFro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference
 ```
@@ -37511,7 +37511,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference
 ```
@@ -37789,7 +37789,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerLifecyclePo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -37949,7 +37949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -38274,7 +38274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -38681,7 +38681,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerLifecyclePo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartList
 ```
@@ -38841,7 +38841,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartOutputReference
 ```
@@ -39234,7 +39234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketList
 ```
@@ -39394,7 +39394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -39683,7 +39683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference
 ```
@@ -39961,7 +39961,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerLifecyclePr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -40121,7 +40121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -40446,7 +40446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -40853,7 +40853,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerLifecyclePr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopList
 ```
@@ -41013,7 +41013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopOutputReference
 ```
@@ -41406,7 +41406,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketList
 ```
@@ -41566,7 +41566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -41855,7 +41855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerList
 ```
@@ -42015,7 +42015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeExecOutputReference
 ```
@@ -42293,7 +42293,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerLivenessPro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeGrpcList
 ```
@@ -42453,7 +42453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeGrpcOutputReference
 ```
@@ -42771,7 +42771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -42931,7 +42931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -43256,7 +43256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference
 ```
@@ -43663,7 +43663,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerLivenessPro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeOutputReference
 ```
@@ -44225,7 +44225,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerLivenessPro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketList
 ```
@@ -44385,7 +44385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -44674,7 +44674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerOutputReference
 ```
@@ -45715,7 +45715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerPortList
 ```
@@ -45875,7 +45875,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerPortOutputReference
 ```
@@ -46280,7 +46280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeExecOutputReference
 ```
@@ -46558,7 +46558,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerReadinessPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeGrpcList
 ```
@@ -46718,7 +46718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeGrpcOutputReference
 ```
@@ -47036,7 +47036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -47196,7 +47196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -47521,7 +47521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeHttpGetOutputReference
 ```
@@ -47928,7 +47928,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerReadinessPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeOutputReference
 ```
@@ -48490,7 +48490,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerReadinessPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeTcpSocketList
 ```
@@ -48650,7 +48650,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -48939,7 +48939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerResourcesOutputReference
 ```
@@ -49246,7 +49246,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -49553,7 +49553,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerSecurityCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference
 ```
@@ -50102,7 +50102,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerSecurityCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -50409,7 +50409,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerSecurityCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -50774,7 +50774,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerSecurityCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerStartupProbeExecOutputReference
 ```
@@ -51052,7 +51052,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerStartupProb
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerStartupProbeGrpcList
 ```
@@ -51212,7 +51212,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerStartupProbeGrpcOutputReference
 ```
@@ -51530,7 +51530,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -51690,7 +51690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -52015,7 +52015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference
 ```
@@ -52422,7 +52422,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerStartupProb
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReference
 ```
@@ -52984,7 +52984,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecContainerStartupProb
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerStartupProbeTcpSocketList
 ```
@@ -53144,7 +53144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference
 ```
@@ -53433,7 +53433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerVolumeDeviceList
 ```
@@ -53593,7 +53593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerVolumeDeviceOutputReference
 ```
@@ -53904,7 +53904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecContainerVolumeMountList
 ```
@@ -54064,7 +54064,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecContainerVolumeMountOutputReference
 ```
@@ -54491,7 +54491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecDnsConfigOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecDnsConfigOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecDnsConfigOptionList
 ```
@@ -54651,7 +54651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecDnsConfigOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecDnsConfigOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecDnsConfigOptionOutputReference
 ```
@@ -54969,7 +54969,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecDnsConfigOutputReference
 ```
@@ -55318,7 +55318,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecDnsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecHostAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecHostAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecHostAliasesList
 ```
@@ -55478,7 +55478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecHostAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecHostAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecHostAliasesOutputReference
 ```
@@ -55789,7 +55789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecImagePullSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecImagePullSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecImagePullSecretsList
 ```
@@ -55949,7 +55949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecImagePullSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecImagePullSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecImagePullSecretsOutputReference
 ```
@@ -56238,7 +56238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference
 ```
@@ -56538,7 +56538,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerEnvFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromList
 ```
@@ -56698,7 +56698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromOutputReference
 ```
@@ -57078,7 +57078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference
 ```
@@ -57378,7 +57378,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerEnvFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerEnvList
 ```
@@ -57538,7 +57538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerEnvOutputReference
 ```
@@ -57898,7 +57898,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -58234,7 +58234,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerEnvValu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference
 ```
@@ -58541,7 +58541,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerEnvValu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromOutputReference
 ```
@@ -58958,7 +58958,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerEnvValu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -59287,7 +59287,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerEnvValu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -59623,7 +59623,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerEnvValu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerLifecycleOutputReference
 ```
@@ -59956,7 +59956,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerLifecyc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference
 ```
@@ -60234,7 +60234,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerLifecyc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -60394,7 +60394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -60719,7 +60719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -61126,7 +61126,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerLifecyc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartList
 ```
@@ -61286,7 +61286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference
 ```
@@ -61679,7 +61679,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList
 ```
@@ -61839,7 +61839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -62128,7 +62128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference
 ```
@@ -62406,7 +62406,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerLifecyc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -62566,7 +62566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -62891,7 +62891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -63298,7 +63298,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerLifecyc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopList
 ```
@@ -63458,7 +63458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference
 ```
@@ -63851,7 +63851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList
 ```
@@ -64011,7 +64011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -64300,7 +64300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerList
 ```
@@ -64460,7 +64460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference
 ```
@@ -64738,7 +64738,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerLivenes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeGrpcList
 ```
@@ -64898,7 +64898,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference
 ```
@@ -65216,7 +65216,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -65376,7 +65376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -65701,7 +65701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference
 ```
@@ -66108,7 +66108,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerLivenes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeOutputReference
 ```
@@ -66670,7 +66670,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerLivenes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList
 ```
@@ -66830,7 +66830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -67119,7 +67119,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference
 ```
@@ -68160,7 +68160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerPortList
 ```
@@ -68320,7 +68320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerPortOutputReference
 ```
@@ -68725,7 +68725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference
 ```
@@ -69003,7 +69003,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerReadine
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcList
 ```
@@ -69163,7 +69163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference
 ```
@@ -69481,7 +69481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -69641,7 +69641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -69966,7 +69966,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference
 ```
@@ -70373,7 +70373,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerReadine
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputReference
 ```
@@ -70935,7 +70935,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerReadine
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList
 ```
@@ -71095,7 +71095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -71384,7 +71384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerResourcesOutputReference
 ```
@@ -71691,7 +71691,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerResourc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -71998,7 +71998,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerSecurit
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextOutputReference
 ```
@@ -72547,7 +72547,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerSecurit
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -72854,7 +72854,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerSecurit
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -73219,7 +73219,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerSecurit
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference
 ```
@@ -73497,7 +73497,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerStartup
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpcList
 ```
@@ -73657,7 +73657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpcOutputReference
 ```
@@ -73975,7 +73975,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -74135,7 +74135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -74460,7 +74460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference
 ```
@@ -74867,7 +74867,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerStartup
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeOutputReference
 ```
@@ -75429,7 +75429,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecInitContainerStartup
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketList
 ```
@@ -75589,7 +75589,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference
 ```
@@ -75878,7 +75878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerVolumeDeviceList
 ```
@@ -76038,7 +76038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerVolumeDeviceOutputReference
 ```
@@ -76349,7 +76349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerVolumeMountList
 ```
@@ -76509,7 +76509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecInitContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecInitContainerVolumeMountOutputReference
 ```
@@ -76936,7 +76936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecOsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecOsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecOsOutputReference
 ```
@@ -77207,7 +77207,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecOs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecOutputReference
 ```
@@ -78482,7 +78482,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecReadinessGateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecReadinessGateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecReadinessGateList
 ```
@@ -78642,7 +78642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecReadinessGateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecReadinessGateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecReadinessGateOutputReference
 ```
@@ -78931,7 +78931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecSecurityContextOutputReference
 ```
@@ -79522,7 +79522,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference
 ```
@@ -79829,7 +79829,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecSecurityContextSecco
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -80194,7 +80194,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecSecurityContextSeLin
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList
 ```
@@ -80354,7 +80354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecSecurityContextSysctlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlOutputReference
 ```
@@ -80665,7 +80665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference
 ```
@@ -81030,7 +81030,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecSecurityContextWindo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTolerationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecTolerationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecTolerationList
 ```
@@ -81190,7 +81190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTolerationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecTolerationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecTolerationOutputReference
 ```
@@ -81602,7 +81602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList
 ```
@@ -81762,7 +81762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList
 ```
@@ -81922,7 +81922,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference
 ```
@@ -82276,7 +82276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference
 ```
@@ -82614,7 +82614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintList
 ```
@@ -82774,7 +82774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintOutputReference
 ```
@@ -83286,7 +83286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference
 ```
@@ -83644,7 +83644,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBloc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAzureDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeAzureDiskOutputReference
 ```
@@ -84046,7 +84046,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeAzureDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference
 ```
@@ -84397,7 +84397,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeAzureFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCephFsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeCephFsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeCephFsOutputReference
 ```
@@ -84826,7 +84826,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeCephFs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference
 ```
@@ -85133,7 +85133,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference
 ```
@@ -85462,7 +85462,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeCinder
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList
 ```
@@ -85622,7 +85622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsOutputReference
 ```
@@ -85976,7 +85976,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference
 ```
@@ -86354,7 +86354,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeConfigMap
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference
 ```
@@ -86632,7 +86632,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublish
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeCsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeCsiOutputReference
 ```
@@ -87032,7 +87032,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeCsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference
 ```
@@ -87339,7 +87339,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiIte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsList
 ```
@@ -87499,7 +87499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference
 ```
@@ -87894,7 +87894,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -88216,7 +88216,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiIte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiOutputReference
 ```
@@ -88536,7 +88536,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeEmptyDirOutputReference
 ```
@@ -88843,7 +88843,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeEmptyDir
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeEphemeralOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeEphemeralOutputReference
 ```
@@ -89127,7 +89127,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeEphemeral
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference
 ```
@@ -89434,7 +89434,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolum
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference
 ```
@@ -89760,7 +89760,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolum
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference
 ```
@@ -90195,7 +90195,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolum
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference
 ```
@@ -90502,7 +90502,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolum
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList
 ```
@@ -90662,7 +90662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference
 ```
@@ -91016,7 +91016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference
 ```
@@ -91336,7 +91336,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolum
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeFcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeFcOutputReference
 ```
@@ -91687,7 +91687,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeFc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputReference
 ```
@@ -92087,7 +92087,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeFlexVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference
 ```
@@ -92394,7 +92394,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference
 ```
@@ -92701,7 +92701,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeFlocker
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference
 ```
@@ -93059,7 +93059,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentD
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGitRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeGitRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeGitRepoOutputReference
 ```
@@ -93395,7 +93395,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeGitRepo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeGlusterfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeGlusterfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeGlusterfsOutputReference
 ```
@@ -93717,7 +93717,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeGlusterfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference
 ```
@@ -94024,7 +94024,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeHostPath
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference
 ```
@@ -94433,7 +94433,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeIscsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeList
 ```
@@ -94593,7 +94593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeLocalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeLocalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeLocalOutputReference
 ```
@@ -94871,7 +94871,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeLocal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeNfsOutputReference
 ```
@@ -95193,7 +95193,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeNfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeOutputReference
 ```
@@ -96623,7 +96623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference
 ```
@@ -96930,7 +96930,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumePersistentVolu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference
 ```
@@ -97230,7 +97230,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumePhotonPersiste
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedList
 ```
@@ -97390,7 +97390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedOutputReference
 ```
@@ -97721,7 +97721,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList
 ```
@@ -97881,7 +97881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference
 ```
@@ -98235,7 +98235,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapList
 ```
@@ -98395,7 +98395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference
 ```
@@ -98762,7 +98762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference
 ```
@@ -99069,7 +99069,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList
 ```
@@ -99229,7 +99229,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference
 ```
@@ -99631,7 +99631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -99953,7 +99953,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference
 ```
@@ -100244,7 +100244,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesList
 ```
@@ -100404,7 +100404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesOutputReference
 ```
@@ -100839,7 +100839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList
 ```
@@ -100999,7 +100999,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference
 ```
@@ -101353,7 +101353,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretList
 ```
@@ -101513,7 +101513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretOutputReference
 ```
@@ -101880,7 +101880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference
 ```
@@ -102209,7 +102209,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeQuobyteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeQuobyteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeQuobyteOutputReference
 ```
@@ -102589,7 +102589,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeQuobyte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeRbdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeRbdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeRbdOutputReference
 ```
@@ -103069,7 +103069,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeRbd
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRefOutputReference
 ```
@@ -103376,7 +103376,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeSecretItemsList
 ```
@@ -103536,7 +103536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerV1SpecTemplateSpecVolumeSecretItemsOutputReference
 ```
@@ -103890,7 +103890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeSecretOutputReference
 ```
@@ -104268,7 +104268,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1SpecTemplateSpecVolumeVsphereVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolumeOutputReference
 ```
@@ -104568,7 +104568,7 @@ func InternalValue() ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationControllerV1.ReplicationControllerV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v13/replicationcontrollerv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontrollerv1"
 
 replicationcontrollerv1.NewReplicationControllerV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1TimeoutsOutputReference
 ```
