@@ -4,12 +4,12 @@
 
 ### RuntimeClassV1 <a name="RuntimeClassV1" id="@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/runtime_class_v1 kubernetes_runtime_class_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/runtime_class_v1 kubernetes_runtime_class_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/runtimeclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/runtimeclassv1"
 
 runtimeclassv1.NewRuntimeClassV1(scope Construct, id *string, config RuntimeClassV1Config) RuntimeClassV1
 ```
@@ -420,7 +420,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/runtimeclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/runtimeclassv1"
 
 runtimeclassv1.RuntimeClassV1_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/runtimeclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/runtimeclassv1"
 
 runtimeclassv1.RuntimeClassV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ runtimeclassv1.RuntimeClassV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/runtimeclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/runtimeclassv1"
 
 runtimeclassv1.RuntimeClassV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ runtimeclassv1.RuntimeClassV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/runtimeclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/runtimeclassv1"
 
 runtimeclassv1.RuntimeClassV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the RuntimeClassV1 to import.
 
 The id of the existing RuntimeClassV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/runtime_class_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/runtime_class_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/runtimeclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/runtimeclassv1"
 
 &runtimeclassv1.RuntimeClassV1Config {
 	Connection: interface{},
@@ -786,7 +786,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/runtimec
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Handler: *string,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.runtimeClassV1.RuntimeClassV1Metadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.runtimeClassV1.RuntimeClassV1Metadata,
 	Id: *string,
 }
 ```
@@ -804,7 +804,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/runtimec
 | <code><a href="#@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1Config.property.handler">Handler</a></code> | <code>*string</code> | Specifies the underlying runtime and configuration that the CRI implementation will use to handle pods of this class. |
 | <code><a href="#@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1Config.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1Metadata">RuntimeClassV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/runtime_class_v1#id RuntimeClassV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/runtime_class_v1#id RuntimeClassV1#id}. |
 
 ---
 
@@ -888,7 +888,7 @@ Handler *string
 
 Specifies the underlying runtime and configuration that the CRI implementation will use to handle pods of this class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/runtime_class_v1#handler RuntimeClassV1#handler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/runtime_class_v1#handler RuntimeClassV1#handler}
 
 ---
 
@@ -902,7 +902,7 @@ Metadata RuntimeClassV1Metadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/runtime_class_v1#metadata RuntimeClassV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/runtime_class_v1#metadata RuntimeClassV1#metadata}
 
 ---
 
@@ -914,7 +914,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/runtime_class_v1#id RuntimeClassV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/runtime_class_v1#id RuntimeClassV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -926,7 +926,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/runtimeclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/runtimeclassv1"
 
 &runtimeclassv1.RuntimeClassV1Metadata {
 	Annotations: *map[string]*string,
@@ -959,7 +959,7 @@ An unstructured key value map stored with the runtimeclass that may be used to s
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/runtime_class_v1#annotations RuntimeClassV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/runtime_class_v1#annotations RuntimeClassV1#annotations}
 
 ---
 
@@ -975,7 +975,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/runtime_class_v1#generate_name RuntimeClassV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/runtime_class_v1#generate_name RuntimeClassV1#generate_name}
 
 ---
 
@@ -991,7 +991,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/runtime_class_v1#labels RuntimeClassV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/runtime_class_v1#labels RuntimeClassV1#labels}
 
 ---
 
@@ -1005,7 +1005,7 @@ Name *string
 
 Name of the runtimeclass, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/runtime_class_v1#name RuntimeClassV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/runtime_class_v1#name RuntimeClassV1#name}
 
 ---
 
@@ -1016,7 +1016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.runtimeClassV1.RuntimeClassV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/runtimeclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/runtimeclassv1"
 
 runtimeclassv1.NewRuntimeClassV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RuntimeClassV1MetadataOutputReference
 ```

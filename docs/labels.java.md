@@ -4,7 +4,7 @@
 
 ### Labels <a name="Labels" id="@cdktn/provider-kubernetes.labels.Labels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels kubernetes_labels}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels kubernetes_labels}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.labels.Labels.Initializer"></a>
 
@@ -46,7 +46,7 @@ Labels.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-kubernetes.labels.Labels.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.labels.LabelsMetadata">LabelsMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.labels.Labels.Initializer.parameter.fieldManager">fieldManager</a></code> | <code>java.lang.String</code> | Set the name of the field manager for the specified labels. |
 | <code><a href="#@cdktn/provider-kubernetes.labels.Labels.Initializer.parameter.force">force</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Force overwriting labels that were created or edited outside of Terraform. |
-| <code><a href="#@cdktn/provider-kubernetes.labels.Labels.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#id Labels#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.labels.Labels.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#id Labels#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The apiVersion of the resource to label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#api_version Labels#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#api_version Labels#api_version}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The kind of the resource to label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#kind Labels#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#kind Labels#kind}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A map of labels to apply to the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#labels Labels#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#labels Labels#labels}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#metadata Labels#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#metadata Labels#metadata}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the name of the field manager for the specified labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#field_manager Labels#field_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#field_manager Labels#field_manager}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Force overwriting labels that were created or edited outside of Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#force Labels#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#force Labels#force}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#id Labels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#id Labels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -660,7 +660,7 @@ The construct id used in the generated config for the Labels to import.
 
 The id of the existing Labels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1051,7 +1051,7 @@ LabelsConfig.builder()
 | <code><a href="#@cdktn/provider-kubernetes.labels.LabelsConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.labels.LabelsMetadata">LabelsMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.labels.LabelsConfig.property.fieldManager">fieldManager</a></code> | <code>java.lang.String</code> | Set the name of the field manager for the specified labels. |
 | <code><a href="#@cdktn/provider-kubernetes.labels.LabelsConfig.property.force">force</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Force overwriting labels that were created or edited outside of Terraform. |
-| <code><a href="#@cdktn/provider-kubernetes.labels.LabelsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#id Labels#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.labels.LabelsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#id Labels#id}. |
 
 ---
 
@@ -1135,7 +1135,7 @@ public java.lang.String getApiVersion();
 
 The apiVersion of the resource to label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#api_version Labels#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#api_version Labels#api_version}
 
 ---
 
@@ -1149,7 +1149,7 @@ public java.lang.String getKind();
 
 The kind of the resource to label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#kind Labels#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#kind Labels#kind}
 
 ---
 
@@ -1163,7 +1163,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 A map of labels to apply to the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#labels Labels#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#labels Labels#labels}
 
 ---
 
@@ -1177,7 +1177,7 @@ public LabelsMetadata getMetadata();
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#metadata Labels#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#metadata Labels#metadata}
 
 ---
 
@@ -1191,7 +1191,7 @@ public java.lang.String getFieldManager();
 
 Set the name of the field manager for the specified labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#field_manager Labels#field_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#field_manager Labels#field_manager}
 
 ---
 
@@ -1205,7 +1205,7 @@ public java.lang.Boolean|IResolvable getForce();
 
 Force overwriting labels that were created or edited outside of Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#force Labels#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#force Labels#force}
 
 ---
 
@@ -1217,7 +1217,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#id Labels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#id Labels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1256,7 +1256,7 @@ public java.lang.String getName();
 
 The name of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#name Labels#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#name Labels#name}
 
 ---
 
@@ -1270,7 +1270,7 @@ public java.lang.String getNamespace();
 
 The namespace of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/labels#namespace Labels#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/labels#namespace Labels#namespace}
 
 ---
 

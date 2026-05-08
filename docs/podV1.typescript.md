@@ -4,7 +4,7 @@
 
 ### PodV1 <a name="PodV1" id="@cdktn/provider-kubernetes.podV1.PodV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1 kubernetes_pod_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1 kubernetes_pod_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.podV1.PodV1.Initializer"></a>
 
@@ -549,7 +549,7 @@ The construct id used in the generated config for the PodV1 to import.
 
 The id of the existing PodV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ const podV1Config: podV1.PodV1Config = { ... }
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Metadata">PodV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Config.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Spec">PodV1Spec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#id PodV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#id PodV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Config.property.targetState">targetState</a></code> | <code>string[]</code> | A list of the pod phases that indicate whether it was successfully created. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Timeouts">PodV1Timeouts</a></code> | timeouts block. |
 
@@ -963,7 +963,7 @@ public readonly metadata: PodV1Metadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#metadata PodV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#metadata PodV1#metadata}
 
 ---
 
@@ -977,7 +977,7 @@ public readonly spec: PodV1Spec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#spec PodV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#spec PodV1#spec}
 
 ---
 
@@ -989,7 +989,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#id PodV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#id PodV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1008,7 +1008,7 @@ A list of the pod phases that indicate whether it was successfully created.
 
 Options: "Pending", "Running", "Succeeded", "Failed", "Unknown". Default: "Running". More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#target_state PodV1#target_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#target_state PodV1#target_state}
 
 ---
 
@@ -1022,7 +1022,7 @@ public readonly timeouts: PodV1Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#timeouts PodV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#timeouts PodV1#timeouts}
 
 ---
 
@@ -1060,7 +1060,7 @@ An unstructured key value map stored with the pod that may be used to store arbi
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#annotations PodV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#annotations PodV1#annotations}
 
 ---
 
@@ -1076,7 +1076,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#generate_name PodV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#generate_name PodV1#generate_name}
 
 ---
 
@@ -1092,7 +1092,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#labels PodV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#labels PodV1#labels}
 
 ---
 
@@ -1106,7 +1106,7 @@ public readonly name: string;
 
 Name of the pod, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly namespace: string;
 
 Namespace defines the space within which name of the pod must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespace PodV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespace PodV1#namespace}
 
 ---
 
@@ -1183,7 +1183,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#active_deadline_seconds PodV1#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#active_deadline_seconds PodV1#active_deadline_seconds}
 
 ---
 
@@ -1197,7 +1197,7 @@ public readonly affinity: PodV1SpecAffinity;
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#affinity PodV1#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#affinity PodV1#affinity}
 
 ---
 
@@ -1211,7 +1211,7 @@ public readonly automountServiceAccountToken: boolean | IResolvable;
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#automount_service_account_token PodV1#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#automount_service_account_token PodV1#automount_service_account_token}
 
 ---
 
@@ -1225,7 +1225,7 @@ public readonly container: IResolvable | PodV1SpecContainer[];
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container PodV1#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container PodV1#container}
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly dnsConfig: PodV1SpecDnsConfig;
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#dns_config PodV1#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#dns_config PodV1#dns_config}
 
 ---
 
@@ -1255,7 +1255,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#dns_policy PodV1#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#dns_policy PodV1#dns_policy}
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly enableServiceLinks: boolean | IResolvable;
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#enable_service_links PodV1#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#enable_service_links PodV1#enable_service_links}
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly hostAliases: IResolvable | PodV1SpecHostAliases[];
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host_aliases PodV1#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host_aliases PodV1#host_aliases}
 
 ---
 
@@ -1297,7 +1297,7 @@ public readonly hostIpc: boolean | IResolvable;
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host_ipc PodV1#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host_ipc PodV1#host_ipc}
 
 ---
 
@@ -1311,7 +1311,7 @@ public readonly hostname: string;
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#hostname PodV1#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#hostname PodV1#hostname}
 
 ---
 
@@ -1327,7 +1327,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host_network PodV1#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host_network PodV1#host_network}
 
 ---
 
@@ -1341,7 +1341,7 @@ public readonly hostPid: boolean | IResolvable;
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host_pid PodV1#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host_pid PodV1#host_pid}
 
 ---
 
@@ -1355,7 +1355,7 @@ public readonly imagePullSecrets: IResolvable | PodV1SpecImagePullSecrets[];
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#image_pull_secrets PodV1#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#image_pull_secrets PodV1#image_pull_secrets}
 
 ---
 
@@ -1369,7 +1369,7 @@ public readonly initContainer: IResolvable | PodV1SpecInitContainer[];
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#init_container PodV1#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#init_container PodV1#init_container}
 
 ---
 
@@ -1385,7 +1385,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#node_name PodV1#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#node_name PodV1#node_name}
 
 ---
 
@@ -1401,7 +1401,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#node_selector PodV1#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#node_selector PodV1#node_selector}
 
 ---
 
@@ -1415,7 +1415,7 @@ public readonly os: PodV1SpecOs;
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#os PodV1#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#os PodV1#os}
 
 ---
 
@@ -1431,7 +1431,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#priority_class_name PodV1#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#priority_class_name PodV1#priority_class_name}
 
 ---
 
@@ -1445,7 +1445,7 @@ public readonly readinessGate: IResolvable | PodV1SpecReadinessGate[];
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#readiness_gate PodV1#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#readiness_gate PodV1#readiness_gate}
 
 ---
 
@@ -1459,7 +1459,7 @@ public readonly restartPolicy: string;
 
 Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#restart_policy PodV1#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#restart_policy PodV1#restart_policy}
 
 ---
 
@@ -1475,7 +1475,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#runtime_class_name PodV1#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#runtime_class_name PodV1#runtime_class_name}
 
 ---
 
@@ -1491,7 +1491,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheduler_name PodV1#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheduler_name PodV1#scheduler_name}
 
 ---
 
@@ -1505,7 +1505,7 @@ public readonly securityContext: PodV1SpecSecurityContext;
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#security_context PodV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#security_context PodV1#security_context}
 
 ---
 
@@ -1519,7 +1519,7 @@ public readonly serviceAccountName: string;
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#service_account_name PodV1#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#service_account_name PodV1#service_account_name}
 
 ---
 
@@ -1535,7 +1535,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#share_process_namespace PodV1#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#share_process_namespace PodV1#share_process_namespace}
 
 ---
 
@@ -1549,7 +1549,7 @@ public readonly subdomain: string;
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#subdomain PodV1#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#subdomain PodV1#subdomain}
 
 ---
 
@@ -1565,7 +1565,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#termination_grace_period_seconds PodV1#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#termination_grace_period_seconds PodV1#termination_grace_period_seconds}
 
 ---
 
@@ -1579,7 +1579,7 @@ public readonly toleration: IResolvable | PodV1SpecToleration[];
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#toleration PodV1#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#toleration PodV1#toleration}
 
 ---
 
@@ -1593,7 +1593,7 @@ public readonly topologySpreadConstraint: IResolvable | PodV1SpecTopologySpreadC
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#topology_spread_constraint PodV1#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#topology_spread_constraint PodV1#topology_spread_constraint}
 
 ---
 
@@ -1607,7 +1607,7 @@ public readonly volume: IResolvable | PodV1SpecVolume[];
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume PodV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume PodV1#volume}
 
 ---
 
@@ -1641,7 +1641,7 @@ public readonly nodeAffinity: PodV1SpecAffinityNodeAffinity;
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#node_affinity PodV1#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#node_affinity PodV1#node_affinity}
 
 ---
 
@@ -1655,7 +1655,7 @@ public readonly podAffinity: PodV1SpecAffinityPodAffinity;
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#pod_affinity PodV1#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#pod_affinity PodV1#pod_affinity}
 
 ---
 
@@ -1669,7 +1669,7 @@ public readonly podAntiAffinity: PodV1SpecAffinityPodAntiAffinity;
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#pod_anti_affinity PodV1#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#pod_anti_affinity PodV1#pod_anti_affinity}
 
 ---
 
@@ -1702,7 +1702,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | P
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#preferred_during_scheduling_ignored_during_execution PodV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#preferred_during_scheduling_ignored_during_execution PodV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -1716,7 +1716,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: PodV1SpecAffinit
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#required_during_scheduling_ignored_during_execution PodV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#required_during_scheduling_ignored_during_execution PodV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -1749,7 +1749,7 @@ public readonly preference: PodV1SpecAffinityNodeAffinityPreferredDuringScheduli
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#preference PodV1#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#preference PodV1#preference}
 
 ---
 
@@ -1763,7 +1763,7 @@ public readonly weight: number;
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#weight PodV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#weight PodV1#weight}
 
 ---
 
@@ -1796,7 +1796,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecAffinityNodeAffinityPre
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -1810,7 +1810,7 @@ public readonly matchFields: IResolvable | PodV1SpecAffinityNodeAffinityPreferre
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_fields PodV1#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_fields PodV1#match_fields}
 
 ---
 
@@ -1844,7 +1844,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -1860,7 +1860,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -1876,7 +1876,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -1910,7 +1910,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -1924,7 +1924,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -1940,7 +1940,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -1972,7 +1972,7 @@ public readonly nodeSelectorTerm: IResolvable | PodV1SpecAffinityNodeAffinityReq
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#node_selector_term PodV1#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#node_selector_term PodV1#node_selector_term}
 
 ---
 
@@ -2005,7 +2005,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecAffinityNodeAffinityReq
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -2019,7 +2019,7 @@ public readonly matchFields: IResolvable | PodV1SpecAffinityNodeAffinityRequired
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_fields PodV1#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_fields PodV1#match_fields}
 
 ---
 
@@ -2053,7 +2053,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -2069,7 +2069,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -2085,7 +2085,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -2119,7 +2119,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -2133,7 +2133,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -2149,7 +2149,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -2182,7 +2182,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | P
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#preferred_during_scheduling_ignored_during_execution PodV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#preferred_during_scheduling_ignored_during_execution PodV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2196,7 +2196,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: IResolvable | Po
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#required_during_scheduling_ignored_during_execution PodV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#required_during_scheduling_ignored_during_execution PodV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2229,7 +2229,7 @@ public readonly podAffinityTerm: PodV1SpecAffinityPodAffinityPreferredDuringSche
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#pod_affinity_term PodV1#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#pod_affinity_term PodV1#pod_affinity_term}
 
 ---
 
@@ -2243,7 +2243,7 @@ public readonly weight: number;
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#weight PodV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#weight PodV1#weight}
 
 ---
 
@@ -2278,7 +2278,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#topology_key PodV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#topology_key PodV1#topology_key}
 
 ---
 
@@ -2292,7 +2292,7 @@ public readonly labelSelector: IResolvable | PodV1SpecAffinityPodAffinityPreferr
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#label_selector PodV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#label_selector PodV1#label_selector}
 
 ---
 
@@ -2306,7 +2306,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespaces PodV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespaces PodV1#namespaces}
 
 ---
 
@@ -2320,7 +2320,7 @@ public readonly namespaceSelector: IResolvable | PodV1SpecAffinityPodAffinityPre
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespace_selector PodV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespace_selector PodV1#namespace_selector}
 
 ---
 
@@ -2353,7 +2353,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecAffinityPodAffinityPref
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -2369,7 +2369,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
 
 ---
 
@@ -2403,7 +2403,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -2417,7 +2417,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -2433,7 +2433,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -2466,7 +2466,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecAffinityPodAffinityPref
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -2482,7 +2482,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
 
 ---
 
@@ -2516,7 +2516,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -2530,7 +2530,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -2546,7 +2546,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -2581,7 +2581,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#topology_key PodV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#topology_key PodV1#topology_key}
 
 ---
 
@@ -2595,7 +2595,7 @@ public readonly labelSelector: IResolvable | PodV1SpecAffinityPodAffinityRequire
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#label_selector PodV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#label_selector PodV1#label_selector}
 
 ---
 
@@ -2609,7 +2609,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespaces PodV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespaces PodV1#namespaces}
 
 ---
 
@@ -2623,7 +2623,7 @@ public readonly namespaceSelector: IResolvable | PodV1SpecAffinityPodAffinityReq
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespace_selector PodV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespace_selector PodV1#namespace_selector}
 
 ---
 
@@ -2656,7 +2656,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecAffinityPodAffinityRequ
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -2672,7 +2672,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
 
 ---
 
@@ -2706,7 +2706,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -2720,7 +2720,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -2736,7 +2736,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -2769,7 +2769,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecAffinityPodAffinityRequ
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -2785,7 +2785,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
 
 ---
 
@@ -2819,7 +2819,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -2833,7 +2833,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -2849,7 +2849,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -2882,7 +2882,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | P
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#preferred_during_scheduling_ignored_during_execution PodV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#preferred_during_scheduling_ignored_during_execution PodV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2896,7 +2896,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: IResolvable | Po
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#required_during_scheduling_ignored_during_execution PodV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#required_during_scheduling_ignored_during_execution PodV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2929,7 +2929,7 @@ public readonly podAffinityTerm: PodV1SpecAffinityPodAntiAffinityPreferredDuring
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#pod_affinity_term PodV1#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#pod_affinity_term PodV1#pod_affinity_term}
 
 ---
 
@@ -2943,7 +2943,7 @@ public readonly weight: number;
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#weight PodV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#weight PodV1#weight}
 
 ---
 
@@ -2978,7 +2978,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#topology_key PodV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#topology_key PodV1#topology_key}
 
 ---
 
@@ -2992,7 +2992,7 @@ public readonly labelSelector: IResolvable | PodV1SpecAffinityPodAntiAffinityPre
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#label_selector PodV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#label_selector PodV1#label_selector}
 
 ---
 
@@ -3006,7 +3006,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespaces PodV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespaces PodV1#namespaces}
 
 ---
 
@@ -3020,7 +3020,7 @@ public readonly namespaceSelector: IResolvable | PodV1SpecAffinityPodAntiAffinit
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespace_selector PodV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespace_selector PodV1#namespace_selector}
 
 ---
 
@@ -3053,7 +3053,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecAffinityPodAntiAffinity
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -3069,7 +3069,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
 
 ---
 
@@ -3103,7 +3103,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -3117,7 +3117,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -3133,7 +3133,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -3166,7 +3166,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecAffinityPodAntiAffinity
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -3182,7 +3182,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
 
 ---
 
@@ -3216,7 +3216,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -3230,7 +3230,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -3246,7 +3246,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -3281,7 +3281,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#topology_key PodV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#topology_key PodV1#topology_key}
 
 ---
 
@@ -3295,7 +3295,7 @@ public readonly labelSelector: IResolvable | PodV1SpecAffinityPodAntiAffinityReq
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#label_selector PodV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#label_selector PodV1#label_selector}
 
 ---
 
@@ -3309,7 +3309,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespaces PodV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespaces PodV1#namespaces}
 
 ---
 
@@ -3323,7 +3323,7 @@ public readonly namespaceSelector: IResolvable | PodV1SpecAffinityPodAntiAffinit
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespace_selector PodV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespace_selector PodV1#namespace_selector}
 
 ---
 
@@ -3356,7 +3356,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecAffinityPodAntiAffinity
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -3372,7 +3372,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
 
 ---
 
@@ -3406,7 +3406,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -3420,7 +3420,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -3436,7 +3436,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -3469,7 +3469,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecAffinityPodAntiAffinity
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -3485,7 +3485,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
 
 ---
 
@@ -3519,7 +3519,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -3533,7 +3533,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -3549,7 +3549,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -3579,6 +3579,7 @@ const podV1SpecContainer: podV1.PodV1SpecContainer = { ... }
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainer.property.port">port</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerPort">PodV1SpecContainerPort</a>[]</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainer.property.readinessProbe">readinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerReadinessProbe">PodV1SpecContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainer.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerResources">PodV1SpecContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainer.property.restartPolicy">restartPolicy</a></code> | <code>string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainer.property.securityContext">securityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerSecurityContext">PodV1SpecContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainer.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerStartupProbe">PodV1SpecContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainer.property.stdin">stdin</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -3604,7 +3605,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -3620,7 +3621,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#args PodV1#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#args PodV1#args}
 
 ---
 
@@ -3636,7 +3637,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -3650,7 +3651,7 @@ public readonly env: IResolvable | PodV1SpecContainerEnv[];
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#env PodV1#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#env PodV1#env}
 
 ---
 
@@ -3664,7 +3665,7 @@ public readonly envFrom: IResolvable | PodV1SpecContainerEnvFrom[];
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#env_from PodV1#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#env_from PodV1#env_from}
 
 ---
 
@@ -3678,7 +3679,7 @@ public readonly image: string;
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#image PodV1#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#image PodV1#image}
 
 ---
 
@@ -3694,7 +3695,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#image_pull_policy PodV1#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#image_pull_policy PodV1#image_pull_policy}
 
 ---
 
@@ -3708,7 +3709,7 @@ public readonly lifecycle: PodV1SpecContainerLifecycle;
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#lifecycle PodV1#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#lifecycle PodV1#lifecycle}
 
 ---
 
@@ -3722,7 +3723,7 @@ public readonly livenessProbe: PodV1SpecContainerLivenessProbe;
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#liveness_probe PodV1#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#liveness_probe PodV1#liveness_probe}
 
 ---
 
@@ -3736,7 +3737,7 @@ public readonly port: IResolvable | PodV1SpecContainerPort[];
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -3750,7 +3751,7 @@ public readonly readinessProbe: PodV1SpecContainerReadinessProbe;
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#readiness_probe PodV1#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#readiness_probe PodV1#readiness_probe}
 
 ---
 
@@ -3764,7 +3765,21 @@ public readonly resources: PodV1SpecContainerResources;
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resources PodV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resources PodV1#resources}
+
+---
+
+##### `restartPolicy`<sup>Optional</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.podV1.PodV1SpecContainer.property.restartPolicy"></a>
+
+```typescript
+public readonly restartPolicy: string;
+```
+
+- *Type:* string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#restart_policy PodV1#restart_policy}
 
 ---
 
@@ -3778,7 +3793,7 @@ public readonly securityContext: PodV1SpecContainerSecurityContext;
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#security_context PodV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#security_context PodV1#security_context}
 
 ---
 
@@ -3792,7 +3807,7 @@ public readonly startupProbe: PodV1SpecContainerStartupProbe;
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#startup_probe PodV1#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#startup_probe PodV1#startup_probe}
 
 ---
 
@@ -3808,7 +3823,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF. 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#stdin PodV1#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#stdin PodV1#stdin}
 
 ---
 
@@ -3824,7 +3839,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#stdin_once PodV1#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#stdin_once PodV1#stdin_once}
 
 ---
 
@@ -3840,7 +3855,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#termination_message_path PodV1#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#termination_message_path PodV1#termination_message_path}
 
 ---
 
@@ -3856,7 +3871,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#termination_message_policy PodV1#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#termination_message_policy PodV1#termination_message_policy}
 
 ---
 
@@ -3870,7 +3885,7 @@ public readonly tty: boolean | IResolvable;
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tty PodV1#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tty PodV1#tty}
 
 ---
 
@@ -3884,7 +3899,7 @@ public readonly volumeDevice: IResolvable | PodV1SpecContainerVolumeDevice[];
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_device PodV1#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_device PodV1#volume_device}
 
 ---
 
@@ -3898,7 +3913,7 @@ public readonly volumeMount: IResolvable | PodV1SpecContainerVolumeMount[];
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_mount PodV1#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_mount PodV1#volume_mount}
 
 ---
 
@@ -3914,7 +3929,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#working_dir PodV1#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#working_dir PodV1#working_dir}
 
 ---
 
@@ -3948,7 +3963,7 @@ public readonly name: string;
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -3964,7 +3979,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -3978,7 +3993,7 @@ public readonly valueFrom: PodV1SpecContainerEnvValueFrom;
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value_from PodV1#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value_from PodV1#value_from}
 
 ---
 
@@ -4012,7 +4027,7 @@ public readonly configMapRef: PodV1SpecContainerEnvFromConfigMapRef;
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#config_map_ref PodV1#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#config_map_ref PodV1#config_map_ref}
 
 ---
 
@@ -4026,7 +4041,7 @@ public readonly prefix: string;
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#prefix PodV1#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#prefix PodV1#prefix}
 
 ---
 
@@ -4040,7 +4055,7 @@ public readonly secretRef: PodV1SpecContainerEnvFromSecretRef;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_ref PodV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_ref PodV1#secret_ref}
 
 ---
 
@@ -4073,7 +4088,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -4087,7 +4102,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -4120,7 +4135,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -4134,7 +4149,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -4169,7 +4184,7 @@ public readonly configMapKeyRef: PodV1SpecContainerEnvValueFromConfigMapKeyRef;
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#config_map_key_ref PodV1#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#config_map_key_ref PodV1#config_map_key_ref}
 
 ---
 
@@ -4183,7 +4198,7 @@ public readonly fieldRef: PodV1SpecContainerEnvValueFromFieldRef;
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#field_ref PodV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#field_ref PodV1#field_ref}
 
 ---
 
@@ -4197,7 +4212,7 @@ public readonly resourceFieldRef: PodV1SpecContainerEnvValueFromResourceFieldRef
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resource_field_ref PodV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resource_field_ref PodV1#resource_field_ref}
 
 ---
 
@@ -4211,7 +4226,7 @@ public readonly secretKeyRef: PodV1SpecContainerEnvValueFromSecretKeyRef;
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_key_ref PodV1#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_key_ref PodV1#secret_key_ref}
 
 ---
 
@@ -4245,7 +4260,7 @@ public readonly key: string;
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -4259,7 +4274,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -4273,7 +4288,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -4306,7 +4321,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#api_version PodV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#api_version PodV1#api_version}
 
 ---
 
@@ -4320,7 +4335,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#field_path PodV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#field_path PodV1#field_path}
 
 ---
 
@@ -4339,8 +4354,8 @@ const podV1SpecContainerEnvValueFromResourceFieldRef: podV1.PodV1SpecContainerEn
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container_name PodV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#divisor PodV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container_name PodV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#divisor PodV1#divisor}. |
 
 ---
 
@@ -4354,7 +4369,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resource PodV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resource PodV1#resource}
 
 ---
 
@@ -4366,7 +4381,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container_name PodV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container_name PodV1#container_name}.
 
 ---
 
@@ -4378,7 +4393,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#divisor PodV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#divisor PodV1#divisor}.
 
 ---
 
@@ -4412,7 +4427,7 @@ public readonly key: string;
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -4426,7 +4441,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -4440,7 +4455,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -4473,7 +4488,7 @@ public readonly postStart: IResolvable | PodV1SpecContainerLifecyclePostStart[];
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#post_start PodV1#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#post_start PodV1#post_start}
 
 ---
 
@@ -4487,7 +4502,7 @@ public readonly preStop: IResolvable | PodV1SpecContainerLifecyclePreStop[];
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#pre_stop PodV1#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#pre_stop PodV1#pre_stop}
 
 ---
 
@@ -4521,7 +4536,7 @@ public readonly exec: PodV1SpecContainerLifecyclePostStartExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#exec PodV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#exec PodV1#exec}
 
 ---
 
@@ -4535,7 +4550,7 @@ public readonly httpGet: PodV1SpecContainerLifecyclePostStartHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_get PodV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_get PodV1#http_get}
 
 ---
 
@@ -4549,7 +4564,7 @@ public readonly tcpSocket: IResolvable | PodV1SpecContainerLifecyclePostStartTcp
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
 
 ---
 
@@ -4583,7 +4598,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -4619,7 +4634,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host PodV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host PodV1#host}
 
 ---
 
@@ -4633,7 +4648,7 @@ public readonly httpHeader: IResolvable | PodV1SpecContainerLifecyclePostStartHt
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_header PodV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_header PodV1#http_header}
 
 ---
 
@@ -4647,7 +4662,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -4663,7 +4678,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -4677,7 +4692,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheme PodV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheme PodV1#scheme}
 
 ---
 
@@ -4710,7 +4725,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -4724,7 +4739,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -4758,7 +4773,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -4792,7 +4807,7 @@ public readonly exec: PodV1SpecContainerLifecyclePreStopExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#exec PodV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#exec PodV1#exec}
 
 ---
 
@@ -4806,7 +4821,7 @@ public readonly httpGet: PodV1SpecContainerLifecyclePreStopHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_get PodV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_get PodV1#http_get}
 
 ---
 
@@ -4820,7 +4835,7 @@ public readonly tcpSocket: IResolvable | PodV1SpecContainerLifecyclePreStopTcpSo
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
 
 ---
 
@@ -4854,7 +4869,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -4890,7 +4905,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host PodV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host PodV1#host}
 
 ---
 
@@ -4904,7 +4919,7 @@ public readonly httpHeader: IResolvable | PodV1SpecContainerLifecyclePreStopHttp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_header PodV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_header PodV1#http_header}
 
 ---
 
@@ -4918,7 +4933,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -4934,7 +4949,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -4948,7 +4963,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheme PodV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheme PodV1#scheme}
 
 ---
 
@@ -4981,7 +4996,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -4995,7 +5010,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -5029,7 +5044,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -5069,7 +5084,7 @@ public readonly exec: PodV1SpecContainerLivenessProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#exec PodV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#exec PodV1#exec}
 
 ---
 
@@ -5083,7 +5098,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
 
 ---
 
@@ -5097,7 +5112,7 @@ public readonly grpc: IResolvable | PodV1SpecContainerLivenessProbeGrpc[];
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#grpc PodV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#grpc PodV1#grpc}
 
 ---
 
@@ -5111,7 +5126,7 @@ public readonly httpGet: PodV1SpecContainerLivenessProbeHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_get PodV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_get PodV1#http_get}
 
 ---
 
@@ -5125,7 +5140,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
 
 ---
 
@@ -5139,7 +5154,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
 
 ---
 
@@ -5153,7 +5168,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
 
 ---
 
@@ -5167,7 +5182,7 @@ public readonly tcpSocket: IResolvable | PodV1SpecContainerLivenessProbeTcpSocke
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
 
 ---
 
@@ -5181,7 +5196,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
 
 ---
 
@@ -5215,7 +5230,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -5248,7 +5263,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -5262,7 +5277,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#service PodV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#service PodV1#service}
 
 ---
 
@@ -5298,7 +5313,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host PodV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host PodV1#host}
 
 ---
 
@@ -5312,7 +5327,7 @@ public readonly httpHeader: IResolvable | PodV1SpecContainerLivenessProbeHttpGet
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_header PodV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_header PodV1#http_header}
 
 ---
 
@@ -5326,7 +5341,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -5342,7 +5357,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -5356,7 +5371,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheme PodV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheme PodV1#scheme}
 
 ---
 
@@ -5389,7 +5404,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -5403,7 +5418,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -5437,7 +5452,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -5475,7 +5490,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container_port PodV1#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container_port PodV1#container_port}
 
 ---
 
@@ -5489,7 +5504,7 @@ public readonly hostIp: string;
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host_ip PodV1#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host_ip PodV1#host_ip}
 
 ---
 
@@ -5505,7 +5520,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host_port PodV1#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host_port PodV1#host_port}
 
 ---
 
@@ -5521,7 +5536,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -5535,7 +5550,7 @@ public readonly protocol: string;
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#protocol PodV1#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#protocol PodV1#protocol}
 
 ---
 
@@ -5575,7 +5590,7 @@ public readonly exec: PodV1SpecContainerReadinessProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#exec PodV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#exec PodV1#exec}
 
 ---
 
@@ -5589,7 +5604,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
 
 ---
 
@@ -5603,7 +5618,7 @@ public readonly grpc: IResolvable | PodV1SpecContainerReadinessProbeGrpc[];
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#grpc PodV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#grpc PodV1#grpc}
 
 ---
 
@@ -5617,7 +5632,7 @@ public readonly httpGet: PodV1SpecContainerReadinessProbeHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_get PodV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_get PodV1#http_get}
 
 ---
 
@@ -5631,7 +5646,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
 
 ---
 
@@ -5645,7 +5660,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
 
 ---
 
@@ -5659,7 +5674,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
 
 ---
 
@@ -5673,7 +5688,7 @@ public readonly tcpSocket: IResolvable | PodV1SpecContainerReadinessProbeTcpSock
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
 
 ---
 
@@ -5687,7 +5702,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
 
 ---
 
@@ -5721,7 +5736,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -5754,7 +5769,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -5768,7 +5783,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#service PodV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#service PodV1#service}
 
 ---
 
@@ -5804,7 +5819,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host PodV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host PodV1#host}
 
 ---
 
@@ -5818,7 +5833,7 @@ public readonly httpHeader: IResolvable | PodV1SpecContainerReadinessProbeHttpGe
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_header PodV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_header PodV1#http_header}
 
 ---
 
@@ -5832,7 +5847,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -5848,7 +5863,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -5862,7 +5877,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheme PodV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheme PodV1#scheme}
 
 ---
 
@@ -5895,7 +5910,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -5909,7 +5924,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -5943,7 +5958,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -5976,7 +5991,7 @@ public readonly limits: {[ key: string ]: string};
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#limits PodV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#limits PodV1#limits}
 
 ---
 
@@ -5992,7 +6007,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#requests PodV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#requests PodV1#requests}
 
 ---
 
@@ -6034,7 +6049,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#allow_privilege_escalation PodV1#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#allow_privilege_escalation PodV1#allow_privilege_escalation}
 
 ---
 
@@ -6048,7 +6063,7 @@ public readonly capabilities: PodV1SpecContainerSecurityContextCapabilities;
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#capabilities PodV1#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#capabilities PodV1#capabilities}
 
 ---
 
@@ -6064,7 +6079,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#privileged PodV1#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#privileged PodV1#privileged}
 
 ---
 
@@ -6078,7 +6093,7 @@ public readonly readOnlyRootFilesystem: boolean | IResolvable;
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only_root_filesystem PodV1#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only_root_filesystem PodV1#read_only_root_filesystem}
 
 ---
 
@@ -6094,7 +6109,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#run_as_group PodV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#run_as_group PodV1#run_as_group}
 
 ---
 
@@ -6110,7 +6125,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#run_as_non_root PodV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#run_as_non_root PodV1#run_as_non_root}
 
 ---
 
@@ -6126,7 +6141,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#run_as_user PodV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#run_as_user PodV1#run_as_user}
 
 ---
 
@@ -6140,7 +6155,7 @@ public readonly seccompProfile: PodV1SpecContainerSecurityContextSeccompProfile;
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#seccomp_profile PodV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#seccomp_profile PodV1#seccomp_profile}
 
 ---
 
@@ -6154,7 +6169,7 @@ public readonly seLinuxOptions: PodV1SpecContainerSecurityContextSeLinuxOptions;
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#se_linux_options PodV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#se_linux_options PodV1#se_linux_options}
 
 ---
 
@@ -6187,7 +6202,7 @@ public readonly add: string[];
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#add PodV1#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#add PodV1#add}
 
 ---
 
@@ -6201,7 +6216,7 @@ public readonly drop: string[];
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#drop PodV1#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#drop PodV1#drop}
 
 ---
 
@@ -6236,7 +6251,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#localhost_profile PodV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#localhost_profile PodV1#localhost_profile}
 
 ---
 
@@ -6250,7 +6265,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#type PodV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#type PodV1#type}
 
 ---
 
@@ -6285,7 +6300,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#level PodV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#level PodV1#level}
 
 ---
 
@@ -6299,7 +6314,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#role PodV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#role PodV1#role}
 
 ---
 
@@ -6313,7 +6328,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#type PodV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#type PodV1#type}
 
 ---
 
@@ -6327,7 +6342,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#user PodV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#user PodV1#user}
 
 ---
 
@@ -6367,7 +6382,7 @@ public readonly exec: PodV1SpecContainerStartupProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#exec PodV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#exec PodV1#exec}
 
 ---
 
@@ -6381,7 +6396,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
 
 ---
 
@@ -6395,7 +6410,7 @@ public readonly grpc: IResolvable | PodV1SpecContainerStartupProbeGrpc[];
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#grpc PodV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#grpc PodV1#grpc}
 
 ---
 
@@ -6409,7 +6424,7 @@ public readonly httpGet: PodV1SpecContainerStartupProbeHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_get PodV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_get PodV1#http_get}
 
 ---
 
@@ -6423,7 +6438,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
 
 ---
 
@@ -6437,7 +6452,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
 
 ---
 
@@ -6451,7 +6466,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
 
 ---
 
@@ -6465,7 +6480,7 @@ public readonly tcpSocket: IResolvable | PodV1SpecContainerStartupProbeTcpSocket
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
 
 ---
 
@@ -6479,7 +6494,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
 
 ---
 
@@ -6513,7 +6528,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -6546,7 +6561,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -6560,7 +6575,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#service PodV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#service PodV1#service}
 
 ---
 
@@ -6596,7 +6611,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host PodV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host PodV1#host}
 
 ---
 
@@ -6610,7 +6625,7 @@ public readonly httpHeader: IResolvable | PodV1SpecContainerStartupProbeHttpGetH
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_header PodV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_header PodV1#http_header}
 
 ---
 
@@ -6624,7 +6639,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -6640,7 +6655,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -6654,7 +6669,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheme PodV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheme PodV1#scheme}
 
 ---
 
@@ -6687,7 +6702,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -6701,7 +6716,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -6735,7 +6750,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -6768,7 +6783,7 @@ public readonly devicePath: string;
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#device_path PodV1#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#device_path PodV1#device_path}
 
 ---
 
@@ -6782,7 +6797,7 @@ public readonly name: string;
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -6819,7 +6834,7 @@ public readonly mountPath: string;
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#mount_path PodV1#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#mount_path PodV1#mount_path}
 
 ---
 
@@ -6833,7 +6848,7 @@ public readonly name: string;
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -6849,7 +6864,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#mount_propagation PodV1#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#mount_propagation PodV1#mount_propagation}
 
 ---
 
@@ -6863,7 +6878,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -6877,7 +6892,7 @@ public readonly subPath: string;
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#sub_path PodV1#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#sub_path PodV1#sub_path}
 
 ---
 
@@ -6891,7 +6906,7 @@ public readonly subPathExpr: string;
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#sub_path_expr PodV1#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#sub_path_expr PodV1#sub_path_expr}
 
 ---
 
@@ -6927,7 +6942,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#nameservers PodV1#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#nameservers PodV1#nameservers}
 
 ---
 
@@ -6941,7 +6956,7 @@ public readonly option: IResolvable | PodV1SpecDnsConfigOption[];
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#option PodV1#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#option PodV1#option}
 
 ---
 
@@ -6957,7 +6972,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#searches PodV1#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#searches PodV1#searches}
 
 ---
 
@@ -6990,7 +7005,7 @@ public readonly name: string;
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -7004,7 +7019,7 @@ public readonly value: string;
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -7037,7 +7052,7 @@ public readonly hostnames: string[];
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#hostnames PodV1#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#hostnames PodV1#hostnames}
 
 ---
 
@@ -7051,7 +7066,7 @@ public readonly ip: string;
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#ip PodV1#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#ip PodV1#ip}
 
 ---
 
@@ -7083,7 +7098,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -7113,6 +7128,7 @@ const podV1SpecInitContainer: podV1.PodV1SpecInitContainer = { ... }
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainer.property.port">port</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerPort">PodV1SpecInitContainerPort</a>[]</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainer.property.readinessProbe">readinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerReadinessProbe">PodV1SpecInitContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainer.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerResources">PodV1SpecInitContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainer.property.restartPolicy">restartPolicy</a></code> | <code>string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainer.property.securityContext">securityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerSecurityContext">PodV1SpecInitContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainer.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbe">PodV1SpecInitContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainer.property.stdin">stdin</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -7138,7 +7154,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -7154,7 +7170,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#args PodV1#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#args PodV1#args}
 
 ---
 
@@ -7170,7 +7186,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -7184,7 +7200,7 @@ public readonly env: IResolvable | PodV1SpecInitContainerEnv[];
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#env PodV1#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#env PodV1#env}
 
 ---
 
@@ -7198,7 +7214,7 @@ public readonly envFrom: IResolvable | PodV1SpecInitContainerEnvFrom[];
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#env_from PodV1#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#env_from PodV1#env_from}
 
 ---
 
@@ -7212,7 +7228,7 @@ public readonly image: string;
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#image PodV1#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#image PodV1#image}
 
 ---
 
@@ -7228,7 +7244,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#image_pull_policy PodV1#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#image_pull_policy PodV1#image_pull_policy}
 
 ---
 
@@ -7242,7 +7258,7 @@ public readonly lifecycle: PodV1SpecInitContainerLifecycle;
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#lifecycle PodV1#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#lifecycle PodV1#lifecycle}
 
 ---
 
@@ -7256,7 +7272,7 @@ public readonly livenessProbe: PodV1SpecInitContainerLivenessProbe;
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#liveness_probe PodV1#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#liveness_probe PodV1#liveness_probe}
 
 ---
 
@@ -7270,7 +7286,7 @@ public readonly port: IResolvable | PodV1SpecInitContainerPort[];
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -7284,7 +7300,7 @@ public readonly readinessProbe: PodV1SpecInitContainerReadinessProbe;
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#readiness_probe PodV1#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#readiness_probe PodV1#readiness_probe}
 
 ---
 
@@ -7298,7 +7314,21 @@ public readonly resources: PodV1SpecInitContainerResources;
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resources PodV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resources PodV1#resources}
+
+---
+
+##### `restartPolicy`<sup>Optional</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainer.property.restartPolicy"></a>
+
+```typescript
+public readonly restartPolicy: string;
+```
+
+- *Type:* string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#restart_policy PodV1#restart_policy}
 
 ---
 
@@ -7312,7 +7342,7 @@ public readonly securityContext: PodV1SpecInitContainerSecurityContext;
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#security_context PodV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#security_context PodV1#security_context}
 
 ---
 
@@ -7326,7 +7356,7 @@ public readonly startupProbe: PodV1SpecInitContainerStartupProbe;
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#startup_probe PodV1#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#startup_probe PodV1#startup_probe}
 
 ---
 
@@ -7342,7 +7372,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF. 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#stdin PodV1#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#stdin PodV1#stdin}
 
 ---
 
@@ -7358,7 +7388,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#stdin_once PodV1#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#stdin_once PodV1#stdin_once}
 
 ---
 
@@ -7374,7 +7404,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#termination_message_path PodV1#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#termination_message_path PodV1#termination_message_path}
 
 ---
 
@@ -7390,7 +7420,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#termination_message_policy PodV1#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#termination_message_policy PodV1#termination_message_policy}
 
 ---
 
@@ -7404,7 +7434,7 @@ public readonly tty: boolean | IResolvable;
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tty PodV1#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tty PodV1#tty}
 
 ---
 
@@ -7418,7 +7448,7 @@ public readonly volumeDevice: IResolvable | PodV1SpecInitContainerVolumeDevice[]
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_device PodV1#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_device PodV1#volume_device}
 
 ---
 
@@ -7432,7 +7462,7 @@ public readonly volumeMount: IResolvable | PodV1SpecInitContainerVolumeMount[];
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_mount PodV1#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_mount PodV1#volume_mount}
 
 ---
 
@@ -7448,7 +7478,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#working_dir PodV1#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#working_dir PodV1#working_dir}
 
 ---
 
@@ -7482,7 +7512,7 @@ public readonly name: string;
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -7498,7 +7528,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -7512,7 +7542,7 @@ public readonly valueFrom: PodV1SpecInitContainerEnvValueFrom;
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value_from PodV1#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value_from PodV1#value_from}
 
 ---
 
@@ -7546,7 +7576,7 @@ public readonly configMapRef: PodV1SpecInitContainerEnvFromConfigMapRef;
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#config_map_ref PodV1#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#config_map_ref PodV1#config_map_ref}
 
 ---
 
@@ -7560,7 +7590,7 @@ public readonly prefix: string;
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#prefix PodV1#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#prefix PodV1#prefix}
 
 ---
 
@@ -7574,7 +7604,7 @@ public readonly secretRef: PodV1SpecInitContainerEnvFromSecretRef;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_ref PodV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_ref PodV1#secret_ref}
 
 ---
 
@@ -7607,7 +7637,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -7621,7 +7651,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -7654,7 +7684,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -7668,7 +7698,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -7703,7 +7733,7 @@ public readonly configMapKeyRef: PodV1SpecInitContainerEnvValueFromConfigMapKeyR
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#config_map_key_ref PodV1#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#config_map_key_ref PodV1#config_map_key_ref}
 
 ---
 
@@ -7717,7 +7747,7 @@ public readonly fieldRef: PodV1SpecInitContainerEnvValueFromFieldRef;
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#field_ref PodV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#field_ref PodV1#field_ref}
 
 ---
 
@@ -7731,7 +7761,7 @@ public readonly resourceFieldRef: PodV1SpecInitContainerEnvValueFromResourceFiel
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resource_field_ref PodV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resource_field_ref PodV1#resource_field_ref}
 
 ---
 
@@ -7745,7 +7775,7 @@ public readonly secretKeyRef: PodV1SpecInitContainerEnvValueFromSecretKeyRef;
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_key_ref PodV1#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_key_ref PodV1#secret_key_ref}
 
 ---
 
@@ -7779,7 +7809,7 @@ public readonly key: string;
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -7793,7 +7823,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -7807,7 +7837,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -7840,7 +7870,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#api_version PodV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#api_version PodV1#api_version}
 
 ---
 
@@ -7854,7 +7884,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#field_path PodV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#field_path PodV1#field_path}
 
 ---
 
@@ -7873,8 +7903,8 @@ const podV1SpecInitContainerEnvValueFromResourceFieldRef: podV1.PodV1SpecInitCon
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container_name PodV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#divisor PodV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container_name PodV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#divisor PodV1#divisor}. |
 
 ---
 
@@ -7888,7 +7918,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resource PodV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resource PodV1#resource}
 
 ---
 
@@ -7900,7 +7930,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container_name PodV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container_name PodV1#container_name}.
 
 ---
 
@@ -7912,7 +7942,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#divisor PodV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#divisor PodV1#divisor}.
 
 ---
 
@@ -7946,7 +7976,7 @@ public readonly key: string;
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -7960,7 +7990,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -7974,7 +8004,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -8007,7 +8037,7 @@ public readonly postStart: IResolvable | PodV1SpecInitContainerLifecyclePostStar
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#post_start PodV1#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#post_start PodV1#post_start}
 
 ---
 
@@ -8021,7 +8051,7 @@ public readonly preStop: IResolvable | PodV1SpecInitContainerLifecyclePreStop[];
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#pre_stop PodV1#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#pre_stop PodV1#pre_stop}
 
 ---
 
@@ -8055,7 +8085,7 @@ public readonly exec: PodV1SpecInitContainerLifecyclePostStartExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#exec PodV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#exec PodV1#exec}
 
 ---
 
@@ -8069,7 +8099,7 @@ public readonly httpGet: PodV1SpecInitContainerLifecyclePostStartHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_get PodV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_get PodV1#http_get}
 
 ---
 
@@ -8083,7 +8113,7 @@ public readonly tcpSocket: IResolvable | PodV1SpecInitContainerLifecyclePostStar
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
 
 ---
 
@@ -8117,7 +8147,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -8153,7 +8183,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host PodV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host PodV1#host}
 
 ---
 
@@ -8167,7 +8197,7 @@ public readonly httpHeader: IResolvable | PodV1SpecInitContainerLifecyclePostSta
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_header PodV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_header PodV1#http_header}
 
 ---
 
@@ -8181,7 +8211,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -8197,7 +8227,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -8211,7 +8241,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheme PodV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheme PodV1#scheme}
 
 ---
 
@@ -8244,7 +8274,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -8258,7 +8288,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -8292,7 +8322,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -8326,7 +8356,7 @@ public readonly exec: PodV1SpecInitContainerLifecyclePreStopExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#exec PodV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#exec PodV1#exec}
 
 ---
 
@@ -8340,7 +8370,7 @@ public readonly httpGet: PodV1SpecInitContainerLifecyclePreStopHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_get PodV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_get PodV1#http_get}
 
 ---
 
@@ -8354,7 +8384,7 @@ public readonly tcpSocket: IResolvable | PodV1SpecInitContainerLifecyclePreStopT
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
 
 ---
 
@@ -8388,7 +8418,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -8424,7 +8454,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host PodV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host PodV1#host}
 
 ---
 
@@ -8438,7 +8468,7 @@ public readonly httpHeader: IResolvable | PodV1SpecInitContainerLifecyclePreStop
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_header PodV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_header PodV1#http_header}
 
 ---
 
@@ -8452,7 +8482,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -8468,7 +8498,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -8482,7 +8512,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheme PodV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheme PodV1#scheme}
 
 ---
 
@@ -8515,7 +8545,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -8529,7 +8559,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -8563,7 +8593,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -8603,7 +8633,7 @@ public readonly exec: PodV1SpecInitContainerLivenessProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#exec PodV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#exec PodV1#exec}
 
 ---
 
@@ -8617,7 +8647,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
 
 ---
 
@@ -8631,7 +8661,7 @@ public readonly grpc: IResolvable | PodV1SpecInitContainerLivenessProbeGrpc[];
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#grpc PodV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#grpc PodV1#grpc}
 
 ---
 
@@ -8645,7 +8675,7 @@ public readonly httpGet: PodV1SpecInitContainerLivenessProbeHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_get PodV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_get PodV1#http_get}
 
 ---
 
@@ -8659,7 +8689,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
 
 ---
 
@@ -8673,7 +8703,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
 
 ---
 
@@ -8687,7 +8717,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
 
 ---
 
@@ -8701,7 +8731,7 @@ public readonly tcpSocket: IResolvable | PodV1SpecInitContainerLivenessProbeTcpS
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
 
 ---
 
@@ -8715,7 +8745,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
 
 ---
 
@@ -8749,7 +8779,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -8782,7 +8812,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -8796,7 +8826,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#service PodV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#service PodV1#service}
 
 ---
 
@@ -8832,7 +8862,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host PodV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host PodV1#host}
 
 ---
 
@@ -8846,7 +8876,7 @@ public readonly httpHeader: IResolvable | PodV1SpecInitContainerLivenessProbeHtt
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_header PodV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_header PodV1#http_header}
 
 ---
 
@@ -8860,7 +8890,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -8876,7 +8906,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -8890,7 +8920,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheme PodV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheme PodV1#scheme}
 
 ---
 
@@ -8923,7 +8953,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -8937,7 +8967,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -8971,7 +9001,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -9009,7 +9039,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container_port PodV1#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container_port PodV1#container_port}
 
 ---
 
@@ -9023,7 +9053,7 @@ public readonly hostIp: string;
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host_ip PodV1#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host_ip PodV1#host_ip}
 
 ---
 
@@ -9039,7 +9069,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host_port PodV1#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host_port PodV1#host_port}
 
 ---
 
@@ -9055,7 +9085,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -9069,7 +9099,7 @@ public readonly protocol: string;
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#protocol PodV1#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#protocol PodV1#protocol}
 
 ---
 
@@ -9109,7 +9139,7 @@ public readonly exec: PodV1SpecInitContainerReadinessProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#exec PodV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#exec PodV1#exec}
 
 ---
 
@@ -9123,7 +9153,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
 
 ---
 
@@ -9137,7 +9167,7 @@ public readonly grpc: IResolvable | PodV1SpecInitContainerReadinessProbeGrpc[];
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#grpc PodV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#grpc PodV1#grpc}
 
 ---
 
@@ -9151,7 +9181,7 @@ public readonly httpGet: PodV1SpecInitContainerReadinessProbeHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_get PodV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_get PodV1#http_get}
 
 ---
 
@@ -9165,7 +9195,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
 
 ---
 
@@ -9179,7 +9209,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
 
 ---
 
@@ -9193,7 +9223,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
 
 ---
 
@@ -9207,7 +9237,7 @@ public readonly tcpSocket: IResolvable | PodV1SpecInitContainerReadinessProbeTcp
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
 
 ---
 
@@ -9221,7 +9251,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
 
 ---
 
@@ -9255,7 +9285,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -9288,7 +9318,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -9302,7 +9332,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#service PodV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#service PodV1#service}
 
 ---
 
@@ -9338,7 +9368,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host PodV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host PodV1#host}
 
 ---
 
@@ -9352,7 +9382,7 @@ public readonly httpHeader: IResolvable | PodV1SpecInitContainerReadinessProbeHt
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_header PodV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_header PodV1#http_header}
 
 ---
 
@@ -9366,7 +9396,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -9382,7 +9412,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -9396,7 +9426,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheme PodV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheme PodV1#scheme}
 
 ---
 
@@ -9429,7 +9459,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -9443,7 +9473,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -9477,7 +9507,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -9510,7 +9540,7 @@ public readonly limits: {[ key: string ]: string};
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#limits PodV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#limits PodV1#limits}
 
 ---
 
@@ -9526,7 +9556,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#requests PodV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#requests PodV1#requests}
 
 ---
 
@@ -9568,7 +9598,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#allow_privilege_escalation PodV1#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#allow_privilege_escalation PodV1#allow_privilege_escalation}
 
 ---
 
@@ -9582,7 +9612,7 @@ public readonly capabilities: PodV1SpecInitContainerSecurityContextCapabilities;
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#capabilities PodV1#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#capabilities PodV1#capabilities}
 
 ---
 
@@ -9598,7 +9628,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#privileged PodV1#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#privileged PodV1#privileged}
 
 ---
 
@@ -9612,7 +9642,7 @@ public readonly readOnlyRootFilesystem: boolean | IResolvable;
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only_root_filesystem PodV1#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only_root_filesystem PodV1#read_only_root_filesystem}
 
 ---
 
@@ -9628,7 +9658,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#run_as_group PodV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#run_as_group PodV1#run_as_group}
 
 ---
 
@@ -9644,7 +9674,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#run_as_non_root PodV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#run_as_non_root PodV1#run_as_non_root}
 
 ---
 
@@ -9660,7 +9690,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#run_as_user PodV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#run_as_user PodV1#run_as_user}
 
 ---
 
@@ -9674,7 +9704,7 @@ public readonly seccompProfile: PodV1SpecInitContainerSecurityContextSeccompProf
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#seccomp_profile PodV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#seccomp_profile PodV1#seccomp_profile}
 
 ---
 
@@ -9688,7 +9718,7 @@ public readonly seLinuxOptions: PodV1SpecInitContainerSecurityContextSeLinuxOpti
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#se_linux_options PodV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#se_linux_options PodV1#se_linux_options}
 
 ---
 
@@ -9721,7 +9751,7 @@ public readonly add: string[];
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#add PodV1#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#add PodV1#add}
 
 ---
 
@@ -9735,7 +9765,7 @@ public readonly drop: string[];
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#drop PodV1#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#drop PodV1#drop}
 
 ---
 
@@ -9770,7 +9800,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#localhost_profile PodV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#localhost_profile PodV1#localhost_profile}
 
 ---
 
@@ -9784,7 +9814,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#type PodV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#type PodV1#type}
 
 ---
 
@@ -9819,7 +9849,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#level PodV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#level PodV1#level}
 
 ---
 
@@ -9833,7 +9863,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#role PodV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#role PodV1#role}
 
 ---
 
@@ -9847,7 +9877,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#type PodV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#type PodV1#type}
 
 ---
 
@@ -9861,7 +9891,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#user PodV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#user PodV1#user}
 
 ---
 
@@ -9901,7 +9931,7 @@ public readonly exec: PodV1SpecInitContainerStartupProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#exec PodV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#exec PodV1#exec}
 
 ---
 
@@ -9915,7 +9945,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#failure_threshold PodV1#failure_threshold}
 
 ---
 
@@ -9929,7 +9959,7 @@ public readonly grpc: IResolvable | PodV1SpecInitContainerStartupProbeGrpc[];
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#grpc PodV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#grpc PodV1#grpc}
 
 ---
 
@@ -9943,7 +9973,7 @@ public readonly httpGet: PodV1SpecInitContainerStartupProbeHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_get PodV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_get PodV1#http_get}
 
 ---
 
@@ -9957,7 +9987,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#initial_delay_seconds PodV1#initial_delay_seconds}
 
 ---
 
@@ -9971,7 +10001,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#period_seconds PodV1#period_seconds}
 
 ---
 
@@ -9985,7 +10015,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#success_threshold PodV1#success_threshold}
 
 ---
 
@@ -9999,7 +10029,7 @@ public readonly tcpSocket: IResolvable | PodV1SpecInitContainerStartupProbeTcpSo
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#tcp_socket PodV1#tcp_socket}
 
 ---
 
@@ -10013,7 +10043,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#timeout_seconds PodV1#timeout_seconds}
 
 ---
 
@@ -10047,7 +10077,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#command PodV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#command PodV1#command}
 
 ---
 
@@ -10080,7 +10110,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -10094,7 +10124,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#service PodV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#service PodV1#service}
 
 ---
 
@@ -10130,7 +10160,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host PodV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host PodV1#host}
 
 ---
 
@@ -10144,7 +10174,7 @@ public readonly httpHeader: IResolvable | PodV1SpecInitContainerStartupProbeHttp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#http_header PodV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#http_header PodV1#http_header}
 
 ---
 
@@ -10158,7 +10188,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -10174,7 +10204,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -10188,7 +10218,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#scheme PodV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#scheme PodV1#scheme}
 
 ---
 
@@ -10221,7 +10251,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -10235,7 +10265,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -10269,7 +10299,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#port PodV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#port PodV1#port}
 
 ---
 
@@ -10302,7 +10332,7 @@ public readonly devicePath: string;
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#device_path PodV1#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#device_path PodV1#device_path}
 
 ---
 
@@ -10316,7 +10346,7 @@ public readonly name: string;
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -10353,7 +10383,7 @@ public readonly mountPath: string;
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#mount_path PodV1#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#mount_path PodV1#mount_path}
 
 ---
 
@@ -10367,7 +10397,7 @@ public readonly name: string;
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -10383,7 +10413,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#mount_propagation PodV1#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#mount_propagation PodV1#mount_propagation}
 
 ---
 
@@ -10397,7 +10427,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -10411,7 +10441,7 @@ public readonly subPath: string;
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#sub_path PodV1#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#sub_path PodV1#sub_path}
 
 ---
 
@@ -10425,7 +10455,7 @@ public readonly subPathExpr: string;
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#sub_path_expr PodV1#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#sub_path_expr PodV1#sub_path_expr}
 
 ---
 
@@ -10457,7 +10487,7 @@ public readonly name: string;
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -10489,7 +10519,7 @@ public readonly conditionType: string;
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#condition_type PodV1#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#condition_type PodV1#condition_type}
 
 ---
 
@@ -10532,7 +10562,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_group PodV1#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_group PodV1#fs_group}
 
 ---
 
@@ -10548,7 +10578,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_group_change_policy PodV1#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_group_change_policy PodV1#fs_group_change_policy}
 
 ---
 
@@ -10564,7 +10594,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#run_as_group PodV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#run_as_group PodV1#run_as_group}
 
 ---
 
@@ -10580,7 +10610,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#run_as_non_root PodV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#run_as_non_root PodV1#run_as_non_root}
 
 ---
 
@@ -10596,7 +10626,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#run_as_user PodV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#run_as_user PodV1#run_as_user}
 
 ---
 
@@ -10610,7 +10640,7 @@ public readonly seccompProfile: PodV1SpecSecurityContextSeccompProfile;
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#seccomp_profile PodV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#seccomp_profile PodV1#seccomp_profile}
 
 ---
 
@@ -10624,7 +10654,7 @@ public readonly seLinuxOptions: PodV1SpecSecurityContextSeLinuxOptions;
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#se_linux_options PodV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#se_linux_options PodV1#se_linux_options}
 
 ---
 
@@ -10640,7 +10670,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#supplemental_groups PodV1#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#supplemental_groups PodV1#supplemental_groups}
 
 ---
 
@@ -10654,7 +10684,7 @@ public readonly sysctl: IResolvable | PodV1SpecSecurityContextSysctl[];
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#sysctl PodV1#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#sysctl PodV1#sysctl}
 
 ---
 
@@ -10668,7 +10698,7 @@ public readonly windowsOptions: PodV1SpecSecurityContextWindowsOptions;
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#windows_options PodV1#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#windows_options PodV1#windows_options}
 
 ---
 
@@ -10703,7 +10733,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#localhost_profile PodV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#localhost_profile PodV1#localhost_profile}
 
 ---
 
@@ -10717,7 +10747,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#type PodV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#type PodV1#type}
 
 ---
 
@@ -10752,7 +10782,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#level PodV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#level PodV1#level}
 
 ---
 
@@ -10766,7 +10796,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#role PodV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#role PodV1#role}
 
 ---
 
@@ -10780,7 +10810,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#type PodV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#type PodV1#type}
 
 ---
 
@@ -10794,7 +10824,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#user PodV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#user PodV1#user}
 
 ---
 
@@ -10827,7 +10857,7 @@ public readonly name: string;
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -10841,7 +10871,7 @@ public readonly value: string;
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -10876,7 +10906,7 @@ public readonly gmsaCredentialSpec: string;
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#gmsa_credential_spec PodV1#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#gmsa_credential_spec PodV1#gmsa_credential_spec}
 
 ---
 
@@ -10890,7 +10920,7 @@ public readonly gmsaCredentialSpecName: string;
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#gmsa_credential_spec_name PodV1#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#gmsa_credential_spec_name PodV1#gmsa_credential_spec_name}
 
 ---
 
@@ -10904,7 +10934,7 @@ public readonly hostProcess: boolean | IResolvable;
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host_process PodV1#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host_process PodV1#host_process}
 
 ---
 
@@ -10920,7 +10950,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#run_as_username PodV1#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#run_as_username PodV1#run_as_username}
 
 ---
 
@@ -10958,7 +10988,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#effect PodV1#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#effect PodV1#effect}
 
 ---
 
@@ -10974,7 +11004,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -10990,7 +11020,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -11006,7 +11036,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#toleration_seconds PodV1#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#toleration_seconds PodV1#toleration_seconds}
 
 ---
 
@@ -11022,7 +11052,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#value PodV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#value PodV1#value}
 
 ---
 
@@ -11061,7 +11091,7 @@ public readonly labelSelector: IResolvable | PodV1SpecTopologySpreadConstraintLa
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#label_selector PodV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#label_selector PodV1#label_selector}
 
 ---
 
@@ -11075,7 +11105,7 @@ public readonly matchLabelKeys: string[];
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_label_keys PodV1#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_label_keys PodV1#match_label_keys}
 
 ---
 
@@ -11089,7 +11119,7 @@ public readonly maxSkew: number;
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#max_skew PodV1#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#max_skew PodV1#max_skew}
 
 ---
 
@@ -11103,7 +11133,7 @@ public readonly minDomains: number;
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#min_domains PodV1#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#min_domains PodV1#min_domains}
 
 ---
 
@@ -11117,7 +11147,7 @@ public readonly nodeAffinityPolicy: string;
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#node_affinity_policy PodV1#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#node_affinity_policy PodV1#node_affinity_policy}
 
 ---
 
@@ -11131,7 +11161,7 @@ public readonly nodeTaintsPolicy: string;
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#node_taints_policy PodV1#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#node_taints_policy PodV1#node_taints_policy}
 
 ---
 
@@ -11147,7 +11177,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#topology_key PodV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#topology_key PodV1#topology_key}
 
 ---
 
@@ -11161,7 +11191,7 @@ public readonly whenUnsatisfiable: string;
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#when_unsatisfiable PodV1#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#when_unsatisfiable PodV1#when_unsatisfiable}
 
 ---
 
@@ -11194,7 +11224,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecTopologySpreadConstrain
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -11210,7 +11240,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
 
 ---
 
@@ -11244,7 +11274,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -11258,7 +11288,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -11274,7 +11304,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -11333,7 +11363,7 @@ public readonly awsElasticBlockStore: PodV1SpecVolumeAwsElasticBlockStore;
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#aws_elastic_block_store PodV1#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#aws_elastic_block_store PodV1#aws_elastic_block_store}
 
 ---
 
@@ -11347,7 +11377,7 @@ public readonly azureDisk: PodV1SpecVolumeAzureDisk;
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#azure_disk PodV1#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#azure_disk PodV1#azure_disk}
 
 ---
 
@@ -11361,7 +11391,7 @@ public readonly azureFile: PodV1SpecVolumeAzureFile;
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#azure_file PodV1#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#azure_file PodV1#azure_file}
 
 ---
 
@@ -11375,7 +11405,7 @@ public readonly cephFs: PodV1SpecVolumeCephFs;
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#ceph_fs PodV1#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#ceph_fs PodV1#ceph_fs}
 
 ---
 
@@ -11389,7 +11419,7 @@ public readonly cinder: PodV1SpecVolumeCinder;
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#cinder PodV1#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#cinder PodV1#cinder}
 
 ---
 
@@ -11403,7 +11433,7 @@ public readonly configMap: PodV1SpecVolumeConfigMap;
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#config_map PodV1#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#config_map PodV1#config_map}
 
 ---
 
@@ -11417,7 +11447,7 @@ public readonly csi: PodV1SpecVolumeCsi;
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#csi PodV1#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#csi PodV1#csi}
 
 ---
 
@@ -11431,7 +11461,7 @@ public readonly downwardApi: PodV1SpecVolumeDownwardApi;
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#downward_api PodV1#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#downward_api PodV1#downward_api}
 
 ---
 
@@ -11445,7 +11475,7 @@ public readonly emptyDir: PodV1SpecVolumeEmptyDir;
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#empty_dir PodV1#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#empty_dir PodV1#empty_dir}
 
 ---
 
@@ -11459,7 +11489,7 @@ public readonly ephemeral: PodV1SpecVolumeEphemeral;
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#ephemeral PodV1#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#ephemeral PodV1#ephemeral}
 
 ---
 
@@ -11473,7 +11503,7 @@ public readonly fc: PodV1SpecVolumeFc;
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fc PodV1#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fc PodV1#fc}
 
 ---
 
@@ -11487,7 +11517,7 @@ public readonly flexVolume: PodV1SpecVolumeFlexVolume;
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#flex_volume PodV1#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#flex_volume PodV1#flex_volume}
 
 ---
 
@@ -11501,7 +11531,7 @@ public readonly flocker: PodV1SpecVolumeFlocker;
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#flocker PodV1#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#flocker PodV1#flocker}
 
 ---
 
@@ -11515,7 +11545,7 @@ public readonly gcePersistentDisk: PodV1SpecVolumeGcePersistentDisk;
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#gce_persistent_disk PodV1#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#gce_persistent_disk PodV1#gce_persistent_disk}
 
 ---
 
@@ -11529,7 +11559,7 @@ public readonly gitRepo: PodV1SpecVolumeGitRepo;
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#git_repo PodV1#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#git_repo PodV1#git_repo}
 
 ---
 
@@ -11543,7 +11573,7 @@ public readonly glusterfs: PodV1SpecVolumeGlusterfs;
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#glusterfs PodV1#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#glusterfs PodV1#glusterfs}
 
 ---
 
@@ -11557,7 +11587,7 @@ public readonly hostPath: PodV1SpecVolumeHostPath;
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#host_path PodV1#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#host_path PodV1#host_path}
 
 ---
 
@@ -11571,7 +11601,7 @@ public readonly iscsi: PodV1SpecVolumeIscsi;
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#iscsi PodV1#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#iscsi PodV1#iscsi}
 
 ---
 
@@ -11585,7 +11615,7 @@ public readonly local: PodV1SpecVolumeLocal;
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#local PodV1#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#local PodV1#local}
 
 ---
 
@@ -11599,7 +11629,7 @@ public readonly name: string;
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -11613,7 +11643,7 @@ public readonly nfs: PodV1SpecVolumeNfs;
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#nfs PodV1#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#nfs PodV1#nfs}
 
 ---
 
@@ -11627,7 +11657,7 @@ public readonly persistentVolumeClaim: PodV1SpecVolumePersistentVolumeClaim;
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#persistent_volume_claim PodV1#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#persistent_volume_claim PodV1#persistent_volume_claim}
 
 ---
 
@@ -11641,7 +11671,7 @@ public readonly photonPersistentDisk: PodV1SpecVolumePhotonPersistentDisk;
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#photon_persistent_disk PodV1#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#photon_persistent_disk PodV1#photon_persistent_disk}
 
 ---
 
@@ -11655,7 +11685,7 @@ public readonly projected: IResolvable | PodV1SpecVolumeProjected[];
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#projected PodV1#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#projected PodV1#projected}
 
 ---
 
@@ -11669,7 +11699,7 @@ public readonly quobyte: PodV1SpecVolumeQuobyte;
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#quobyte PodV1#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#quobyte PodV1#quobyte}
 
 ---
 
@@ -11683,7 +11713,7 @@ public readonly rbd: PodV1SpecVolumeRbd;
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#rbd PodV1#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#rbd PodV1#rbd}
 
 ---
 
@@ -11697,7 +11727,7 @@ public readonly secret: PodV1SpecVolumeSecret;
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret PodV1#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret PodV1#secret}
 
 ---
 
@@ -11711,7 +11741,7 @@ public readonly vsphereVolume: PodV1SpecVolumeVsphereVolume;
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#vsphere_volume PodV1#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#vsphere_volume PodV1#vsphere_volume}
 
 ---
 
@@ -11746,7 +11776,7 @@ public readonly volumeId: string;
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_id PodV1#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_id PodV1#volume_id}
 
 ---
 
@@ -11762,7 +11792,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -11778,7 +11808,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#partition PodV1#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#partition PodV1#partition}
 
 ---
 
@@ -11792,7 +11822,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -11829,7 +11859,7 @@ public readonly cachingMode: string;
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#caching_mode PodV1#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#caching_mode PodV1#caching_mode}
 
 ---
 
@@ -11843,7 +11873,7 @@ public readonly dataDiskUri: string;
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#data_disk_uri PodV1#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#data_disk_uri PodV1#data_disk_uri}
 
 ---
 
@@ -11857,7 +11887,7 @@ public readonly diskName: string;
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#disk_name PodV1#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#disk_name PodV1#disk_name}
 
 ---
 
@@ -11873,7 +11903,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -11887,7 +11917,7 @@ public readonly kind: string;
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#kind PodV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#kind PodV1#kind}
 
 ---
 
@@ -11901,7 +11931,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -11936,7 +11966,7 @@ public readonly secretName: string;
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_name PodV1#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_name PodV1#secret_name}
 
 ---
 
@@ -11950,7 +11980,7 @@ public readonly shareName: string;
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#share_name PodV1#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#share_name PodV1#share_name}
 
 ---
 
@@ -11964,7 +11994,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -11980,7 +12010,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_namespace PodV1#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_namespace PodV1#secret_namespace}
 
 ---
 
@@ -12017,7 +12047,7 @@ public readonly monitors: string[];
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#monitors PodV1#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#monitors PodV1#monitors}
 
 ---
 
@@ -12031,7 +12061,7 @@ public readonly path: string;
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -12045,7 +12075,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -12059,7 +12089,7 @@ public readonly secretFile: string;
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_file PodV1#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_file PodV1#secret_file}
 
 ---
 
@@ -12073,7 +12103,7 @@ public readonly secretRef: PodV1SpecVolumeCephFsSecretRef;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_ref PodV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_ref PodV1#secret_ref}
 
 ---
 
@@ -12087,7 +12117,7 @@ public readonly user: string;
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#user PodV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#user PodV1#user}
 
 ---
 
@@ -12120,7 +12150,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -12134,7 +12164,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespace PodV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespace PodV1#namespace}
 
 ---
 
@@ -12168,7 +12198,7 @@ public readonly volumeId: string;
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_id PodV1#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_id PodV1#volume_id}
 
 ---
 
@@ -12184,7 +12214,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -12198,7 +12228,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -12235,7 +12265,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#default_mode PodV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#default_mode PodV1#default_mode}
 
 ---
 
@@ -12249,7 +12279,7 @@ public readonly items: IResolvable | PodV1SpecVolumeConfigMapItems[];
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#items PodV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#items PodV1#items}
 
 ---
 
@@ -12263,7 +12293,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -12277,7 +12307,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -12311,7 +12341,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -12327,7 +12357,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#mode PodV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#mode PodV1#mode}
 
 ---
 
@@ -12343,7 +12373,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -12379,7 +12409,7 @@ public readonly driver: string;
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#driver PodV1#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#driver PodV1#driver}
 
 ---
 
@@ -12395,7 +12425,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -12409,7 +12439,7 @@ public readonly nodePublishSecretRef: PodV1SpecVolumeCsiNodePublishSecretRef;
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#node_publish_secret_ref PodV1#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#node_publish_secret_ref PodV1#node_publish_secret_ref}
 
 ---
 
@@ -12423,7 +12453,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -12437,7 +12467,7 @@ public readonly volumeAttributes: {[ key: string ]: string};
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_attributes PodV1#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_attributes PodV1#volume_attributes}
 
 ---
 
@@ -12469,7 +12499,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -12504,7 +12534,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#default_mode PodV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#default_mode PodV1#default_mode}
 
 ---
 
@@ -12518,7 +12548,7 @@ public readonly items: IResolvable | PodV1SpecVolumeDownwardApiItems[];
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#items PodV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#items PodV1#items}
 
 ---
 
@@ -12553,7 +12583,7 @@ public readonly fieldRef: PodV1SpecVolumeDownwardApiItemsFieldRef;
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#field_ref PodV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#field_ref PodV1#field_ref}
 
 ---
 
@@ -12569,7 +12599,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -12585,7 +12615,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#mode PodV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#mode PodV1#mode}
 
 ---
 
@@ -12599,7 +12629,7 @@ public readonly resourceFieldRef: PodV1SpecVolumeDownwardApiItemsResourceFieldRe
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resource_field_ref PodV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resource_field_ref PodV1#resource_field_ref}
 
 ---
 
@@ -12632,7 +12662,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#api_version PodV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#api_version PodV1#api_version}
 
 ---
 
@@ -12646,7 +12676,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#field_path PodV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#field_path PodV1#field_path}
 
 ---
 
@@ -12664,9 +12694,9 @@ const podV1SpecVolumeDownwardApiItemsResourceFieldRef: podV1.PodV1SpecVolumeDown
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container_name PodV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container_name PodV1#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecVolumeDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#divisor PodV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#divisor PodV1#divisor}. |
 
 ---
 
@@ -12678,7 +12708,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container_name PodV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container_name PodV1#container_name}.
 
 ---
 
@@ -12692,7 +12722,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resource PodV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resource PodV1#resource}
 
 ---
 
@@ -12704,7 +12734,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#divisor PodV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#divisor PodV1#divisor}.
 
 ---
 
@@ -12739,7 +12769,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#medium PodV1#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#medium PodV1#medium}
 
 ---
 
@@ -12753,7 +12783,7 @@ public readonly sizeLimit: string;
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#size_limit PodV1#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#size_limit PodV1#size_limit}
 
 ---
 
@@ -12785,7 +12815,7 @@ public readonly volumeClaimTemplate: PodV1SpecVolumeEphemeralVolumeClaimTemplate
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_claim_template PodV1#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_claim_template PodV1#volume_claim_template}
 
 ---
 
@@ -12818,7 +12848,7 @@ public readonly spec: PodV1SpecVolumeEphemeralVolumeClaimTemplateSpec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#spec PodV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#spec PodV1#spec}
 
 ---
 
@@ -12832,7 +12862,7 @@ public readonly metadata: PodV1SpecVolumeEphemeralVolumeClaimTemplateMetadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#metadata PodV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#metadata PodV1#metadata}
 
 ---
 
@@ -12867,7 +12897,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#annotations PodV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#annotations PodV1#annotations}
 
 ---
 
@@ -12883,7 +12913,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#labels PodV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#labels PodV1#labels}
 
 ---
 
@@ -12920,7 +12950,7 @@ public readonly accessModes: string[];
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#access_modes PodV1#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#access_modes PodV1#access_modes}
 
 ---
 
@@ -12934,7 +12964,7 @@ public readonly resources: PodV1SpecVolumeEphemeralVolumeClaimTemplateSpecResour
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resources PodV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resources PodV1#resources}
 
 ---
 
@@ -12948,7 +12978,7 @@ public readonly selector: PodV1SpecVolumeEphemeralVolumeClaimTemplateSpecSelecto
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#selector PodV1#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#selector PodV1#selector}
 
 ---
 
@@ -12962,7 +12992,7 @@ public readonly storageClassName: string;
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#storage_class_name PodV1#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#storage_class_name PodV1#storage_class_name}
 
 ---
 
@@ -12976,7 +13006,7 @@ public readonly volumeMode: string;
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_mode PodV1#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_mode PodV1#volume_mode}
 
 ---
 
@@ -12990,7 +13020,7 @@ public readonly volumeName: string;
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_name PodV1#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_name PodV1#volume_name}
 
 ---
 
@@ -13023,7 +13053,7 @@ public readonly limits: {[ key: string ]: string};
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#limits PodV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#limits PodV1#limits}
 
 ---
 
@@ -13039,7 +13069,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#requests PodV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#requests PodV1#requests}
 
 ---
 
@@ -13072,7 +13102,7 @@ public readonly matchExpressions: IResolvable | PodV1SpecVolumeEphemeralVolumeCl
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_expressions PodV1#match_expressions}
 
 ---
 
@@ -13088,7 +13118,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#match_labels PodV1#match_labels}
 
 ---
 
@@ -13122,7 +13152,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -13136,7 +13166,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#operator PodV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#operator PodV1#operator}
 
 ---
 
@@ -13152,7 +13182,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#values PodV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#values PodV1#values}
 
 ---
 
@@ -13187,7 +13217,7 @@ public readonly lun: number;
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#lun PodV1#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#lun PodV1#lun}
 
 ---
 
@@ -13201,7 +13231,7 @@ public readonly targetWwNs: string[];
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#target_ww_ns PodV1#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#target_ww_ns PodV1#target_ww_ns}
 
 ---
 
@@ -13217,7 +13247,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -13231,7 +13261,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -13267,7 +13297,7 @@ public readonly driver: string;
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#driver PodV1#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#driver PodV1#driver}
 
 ---
 
@@ -13283,7 +13313,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -13297,7 +13327,7 @@ public readonly options: {[ key: string ]: string};
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#options PodV1#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#options PodV1#options}
 
 ---
 
@@ -13311,7 +13341,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -13325,7 +13355,7 @@ public readonly secretRef: PodV1SpecVolumeFlexVolumeSecretRef;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_ref PodV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_ref PodV1#secret_ref}
 
 ---
 
@@ -13358,7 +13388,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -13372,7 +13402,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespace PodV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespace PodV1#namespace}
 
 ---
 
@@ -13405,7 +13435,7 @@ public readonly datasetName: string;
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#dataset_name PodV1#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#dataset_name PodV1#dataset_name}
 
 ---
 
@@ -13419,7 +13449,7 @@ public readonly datasetUuid: string;
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#dataset_uuid PodV1#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#dataset_uuid PodV1#dataset_uuid}
 
 ---
 
@@ -13454,7 +13484,7 @@ public readonly pdName: string;
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#pd_name PodV1#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#pd_name PodV1#pd_name}
 
 ---
 
@@ -13470,7 +13500,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -13486,7 +13516,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#partition PodV1#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#partition PodV1#partition}
 
 ---
 
@@ -13500,7 +13530,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -13536,7 +13566,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#directory PodV1#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#directory PodV1#directory}
 
 ---
 
@@ -13550,7 +13580,7 @@ public readonly repository: string;
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#repository PodV1#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#repository PodV1#repository}
 
 ---
 
@@ -13564,7 +13594,7 @@ public readonly revision: string;
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#revision PodV1#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#revision PodV1#revision}
 
 ---
 
@@ -13598,7 +13628,7 @@ public readonly endpointsName: string;
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#endpoints_name PodV1#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#endpoints_name PodV1#endpoints_name}
 
 ---
 
@@ -13612,7 +13642,7 @@ public readonly path: string;
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -13626,7 +13656,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -13659,7 +13689,7 @@ public readonly path: string;
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -13673,7 +13703,7 @@ public readonly type: string;
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#type PodV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#type PodV1#type}
 
 ---
 
@@ -13710,7 +13740,7 @@ public readonly iqn: string;
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#iqn PodV1#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#iqn PodV1#iqn}
 
 ---
 
@@ -13726,7 +13756,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#target_portal PodV1#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#target_portal PodV1#target_portal}
 
 ---
 
@@ -13742,7 +13772,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -13756,7 +13786,7 @@ public readonly iscsiInterface: string;
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#iscsi_interface PodV1#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#iscsi_interface PodV1#iscsi_interface}
 
 ---
 
@@ -13770,7 +13800,7 @@ public readonly lun: number;
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#lun PodV1#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#lun PodV1#lun}
 
 ---
 
@@ -13784,7 +13814,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -13816,7 +13846,7 @@ public readonly path: string;
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -13850,7 +13880,7 @@ public readonly path: string;
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -13864,7 +13894,7 @@ public readonly server: string;
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#server PodV1#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#server PodV1#server}
 
 ---
 
@@ -13878,7 +13908,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -13911,7 +13941,7 @@ public readonly claimName: string;
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#claim_name PodV1#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#claim_name PodV1#claim_name}
 
 ---
 
@@ -13925,7 +13955,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -13958,7 +13988,7 @@ public readonly pdId: string;
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#pd_id PodV1#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#pd_id PodV1#pd_id}
 
 ---
 
@@ -13974,7 +14004,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -14007,7 +14037,7 @@ public readonly sources: IResolvable | PodV1SpecVolumeProjectedSources[];
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#sources PodV1#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#sources PodV1#sources}
 
 ---
 
@@ -14023,7 +14053,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#default_mode PodV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#default_mode PodV1#default_mode}
 
 ---
 
@@ -14058,7 +14088,7 @@ public readonly configMap: IResolvable | PodV1SpecVolumeProjectedSourcesConfigMa
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#config_map PodV1#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#config_map PodV1#config_map}
 
 ---
 
@@ -14072,7 +14102,7 @@ public readonly downwardApi: PodV1SpecVolumeProjectedSourcesDownwardApi;
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#downward_api PodV1#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#downward_api PodV1#downward_api}
 
 ---
 
@@ -14086,7 +14116,7 @@ public readonly secret: IResolvable | PodV1SpecVolumeProjectedSourcesSecret[];
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret PodV1#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret PodV1#secret}
 
 ---
 
@@ -14100,7 +14130,7 @@ public readonly serviceAccountToken: PodV1SpecVolumeProjectedSourcesServiceAccou
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#service_account_token PodV1#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#service_account_token PodV1#service_account_token}
 
 ---
 
@@ -14134,7 +14164,7 @@ public readonly items: IResolvable | PodV1SpecVolumeProjectedSourcesConfigMapIte
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#items PodV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#items PodV1#items}
 
 ---
 
@@ -14148,7 +14178,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -14162,7 +14192,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -14196,7 +14226,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -14212,7 +14242,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#mode PodV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#mode PodV1#mode}
 
 ---
 
@@ -14228,7 +14258,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -14260,7 +14290,7 @@ public readonly items: IResolvable | PodV1SpecVolumeProjectedSourcesDownwardApiI
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#items PodV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#items PodV1#items}
 
 ---
 
@@ -14297,7 +14327,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -14311,7 +14341,7 @@ public readonly fieldRef: PodV1SpecVolumeProjectedSourcesDownwardApiItemsFieldRe
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#field_ref PodV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#field_ref PodV1#field_ref}
 
 ---
 
@@ -14327,7 +14357,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#mode PodV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#mode PodV1#mode}
 
 ---
 
@@ -14341,7 +14371,7 @@ public readonly resourceFieldRef: PodV1SpecVolumeProjectedSourcesDownwardApiItem
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resource_field_ref PodV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resource_field_ref PodV1#resource_field_ref}
 
 ---
 
@@ -14374,7 +14404,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#api_version PodV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#api_version PodV1#api_version}
 
 ---
 
@@ -14388,7 +14418,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#field_path PodV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#field_path PodV1#field_path}
 
 ---
 
@@ -14406,9 +14436,9 @@ const podV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef: podV1.Pod
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container_name PodV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container_name PodV1#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#divisor PodV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#divisor PodV1#divisor}. |
 
 ---
 
@@ -14420,7 +14450,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#container_name PodV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#container_name PodV1#container_name}.
 
 ---
 
@@ -14434,7 +14464,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#resource PodV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#resource PodV1#resource}
 
 ---
 
@@ -14446,7 +14476,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#divisor PodV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#divisor PodV1#divisor}.
 
 ---
 
@@ -14480,7 +14510,7 @@ public readonly items: IResolvable | PodV1SpecVolumeProjectedSourcesSecretItems[
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#items PodV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#items PodV1#items}
 
 ---
 
@@ -14494,7 +14524,7 @@ public readonly name: string;
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -14508,7 +14538,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -14542,7 +14572,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -14558,7 +14588,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#mode PodV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#mode PodV1#mode}
 
 ---
 
@@ -14574,7 +14604,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -14608,7 +14638,7 @@ public readonly path: string;
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -14622,7 +14652,7 @@ public readonly audience: string;
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#audience PodV1#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#audience PodV1#audience}
 
 ---
 
@@ -14638,7 +14668,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#expiration_seconds PodV1#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#expiration_seconds PodV1#expiration_seconds}
 
 ---
 
@@ -14674,7 +14704,7 @@ public readonly registry: string;
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#registry PodV1#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#registry PodV1#registry}
 
 ---
 
@@ -14688,7 +14718,7 @@ public readonly volume: string;
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume PodV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume PodV1#volume}
 
 ---
 
@@ -14702,7 +14732,7 @@ public readonly group: string;
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#group PodV1#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#group PodV1#group}
 
 ---
 
@@ -14716,7 +14746,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -14730,7 +14760,7 @@ public readonly user: string;
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#user PodV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#user PodV1#user}
 
 ---
 
@@ -14769,7 +14799,7 @@ public readonly cephMonitors: string[];
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#ceph_monitors PodV1#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#ceph_monitors PodV1#ceph_monitors}
 
 ---
 
@@ -14783,7 +14813,7 @@ public readonly rbdImage: string;
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#rbd_image PodV1#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#rbd_image PodV1#rbd_image}
 
 ---
 
@@ -14799,7 +14829,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -14813,7 +14843,7 @@ public readonly keyring: string;
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#keyring PodV1#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#keyring PodV1#keyring}
 
 ---
 
@@ -14827,7 +14857,7 @@ public readonly radosUser: string;
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#rados_user PodV1#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#rados_user PodV1#rados_user}
 
 ---
 
@@ -14841,7 +14871,7 @@ public readonly rbdPool: string;
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#rbd_pool PodV1#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#rbd_pool PodV1#rbd_pool}
 
 ---
 
@@ -14855,7 +14885,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#read_only PodV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#read_only PodV1#read_only}
 
 ---
 
@@ -14869,7 +14899,7 @@ public readonly secretRef: PodV1SpecVolumeRbdSecretRef;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_ref PodV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_ref PodV1#secret_ref}
 
 ---
 
@@ -14902,7 +14932,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#name PodV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#name PodV1#name}
 
 ---
 
@@ -14916,7 +14946,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#namespace PodV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#namespace PodV1#namespace}
 
 ---
 
@@ -14953,7 +14983,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#default_mode PodV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#default_mode PodV1#default_mode}
 
 ---
 
@@ -14967,7 +14997,7 @@ public readonly items: IResolvable | PodV1SpecVolumeSecretItems[];
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#items PodV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#items PodV1#items}
 
 ---
 
@@ -14981,7 +15011,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#optional PodV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#optional PodV1#optional}
 
 ---
 
@@ -14995,7 +15025,7 @@ public readonly secretName: string;
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#secret_name PodV1#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#secret_name PodV1#secret_name}
 
 ---
 
@@ -15029,7 +15059,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#key PodV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#key PodV1#key}
 
 ---
 
@@ -15045,7 +15075,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#mode PodV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#mode PodV1#mode}
 
 ---
 
@@ -15061,7 +15091,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#path PodV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#path PodV1#path}
 
 ---
 
@@ -15094,7 +15124,7 @@ public readonly volumePath: string;
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#volume_path PodV1#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#volume_path PodV1#volume_path}
 
 ---
 
@@ -15110,7 +15140,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#fs_type PodV1#fs_type}
 
 ---
 
@@ -15128,8 +15158,8 @@ const podV1Timeouts: podV1.PodV1Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#create PodV1#create}. |
-| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#delete PodV1#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#create PodV1#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#delete PodV1#delete}. |
 
 ---
 
@@ -15141,7 +15171,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#create PodV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#create PodV1#create}.
 
 ---
 
@@ -15153,7 +15183,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_v1#delete PodV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/pod_v1#delete PodV1#delete}.
 
 ---
 
@@ -42534,6 +42564,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.resetPort">resetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.resetReadinessProbe">resetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.resetResources">resetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.resetRestartPolicy">resetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.resetSecurityContext">resetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.resetStartupProbe">resetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.resetStdin">resetStdin</a></code> | *No description.* |
@@ -42895,6 +42926,12 @@ public resetReadinessProbe(): void
 public resetResources(): void
 ```
 
+##### `resetRestartPolicy` <a name="resetRestartPolicy" id="@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.resetRestartPolicy"></a>
+
+```typescript
+public resetRestartPolicy(): void
+```
+
 ##### `resetSecurityContext` <a name="resetSecurityContext" id="@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.resetSecurityContext"></a>
 
 ```typescript
@@ -42985,6 +43022,7 @@ public resetWorkingDir(): void
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.portInput">portInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerPort">PodV1SpecContainerPort</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerReadinessProbe">PodV1SpecContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.resourcesInput">resourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerResources">PodV1SpecContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.restartPolicyInput">restartPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.securityContextInput">securityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerSecurityContext">PodV1SpecContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerStartupProbe">PodV1SpecContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.stdinInput">stdinInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -43000,6 +43038,7 @@ public resetWorkingDir(): void
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.image">image</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.imagePullPolicy">imagePullPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.restartPolicy">restartPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.stdin">stdin</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.stdinOnce">stdinOnce</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.terminationMessagePath">terminationMessagePath</a></code> | <code>string</code> | *No description.* |
@@ -43264,6 +43303,16 @@ public readonly resourcesInput: PodV1SpecContainerResources;
 
 ---
 
+##### `restartPolicyInput`<sup>Optional</sup> <a name="restartPolicyInput" id="@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.restartPolicyInput"></a>
+
+```typescript
+public readonly restartPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `securityContextInput`<sup>Optional</sup> <a name="securityContextInput" id="@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.securityContextInput"></a>
 
 ```typescript
@@ -43408,6 +43457,16 @@ public readonly imagePullPolicy: string;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `restartPolicy`<sup>Required</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.podV1.PodV1SpecContainerOutputReference.property.restartPolicy"></a>
+
+```typescript
+public readonly restartPolicy: string;
 ```
 
 - *Type:* string
@@ -64979,6 +65038,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.resetPort">resetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.resetReadinessProbe">resetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.resetResources">resetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.resetRestartPolicy">resetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.resetSecurityContext">resetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.resetStartupProbe">resetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.resetStdin">resetStdin</a></code> | *No description.* |
@@ -65340,6 +65400,12 @@ public resetReadinessProbe(): void
 public resetResources(): void
 ```
 
+##### `resetRestartPolicy` <a name="resetRestartPolicy" id="@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.resetRestartPolicy"></a>
+
+```typescript
+public resetRestartPolicy(): void
+```
+
 ##### `resetSecurityContext` <a name="resetSecurityContext" id="@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.resetSecurityContext"></a>
 
 ```typescript
@@ -65430,6 +65496,7 @@ public resetWorkingDir(): void
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.portInput">portInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerPort">PodV1SpecInitContainerPort</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerReadinessProbe">PodV1SpecInitContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.resourcesInput">resourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerResources">PodV1SpecInitContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.restartPolicyInput">restartPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.securityContextInput">securityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerSecurityContext">PodV1SpecInitContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbe">PodV1SpecInitContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.stdinInput">stdinInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -65445,6 +65512,7 @@ public resetWorkingDir(): void
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.image">image</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.imagePullPolicy">imagePullPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.restartPolicy">restartPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.stdin">stdin</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.stdinOnce">stdinOnce</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.terminationMessagePath">terminationMessagePath</a></code> | <code>string</code> | *No description.* |
@@ -65709,6 +65777,16 @@ public readonly resourcesInput: PodV1SpecInitContainerResources;
 
 ---
 
+##### `restartPolicyInput`<sup>Optional</sup> <a name="restartPolicyInput" id="@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.restartPolicyInput"></a>
+
+```typescript
+public readonly restartPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `securityContextInput`<sup>Optional</sup> <a name="securityContextInput" id="@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.securityContextInput"></a>
 
 ```typescript
@@ -65853,6 +65931,16 @@ public readonly imagePullPolicy: string;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `restartPolicy`<sup>Required</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerOutputReference.property.restartPolicy"></a>
+
+```typescript
+public readonly restartPolicy: string;
 ```
 
 - *Type:* string

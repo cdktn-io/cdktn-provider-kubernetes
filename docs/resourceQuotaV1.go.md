@@ -4,12 +4,12 @@
 
 ### ResourceQuotaV1 <a name="ResourceQuotaV1" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1 kubernetes_resource_quota_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1 kubernetes_resource_quota_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.NewResourceQuotaV1(scope Construct, id *string, config ResourceQuotaV1Config) ResourceQuotaV1
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.ResourceQuotaV1_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.ResourceQuotaV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ resourcequotav1.ResourceQuotaV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.ResourceQuotaV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ resourcequotav1.ResourceQuotaV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.ResourceQuotaV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -549,7 +549,7 @@ The construct id used in the generated config for the ResourceQuotaV1 to import.
 
 The id of the existing ResourceQuotaV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 &resourcequotav1.ResourceQuotaV1Config {
 	Connection: interface{},
@@ -847,10 +847,10 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resource
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.resourceQuotaV1.ResourceQuotaV1Metadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.resourceQuotaV1.ResourceQuotaV1Metadata,
 	Id: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.resourceQuotaV1.ResourceQuotaV1Spec,
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.resourceQuotaV1.ResourceQuotaV1Timeouts,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.resourceQuotaV1.ResourceQuotaV1Spec,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.resourceQuotaV1.ResourceQuotaV1Timeouts,
 }
 ```
 
@@ -866,7 +866,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resource
 | <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Config.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Metadata">ResourceQuotaV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#id ResourceQuotaV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#id ResourceQuotaV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Config.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Spec">ResourceQuotaV1Spec</a></code> | spec block. |
 | <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Timeouts">ResourceQuotaV1Timeouts</a></code> | timeouts block. |
 
@@ -952,7 +952,7 @@ Metadata ResourceQuotaV1Metadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#metadata ResourceQuotaV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#metadata ResourceQuotaV1#metadata}
 
 ---
 
@@ -964,7 +964,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#id ResourceQuotaV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#id ResourceQuotaV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ Spec ResourceQuotaV1Spec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#spec ResourceQuotaV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#spec ResourceQuotaV1#spec}
 
 ---
 
@@ -995,7 +995,7 @@ Timeouts ResourceQuotaV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#timeouts ResourceQuotaV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#timeouts ResourceQuotaV1#timeouts}
 
 ---
 
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 &resourcequotav1.ResourceQuotaV1Metadata {
 	Annotations: *map[string]*string,
@@ -1039,7 +1039,7 @@ An unstructured key value map stored with the resource quota that may be used to
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#annotations ResourceQuotaV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#annotations ResourceQuotaV1#annotations}
 
 ---
 
@@ -1055,7 +1055,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#generate_name ResourceQuotaV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#generate_name ResourceQuotaV1#generate_name}
 
 ---
 
@@ -1071,7 +1071,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#labels ResourceQuotaV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#labels ResourceQuotaV1#labels}
 
 ---
 
@@ -1085,7 +1085,7 @@ Name *string
 
 Name of the resource quota, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#name ResourceQuotaV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#name ResourceQuotaV1#name}
 
 ---
 
@@ -1099,7 +1099,7 @@ Namespace *string
 
 Namespace defines the space within which name of the resource quota must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#namespace ResourceQuotaV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#namespace ResourceQuotaV1#namespace}
 
 ---
 
@@ -1108,12 +1108,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Spec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 &resourcequotav1.ResourceQuotaV1Spec {
 	Hard: *map[string]*string,
 	Scopes: *[]*string,
-	ScopeSelector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.resourceQuotaV1.ResourceQuotaV1SpecScopeSelector,
+	ScopeSelector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.resourceQuotaV1.ResourceQuotaV1SpecScopeSelector,
 }
 ```
 
@@ -1137,7 +1137,7 @@ Hard *map[string]*string
 
 The set of desired hard limits for each named resource. More info: http://releases.k8s.io/HEAD/docs/design/admission_control_resource_quota.md#admissioncontrol-plugin-resourcequota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#hard ResourceQuotaV1#hard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#hard ResourceQuotaV1#hard}
 
 ---
 
@@ -1153,7 +1153,7 @@ A collection of filters that must match each object tracked by a quota.
 
 If not specified, the quota matches all objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#scopes ResourceQuotaV1#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#scopes ResourceQuotaV1#scopes}
 
 ---
 
@@ -1167,7 +1167,7 @@ ScopeSelector ResourceQuotaV1SpecScopeSelector
 
 scope_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#scope_selector ResourceQuotaV1#scope_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#scope_selector ResourceQuotaV1#scope_selector}
 
 ---
 
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 &resourcequotav1.ResourceQuotaV1SpecScopeSelector {
 	MatchExpression: interface{},
@@ -1201,7 +1201,7 @@ MatchExpression interface{}
 
 match_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#match_expression ResourceQuotaV1#match_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#match_expression ResourceQuotaV1#match_expression}
 
 ---
 
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorMatchExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 &resourcequotav1.ResourceQuotaV1SpecScopeSelectorMatchExpression {
 	Operator: *string,
@@ -1239,7 +1239,7 @@ Operator *string
 
 Represents a scope's relationship to a set of values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#operator ResourceQuotaV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#operator ResourceQuotaV1#operator}
 
 ---
 
@@ -1253,7 +1253,7 @@ ScopeName *string
 
 The name of the scope that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#scope_name ResourceQuotaV1#scope_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#scope_name ResourceQuotaV1#scope_name}
 
 ---
 
@@ -1267,7 +1267,7 @@ Values *[]*string
 
 A list of scope selector requirements by scope of the resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#values ResourceQuotaV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#values ResourceQuotaV1#values}
 
 ---
 
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 &resourcequotav1.ResourceQuotaV1Timeouts {
 	Create: *string,
@@ -1288,8 +1288,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#create ResourceQuotaV1#create}. |
-| <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#update ResourceQuotaV1#update}. |
+| <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#create ResourceQuotaV1#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#update ResourceQuotaV1#update}. |
 
 ---
 
@@ -1301,7 +1301,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#create ResourceQuotaV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#create ResourceQuotaV1#create}.
 
 ---
 
@@ -1313,7 +1313,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/resource_quota_v1#update ResourceQuotaV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/resource_quota_v1#update ResourceQuotaV1#update}.
 
 ---
 
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.NewResourceQuotaV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceQuotaV1MetadataOutputReference
 ```
@@ -1751,7 +1751,7 @@ func InternalValue() ResourceQuotaV1Metadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.NewResourceQuotaV1SpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceQuotaV1SpecOutputReference
 ```
@@ -2100,7 +2100,7 @@ func InternalValue() ResourceQuotaV1Spec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorMatchExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.NewResourceQuotaV1SpecScopeSelectorMatchExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResourceQuotaV1SpecScopeSelectorMatchExpressionList
 ```
@@ -2260,7 +2260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.NewResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference
 ```
@@ -2600,7 +2600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.NewResourceQuotaV1SpecScopeSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceQuotaV1SpecScopeSelectorOutputReference
 ```
@@ -2891,7 +2891,7 @@ func InternalValue() ResourceQuotaV1SpecScopeSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/resourcequotav1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/resourcequotav1"
 
 resourcequotav1.NewResourceQuotaV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceQuotaV1TimeoutsOutputReference
 ```

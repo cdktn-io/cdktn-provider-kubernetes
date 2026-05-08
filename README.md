@@ -1,7 +1,7 @@
 
-# CDKTN prebuilt bindings for hashicorp/kubernetes provider version 2.38.0
+# CDKTN prebuilt bindings for hashicorp/kubernetes provider version 3.1.0
 
-This repo builds and publishes the [Terraform kubernetes provider](https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs) bindings for [CDK Terrain](https://cdktn.io).
+This repo builds and publishes the [Terraform kubernetes provider](https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs) bindings for [CDK Terrain](https://cdktn.io).
 
 ## Available Packages
 
@@ -58,12 +58,12 @@ You can also visit a hosted version of the documentation on [constructs.dev](htt
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform kubernetes provider version 1:1. In fact, it always tracks `latest` of `~> 2.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdktn.io/docs/concepts/providers#import-providers).
+This project is explicitly not tracking the Terraform kubernetes provider version 1:1. In fact, it always tracks `latest` of `~> 3.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdktn.io/docs/concepts/providers#import-providers).
 
 These are the upstream dependencies:
 
 - [CDK Terrain](https://cdktn.io) - Last official release
-- [Terraform kubernetes provider](https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0)
+- [Terraform kubernetes provider](https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

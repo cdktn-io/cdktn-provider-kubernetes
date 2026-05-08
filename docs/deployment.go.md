@@ -4,12 +4,12 @@
 
 ### Deployment <a name="Deployment" id="@cdktn/provider-kubernetes.deployment.Deployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment kubernetes_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment kubernetes_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.Deployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeployment(scope Construct, id *string, config DeploymentConfig) Deployment
 ```
@@ -460,7 +460,7 @@ func ResetWaitForRollout()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.deployment.Deployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.Deployment_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.deployment.Deployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.Deployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ deployment.Deployment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.deployment.Deployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.Deployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ deployment.Deployment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.deployment.Deployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.Deployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -549,7 +549,7 @@ The construct id used in the generated config for the Deployment to import.
 
 The id of the existing Deployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentConfig {
 	Connection: interface{},
@@ -869,10 +869,10 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpec,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentTimeouts,
 	WaitForRollout: interface{},
 }
 ```
@@ -890,7 +890,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentMetadata">DeploymentMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpec">DeploymentSpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#id Deployment#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#id Deployment#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts">DeploymentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.waitForRollout">WaitForRollout</a></code> | <code>interface{}</code> | Wait for the rollout of the deployment to complete. Defaults to true. |
 
@@ -976,7 +976,7 @@ Metadata DeploymentMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#metadata Deployment#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#metadata Deployment#metadata}
 
 ---
 
@@ -990,7 +990,7 @@ Spec DeploymentSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#spec Deployment#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#spec Deployment#spec}
 
 ---
 
@@ -1002,7 +1002,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#id Deployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#id Deployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1019,7 +1019,7 @@ Timeouts DeploymentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeouts Deployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeouts Deployment#timeouts}
 
 ---
 
@@ -1033,7 +1033,7 @@ WaitForRollout interface{}
 
 Wait for the rollout of the deployment to complete. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#wait_for_rollout Deployment#wait_for_rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#wait_for_rollout Deployment#wait_for_rollout}
 
 ---
 
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentMetadata {
 	Annotations: *map[string]*string,
@@ -1077,7 +1077,7 @@ An unstructured key value map stored with the deployment that may be used to sto
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#annotations Deployment#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#annotations Deployment#annotations}
 
 ---
 
@@ -1093,7 +1093,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#generate_name Deployment#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#generate_name Deployment#generate_name}
 
 ---
 
@@ -1109,7 +1109,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#labels Deployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#labels Deployment#labels}
 
 ---
 
@@ -1123,7 +1123,7 @@ Name *string
 
 Name of the deployment, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -1137,7 +1137,7 @@ Namespace *string
 
 Namespace defines the space within which name of the deployment must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace Deployment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace Deployment#namespace}
 
 ---
 
@@ -1146,17 +1146,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpec {
-	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplate,
+	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplate,
 	MinReadySeconds: *f64,
 	Paused: interface{},
 	ProgressDeadlineSeconds: *f64,
 	Replicas: *string,
 	RevisionHistoryLimit: *f64,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecSelector,
-	Strategy: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecStrategy,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecSelector,
+	Strategy: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecStrategy,
 }
 ```
 
@@ -1185,7 +1185,7 @@ Template DeploymentSpecTemplate
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#template Deployment#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#template Deployment#template}
 
 ---
 
@@ -1201,7 +1201,7 @@ Minimum number of seconds for which a newly created pod should be ready without 
 
 Defaults to 0 (pod will be considered available as soon as it is ready)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#min_ready_seconds Deployment#min_ready_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#min_ready_seconds Deployment#min_ready_seconds}
 
 ---
 
@@ -1215,7 +1215,7 @@ Paused interface{}
 
 Indicates that the deployment is paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#paused Deployment#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#paused Deployment#paused}
 
 ---
 
@@ -1231,7 +1231,7 @@ The maximum time in seconds for a deployment to make progress before it is consi
 
 The deployment controller will continue to process failed deployments and a condition with a ProgressDeadlineExceeded reason will be surfaced in the deployment status. Note that progress will not be estimated during the time a deployment is paused. Defaults to 600s.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#progress_deadline_seconds Deployment#progress_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#progress_deadline_seconds Deployment#progress_deadline_seconds}
 
 ---
 
@@ -1245,7 +1245,7 @@ Replicas *string
 
 Number of desired pods. This is a string to be able to distinguish between explicit zero and not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#replicas Deployment#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#replicas Deployment#replicas}
 
 ---
 
@@ -1261,7 +1261,7 @@ The number of old ReplicaSets to retain to allow rollback.
 
 This is a pointer to distinguish between explicit zero and not specified. Defaults to 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#revision_history_limit Deployment#revision_history_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#revision_history_limit Deployment#revision_history_limit}
 
 ---
 
@@ -1275,7 +1275,7 @@ Selector DeploymentSpecSelector
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#selector Deployment#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#selector Deployment#selector}
 
 ---
 
@@ -1289,7 +1289,7 @@ Strategy DeploymentSpecStrategy
 
 strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#strategy Deployment#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#strategy Deployment#strategy}
 
 ---
 
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecSelector {
 	MatchExpressions: interface{},
@@ -1325,7 +1325,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -1341,7 +1341,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecSelectorMatchExpressions {
 	Key: *string,
@@ -1379,7 +1379,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -1393,7 +1393,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -1409,7 +1409,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -1418,10 +1418,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecStrategy {
-	RollingUpdate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecStrategyRollingUpdate,
+	RollingUpdate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecStrategyRollingUpdate,
 	Type: *string,
 }
 ```
@@ -1445,7 +1445,7 @@ RollingUpdate DeploymentSpecStrategyRollingUpdate
 
 rolling_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#rolling_update Deployment#rolling_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#rolling_update Deployment#rolling_update}
 
 ---
 
@@ -1459,7 +1459,7 @@ Type *string
 
 Type of deployment. Can be 'Recreate' or 'RollingUpdate'. Default is RollingUpdate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -1468,7 +1468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecStrategyRollingUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecStrategyRollingUpdate {
 	MaxSurge: *string,
@@ -1497,7 +1497,7 @@ The maximum number of pods that can be scheduled above the desired number of pod
 
 Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%). This can not be 0 if MaxUnavailable is 0. Absolute number is calculated from percentage by rounding up. Defaults to 25%. Example: when this is set to 30%, the new RC can be scaled up immediately when the rolling update starts, such that the total number of old and new pods do not exceed 130% of desired pods. Once old pods have been killed, new RC can be scaled up further, ensuring that total number of pods running at any time during the update is atmost 130% of desired pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#max_surge Deployment#max_surge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#max_surge Deployment#max_surge}
 
 ---
 
@@ -1513,7 +1513,7 @@ The maximum number of pods that can be unavailable during the update.
 
 Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%). Absolute number is calculated from percentage by rounding down. This can not be 0 if MaxSurge is 0. Defaults to 25%. Example: when this is set to 30%, the old RC can be scaled down to 70% of desired pods immediately when the rolling update starts. Once new pods are ready, old RC can be scaled down further, followed by scaling up the new RC, ensuring that the total number of pods available at all times during the update is at least 70% of desired pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#max_unavailable Deployment#max_unavailable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#max_unavailable Deployment#max_unavailable}
 
 ---
 
@@ -1522,11 +1522,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplate {
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpec,
 }
 ```
 
@@ -1549,7 +1549,7 @@ Metadata DeploymentSpecTemplateMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#metadata Deployment#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#metadata Deployment#metadata}
 
 ---
 
@@ -1563,7 +1563,7 @@ Spec DeploymentSpecTemplateSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#spec Deployment#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#spec Deployment#spec}
 
 ---
 
@@ -1572,7 +1572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -1607,7 +1607,7 @@ An unstructured key value map stored with the pod that may be used to store arbi
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#annotations Deployment#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#annotations Deployment#annotations}
 
 ---
 
@@ -1623,7 +1623,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#generate_name Deployment#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#generate_name Deployment#generate_name}
 
 ---
 
@@ -1639,7 +1639,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#labels Deployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#labels Deployment#labels}
 
 ---
 
@@ -1653,7 +1653,7 @@ Name *string
 
 Name of the pod, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -1667,7 +1667,7 @@ Namespace *string
 
 Namespace defines the space within which name of the pod must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace Deployment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace Deployment#namespace}
 
 ---
 
@@ -1676,14 +1676,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpec {
 	ActiveDeadlineSeconds: *f64,
-	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecAffinity,
+	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecAffinity,
 	AutomountServiceAccountToken: interface{},
 	Container: interface{},
-	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecDnsConfig,
+	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecDnsConfig,
 	DnsPolicy: *string,
 	EnableServiceLinks: interface{},
 	HostAliases: interface{},
@@ -1695,13 +1695,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 	InitContainer: interface{},
 	NodeName: *string,
 	NodeSelector: *map[string]*string,
-	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecOs,
+	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecOs,
 	PriorityClassName: *string,
 	ReadinessGate: interface{},
 	RestartPolicy: *string,
 	RuntimeClassName: *string,
 	SchedulerName: *string,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecSecurityContext,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecSecurityContext,
 	ServiceAccountName: *string,
 	ShareProcessNamespace: interface{},
 	Subdomain: *string,
@@ -1761,7 +1761,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#active_deadline_seconds Deployment#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#active_deadline_seconds Deployment#active_deadline_seconds}
 
 ---
 
@@ -1775,7 +1775,7 @@ Affinity DeploymentSpecTemplateSpecAffinity
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#affinity Deployment#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#affinity Deployment#affinity}
 
 ---
 
@@ -1789,7 +1789,7 @@ AutomountServiceAccountToken interface{}
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#automount_service_account_token Deployment#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#automount_service_account_token Deployment#automount_service_account_token}
 
 ---
 
@@ -1803,7 +1803,7 @@ Container interface{}
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container Deployment#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container Deployment#container}
 
 ---
 
@@ -1817,7 +1817,7 @@ DnsConfig DeploymentSpecTemplateSpecDnsConfig
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#dns_config Deployment#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#dns_config Deployment#dns_config}
 
 ---
 
@@ -1833,7 +1833,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#dns_policy Deployment#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#dns_policy Deployment#dns_policy}
 
 ---
 
@@ -1847,7 +1847,7 @@ EnableServiceLinks interface{}
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#enable_service_links Deployment#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#enable_service_links Deployment#enable_service_links}
 
 ---
 
@@ -1861,7 +1861,7 @@ HostAliases interface{}
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_aliases Deployment#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_aliases Deployment#host_aliases}
 
 ---
 
@@ -1875,7 +1875,7 @@ HostIpc interface{}
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_ipc Deployment#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_ipc Deployment#host_ipc}
 
 ---
 
@@ -1889,7 +1889,7 @@ Hostname *string
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#hostname Deployment#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#hostname Deployment#hostname}
 
 ---
 
@@ -1905,7 +1905,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_network Deployment#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_network Deployment#host_network}
 
 ---
 
@@ -1919,7 +1919,7 @@ HostPid interface{}
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_pid Deployment#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_pid Deployment#host_pid}
 
 ---
 
@@ -1933,7 +1933,7 @@ ImagePullSecrets interface{}
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#image_pull_secrets Deployment#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#image_pull_secrets Deployment#image_pull_secrets}
 
 ---
 
@@ -1947,7 +1947,7 @@ InitContainer interface{}
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#init_container Deployment#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#init_container Deployment#init_container}
 
 ---
 
@@ -1963,7 +1963,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_name Deployment#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_name Deployment#node_name}
 
 ---
 
@@ -1979,7 +1979,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_selector Deployment#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_selector Deployment#node_selector}
 
 ---
 
@@ -1993,7 +1993,7 @@ Os DeploymentSpecTemplateSpecOs
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#os Deployment#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#os Deployment#os}
 
 ---
 
@@ -2009,7 +2009,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#priority_class_name Deployment#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#priority_class_name Deployment#priority_class_name}
 
 ---
 
@@ -2023,7 +2023,7 @@ ReadinessGate interface{}
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#readiness_gate Deployment#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#readiness_gate Deployment#readiness_gate}
 
 ---
 
@@ -2037,7 +2037,7 @@ RestartPolicy *string
 
 Restart policy for all containers within the pod. Defaults to Always as the only option. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#restart_policy Deployment#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#restart_policy Deployment#restart_policy}
 
 ---
 
@@ -2053,7 +2053,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#runtime_class_name Deployment#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#runtime_class_name Deployment#runtime_class_name}
 
 ---
 
@@ -2069,7 +2069,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheduler_name Deployment#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheduler_name Deployment#scheduler_name}
 
 ---
 
@@ -2083,7 +2083,7 @@ SecurityContext DeploymentSpecTemplateSpecSecurityContext
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#security_context Deployment#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#security_context Deployment#security_context}
 
 ---
 
@@ -2097,7 +2097,7 @@ ServiceAccountName *string
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service_account_name Deployment#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service_account_name Deployment#service_account_name}
 
 ---
 
@@ -2113,7 +2113,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#share_process_namespace Deployment#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#share_process_namespace Deployment#share_process_namespace}
 
 ---
 
@@ -2127,7 +2127,7 @@ Subdomain *string
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#subdomain Deployment#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#subdomain Deployment#subdomain}
 
 ---
 
@@ -2143,7 +2143,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#termination_grace_period_seconds Deployment#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#termination_grace_period_seconds Deployment#termination_grace_period_seconds}
 
 ---
 
@@ -2157,7 +2157,7 @@ Toleration interface{}
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#toleration Deployment#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#toleration Deployment#toleration}
 
 ---
 
@@ -2171,7 +2171,7 @@ TopologySpreadConstraint interface{}
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_spread_constraint Deployment#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_spread_constraint Deployment#topology_spread_constraint}
 
 ---
 
@@ -2185,7 +2185,7 @@ Volume interface{}
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume Deployment#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume Deployment#volume}
 
 ---
 
@@ -2194,12 +2194,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinity {
-	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinity,
-	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecAffinityPodAffinity,
-	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinity,
+	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinity,
+	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecAffinityPodAffinity,
+	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinity,
 }
 ```
 
@@ -2223,7 +2223,7 @@ NodeAffinity DeploymentSpecTemplateSpecAffinityNodeAffinity
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_affinity Deployment#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_affinity Deployment#node_affinity}
 
 ---
 
@@ -2237,7 +2237,7 @@ PodAffinity DeploymentSpecTemplateSpecAffinityPodAffinity
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pod_affinity Deployment#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pod_affinity Deployment#pod_affinity}
 
 ---
 
@@ -2251,7 +2251,7 @@ PodAntiAffinity DeploymentSpecTemplateSpecAffinityPodAntiAffinity
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pod_anti_affinity Deployment#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pod_anti_affinity Deployment#pod_anti_affinity}
 
 ---
 
@@ -2260,11 +2260,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityNodeAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
-	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
+	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
 }
 ```
 
@@ -2287,7 +2287,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2301,7 +2301,7 @@ RequiredDuringSchedulingIgnoredDuringExecution DeploymentSpecTemplateSpecAffinit
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2310,10 +2310,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
+	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
 	Weight: *f64,
 }
 ```
@@ -2337,7 +2337,7 @@ Preference DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringScheduli
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#preference Deployment#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#preference Deployment#preference}
 
 ---
 
@@ -2351,7 +2351,7 @@ Weight *f64
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#weight Deployment#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#weight Deployment#weight}
 
 ---
 
@@ -2360,7 +2360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference {
 	MatchExpressions: interface{},
@@ -2387,7 +2387,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -2401,7 +2401,7 @@ MatchFields interface{}
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_fields Deployment#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_fields Deployment#match_fields}
 
 ---
 
@@ -2410,7 +2410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions {
 	Key: *string,
@@ -2439,7 +2439,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -2455,7 +2455,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -2471,7 +2471,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -2480,7 +2480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields {
 	Key: *string,
@@ -2509,7 +2509,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -2523,7 +2523,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -2539,7 +2539,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -2548,7 +2548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	NodeSelectorTerm: interface{},
@@ -2573,7 +2573,7 @@ NodeSelectorTerm interface{}
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_selector_term Deployment#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_selector_term Deployment#node_selector_term}
 
 ---
 
@@ -2582,7 +2582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm {
 	MatchExpressions: interface{},
@@ -2609,7 +2609,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -2623,7 +2623,7 @@ MatchFields interface{}
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_fields Deployment#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_fields Deployment#match_fields}
 
 ---
 
@@ -2632,7 +2632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions {
 	Key: *string,
@@ -2661,7 +2661,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -2677,7 +2677,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -2693,7 +2693,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -2702,7 +2702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields {
 	Key: *string,
@@ -2731,7 +2731,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -2745,7 +2745,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -2761,7 +2761,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -2770,7 +2770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -2797,7 +2797,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2811,7 +2811,7 @@ RequiredDuringSchedulingIgnoredDuringExecution interface{}
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2820,10 +2820,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -2847,7 +2847,7 @@ PodAffinityTerm DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSche
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pod_affinity_term Deployment#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pod_affinity_term Deployment#pod_affinity_term}
 
 ---
 
@@ -2861,7 +2861,7 @@ Weight *f64
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#weight Deployment#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#weight Deployment#weight}
 
 ---
 
@@ -2870,7 +2870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -2901,7 +2901,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_key Deployment#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_key Deployment#topology_key}
 
 ---
 
@@ -2915,7 +2915,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#label_selector Deployment#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#label_selector Deployment#label_selector}
 
 ---
 
@@ -2929,7 +2929,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespaces Deployment#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespaces Deployment#namespaces}
 
 ---
 
@@ -2943,7 +2943,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
 
 ---
 
@@ -2952,7 +2952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -2979,7 +2979,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -2995,7 +2995,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3004,7 +3004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3033,7 +3033,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3047,7 +3047,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3063,7 +3063,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3072,7 +3072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3099,7 +3099,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -3115,7 +3115,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3124,7 +3124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3153,7 +3153,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3167,7 +3167,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3183,7 +3183,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3192,7 +3192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -3223,7 +3223,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_key Deployment#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_key Deployment#topology_key}
 
 ---
 
@@ -3237,7 +3237,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#label_selector Deployment#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#label_selector Deployment#label_selector}
 
 ---
 
@@ -3251,7 +3251,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespaces Deployment#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespaces Deployment#namespaces}
 
 ---
 
@@ -3265,7 +3265,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
 
 ---
 
@@ -3274,7 +3274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -3301,7 +3301,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -3317,7 +3317,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3326,7 +3326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3355,7 +3355,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3369,7 +3369,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3385,7 +3385,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3394,7 +3394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3421,7 +3421,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -3437,7 +3437,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3446,7 +3446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3475,7 +3475,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3489,7 +3489,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3505,7 +3505,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3514,7 +3514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -3541,7 +3541,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3555,7 +3555,7 @@ RequiredDuringSchedulingIgnoredDuringExecution interface{}
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3564,10 +3564,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -3591,7 +3591,7 @@ PodAffinityTerm DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuring
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pod_affinity_term Deployment#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pod_affinity_term Deployment#pod_affinity_term}
 
 ---
 
@@ -3605,7 +3605,7 @@ Weight *f64
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#weight Deployment#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#weight Deployment#weight}
 
 ---
 
@@ -3614,7 +3614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -3645,7 +3645,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_key Deployment#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_key Deployment#topology_key}
 
 ---
 
@@ -3659,7 +3659,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#label_selector Deployment#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#label_selector Deployment#label_selector}
 
 ---
 
@@ -3673,7 +3673,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespaces Deployment#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespaces Deployment#namespaces}
 
 ---
 
@@ -3687,7 +3687,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
 
 ---
 
@@ -3696,7 +3696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -3723,7 +3723,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -3739,7 +3739,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3748,7 +3748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3777,7 +3777,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3791,7 +3791,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3807,7 +3807,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3816,7 +3816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3843,7 +3843,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -3859,7 +3859,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3868,7 +3868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3897,7 +3897,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3911,7 +3911,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3927,7 +3927,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3936,7 +3936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -3967,7 +3967,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_key Deployment#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_key Deployment#topology_key}
 
 ---
 
@@ -3981,7 +3981,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#label_selector Deployment#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#label_selector Deployment#label_selector}
 
 ---
 
@@ -3995,7 +3995,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespaces Deployment#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespaces Deployment#namespaces}
 
 ---
 
@@ -4009,7 +4009,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
 
 ---
 
@@ -4018,7 +4018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -4045,7 +4045,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -4061,7 +4061,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -4070,7 +4070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -4099,7 +4099,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -4113,7 +4113,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -4129,7 +4129,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -4138,7 +4138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -4165,7 +4165,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -4181,7 +4181,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -4190,7 +4190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -4219,7 +4219,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -4233,7 +4233,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -4249,7 +4249,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -4258,7 +4258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainer {
 	Name: *string,
@@ -4268,13 +4268,14 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerResources,
+	RestartPolicy: *string,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -4302,6 +4303,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.port">Port</a></code> | <code>interface{}</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.readinessProbe">ReadinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbe">DeploymentSpecTemplateSpecContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerResources">DeploymentSpecTemplateSpecContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.securityContext">SecurityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContext">DeploymentSpecTemplateSpecContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.startupProbe">StartupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbe">DeploymentSpecTemplateSpecContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.stdin">Stdin</a></code> | <code>interface{}</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -4327,7 +4329,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -4343,7 +4345,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#args Deployment#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#args Deployment#args}
 
 ---
 
@@ -4359,7 +4361,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -4373,7 +4375,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#env Deployment#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#env Deployment#env}
 
 ---
 
@@ -4387,7 +4389,7 @@ EnvFrom interface{}
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#env_from Deployment#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#env_from Deployment#env_from}
 
 ---
 
@@ -4401,7 +4403,7 @@ Image *string
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#image Deployment#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#image Deployment#image}
 
 ---
 
@@ -4417,7 +4419,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#image_pull_policy Deployment#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#image_pull_policy Deployment#image_pull_policy}
 
 ---
 
@@ -4431,7 +4433,7 @@ Lifecycle DeploymentSpecTemplateSpecContainerLifecycle
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#lifecycle Deployment#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#lifecycle Deployment#lifecycle}
 
 ---
 
@@ -4445,7 +4447,7 @@ LivenessProbe DeploymentSpecTemplateSpecContainerLivenessProbe
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#liveness_probe Deployment#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#liveness_probe Deployment#liveness_probe}
 
 ---
 
@@ -4459,7 +4461,7 @@ Port interface{}
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -4473,7 +4475,7 @@ ReadinessProbe DeploymentSpecTemplateSpecContainerReadinessProbe
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#readiness_probe Deployment#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#readiness_probe Deployment#readiness_probe}
 
 ---
 
@@ -4487,7 +4489,21 @@ Resources DeploymentSpecTemplateSpecContainerResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resources Deployment#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resources Deployment#resources}
+
+---
+
+##### `RestartPolicy`<sup>Optional</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.restartPolicy"></a>
+
+```go
+RestartPolicy *string
+```
+
+- *Type:* *string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#restart_policy Deployment#restart_policy}
 
 ---
 
@@ -4501,7 +4517,7 @@ SecurityContext DeploymentSpecTemplateSpecContainerSecurityContext
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#security_context Deployment#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#security_context Deployment#security_context}
 
 ---
 
@@ -4515,7 +4531,7 @@ StartupProbe DeploymentSpecTemplateSpecContainerStartupProbe
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#startup_probe Deployment#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#startup_probe Deployment#startup_probe}
 
 ---
 
@@ -4531,7 +4547,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#stdin Deployment#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#stdin Deployment#stdin}
 
 ---
 
@@ -4547,7 +4563,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#stdin_once Deployment#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#stdin_once Deployment#stdin_once}
 
 ---
 
@@ -4563,7 +4579,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#termination_message_path Deployment#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#termination_message_path Deployment#termination_message_path}
 
 ---
 
@@ -4579,7 +4595,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#termination_message_policy Deployment#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#termination_message_policy Deployment#termination_message_policy}
 
 ---
 
@@ -4593,7 +4609,7 @@ Tty interface{}
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tty Deployment#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tty Deployment#tty}
 
 ---
 
@@ -4607,7 +4623,7 @@ VolumeDevice interface{}
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_device Deployment#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_device Deployment#volume_device}
 
 ---
 
@@ -4621,7 +4637,7 @@ VolumeMount interface{}
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_mount Deployment#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_mount Deployment#volume_mount}
 
 ---
 
@@ -4637,7 +4653,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#working_dir Deployment#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#working_dir Deployment#working_dir}
 
 ---
 
@@ -4646,12 +4662,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerEnvValueFrom,
 }
 ```
 
@@ -4675,7 +4691,7 @@ Name *string
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -4691,7 +4707,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -4705,7 +4721,7 @@ ValueFrom DeploymentSpecTemplateSpecContainerEnvValueFrom
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value_from Deployment#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value_from Deployment#value_from}
 
 ---
 
@@ -4714,12 +4730,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerEnvFromSecretRef,
 }
 ```
 
@@ -4743,7 +4759,7 @@ ConfigMapRef DeploymentSpecTemplateSpecContainerEnvFromConfigMapRef
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map_ref Deployment#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map_ref Deployment#config_map_ref}
 
 ---
 
@@ -4757,7 +4773,7 @@ Prefix *string
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#prefix Deployment#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#prefix Deployment#prefix}
 
 ---
 
@@ -4771,7 +4787,7 @@ SecretRef DeploymentSpecTemplateSpecContainerEnvFromSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
 
 ---
 
@@ -4780,7 +4796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -4807,7 +4823,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -4821,7 +4837,7 @@ Optional interface{}
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -4830,7 +4846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerEnvFromSecretRef {
 	Name: *string,
@@ -4857,7 +4873,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -4871,7 +4887,7 @@ Optional interface{}
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -4880,13 +4896,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -4911,7 +4927,7 @@ ConfigMapKeyRef DeploymentSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map_key_ref Deployment#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map_key_ref Deployment#config_map_key_ref}
 
 ---
 
@@ -4925,7 +4941,7 @@ FieldRef DeploymentSpecTemplateSpecContainerEnvValueFromFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_ref Deployment#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_ref Deployment#field_ref}
 
 ---
 
@@ -4939,7 +4955,7 @@ ResourceFieldRef DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
 
 ---
 
@@ -4953,7 +4969,7 @@ SecretKeyRef DeploymentSpecTemplateSpecContainerEnvValueFromSecretKeyRef
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_key_ref Deployment#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_key_ref Deployment#secret_key_ref}
 
 ---
 
@@ -4962,7 +4978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -4991,7 +5007,7 @@ Key *string
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -5005,7 +5021,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -5019,7 +5035,7 @@ Optional interface{}
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -5028,7 +5044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -5055,7 +5071,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#api_version Deployment#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#api_version Deployment#api_version}
 
 ---
 
@@ -5069,7 +5085,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_path Deployment#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_path Deployment#field_path}
 
 ---
 
@@ -5078,7 +5094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -5092,8 +5108,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}. |
 
 ---
 
@@ -5107,7 +5123,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource Deployment#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource Deployment#resource}
 
 ---
 
@@ -5119,7 +5135,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}.
 
 ---
 
@@ -5131,7 +5147,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}.
 
 ---
 
@@ -5140,7 +5156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -5169,7 +5185,7 @@ Key *string
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -5183,7 +5199,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -5197,7 +5213,7 @@ Optional interface{}
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -5206,7 +5222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecycle {
 	PostStart: interface{},
@@ -5233,7 +5249,7 @@ PostStart interface{}
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#post_start Deployment#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#post_start Deployment#post_start}
 
 ---
 
@@ -5247,7 +5263,7 @@ PreStop interface{}
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pre_stop Deployment#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pre_stop Deployment#pre_stop}
 
 ---
 
@@ -5256,11 +5272,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5285,7 +5301,7 @@ Exec DeploymentSpecTemplateSpecContainerLifecyclePostStartExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -5299,7 +5315,7 @@ HttpGet DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -5313,7 +5329,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -5322,7 +5338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -5349,7 +5365,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -5358,7 +5374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -5391,7 +5407,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -5405,7 +5421,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -5419,7 +5435,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -5435,7 +5451,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -5449,7 +5465,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -5458,7 +5474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -5485,7 +5501,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -5499,7 +5515,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -5508,7 +5524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -5535,7 +5551,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -5544,11 +5560,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5573,7 +5589,7 @@ Exec DeploymentSpecTemplateSpecContainerLifecyclePreStopExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -5587,7 +5603,7 @@ HttpGet DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -5601,7 +5617,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -5610,7 +5626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -5637,7 +5653,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -5646,7 +5662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -5679,7 +5695,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -5693,7 +5709,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -5707,7 +5723,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -5723,7 +5739,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -5737,7 +5753,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -5746,7 +5762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -5773,7 +5789,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -5787,7 +5803,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -5796,7 +5812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -5823,7 +5839,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -5832,13 +5848,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -5873,7 +5889,7 @@ Exec DeploymentSpecTemplateSpecContainerLivenessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -5887,7 +5903,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -5901,7 +5917,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -5915,7 +5931,7 @@ HttpGet DeploymentSpecTemplateSpecContainerLivenessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -5929,7 +5945,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -5943,7 +5959,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -5957,7 +5973,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -5971,7 +5987,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -5985,7 +6001,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -5994,7 +6010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -6021,7 +6037,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -6030,7 +6046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -6057,7 +6073,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6071,7 +6087,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -6080,7 +6096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -6113,7 +6129,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -6127,7 +6143,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -6141,7 +6157,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -6157,7 +6173,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6171,7 +6187,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -6180,7 +6196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -6207,7 +6223,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -6221,7 +6237,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -6230,7 +6246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -6257,7 +6273,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6266,7 +6282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerPort {
 	ContainerPort: *f64,
@@ -6301,7 +6317,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_port Deployment#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_port Deployment#container_port}
 
 ---
 
@@ -6315,7 +6331,7 @@ HostIp *string
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_ip Deployment#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_ip Deployment#host_ip}
 
 ---
 
@@ -6331,7 +6347,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_port Deployment#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_port Deployment#host_port}
 
 ---
 
@@ -6347,7 +6363,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -6361,7 +6377,7 @@ Protocol *string
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#protocol Deployment#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#protocol Deployment#protocol}
 
 ---
 
@@ -6370,13 +6386,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -6411,7 +6427,7 @@ Exec DeploymentSpecTemplateSpecContainerReadinessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -6425,7 +6441,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -6439,7 +6455,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -6453,7 +6469,7 @@ HttpGet DeploymentSpecTemplateSpecContainerReadinessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -6467,7 +6483,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -6481,7 +6497,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -6495,7 +6511,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -6509,7 +6525,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -6523,7 +6539,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -6532,7 +6548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -6559,7 +6575,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -6568,7 +6584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -6595,7 +6611,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6609,7 +6625,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -6618,7 +6634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -6651,7 +6667,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -6665,7 +6681,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -6679,7 +6695,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -6695,7 +6711,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6709,7 +6725,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -6718,7 +6734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -6745,7 +6761,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -6759,7 +6775,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -6768,7 +6784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -6795,7 +6811,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6804,7 +6820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerResources {
 	Limits: *map[string]*string,
@@ -6831,7 +6847,7 @@ Limits *map[string]*string
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#limits Deployment#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#limits Deployment#limits}
 
 ---
 
@@ -6847,7 +6863,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#requests Deployment#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#requests Deployment#requests}
 
 ---
 
@@ -6856,18 +6872,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -6899,7 +6915,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#allow_privilege_escalation Deployment#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#allow_privilege_escalation Deployment#allow_privilege_escalation}
 
 ---
 
@@ -6913,7 +6929,7 @@ Capabilities DeploymentSpecTemplateSpecContainerSecurityContextCapabilities
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#capabilities Deployment#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#capabilities Deployment#capabilities}
 
 ---
 
@@ -6929,7 +6945,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#privileged Deployment#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#privileged Deployment#privileged}
 
 ---
 
@@ -6943,7 +6959,7 @@ ReadOnlyRootFilesystem interface{}
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only_root_filesystem Deployment#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only_root_filesystem Deployment#read_only_root_filesystem}
 
 ---
 
@@ -6959,7 +6975,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
 
 ---
 
@@ -6975,7 +6991,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
 
 ---
 
@@ -6991,7 +7007,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
 
 ---
 
@@ -7005,7 +7021,7 @@ SeccompProfile DeploymentSpecTemplateSpecContainerSecurityContextSeccompProfile
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
 
 ---
 
@@ -7019,7 +7035,7 @@ SeLinuxOptions DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptions
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
 
 ---
 
@@ -7028,7 +7044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -7055,7 +7071,7 @@ Add *[]*string
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#add Deployment#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#add Deployment#add}
 
 ---
 
@@ -7069,7 +7085,7 @@ Drop *[]*string
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#drop Deployment#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#drop Deployment#drop}
 
 ---
 
@@ -7078,7 +7094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -7107,7 +7123,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
 
 ---
 
@@ -7121,7 +7137,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -7130,7 +7146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -7161,7 +7177,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#level Deployment#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#level Deployment#level}
 
 ---
 
@@ -7175,7 +7191,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#role Deployment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#role Deployment#role}
 
 ---
 
@@ -7189,7 +7205,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -7203,7 +7219,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#user Deployment#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#user Deployment#user}
 
 ---
 
@@ -7212,13 +7228,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -7253,7 +7269,7 @@ Exec DeploymentSpecTemplateSpecContainerStartupProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -7267,7 +7283,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -7281,7 +7297,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -7295,7 +7311,7 @@ HttpGet DeploymentSpecTemplateSpecContainerStartupProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -7309,7 +7325,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -7323,7 +7339,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -7337,7 +7353,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -7351,7 +7367,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -7365,7 +7381,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -7374,7 +7390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerStartupProbeExec {
 	Command: *[]*string,
@@ -7401,7 +7417,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -7410,7 +7426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerStartupProbeGrpc {
 	Port: *f64,
@@ -7437,7 +7453,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -7451,7 +7467,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -7460,7 +7476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerStartupProbeHttpGet {
 	Host: *string,
@@ -7493,7 +7509,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -7507,7 +7523,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -7521,7 +7537,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -7537,7 +7553,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -7551,7 +7567,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -7560,7 +7576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -7587,7 +7603,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -7601,7 +7617,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -7610,7 +7626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -7637,7 +7653,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -7646,7 +7662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerVolumeDevice {
 	DevicePath: *string,
@@ -7673,7 +7689,7 @@ DevicePath *string
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#device_path Deployment#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#device_path Deployment#device_path}
 
 ---
 
@@ -7687,7 +7703,7 @@ Name *string
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -7696,7 +7712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecContainerVolumeMount {
 	MountPath: *string,
@@ -7731,7 +7747,7 @@ MountPath *string
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mount_path Deployment#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mount_path Deployment#mount_path}
 
 ---
 
@@ -7745,7 +7761,7 @@ Name *string
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -7761,7 +7777,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mount_propagation Deployment#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mount_propagation Deployment#mount_propagation}
 
 ---
 
@@ -7775,7 +7791,7 @@ ReadOnly interface{}
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -7789,7 +7805,7 @@ SubPath *string
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sub_path Deployment#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sub_path Deployment#sub_path}
 
 ---
 
@@ -7803,7 +7819,7 @@ SubPathExpr *string
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sub_path_expr Deployment#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sub_path_expr Deployment#sub_path_expr}
 
 ---
 
@@ -7812,7 +7828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecDnsConfig {
 	Nameservers: *[]*string,
@@ -7843,7 +7859,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#nameservers Deployment#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#nameservers Deployment#nameservers}
 
 ---
 
@@ -7857,7 +7873,7 @@ Option interface{}
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#option Deployment#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#option Deployment#option}
 
 ---
 
@@ -7873,7 +7889,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#searches Deployment#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#searches Deployment#searches}
 
 ---
 
@@ -7882,7 +7898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecDnsConfigOption {
 	Name: *string,
@@ -7909,7 +7925,7 @@ Name *string
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -7923,7 +7939,7 @@ Value *string
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -7932,7 +7948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecHostAliases {
 	Hostnames: *[]*string,
@@ -7959,7 +7975,7 @@ Hostnames *[]*string
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#hostnames Deployment#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#hostnames Deployment#hostnames}
 
 ---
 
@@ -7973,7 +7989,7 @@ Ip *string
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#ip Deployment#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#ip Deployment#ip}
 
 ---
 
@@ -7982,7 +7998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecImagePullSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecImagePullSecrets {
 	Name: *string,
@@ -8007,7 +8023,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8016,7 +8032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainer {
 	Name: *string,
@@ -8026,13 +8042,14 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerResources,
+	RestartPolicy: *string,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -8060,6 +8077,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.port">Port</a></code> | <code>interface{}</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.readinessProbe">ReadinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbe">DeploymentSpecTemplateSpecInitContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerResources">DeploymentSpecTemplateSpecInitContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.securityContext">SecurityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContext">DeploymentSpecTemplateSpecInitContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.startupProbe">StartupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbe">DeploymentSpecTemplateSpecInitContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.stdin">Stdin</a></code> | <code>interface{}</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -8085,7 +8103,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8101,7 +8119,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#args Deployment#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#args Deployment#args}
 
 ---
 
@@ -8117,7 +8135,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -8131,7 +8149,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#env Deployment#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#env Deployment#env}
 
 ---
 
@@ -8145,7 +8163,7 @@ EnvFrom interface{}
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#env_from Deployment#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#env_from Deployment#env_from}
 
 ---
 
@@ -8159,7 +8177,7 @@ Image *string
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#image Deployment#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#image Deployment#image}
 
 ---
 
@@ -8175,7 +8193,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#image_pull_policy Deployment#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#image_pull_policy Deployment#image_pull_policy}
 
 ---
 
@@ -8189,7 +8207,7 @@ Lifecycle DeploymentSpecTemplateSpecInitContainerLifecycle
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#lifecycle Deployment#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#lifecycle Deployment#lifecycle}
 
 ---
 
@@ -8203,7 +8221,7 @@ LivenessProbe DeploymentSpecTemplateSpecInitContainerLivenessProbe
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#liveness_probe Deployment#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#liveness_probe Deployment#liveness_probe}
 
 ---
 
@@ -8217,7 +8235,7 @@ Port interface{}
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -8231,7 +8249,7 @@ ReadinessProbe DeploymentSpecTemplateSpecInitContainerReadinessProbe
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#readiness_probe Deployment#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#readiness_probe Deployment#readiness_probe}
 
 ---
 
@@ -8245,7 +8263,21 @@ Resources DeploymentSpecTemplateSpecInitContainerResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resources Deployment#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resources Deployment#resources}
+
+---
+
+##### `RestartPolicy`<sup>Optional</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.restartPolicy"></a>
+
+```go
+RestartPolicy *string
+```
+
+- *Type:* *string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#restart_policy Deployment#restart_policy}
 
 ---
 
@@ -8259,7 +8291,7 @@ SecurityContext DeploymentSpecTemplateSpecInitContainerSecurityContext
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#security_context Deployment#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#security_context Deployment#security_context}
 
 ---
 
@@ -8273,7 +8305,7 @@ StartupProbe DeploymentSpecTemplateSpecInitContainerStartupProbe
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#startup_probe Deployment#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#startup_probe Deployment#startup_probe}
 
 ---
 
@@ -8289,7 +8321,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#stdin Deployment#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#stdin Deployment#stdin}
 
 ---
 
@@ -8305,7 +8337,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#stdin_once Deployment#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#stdin_once Deployment#stdin_once}
 
 ---
 
@@ -8321,7 +8353,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#termination_message_path Deployment#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#termination_message_path Deployment#termination_message_path}
 
 ---
 
@@ -8337,7 +8369,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#termination_message_policy Deployment#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#termination_message_policy Deployment#termination_message_policy}
 
 ---
 
@@ -8351,7 +8383,7 @@ Tty interface{}
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tty Deployment#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tty Deployment#tty}
 
 ---
 
@@ -8365,7 +8397,7 @@ VolumeDevice interface{}
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_device Deployment#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_device Deployment#volume_device}
 
 ---
 
@@ -8379,7 +8411,7 @@ VolumeMount interface{}
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_mount Deployment#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_mount Deployment#volume_mount}
 
 ---
 
@@ -8395,7 +8427,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#working_dir Deployment#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#working_dir Deployment#working_dir}
 
 ---
 
@@ -8404,12 +8436,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFrom,
 }
 ```
 
@@ -8433,7 +8465,7 @@ Name *string
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8449,7 +8481,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -8463,7 +8495,7 @@ ValueFrom DeploymentSpecTemplateSpecInitContainerEnvValueFrom
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value_from Deployment#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value_from Deployment#value_from}
 
 ---
 
@@ -8472,12 +8504,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerEnvFromSecretRef,
 }
 ```
 
@@ -8501,7 +8533,7 @@ ConfigMapRef DeploymentSpecTemplateSpecInitContainerEnvFromConfigMapRef
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map_ref Deployment#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map_ref Deployment#config_map_ref}
 
 ---
 
@@ -8515,7 +8547,7 @@ Prefix *string
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#prefix Deployment#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#prefix Deployment#prefix}
 
 ---
 
@@ -8529,7 +8561,7 @@ SecretRef DeploymentSpecTemplateSpecInitContainerEnvFromSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
 
 ---
 
@@ -8538,7 +8570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -8565,7 +8597,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8579,7 +8611,7 @@ Optional interface{}
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -8588,7 +8620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerEnvFromSecretRef {
 	Name: *string,
@@ -8615,7 +8647,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8629,7 +8661,7 @@ Optional interface{}
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -8638,13 +8670,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -8669,7 +8701,7 @@ ConfigMapKeyRef DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyR
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map_key_ref Deployment#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map_key_ref Deployment#config_map_key_ref}
 
 ---
 
@@ -8683,7 +8715,7 @@ FieldRef DeploymentSpecTemplateSpecInitContainerEnvValueFromFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_ref Deployment#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_ref Deployment#field_ref}
 
 ---
 
@@ -8697,7 +8729,7 @@ ResourceFieldRef DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFiel
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
 
 ---
 
@@ -8711,7 +8743,7 @@ SecretKeyRef DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_key_ref Deployment#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_key_ref Deployment#secret_key_ref}
 
 ---
 
@@ -8720,7 +8752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -8749,7 +8781,7 @@ Key *string
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -8763,7 +8795,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8777,7 +8809,7 @@ Optional interface{}
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -8786,7 +8818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -8813,7 +8845,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#api_version Deployment#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#api_version Deployment#api_version}
 
 ---
 
@@ -8827,7 +8859,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_path Deployment#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_path Deployment#field_path}
 
 ---
 
@@ -8836,7 +8868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -8850,8 +8882,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}. |
 
 ---
 
@@ -8865,7 +8897,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource Deployment#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource Deployment#resource}
 
 ---
 
@@ -8877,7 +8909,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}.
 
 ---
 
@@ -8889,7 +8921,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}.
 
 ---
 
@@ -8898,7 +8930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -8927,7 +8959,7 @@ Key *string
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -8941,7 +8973,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8955,7 +8987,7 @@ Optional interface{}
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -8964,7 +8996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecycle {
 	PostStart: interface{},
@@ -8991,7 +9023,7 @@ PostStart interface{}
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#post_start Deployment#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#post_start Deployment#post_start}
 
 ---
 
@@ -9005,7 +9037,7 @@ PreStop interface{}
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pre_stop Deployment#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pre_stop Deployment#pre_stop}
 
 ---
 
@@ -9014,11 +9046,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -9043,7 +9075,7 @@ Exec DeploymentSpecTemplateSpecInitContainerLifecyclePostStartExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -9057,7 +9089,7 @@ HttpGet DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -9071,7 +9103,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -9080,7 +9112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -9107,7 +9139,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -9116,7 +9148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -9149,7 +9181,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -9163,7 +9195,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -9177,7 +9209,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -9193,7 +9225,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9207,7 +9239,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -9216,7 +9248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -9243,7 +9275,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -9257,7 +9289,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -9266,7 +9298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -9293,7 +9325,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9302,11 +9334,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -9331,7 +9363,7 @@ Exec DeploymentSpecTemplateSpecInitContainerLifecyclePreStopExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -9345,7 +9377,7 @@ HttpGet DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -9359,7 +9391,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -9368,7 +9400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -9395,7 +9427,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -9404,7 +9436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -9437,7 +9469,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -9451,7 +9483,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -9465,7 +9497,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -9481,7 +9513,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9495,7 +9527,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -9504,7 +9536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -9531,7 +9563,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -9545,7 +9577,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -9554,7 +9586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -9581,7 +9613,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9590,13 +9622,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -9631,7 +9663,7 @@ Exec DeploymentSpecTemplateSpecInitContainerLivenessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -9645,7 +9677,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -9659,7 +9691,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -9673,7 +9705,7 @@ HttpGet DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -9687,7 +9719,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -9701,7 +9733,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -9715,7 +9747,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -9729,7 +9761,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -9743,7 +9775,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -9752,7 +9784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -9779,7 +9811,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -9788,7 +9820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -9815,7 +9847,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9829,7 +9861,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -9838,7 +9870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -9871,7 +9903,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -9885,7 +9917,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -9899,7 +9931,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -9915,7 +9947,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9929,7 +9961,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -9938,7 +9970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -9965,7 +9997,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -9979,7 +10011,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -9988,7 +10020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -10015,7 +10047,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -10024,7 +10056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerPort {
 	ContainerPort: *f64,
@@ -10059,7 +10091,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_port Deployment#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_port Deployment#container_port}
 
 ---
 
@@ -10073,7 +10105,7 @@ HostIp *string
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_ip Deployment#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_ip Deployment#host_ip}
 
 ---
 
@@ -10089,7 +10121,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_port Deployment#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_port Deployment#host_port}
 
 ---
 
@@ -10105,7 +10137,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -10119,7 +10151,7 @@ Protocol *string
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#protocol Deployment#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#protocol Deployment#protocol}
 
 ---
 
@@ -10128,13 +10160,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -10169,7 +10201,7 @@ Exec DeploymentSpecTemplateSpecInitContainerReadinessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -10183,7 +10215,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -10197,7 +10229,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -10211,7 +10243,7 @@ HttpGet DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -10225,7 +10257,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -10239,7 +10271,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -10253,7 +10285,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -10267,7 +10299,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -10281,7 +10313,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -10290,7 +10322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -10317,7 +10349,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -10326,7 +10358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -10353,7 +10385,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -10367,7 +10399,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -10376,7 +10408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -10409,7 +10441,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -10423,7 +10455,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -10437,7 +10469,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -10453,7 +10485,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -10467,7 +10499,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -10476,7 +10508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -10503,7 +10535,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -10517,7 +10549,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -10526,7 +10558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -10553,7 +10585,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -10562,7 +10594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerResources {
 	Limits: *map[string]*string,
@@ -10589,7 +10621,7 @@ Limits *map[string]*string
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#limits Deployment#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#limits Deployment#limits}
 
 ---
 
@@ -10605,7 +10637,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#requests Deployment#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#requests Deployment#requests}
 
 ---
 
@@ -10614,18 +10646,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -10657,7 +10689,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#allow_privilege_escalation Deployment#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#allow_privilege_escalation Deployment#allow_privilege_escalation}
 
 ---
 
@@ -10671,7 +10703,7 @@ Capabilities DeploymentSpecTemplateSpecInitContainerSecurityContextCapabilities
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#capabilities Deployment#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#capabilities Deployment#capabilities}
 
 ---
 
@@ -10687,7 +10719,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#privileged Deployment#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#privileged Deployment#privileged}
 
 ---
 
@@ -10701,7 +10733,7 @@ ReadOnlyRootFilesystem interface{}
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only_root_filesystem Deployment#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only_root_filesystem Deployment#read_only_root_filesystem}
 
 ---
 
@@ -10717,7 +10749,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
 
 ---
 
@@ -10733,7 +10765,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
 
 ---
 
@@ -10749,7 +10781,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
 
 ---
 
@@ -10763,7 +10795,7 @@ SeccompProfile DeploymentSpecTemplateSpecInitContainerSecurityContextSeccompProf
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
 
 ---
 
@@ -10777,7 +10809,7 @@ SeLinuxOptions DeploymentSpecTemplateSpecInitContainerSecurityContextSeLinuxOpti
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
 
 ---
 
@@ -10786,7 +10818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -10813,7 +10845,7 @@ Add *[]*string
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#add Deployment#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#add Deployment#add}
 
 ---
 
@@ -10827,7 +10859,7 @@ Drop *[]*string
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#drop Deployment#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#drop Deployment#drop}
 
 ---
 
@@ -10836,7 +10868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -10865,7 +10897,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
 
 ---
 
@@ -10879,7 +10911,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -10888,7 +10920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -10919,7 +10951,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#level Deployment#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#level Deployment#level}
 
 ---
 
@@ -10933,7 +10965,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#role Deployment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#role Deployment#role}
 
 ---
 
@@ -10947,7 +10979,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -10961,7 +10993,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#user Deployment#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#user Deployment#user}
 
 ---
 
@@ -10970,13 +11002,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -11011,7 +11043,7 @@ Exec DeploymentSpecTemplateSpecInitContainerStartupProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -11025,7 +11057,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -11039,7 +11071,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -11053,7 +11085,7 @@ HttpGet DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -11067,7 +11099,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -11081,7 +11113,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -11095,7 +11127,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -11109,7 +11141,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -11123,7 +11155,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -11132,7 +11164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeExec {
 	Command: *[]*string,
@@ -11159,7 +11191,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -11168,7 +11200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeGrpc {
 	Port: *f64,
@@ -11195,7 +11227,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -11209,7 +11241,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -11218,7 +11250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGet {
 	Host: *string,
@@ -11251,7 +11283,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -11265,7 +11297,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -11279,7 +11311,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -11295,7 +11327,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -11309,7 +11341,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -11318,7 +11350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -11345,7 +11377,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -11359,7 +11391,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -11368,7 +11400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -11395,7 +11427,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -11404,7 +11436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerVolumeDevice {
 	DevicePath: *string,
@@ -11431,7 +11463,7 @@ DevicePath *string
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#device_path Deployment#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#device_path Deployment#device_path}
 
 ---
 
@@ -11445,7 +11477,7 @@ Name *string
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -11454,7 +11486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecInitContainerVolumeMount {
 	MountPath: *string,
@@ -11489,7 +11521,7 @@ MountPath *string
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mount_path Deployment#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mount_path Deployment#mount_path}
 
 ---
 
@@ -11503,7 +11535,7 @@ Name *string
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -11519,7 +11551,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mount_propagation Deployment#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mount_propagation Deployment#mount_propagation}
 
 ---
 
@@ -11533,7 +11565,7 @@ ReadOnly interface{}
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -11547,7 +11579,7 @@ SubPath *string
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sub_path Deployment#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sub_path Deployment#sub_path}
 
 ---
 
@@ -11561,7 +11593,7 @@ SubPathExpr *string
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sub_path_expr Deployment#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sub_path_expr Deployment#sub_path_expr}
 
 ---
 
@@ -11570,7 +11602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecOs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecOs {
 	Name: *string,
@@ -11595,7 +11627,7 @@ Name *string
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -11604,7 +11636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecReadinessGate {
 	ConditionType: *string,
@@ -11629,7 +11661,7 @@ ConditionType *string
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#condition_type Deployment#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#condition_type Deployment#condition_type}
 
 ---
 
@@ -11638,7 +11670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecSecurityContext {
 	FsGroup: *string,
@@ -11646,11 +11678,11 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecSecurityContextSeLinuxOptions,
 	SupplementalGroups: *[]*f64,
 	Sysctl: interface{},
-	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecSecurityContextWindowsOptions,
+	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecSecurityContextWindowsOptions,
 }
 ```
 
@@ -11683,7 +11715,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_group Deployment#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_group Deployment#fs_group}
 
 ---
 
@@ -11699,7 +11731,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_group_change_policy Deployment#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_group_change_policy Deployment#fs_group_change_policy}
 
 ---
 
@@ -11715,7 +11747,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
 
 ---
 
@@ -11731,7 +11763,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
 
 ---
 
@@ -11747,7 +11779,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
 
 ---
 
@@ -11761,7 +11793,7 @@ SeccompProfile DeploymentSpecTemplateSpecSecurityContextSeccompProfile
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
 
 ---
 
@@ -11775,7 +11807,7 @@ SeLinuxOptions DeploymentSpecTemplateSpecSecurityContextSeLinuxOptions
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
 
 ---
 
@@ -11791,7 +11823,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#supplemental_groups Deployment#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#supplemental_groups Deployment#supplemental_groups}
 
 ---
 
@@ -11805,7 +11837,7 @@ Sysctl interface{}
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sysctl Deployment#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sysctl Deployment#sysctl}
 
 ---
 
@@ -11819,7 +11851,7 @@ WindowsOptions DeploymentSpecTemplateSpecSecurityContextWindowsOptions
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#windows_options Deployment#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#windows_options Deployment#windows_options}
 
 ---
 
@@ -11828,7 +11860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -11857,7 +11889,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
 
 ---
 
@@ -11871,7 +11903,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -11880,7 +11912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -11911,7 +11943,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#level Deployment#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#level Deployment#level}
 
 ---
 
@@ -11925,7 +11957,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#role Deployment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#role Deployment#role}
 
 ---
 
@@ -11939,7 +11971,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -11953,7 +11985,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#user Deployment#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#user Deployment#user}
 
 ---
 
@@ -11962,7 +11994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSysctl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecSecurityContextSysctl {
 	Name: *string,
@@ -11989,7 +12021,7 @@ Name *string
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -12003,7 +12035,7 @@ Value *string
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -12012,7 +12044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextWindowsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecSecurityContextWindowsOptions {
 	GmsaCredentialSpec: *string,
@@ -12043,7 +12075,7 @@ GmsaCredentialSpec *string
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#gmsa_credential_spec Deployment#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#gmsa_credential_spec Deployment#gmsa_credential_spec}
 
 ---
 
@@ -12057,7 +12089,7 @@ GmsaCredentialSpecName *string
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#gmsa_credential_spec_name Deployment#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#gmsa_credential_spec_name Deployment#gmsa_credential_spec_name}
 
 ---
 
@@ -12071,7 +12103,7 @@ HostProcess interface{}
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_process Deployment#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_process Deployment#host_process}
 
 ---
 
@@ -12087,7 +12119,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_username Deployment#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_username Deployment#run_as_username}
 
 ---
 
@@ -12096,7 +12128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecToleration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecToleration {
 	Effect: *string,
@@ -12131,7 +12163,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#effect Deployment#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#effect Deployment#effect}
 
 ---
 
@@ -12147,7 +12179,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -12163,7 +12195,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -12179,7 +12211,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#toleration_seconds Deployment#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#toleration_seconds Deployment#toleration_seconds}
 
 ---
 
@@ -12195,7 +12227,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -12204,7 +12236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecTopologySpreadConstraint {
 	LabelSelector: interface{},
@@ -12243,7 +12275,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#label_selector Deployment#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#label_selector Deployment#label_selector}
 
 ---
 
@@ -12257,7 +12289,7 @@ MatchLabelKeys *[]*string
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_label_keys Deployment#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_label_keys Deployment#match_label_keys}
 
 ---
 
@@ -12271,7 +12303,7 @@ MaxSkew *f64
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#max_skew Deployment#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#max_skew Deployment#max_skew}
 
 ---
 
@@ -12285,7 +12317,7 @@ MinDomains *f64
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#min_domains Deployment#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#min_domains Deployment#min_domains}
 
 ---
 
@@ -12299,7 +12331,7 @@ NodeAffinityPolicy *string
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_affinity_policy Deployment#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_affinity_policy Deployment#node_affinity_policy}
 
 ---
 
@@ -12313,7 +12345,7 @@ NodeTaintsPolicy *string
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_taints_policy Deployment#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_taints_policy Deployment#node_taints_policy}
 
 ---
 
@@ -12329,7 +12361,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_key Deployment#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_key Deployment#topology_key}
 
 ---
 
@@ -12343,7 +12375,7 @@ WhenUnsatisfiable *string
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#when_unsatisfiable Deployment#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#when_unsatisfiable Deployment#when_unsatisfiable}
 
 ---
 
@@ -12352,7 +12384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelector {
 	MatchExpressions: interface{},
@@ -12379,7 +12411,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -12395,7 +12427,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -12404,7 +12436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions {
 	Key: *string,
@@ -12433,7 +12465,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -12447,7 +12479,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -12463,7 +12495,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -12472,37 +12504,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolume {
-	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeAwsElasticBlockStore,
-	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeAzureDisk,
-	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeAzureFile,
-	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeCephFs,
-	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeCinder,
-	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeConfigMap,
-	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeCsi,
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeDownwardApi,
-	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeEmptyDir,
-	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeEphemeral,
-	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeFc,
-	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeFlexVolume,
-	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeFlocker,
-	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeGcePersistentDisk,
-	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeGitRepo,
-	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeGlusterfs,
-	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeHostPath,
-	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeIscsi,
-	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeLocal,
+	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeAwsElasticBlockStore,
+	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeAzureDisk,
+	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeAzureFile,
+	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeCephFs,
+	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeCinder,
+	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeConfigMap,
+	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeCsi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeDownwardApi,
+	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeEmptyDir,
+	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeEphemeral,
+	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeFc,
+	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeFlexVolume,
+	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeFlocker,
+	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeGcePersistentDisk,
+	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeGitRepo,
+	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeGlusterfs,
+	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeHostPath,
+	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeIscsi,
+	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeLocal,
 	Name: *string,
-	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeNfs,
-	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumePersistentVolumeClaim,
-	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumePhotonPersistentDisk,
+	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeNfs,
+	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumePersistentVolumeClaim,
+	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumePhotonPersistentDisk,
 	Projected: interface{},
-	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeQuobyte,
-	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeRbd,
-	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeSecret,
-	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeVsphereVolume,
+	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeQuobyte,
+	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeRbd,
+	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeSecret,
+	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeVsphereVolume,
 }
 ```
 
@@ -12551,7 +12583,7 @@ AwsElasticBlockStore DeploymentSpecTemplateSpecVolumeAwsElasticBlockStore
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#aws_elastic_block_store Deployment#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#aws_elastic_block_store Deployment#aws_elastic_block_store}
 
 ---
 
@@ -12565,7 +12597,7 @@ AzureDisk DeploymentSpecTemplateSpecVolumeAzureDisk
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#azure_disk Deployment#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#azure_disk Deployment#azure_disk}
 
 ---
 
@@ -12579,7 +12611,7 @@ AzureFile DeploymentSpecTemplateSpecVolumeAzureFile
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#azure_file Deployment#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#azure_file Deployment#azure_file}
 
 ---
 
@@ -12593,7 +12625,7 @@ CephFs DeploymentSpecTemplateSpecVolumeCephFs
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#ceph_fs Deployment#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#ceph_fs Deployment#ceph_fs}
 
 ---
 
@@ -12607,7 +12639,7 @@ Cinder DeploymentSpecTemplateSpecVolumeCinder
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#cinder Deployment#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#cinder Deployment#cinder}
 
 ---
 
@@ -12621,7 +12653,7 @@ ConfigMap DeploymentSpecTemplateSpecVolumeConfigMap
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map Deployment#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map Deployment#config_map}
 
 ---
 
@@ -12635,7 +12667,7 @@ Csi DeploymentSpecTemplateSpecVolumeCsi
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#csi Deployment#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#csi Deployment#csi}
 
 ---
 
@@ -12649,7 +12681,7 @@ DownwardApi DeploymentSpecTemplateSpecVolumeDownwardApi
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#downward_api Deployment#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#downward_api Deployment#downward_api}
 
 ---
 
@@ -12663,7 +12695,7 @@ EmptyDir DeploymentSpecTemplateSpecVolumeEmptyDir
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#empty_dir Deployment#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#empty_dir Deployment#empty_dir}
 
 ---
 
@@ -12677,7 +12709,7 @@ Ephemeral DeploymentSpecTemplateSpecVolumeEphemeral
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#ephemeral Deployment#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#ephemeral Deployment#ephemeral}
 
 ---
 
@@ -12691,7 +12723,7 @@ Fc DeploymentSpecTemplateSpecVolumeFc
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fc Deployment#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fc Deployment#fc}
 
 ---
 
@@ -12705,7 +12737,7 @@ FlexVolume DeploymentSpecTemplateSpecVolumeFlexVolume
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#flex_volume Deployment#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#flex_volume Deployment#flex_volume}
 
 ---
 
@@ -12719,7 +12751,7 @@ Flocker DeploymentSpecTemplateSpecVolumeFlocker
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#flocker Deployment#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#flocker Deployment#flocker}
 
 ---
 
@@ -12733,7 +12765,7 @@ GcePersistentDisk DeploymentSpecTemplateSpecVolumeGcePersistentDisk
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#gce_persistent_disk Deployment#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#gce_persistent_disk Deployment#gce_persistent_disk}
 
 ---
 
@@ -12747,7 +12779,7 @@ GitRepo DeploymentSpecTemplateSpecVolumeGitRepo
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#git_repo Deployment#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#git_repo Deployment#git_repo}
 
 ---
 
@@ -12761,7 +12793,7 @@ Glusterfs DeploymentSpecTemplateSpecVolumeGlusterfs
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#glusterfs Deployment#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#glusterfs Deployment#glusterfs}
 
 ---
 
@@ -12775,7 +12807,7 @@ HostPath DeploymentSpecTemplateSpecVolumeHostPath
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_path Deployment#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_path Deployment#host_path}
 
 ---
 
@@ -12789,7 +12821,7 @@ Iscsi DeploymentSpecTemplateSpecVolumeIscsi
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#iscsi Deployment#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#iscsi Deployment#iscsi}
 
 ---
 
@@ -12803,7 +12835,7 @@ Local DeploymentSpecTemplateSpecVolumeLocal
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#local Deployment#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#local Deployment#local}
 
 ---
 
@@ -12817,7 +12849,7 @@ Name *string
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -12831,7 +12863,7 @@ Nfs DeploymentSpecTemplateSpecVolumeNfs
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#nfs Deployment#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#nfs Deployment#nfs}
 
 ---
 
@@ -12845,7 +12877,7 @@ PersistentVolumeClaim DeploymentSpecTemplateSpecVolumePersistentVolumeClaim
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#persistent_volume_claim Deployment#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#persistent_volume_claim Deployment#persistent_volume_claim}
 
 ---
 
@@ -12859,7 +12891,7 @@ PhotonPersistentDisk DeploymentSpecTemplateSpecVolumePhotonPersistentDisk
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#photon_persistent_disk Deployment#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#photon_persistent_disk Deployment#photon_persistent_disk}
 
 ---
 
@@ -12873,7 +12905,7 @@ Projected interface{}
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#projected Deployment#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#projected Deployment#projected}
 
 ---
 
@@ -12887,7 +12919,7 @@ Quobyte DeploymentSpecTemplateSpecVolumeQuobyte
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#quobyte Deployment#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#quobyte Deployment#quobyte}
 
 ---
 
@@ -12901,7 +12933,7 @@ Rbd DeploymentSpecTemplateSpecVolumeRbd
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#rbd Deployment#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#rbd Deployment#rbd}
 
 ---
 
@@ -12915,7 +12947,7 @@ Secret DeploymentSpecTemplateSpecVolumeSecret
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret Deployment#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret Deployment#secret}
 
 ---
 
@@ -12929,7 +12961,7 @@ VsphereVolume DeploymentSpecTemplateSpecVolumeVsphereVolume
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#vsphere_volume Deployment#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#vsphere_volume Deployment#vsphere_volume}
 
 ---
 
@@ -12938,7 +12970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeAwsElasticBlockStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeAwsElasticBlockStore {
 	VolumeId: *string,
@@ -12969,7 +13001,7 @@ VolumeId *string
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_id Deployment#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_id Deployment#volume_id}
 
 ---
 
@@ -12985,7 +13017,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -13001,7 +13033,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#partition Deployment#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#partition Deployment#partition}
 
 ---
 
@@ -13015,7 +13047,7 @@ ReadOnly interface{}
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13024,7 +13056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeAzureDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeAzureDisk {
 	CachingMode: *string,
@@ -13059,7 +13091,7 @@ CachingMode *string
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#caching_mode Deployment#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#caching_mode Deployment#caching_mode}
 
 ---
 
@@ -13073,7 +13105,7 @@ DataDiskUri *string
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#data_disk_uri Deployment#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#data_disk_uri Deployment#data_disk_uri}
 
 ---
 
@@ -13087,7 +13119,7 @@ DiskName *string
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#disk_name Deployment#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#disk_name Deployment#disk_name}
 
 ---
 
@@ -13103,7 +13135,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -13117,7 +13149,7 @@ Kind *string
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#kind Deployment#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#kind Deployment#kind}
 
 ---
 
@@ -13131,7 +13163,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13140,7 +13172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeAzureFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeAzureFile {
 	SecretName: *string,
@@ -13171,7 +13203,7 @@ SecretName *string
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_name Deployment#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_name Deployment#secret_name}
 
 ---
 
@@ -13185,7 +13217,7 @@ ShareName *string
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#share_name Deployment#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#share_name Deployment#share_name}
 
 ---
 
@@ -13199,7 +13231,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13215,7 +13247,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_namespace Deployment#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_namespace Deployment#secret_namespace}
 
 ---
 
@@ -13224,14 +13256,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCephFs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeCephFs {
 	Monitors: *[]*string,
 	Path: *string,
 	ReadOnly: interface{},
 	SecretFile: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeCephFsSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeCephFsSecretRef,
 	User: *string,
 }
 ```
@@ -13259,7 +13291,7 @@ Monitors *[]*string
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#monitors Deployment#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#monitors Deployment#monitors}
 
 ---
 
@@ -13273,7 +13305,7 @@ Path *string
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -13287,7 +13319,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13301,7 +13333,7 @@ SecretFile *string
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_file Deployment#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_file Deployment#secret_file}
 
 ---
 
@@ -13315,7 +13347,7 @@ SecretRef DeploymentSpecTemplateSpecVolumeCephFsSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
 
 ---
 
@@ -13329,7 +13361,7 @@ User *string
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#user Deployment#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#user Deployment#user}
 
 ---
 
@@ -13338,7 +13370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCephFsSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeCephFsSecretRef {
 	Name: *string,
@@ -13365,7 +13397,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -13379,7 +13411,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace Deployment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace Deployment#namespace}
 
 ---
 
@@ -13388,7 +13420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCinder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeCinder {
 	VolumeId: *string,
@@ -13417,7 +13449,7 @@ VolumeId *string
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_id Deployment#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_id Deployment#volume_id}
 
 ---
 
@@ -13433,7 +13465,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -13447,7 +13479,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13456,7 +13488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeConfigMap {
 	DefaultMode: *string,
@@ -13489,7 +13521,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#default_mode Deployment#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#default_mode Deployment#default_mode}
 
 ---
 
@@ -13503,7 +13535,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -13517,7 +13549,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -13531,7 +13563,7 @@ Optional interface{}
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -13540,7 +13572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeConfigMapItems {
 	Key: *string,
@@ -13569,7 +13601,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -13585,7 +13617,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -13601,7 +13633,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -13610,12 +13642,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeCsi {
 	Driver: *string,
 	FsType: *string,
-	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRef,
+	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRef,
 	ReadOnly: interface{},
 	VolumeAttributes: *map[string]*string,
 }
@@ -13643,7 +13675,7 @@ Driver *string
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#driver Deployment#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#driver Deployment#driver}
 
 ---
 
@@ -13659,7 +13691,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -13673,7 +13705,7 @@ NodePublishSecretRef DeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRef
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_publish_secret_ref Deployment#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_publish_secret_ref Deployment#node_publish_secret_ref}
 
 ---
 
@@ -13687,7 +13719,7 @@ ReadOnly interface{}
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13701,7 +13733,7 @@ VolumeAttributes *map[string]*string
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_attributes Deployment#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_attributes Deployment#volume_attributes}
 
 ---
 
@@ -13710,7 +13742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRef {
 	Name: *string,
@@ -13735,7 +13767,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -13744,7 +13776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeDownwardApi {
 	DefaultMode: *string,
@@ -13773,7 +13805,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#default_mode Deployment#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#default_mode Deployment#default_mode}
 
 ---
 
@@ -13787,7 +13819,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -13796,13 +13828,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItems {
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRef,
 	Path: *string,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -13827,7 +13859,7 @@ FieldRef DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_ref Deployment#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_ref Deployment#field_ref}
 
 ---
 
@@ -13843,7 +13875,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -13859,7 +13891,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -13873,7 +13905,7 @@ ResourceFieldRef DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRe
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
 
 ---
 
@@ -13882,7 +13914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -13909,7 +13941,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#api_version Deployment#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#api_version Deployment#api_version}
 
 ---
 
@@ -13923,7 +13955,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_path Deployment#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_path Deployment#field_path}
 
 ---
 
@@ -13932,7 +13964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -13945,9 +13977,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}. |
 
 ---
 
@@ -13959,7 +13991,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}.
 
 ---
 
@@ -13973,7 +14005,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource Deployment#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource Deployment#resource}
 
 ---
 
@@ -13985,7 +14017,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}.
 
 ---
 
@@ -13994,7 +14026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeEmptyDir {
 	Medium: *string,
@@ -14023,7 +14055,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#medium Deployment#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#medium Deployment#medium}
 
 ---
 
@@ -14037,7 +14069,7 @@ SizeLimit *string
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#size_limit Deployment#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#size_limit Deployment#size_limit}
 
 ---
 
@@ -14046,10 +14078,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeral.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeEphemeral {
-	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
+	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
 }
 ```
 
@@ -14071,7 +14103,7 @@ VolumeClaimTemplate DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_claim_template Deployment#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_claim_template Deployment#volume_claim_template}
 
 ---
 
@@ -14080,11 +14112,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate {
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
 }
 ```
 
@@ -14107,7 +14139,7 @@ Spec DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#spec Deployment#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#spec Deployment#spec}
 
 ---
 
@@ -14121,7 +14153,7 @@ Metadata DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#metadata Deployment#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#metadata Deployment#metadata}
 
 ---
 
@@ -14130,7 +14162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -14159,7 +14191,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#annotations Deployment#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#annotations Deployment#annotations}
 
 ---
 
@@ -14175,7 +14207,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#labels Deployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#labels Deployment#labels}
 
 ---
 
@@ -14184,12 +14216,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec {
 	AccessModes: *[]*string,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
 	StorageClassName: *string,
 	VolumeMode: *string,
 	VolumeName: *string,
@@ -14219,7 +14251,7 @@ AccessModes *[]*string
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#access_modes Deployment#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#access_modes Deployment#access_modes}
 
 ---
 
@@ -14233,7 +14265,7 @@ Resources DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResour
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resources Deployment#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resources Deployment#resources}
 
 ---
 
@@ -14247,7 +14279,7 @@ Selector DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelecto
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#selector Deployment#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#selector Deployment#selector}
 
 ---
 
@@ -14261,7 +14293,7 @@ StorageClassName *string
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#storage_class_name Deployment#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#storage_class_name Deployment#storage_class_name}
 
 ---
 
@@ -14275,7 +14307,7 @@ VolumeMode *string
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_mode Deployment#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_mode Deployment#volume_mode}
 
 ---
 
@@ -14289,7 +14321,7 @@ VolumeName *string
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_name Deployment#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_name Deployment#volume_name}
 
 ---
 
@@ -14298,7 +14330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources {
 	Limits: *map[string]*string,
@@ -14325,7 +14357,7 @@ Limits *map[string]*string
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#limits Deployment#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#limits Deployment#limits}
 
 ---
 
@@ -14341,7 +14373,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#requests Deployment#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#requests Deployment#requests}
 
 ---
 
@@ -14350,7 +14382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector {
 	MatchExpressions: interface{},
@@ -14377,7 +14409,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -14393,7 +14425,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -14402,7 +14434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions {
 	Key: *string,
@@ -14431,7 +14463,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -14445,7 +14477,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -14461,7 +14493,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -14470,7 +14502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeFc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeFc {
 	Lun: *f64,
@@ -14501,7 +14533,7 @@ Lun *f64
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#lun Deployment#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#lun Deployment#lun}
 
 ---
 
@@ -14515,7 +14547,7 @@ TargetWwNs *[]*string
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#target_ww_ns Deployment#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#target_ww_ns Deployment#target_ww_ns}
 
 ---
 
@@ -14531,7 +14563,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -14545,7 +14577,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -14554,14 +14586,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeFlexVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeFlexVolume {
 	Driver: *string,
 	FsType: *string,
 	Options: *map[string]*string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRef,
 }
 ```
 
@@ -14587,7 +14619,7 @@ Driver *string
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#driver Deployment#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#driver Deployment#driver}
 
 ---
 
@@ -14603,7 +14635,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -14617,7 +14649,7 @@ Options *map[string]*string
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#options Deployment#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#options Deployment#options}
 
 ---
 
@@ -14631,7 +14663,7 @@ ReadOnly interface{}
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -14645,7 +14677,7 @@ SecretRef DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
 
 ---
 
@@ -14654,7 +14686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRef {
 	Name: *string,
@@ -14681,7 +14713,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -14695,7 +14727,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace Deployment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace Deployment#namespace}
 
 ---
 
@@ -14704,7 +14736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeFlocker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeFlocker {
 	DatasetName: *string,
@@ -14731,7 +14763,7 @@ DatasetName *string
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#dataset_name Deployment#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#dataset_name Deployment#dataset_name}
 
 ---
 
@@ -14745,7 +14777,7 @@ DatasetUuid *string
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#dataset_uuid Deployment#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#dataset_uuid Deployment#dataset_uuid}
 
 ---
 
@@ -14754,7 +14786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGcePersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeGcePersistentDisk {
 	PdName: *string,
@@ -14785,7 +14817,7 @@ PdName *string
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pd_name Deployment#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pd_name Deployment#pd_name}
 
 ---
 
@@ -14801,7 +14833,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -14817,7 +14849,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#partition Deployment#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#partition Deployment#partition}
 
 ---
 
@@ -14831,7 +14863,7 @@ ReadOnly interface{}
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -14840,7 +14872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGitRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeGitRepo {
 	Directory: *string,
@@ -14871,7 +14903,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#directory Deployment#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#directory Deployment#directory}
 
 ---
 
@@ -14885,7 +14917,7 @@ Repository *string
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#repository Deployment#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#repository Deployment#repository}
 
 ---
 
@@ -14899,7 +14931,7 @@ Revision *string
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#revision Deployment#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#revision Deployment#revision}
 
 ---
 
@@ -14908,7 +14940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGlusterfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeGlusterfs {
 	EndpointsName: *string,
@@ -14937,7 +14969,7 @@ EndpointsName *string
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#endpoints_name Deployment#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#endpoints_name Deployment#endpoints_name}
 
 ---
 
@@ -14951,7 +14983,7 @@ Path *string
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -14965,7 +14997,7 @@ ReadOnly interface{}
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -14974,7 +15006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeHostPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeHostPath {
 	Path: *string,
@@ -15001,7 +15033,7 @@ Path *string
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15015,7 +15047,7 @@ Type *string
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -15024,7 +15056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeIscsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeIscsi {
 	Iqn: *string,
@@ -15059,7 +15091,7 @@ Iqn *string
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#iqn Deployment#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#iqn Deployment#iqn}
 
 ---
 
@@ -15075,7 +15107,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#target_portal Deployment#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#target_portal Deployment#target_portal}
 
 ---
 
@@ -15091,7 +15123,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -15105,7 +15137,7 @@ IscsiInterface *string
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#iscsi_interface Deployment#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#iscsi_interface Deployment#iscsi_interface}
 
 ---
 
@@ -15119,7 +15151,7 @@ Lun *f64
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#lun Deployment#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#lun Deployment#lun}
 
 ---
 
@@ -15133,7 +15165,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -15142,7 +15174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeLocal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeLocal {
 	Path: *string,
@@ -15167,7 +15199,7 @@ Path *string
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15176,7 +15208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeNfs {
 	Path: *string,
@@ -15205,7 +15237,7 @@ Path *string
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15219,7 +15251,7 @@ Server *string
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#server Deployment#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#server Deployment#server}
 
 ---
 
@@ -15233,7 +15265,7 @@ ReadOnly interface{}
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -15242,7 +15274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumePersistentVolumeClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumePersistentVolumeClaim {
 	ClaimName: *string,
@@ -15269,7 +15301,7 @@ ClaimName *string
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#claim_name Deployment#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#claim_name Deployment#claim_name}
 
 ---
 
@@ -15283,7 +15315,7 @@ ReadOnly interface{}
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -15292,7 +15324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumePhotonPersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumePhotonPersistentDisk {
 	PdId: *string,
@@ -15319,7 +15351,7 @@ PdId *string
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pd_id Deployment#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pd_id Deployment#pd_id}
 
 ---
 
@@ -15335,7 +15367,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -15344,7 +15376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjected.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjected {
 	Sources: interface{},
@@ -15371,7 +15403,7 @@ Sources interface{}
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sources Deployment#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sources Deployment#sources}
 
 ---
 
@@ -15387,7 +15419,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#default_mode Deployment#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#default_mode Deployment#default_mode}
 
 ---
 
@@ -15396,13 +15428,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjectedSources {
 	ConfigMap: interface{},
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApi,
 	Secret: interface{},
-	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
+	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
 }
 ```
 
@@ -15427,7 +15459,7 @@ ConfigMap interface{}
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map Deployment#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map Deployment#config_map}
 
 ---
 
@@ -15441,7 +15473,7 @@ DownwardApi DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApi
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#downward_api Deployment#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#downward_api Deployment#downward_api}
 
 ---
 
@@ -15455,7 +15487,7 @@ Secret interface{}
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret Deployment#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret Deployment#secret}
 
 ---
 
@@ -15469,7 +15501,7 @@ ServiceAccountToken DeploymentSpecTemplateSpecVolumeProjectedSourcesServiceAccou
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service_account_token Deployment#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service_account_token Deployment#service_account_token}
 
 ---
 
@@ -15478,7 +15510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMap {
 	Items: interface{},
@@ -15507,7 +15539,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -15521,7 +15553,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -15535,7 +15567,7 @@ Optional interface{}
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -15544,7 +15576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItems {
 	Key: *string,
@@ -15573,7 +15605,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -15589,7 +15621,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -15605,7 +15637,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15614,7 +15646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApi {
 	Items: interface{},
@@ -15639,7 +15671,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -15648,13 +15680,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems {
 	Path: *string,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -15681,7 +15713,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15695,7 +15727,7 @@ FieldRef DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRe
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_ref Deployment#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_ref Deployment#field_ref}
 
 ---
 
@@ -15711,7 +15743,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -15725,7 +15757,7 @@ ResourceFieldRef DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItem
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
 
 ---
 
@@ -15734,7 +15766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -15761,7 +15793,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#api_version Deployment#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#api_version Deployment#api_version}
 
 ---
 
@@ -15775,7 +15807,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_path Deployment#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_path Deployment#field_path}
 
 ---
 
@@ -15784,7 +15816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -15797,9 +15829,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}. |
 
 ---
 
@@ -15811,7 +15843,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}.
 
 ---
 
@@ -15825,7 +15857,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource Deployment#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource Deployment#resource}
 
 ---
 
@@ -15837,7 +15869,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}.
 
 ---
 
@@ -15846,7 +15878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesSecret {
 	Items: interface{},
@@ -15875,7 +15907,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -15889,7 +15921,7 @@ Name *string
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -15903,7 +15935,7 @@ Optional interface{}
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -15912,7 +15944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretItems {
 	Key: *string,
@@ -15941,7 +15973,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -15957,7 +15989,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -15973,7 +16005,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15982,7 +16014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken {
 	Path: *string,
@@ -16011,7 +16043,7 @@ Path *string
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -16025,7 +16057,7 @@ Audience *string
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#audience Deployment#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#audience Deployment#audience}
 
 ---
 
@@ -16041,7 +16073,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#expiration_seconds Deployment#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#expiration_seconds Deployment#expiration_seconds}
 
 ---
 
@@ -16050,7 +16082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeQuobyte.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeQuobyte {
 	Registry: *string,
@@ -16083,7 +16115,7 @@ Registry *string
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#registry Deployment#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#registry Deployment#registry}
 
 ---
 
@@ -16097,7 +16129,7 @@ Volume *string
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume Deployment#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume Deployment#volume}
 
 ---
 
@@ -16111,7 +16143,7 @@ Group *string
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#group Deployment#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#group Deployment#group}
 
 ---
 
@@ -16125,7 +16157,7 @@ ReadOnly interface{}
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -16139,7 +16171,7 @@ User *string
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#user Deployment#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#user Deployment#user}
 
 ---
 
@@ -16148,7 +16180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeRbd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeRbd {
 	CephMonitors: *[]*string,
@@ -16158,7 +16190,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 	RadosUser: *string,
 	RbdPool: *string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.deployment.DeploymentSpecTemplateSpecVolumeRbdSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.deployment.DeploymentSpecTemplateSpecVolumeRbdSecretRef,
 }
 ```
 
@@ -16187,7 +16219,7 @@ CephMonitors *[]*string
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#ceph_monitors Deployment#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#ceph_monitors Deployment#ceph_monitors}
 
 ---
 
@@ -16201,7 +16233,7 @@ RbdImage *string
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#rbd_image Deployment#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#rbd_image Deployment#rbd_image}
 
 ---
 
@@ -16217,7 +16249,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -16231,7 +16263,7 @@ Keyring *string
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#keyring Deployment#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#keyring Deployment#keyring}
 
 ---
 
@@ -16245,7 +16277,7 @@ RadosUser *string
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#rados_user Deployment#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#rados_user Deployment#rados_user}
 
 ---
 
@@ -16259,7 +16291,7 @@ RbdPool *string
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#rbd_pool Deployment#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#rbd_pool Deployment#rbd_pool}
 
 ---
 
@@ -16273,7 +16305,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -16287,7 +16319,7 @@ SecretRef DeploymentSpecTemplateSpecVolumeRbdSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
 
 ---
 
@@ -16296,7 +16328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeRbdSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeRbdSecretRef {
 	Name: *string,
@@ -16323,7 +16355,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -16337,7 +16369,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace Deployment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace Deployment#namespace}
 
 ---
 
@@ -16346,7 +16378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeSecret {
 	DefaultMode: *string,
@@ -16379,7 +16411,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#default_mode Deployment#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#default_mode Deployment#default_mode}
 
 ---
 
@@ -16393,7 +16425,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -16407,7 +16439,7 @@ Optional interface{}
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -16421,7 +16453,7 @@ SecretName *string
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_name Deployment#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_name Deployment#secret_name}
 
 ---
 
@@ -16430,7 +16462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeSecretItems {
 	Key: *string,
@@ -16459,7 +16491,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -16475,7 +16507,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -16491,7 +16523,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -16500,7 +16532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeVsphereVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentSpecTemplateSpecVolumeVsphereVolume {
 	VolumePath: *string,
@@ -16527,7 +16559,7 @@ VolumePath *string
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_path Deployment#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_path Deployment#volume_path}
 
 ---
 
@@ -16543,7 +16575,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -16552,7 +16584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 &deployment.DeploymentTimeouts {
 	Create: *string,
@@ -16565,9 +16597,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#create Deployment#create}. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#delete Deployment#delete}. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#update Deployment#update}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#create Deployment#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#delete Deployment#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#update Deployment#update}. |
 
 ---
 
@@ -16579,7 +16611,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#create Deployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#create Deployment#create}.
 
 ---
 
@@ -16591,7 +16623,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#delete Deployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#delete Deployment#delete}.
 
 ---
 
@@ -16603,7 +16635,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#update Deployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#update Deployment#update}.
 
 ---
 
@@ -16614,7 +16646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentMetadataOutputReference
 ```
@@ -17041,7 +17073,7 @@ func InternalValue() DeploymentMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecOutputReference
 ```
@@ -17554,7 +17586,7 @@ func InternalValue() DeploymentSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecSelectorMatchExpressionsList
 ```
@@ -17714,7 +17746,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecSelectorMatchExpressionsOutputReference
 ```
@@ -18068,7 +18100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecSelectorOutputReference
 ```
@@ -18388,7 +18420,7 @@ func InternalValue() DeploymentSpecSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecStrategyOutputReference
 ```
@@ -18708,7 +18740,7 @@ func InternalValue() DeploymentSpecStrategy
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecStrategyRollingUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecStrategyRollingUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecStrategyRollingUpdateOutputReference
 ```
@@ -19015,7 +19047,7 @@ func InternalValue() DeploymentSpecStrategyRollingUpdate
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateMetadataOutputReference
 ```
@@ -19442,7 +19474,7 @@ func InternalValue() DeploymentSpecTemplateMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateOutputReference
 ```
@@ -19761,7 +19793,7 @@ func InternalValue() DeploymentSpecTemplate
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecAffinityNodeAffinityOutputReference
 ```
@@ -20094,7 +20126,7 @@ func InternalValue() DeploymentSpecTemplateSpecAffinityNodeAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -20254,7 +20286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -20578,7 +20610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList
 ```
@@ -20738,7 +20770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference
 ```
@@ -21092,7 +21124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList
 ```
@@ -21252,7 +21284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference
 ```
@@ -21592,7 +21624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference
 ```
@@ -21925,7 +21957,7 @@ func InternalValue() DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuri
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList
 ```
@@ -22085,7 +22117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList
 ```
@@ -22245,7 +22277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference
 ```
@@ -22599,7 +22631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
 ```
@@ -22759,7 +22791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference
 ```
@@ -23099,7 +23131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference
 ```
@@ -23450,7 +23482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -23741,7 +23773,7 @@ func InternalValue() DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDurin
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecAffinityOutputReference
 ```
@@ -24116,7 +24148,7 @@ func InternalValue() DeploymentSpecTemplateSpecAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecAffinityPodAffinityOutputReference
 ```
@@ -24449,7 +24481,7 @@ func InternalValue() DeploymentSpecTemplateSpecAffinityPodAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -24609,7 +24641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -24933,7 +24965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -25093,7 +25125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -25253,7 +25285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -25607,7 +25639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -25945,7 +25977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -26105,7 +26137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -26265,7 +26297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -26619,7 +26651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -26957,7 +26989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -27341,7 +27373,7 @@ func InternalValue() DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDurin
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -27501,7 +27533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -27661,7 +27693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -28015,7 +28047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -28353,7 +28385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -28513,7 +28545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -28673,7 +28705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -28833,7 +28865,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -29187,7 +29219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -29525,7 +29557,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -29927,7 +29959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecAffinityPodAntiAffinityOutputReference
 ```
@@ -30260,7 +30292,7 @@ func InternalValue() DeploymentSpecTemplateSpecAffinityPodAntiAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -30420,7 +30452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -30744,7 +30776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -30904,7 +30936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -31064,7 +31096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -31418,7 +31450,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -31756,7 +31788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -31916,7 +31948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -32076,7 +32108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -32430,7 +32462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -32768,7 +32800,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -33152,7 +33184,7 @@ func InternalValue() DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredD
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -33312,7 +33344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -33472,7 +33504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -33826,7 +33858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -34164,7 +34196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -34324,7 +34356,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -34484,7 +34516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -34644,7 +34676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -34998,7 +35030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -35336,7 +35368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -35738,7 +35770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference
 ```
@@ -36038,7 +36070,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerEnvFromConfigMapRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerEnvFromList
 ```
@@ -36198,7 +36230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerEnvFromOutputReference
 ```
@@ -36578,7 +36610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerEnvFromSecretRefOutputReference
 ```
@@ -36878,7 +36910,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerEnvFromSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerEnvList
 ```
@@ -37038,7 +37070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerEnvOutputReference
 ```
@@ -37398,7 +37430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -37734,7 +37766,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerEnvValueFromConfigMapKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference
 ```
@@ -38041,7 +38073,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerEnvValueFromFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerEnvValueFromOutputReference
 ```
@@ -38458,7 +38490,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerEnvValueFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -38787,7 +38819,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerEnvValueFromResourceFiel
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -39123,7 +39155,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerEnvValueFromSecretKeyRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerLifecycleOutputReference
 ```
@@ -39456,7 +39488,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerLifecyclePostStartExecOutputReference
 ```
@@ -39734,7 +39766,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerLifecyclePostStartExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -39894,7 +39926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -40219,7 +40251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -40626,7 +40658,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePostStartList
 ```
@@ -40786,7 +40818,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePostStartOutputReference
 ```
@@ -41179,7 +41211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocketList
 ```
@@ -41339,7 +41371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -41628,7 +41660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerLifecyclePreStopExecOutputReference
 ```
@@ -41906,7 +41938,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerLifecyclePreStopExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -42066,7 +42098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -42391,7 +42423,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -42798,7 +42830,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePreStopList
 ```
@@ -42958,7 +42990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePreStopOutputReference
 ```
@@ -43351,7 +43383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePreStopTcpSocketList
 ```
@@ -43511,7 +43543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -43800,7 +43832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerList
 ```
@@ -43960,7 +43992,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerLivenessProbeExecOutputReference
 ```
@@ -44238,7 +44270,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerLivenessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerLivenessProbeGrpcList
 ```
@@ -44398,7 +44430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerLivenessProbeGrpcOutputReference
 ```
@@ -44716,7 +44748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -44876,7 +44908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -45201,7 +45233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference
 ```
@@ -45608,7 +45640,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerLivenessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerLivenessProbeOutputReference
 ```
@@ -46170,7 +46202,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketList
 ```
@@ -46330,7 +46362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -46619,7 +46651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerOutputReference
 ```
@@ -46704,6 +46736,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetReadinessProbe">ResetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetRestartPolicy">ResetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetSecurityContext">ResetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetStartupProbe">ResetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetStdin">ResetStdin</a></code> | *No description.* |
@@ -47065,6 +47098,12 @@ func ResetReadinessProbe()
 func ResetResources()
 ```
 
+##### `ResetRestartPolicy` <a name="ResetRestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetRestartPolicy"></a>
+
+```go
+func ResetRestartPolicy()
+```
+
 ##### `ResetSecurityContext` <a name="ResetSecurityContext" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetSecurityContext"></a>
 
 ```go
@@ -47155,6 +47194,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.portInput">PortInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.readinessProbeInput">ReadinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbe">DeploymentSpecTemplateSpecContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerResources">DeploymentSpecTemplateSpecContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.restartPolicyInput">RestartPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.securityContextInput">SecurityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContext">DeploymentSpecTemplateSpecContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.startupProbeInput">StartupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbe">DeploymentSpecTemplateSpecContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.stdinInput">StdinInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -47170,6 +47210,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.image">Image</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.imagePullPolicy">ImagePullPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.stdin">Stdin</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.stdinOnce">StdinOnce</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.terminationMessagePath">TerminationMessagePath</a></code> | <code>*string</code> | *No description.* |
@@ -47434,6 +47475,16 @@ func ResourcesInput() DeploymentSpecTemplateSpecContainerResources
 
 ---
 
+##### `RestartPolicyInput`<sup>Optional</sup> <a name="RestartPolicyInput" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.restartPolicyInput"></a>
+
+```go
+func RestartPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SecurityContextInput`<sup>Optional</sup> <a name="SecurityContextInput" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.securityContextInput"></a>
 
 ```go
@@ -47584,6 +47635,16 @@ func Name() *string
 
 ---
 
+##### `RestartPolicy`<sup>Required</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.restartPolicy"></a>
+
+```go
+func RestartPolicy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Stdin`<sup>Required</sup> <a name="Stdin" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.stdin"></a>
 
 ```go
@@ -47660,7 +47721,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerPortList
 ```
@@ -47820,7 +47881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerPortOutputReference
 ```
@@ -48225,7 +48286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerReadinessProbeExecOutputReference
 ```
@@ -48503,7 +48564,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerReadinessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerReadinessProbeGrpcList
 ```
@@ -48663,7 +48724,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerReadinessProbeGrpcOutputReference
 ```
@@ -48981,7 +49042,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -49141,7 +49202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -49466,7 +49527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference
 ```
@@ -49873,7 +49934,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerReadinessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerReadinessProbeOutputReference
 ```
@@ -50435,7 +50496,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerReadinessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerReadinessProbeTcpSocketList
 ```
@@ -50595,7 +50656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -50884,7 +50945,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerResourcesOutputReference
 ```
@@ -51191,7 +51252,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -51498,7 +51559,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerSecurityContextCapabilit
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerSecurityContextOutputReference
 ```
@@ -52047,7 +52108,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -52354,7 +52415,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerSecurityContextSeccompPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -52719,7 +52780,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOp
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerStartupProbeExecOutputReference
 ```
@@ -52997,7 +53058,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerStartupProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerStartupProbeGrpcList
 ```
@@ -53157,7 +53218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerStartupProbeGrpcOutputReference
 ```
@@ -53475,7 +53536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -53635,7 +53696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -53960,7 +54021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerStartupProbeHttpGetOutputReference
 ```
@@ -54367,7 +54428,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerStartupProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecContainerStartupProbeOutputReference
 ```
@@ -54929,7 +54990,7 @@ func InternalValue() DeploymentSpecTemplateSpecContainerStartupProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerStartupProbeTcpSocketList
 ```
@@ -55089,7 +55150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference
 ```
@@ -55378,7 +55439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerVolumeDeviceList
 ```
@@ -55538,7 +55599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerVolumeDeviceOutputReference
 ```
@@ -55849,7 +55910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecContainerVolumeMountList
 ```
@@ -56009,7 +56070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerVolumeMountOutputReference
 ```
@@ -56436,7 +56497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecDnsConfigOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecDnsConfigOptionList
 ```
@@ -56596,7 +56657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecDnsConfigOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecDnsConfigOptionOutputReference
 ```
@@ -56914,7 +56975,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecDnsConfigOutputReference
 ```
@@ -57263,7 +57324,7 @@ func InternalValue() DeploymentSpecTemplateSpecDnsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecHostAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecHostAliasesList
 ```
@@ -57423,7 +57484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecHostAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecHostAliasesOutputReference
 ```
@@ -57734,7 +57795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecImagePullSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecImagePullSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecImagePullSecretsList
 ```
@@ -57894,7 +57955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecImagePullSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecImagePullSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecImagePullSecretsOutputReference
 ```
@@ -58183,7 +58244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference
 ```
@@ -58483,7 +58544,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerEnvFromConfigMapRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerEnvFromList
 ```
@@ -58643,7 +58704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerEnvFromOutputReference
 ```
@@ -59023,7 +59084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference
 ```
@@ -59323,7 +59384,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerEnvFromSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerEnvList
 ```
@@ -59483,7 +59544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerEnvOutputReference
 ```
@@ -59843,7 +59904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -60179,7 +60240,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMa
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference
 ```
@@ -60486,7 +60547,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerEnvValueFromFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReference
 ```
@@ -60903,7 +60964,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerEnvValueFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -61232,7 +61293,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerEnvValueFromResource
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -61568,7 +61629,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerLifecycleOutputReference
 ```
@@ -61901,7 +61962,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference
 ```
@@ -62179,7 +62240,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerLifecyclePostStartEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -62339,7 +62400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -62664,7 +62725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -63071,7 +63132,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHt
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePostStartList
 ```
@@ -63231,7 +63292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePostStartOutputReference
 ```
@@ -63624,7 +63685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList
 ```
@@ -63784,7 +63845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -64073,7 +64134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference
 ```
@@ -64351,7 +64412,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerLifecyclePreStopExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -64511,7 +64572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -64836,7 +64897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -65243,7 +65304,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttp
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePreStopList
 ```
@@ -65403,7 +65464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePreStopOutputReference
 ```
@@ -65796,7 +65857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList
 ```
@@ -65956,7 +66017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -66245,7 +66306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerList
 ```
@@ -66405,7 +66466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerLivenessProbeExecOutputReference
 ```
@@ -66683,7 +66744,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerLivenessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerLivenessProbeGrpcList
 ```
@@ -66843,7 +66904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference
 ```
@@ -67161,7 +67222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -67321,7 +67382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -67646,7 +67707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference
 ```
@@ -68053,7 +68114,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerLivenessProbeOutputReference
 ```
@@ -68615,7 +68676,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerLivenessProbeTcpSocketList
 ```
@@ -68775,7 +68836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -69064,7 +69125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerOutputReference
 ```
@@ -69149,6 +69210,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetReadinessProbe">ResetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy">ResetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetSecurityContext">ResetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetStartupProbe">ResetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetStdin">ResetStdin</a></code> | *No description.* |
@@ -69510,6 +69572,12 @@ func ResetReadinessProbe()
 func ResetResources()
 ```
 
+##### `ResetRestartPolicy` <a name="ResetRestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy"></a>
+
+```go
+func ResetRestartPolicy()
+```
+
 ##### `ResetSecurityContext` <a name="ResetSecurityContext" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetSecurityContext"></a>
 
 ```go
@@ -69600,6 +69668,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.portInput">PortInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.readinessProbeInput">ReadinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbe">DeploymentSpecTemplateSpecInitContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerResources">DeploymentSpecTemplateSpecInitContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput">RestartPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.securityContextInput">SecurityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContext">DeploymentSpecTemplateSpecInitContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.startupProbeInput">StartupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbe">DeploymentSpecTemplateSpecInitContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.stdinInput">StdinInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -69615,6 +69684,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.image">Image</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.imagePullPolicy">ImagePullPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.stdin">Stdin</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.stdinOnce">StdinOnce</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.terminationMessagePath">TerminationMessagePath</a></code> | <code>*string</code> | *No description.* |
@@ -69879,6 +69949,16 @@ func ResourcesInput() DeploymentSpecTemplateSpecInitContainerResources
 
 ---
 
+##### `RestartPolicyInput`<sup>Optional</sup> <a name="RestartPolicyInput" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput"></a>
+
+```go
+func RestartPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SecurityContextInput`<sup>Optional</sup> <a name="SecurityContextInput" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.securityContextInput"></a>
 
 ```go
@@ -70029,6 +70109,16 @@ func Name() *string
 
 ---
 
+##### `RestartPolicy`<sup>Required</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.restartPolicy"></a>
+
+```go
+func RestartPolicy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Stdin`<sup>Required</sup> <a name="Stdin" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.stdin"></a>
 
 ```go
@@ -70105,7 +70195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerPortList
 ```
@@ -70265,7 +70355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerPortOutputReference
 ```
@@ -70670,7 +70760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerReadinessProbeExecOutputReference
 ```
@@ -70948,7 +71038,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerReadinessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerReadinessProbeGrpcList
 ```
@@ -71108,7 +71198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference
 ```
@@ -71426,7 +71516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -71586,7 +71676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -71911,7 +72001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference
 ```
@@ -72318,7 +72408,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerReadinessProbeOutputReference
 ```
@@ -72880,7 +72970,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerReadinessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerReadinessProbeTcpSocketList
 ```
@@ -73040,7 +73130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -73329,7 +73419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerResourcesOutputReference
 ```
@@ -73636,7 +73726,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -73943,7 +74033,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerSecurityContextCapab
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerSecurityContextOutputReference
 ```
@@ -74492,7 +74582,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -74799,7 +74889,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerSecurityContextSecco
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -75164,7 +75254,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerSecurityContextSeLin
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerStartupProbeExecOutputReference
 ```
@@ -75442,7 +75532,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerStartupProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerStartupProbeGrpcList
 ```
@@ -75602,7 +75692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference
 ```
@@ -75920,7 +76010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -76080,7 +76170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -76405,7 +76495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference
 ```
@@ -76812,7 +76902,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference
 ```
@@ -77374,7 +77464,7 @@ func InternalValue() DeploymentSpecTemplateSpecInitContainerStartupProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocketList
 ```
@@ -77534,7 +77624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference
 ```
@@ -77823,7 +77913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerVolumeDeviceList
 ```
@@ -77983,7 +78073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerVolumeDeviceOutputReference
 ```
@@ -78294,7 +78384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecInitContainerVolumeMountList
 ```
@@ -78454,7 +78544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecInitContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecInitContainerVolumeMountOutputReference
 ```
@@ -78881,7 +78971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecOsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecOsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecOsOutputReference
 ```
@@ -79152,7 +79242,7 @@ func InternalValue() DeploymentSpecTemplateSpecOs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecOutputReference
 ```
@@ -80427,7 +80517,7 @@ func InternalValue() DeploymentSpecTemplateSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecReadinessGateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecReadinessGateList
 ```
@@ -80587,7 +80677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecReadinessGateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecReadinessGateOutputReference
 ```
@@ -80876,7 +80966,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecSecurityContextOutputReference
 ```
@@ -81467,7 +81557,7 @@ func InternalValue() DeploymentSpecTemplateSpecSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecSecurityContextSeccompProfileOutputReference
 ```
@@ -81774,7 +81864,7 @@ func InternalValue() DeploymentSpecTemplateSpecSecurityContextSeccompProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -82139,7 +82229,7 @@ func InternalValue() DeploymentSpecTemplateSpecSecurityContextSeLinuxOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSysctlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecSecurityContextSysctlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecSecurityContextSysctlList
 ```
@@ -82299,7 +82389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSysctlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecSecurityContextSysctlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecSecurityContextSysctlOutputReference
 ```
@@ -82610,7 +82700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextWindowsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecSecurityContextWindowsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecSecurityContextWindowsOptionsOutputReference
 ```
@@ -82975,7 +83065,7 @@ func InternalValue() DeploymentSpecTemplateSpecSecurityContextWindowsOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTolerationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecTolerationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecTolerationList
 ```
@@ -83135,7 +83225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTolerationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecTolerationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecTolerationOutputReference
 ```
@@ -83547,7 +83637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorList
 ```
@@ -83707,7 +83797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList
 ```
@@ -83867,7 +83957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference
 ```
@@ -84221,7 +84311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference
 ```
@@ -84559,7 +84649,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecTopologySpreadConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecTopologySpreadConstraintList
 ```
@@ -84719,7 +84809,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecTopologySpreadConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecTopologySpreadConstraintOutputReference
 ```
@@ -85231,7 +85321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference
 ```
@@ -85589,7 +85679,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeAwsElasticBlockStore
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeAzureDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeAzureDiskOutputReference
 ```
@@ -85991,7 +86081,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeAzureDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeAzureFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeAzureFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeAzureFileOutputReference
 ```
@@ -86342,7 +86432,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeAzureFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCephFsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeCephFsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeCephFsOutputReference
 ```
@@ -86771,7 +86861,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeCephFs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCephFsSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeCephFsSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeCephFsSecretRefOutputReference
 ```
@@ -87078,7 +87168,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeCephFsSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCinderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeCinderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeCinderOutputReference
 ```
@@ -87407,7 +87497,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeCinder
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeConfigMapItemsList
 ```
@@ -87567,7 +87657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeConfigMapItemsOutputReference
 ```
@@ -87921,7 +88011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeConfigMapOutputReference
 ```
@@ -88299,7 +88389,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeConfigMap
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference
 ```
@@ -88577,7 +88667,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeCsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeCsiOutputReference
 ```
@@ -88977,7 +89067,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeCsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference
 ```
@@ -89284,7 +89374,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeDownwardApiItemsList
 ```
@@ -89444,7 +89534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference
 ```
@@ -89839,7 +89929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -90161,7 +90251,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFie
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeDownwardApiOutputReference
 ```
@@ -90481,7 +90571,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeEmptyDirOutputReference
 ```
@@ -90788,7 +90878,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeEmptyDir
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeEphemeralOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeEphemeralOutputReference
 ```
@@ -91072,7 +91162,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeEphemeral
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference
 ```
@@ -91379,7 +91469,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplat
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference
 ```
@@ -91705,7 +91795,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplat
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference
 ```
@@ -92140,7 +92230,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplat
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference
 ```
@@ -92447,7 +92537,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplat
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList
 ```
@@ -92607,7 +92697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference
 ```
@@ -92961,7 +93051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference
 ```
@@ -93281,7 +93371,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplat
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeFcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeFcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeFcOutputReference
 ```
@@ -93632,7 +93722,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeFc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeFlexVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeFlexVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeFlexVolumeOutputReference
 ```
@@ -94032,7 +94122,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeFlexVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference
 ```
@@ -94339,7 +94429,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeFlockerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeFlockerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeFlockerOutputReference
 ```
@@ -94646,7 +94736,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeFlocker
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGcePersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeGcePersistentDiskOutputReference
 ```
@@ -95004,7 +95094,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeGcePersistentDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGitRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeGitRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeGitRepoOutputReference
 ```
@@ -95340,7 +95430,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeGitRepo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGlusterfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeGlusterfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeGlusterfsOutputReference
 ```
@@ -95662,7 +95752,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeGlusterfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeHostPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeHostPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeHostPathOutputReference
 ```
@@ -95969,7 +96059,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeHostPath
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeIscsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeIscsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeIscsiOutputReference
 ```
@@ -96378,7 +96468,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeIscsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeList
 ```
@@ -96538,7 +96628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeLocalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeLocalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeLocalOutputReference
 ```
@@ -96816,7 +96906,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeLocal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeNfsOutputReference
 ```
@@ -97138,7 +97228,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeNfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeOutputReference
 ```
@@ -98568,7 +98658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumePersistentVolumeClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumePersistentVolumeClaimOutputReference
 ```
@@ -98875,7 +98965,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumePersistentVolumeClaim
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumePhotonPersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumePhotonPersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumePhotonPersistentDiskOutputReference
 ```
@@ -99175,7 +99265,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumePhotonPersistentDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeProjectedList
 ```
@@ -99335,7 +99425,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeProjectedOutputReference
 ```
@@ -99666,7 +99756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList
 ```
@@ -99826,7 +99916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference
 ```
@@ -100180,7 +100270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapList
 ```
@@ -100340,7 +100430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference
 ```
@@ -100707,7 +100797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference
 ```
@@ -101014,7 +101104,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList
 ```
@@ -101174,7 +101264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference
 ```
@@ -101576,7 +101666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -101898,7 +101988,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference
 ```
@@ -102189,7 +102279,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesList
 ```
@@ -102349,7 +102439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesOutputReference
 ```
@@ -102784,7 +102874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretItemsList
 ```
@@ -102944,7 +103034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference
 ```
@@ -103298,7 +103388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretList
 ```
@@ -103458,7 +103548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference
 ```
@@ -103825,7 +103915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference
 ```
@@ -104154,7 +104244,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeProjectedSourcesServiceAcco
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeQuobyteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeQuobyteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeQuobyteOutputReference
 ```
@@ -104534,7 +104624,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeQuobyte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeRbdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeRbdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeRbdOutputReference
 ```
@@ -105014,7 +105104,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeRbd
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeRbdSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeRbdSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeRbdSecretRefOutputReference
 ```
@@ -105321,7 +105411,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeRbdSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentSpecTemplateSpecVolumeSecretItemsList
 ```
@@ -105481,7 +105571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecVolumeSecretItemsOutputReference
 ```
@@ -105835,7 +105925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeSecretOutputReference
 ```
@@ -106213,7 +106303,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeVsphereVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentSpecTemplateSpecVolumeVsphereVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeVsphereVolumeOutputReference
 ```
@@ -106513,7 +106603,7 @@ func InternalValue() DeploymentSpecTemplateSpecVolumeVsphereVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.DeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/deployment"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/deployment"
 
 deployment.NewDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### Annotations <a name="Annotations" id="@cdktn/provider-kubernetes.annotations.Annotations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations kubernetes_annotations}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations kubernetes_annotations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.annotations.Annotations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/annotations"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/annotations"
 
 annotations.NewAnnotations(scope Construct, id *string, config AnnotationsConfig) Annotations
 ```
@@ -448,7 +448,7 @@ func ResetTemplateAnnotations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.annotations.Annotations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/annotations"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/annotations"
 
 annotations.Annotations_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.annotations.Annotations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/annotations"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/annotations"
 
 annotations.Annotations_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ annotations.Annotations_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.annotations.Annotations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/annotations"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/annotations"
 
 annotations.Annotations_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ annotations.Annotations_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.annotations.Annotations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/annotations"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/annotations"
 
 annotations.Annotations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the Annotations to import.
 
 The id of the existing Annotations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.annotations.AnnotationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/annotations"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/annotations"
 
 &annotations.AnnotationsConfig {
 	Connection: interface{},
@@ -925,7 +925,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/annotati
 	Provisioners: *[]interface{},
 	ApiVersion: *string,
 	Kind: *string,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.annotations.AnnotationsMetadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.annotations.AnnotationsMetadata,
 	Annotations: *map[string]*string,
 	FieldManager: *string,
 	Force: interface{},
@@ -951,7 +951,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/annotati
 | <code><a href="#@cdktn/provider-kubernetes.annotations.AnnotationsConfig.property.annotations">Annotations</a></code> | <code>*map[string]*string</code> | A map of annotations to apply to the resource. |
 | <code><a href="#@cdktn/provider-kubernetes.annotations.AnnotationsConfig.property.fieldManager">FieldManager</a></code> | <code>*string</code> | Set the name of the field manager for the specified labels. |
 | <code><a href="#@cdktn/provider-kubernetes.annotations.AnnotationsConfig.property.force">Force</a></code> | <code>interface{}</code> | Force overwriting annotations that were created or edited outside of Terraform. |
-| <code><a href="#@cdktn/provider-kubernetes.annotations.AnnotationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#id Annotations#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.annotations.AnnotationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#id Annotations#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.annotations.AnnotationsConfig.property.templateAnnotations">TemplateAnnotations</a></code> | <code>*map[string]*string</code> | A map of annotations to apply to the resource template. |
 
 ---
@@ -1036,7 +1036,7 @@ ApiVersion *string
 
 The apiVersion of the resource to annotate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#api_version Annotations#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#api_version Annotations#api_version}
 
 ---
 
@@ -1050,7 +1050,7 @@ Kind *string
 
 The kind of the resource to annotate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#kind Annotations#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#kind Annotations#kind}
 
 ---
 
@@ -1064,7 +1064,7 @@ Metadata AnnotationsMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#metadata Annotations#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#metadata Annotations#metadata}
 
 ---
 
@@ -1078,7 +1078,7 @@ Annotations *map[string]*string
 
 A map of annotations to apply to the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#annotations Annotations#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#annotations Annotations#annotations}
 
 ---
 
@@ -1092,7 +1092,7 @@ FieldManager *string
 
 Set the name of the field manager for the specified labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#field_manager Annotations#field_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#field_manager Annotations#field_manager}
 
 ---
 
@@ -1106,7 +1106,7 @@ Force interface{}
 
 Force overwriting annotations that were created or edited outside of Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#force Annotations#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#force Annotations#force}
 
 ---
 
@@ -1118,7 +1118,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#id Annotations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#id Annotations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1135,7 +1135,7 @@ TemplateAnnotations *map[string]*string
 
 A map of annotations to apply to the resource template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#template_annotations Annotations#template_annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#template_annotations Annotations#template_annotations}
 
 ---
 
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.annotations.AnnotationsMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/annotations"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/annotations"
 
 &annotations.AnnotationsMetadata {
 	Name: *string,
@@ -1171,7 +1171,7 @@ Name *string
 
 The name of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#name Annotations#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#name Annotations#name}
 
 ---
 
@@ -1185,7 +1185,7 @@ Namespace *string
 
 The namespace of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/annotations#namespace Annotations#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/annotations#namespace Annotations#namespace}
 
 ---
 
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.annotations.AnnotationsMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/annotations"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/annotations"
 
 annotations.NewAnnotationsMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AnnotationsMetadataOutputReference
 ```

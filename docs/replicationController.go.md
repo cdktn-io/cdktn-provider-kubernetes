@@ -4,12 +4,12 @@
 
 ### ReplicationController <a name="ReplicationController" id="@cdktn/provider-kubernetes.replicationController.ReplicationController"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller kubernetes_replication_controller}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller kubernetes_replication_controller}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationController.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationController(scope Construct, id *string, config ReplicationControllerConfig) ReplicationController
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.replicationController.ReplicationController.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.ReplicationController_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.replicationController.ReplicationController.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.ReplicationController_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ replicationcontroller.ReplicationController_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.replicationController.ReplicationController.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.ReplicationController_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ replicationcontroller.ReplicationController_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.replicationController.ReplicationController.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.ReplicationController_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -542,7 +542,7 @@ The construct id used in the generated config for the ReplicationController to i
 
 The id of the existing ReplicationController that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerConfig {
 	Connection: interface{},
@@ -840,10 +840,10 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpec,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerTimeouts,
 }
 ```
 
@@ -860,7 +860,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerMetadata">ReplicationControllerMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpec">ReplicationControllerSpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#id ReplicationController#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#id ReplicationController#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts">ReplicationControllerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -945,7 +945,7 @@ Metadata ReplicationControllerMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#metadata ReplicationController#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#metadata ReplicationController#metadata}
 
 ---
 
@@ -959,7 +959,7 @@ Spec ReplicationControllerSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#spec ReplicationController#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#spec ReplicationController#spec}
 
 ---
 
@@ -971,7 +971,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#id ReplicationController#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#id ReplicationController#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +988,7 @@ Timeouts ReplicationControllerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#timeouts ReplicationController#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#timeouts ReplicationController#timeouts}
 
 ---
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerMetadata {
 	Annotations: *map[string]*string,
@@ -1032,7 +1032,7 @@ An unstructured key value map stored with the replication controller that may be
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#annotations ReplicationController#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#annotations ReplicationController#annotations}
 
 ---
 
@@ -1048,7 +1048,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#generate_name ReplicationController#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#generate_name ReplicationController#generate_name}
 
 ---
 
@@ -1064,7 +1064,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#labels ReplicationController#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#labels ReplicationController#labels}
 
 ---
 
@@ -1078,7 +1078,7 @@ Name *string
 
 Name of the replication controller, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -1092,7 +1092,7 @@ Namespace *string
 
 Namespace defines the space within which name of the replication controller must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
 
 ---
 
@@ -1101,11 +1101,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpec {
 	Selector: *map[string]*string,
-	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplate,
+	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplate,
 	MinReadySeconds: *f64,
 	Replicas: *f64,
 }
@@ -1134,7 +1134,7 @@ A label query over pods that should match the Replicas count.
 
 If Selector is empty, it is defaulted to the labels present on the Pod template. Label keys and values that must match in order to be controlled by this replication controller, if empty defaulted to labels on Pod template. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#selector ReplicationController#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#selector ReplicationController#selector}
 
 ---
 
@@ -1148,7 +1148,7 @@ Template ReplicationControllerSpecTemplate
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#template ReplicationController#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#template ReplicationController#template}
 
 ---
 
@@ -1164,7 +1164,7 @@ Minimum number of seconds for which a newly created pod should be ready without 
 
 Defaults to 0 (pod will be considered available as soon as it is ready)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#min_ready_seconds ReplicationController#min_ready_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#min_ready_seconds ReplicationController#min_ready_seconds}
 
 ---
 
@@ -1178,7 +1178,7 @@ Replicas *f64
 
 The number of desired replicas. Defaults to 1. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#what-is-a-replicationcontroller.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#replicas ReplicationController#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#replicas ReplicationController#replicas}
 
 ---
 
@@ -1187,11 +1187,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplate {
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpec,
 }
 ```
 
@@ -1214,7 +1214,7 @@ Metadata ReplicationControllerSpecTemplateMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#metadata ReplicationController#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#metadata ReplicationController#metadata}
 
 ---
 
@@ -1228,7 +1228,7 @@ Spec ReplicationControllerSpecTemplateSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#spec ReplicationController#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#spec ReplicationController#spec}
 
 ---
 
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -1272,7 +1272,7 @@ An unstructured key value map stored with the replication controller's template 
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#annotations ReplicationController#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#annotations ReplicationController#annotations}
 
 ---
 
@@ -1288,7 +1288,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#generate_name ReplicationController#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#generate_name ReplicationController#generate_name}
 
 ---
 
@@ -1304,7 +1304,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#labels ReplicationController#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#labels ReplicationController#labels}
 
 ---
 
@@ -1318,7 +1318,7 @@ Name *string
 
 Name of the replication controller's template, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -1332,7 +1332,7 @@ Namespace *string
 
 Namespace defines the space within which name of the replication controller's template must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
 
 ---
 
@@ -1341,14 +1341,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpec {
 	ActiveDeadlineSeconds: *f64,
-	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecAffinity,
+	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecAffinity,
 	AutomountServiceAccountToken: interface{},
 	Container: interface{},
-	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecDnsConfig,
+	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecDnsConfig,
 	DnsPolicy: *string,
 	EnableServiceLinks: interface{},
 	HostAliases: interface{},
@@ -1360,13 +1360,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 	InitContainer: interface{},
 	NodeName: *string,
 	NodeSelector: *map[string]*string,
-	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecOs,
+	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecOs,
 	PriorityClassName: *string,
 	ReadinessGate: interface{},
 	RestartPolicy: *string,
 	RuntimeClassName: *string,
 	SchedulerName: *string,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecSecurityContext,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecSecurityContext,
 	ServiceAccountName: *string,
 	ShareProcessNamespace: interface{},
 	Subdomain: *string,
@@ -1426,7 +1426,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#active_deadline_seconds ReplicationController#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#active_deadline_seconds ReplicationController#active_deadline_seconds}
 
 ---
 
@@ -1440,7 +1440,7 @@ Affinity ReplicationControllerSpecTemplateSpecAffinity
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#affinity ReplicationController#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#affinity ReplicationController#affinity}
 
 ---
 
@@ -1454,7 +1454,7 @@ AutomountServiceAccountToken interface{}
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#automount_service_account_token ReplicationController#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#automount_service_account_token ReplicationController#automount_service_account_token}
 
 ---
 
@@ -1468,7 +1468,7 @@ Container interface{}
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container ReplicationController#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container ReplicationController#container}
 
 ---
 
@@ -1482,7 +1482,7 @@ DnsConfig ReplicationControllerSpecTemplateSpecDnsConfig
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#dns_config ReplicationController#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#dns_config ReplicationController#dns_config}
 
 ---
 
@@ -1498,7 +1498,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#dns_policy ReplicationController#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#dns_policy ReplicationController#dns_policy}
 
 ---
 
@@ -1512,7 +1512,7 @@ EnableServiceLinks interface{}
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#enable_service_links ReplicationController#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#enable_service_links ReplicationController#enable_service_links}
 
 ---
 
@@ -1526,7 +1526,7 @@ HostAliases interface{}
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host_aliases ReplicationController#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host_aliases ReplicationController#host_aliases}
 
 ---
 
@@ -1540,7 +1540,7 @@ HostIpc interface{}
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host_ipc ReplicationController#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host_ipc ReplicationController#host_ipc}
 
 ---
 
@@ -1554,7 +1554,7 @@ Hostname *string
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#hostname ReplicationController#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#hostname ReplicationController#hostname}
 
 ---
 
@@ -1570,7 +1570,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host_network ReplicationController#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host_network ReplicationController#host_network}
 
 ---
 
@@ -1584,7 +1584,7 @@ HostPid interface{}
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host_pid ReplicationController#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host_pid ReplicationController#host_pid}
 
 ---
 
@@ -1598,7 +1598,7 @@ ImagePullSecrets interface{}
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#image_pull_secrets ReplicationController#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#image_pull_secrets ReplicationController#image_pull_secrets}
 
 ---
 
@@ -1612,7 +1612,7 @@ InitContainer interface{}
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#init_container ReplicationController#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#init_container ReplicationController#init_container}
 
 ---
 
@@ -1628,7 +1628,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#node_name ReplicationController#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#node_name ReplicationController#node_name}
 
 ---
 
@@ -1644,7 +1644,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#node_selector ReplicationController#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#node_selector ReplicationController#node_selector}
 
 ---
 
@@ -1658,7 +1658,7 @@ Os ReplicationControllerSpecTemplateSpecOs
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#os ReplicationController#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#os ReplicationController#os}
 
 ---
 
@@ -1674,7 +1674,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#priority_class_name ReplicationController#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#priority_class_name ReplicationController#priority_class_name}
 
 ---
 
@@ -1688,7 +1688,7 @@ ReadinessGate interface{}
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#readiness_gate ReplicationController#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#readiness_gate ReplicationController#readiness_gate}
 
 ---
 
@@ -1702,7 +1702,7 @@ RestartPolicy *string
 
 Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#restart_policy ReplicationController#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#restart_policy ReplicationController#restart_policy}
 
 ---
 
@@ -1718,7 +1718,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#runtime_class_name ReplicationController#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#runtime_class_name ReplicationController#runtime_class_name}
 
 ---
 
@@ -1734,7 +1734,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheduler_name ReplicationController#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheduler_name ReplicationController#scheduler_name}
 
 ---
 
@@ -1748,7 +1748,7 @@ SecurityContext ReplicationControllerSpecTemplateSpecSecurityContext
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#security_context ReplicationController#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#security_context ReplicationController#security_context}
 
 ---
 
@@ -1762,7 +1762,7 @@ ServiceAccountName *string
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#service_account_name ReplicationController#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#service_account_name ReplicationController#service_account_name}
 
 ---
 
@@ -1778,7 +1778,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#share_process_namespace ReplicationController#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#share_process_namespace ReplicationController#share_process_namespace}
 
 ---
 
@@ -1792,7 +1792,7 @@ Subdomain *string
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#subdomain ReplicationController#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#subdomain ReplicationController#subdomain}
 
 ---
 
@@ -1808,7 +1808,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#termination_grace_period_seconds ReplicationController#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#termination_grace_period_seconds ReplicationController#termination_grace_period_seconds}
 
 ---
 
@@ -1822,7 +1822,7 @@ Toleration interface{}
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#toleration ReplicationController#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#toleration ReplicationController#toleration}
 
 ---
 
@@ -1836,7 +1836,7 @@ TopologySpreadConstraint interface{}
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#topology_spread_constraint ReplicationController#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#topology_spread_constraint ReplicationController#topology_spread_constraint}
 
 ---
 
@@ -1850,7 +1850,7 @@ Volume interface{}
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume ReplicationController#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume ReplicationController#volume}
 
 ---
 
@@ -1859,12 +1859,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinity {
-	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinity,
-	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinity,
-	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinity,
+	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinity,
+	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinity,
+	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinity,
 }
 ```
 
@@ -1888,7 +1888,7 @@ NodeAffinity ReplicationControllerSpecTemplateSpecAffinityNodeAffinity
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#node_affinity ReplicationController#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#node_affinity ReplicationController#node_affinity}
 
 ---
 
@@ -1902,7 +1902,7 @@ PodAffinity ReplicationControllerSpecTemplateSpecAffinityPodAffinity
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#pod_affinity ReplicationController#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#pod_affinity ReplicationController#pod_affinity}
 
 ---
 
@@ -1916,7 +1916,7 @@ PodAntiAffinity ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinity
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#pod_anti_affinity ReplicationController#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#pod_anti_affinity ReplicationController#pod_anti_affinity}
 
 ---
 
@@ -1925,11 +1925,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityNodeAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
-	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
+	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
 }
 ```
 
@@ -1952,7 +1952,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -1966,7 +1966,7 @@ RequiredDuringSchedulingIgnoredDuringExecution ReplicationControllerSpecTemplate
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -1975,10 +1975,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
+	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
 	Weight: *f64,
 }
 ```
@@ -2002,7 +2002,7 @@ Preference ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDur
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#preference ReplicationController#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#preference ReplicationController#preference}
 
 ---
 
@@ -2016,7 +2016,7 @@ Weight *f64
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#weight ReplicationController#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#weight ReplicationController#weight}
 
 ---
 
@@ -2025,7 +2025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference {
 	MatchExpressions: interface{},
@@ -2052,7 +2052,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -2066,7 +2066,7 @@ MatchFields interface{}
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_fields ReplicationController#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_fields ReplicationController#match_fields}
 
 ---
 
@@ -2075,7 +2075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions {
 	Key: *string,
@@ -2104,7 +2104,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2120,7 +2120,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2136,7 +2136,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2145,7 +2145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields {
 	Key: *string,
@@ -2174,7 +2174,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2188,7 +2188,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2204,7 +2204,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2213,7 +2213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	NodeSelectorTerm: interface{},
@@ -2238,7 +2238,7 @@ NodeSelectorTerm interface{}
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#node_selector_term ReplicationController#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#node_selector_term ReplicationController#node_selector_term}
 
 ---
 
@@ -2247,7 +2247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm {
 	MatchExpressions: interface{},
@@ -2274,7 +2274,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -2288,7 +2288,7 @@ MatchFields interface{}
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_fields ReplicationController#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_fields ReplicationController#match_fields}
 
 ---
 
@@ -2297,7 +2297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions {
 	Key: *string,
@@ -2326,7 +2326,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2342,7 +2342,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2358,7 +2358,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2367,7 +2367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields {
 	Key: *string,
@@ -2396,7 +2396,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2410,7 +2410,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2426,7 +2426,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2435,7 +2435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -2462,7 +2462,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2476,7 +2476,7 @@ RequiredDuringSchedulingIgnoredDuringExecution interface{}
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2485,10 +2485,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -2512,7 +2512,7 @@ PodAffinityTerm ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferre
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#pod_affinity_term ReplicationController#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#pod_affinity_term ReplicationController#pod_affinity_term}
 
 ---
 
@@ -2526,7 +2526,7 @@ Weight *f64
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#weight ReplicationController#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#weight ReplicationController#weight}
 
 ---
 
@@ -2535,7 +2535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -2566,7 +2566,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
 
 ---
 
@@ -2580,7 +2580,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
 
 ---
 
@@ -2594,7 +2594,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
 
 ---
 
@@ -2608,7 +2608,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
 
 ---
 
@@ -2617,7 +2617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -2644,7 +2644,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -2660,7 +2660,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -2669,7 +2669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -2698,7 +2698,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2712,7 +2712,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2728,7 +2728,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2737,7 +2737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -2764,7 +2764,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -2780,7 +2780,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -2789,7 +2789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -2818,7 +2818,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2832,7 +2832,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2848,7 +2848,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2857,7 +2857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -2888,7 +2888,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
 
 ---
 
@@ -2902,7 +2902,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
 
 ---
 
@@ -2916,7 +2916,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
 
 ---
 
@@ -2930,7 +2930,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
 
 ---
 
@@ -2939,7 +2939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -2966,7 +2966,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -2982,7 +2982,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -2991,7 +2991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3020,7 +3020,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3034,7 +3034,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3050,7 +3050,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3059,7 +3059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3086,7 +3086,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -3102,7 +3102,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -3111,7 +3111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3140,7 +3140,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3154,7 +3154,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3170,7 +3170,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3179,7 +3179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -3206,7 +3206,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3220,7 +3220,7 @@ RequiredDuringSchedulingIgnoredDuringExecution interface{}
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3229,10 +3229,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -3256,7 +3256,7 @@ PodAffinityTerm ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPref
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#pod_affinity_term ReplicationController#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#pod_affinity_term ReplicationController#pod_affinity_term}
 
 ---
 
@@ -3270,7 +3270,7 @@ Weight *f64
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#weight ReplicationController#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#weight ReplicationController#weight}
 
 ---
 
@@ -3279,7 +3279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -3310,7 +3310,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
 
 ---
 
@@ -3324,7 +3324,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
 
 ---
 
@@ -3338,7 +3338,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
 
 ---
 
@@ -3352,7 +3352,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
 
 ---
 
@@ -3361,7 +3361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -3388,7 +3388,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -3404,7 +3404,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -3413,7 +3413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3442,7 +3442,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3456,7 +3456,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3472,7 +3472,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3481,7 +3481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3508,7 +3508,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -3524,7 +3524,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -3533,7 +3533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3562,7 +3562,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3576,7 +3576,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3592,7 +3592,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3601,7 +3601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -3632,7 +3632,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
 
 ---
 
@@ -3646,7 +3646,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
 
 ---
 
@@ -3660,7 +3660,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
 
 ---
 
@@ -3674,7 +3674,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
 
 ---
 
@@ -3683,7 +3683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -3710,7 +3710,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -3726,7 +3726,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -3735,7 +3735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3764,7 +3764,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3778,7 +3778,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3794,7 +3794,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3803,7 +3803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3830,7 +3830,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -3846,7 +3846,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -3855,7 +3855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3884,7 +3884,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3898,7 +3898,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3914,7 +3914,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3923,7 +3923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainer {
 	Name: *string,
@@ -3933,13 +3933,14 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerResources,
+	RestartPolicy: *string,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -3967,6 +3968,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainer.property.port">Port</a></code> | <code>interface{}</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainer.property.readinessProbe">ReadinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbe">ReplicationControllerSpecTemplateSpecContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainer.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerResources">ReplicationControllerSpecTemplateSpecContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainer.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainer.property.securityContext">SecurityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContext">ReplicationControllerSpecTemplateSpecContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainer.property.startupProbe">StartupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbe">ReplicationControllerSpecTemplateSpecContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainer.property.stdin">Stdin</a></code> | <code>interface{}</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -3992,7 +3994,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4008,7 +4010,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#args ReplicationController#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#args ReplicationController#args}
 
 ---
 
@@ -4024,7 +4026,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -4038,7 +4040,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#env ReplicationController#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#env ReplicationController#env}
 
 ---
 
@@ -4052,7 +4054,7 @@ EnvFrom interface{}
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#env_from ReplicationController#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#env_from ReplicationController#env_from}
 
 ---
 
@@ -4066,7 +4068,7 @@ Image *string
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#image ReplicationController#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#image ReplicationController#image}
 
 ---
 
@@ -4082,7 +4084,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#image_pull_policy ReplicationController#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#image_pull_policy ReplicationController#image_pull_policy}
 
 ---
 
@@ -4096,7 +4098,7 @@ Lifecycle ReplicationControllerSpecTemplateSpecContainerLifecycle
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#lifecycle ReplicationController#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#lifecycle ReplicationController#lifecycle}
 
 ---
 
@@ -4110,7 +4112,7 @@ LivenessProbe ReplicationControllerSpecTemplateSpecContainerLivenessProbe
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#liveness_probe ReplicationController#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#liveness_probe ReplicationController#liveness_probe}
 
 ---
 
@@ -4124,7 +4126,7 @@ Port interface{}
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -4138,7 +4140,7 @@ ReadinessProbe ReplicationControllerSpecTemplateSpecContainerReadinessProbe
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#readiness_probe ReplicationController#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#readiness_probe ReplicationController#readiness_probe}
 
 ---
 
@@ -4152,7 +4154,21 @@ Resources ReplicationControllerSpecTemplateSpecContainerResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resources ReplicationController#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resources ReplicationController#resources}
+
+---
+
+##### `RestartPolicy`<sup>Optional</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainer.property.restartPolicy"></a>
+
+```go
+RestartPolicy *string
+```
+
+- *Type:* *string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#restart_policy ReplicationController#restart_policy}
 
 ---
 
@@ -4166,7 +4182,7 @@ SecurityContext ReplicationControllerSpecTemplateSpecContainerSecurityContext
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#security_context ReplicationController#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#security_context ReplicationController#security_context}
 
 ---
 
@@ -4180,7 +4196,7 @@ StartupProbe ReplicationControllerSpecTemplateSpecContainerStartupProbe
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#startup_probe ReplicationController#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#startup_probe ReplicationController#startup_probe}
 
 ---
 
@@ -4196,7 +4212,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#stdin ReplicationController#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#stdin ReplicationController#stdin}
 
 ---
 
@@ -4212,7 +4228,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#stdin_once ReplicationController#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#stdin_once ReplicationController#stdin_once}
 
 ---
 
@@ -4228,7 +4244,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#termination_message_path ReplicationController#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#termination_message_path ReplicationController#termination_message_path}
 
 ---
 
@@ -4244,7 +4260,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#termination_message_policy ReplicationController#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#termination_message_policy ReplicationController#termination_message_policy}
 
 ---
 
@@ -4258,7 +4274,7 @@ Tty interface{}
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tty ReplicationController#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tty ReplicationController#tty}
 
 ---
 
@@ -4272,7 +4288,7 @@ VolumeDevice interface{}
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_device ReplicationController#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_device ReplicationController#volume_device}
 
 ---
 
@@ -4286,7 +4302,7 @@ VolumeMount interface{}
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_mount ReplicationController#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_mount ReplicationController#volume_mount}
 
 ---
 
@@ -4302,7 +4318,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#working_dir ReplicationController#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#working_dir ReplicationController#working_dir}
 
 ---
 
@@ -4311,12 +4327,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFrom,
 }
 ```
 
@@ -4340,7 +4356,7 @@ Name *string
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4356,7 +4372,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -4370,7 +4386,7 @@ ValueFrom ReplicationControllerSpecTemplateSpecContainerEnvValueFrom
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value_from ReplicationController#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value_from ReplicationController#value_from}
 
 ---
 
@@ -4379,12 +4395,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRef,
 }
 ```
 
@@ -4408,7 +4424,7 @@ ConfigMapRef ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#config_map_ref ReplicationController#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#config_map_ref ReplicationController#config_map_ref}
 
 ---
 
@@ -4422,7 +4438,7 @@ Prefix *string
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#prefix ReplicationController#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#prefix ReplicationController#prefix}
 
 ---
 
@@ -4436,7 +4452,7 @@ SecretRef ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 
 ---
 
@@ -4445,7 +4461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -4472,7 +4488,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4486,7 +4502,7 @@ Optional interface{}
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -4495,7 +4511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRef {
 	Name: *string,
@@ -4522,7 +4538,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4536,7 +4552,7 @@ Optional interface{}
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -4545,13 +4561,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -4576,7 +4592,7 @@ ConfigMapKeyRef ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfig
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#config_map_key_ref ReplicationController#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#config_map_key_ref ReplicationController#config_map_key_ref}
 
 ---
 
@@ -4590,7 +4606,7 @@ FieldRef ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
 
 ---
 
@@ -4604,7 +4620,7 @@ ResourceFieldRef ReplicationControllerSpecTemplateSpecContainerEnvValueFromResou
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
 
 ---
 
@@ -4618,7 +4634,7 @@ SecretKeyRef ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKey
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_key_ref ReplicationController#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_key_ref ReplicationController#secret_key_ref}
 
 ---
 
@@ -4627,7 +4643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -4656,7 +4672,7 @@ Key *string
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -4670,7 +4686,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4684,7 +4700,7 @@ Optional interface{}
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -4693,7 +4709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -4720,7 +4736,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
 
 ---
 
@@ -4734,7 +4750,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
 
 ---
 
@@ -4743,7 +4759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -4757,8 +4773,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
 
 ---
 
@@ -4772,7 +4788,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resource ReplicationController#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resource ReplicationController#resource}
 
 ---
 
@@ -4784,7 +4800,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
 
 ---
 
@@ -4796,7 +4812,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
 
 ---
 
@@ -4805,7 +4821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -4834,7 +4850,7 @@ Key *string
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -4848,7 +4864,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4862,7 +4878,7 @@ Optional interface{}
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -4871,7 +4887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecycle {
 	PostStart: interface{},
@@ -4898,7 +4914,7 @@ PostStart interface{}
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#post_start ReplicationController#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#post_start ReplicationController#post_start}
 
 ---
 
@@ -4912,7 +4928,7 @@ PreStop interface{}
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#pre_stop ReplicationController#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#pre_stop ReplicationController#pre_stop}
 
 ---
 
@@ -4921,11 +4937,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -4950,7 +4966,7 @@ Exec ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -4964,7 +4980,7 @@ HttpGet ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -4978,7 +4994,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -4987,7 +5003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -5014,7 +5030,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -5023,7 +5039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -5056,7 +5072,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -5070,7 +5086,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -5084,7 +5100,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -5100,7 +5116,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5114,7 +5130,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -5123,7 +5139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -5150,7 +5166,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -5164,7 +5180,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -5173,7 +5189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -5200,7 +5216,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5209,11 +5225,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5238,7 +5254,7 @@ Exec ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -5252,7 +5268,7 @@ HttpGet ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -5266,7 +5282,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -5275,7 +5291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -5302,7 +5318,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -5311,7 +5327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -5344,7 +5360,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -5358,7 +5374,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -5372,7 +5388,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -5388,7 +5404,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5402,7 +5418,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -5411,7 +5427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -5438,7 +5454,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -5452,7 +5468,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -5461,7 +5477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -5488,7 +5504,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5497,13 +5513,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -5538,7 +5554,7 @@ Exec ReplicationControllerSpecTemplateSpecContainerLivenessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -5552,7 +5568,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -5566,7 +5582,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -5580,7 +5596,7 @@ HttpGet ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -5594,7 +5610,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -5608,7 +5624,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -5622,7 +5638,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -5636,7 +5652,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -5650,7 +5666,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -5659,7 +5675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -5686,7 +5702,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -5695,7 +5711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -5722,7 +5738,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5736,7 +5752,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -5745,7 +5761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -5778,7 +5794,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -5792,7 +5808,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -5806,7 +5822,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -5822,7 +5838,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5836,7 +5852,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -5845,7 +5861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -5872,7 +5888,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -5886,7 +5902,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -5895,7 +5911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -5922,7 +5938,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5931,7 +5947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerPort {
 	ContainerPort: *f64,
@@ -5966,7 +5982,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container_port ReplicationController#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container_port ReplicationController#container_port}
 
 ---
 
@@ -5980,7 +5996,7 @@ HostIp *string
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host_ip ReplicationController#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host_ip ReplicationController#host_ip}
 
 ---
 
@@ -5996,7 +6012,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host_port ReplicationController#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host_port ReplicationController#host_port}
 
 ---
 
@@ -6012,7 +6028,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -6026,7 +6042,7 @@ Protocol *string
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#protocol ReplicationController#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#protocol ReplicationController#protocol}
 
 ---
 
@@ -6035,13 +6051,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -6076,7 +6092,7 @@ Exec ReplicationControllerSpecTemplateSpecContainerReadinessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -6090,7 +6106,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -6104,7 +6120,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -6118,7 +6134,7 @@ HttpGet ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -6132,7 +6148,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -6146,7 +6162,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -6160,7 +6176,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -6174,7 +6190,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -6188,7 +6204,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -6197,7 +6213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -6224,7 +6240,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -6233,7 +6249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -6260,7 +6276,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -6274,7 +6290,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -6283,7 +6299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -6316,7 +6332,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -6330,7 +6346,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -6344,7 +6360,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -6360,7 +6376,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -6374,7 +6390,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -6383,7 +6399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -6410,7 +6426,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -6424,7 +6440,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -6433,7 +6449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -6460,7 +6476,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -6469,7 +6485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerResources {
 	Limits: *map[string]*string,
@@ -6496,7 +6512,7 @@ Limits *map[string]*string
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#limits ReplicationController#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#limits ReplicationController#limits}
 
 ---
 
@@ -6512,7 +6528,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#requests ReplicationController#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#requests ReplicationController#requests}
 
 ---
 
@@ -6521,18 +6537,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -6564,7 +6580,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#allow_privilege_escalation ReplicationController#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#allow_privilege_escalation ReplicationController#allow_privilege_escalation}
 
 ---
 
@@ -6578,7 +6594,7 @@ Capabilities ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabi
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#capabilities ReplicationController#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#capabilities ReplicationController#capabilities}
 
 ---
 
@@ -6594,7 +6610,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#privileged ReplicationController#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#privileged ReplicationController#privileged}
 
 ---
 
@@ -6608,7 +6624,7 @@ ReadOnlyRootFilesystem interface{}
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only_root_filesystem ReplicationController#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only_root_filesystem ReplicationController#read_only_root_filesystem}
 
 ---
 
@@ -6624,7 +6640,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
 
 ---
 
@@ -6640,7 +6656,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
 
 ---
 
@@ -6656,7 +6672,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
 
 ---
 
@@ -6670,7 +6686,7 @@ SeccompProfile ReplicationControllerSpecTemplateSpecContainerSecurityContextSecc
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
 
 ---
 
@@ -6684,7 +6700,7 @@ SeLinuxOptions ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLi
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
 
 ---
 
@@ -6693,7 +6709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -6720,7 +6736,7 @@ Add *[]*string
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#add ReplicationController#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#add ReplicationController#add}
 
 ---
 
@@ -6734,7 +6750,7 @@ Drop *[]*string
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#drop ReplicationController#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#drop ReplicationController#drop}
 
 ---
 
@@ -6743,7 +6759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -6772,7 +6788,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
 
 ---
 
@@ -6786,7 +6802,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -6795,7 +6811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -6826,7 +6842,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#level ReplicationController#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#level ReplicationController#level}
 
 ---
 
@@ -6840,7 +6856,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#role ReplicationController#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#role ReplicationController#role}
 
 ---
 
@@ -6854,7 +6870,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -6868,7 +6884,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#user ReplicationController#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#user ReplicationController#user}
 
 ---
 
@@ -6877,13 +6893,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -6918,7 +6934,7 @@ Exec ReplicationControllerSpecTemplateSpecContainerStartupProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -6932,7 +6948,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -6946,7 +6962,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -6960,7 +6976,7 @@ HttpGet ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -6974,7 +6990,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -6988,7 +7004,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -7002,7 +7018,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -7016,7 +7032,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -7030,7 +7046,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -7039,7 +7055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerStartupProbeExec {
 	Command: *[]*string,
@@ -7066,7 +7082,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -7075,7 +7091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerStartupProbeGrpc {
 	Port: *f64,
@@ -7102,7 +7118,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -7116,7 +7132,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -7125,7 +7141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGet {
 	Host: *string,
@@ -7158,7 +7174,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -7172,7 +7188,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -7186,7 +7202,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -7202,7 +7218,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -7216,7 +7232,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -7225,7 +7241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -7252,7 +7268,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7266,7 +7282,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -7275,7 +7291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -7302,7 +7318,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -7311,7 +7327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerVolumeDevice {
 	DevicePath: *string,
@@ -7338,7 +7354,7 @@ DevicePath *string
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#device_path ReplicationController#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#device_path ReplicationController#device_path}
 
 ---
 
@@ -7352,7 +7368,7 @@ Name *string
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7361,7 +7377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecContainerVolumeMount {
 	MountPath: *string,
@@ -7396,7 +7412,7 @@ MountPath *string
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#mount_path ReplicationController#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#mount_path ReplicationController#mount_path}
 
 ---
 
@@ -7410,7 +7426,7 @@ Name *string
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7426,7 +7442,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#mount_propagation ReplicationController#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#mount_propagation ReplicationController#mount_propagation}
 
 ---
 
@@ -7440,7 +7456,7 @@ ReadOnly interface{}
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -7454,7 +7470,7 @@ SubPath *string
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#sub_path ReplicationController#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#sub_path ReplicationController#sub_path}
 
 ---
 
@@ -7468,7 +7484,7 @@ SubPathExpr *string
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#sub_path_expr ReplicationController#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#sub_path_expr ReplicationController#sub_path_expr}
 
 ---
 
@@ -7477,7 +7493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecDnsConfig {
 	Nameservers: *[]*string,
@@ -7508,7 +7524,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#nameservers ReplicationController#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#nameservers ReplicationController#nameservers}
 
 ---
 
@@ -7522,7 +7538,7 @@ Option interface{}
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#option ReplicationController#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#option ReplicationController#option}
 
 ---
 
@@ -7538,7 +7554,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#searches ReplicationController#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#searches ReplicationController#searches}
 
 ---
 
@@ -7547,7 +7563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecDnsConfigOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecDnsConfigOption {
 	Name: *string,
@@ -7574,7 +7590,7 @@ Name *string
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7588,7 +7604,7 @@ Value *string
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -7597,7 +7613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecHostAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecHostAliases {
 	Hostnames: *[]*string,
@@ -7624,7 +7640,7 @@ Hostnames *[]*string
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#hostnames ReplicationController#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#hostnames ReplicationController#hostnames}
 
 ---
 
@@ -7638,7 +7654,7 @@ Ip *string
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#ip ReplicationController#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#ip ReplicationController#ip}
 
 ---
 
@@ -7647,7 +7663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecImagePullSecrets {
 	Name: *string,
@@ -7672,7 +7688,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7681,7 +7697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainer {
 	Name: *string,
@@ -7691,13 +7707,14 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerResources,
+	RestartPolicy: *string,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -7725,6 +7742,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainer.property.port">Port</a></code> | <code>interface{}</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainer.property.readinessProbe">ReadinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe">ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainer.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerResources">ReplicationControllerSpecTemplateSpecInitContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainer.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainer.property.securityContext">SecurityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContext">ReplicationControllerSpecTemplateSpecInitContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainer.property.startupProbe">StartupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbe">ReplicationControllerSpecTemplateSpecInitContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainer.property.stdin">Stdin</a></code> | <code>interface{}</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -7750,7 +7768,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7766,7 +7784,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#args ReplicationController#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#args ReplicationController#args}
 
 ---
 
@@ -7782,7 +7800,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -7796,7 +7814,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#env ReplicationController#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#env ReplicationController#env}
 
 ---
 
@@ -7810,7 +7828,7 @@ EnvFrom interface{}
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#env_from ReplicationController#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#env_from ReplicationController#env_from}
 
 ---
 
@@ -7824,7 +7842,7 @@ Image *string
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#image ReplicationController#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#image ReplicationController#image}
 
 ---
 
@@ -7840,7 +7858,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#image_pull_policy ReplicationController#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#image_pull_policy ReplicationController#image_pull_policy}
 
 ---
 
@@ -7854,7 +7872,7 @@ Lifecycle ReplicationControllerSpecTemplateSpecInitContainerLifecycle
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#lifecycle ReplicationController#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#lifecycle ReplicationController#lifecycle}
 
 ---
 
@@ -7868,7 +7886,7 @@ LivenessProbe ReplicationControllerSpecTemplateSpecInitContainerLivenessProbe
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#liveness_probe ReplicationController#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#liveness_probe ReplicationController#liveness_probe}
 
 ---
 
@@ -7882,7 +7900,7 @@ Port interface{}
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -7896,7 +7914,7 @@ ReadinessProbe ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#readiness_probe ReplicationController#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#readiness_probe ReplicationController#readiness_probe}
 
 ---
 
@@ -7910,7 +7928,21 @@ Resources ReplicationControllerSpecTemplateSpecInitContainerResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resources ReplicationController#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resources ReplicationController#resources}
+
+---
+
+##### `RestartPolicy`<sup>Optional</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainer.property.restartPolicy"></a>
+
+```go
+RestartPolicy *string
+```
+
+- *Type:* *string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#restart_policy ReplicationController#restart_policy}
 
 ---
 
@@ -7924,7 +7956,7 @@ SecurityContext ReplicationControllerSpecTemplateSpecInitContainerSecurityContex
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#security_context ReplicationController#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#security_context ReplicationController#security_context}
 
 ---
 
@@ -7938,7 +7970,7 @@ StartupProbe ReplicationControllerSpecTemplateSpecInitContainerStartupProbe
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#startup_probe ReplicationController#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#startup_probe ReplicationController#startup_probe}
 
 ---
 
@@ -7954,7 +7986,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#stdin ReplicationController#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#stdin ReplicationController#stdin}
 
 ---
 
@@ -7970,7 +8002,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#stdin_once ReplicationController#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#stdin_once ReplicationController#stdin_once}
 
 ---
 
@@ -7986,7 +8018,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#termination_message_path ReplicationController#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#termination_message_path ReplicationController#termination_message_path}
 
 ---
 
@@ -8002,7 +8034,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#termination_message_policy ReplicationController#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#termination_message_policy ReplicationController#termination_message_policy}
 
 ---
 
@@ -8016,7 +8048,7 @@ Tty interface{}
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tty ReplicationController#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tty ReplicationController#tty}
 
 ---
 
@@ -8030,7 +8062,7 @@ VolumeDevice interface{}
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_device ReplicationController#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_device ReplicationController#volume_device}
 
 ---
 
@@ -8044,7 +8076,7 @@ VolumeMount interface{}
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_mount ReplicationController#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_mount ReplicationController#volume_mount}
 
 ---
 
@@ -8060,7 +8092,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#working_dir ReplicationController#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#working_dir ReplicationController#working_dir}
 
 ---
 
@@ -8069,12 +8101,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFrom,
 }
 ```
 
@@ -8098,7 +8130,7 @@ Name *string
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -8114,7 +8146,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -8128,7 +8160,7 @@ ValueFrom ReplicationControllerSpecTemplateSpecInitContainerEnvValueFrom
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value_from ReplicationController#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value_from ReplicationController#value_from}
 
 ---
 
@@ -8137,12 +8169,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRef,
 }
 ```
 
@@ -8166,7 +8198,7 @@ ConfigMapRef ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapR
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#config_map_ref ReplicationController#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#config_map_ref ReplicationController#config_map_ref}
 
 ---
 
@@ -8180,7 +8212,7 @@ Prefix *string
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#prefix ReplicationController#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#prefix ReplicationController#prefix}
 
 ---
 
@@ -8194,7 +8226,7 @@ SecretRef ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 
 ---
 
@@ -8203,7 +8235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -8230,7 +8262,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -8244,7 +8276,7 @@ Optional interface{}
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -8253,7 +8285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRef {
 	Name: *string,
@@ -8280,7 +8312,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -8294,7 +8326,7 @@ Optional interface{}
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -8303,13 +8335,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -8334,7 +8366,7 @@ ConfigMapKeyRef ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromCo
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#config_map_key_ref ReplicationController#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#config_map_key_ref ReplicationController#config_map_key_ref}
 
 ---
 
@@ -8348,7 +8380,7 @@ FieldRef ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
 
 ---
 
@@ -8362,7 +8394,7 @@ ResourceFieldRef ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromR
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
 
 ---
 
@@ -8376,7 +8408,7 @@ SecretKeyRef ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecre
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_key_ref ReplicationController#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_key_ref ReplicationController#secret_key_ref}
 
 ---
 
@@ -8385,7 +8417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -8414,7 +8446,7 @@ Key *string
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -8428,7 +8460,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -8442,7 +8474,7 @@ Optional interface{}
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -8451,7 +8483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -8478,7 +8510,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
 
 ---
 
@@ -8492,7 +8524,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
 
 ---
 
@@ -8501,7 +8533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -8515,8 +8547,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
 
 ---
 
@@ -8530,7 +8562,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resource ReplicationController#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resource ReplicationController#resource}
 
 ---
 
@@ -8542,7 +8574,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
 
 ---
 
@@ -8554,7 +8586,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
 
 ---
 
@@ -8563,7 +8595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -8592,7 +8624,7 @@ Key *string
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -8606,7 +8638,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -8620,7 +8652,7 @@ Optional interface{}
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -8629,7 +8661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecycle {
 	PostStart: interface{},
@@ -8656,7 +8688,7 @@ PostStart interface{}
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#post_start ReplicationController#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#post_start ReplicationController#post_start}
 
 ---
 
@@ -8670,7 +8702,7 @@ PreStop interface{}
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#pre_stop ReplicationController#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#pre_stop ReplicationController#pre_stop}
 
 ---
 
@@ -8679,11 +8711,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -8708,7 +8740,7 @@ Exec ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -8722,7 +8754,7 @@ HttpGet ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttp
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -8736,7 +8768,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -8745,7 +8777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -8772,7 +8804,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -8781,7 +8813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -8814,7 +8846,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -8828,7 +8860,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -8842,7 +8874,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -8858,7 +8890,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -8872,7 +8904,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -8881,7 +8913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -8908,7 +8940,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -8922,7 +8954,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -8931,7 +8963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -8958,7 +8990,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -8967,11 +8999,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -8996,7 +9028,7 @@ Exec ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -9010,7 +9042,7 @@ HttpGet ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGe
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -9024,7 +9056,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -9033,7 +9065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -9060,7 +9092,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -9069,7 +9101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -9102,7 +9134,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -9116,7 +9148,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -9130,7 +9162,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -9146,7 +9178,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9160,7 +9192,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -9169,7 +9201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -9196,7 +9228,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -9210,7 +9242,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -9219,7 +9251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -9246,7 +9278,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9255,13 +9287,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -9296,7 +9328,7 @@ Exec ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -9310,7 +9342,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -9324,7 +9356,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -9338,7 +9370,7 @@ HttpGet ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -9352,7 +9384,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -9366,7 +9398,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -9380,7 +9412,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -9394,7 +9426,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -9408,7 +9440,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -9417,7 +9449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -9444,7 +9476,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -9453,7 +9485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -9480,7 +9512,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9494,7 +9526,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -9503,7 +9535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -9536,7 +9568,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -9550,7 +9582,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -9564,7 +9596,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -9580,7 +9612,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9594,7 +9626,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -9603,7 +9635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -9630,7 +9662,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -9644,7 +9676,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -9653,7 +9685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -9680,7 +9712,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9689,7 +9721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerPort {
 	ContainerPort: *f64,
@@ -9724,7 +9756,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container_port ReplicationController#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container_port ReplicationController#container_port}
 
 ---
 
@@ -9738,7 +9770,7 @@ HostIp *string
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host_ip ReplicationController#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host_ip ReplicationController#host_ip}
 
 ---
 
@@ -9754,7 +9786,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host_port ReplicationController#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host_port ReplicationController#host_port}
 
 ---
 
@@ -9770,7 +9802,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -9784,7 +9816,7 @@ Protocol *string
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#protocol ReplicationController#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#protocol ReplicationController#protocol}
 
 ---
 
@@ -9793,13 +9825,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -9834,7 +9866,7 @@ Exec ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -9848,7 +9880,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -9862,7 +9894,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -9876,7 +9908,7 @@ HttpGet ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -9890,7 +9922,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -9904,7 +9936,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -9918,7 +9950,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -9932,7 +9964,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -9946,7 +9978,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -9955,7 +9987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -9982,7 +10014,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -9991,7 +10023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -10018,7 +10050,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -10032,7 +10064,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -10041,7 +10073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -10074,7 +10106,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -10088,7 +10120,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -10102,7 +10134,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -10118,7 +10150,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -10132,7 +10164,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -10141,7 +10173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -10168,7 +10200,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -10182,7 +10214,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -10191,7 +10223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -10218,7 +10250,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -10227,7 +10259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerResources {
 	Limits: *map[string]*string,
@@ -10254,7 +10286,7 @@ Limits *map[string]*string
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#limits ReplicationController#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#limits ReplicationController#limits}
 
 ---
 
@@ -10270,7 +10302,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#requests ReplicationController#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#requests ReplicationController#requests}
 
 ---
 
@@ -10279,18 +10311,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -10322,7 +10354,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#allow_privilege_escalation ReplicationController#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#allow_privilege_escalation ReplicationController#allow_privilege_escalation}
 
 ---
 
@@ -10336,7 +10368,7 @@ Capabilities ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCa
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#capabilities ReplicationController#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#capabilities ReplicationController#capabilities}
 
 ---
 
@@ -10352,7 +10384,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#privileged ReplicationController#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#privileged ReplicationController#privileged}
 
 ---
 
@@ -10366,7 +10398,7 @@ ReadOnlyRootFilesystem interface{}
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only_root_filesystem ReplicationController#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only_root_filesystem ReplicationController#read_only_root_filesystem}
 
 ---
 
@@ -10382,7 +10414,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
 
 ---
 
@@ -10398,7 +10430,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
 
 ---
 
@@ -10414,7 +10446,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
 
 ---
 
@@ -10428,7 +10460,7 @@ SeccompProfile ReplicationControllerSpecTemplateSpecInitContainerSecurityContext
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
 
 ---
 
@@ -10442,7 +10474,7 @@ SeLinuxOptions ReplicationControllerSpecTemplateSpecInitContainerSecurityContext
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
 
 ---
 
@@ -10451,7 +10483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -10478,7 +10510,7 @@ Add *[]*string
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#add ReplicationController#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#add ReplicationController#add}
 
 ---
 
@@ -10492,7 +10524,7 @@ Drop *[]*string
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#drop ReplicationController#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#drop ReplicationController#drop}
 
 ---
 
@@ -10501,7 +10533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -10530,7 +10562,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
 
 ---
 
@@ -10544,7 +10576,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -10553,7 +10585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -10584,7 +10616,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#level ReplicationController#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#level ReplicationController#level}
 
 ---
 
@@ -10598,7 +10630,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#role ReplicationController#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#role ReplicationController#role}
 
 ---
 
@@ -10612,7 +10644,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -10626,7 +10658,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#user ReplicationController#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#user ReplicationController#user}
 
 ---
 
@@ -10635,13 +10667,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -10676,7 +10708,7 @@ Exec ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -10690,7 +10722,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -10704,7 +10736,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -10718,7 +10750,7 @@ HttpGet ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -10732,7 +10764,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -10746,7 +10778,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -10760,7 +10792,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -10774,7 +10806,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -10788,7 +10820,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -10797,7 +10829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExec {
 	Command: *[]*string,
@@ -10824,7 +10856,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -10833,7 +10865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeGrpc {
 	Port: *f64,
@@ -10860,7 +10892,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -10874,7 +10906,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -10883,7 +10915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGet {
 	Host: *string,
@@ -10916,7 +10948,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -10930,7 +10962,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -10944,7 +10976,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -10960,7 +10992,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -10974,7 +11006,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -10983,7 +11015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -11010,7 +11042,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -11024,7 +11056,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -11033,7 +11065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -11060,7 +11092,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -11069,7 +11101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerVolumeDevice {
 	DevicePath: *string,
@@ -11096,7 +11128,7 @@ DevicePath *string
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#device_path ReplicationController#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#device_path ReplicationController#device_path}
 
 ---
 
@@ -11110,7 +11142,7 @@ Name *string
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -11119,7 +11151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecInitContainerVolumeMount {
 	MountPath: *string,
@@ -11154,7 +11186,7 @@ MountPath *string
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#mount_path ReplicationController#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#mount_path ReplicationController#mount_path}
 
 ---
 
@@ -11168,7 +11200,7 @@ Name *string
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -11184,7 +11216,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#mount_propagation ReplicationController#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#mount_propagation ReplicationController#mount_propagation}
 
 ---
 
@@ -11198,7 +11230,7 @@ ReadOnly interface{}
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -11212,7 +11244,7 @@ SubPath *string
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#sub_path ReplicationController#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#sub_path ReplicationController#sub_path}
 
 ---
 
@@ -11226,7 +11258,7 @@ SubPathExpr *string
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#sub_path_expr ReplicationController#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#sub_path_expr ReplicationController#sub_path_expr}
 
 ---
 
@@ -11235,7 +11267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecOs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecOs {
 	Name: *string,
@@ -11260,7 +11292,7 @@ Name *string
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -11269,7 +11301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecReadinessGate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecReadinessGate {
 	ConditionType: *string,
@@ -11294,7 +11326,7 @@ ConditionType *string
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#condition_type ReplicationController#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#condition_type ReplicationController#condition_type}
 
 ---
 
@@ -11303,7 +11335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecSecurityContext {
 	FsGroup: *string,
@@ -11311,11 +11343,11 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptions,
 	SupplementalGroups: *[]*f64,
 	Sysctl: interface{},
-	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptions,
+	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptions,
 }
 ```
 
@@ -11348,7 +11380,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_group ReplicationController#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_group ReplicationController#fs_group}
 
 ---
 
@@ -11364,7 +11396,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_group_change_policy ReplicationController#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_group_change_policy ReplicationController#fs_group_change_policy}
 
 ---
 
@@ -11380,7 +11412,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
 
 ---
 
@@ -11396,7 +11428,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
 
 ---
 
@@ -11412,7 +11444,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
 
 ---
 
@@ -11426,7 +11458,7 @@ SeccompProfile ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfil
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
 
 ---
 
@@ -11440,7 +11472,7 @@ SeLinuxOptions ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOption
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
 
 ---
 
@@ -11456,7 +11488,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#supplemental_groups ReplicationController#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#supplemental_groups ReplicationController#supplemental_groups}
 
 ---
 
@@ -11470,7 +11502,7 @@ Sysctl interface{}
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#sysctl ReplicationController#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#sysctl ReplicationController#sysctl}
 
 ---
 
@@ -11484,7 +11516,7 @@ WindowsOptions ReplicationControllerSpecTemplateSpecSecurityContextWindowsOption
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#windows_options ReplicationController#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#windows_options ReplicationController#windows_options}
 
 ---
 
@@ -11493,7 +11525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -11522,7 +11554,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
 
 ---
 
@@ -11536,7 +11568,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -11545,7 +11577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -11576,7 +11608,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#level ReplicationController#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#level ReplicationController#level}
 
 ---
 
@@ -11590,7 +11622,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#role ReplicationController#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#role ReplicationController#role}
 
 ---
 
@@ -11604,7 +11636,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -11618,7 +11650,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#user ReplicationController#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#user ReplicationController#user}
 
 ---
 
@@ -11627,7 +11659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSysctl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecSecurityContextSysctl {
 	Name: *string,
@@ -11654,7 +11686,7 @@ Name *string
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -11668,7 +11700,7 @@ Value *string
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -11677,7 +11709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptions {
 	GmsaCredentialSpec: *string,
@@ -11708,7 +11740,7 @@ GmsaCredentialSpec *string
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#gmsa_credential_spec ReplicationController#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#gmsa_credential_spec ReplicationController#gmsa_credential_spec}
 
 ---
 
@@ -11722,7 +11754,7 @@ GmsaCredentialSpecName *string
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#gmsa_credential_spec_name ReplicationController#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#gmsa_credential_spec_name ReplicationController#gmsa_credential_spec_name}
 
 ---
 
@@ -11736,7 +11768,7 @@ HostProcess interface{}
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host_process ReplicationController#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host_process ReplicationController#host_process}
 
 ---
 
@@ -11752,7 +11784,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#run_as_username ReplicationController#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#run_as_username ReplicationController#run_as_username}
 
 ---
 
@@ -11761,7 +11793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecToleration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecToleration {
 	Effect: *string,
@@ -11796,7 +11828,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#effect ReplicationController#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#effect ReplicationController#effect}
 
 ---
 
@@ -11812,7 +11844,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -11828,7 +11860,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -11844,7 +11876,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#toleration_seconds ReplicationController#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#toleration_seconds ReplicationController#toleration_seconds}
 
 ---
 
@@ -11860,7 +11892,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -11869,7 +11901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecTopologySpreadConstraint {
 	LabelSelector: interface{},
@@ -11908,7 +11940,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
 
 ---
 
@@ -11922,7 +11954,7 @@ MatchLabelKeys *[]*string
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_label_keys ReplicationController#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_label_keys ReplicationController#match_label_keys}
 
 ---
 
@@ -11936,7 +11968,7 @@ MaxSkew *f64
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#max_skew ReplicationController#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#max_skew ReplicationController#max_skew}
 
 ---
 
@@ -11950,7 +11982,7 @@ MinDomains *f64
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#min_domains ReplicationController#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#min_domains ReplicationController#min_domains}
 
 ---
 
@@ -11964,7 +11996,7 @@ NodeAffinityPolicy *string
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#node_affinity_policy ReplicationController#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#node_affinity_policy ReplicationController#node_affinity_policy}
 
 ---
 
@@ -11978,7 +12010,7 @@ NodeTaintsPolicy *string
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#node_taints_policy ReplicationController#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#node_taints_policy ReplicationController#node_taints_policy}
 
 ---
 
@@ -11994,7 +12026,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
 
 ---
 
@@ -12008,7 +12040,7 @@ WhenUnsatisfiable *string
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#when_unsatisfiable ReplicationController#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#when_unsatisfiable ReplicationController#when_unsatisfiable}
 
 ---
 
@@ -12017,7 +12049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelector {
 	MatchExpressions: interface{},
@@ -12044,7 +12076,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -12060,7 +12092,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -12069,7 +12101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions {
 	Key: *string,
@@ -12098,7 +12130,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -12112,7 +12144,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -12128,7 +12160,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -12137,37 +12169,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolume {
-	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStore,
-	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureDisk,
-	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureFile,
-	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFs,
-	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeCinder,
-	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMap,
-	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsi,
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApi,
-	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeEmptyDir,
-	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeral,
-	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeFc,
-	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolume,
-	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlocker,
-	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeGcePersistentDisk,
-	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeGitRepo,
-	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeGlusterfs,
-	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeHostPath,
-	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeIscsi,
-	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeLocal,
+	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStore,
+	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureDisk,
+	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureFile,
+	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFs,
+	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeCinder,
+	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMap,
+	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApi,
+	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeEmptyDir,
+	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeral,
+	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeFc,
+	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolume,
+	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlocker,
+	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeGcePersistentDisk,
+	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeGitRepo,
+	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeGlusterfs,
+	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeHostPath,
+	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeIscsi,
+	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeLocal,
 	Name: *string,
-	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeNfs,
-	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaim,
-	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDisk,
+	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeNfs,
+	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaim,
+	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDisk,
 	Projected: interface{},
-	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeQuobyte,
-	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbd,
-	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecret,
-	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeVsphereVolume,
+	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeQuobyte,
+	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbd,
+	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecret,
+	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeVsphereVolume,
 }
 ```
 
@@ -12216,7 +12248,7 @@ AwsElasticBlockStore ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockS
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#aws_elastic_block_store ReplicationController#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#aws_elastic_block_store ReplicationController#aws_elastic_block_store}
 
 ---
 
@@ -12230,7 +12262,7 @@ AzureDisk ReplicationControllerSpecTemplateSpecVolumeAzureDisk
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#azure_disk ReplicationController#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#azure_disk ReplicationController#azure_disk}
 
 ---
 
@@ -12244,7 +12276,7 @@ AzureFile ReplicationControllerSpecTemplateSpecVolumeAzureFile
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#azure_file ReplicationController#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#azure_file ReplicationController#azure_file}
 
 ---
 
@@ -12258,7 +12290,7 @@ CephFs ReplicationControllerSpecTemplateSpecVolumeCephFs
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#ceph_fs ReplicationController#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#ceph_fs ReplicationController#ceph_fs}
 
 ---
 
@@ -12272,7 +12304,7 @@ Cinder ReplicationControllerSpecTemplateSpecVolumeCinder
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#cinder ReplicationController#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#cinder ReplicationController#cinder}
 
 ---
 
@@ -12286,7 +12318,7 @@ ConfigMap ReplicationControllerSpecTemplateSpecVolumeConfigMap
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#config_map ReplicationController#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#config_map ReplicationController#config_map}
 
 ---
 
@@ -12300,7 +12332,7 @@ Csi ReplicationControllerSpecTemplateSpecVolumeCsi
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#csi ReplicationController#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#csi ReplicationController#csi}
 
 ---
 
@@ -12314,7 +12346,7 @@ DownwardApi ReplicationControllerSpecTemplateSpecVolumeDownwardApi
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#downward_api ReplicationController#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#downward_api ReplicationController#downward_api}
 
 ---
 
@@ -12328,7 +12360,7 @@ EmptyDir ReplicationControllerSpecTemplateSpecVolumeEmptyDir
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#empty_dir ReplicationController#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#empty_dir ReplicationController#empty_dir}
 
 ---
 
@@ -12342,7 +12374,7 @@ Ephemeral ReplicationControllerSpecTemplateSpecVolumeEphemeral
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#ephemeral ReplicationController#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#ephemeral ReplicationController#ephemeral}
 
 ---
 
@@ -12356,7 +12388,7 @@ Fc ReplicationControllerSpecTemplateSpecVolumeFc
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fc ReplicationController#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fc ReplicationController#fc}
 
 ---
 
@@ -12370,7 +12402,7 @@ FlexVolume ReplicationControllerSpecTemplateSpecVolumeFlexVolume
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#flex_volume ReplicationController#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#flex_volume ReplicationController#flex_volume}
 
 ---
 
@@ -12384,7 +12416,7 @@ Flocker ReplicationControllerSpecTemplateSpecVolumeFlocker
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#flocker ReplicationController#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#flocker ReplicationController#flocker}
 
 ---
 
@@ -12398,7 +12430,7 @@ GcePersistentDisk ReplicationControllerSpecTemplateSpecVolumeGcePersistentDisk
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#gce_persistent_disk ReplicationController#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#gce_persistent_disk ReplicationController#gce_persistent_disk}
 
 ---
 
@@ -12412,7 +12444,7 @@ GitRepo ReplicationControllerSpecTemplateSpecVolumeGitRepo
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#git_repo ReplicationController#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#git_repo ReplicationController#git_repo}
 
 ---
 
@@ -12426,7 +12458,7 @@ Glusterfs ReplicationControllerSpecTemplateSpecVolumeGlusterfs
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#glusterfs ReplicationController#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#glusterfs ReplicationController#glusterfs}
 
 ---
 
@@ -12440,7 +12472,7 @@ HostPath ReplicationControllerSpecTemplateSpecVolumeHostPath
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#host_path ReplicationController#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#host_path ReplicationController#host_path}
 
 ---
 
@@ -12454,7 +12486,7 @@ Iscsi ReplicationControllerSpecTemplateSpecVolumeIscsi
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#iscsi ReplicationController#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#iscsi ReplicationController#iscsi}
 
 ---
 
@@ -12468,7 +12500,7 @@ Local ReplicationControllerSpecTemplateSpecVolumeLocal
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#local ReplicationController#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#local ReplicationController#local}
 
 ---
 
@@ -12482,7 +12514,7 @@ Name *string
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -12496,7 +12528,7 @@ Nfs ReplicationControllerSpecTemplateSpecVolumeNfs
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#nfs ReplicationController#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#nfs ReplicationController#nfs}
 
 ---
 
@@ -12510,7 +12542,7 @@ PersistentVolumeClaim ReplicationControllerSpecTemplateSpecVolumePersistentVolum
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#persistent_volume_claim ReplicationController#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#persistent_volume_claim ReplicationController#persistent_volume_claim}
 
 ---
 
@@ -12524,7 +12556,7 @@ PhotonPersistentDisk ReplicationControllerSpecTemplateSpecVolumePhotonPersistent
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#photon_persistent_disk ReplicationController#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#photon_persistent_disk ReplicationController#photon_persistent_disk}
 
 ---
 
@@ -12538,7 +12570,7 @@ Projected interface{}
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#projected ReplicationController#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#projected ReplicationController#projected}
 
 ---
 
@@ -12552,7 +12584,7 @@ Quobyte ReplicationControllerSpecTemplateSpecVolumeQuobyte
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#quobyte ReplicationController#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#quobyte ReplicationController#quobyte}
 
 ---
 
@@ -12566,7 +12598,7 @@ Rbd ReplicationControllerSpecTemplateSpecVolumeRbd
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#rbd ReplicationController#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#rbd ReplicationController#rbd}
 
 ---
 
@@ -12580,7 +12612,7 @@ Secret ReplicationControllerSpecTemplateSpecVolumeSecret
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret ReplicationController#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret ReplicationController#secret}
 
 ---
 
@@ -12594,7 +12626,7 @@ VsphereVolume ReplicationControllerSpecTemplateSpecVolumeVsphereVolume
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#vsphere_volume ReplicationController#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#vsphere_volume ReplicationController#vsphere_volume}
 
 ---
 
@@ -12603,7 +12635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStore {
 	VolumeId: *string,
@@ -12634,7 +12666,7 @@ VolumeId *string
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_id ReplicationController#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_id ReplicationController#volume_id}
 
 ---
 
@@ -12650,7 +12682,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -12666,7 +12698,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#partition ReplicationController#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#partition ReplicationController#partition}
 
 ---
 
@@ -12680,7 +12712,7 @@ ReadOnly interface{}
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -12689,7 +12721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeAzureDisk {
 	CachingMode: *string,
@@ -12724,7 +12756,7 @@ CachingMode *string
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#caching_mode ReplicationController#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#caching_mode ReplicationController#caching_mode}
 
 ---
 
@@ -12738,7 +12770,7 @@ DataDiskUri *string
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#data_disk_uri ReplicationController#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#data_disk_uri ReplicationController#data_disk_uri}
 
 ---
 
@@ -12752,7 +12784,7 @@ DiskName *string
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#disk_name ReplicationController#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#disk_name ReplicationController#disk_name}
 
 ---
 
@@ -12768,7 +12800,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -12782,7 +12814,7 @@ Kind *string
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#kind ReplicationController#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#kind ReplicationController#kind}
 
 ---
 
@@ -12796,7 +12828,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -12805,7 +12837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeAzureFile {
 	SecretName: *string,
@@ -12836,7 +12868,7 @@ SecretName *string
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_name ReplicationController#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_name ReplicationController#secret_name}
 
 ---
 
@@ -12850,7 +12882,7 @@ ShareName *string
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#share_name ReplicationController#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#share_name ReplicationController#share_name}
 
 ---
 
@@ -12864,7 +12896,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -12880,7 +12912,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_namespace ReplicationController#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_namespace ReplicationController#secret_namespace}
 
 ---
 
@@ -12889,14 +12921,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeCephFs {
 	Monitors: *[]*string,
 	Path: *string,
 	ReadOnly: interface{},
 	SecretFile: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRef,
 	User: *string,
 }
 ```
@@ -12924,7 +12956,7 @@ Monitors *[]*string
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#monitors ReplicationController#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#monitors ReplicationController#monitors}
 
 ---
 
@@ -12938,7 +12970,7 @@ Path *string
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -12952,7 +12984,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -12966,7 +12998,7 @@ SecretFile *string
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_file ReplicationController#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_file ReplicationController#secret_file}
 
 ---
 
@@ -12980,7 +13012,7 @@ SecretRef ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 
 ---
 
@@ -12994,7 +13026,7 @@ User *string
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#user ReplicationController#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#user ReplicationController#user}
 
 ---
 
@@ -13003,7 +13035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRef {
 	Name: *string,
@@ -13030,7 +13062,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -13044,7 +13076,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
 
 ---
 
@@ -13053,7 +13085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCinder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeCinder {
 	VolumeId: *string,
@@ -13082,7 +13114,7 @@ VolumeId *string
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_id ReplicationController#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_id ReplicationController#volume_id}
 
 ---
 
@@ -13098,7 +13130,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -13112,7 +13144,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -13121,7 +13153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeConfigMap {
 	DefaultMode: *string,
@@ -13154,7 +13186,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
 
 ---
 
@@ -13168,7 +13200,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -13182,7 +13214,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -13196,7 +13228,7 @@ Optional interface{}
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -13205,7 +13237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeConfigMapItems {
 	Key: *string,
@@ -13234,7 +13266,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -13250,7 +13282,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -13266,7 +13298,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -13275,12 +13307,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeCsi {
 	Driver: *string,
 	FsType: *string,
-	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRef,
+	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRef,
 	ReadOnly: interface{},
 	VolumeAttributes: *map[string]*string,
 }
@@ -13308,7 +13340,7 @@ Driver *string
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#driver ReplicationController#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#driver ReplicationController#driver}
 
 ---
 
@@ -13324,7 +13356,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -13338,7 +13370,7 @@ NodePublishSecretRef ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSe
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#node_publish_secret_ref ReplicationController#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#node_publish_secret_ref ReplicationController#node_publish_secret_ref}
 
 ---
 
@@ -13352,7 +13384,7 @@ ReadOnly interface{}
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -13366,7 +13398,7 @@ VolumeAttributes *map[string]*string
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_attributes ReplicationController#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_attributes ReplicationController#volume_attributes}
 
 ---
 
@@ -13375,7 +13407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRef {
 	Name: *string,
@@ -13400,7 +13432,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -13409,7 +13441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeDownwardApi {
 	DefaultMode: *string,
@@ -13438,7 +13470,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
 
 ---
 
@@ -13452,7 +13484,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -13461,13 +13493,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItems {
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRef,
 	Path: *string,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -13492,7 +13524,7 @@ FieldRef ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
 
 ---
 
@@ -13508,7 +13540,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -13524,7 +13556,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -13538,7 +13570,7 @@ ResourceFieldRef ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsReso
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
 
 ---
 
@@ -13547,7 +13579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -13574,7 +13606,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
 
 ---
 
@@ -13588,7 +13620,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
 
 ---
 
@@ -13597,7 +13629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -13610,9 +13642,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
 
 ---
 
@@ -13624,7 +13656,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
 
 ---
 
@@ -13638,7 +13670,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resource ReplicationController#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resource ReplicationController#resource}
 
 ---
 
@@ -13650,7 +13682,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
 
 ---
 
@@ -13659,7 +13691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeEmptyDir {
 	Medium: *string,
@@ -13688,7 +13720,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#medium ReplicationController#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#medium ReplicationController#medium}
 
 ---
 
@@ -13702,7 +13734,7 @@ SizeLimit *string
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#size_limit ReplicationController#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#size_limit ReplicationController#size_limit}
 
 ---
 
@@ -13711,10 +13743,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeral.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeEphemeral {
-	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
+	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
 }
 ```
 
@@ -13736,7 +13768,7 @@ VolumeClaimTemplate ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeCl
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_claim_template ReplicationController#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_claim_template ReplicationController#volume_claim_template}
 
 ---
 
@@ -13745,11 +13777,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate {
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
 }
 ```
 
@@ -13772,7 +13804,7 @@ Spec ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#spec ReplicationController#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#spec ReplicationController#spec}
 
 ---
 
@@ -13786,7 +13818,7 @@ Metadata ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#metadata ReplicationController#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#metadata ReplicationController#metadata}
 
 ---
 
@@ -13795,7 +13827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -13824,7 +13856,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#annotations ReplicationController#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#annotations ReplicationController#annotations}
 
 ---
 
@@ -13840,7 +13872,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#labels ReplicationController#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#labels ReplicationController#labels}
 
 ---
 
@@ -13849,12 +13881,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec {
 	AccessModes: *[]*string,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
 	StorageClassName: *string,
 	VolumeMode: *string,
 	VolumeName: *string,
@@ -13884,7 +13916,7 @@ AccessModes *[]*string
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#access_modes ReplicationController#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#access_modes ReplicationController#access_modes}
 
 ---
 
@@ -13898,7 +13930,7 @@ Resources ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplat
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resources ReplicationController#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resources ReplicationController#resources}
 
 ---
 
@@ -13912,7 +13944,7 @@ Selector ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#selector ReplicationController#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#selector ReplicationController#selector}
 
 ---
 
@@ -13926,7 +13958,7 @@ StorageClassName *string
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#storage_class_name ReplicationController#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#storage_class_name ReplicationController#storage_class_name}
 
 ---
 
@@ -13940,7 +13972,7 @@ VolumeMode *string
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_mode ReplicationController#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_mode ReplicationController#volume_mode}
 
 ---
 
@@ -13954,7 +13986,7 @@ VolumeName *string
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_name ReplicationController#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_name ReplicationController#volume_name}
 
 ---
 
@@ -13963,7 +13995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources {
 	Limits: *map[string]*string,
@@ -13990,7 +14022,7 @@ Limits *map[string]*string
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#limits ReplicationController#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#limits ReplicationController#limits}
 
 ---
 
@@ -14006,7 +14038,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#requests ReplicationController#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#requests ReplicationController#requests}
 
 ---
 
@@ -14015,7 +14047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector {
 	MatchExpressions: interface{},
@@ -14042,7 +14074,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -14058,7 +14090,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -14067,7 +14099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions {
 	Key: *string,
@@ -14096,7 +14128,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -14110,7 +14142,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -14126,7 +14158,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -14135,7 +14167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeFc {
 	Lun: *f64,
@@ -14166,7 +14198,7 @@ Lun *f64
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#lun ReplicationController#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#lun ReplicationController#lun}
 
 ---
 
@@ -14180,7 +14212,7 @@ TargetWwNs *[]*string
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#target_ww_ns ReplicationController#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#target_ww_ns ReplicationController#target_ww_ns}
 
 ---
 
@@ -14196,7 +14228,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -14210,7 +14242,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14219,14 +14251,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeFlexVolume {
 	Driver: *string,
 	FsType: *string,
 	Options: *map[string]*string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRef,
 }
 ```
 
@@ -14252,7 +14284,7 @@ Driver *string
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#driver ReplicationController#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#driver ReplicationController#driver}
 
 ---
 
@@ -14268,7 +14300,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -14282,7 +14314,7 @@ Options *map[string]*string
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#options ReplicationController#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#options ReplicationController#options}
 
 ---
 
@@ -14296,7 +14328,7 @@ ReadOnly interface{}
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14310,7 +14342,7 @@ SecretRef ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 
 ---
 
@@ -14319,7 +14351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRef {
 	Name: *string,
@@ -14346,7 +14378,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -14360,7 +14392,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
 
 ---
 
@@ -14369,7 +14401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlocker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeFlocker {
 	DatasetName: *string,
@@ -14396,7 +14428,7 @@ DatasetName *string
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#dataset_name ReplicationController#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#dataset_name ReplicationController#dataset_name}
 
 ---
 
@@ -14410,7 +14442,7 @@ DatasetUuid *string
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#dataset_uuid ReplicationController#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#dataset_uuid ReplicationController#dataset_uuid}
 
 ---
 
@@ -14419,7 +14451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGcePersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeGcePersistentDisk {
 	PdName: *string,
@@ -14450,7 +14482,7 @@ PdName *string
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#pd_name ReplicationController#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#pd_name ReplicationController#pd_name}
 
 ---
 
@@ -14466,7 +14498,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -14482,7 +14514,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#partition ReplicationController#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#partition ReplicationController#partition}
 
 ---
 
@@ -14496,7 +14528,7 @@ ReadOnly interface{}
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14505,7 +14537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGitRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeGitRepo {
 	Directory: *string,
@@ -14536,7 +14568,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#directory ReplicationController#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#directory ReplicationController#directory}
 
 ---
 
@@ -14550,7 +14582,7 @@ Repository *string
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#repository ReplicationController#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#repository ReplicationController#repository}
 
 ---
 
@@ -14564,7 +14596,7 @@ Revision *string
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#revision ReplicationController#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#revision ReplicationController#revision}
 
 ---
 
@@ -14573,7 +14605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGlusterfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeGlusterfs {
 	EndpointsName: *string,
@@ -14602,7 +14634,7 @@ EndpointsName *string
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#endpoints_name ReplicationController#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#endpoints_name ReplicationController#endpoints_name}
 
 ---
 
@@ -14616,7 +14648,7 @@ Path *string
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -14630,7 +14662,7 @@ ReadOnly interface{}
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14639,7 +14671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeHostPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeHostPath {
 	Path: *string,
@@ -14666,7 +14698,7 @@ Path *string
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -14680,7 +14712,7 @@ Type *string
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -14689,7 +14721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeIscsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeIscsi {
 	Iqn: *string,
@@ -14724,7 +14756,7 @@ Iqn *string
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#iqn ReplicationController#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#iqn ReplicationController#iqn}
 
 ---
 
@@ -14740,7 +14772,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#target_portal ReplicationController#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#target_portal ReplicationController#target_portal}
 
 ---
 
@@ -14756,7 +14788,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -14770,7 +14802,7 @@ IscsiInterface *string
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#iscsi_interface ReplicationController#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#iscsi_interface ReplicationController#iscsi_interface}
 
 ---
 
@@ -14784,7 +14816,7 @@ Lun *f64
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#lun ReplicationController#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#lun ReplicationController#lun}
 
 ---
 
@@ -14798,7 +14830,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14807,7 +14839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeLocal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeLocal {
 	Path: *string,
@@ -14832,7 +14864,7 @@ Path *string
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -14841,7 +14873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeNfs {
 	Path: *string,
@@ -14870,7 +14902,7 @@ Path *string
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -14884,7 +14916,7 @@ Server *string
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#server ReplicationController#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#server ReplicationController#server}
 
 ---
 
@@ -14898,7 +14930,7 @@ ReadOnly interface{}
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14907,7 +14939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaim {
 	ClaimName: *string,
@@ -14934,7 +14966,7 @@ ClaimName *string
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#claim_name ReplicationController#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#claim_name ReplicationController#claim_name}
 
 ---
 
@@ -14948,7 +14980,7 @@ ReadOnly interface{}
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14957,7 +14989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDisk {
 	PdId: *string,
@@ -14984,7 +15016,7 @@ PdId *string
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#pd_id ReplicationController#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#pd_id ReplicationController#pd_id}
 
 ---
 
@@ -15000,7 +15032,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -15009,7 +15041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjected.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjected {
 	Sources: interface{},
@@ -15036,7 +15068,7 @@ Sources interface{}
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#sources ReplicationController#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#sources ReplicationController#sources}
 
 ---
 
@@ -15052,7 +15084,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
 
 ---
 
@@ -15061,13 +15093,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjectedSources {
 	ConfigMap: interface{},
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApi,
 	Secret: interface{},
-	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
+	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
 }
 ```
 
@@ -15092,7 +15124,7 @@ ConfigMap interface{}
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#config_map ReplicationController#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#config_map ReplicationController#config_map}
 
 ---
 
@@ -15106,7 +15138,7 @@ DownwardApi ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardA
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#downward_api ReplicationController#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#downward_api ReplicationController#downward_api}
 
 ---
 
@@ -15120,7 +15152,7 @@ Secret interface{}
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret ReplicationController#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret ReplicationController#secret}
 
 ---
 
@@ -15134,7 +15166,7 @@ ServiceAccountToken ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesS
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#service_account_token ReplicationController#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#service_account_token ReplicationController#service_account_token}
 
 ---
 
@@ -15143,7 +15175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMap {
 	Items: interface{},
@@ -15172,7 +15204,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -15186,7 +15218,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -15200,7 +15232,7 @@ Optional interface{}
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -15209,7 +15241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItems {
 	Key: *string,
@@ -15238,7 +15270,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -15254,7 +15286,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -15270,7 +15302,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -15279,7 +15311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApi {
 	Items: interface{},
@@ -15304,7 +15336,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -15313,13 +15345,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems {
 	Path: *string,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -15346,7 +15378,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -15360,7 +15392,7 @@ FieldRef ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiI
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
 
 ---
 
@@ -15376,7 +15408,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -15390,7 +15422,7 @@ ResourceFieldRef ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDown
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
 
 ---
 
@@ -15399,7 +15431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -15426,7 +15458,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
 
 ---
 
@@ -15440,7 +15472,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
 
 ---
 
@@ -15449,7 +15481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -15462,9 +15494,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
 
 ---
 
@@ -15476,7 +15508,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
 
 ---
 
@@ -15490,7 +15522,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#resource ReplicationController#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#resource ReplicationController#resource}
 
 ---
 
@@ -15502,7 +15534,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
 
 ---
 
@@ -15511,7 +15543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecret {
 	Items: interface{},
@@ -15540,7 +15572,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -15554,7 +15586,7 @@ Name *string
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -15568,7 +15600,7 @@ Optional interface{}
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -15577,7 +15609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItems {
 	Key: *string,
@@ -15606,7 +15638,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -15622,7 +15654,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -15638,7 +15670,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -15647,7 +15679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken {
 	Path: *string,
@@ -15676,7 +15708,7 @@ Path *string
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -15690,7 +15722,7 @@ Audience *string
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#audience ReplicationController#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#audience ReplicationController#audience}
 
 ---
 
@@ -15706,7 +15738,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#expiration_seconds ReplicationController#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#expiration_seconds ReplicationController#expiration_seconds}
 
 ---
 
@@ -15715,7 +15747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeQuobyte.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeQuobyte {
 	Registry: *string,
@@ -15748,7 +15780,7 @@ Registry *string
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#registry ReplicationController#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#registry ReplicationController#registry}
 
 ---
 
@@ -15762,7 +15794,7 @@ Volume *string
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume ReplicationController#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume ReplicationController#volume}
 
 ---
 
@@ -15776,7 +15808,7 @@ Group *string
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#group ReplicationController#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#group ReplicationController#group}
 
 ---
 
@@ -15790,7 +15822,7 @@ ReadOnly interface{}
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -15804,7 +15836,7 @@ User *string
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#user ReplicationController#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#user ReplicationController#user}
 
 ---
 
@@ -15813,7 +15845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeRbd {
 	CephMonitors: *[]*string,
@@ -15823,7 +15855,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 	RadosUser: *string,
 	RbdPool: *string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRef,
 }
 ```
 
@@ -15852,7 +15884,7 @@ CephMonitors *[]*string
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#ceph_monitors ReplicationController#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#ceph_monitors ReplicationController#ceph_monitors}
 
 ---
 
@@ -15866,7 +15898,7 @@ RbdImage *string
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#rbd_image ReplicationController#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#rbd_image ReplicationController#rbd_image}
 
 ---
 
@@ -15882,7 +15914,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -15896,7 +15928,7 @@ Keyring *string
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#keyring ReplicationController#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#keyring ReplicationController#keyring}
 
 ---
 
@@ -15910,7 +15942,7 @@ RadosUser *string
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#rados_user ReplicationController#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#rados_user ReplicationController#rados_user}
 
 ---
 
@@ -15924,7 +15956,7 @@ RbdPool *string
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#rbd_pool ReplicationController#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#rbd_pool ReplicationController#rbd_pool}
 
 ---
 
@@ -15938,7 +15970,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -15952,7 +15984,7 @@ SecretRef ReplicationControllerSpecTemplateSpecVolumeRbdSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 
 ---
 
@@ -15961,7 +15993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRef {
 	Name: *string,
@@ -15988,7 +16020,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -16002,7 +16034,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
 
 ---
 
@@ -16011,7 +16043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeSecret {
 	DefaultMode: *string,
@@ -16044,7 +16076,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
 
 ---
 
@@ -16058,7 +16090,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -16072,7 +16104,7 @@ Optional interface{}
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -16086,7 +16118,7 @@ SecretName *string
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#secret_name ReplicationController#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#secret_name ReplicationController#secret_name}
 
 ---
 
@@ -16095,7 +16127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeSecretItems {
 	Key: *string,
@@ -16124,7 +16156,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -16140,7 +16172,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -16156,7 +16188,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -16165,7 +16197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeVsphereVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerSpecTemplateSpecVolumeVsphereVolume {
 	VolumePath: *string,
@@ -16192,7 +16224,7 @@ VolumePath *string
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#volume_path ReplicationController#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#volume_path ReplicationController#volume_path}
 
 ---
 
@@ -16208,7 +16240,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -16217,7 +16249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 &replicationcontroller.ReplicationControllerTimeouts {
 	Create: *string,
@@ -16230,9 +16262,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#create ReplicationController#create}. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#delete ReplicationController#delete}. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#update ReplicationController#update}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#create ReplicationController#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#delete ReplicationController#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#update ReplicationController#update}. |
 
 ---
 
@@ -16244,7 +16276,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#create ReplicationController#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#create ReplicationController#create}.
 
 ---
 
@@ -16256,7 +16288,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#delete ReplicationController#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#delete ReplicationController#delete}.
 
 ---
 
@@ -16268,7 +16300,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/replication_controller#update ReplicationController#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/replication_controller#update ReplicationController#update}.
 
 ---
 
@@ -16279,7 +16311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerMetadataOutputReference
 ```
@@ -16706,7 +16738,7 @@ func InternalValue() ReplicationControllerMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecOutputReference
 ```
@@ -17070,7 +17102,7 @@ func InternalValue() ReplicationControllerSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateMetadataOutputReference
 ```
@@ -17497,7 +17529,7 @@ func InternalValue() ReplicationControllerSpecTemplateMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateOutputReference
 ```
@@ -17816,7 +17848,7 @@ func InternalValue() ReplicationControllerSpecTemplate
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityOutputReference
 ```
@@ -18149,7 +18181,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecAffinityNodeAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -18309,7 +18341,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -18633,7 +18665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList
 ```
@@ -18793,7 +18825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference
 ```
@@ -19147,7 +19179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList
 ```
@@ -19307,7 +19339,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference
 ```
@@ -19647,7 +19679,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference
 ```
@@ -19980,7 +20012,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList
 ```
@@ -20140,7 +20172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList
 ```
@@ -20300,7 +20332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference
 ```
@@ -20654,7 +20686,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
 ```
@@ -20814,7 +20846,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference
 ```
@@ -21154,7 +21186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference
 ```
@@ -21505,7 +21537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -21796,7 +21828,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecAffinityOutputReference
 ```
@@ -22171,7 +22203,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecAffinityPodAffinityOutputReference
 ```
@@ -22504,7 +22536,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecAffinityPodAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -22664,7 +22696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -22988,7 +23020,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -23148,7 +23180,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -23308,7 +23340,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -23662,7 +23694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -24000,7 +24032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -24160,7 +24192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -24320,7 +24352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -24674,7 +24706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -25012,7 +25044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -25396,7 +25428,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecAffinityPodAffinityPre
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -25556,7 +25588,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -25716,7 +25748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -26070,7 +26102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -26408,7 +26440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -26568,7 +26600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -26728,7 +26760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -26888,7 +26920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -27242,7 +27274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -27580,7 +27612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -27982,7 +28014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityOutputReference
 ```
@@ -28315,7 +28347,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinit
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -28475,7 +28507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -28799,7 +28831,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -28959,7 +28991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -29119,7 +29151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -29473,7 +29505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -29811,7 +29843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -29971,7 +30003,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -30131,7 +30163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -30485,7 +30517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -30823,7 +30855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -31207,7 +31239,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinit
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -31367,7 +31399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -31527,7 +31559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -31881,7 +31913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -32219,7 +32251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -32379,7 +32411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -32539,7 +32571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -32699,7 +32731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -33053,7 +33085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -33391,7 +33423,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -33793,7 +33825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference
 ```
@@ -34093,7 +34125,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerEnvFromConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerEnvFromList
 ```
@@ -34253,7 +34285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerEnvFromOutputReference
 ```
@@ -34633,7 +34665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRefOutputReference
 ```
@@ -34933,7 +34965,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerEnvFromSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerEnvList
 ```
@@ -35093,7 +35125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerEnvOutputReference
 ```
@@ -35453,7 +35485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -35789,7 +35821,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerEnvValueFromC
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference
 ```
@@ -36096,7 +36128,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerEnvValueFromF
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerEnvValueFromOutputReference
 ```
@@ -36513,7 +36545,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerEnvValueFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -36842,7 +36874,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerEnvValueFromR
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -37178,7 +37210,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerEnvValueFromS
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference
 ```
@@ -37511,7 +37543,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExecOutputReference
 ```
@@ -37789,7 +37821,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerLifecyclePost
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -37949,7 +37981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -38274,7 +38306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -38681,7 +38713,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerLifecyclePost
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartList
 ```
@@ -38841,7 +38873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartOutputReference
 ```
@@ -39234,7 +39266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketList
 ```
@@ -39394,7 +39426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -39683,7 +39715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExecOutputReference
 ```
@@ -39961,7 +39993,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerLifecyclePreS
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -40121,7 +40153,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -40446,7 +40478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -40853,7 +40885,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerLifecyclePreS
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList
 ```
@@ -41013,7 +41045,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopOutputReference
 ```
@@ -41406,7 +41438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketList
 ```
@@ -41566,7 +41598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -41855,7 +41887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerList
 ```
@@ -42015,7 +42047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerLivenessProbeExecOutputReference
 ```
@@ -42293,7 +42325,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerLivenessProbeGrpcList
 ```
@@ -42453,7 +42485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerLivenessProbeGrpcOutputReference
 ```
@@ -42771,7 +42803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -42931,7 +42963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -43256,7 +43288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference
 ```
@@ -43663,7 +43695,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerLivenessProbeOutputReference
 ```
@@ -44225,7 +44257,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketList
 ```
@@ -44385,7 +44417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -44674,7 +44706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerOutputReference
 ```
@@ -44759,6 +44791,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.resetReadinessProbe">ResetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.resetRestartPolicy">ResetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.resetSecurityContext">ResetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.resetStartupProbe">ResetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.resetStdin">ResetStdin</a></code> | *No description.* |
@@ -45120,6 +45153,12 @@ func ResetReadinessProbe()
 func ResetResources()
 ```
 
+##### `ResetRestartPolicy` <a name="ResetRestartPolicy" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.resetRestartPolicy"></a>
+
+```go
+func ResetRestartPolicy()
+```
+
 ##### `ResetSecurityContext` <a name="ResetSecurityContext" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.resetSecurityContext"></a>
 
 ```go
@@ -45210,6 +45249,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.portInput">PortInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.readinessProbeInput">ReadinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbe">ReplicationControllerSpecTemplateSpecContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerResources">ReplicationControllerSpecTemplateSpecContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.restartPolicyInput">RestartPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.securityContextInput">SecurityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContext">ReplicationControllerSpecTemplateSpecContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.startupProbeInput">StartupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbe">ReplicationControllerSpecTemplateSpecContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.stdinInput">StdinInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -45225,6 +45265,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.image">Image</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.imagePullPolicy">ImagePullPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.stdin">Stdin</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.stdinOnce">StdinOnce</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.terminationMessagePath">TerminationMessagePath</a></code> | <code>*string</code> | *No description.* |
@@ -45489,6 +45530,16 @@ func ResourcesInput() ReplicationControllerSpecTemplateSpecContainerResources
 
 ---
 
+##### `RestartPolicyInput`<sup>Optional</sup> <a name="RestartPolicyInput" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.restartPolicyInput"></a>
+
+```go
+func RestartPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SecurityContextInput`<sup>Optional</sup> <a name="SecurityContextInput" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.securityContextInput"></a>
 
 ```go
@@ -45639,6 +45690,16 @@ func Name() *string
 
 ---
 
+##### `RestartPolicy`<sup>Required</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.restartPolicy"></a>
+
+```go
+func RestartPolicy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Stdin`<sup>Required</sup> <a name="Stdin" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference.property.stdin"></a>
 
 ```go
@@ -45715,7 +45776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerPortList
 ```
@@ -45875,7 +45936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerPortOutputReference
 ```
@@ -46280,7 +46341,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerReadinessProbeExecOutputReference
 ```
@@ -46558,7 +46619,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerReadinessProb
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerReadinessProbeGrpcList
 ```
@@ -46718,7 +46779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerReadinessProbeGrpcOutputReference
 ```
@@ -47036,7 +47097,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -47196,7 +47257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -47521,7 +47582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference
 ```
@@ -47928,7 +47989,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerReadinessProb
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerReadinessProbeOutputReference
 ```
@@ -48490,7 +48551,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerReadinessProb
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketList
 ```
@@ -48650,7 +48711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -48939,7 +49000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerResourcesOutputReference
 ```
@@ -49246,7 +49307,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -49553,7 +49614,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerSecurityConte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerSecurityContextOutputReference
 ```
@@ -50102,7 +50163,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerSecurityConte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -50409,7 +50470,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerSecurityConte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -50774,7 +50835,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerSecurityConte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference
 ```
@@ -51052,7 +51113,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerStartupProbeE
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerStartupProbeGrpcList
 ```
@@ -51212,7 +51273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerStartupProbeGrpcOutputReference
 ```
@@ -51530,7 +51591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -51690,7 +51751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -52015,7 +52076,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetOutputReference
 ```
@@ -52422,7 +52483,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerStartupProbeH
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecContainerStartupProbeOutputReference
 ```
@@ -52984,7 +53045,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecContainerStartupProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketList
 ```
@@ -53144,7 +53205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference
 ```
@@ -53433,7 +53494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerVolumeDeviceList
 ```
@@ -53593,7 +53654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerVolumeDeviceOutputReference
 ```
@@ -53904,7 +53965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecContainerVolumeMountList
 ```
@@ -54064,7 +54125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecContainerVolumeMountOutputReference
 ```
@@ -54491,7 +54552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecDnsConfigOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecDnsConfigOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecDnsConfigOptionList
 ```
@@ -54651,7 +54712,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecDnsConfigOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecDnsConfigOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecDnsConfigOptionOutputReference
 ```
@@ -54969,7 +55030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecDnsConfigOutputReference
 ```
@@ -55318,7 +55379,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecDnsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecHostAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecHostAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecHostAliasesList
 ```
@@ -55478,7 +55539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecHostAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecHostAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecHostAliasesOutputReference
 ```
@@ -55789,7 +55850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecImagePullSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecImagePullSecretsList
 ```
@@ -55949,7 +56010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecImagePullSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecImagePullSecretsOutputReference
 ```
@@ -56238,7 +56299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference
 ```
@@ -56538,7 +56599,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerEnvFromCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerEnvFromList
 ```
@@ -56698,7 +56759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference
 ```
@@ -57078,7 +57139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference
 ```
@@ -57378,7 +57439,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerEnvFromSe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerEnvList
 ```
@@ -57538,7 +57599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerEnvOutputReference
 ```
@@ -57898,7 +57959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -58234,7 +58295,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerEnvValueF
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference
 ```
@@ -58541,7 +58602,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerEnvValueF
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference
 ```
@@ -58958,7 +59019,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerEnvValueF
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -59287,7 +59348,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerEnvValueF
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -59623,7 +59684,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerEnvValueF
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerLifecycleOutputReference
 ```
@@ -59956,7 +60017,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference
 ```
@@ -60234,7 +60295,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -60394,7 +60455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -60719,7 +60780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -61126,7 +61187,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartList
 ```
@@ -61286,7 +61347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartOutputReference
 ```
@@ -61679,7 +61740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList
 ```
@@ -61839,7 +61900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -62128,7 +62189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference
 ```
@@ -62406,7 +62467,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -62566,7 +62627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -62891,7 +62952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -63298,7 +63359,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopList
 ```
@@ -63458,7 +63519,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopOutputReference
 ```
@@ -63851,7 +63912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList
 ```
@@ -64011,7 +64072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -64300,7 +64361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerList
 ```
@@ -64460,7 +64521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExecOutputReference
 ```
@@ -64738,7 +64799,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerLivenessP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeGrpcList
 ```
@@ -64898,7 +64959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference
 ```
@@ -65216,7 +65277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -65376,7 +65437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -65701,7 +65762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference
 ```
@@ -66108,7 +66169,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerLivenessP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeOutputReference
 ```
@@ -66670,7 +66731,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerLivenessP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketList
 ```
@@ -66830,7 +66891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -67119,7 +67180,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerOutputReference
 ```
@@ -67204,6 +67265,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.resetReadinessProbe">ResetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy">ResetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.resetSecurityContext">ResetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.resetStartupProbe">ResetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.resetStdin">ResetStdin</a></code> | *No description.* |
@@ -67565,6 +67627,12 @@ func ResetReadinessProbe()
 func ResetResources()
 ```
 
+##### `ResetRestartPolicy` <a name="ResetRestartPolicy" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy"></a>
+
+```go
+func ResetRestartPolicy()
+```
+
 ##### `ResetSecurityContext` <a name="ResetSecurityContext" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.resetSecurityContext"></a>
 
 ```go
@@ -67655,6 +67723,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.portInput">PortInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.readinessProbeInput">ReadinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe">ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerResources">ReplicationControllerSpecTemplateSpecInitContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput">RestartPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.securityContextInput">SecurityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContext">ReplicationControllerSpecTemplateSpecInitContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.startupProbeInput">StartupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbe">ReplicationControllerSpecTemplateSpecInitContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.stdinInput">StdinInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -67670,6 +67739,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.image">Image</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.imagePullPolicy">ImagePullPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.stdin">Stdin</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.stdinOnce">StdinOnce</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.terminationMessagePath">TerminationMessagePath</a></code> | <code>*string</code> | *No description.* |
@@ -67934,6 +68004,16 @@ func ResourcesInput() ReplicationControllerSpecTemplateSpecInitContainerResource
 
 ---
 
+##### `RestartPolicyInput`<sup>Optional</sup> <a name="RestartPolicyInput" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput"></a>
+
+```go
+func RestartPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SecurityContextInput`<sup>Optional</sup> <a name="SecurityContextInput" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.securityContextInput"></a>
 
 ```go
@@ -68084,6 +68164,16 @@ func Name() *string
 
 ---
 
+##### `RestartPolicy`<sup>Required</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.restartPolicy"></a>
+
+```go
+func RestartPolicy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Stdin`<sup>Required</sup> <a name="Stdin" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference.property.stdin"></a>
 
 ```go
@@ -68160,7 +68250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerPortList
 ```
@@ -68320,7 +68410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerPortOutputReference
 ```
@@ -68725,7 +68815,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExecOutputReference
 ```
@@ -69003,7 +69093,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerReadiness
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeGrpcList
 ```
@@ -69163,7 +69253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference
 ```
@@ -69481,7 +69571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -69641,7 +69731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -69966,7 +70056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference
 ```
@@ -70373,7 +70463,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerReadiness
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference
 ```
@@ -70935,7 +71025,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerReadiness
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList
 ```
@@ -71095,7 +71185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -71384,7 +71474,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerResourcesOutputReference
 ```
@@ -71691,7 +71781,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -71998,7 +72088,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerSecurityC
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerSecurityContextOutputReference
 ```
@@ -72547,7 +72637,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerSecurityC
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -72854,7 +72944,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerSecurityC
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -73219,7 +73309,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerSecurityC
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExecOutputReference
 ```
@@ -73497,7 +73587,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerStartupPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerStartupProbeGrpcList
 ```
@@ -73657,7 +73747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference
 ```
@@ -73975,7 +74065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -74135,7 +74225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -74460,7 +74550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference
 ```
@@ -74867,7 +74957,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerStartupPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerStartupProbeOutputReference
 ```
@@ -75429,7 +75519,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecInitContainerStartupPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketList
 ```
@@ -75589,7 +75679,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference
 ```
@@ -75878,7 +75968,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerVolumeDeviceList
 ```
@@ -76038,7 +76128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerVolumeDeviceOutputReference
 ```
@@ -76349,7 +76439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecInitContainerVolumeMountList
 ```
@@ -76509,7 +76599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference
 ```
@@ -76936,7 +77026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecOsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecOsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecOsOutputReference
 ```
@@ -77207,7 +77297,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecOs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecOutputReference
 ```
@@ -78482,7 +78572,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecReadinessGateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecReadinessGateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecReadinessGateList
 ```
@@ -78642,7 +78732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecReadinessGateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecReadinessGateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecReadinessGateOutputReference
 ```
@@ -78931,7 +79021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecSecurityContextOutputReference
 ```
@@ -79522,7 +79612,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfileOutputReference
 ```
@@ -79829,7 +79919,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecSecurityContextSeccomp
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -80194,7 +80284,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecSecurityContextSeLinux
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSysctlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecSecurityContextSysctlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecSecurityContextSysctlList
 ```
@@ -80354,7 +80444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSysctlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecSecurityContextSysctlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecSecurityContextSysctlOutputReference
 ```
@@ -80665,7 +80755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecSecurityContextWindowsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptionsOutputReference
 ```
@@ -81030,7 +81120,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecSecurityContextWindows
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTolerationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecTolerationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecTolerationList
 ```
@@ -81190,7 +81280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTolerationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecTolerationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecTolerationOutputReference
 ```
@@ -81602,7 +81692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorList
 ```
@@ -81762,7 +81852,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList
 ```
@@ -81922,7 +82012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference
 ```
@@ -82276,7 +82366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference
 ```
@@ -82614,7 +82704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList
 ```
@@ -82774,7 +82864,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference
 ```
@@ -83286,7 +83376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference
 ```
@@ -83644,7 +83734,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockS
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeAzureDiskOutputReference
 ```
@@ -84046,7 +84136,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeAzureDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference
 ```
@@ -84397,7 +84487,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeAzureFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference
 ```
@@ -84826,7 +84916,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeCephFs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOutputReference
 ```
@@ -85133,7 +85223,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCinderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeCinderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeCinderOutputReference
 ```
@@ -85462,7 +85552,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeCinder
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsList
 ```
@@ -85622,7 +85712,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference
 ```
@@ -85976,7 +86066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeConfigMapOutputReference
 ```
@@ -86354,7 +86444,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeConfigMap
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference
 ```
@@ -86632,7 +86722,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeCsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeCsiOutputReference
 ```
@@ -87032,7 +87122,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeCsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference
 ```
@@ -87339,7 +87429,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeDownwardApiItems
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsList
 ```
@@ -87499,7 +87589,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference
 ```
@@ -87894,7 +87984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -88216,7 +88306,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeDownwardApiItems
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeDownwardApiOutputReference
 ```
@@ -88536,7 +88626,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference
 ```
@@ -88843,7 +88933,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeEmptyDir
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeEphemeralOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeEphemeralOutputReference
 ```
@@ -89127,7 +89217,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeEphemeral
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference
 ```
@@ -89434,7 +89524,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeC
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference
 ```
@@ -89760,7 +89850,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeC
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference
 ```
@@ -90195,7 +90285,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeC
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference
 ```
@@ -90502,7 +90592,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeC
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList
 ```
@@ -90662,7 +90752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference
 ```
@@ -91016,7 +91106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference
 ```
@@ -91336,7 +91426,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeEphemeralVolumeC
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeFcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeFcOutputReference
 ```
@@ -91687,7 +91777,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeFc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeFlexVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeFlexVolumeOutputReference
 ```
@@ -92087,7 +92177,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeFlexVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference
 ```
@@ -92394,7 +92484,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlockerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeFlockerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeFlockerOutputReference
 ```
@@ -92701,7 +92791,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeFlocker
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGcePersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeGcePersistentDiskOutputReference
 ```
@@ -93059,7 +93149,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeGcePersistentDis
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGitRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeGitRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeGitRepoOutputReference
 ```
@@ -93395,7 +93485,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeGitRepo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference
 ```
@@ -93717,7 +93807,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeGlusterfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference
 ```
@@ -94024,7 +94114,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeHostPath
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeIscsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeIscsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeIscsiOutputReference
 ```
@@ -94433,7 +94523,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeIscsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeList
 ```
@@ -94593,7 +94683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeLocalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeLocalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeLocalOutputReference
 ```
@@ -94871,7 +94961,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeLocal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeNfsOutputReference
 ```
@@ -95193,7 +95283,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeNfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeOutputReference
 ```
@@ -96623,7 +96713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference
 ```
@@ -96930,7 +97020,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumePersistentVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumePhotonPersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDiskOutputReference
 ```
@@ -97230,7 +97320,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumePhotonPersistent
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedList
 ```
@@ -97390,7 +97480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedOutputReference
 ```
@@ -97721,7 +97811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList
 ```
@@ -97881,7 +97971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference
 ```
@@ -98235,7 +98325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList
 ```
@@ -98395,7 +98485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference
 ```
@@ -98762,7 +98852,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference
 ```
@@ -99069,7 +99159,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeProjectedSources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList
 ```
@@ -99229,7 +99319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference
 ```
@@ -99631,7 +99721,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -99953,7 +100043,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeProjectedSources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference
 ```
@@ -100244,7 +100334,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeProjectedSources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesList
 ```
@@ -100404,7 +100494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference
 ```
@@ -100839,7 +100929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsList
 ```
@@ -100999,7 +101089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference
 ```
@@ -101353,7 +101443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretList
 ```
@@ -101513,7 +101603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference
 ```
@@ -101880,7 +101970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference
 ```
@@ -102209,7 +102299,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeProjectedSources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeQuobyteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeQuobyteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeQuobyteOutputReference
 ```
@@ -102589,7 +102679,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeQuobyte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeRbdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeRbdOutputReference
 ```
@@ -103069,7 +103159,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeRbd
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference
 ```
@@ -103376,7 +103466,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeRbdSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecVolumeSecretItemsList
 ```
@@ -103536,7 +103626,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference
 ```
@@ -103890,7 +103980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeSecretOutputReference
 ```
@@ -104268,7 +104358,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeVsphereVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerSpecTemplateSpecVolumeVsphereVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeVsphereVolumeOutputReference
 ```
@@ -104568,7 +104658,7 @@ func InternalValue() ReplicationControllerSpecTemplateSpecVolumeVsphereVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/replicationcontroller"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/replicationcontroller"
 
 replicationcontroller.NewReplicationControllerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReplicationControllerTimeoutsOutputReference
 ```

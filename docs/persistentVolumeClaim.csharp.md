@@ -4,7 +4,7 @@
 
 ### PersistentVolumeClaim <a name="PersistentVolumeClaim" id="@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaim"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim kubernetes_persistent_volume_claim}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim kubernetes_persistent_volume_claim}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaim.Initializer"></a>
 
@@ -549,7 +549,7 @@ The construct id used in the generated config for the PersistentVolumeClaim to i
 
 The id of the existing PersistentVolumeClaim that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ new PersistentVolumeClaimConfig {
 | <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimMetadata">PersistentVolumeClaimMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimSpec">PersistentVolumeClaimSpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#id PersistentVolumeClaim#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#id PersistentVolumeClaim#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeouts">PersistentVolumeClaimTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimConfig.property.waitUntilBound">WaitUntilBound</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether to wait for the claim to reach `Bound` state (to find volume in which to claim the space). |
 
@@ -976,7 +976,7 @@ public PersistentVolumeClaimMetadata Metadata { get; set; }
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#metadata PersistentVolumeClaim#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#metadata PersistentVolumeClaim#metadata}
 
 ---
 
@@ -990,7 +990,7 @@ public PersistentVolumeClaimSpec Spec { get; set; }
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#spec PersistentVolumeClaim#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#spec PersistentVolumeClaim#spec}
 
 ---
 
@@ -1002,7 +1002,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#id PersistentVolumeClaim#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#id PersistentVolumeClaim#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1019,7 +1019,7 @@ public PersistentVolumeClaimTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#timeouts PersistentVolumeClaim#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#timeouts PersistentVolumeClaim#timeouts}
 
 ---
 
@@ -1033,7 +1033,7 @@ public bool|IResolvable WaitUntilBound { get; set; }
 
 Whether to wait for the claim to reach `Bound` state (to find volume in which to claim the space).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#wait_until_bound PersistentVolumeClaim#wait_until_bound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#wait_until_bound PersistentVolumeClaim#wait_until_bound}
 
 ---
 
@@ -1077,7 +1077,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#annotations PersistentVolumeClaim#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#annotations PersistentVolumeClaim#annotations}
 
 ---
 
@@ -1093,7 +1093,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#generate_name PersistentVolumeClaim#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#generate_name PersistentVolumeClaim#generate_name}
 
 ---
 
@@ -1109,7 +1109,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#labels PersistentVolumeClaim#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#labels PersistentVolumeClaim#labels}
 
 ---
 
@@ -1123,7 +1123,7 @@ public string Name { get; set; }
 
 Name of the persistent volume claim, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#name PersistentVolumeClaim#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#name PersistentVolumeClaim#name}
 
 ---
 
@@ -1137,7 +1137,7 @@ public string Namespace { get; set; }
 
 Namespace defines the space within which name of the persistent volume claim must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#namespace PersistentVolumeClaim#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#namespace PersistentVolumeClaim#namespace}
 
 ---
 
@@ -1181,7 +1181,7 @@ public string[] AccessModes { get; set; }
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#access_modes PersistentVolumeClaim#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#access_modes PersistentVolumeClaim#access_modes}
 
 ---
 
@@ -1195,7 +1195,7 @@ public PersistentVolumeClaimSpecResources Resources { get; set; }
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#resources PersistentVolumeClaim#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#resources PersistentVolumeClaim#resources}
 
 ---
 
@@ -1209,7 +1209,7 @@ public PersistentVolumeClaimSpecSelector Selector { get; set; }
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#selector PersistentVolumeClaim#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#selector PersistentVolumeClaim#selector}
 
 ---
 
@@ -1223,7 +1223,7 @@ public string StorageClassName { get; set; }
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#storage_class_name PersistentVolumeClaim#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#storage_class_name PersistentVolumeClaim#storage_class_name}
 
 ---
 
@@ -1237,7 +1237,7 @@ public string VolumeMode { get; set; }
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#volume_mode PersistentVolumeClaim#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#volume_mode PersistentVolumeClaim#volume_mode}
 
 ---
 
@@ -1251,7 +1251,7 @@ public string VolumeName { get; set; }
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#volume_name PersistentVolumeClaim#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#volume_name PersistentVolumeClaim#volume_name}
 
 ---
 
@@ -1287,7 +1287,7 @@ public System.Collections.Generic.IDictionary<string, string> Limits { get; set;
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#limits PersistentVolumeClaim#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#limits PersistentVolumeClaim#limits}
 
 ---
 
@@ -1303,7 +1303,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#requests PersistentVolumeClaim#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#requests PersistentVolumeClaim#requests}
 
 ---
 
@@ -1339,7 +1339,7 @@ public IResolvable|PersistentVolumeClaimSpecSelectorMatchExpressions[] MatchExpr
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#match_expressions PersistentVolumeClaim#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#match_expressions PersistentVolumeClaim#match_expressions}
 
 ---
 
@@ -1355,7 +1355,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#match_labels PersistentVolumeClaim#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#match_labels PersistentVolumeClaim#match_labels}
 
 ---
 
@@ -1393,7 +1393,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#key PersistentVolumeClaim#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#key PersistentVolumeClaim#key}
 
 ---
 
@@ -1407,7 +1407,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#operator PersistentVolumeClaim#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#operator PersistentVolumeClaim#operator}
 
 ---
 
@@ -1423,7 +1423,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#values PersistentVolumeClaim#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#values PersistentVolumeClaim#values}
 
 ---
 
@@ -1443,7 +1443,7 @@ new PersistentVolumeClaimTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#create PersistentVolumeClaim#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#create PersistentVolumeClaim#create}. |
 
 ---
 
@@ -1455,7 +1455,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/persistent_volume_claim#create PersistentVolumeClaim#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/persistent_volume_claim#create PersistentVolumeClaim#create}.
 
 ---
 

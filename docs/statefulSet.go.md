@@ -4,12 +4,12 @@
 
 ### StatefulSet <a name="StatefulSet" id="@cdktn/provider-kubernetes.statefulSet.StatefulSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set kubernetes_stateful_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set kubernetes_stateful_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSet(scope Construct, id *string, config StatefulSetConfig) StatefulSet
 ```
@@ -460,7 +460,7 @@ func ResetWaitForRollout()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.statefulSet.StatefulSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.StatefulSet_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.statefulSet.StatefulSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.StatefulSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ statefulset.StatefulSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.statefulSet.StatefulSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.StatefulSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ statefulset.StatefulSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.statefulSet.StatefulSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.StatefulSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -549,7 +549,7 @@ The construct id used in the generated config for the StatefulSet to import.
 
 The id of the existing StatefulSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetConfig {
 	Connection: interface{},
@@ -869,10 +869,10 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpec,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetTimeouts,
 	WaitForRollout: interface{},
 }
 ```
@@ -890,7 +890,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetMetadata">StatefulSetMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpec">StatefulSetSpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#id StatefulSet#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#id StatefulSet#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts">StatefulSetTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.waitForRollout">WaitForRollout</a></code> | <code>interface{}</code> | Wait for the rollout of the stateful set to complete. Defaults to true. |
 
@@ -976,7 +976,7 @@ Metadata StatefulSetMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
 
 ---
 
@@ -990,7 +990,7 @@ Spec StatefulSetSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#spec StatefulSet#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#spec StatefulSet#spec}
 
 ---
 
@@ -1002,7 +1002,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#id StatefulSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#id StatefulSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1019,7 +1019,7 @@ Timeouts StatefulSetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#timeouts StatefulSet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeouts StatefulSet#timeouts}
 
 ---
 
@@ -1033,7 +1033,7 @@ WaitForRollout interface{}
 
 Wait for the rollout of the stateful set to complete. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#wait_for_rollout StatefulSet#wait_for_rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#wait_for_rollout StatefulSet#wait_for_rollout}
 
 ---
 
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetMetadata {
 	Annotations: *map[string]*string,
@@ -1077,7 +1077,7 @@ An unstructured key value map stored with the stateful set that may be used to s
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
 
 ---
 
@@ -1093,7 +1093,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
 
 ---
 
@@ -1109,7 +1109,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#labels StatefulSet#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#labels StatefulSet#labels}
 
 ---
 
@@ -1123,7 +1123,7 @@ Name *string
 
 Name of the stateful set, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -1137,7 +1137,7 @@ Namespace *string
 
 Namespace defines the space within which name of the stateful set must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -1146,12 +1146,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpec {
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecSelector,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecSelector,
 	ServiceName: *string,
-	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplate,
+	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplate,
 	MinReadySeconds: *f64,
 	PersistentVolumeClaimRetentionPolicy: interface{},
 	PodManagementPolicy: *string,
@@ -1189,7 +1189,7 @@ Selector StatefulSetSpecSelector
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#selector StatefulSet#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#selector StatefulSet#selector}
 
 ---
 
@@ -1205,7 +1205,7 @@ The name of the service that governs this StatefulSet.
 
 This service must exist before the StatefulSet, and is responsible for the network identity of the set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#service_name StatefulSet#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service_name StatefulSet#service_name}
 
 ---
 
@@ -1219,7 +1219,7 @@ Template StatefulSetSpecTemplate
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#template StatefulSet#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#template StatefulSet#template}
 
 ---
 
@@ -1235,7 +1235,7 @@ Minimum number of seconds for which a newly created pod should be ready without 
 
 Defaults to 0. (pod will be considered available as soon as it is ready)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#min_ready_seconds StatefulSet#min_ready_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#min_ready_seconds StatefulSet#min_ready_seconds}
 
 ---
 
@@ -1249,7 +1249,7 @@ PersistentVolumeClaimRetentionPolicy interface{}
 
 persistent_volume_claim_retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#persistent_volume_claim_retention_policy StatefulSet#persistent_volume_claim_retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#persistent_volume_claim_retention_policy StatefulSet#persistent_volume_claim_retention_policy}
 
 ---
 
@@ -1263,7 +1263,7 @@ PodManagementPolicy *string
 
 Controls how pods are created during initial scale up, when replacing pods on nodes, or when scaling down.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#pod_management_policy StatefulSet#pod_management_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pod_management_policy StatefulSet#pod_management_policy}
 
 ---
 
@@ -1279,7 +1279,7 @@ The desired number of replicas of the given Template, in the sense that they are
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#replicas StatefulSet#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#replicas StatefulSet#replicas}
 
 ---
 
@@ -1293,7 +1293,7 @@ RevisionHistoryLimit *f64
 
 The maximum number of revisions that will be maintained in the StatefulSet's revision history. The default value is 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#revision_history_limit StatefulSet#revision_history_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#revision_history_limit StatefulSet#revision_history_limit}
 
 ---
 
@@ -1307,7 +1307,7 @@ UpdateStrategy interface{}
 
 update_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#update_strategy StatefulSet#update_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#update_strategy StatefulSet#update_strategy}
 
 ---
 
@@ -1321,7 +1321,7 @@ VolumeClaimTemplate interface{}
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
 
 ---
 
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecPersistentVolumeClaimRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecPersistentVolumeClaimRetentionPolicy {
 	WhenDeleted: *string,
@@ -1357,7 +1357,7 @@ WhenDeleted *string
 
 This field controls what happens when a Statefulset is deleted. Default is Retain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#when_deleted StatefulSet#when_deleted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#when_deleted StatefulSet#when_deleted}
 
 ---
 
@@ -1371,7 +1371,7 @@ WhenScaled *string
 
 This field controls what happens when a Statefulset is scaled. Default is Retain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#when_scaled StatefulSet#when_scaled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#when_scaled StatefulSet#when_scaled}
 
 ---
 
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecSelector {
 	MatchExpressions: interface{},
@@ -1407,7 +1407,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -1423,7 +1423,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecSelectorMatchExpressions {
 	Key: *string,
@@ -1461,7 +1461,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -1475,7 +1475,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -1491,7 +1491,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -1500,11 +1500,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplate {
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpec,
 }
 ```
 
@@ -1527,7 +1527,7 @@ Metadata StatefulSetSpecTemplateMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
 
 ---
 
@@ -1541,7 +1541,7 @@ Spec StatefulSetSpecTemplateSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#spec StatefulSet#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#spec StatefulSet#spec}
 
 ---
 
@@ -1550,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -1585,7 +1585,7 @@ An unstructured key value map stored with the stateful set that may be used to s
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
 
 ---
 
@@ -1601,7 +1601,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
 
 ---
 
@@ -1617,7 +1617,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#labels StatefulSet#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#labels StatefulSet#labels}
 
 ---
 
@@ -1631,7 +1631,7 @@ Name *string
 
 Name of the stateful set, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -1645,7 +1645,7 @@ Namespace *string
 
 Namespace defines the space within which name of the stateful set must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -1654,14 +1654,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpec {
 	ActiveDeadlineSeconds: *f64,
-	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecAffinity,
+	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecAffinity,
 	AutomountServiceAccountToken: interface{},
 	Container: interface{},
-	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecDnsConfig,
+	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecDnsConfig,
 	DnsPolicy: *string,
 	EnableServiceLinks: interface{},
 	HostAliases: interface{},
@@ -1673,13 +1673,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 	InitContainer: interface{},
 	NodeName: *string,
 	NodeSelector: *map[string]*string,
-	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecOs,
+	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecOs,
 	PriorityClassName: *string,
 	ReadinessGate: interface{},
 	RestartPolicy: *string,
 	RuntimeClassName: *string,
 	SchedulerName: *string,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecSecurityContext,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecSecurityContext,
 	ServiceAccountName: *string,
 	ShareProcessNamespace: interface{},
 	Subdomain: *string,
@@ -1739,7 +1739,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#active_deadline_seconds StatefulSet#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#active_deadline_seconds StatefulSet#active_deadline_seconds}
 
 ---
 
@@ -1753,7 +1753,7 @@ Affinity StatefulSetSpecTemplateSpecAffinity
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#affinity StatefulSet#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#affinity StatefulSet#affinity}
 
 ---
 
@@ -1767,7 +1767,7 @@ AutomountServiceAccountToken interface{}
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#automount_service_account_token StatefulSet#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#automount_service_account_token StatefulSet#automount_service_account_token}
 
 ---
 
@@ -1781,7 +1781,7 @@ Container interface{}
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container StatefulSet#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container StatefulSet#container}
 
 ---
 
@@ -1795,7 +1795,7 @@ DnsConfig StatefulSetSpecTemplateSpecDnsConfig
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#dns_config StatefulSet#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#dns_config StatefulSet#dns_config}
 
 ---
 
@@ -1811,7 +1811,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#dns_policy StatefulSet#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#dns_policy StatefulSet#dns_policy}
 
 ---
 
@@ -1825,7 +1825,7 @@ EnableServiceLinks interface{}
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#enable_service_links StatefulSet#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#enable_service_links StatefulSet#enable_service_links}
 
 ---
 
@@ -1839,7 +1839,7 @@ HostAliases interface{}
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host_aliases StatefulSet#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_aliases StatefulSet#host_aliases}
 
 ---
 
@@ -1853,7 +1853,7 @@ HostIpc interface{}
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host_ipc StatefulSet#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_ipc StatefulSet#host_ipc}
 
 ---
 
@@ -1867,7 +1867,7 @@ Hostname *string
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#hostname StatefulSet#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#hostname StatefulSet#hostname}
 
 ---
 
@@ -1883,7 +1883,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host_network StatefulSet#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_network StatefulSet#host_network}
 
 ---
 
@@ -1897,7 +1897,7 @@ HostPid interface{}
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host_pid StatefulSet#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_pid StatefulSet#host_pid}
 
 ---
 
@@ -1911,7 +1911,7 @@ ImagePullSecrets interface{}
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#image_pull_secrets StatefulSet#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#image_pull_secrets StatefulSet#image_pull_secrets}
 
 ---
 
@@ -1925,7 +1925,7 @@ InitContainer interface{}
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#init_container StatefulSet#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#init_container StatefulSet#init_container}
 
 ---
 
@@ -1941,7 +1941,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#node_name StatefulSet#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_name StatefulSet#node_name}
 
 ---
 
@@ -1957,7 +1957,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#node_selector StatefulSet#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_selector StatefulSet#node_selector}
 
 ---
 
@@ -1971,7 +1971,7 @@ Os StatefulSetSpecTemplateSpecOs
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#os StatefulSet#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#os StatefulSet#os}
 
 ---
 
@@ -1987,7 +1987,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#priority_class_name StatefulSet#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#priority_class_name StatefulSet#priority_class_name}
 
 ---
 
@@ -2001,7 +2001,7 @@ ReadinessGate interface{}
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#readiness_gate StatefulSet#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#readiness_gate StatefulSet#readiness_gate}
 
 ---
 
@@ -2015,7 +2015,7 @@ RestartPolicy *string
 
 Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
 
 ---
 
@@ -2031,7 +2031,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#runtime_class_name StatefulSet#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#runtime_class_name StatefulSet#runtime_class_name}
 
 ---
 
@@ -2047,7 +2047,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheduler_name StatefulSet#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheduler_name StatefulSet#scheduler_name}
 
 ---
 
@@ -2061,7 +2061,7 @@ SecurityContext StatefulSetSpecTemplateSpecSecurityContext
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
 
 ---
 
@@ -2075,7 +2075,7 @@ ServiceAccountName *string
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#service_account_name StatefulSet#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service_account_name StatefulSet#service_account_name}
 
 ---
 
@@ -2091,7 +2091,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#share_process_namespace StatefulSet#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#share_process_namespace StatefulSet#share_process_namespace}
 
 ---
 
@@ -2105,7 +2105,7 @@ Subdomain *string
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#subdomain StatefulSet#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#subdomain StatefulSet#subdomain}
 
 ---
 
@@ -2121,7 +2121,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#termination_grace_period_seconds StatefulSet#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#termination_grace_period_seconds StatefulSet#termination_grace_period_seconds}
 
 ---
 
@@ -2135,7 +2135,7 @@ Toleration interface{}
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#toleration StatefulSet#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#toleration StatefulSet#toleration}
 
 ---
 
@@ -2149,7 +2149,7 @@ TopologySpreadConstraint interface{}
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#topology_spread_constraint StatefulSet#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_spread_constraint StatefulSet#topology_spread_constraint}
 
 ---
 
@@ -2163,7 +2163,7 @@ Volume interface{}
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume StatefulSet#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume StatefulSet#volume}
 
 ---
 
@@ -2172,12 +2172,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinity {
-	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinity,
-	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinity,
-	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinity,
+	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinity,
+	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinity,
+	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinity,
 }
 ```
 
@@ -2201,7 +2201,7 @@ NodeAffinity StatefulSetSpecTemplateSpecAffinityNodeAffinity
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#node_affinity StatefulSet#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_affinity StatefulSet#node_affinity}
 
 ---
 
@@ -2215,7 +2215,7 @@ PodAffinity StatefulSetSpecTemplateSpecAffinityPodAffinity
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#pod_affinity StatefulSet#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pod_affinity StatefulSet#pod_affinity}
 
 ---
 
@@ -2229,7 +2229,7 @@ PodAntiAffinity StatefulSetSpecTemplateSpecAffinityPodAntiAffinity
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#pod_anti_affinity StatefulSet#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pod_anti_affinity StatefulSet#pod_anti_affinity}
 
 ---
 
@@ -2238,11 +2238,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityNodeAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
-	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
+	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
 }
 ```
 
@@ -2265,7 +2265,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2279,7 +2279,7 @@ RequiredDuringSchedulingIgnoredDuringExecution StatefulSetSpecTemplateSpecAffini
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2288,10 +2288,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
+	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
 	Weight: *f64,
 }
 ```
@@ -2315,7 +2315,7 @@ Preference StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedul
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#preference StatefulSet#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#preference StatefulSet#preference}
 
 ---
 
@@ -2329,7 +2329,7 @@ Weight *f64
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#weight StatefulSet#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#weight StatefulSet#weight}
 
 ---
 
@@ -2338,7 +2338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference {
 	MatchExpressions: interface{},
@@ -2365,7 +2365,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -2379,7 +2379,7 @@ MatchFields interface{}
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_fields StatefulSet#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_fields StatefulSet#match_fields}
 
 ---
 
@@ -2388,7 +2388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions {
 	Key: *string,
@@ -2417,7 +2417,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -2433,7 +2433,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -2449,7 +2449,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -2458,7 +2458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields {
 	Key: *string,
@@ -2487,7 +2487,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -2501,7 +2501,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -2517,7 +2517,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -2526,7 +2526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	NodeSelectorTerm: interface{},
@@ -2551,7 +2551,7 @@ NodeSelectorTerm interface{}
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#node_selector_term StatefulSet#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_selector_term StatefulSet#node_selector_term}
 
 ---
 
@@ -2560,7 +2560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm {
 	MatchExpressions: interface{},
@@ -2587,7 +2587,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -2601,7 +2601,7 @@ MatchFields interface{}
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_fields StatefulSet#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_fields StatefulSet#match_fields}
 
 ---
 
@@ -2610,7 +2610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions {
 	Key: *string,
@@ -2639,7 +2639,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -2655,7 +2655,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -2671,7 +2671,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -2680,7 +2680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields {
 	Key: *string,
@@ -2709,7 +2709,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -2723,7 +2723,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -2739,7 +2739,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -2748,7 +2748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -2775,7 +2775,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2789,7 +2789,7 @@ RequiredDuringSchedulingIgnoredDuringExecution interface{}
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2798,10 +2798,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -2825,7 +2825,7 @@ PodAffinityTerm StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSch
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#pod_affinity_term StatefulSet#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pod_affinity_term StatefulSet#pod_affinity_term}
 
 ---
 
@@ -2839,7 +2839,7 @@ Weight *f64
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#weight StatefulSet#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#weight StatefulSet#weight}
 
 ---
 
@@ -2848,7 +2848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -2879,7 +2879,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 
 ---
 
@@ -2893,7 +2893,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 
 ---
 
@@ -2907,7 +2907,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
 
 ---
 
@@ -2921,7 +2921,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
 
 ---
 
@@ -2930,7 +2930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -2957,7 +2957,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -2973,7 +2973,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -2982,7 +2982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3011,7 +3011,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3025,7 +3025,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3041,7 +3041,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3050,7 +3050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3077,7 +3077,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3093,7 +3093,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3102,7 +3102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3131,7 +3131,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3145,7 +3145,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3161,7 +3161,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3170,7 +3170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -3201,7 +3201,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 
 ---
 
@@ -3215,7 +3215,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 
 ---
 
@@ -3229,7 +3229,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
 
 ---
 
@@ -3243,7 +3243,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
 
 ---
 
@@ -3252,7 +3252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -3279,7 +3279,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3295,7 +3295,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3304,7 +3304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3333,7 +3333,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3347,7 +3347,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3363,7 +3363,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3372,7 +3372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3399,7 +3399,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3415,7 +3415,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3424,7 +3424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3453,7 +3453,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3467,7 +3467,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3483,7 +3483,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3492,7 +3492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -3519,7 +3519,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3533,7 +3533,7 @@ RequiredDuringSchedulingIgnoredDuringExecution interface{}
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3542,10 +3542,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -3569,7 +3569,7 @@ PodAffinityTerm StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDurin
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#pod_affinity_term StatefulSet#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pod_affinity_term StatefulSet#pod_affinity_term}
 
 ---
 
@@ -3583,7 +3583,7 @@ Weight *f64
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#weight StatefulSet#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#weight StatefulSet#weight}
 
 ---
 
@@ -3592,7 +3592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -3623,7 +3623,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 
 ---
 
@@ -3637,7 +3637,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 
 ---
 
@@ -3651,7 +3651,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
 
 ---
 
@@ -3665,7 +3665,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
 
 ---
 
@@ -3674,7 +3674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -3701,7 +3701,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3717,7 +3717,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3726,7 +3726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3755,7 +3755,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3769,7 +3769,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3785,7 +3785,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3794,7 +3794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3821,7 +3821,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3837,7 +3837,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3846,7 +3846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3875,7 +3875,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3889,7 +3889,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3905,7 +3905,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3914,7 +3914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -3945,7 +3945,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 
 ---
 
@@ -3959,7 +3959,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 
 ---
 
@@ -3973,7 +3973,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
 
 ---
 
@@ -3987,7 +3987,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
 
 ---
 
@@ -3996,7 +3996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -4023,7 +4023,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -4039,7 +4039,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -4048,7 +4048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -4077,7 +4077,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -4091,7 +4091,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -4107,7 +4107,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -4116,7 +4116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -4143,7 +4143,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -4159,7 +4159,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -4168,7 +4168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -4197,7 +4197,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -4211,7 +4211,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -4227,7 +4227,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -4236,7 +4236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainer {
 	Name: *string,
@@ -4246,13 +4246,14 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerResources,
+	RestartPolicy: *string,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -4280,6 +4281,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainer.property.port">Port</a></code> | <code>interface{}</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainer.property.readinessProbe">ReadinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbe">StatefulSetSpecTemplateSpecContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainer.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerResources">StatefulSetSpecTemplateSpecContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainer.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainer.property.securityContext">SecurityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContext">StatefulSetSpecTemplateSpecContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainer.property.startupProbe">StartupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbe">StatefulSetSpecTemplateSpecContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainer.property.stdin">Stdin</a></code> | <code>interface{}</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -4305,7 +4307,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4321,7 +4323,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#args StatefulSet#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#args StatefulSet#args}
 
 ---
 
@@ -4337,7 +4339,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -4351,7 +4353,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#env StatefulSet#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#env StatefulSet#env}
 
 ---
 
@@ -4365,7 +4367,7 @@ EnvFrom interface{}
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#env_from StatefulSet#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#env_from StatefulSet#env_from}
 
 ---
 
@@ -4379,7 +4381,7 @@ Image *string
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#image StatefulSet#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#image StatefulSet#image}
 
 ---
 
@@ -4395,7 +4397,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#image_pull_policy StatefulSet#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#image_pull_policy StatefulSet#image_pull_policy}
 
 ---
 
@@ -4409,7 +4411,7 @@ Lifecycle StatefulSetSpecTemplateSpecContainerLifecycle
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#lifecycle StatefulSet#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#lifecycle StatefulSet#lifecycle}
 
 ---
 
@@ -4423,7 +4425,7 @@ LivenessProbe StatefulSetSpecTemplateSpecContainerLivenessProbe
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#liveness_probe StatefulSet#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#liveness_probe StatefulSet#liveness_probe}
 
 ---
 
@@ -4437,7 +4439,7 @@ Port interface{}
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -4451,7 +4453,7 @@ ReadinessProbe StatefulSetSpecTemplateSpecContainerReadinessProbe
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#readiness_probe StatefulSet#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#readiness_probe StatefulSet#readiness_probe}
 
 ---
 
@@ -4465,7 +4467,21 @@ Resources StatefulSetSpecTemplateSpecContainerResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resources StatefulSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resources StatefulSet#resources}
+
+---
+
+##### `RestartPolicy`<sup>Optional</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainer.property.restartPolicy"></a>
+
+```go
+RestartPolicy *string
+```
+
+- *Type:* *string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
 
 ---
 
@@ -4479,7 +4495,7 @@ SecurityContext StatefulSetSpecTemplateSpecContainerSecurityContext
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
 
 ---
 
@@ -4493,7 +4509,7 @@ StartupProbe StatefulSetSpecTemplateSpecContainerStartupProbe
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#startup_probe StatefulSet#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#startup_probe StatefulSet#startup_probe}
 
 ---
 
@@ -4509,7 +4525,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#stdin StatefulSet#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#stdin StatefulSet#stdin}
 
 ---
 
@@ -4525,7 +4541,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#stdin_once StatefulSet#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#stdin_once StatefulSet#stdin_once}
 
 ---
 
@@ -4541,7 +4557,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#termination_message_path StatefulSet#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#termination_message_path StatefulSet#termination_message_path}
 
 ---
 
@@ -4557,7 +4573,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#termination_message_policy StatefulSet#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#termination_message_policy StatefulSet#termination_message_policy}
 
 ---
 
@@ -4571,7 +4587,7 @@ Tty interface{}
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tty StatefulSet#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tty StatefulSet#tty}
 
 ---
 
@@ -4585,7 +4601,7 @@ VolumeDevice interface{}
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_device StatefulSet#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_device StatefulSet#volume_device}
 
 ---
 
@@ -4599,7 +4615,7 @@ VolumeMount interface{}
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_mount StatefulSet#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_mount StatefulSet#volume_mount}
 
 ---
 
@@ -4615,7 +4631,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#working_dir StatefulSet#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#working_dir StatefulSet#working_dir}
 
 ---
 
@@ -4624,12 +4640,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFrom,
 }
 ```
 
@@ -4653,7 +4669,7 @@ Name *string
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4669,7 +4685,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -4683,7 +4699,7 @@ ValueFrom StatefulSetSpecTemplateSpecContainerEnvValueFrom
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value_from StatefulSet#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value_from StatefulSet#value_from}
 
 ---
 
@@ -4692,12 +4708,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromSecretRef,
 }
 ```
 
@@ -4721,7 +4737,7 @@ ConfigMapRef StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRef
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#config_map_ref StatefulSet#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map_ref StatefulSet#config_map_ref}
 
 ---
 
@@ -4735,7 +4751,7 @@ Prefix *string
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#prefix StatefulSet#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#prefix StatefulSet#prefix}
 
 ---
 
@@ -4749,7 +4765,7 @@ SecretRef StatefulSetSpecTemplateSpecContainerEnvFromSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
 
 ---
 
@@ -4758,7 +4774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -4785,7 +4801,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4799,7 +4815,7 @@ Optional interface{}
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -4808,7 +4824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerEnvFromSecretRef {
 	Name: *string,
@@ -4835,7 +4851,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4849,7 +4865,7 @@ Optional interface{}
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -4858,13 +4874,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -4889,7 +4905,7 @@ ConfigMapKeyRef StatefulSetSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#config_map_key_ref StatefulSet#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map_key_ref StatefulSet#config_map_key_ref}
 
 ---
 
@@ -4903,7 +4919,7 @@ FieldRef StatefulSetSpecTemplateSpecContainerEnvValueFromFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
 
 ---
 
@@ -4917,7 +4933,7 @@ ResourceFieldRef StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRe
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
 
 ---
 
@@ -4931,7 +4947,7 @@ SecretKeyRef StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRef
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_key_ref StatefulSet#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_key_ref StatefulSet#secret_key_ref}
 
 ---
 
@@ -4940,7 +4956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -4969,7 +4985,7 @@ Key *string
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -4983,7 +4999,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4997,7 +5013,7 @@ Optional interface{}
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -5006,7 +5022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -5033,7 +5049,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
 
 ---
 
@@ -5047,7 +5063,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
 
 ---
 
@@ -5056,7 +5072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -5070,8 +5086,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
 
 ---
 
@@ -5085,7 +5101,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resource StatefulSet#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource StatefulSet#resource}
 
 ---
 
@@ -5097,7 +5113,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
 
 ---
 
@@ -5109,7 +5125,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
 
 ---
 
@@ -5118,7 +5134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -5147,7 +5163,7 @@ Key *string
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -5161,7 +5177,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -5175,7 +5191,7 @@ Optional interface{}
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -5184,7 +5200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecycle {
 	PostStart: interface{},
@@ -5211,7 +5227,7 @@ PostStart interface{}
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#post_start StatefulSet#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#post_start StatefulSet#post_start}
 
 ---
 
@@ -5225,7 +5241,7 @@ PreStop interface{}
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#pre_stop StatefulSet#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pre_stop StatefulSet#pre_stop}
 
 ---
 
@@ -5234,11 +5250,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5263,7 +5279,7 @@ Exec StatefulSetSpecTemplateSpecContainerLifecyclePostStartExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -5277,7 +5293,7 @@ HttpGet StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -5291,7 +5307,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -5300,7 +5316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -5327,7 +5343,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -5336,7 +5352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -5369,7 +5385,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -5383,7 +5399,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -5397,7 +5413,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -5413,7 +5429,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5427,7 +5443,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -5436,7 +5452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -5463,7 +5479,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -5477,7 +5493,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -5486,7 +5502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -5513,7 +5529,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5522,11 +5538,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5551,7 +5567,7 @@ Exec StatefulSetSpecTemplateSpecContainerLifecyclePreStopExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -5565,7 +5581,7 @@ HttpGet StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -5579,7 +5595,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -5588,7 +5604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -5615,7 +5631,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -5624,7 +5640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -5657,7 +5673,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -5671,7 +5687,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -5685,7 +5701,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -5701,7 +5717,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5715,7 +5731,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -5724,7 +5740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -5751,7 +5767,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -5765,7 +5781,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -5774,7 +5790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -5801,7 +5817,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5810,13 +5826,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -5851,7 +5867,7 @@ Exec StatefulSetSpecTemplateSpecContainerLivenessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -5865,7 +5881,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -5879,7 +5895,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -5893,7 +5909,7 @@ HttpGet StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -5907,7 +5923,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -5921,7 +5937,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -5935,7 +5951,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -5949,7 +5965,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -5963,7 +5979,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -5972,7 +5988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -5999,7 +6015,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -6008,7 +6024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -6035,7 +6051,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -6049,7 +6065,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -6058,7 +6074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -6091,7 +6107,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -6105,7 +6121,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -6119,7 +6135,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -6135,7 +6151,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -6149,7 +6165,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -6158,7 +6174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -6185,7 +6201,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -6199,7 +6215,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -6208,7 +6224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -6235,7 +6251,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -6244,7 +6260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerPort {
 	ContainerPort: *f64,
@@ -6279,7 +6295,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container_port StatefulSet#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_port StatefulSet#container_port}
 
 ---
 
@@ -6293,7 +6309,7 @@ HostIp *string
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host_ip StatefulSet#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_ip StatefulSet#host_ip}
 
 ---
 
@@ -6309,7 +6325,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host_port StatefulSet#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_port StatefulSet#host_port}
 
 ---
 
@@ -6325,7 +6341,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -6339,7 +6355,7 @@ Protocol *string
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#protocol StatefulSet#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#protocol StatefulSet#protocol}
 
 ---
 
@@ -6348,13 +6364,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -6389,7 +6405,7 @@ Exec StatefulSetSpecTemplateSpecContainerReadinessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -6403,7 +6419,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -6417,7 +6433,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -6431,7 +6447,7 @@ HttpGet StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -6445,7 +6461,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -6459,7 +6475,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -6473,7 +6489,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -6487,7 +6503,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -6501,7 +6517,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -6510,7 +6526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -6537,7 +6553,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -6546,7 +6562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -6573,7 +6589,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -6587,7 +6603,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -6596,7 +6612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -6629,7 +6645,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -6643,7 +6659,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -6657,7 +6673,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -6673,7 +6689,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -6687,7 +6703,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -6696,7 +6712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -6723,7 +6739,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -6737,7 +6753,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -6746,7 +6762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -6773,7 +6789,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -6782,7 +6798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerResources {
 	Limits: *map[string]*string,
@@ -6809,7 +6825,7 @@ Limits *map[string]*string
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#limits StatefulSet#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#limits StatefulSet#limits}
 
 ---
 
@@ -6825,7 +6841,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#requests StatefulSet#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#requests StatefulSet#requests}
 
 ---
 
@@ -6834,18 +6850,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -6877,7 +6893,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#allow_privilege_escalation StatefulSet#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#allow_privilege_escalation StatefulSet#allow_privilege_escalation}
 
 ---
 
@@ -6891,7 +6907,7 @@ Capabilities StatefulSetSpecTemplateSpecContainerSecurityContextCapabilities
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#capabilities StatefulSet#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#capabilities StatefulSet#capabilities}
 
 ---
 
@@ -6907,7 +6923,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#privileged StatefulSet#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#privileged StatefulSet#privileged}
 
 ---
 
@@ -6921,7 +6937,7 @@ ReadOnlyRootFilesystem interface{}
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only_root_filesystem StatefulSet#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only_root_filesystem StatefulSet#read_only_root_filesystem}
 
 ---
 
@@ -6937,7 +6953,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
 
 ---
 
@@ -6953,7 +6969,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
 
 ---
 
@@ -6969,7 +6985,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
 
 ---
 
@@ -6983,7 +6999,7 @@ SeccompProfile StatefulSetSpecTemplateSpecContainerSecurityContextSeccompProfile
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
 
 ---
 
@@ -6997,7 +7013,7 @@ SeLinuxOptions StatefulSetSpecTemplateSpecContainerSecurityContextSeLinuxOptions
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
 
 ---
 
@@ -7006,7 +7022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -7033,7 +7049,7 @@ Add *[]*string
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#add StatefulSet#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#add StatefulSet#add}
 
 ---
 
@@ -7047,7 +7063,7 @@ Drop *[]*string
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#drop StatefulSet#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#drop StatefulSet#drop}
 
 ---
 
@@ -7056,7 +7072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -7085,7 +7101,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
 
 ---
 
@@ -7099,7 +7115,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -7108,7 +7124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -7139,7 +7155,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#level StatefulSet#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#level StatefulSet#level}
 
 ---
 
@@ -7153,7 +7169,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#role StatefulSet#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#role StatefulSet#role}
 
 ---
 
@@ -7167,7 +7183,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -7181,7 +7197,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#user StatefulSet#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#user StatefulSet#user}
 
 ---
 
@@ -7190,13 +7206,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -7231,7 +7247,7 @@ Exec StatefulSetSpecTemplateSpecContainerStartupProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -7245,7 +7261,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -7259,7 +7275,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -7273,7 +7289,7 @@ HttpGet StatefulSetSpecTemplateSpecContainerStartupProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -7287,7 +7303,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -7301,7 +7317,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -7315,7 +7331,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -7329,7 +7345,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -7343,7 +7359,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -7352,7 +7368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerStartupProbeExec {
 	Command: *[]*string,
@@ -7379,7 +7395,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -7388,7 +7404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerStartupProbeGrpc {
 	Port: *f64,
@@ -7415,7 +7431,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -7429,7 +7445,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -7438,7 +7454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGet {
 	Host: *string,
@@ -7471,7 +7487,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -7485,7 +7501,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -7499,7 +7515,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -7515,7 +7531,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -7529,7 +7545,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -7538,7 +7554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -7565,7 +7581,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7579,7 +7595,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -7588,7 +7604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -7615,7 +7631,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -7624,7 +7640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerVolumeDevice {
 	DevicePath: *string,
@@ -7651,7 +7667,7 @@ DevicePath *string
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#device_path StatefulSet#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#device_path StatefulSet#device_path}
 
 ---
 
@@ -7665,7 +7681,7 @@ Name *string
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7674,7 +7690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecContainerVolumeMount {
 	MountPath: *string,
@@ -7709,7 +7725,7 @@ MountPath *string
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#mount_path StatefulSet#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mount_path StatefulSet#mount_path}
 
 ---
 
@@ -7723,7 +7739,7 @@ Name *string
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7739,7 +7755,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#mount_propagation StatefulSet#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mount_propagation StatefulSet#mount_propagation}
 
 ---
 
@@ -7753,7 +7769,7 @@ ReadOnly interface{}
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -7767,7 +7783,7 @@ SubPath *string
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#sub_path StatefulSet#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sub_path StatefulSet#sub_path}
 
 ---
 
@@ -7781,7 +7797,7 @@ SubPathExpr *string
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#sub_path_expr StatefulSet#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sub_path_expr StatefulSet#sub_path_expr}
 
 ---
 
@@ -7790,7 +7806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecDnsConfig {
 	Nameservers: *[]*string,
@@ -7821,7 +7837,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#nameservers StatefulSet#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#nameservers StatefulSet#nameservers}
 
 ---
 
@@ -7835,7 +7851,7 @@ Option interface{}
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#option StatefulSet#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#option StatefulSet#option}
 
 ---
 
@@ -7851,7 +7867,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#searches StatefulSet#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#searches StatefulSet#searches}
 
 ---
 
@@ -7860,7 +7876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecDnsConfigOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecDnsConfigOption {
 	Name: *string,
@@ -7887,7 +7903,7 @@ Name *string
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7901,7 +7917,7 @@ Value *string
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -7910,7 +7926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecHostAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecHostAliases {
 	Hostnames: *[]*string,
@@ -7937,7 +7953,7 @@ Hostnames *[]*string
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#hostnames StatefulSet#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#hostnames StatefulSet#hostnames}
 
 ---
 
@@ -7951,7 +7967,7 @@ Ip *string
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#ip StatefulSet#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#ip StatefulSet#ip}
 
 ---
 
@@ -7960,7 +7976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecImagePullSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecImagePullSecrets {
 	Name: *string,
@@ -7985,7 +8001,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7994,7 +8010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainer {
 	Name: *string,
@@ -8004,13 +8020,14 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerResources,
+	RestartPolicy: *string,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -8038,6 +8055,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainer.property.port">Port</a></code> | <code>interface{}</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainer.property.readinessProbe">ReadinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbe">StatefulSetSpecTemplateSpecInitContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainer.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerResources">StatefulSetSpecTemplateSpecInitContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainer.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainer.property.securityContext">SecurityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContext">StatefulSetSpecTemplateSpecInitContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainer.property.startupProbe">StartupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbe">StatefulSetSpecTemplateSpecInitContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainer.property.stdin">Stdin</a></code> | <code>interface{}</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -8063,7 +8081,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8079,7 +8097,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#args StatefulSet#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#args StatefulSet#args}
 
 ---
 
@@ -8095,7 +8113,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -8109,7 +8127,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#env StatefulSet#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#env StatefulSet#env}
 
 ---
 
@@ -8123,7 +8141,7 @@ EnvFrom interface{}
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#env_from StatefulSet#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#env_from StatefulSet#env_from}
 
 ---
 
@@ -8137,7 +8155,7 @@ Image *string
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#image StatefulSet#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#image StatefulSet#image}
 
 ---
 
@@ -8153,7 +8171,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#image_pull_policy StatefulSet#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#image_pull_policy StatefulSet#image_pull_policy}
 
 ---
 
@@ -8167,7 +8185,7 @@ Lifecycle StatefulSetSpecTemplateSpecInitContainerLifecycle
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#lifecycle StatefulSet#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#lifecycle StatefulSet#lifecycle}
 
 ---
 
@@ -8181,7 +8199,7 @@ LivenessProbe StatefulSetSpecTemplateSpecInitContainerLivenessProbe
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#liveness_probe StatefulSet#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#liveness_probe StatefulSet#liveness_probe}
 
 ---
 
@@ -8195,7 +8213,7 @@ Port interface{}
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -8209,7 +8227,7 @@ ReadinessProbe StatefulSetSpecTemplateSpecInitContainerReadinessProbe
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#readiness_probe StatefulSet#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#readiness_probe StatefulSet#readiness_probe}
 
 ---
 
@@ -8223,7 +8241,21 @@ Resources StatefulSetSpecTemplateSpecInitContainerResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resources StatefulSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resources StatefulSet#resources}
+
+---
+
+##### `RestartPolicy`<sup>Optional</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainer.property.restartPolicy"></a>
+
+```go
+RestartPolicy *string
+```
+
+- *Type:* *string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
 
 ---
 
@@ -8237,7 +8269,7 @@ SecurityContext StatefulSetSpecTemplateSpecInitContainerSecurityContext
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
 
 ---
 
@@ -8251,7 +8283,7 @@ StartupProbe StatefulSetSpecTemplateSpecInitContainerStartupProbe
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#startup_probe StatefulSet#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#startup_probe StatefulSet#startup_probe}
 
 ---
 
@@ -8267,7 +8299,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#stdin StatefulSet#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#stdin StatefulSet#stdin}
 
 ---
 
@@ -8283,7 +8315,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#stdin_once StatefulSet#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#stdin_once StatefulSet#stdin_once}
 
 ---
 
@@ -8299,7 +8331,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#termination_message_path StatefulSet#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#termination_message_path StatefulSet#termination_message_path}
 
 ---
 
@@ -8315,7 +8347,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#termination_message_policy StatefulSet#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#termination_message_policy StatefulSet#termination_message_policy}
 
 ---
 
@@ -8329,7 +8361,7 @@ Tty interface{}
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tty StatefulSet#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tty StatefulSet#tty}
 
 ---
 
@@ -8343,7 +8375,7 @@ VolumeDevice interface{}
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_device StatefulSet#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_device StatefulSet#volume_device}
 
 ---
 
@@ -8357,7 +8389,7 @@ VolumeMount interface{}
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_mount StatefulSet#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_mount StatefulSet#volume_mount}
 
 ---
 
@@ -8373,7 +8405,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#working_dir StatefulSet#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#working_dir StatefulSet#working_dir}
 
 ---
 
@@ -8382,12 +8414,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFrom,
 }
 ```
 
@@ -8411,7 +8443,7 @@ Name *string
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8427,7 +8459,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -8441,7 +8473,7 @@ ValueFrom StatefulSetSpecTemplateSpecInitContainerEnvValueFrom
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value_from StatefulSet#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value_from StatefulSet#value_from}
 
 ---
 
@@ -8450,12 +8482,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFromSecretRef,
 }
 ```
 
@@ -8479,7 +8511,7 @@ ConfigMapRef StatefulSetSpecTemplateSpecInitContainerEnvFromConfigMapRef
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#config_map_ref StatefulSet#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map_ref StatefulSet#config_map_ref}
 
 ---
 
@@ -8493,7 +8525,7 @@ Prefix *string
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#prefix StatefulSet#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#prefix StatefulSet#prefix}
 
 ---
 
@@ -8507,7 +8539,7 @@ SecretRef StatefulSetSpecTemplateSpecInitContainerEnvFromSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
 
 ---
 
@@ -8516,7 +8548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -8543,7 +8575,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8557,7 +8589,7 @@ Optional interface{}
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -8566,7 +8598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerEnvFromSecretRef {
 	Name: *string,
@@ -8593,7 +8625,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8607,7 +8639,7 @@ Optional interface{}
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -8616,13 +8648,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -8647,7 +8679,7 @@ ConfigMapKeyRef StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKey
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#config_map_key_ref StatefulSet#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map_key_ref StatefulSet#config_map_key_ref}
 
 ---
 
@@ -8661,7 +8693,7 @@ FieldRef StatefulSetSpecTemplateSpecInitContainerEnvValueFromFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
 
 ---
 
@@ -8675,7 +8707,7 @@ ResourceFieldRef StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFie
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
 
 ---
 
@@ -8689,7 +8721,7 @@ SecretKeyRef StatefulSetSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_key_ref StatefulSet#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_key_ref StatefulSet#secret_key_ref}
 
 ---
 
@@ -8698,7 +8730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -8727,7 +8759,7 @@ Key *string
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -8741,7 +8773,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8755,7 +8787,7 @@ Optional interface{}
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -8764,7 +8796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -8791,7 +8823,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
 
 ---
 
@@ -8805,7 +8837,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
 
 ---
 
@@ -8814,7 +8846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -8828,8 +8860,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
 
 ---
 
@@ -8843,7 +8875,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resource StatefulSet#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource StatefulSet#resource}
 
 ---
 
@@ -8855,7 +8887,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
 
 ---
 
@@ -8867,7 +8899,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
 
 ---
 
@@ -8876,7 +8908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -8905,7 +8937,7 @@ Key *string
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -8919,7 +8951,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8933,7 +8965,7 @@ Optional interface{}
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -8942,7 +8974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecycle {
 	PostStart: interface{},
@@ -8969,7 +9001,7 @@ PostStart interface{}
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#post_start StatefulSet#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#post_start StatefulSet#post_start}
 
 ---
 
@@ -8983,7 +9015,7 @@ PreStop interface{}
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#pre_stop StatefulSet#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pre_stop StatefulSet#pre_stop}
 
 ---
 
@@ -8992,11 +9024,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -9021,7 +9053,7 @@ Exec StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -9035,7 +9067,7 @@ HttpGet StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -9049,7 +9081,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -9058,7 +9090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -9085,7 +9117,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -9094,7 +9126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -9127,7 +9159,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -9141,7 +9173,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -9155,7 +9187,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -9171,7 +9203,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9185,7 +9217,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -9194,7 +9226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -9221,7 +9253,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -9235,7 +9267,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -9244,7 +9276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -9271,7 +9303,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9280,11 +9312,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -9309,7 +9341,7 @@ Exec StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -9323,7 +9355,7 @@ HttpGet StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -9337,7 +9369,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -9346,7 +9378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -9373,7 +9405,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -9382,7 +9414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -9415,7 +9447,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -9429,7 +9461,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -9443,7 +9475,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -9459,7 +9491,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9473,7 +9505,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -9482,7 +9514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -9509,7 +9541,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -9523,7 +9555,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -9532,7 +9564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -9559,7 +9591,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9568,13 +9600,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -9609,7 +9641,7 @@ Exec StatefulSetSpecTemplateSpecInitContainerLivenessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -9623,7 +9655,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -9637,7 +9669,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -9651,7 +9683,7 @@ HttpGet StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -9665,7 +9697,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -9679,7 +9711,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -9693,7 +9725,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -9707,7 +9739,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -9721,7 +9753,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -9730,7 +9762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -9757,7 +9789,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -9766,7 +9798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -9793,7 +9825,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9807,7 +9839,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -9816,7 +9848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -9849,7 +9881,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -9863,7 +9895,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -9877,7 +9909,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -9893,7 +9925,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9907,7 +9939,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -9916,7 +9948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -9943,7 +9975,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -9957,7 +9989,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -9966,7 +9998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -9993,7 +10025,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -10002,7 +10034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerPort {
 	ContainerPort: *f64,
@@ -10037,7 +10069,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container_port StatefulSet#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_port StatefulSet#container_port}
 
 ---
 
@@ -10051,7 +10083,7 @@ HostIp *string
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host_ip StatefulSet#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_ip StatefulSet#host_ip}
 
 ---
 
@@ -10067,7 +10099,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host_port StatefulSet#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_port StatefulSet#host_port}
 
 ---
 
@@ -10083,7 +10115,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -10097,7 +10129,7 @@ Protocol *string
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#protocol StatefulSet#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#protocol StatefulSet#protocol}
 
 ---
 
@@ -10106,13 +10138,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -10147,7 +10179,7 @@ Exec StatefulSetSpecTemplateSpecInitContainerReadinessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -10161,7 +10193,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -10175,7 +10207,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -10189,7 +10221,7 @@ HttpGet StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -10203,7 +10235,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -10217,7 +10249,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -10231,7 +10263,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -10245,7 +10277,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -10259,7 +10291,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -10268,7 +10300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -10295,7 +10327,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -10304,7 +10336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -10331,7 +10363,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -10345,7 +10377,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -10354,7 +10386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -10387,7 +10419,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -10401,7 +10433,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -10415,7 +10447,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -10431,7 +10463,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -10445,7 +10477,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -10454,7 +10486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -10481,7 +10513,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -10495,7 +10527,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -10504,7 +10536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -10531,7 +10563,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -10540,7 +10572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerResources {
 	Limits: *map[string]*string,
@@ -10567,7 +10599,7 @@ Limits *map[string]*string
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#limits StatefulSet#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#limits StatefulSet#limits}
 
 ---
 
@@ -10583,7 +10615,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#requests StatefulSet#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#requests StatefulSet#requests}
 
 ---
 
@@ -10592,18 +10624,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -10635,7 +10667,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#allow_privilege_escalation StatefulSet#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#allow_privilege_escalation StatefulSet#allow_privilege_escalation}
 
 ---
 
@@ -10649,7 +10681,7 @@ Capabilities StatefulSetSpecTemplateSpecInitContainerSecurityContextCapabilities
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#capabilities StatefulSet#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#capabilities StatefulSet#capabilities}
 
 ---
 
@@ -10665,7 +10697,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#privileged StatefulSet#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#privileged StatefulSet#privileged}
 
 ---
 
@@ -10679,7 +10711,7 @@ ReadOnlyRootFilesystem interface{}
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only_root_filesystem StatefulSet#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only_root_filesystem StatefulSet#read_only_root_filesystem}
 
 ---
 
@@ -10695,7 +10727,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
 
 ---
 
@@ -10711,7 +10743,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
 
 ---
 
@@ -10727,7 +10759,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
 
 ---
 
@@ -10741,7 +10773,7 @@ SeccompProfile StatefulSetSpecTemplateSpecInitContainerSecurityContextSeccompPro
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
 
 ---
 
@@ -10755,7 +10787,7 @@ SeLinuxOptions StatefulSetSpecTemplateSpecInitContainerSecurityContextSeLinuxOpt
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
 
 ---
 
@@ -10764,7 +10796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -10791,7 +10823,7 @@ Add *[]*string
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#add StatefulSet#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#add StatefulSet#add}
 
 ---
 
@@ -10805,7 +10837,7 @@ Drop *[]*string
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#drop StatefulSet#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#drop StatefulSet#drop}
 
 ---
 
@@ -10814,7 +10846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -10843,7 +10875,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
 
 ---
 
@@ -10857,7 +10889,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -10866,7 +10898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -10897,7 +10929,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#level StatefulSet#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#level StatefulSet#level}
 
 ---
 
@@ -10911,7 +10943,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#role StatefulSet#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#role StatefulSet#role}
 
 ---
 
@@ -10925,7 +10957,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -10939,7 +10971,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#user StatefulSet#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#user StatefulSet#user}
 
 ---
 
@@ -10948,13 +10980,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -10989,7 +11021,7 @@ Exec StatefulSetSpecTemplateSpecInitContainerStartupProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -11003,7 +11035,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -11017,7 +11049,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -11031,7 +11063,7 @@ HttpGet StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -11045,7 +11077,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -11059,7 +11091,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -11073,7 +11105,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -11087,7 +11119,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -11101,7 +11133,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -11110,7 +11142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerStartupProbeExec {
 	Command: *[]*string,
@@ -11137,7 +11169,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -11146,7 +11178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerStartupProbeGrpc {
 	Port: *f64,
@@ -11173,7 +11205,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -11187,7 +11219,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -11196,7 +11228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGet {
 	Host: *string,
@@ -11229,7 +11261,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -11243,7 +11275,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -11257,7 +11289,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -11273,7 +11305,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -11287,7 +11319,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -11296,7 +11328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -11323,7 +11355,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -11337,7 +11369,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -11346,7 +11378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -11373,7 +11405,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -11382,7 +11414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerVolumeDevice {
 	DevicePath: *string,
@@ -11409,7 +11441,7 @@ DevicePath *string
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#device_path StatefulSet#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#device_path StatefulSet#device_path}
 
 ---
 
@@ -11423,7 +11455,7 @@ Name *string
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -11432,7 +11464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecInitContainerVolumeMount {
 	MountPath: *string,
@@ -11467,7 +11499,7 @@ MountPath *string
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#mount_path StatefulSet#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mount_path StatefulSet#mount_path}
 
 ---
 
@@ -11481,7 +11513,7 @@ Name *string
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -11497,7 +11529,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#mount_propagation StatefulSet#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mount_propagation StatefulSet#mount_propagation}
 
 ---
 
@@ -11511,7 +11543,7 @@ ReadOnly interface{}
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -11525,7 +11557,7 @@ SubPath *string
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#sub_path StatefulSet#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sub_path StatefulSet#sub_path}
 
 ---
 
@@ -11539,7 +11571,7 @@ SubPathExpr *string
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#sub_path_expr StatefulSet#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sub_path_expr StatefulSet#sub_path_expr}
 
 ---
 
@@ -11548,7 +11580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecOs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecOs {
 	Name: *string,
@@ -11573,7 +11605,7 @@ Name *string
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -11582,7 +11614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecReadinessGate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecReadinessGate {
 	ConditionType: *string,
@@ -11607,7 +11639,7 @@ ConditionType *string
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#condition_type StatefulSet#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#condition_type StatefulSet#condition_type}
 
 ---
 
@@ -11616,7 +11648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecSecurityContext {
 	FsGroup: *string,
@@ -11624,11 +11656,11 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSeLinuxOptions,
 	SupplementalGroups: *[]*f64,
 	Sysctl: interface{},
-	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecSecurityContextWindowsOptions,
+	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecSecurityContextWindowsOptions,
 }
 ```
 
@@ -11661,7 +11693,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_group StatefulSet#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_group StatefulSet#fs_group}
 
 ---
 
@@ -11677,7 +11709,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_group_change_policy StatefulSet#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_group_change_policy StatefulSet#fs_group_change_policy}
 
 ---
 
@@ -11693,7 +11725,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
 
 ---
 
@@ -11709,7 +11741,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
 
 ---
 
@@ -11725,7 +11757,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
 
 ---
 
@@ -11739,7 +11771,7 @@ SeccompProfile StatefulSetSpecTemplateSpecSecurityContextSeccompProfile
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
 
 ---
 
@@ -11753,7 +11785,7 @@ SeLinuxOptions StatefulSetSpecTemplateSpecSecurityContextSeLinuxOptions
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
 
 ---
 
@@ -11769,7 +11801,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#supplemental_groups StatefulSet#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#supplemental_groups StatefulSet#supplemental_groups}
 
 ---
 
@@ -11783,7 +11815,7 @@ Sysctl interface{}
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#sysctl StatefulSet#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sysctl StatefulSet#sysctl}
 
 ---
 
@@ -11797,7 +11829,7 @@ WindowsOptions StatefulSetSpecTemplateSpecSecurityContextWindowsOptions
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#windows_options StatefulSet#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#windows_options StatefulSet#windows_options}
 
 ---
 
@@ -11806,7 +11838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -11835,7 +11867,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
 
 ---
 
@@ -11849,7 +11881,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -11858,7 +11890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -11889,7 +11921,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#level StatefulSet#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#level StatefulSet#level}
 
 ---
 
@@ -11903,7 +11935,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#role StatefulSet#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#role StatefulSet#role}
 
 ---
 
@@ -11917,7 +11949,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -11931,7 +11963,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#user StatefulSet#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#user StatefulSet#user}
 
 ---
 
@@ -11940,7 +11972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSysctl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecSecurityContextSysctl {
 	Name: *string,
@@ -11967,7 +11999,7 @@ Name *string
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -11981,7 +12013,7 @@ Value *string
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -11990,7 +12022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextWindowsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecSecurityContextWindowsOptions {
 	GmsaCredentialSpec: *string,
@@ -12021,7 +12053,7 @@ GmsaCredentialSpec *string
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#gmsa_credential_spec StatefulSet#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#gmsa_credential_spec StatefulSet#gmsa_credential_spec}
 
 ---
 
@@ -12035,7 +12067,7 @@ GmsaCredentialSpecName *string
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#gmsa_credential_spec_name StatefulSet#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#gmsa_credential_spec_name StatefulSet#gmsa_credential_spec_name}
 
 ---
 
@@ -12049,7 +12081,7 @@ HostProcess interface{}
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host_process StatefulSet#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_process StatefulSet#host_process}
 
 ---
 
@@ -12065,7 +12097,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#run_as_username StatefulSet#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_username StatefulSet#run_as_username}
 
 ---
 
@@ -12074,7 +12106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecToleration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecToleration {
 	Effect: *string,
@@ -12109,7 +12141,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#effect StatefulSet#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#effect StatefulSet#effect}
 
 ---
 
@@ -12125,7 +12157,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -12141,7 +12173,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -12157,7 +12189,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#toleration_seconds StatefulSet#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#toleration_seconds StatefulSet#toleration_seconds}
 
 ---
 
@@ -12173,7 +12205,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -12182,7 +12214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTopologySpreadConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecTopologySpreadConstraint {
 	LabelSelector: interface{},
@@ -12221,7 +12253,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 
 ---
 
@@ -12235,7 +12267,7 @@ MatchLabelKeys *[]*string
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_label_keys StatefulSet#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_label_keys StatefulSet#match_label_keys}
 
 ---
 
@@ -12249,7 +12281,7 @@ MaxSkew *f64
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#max_skew StatefulSet#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#max_skew StatefulSet#max_skew}
 
 ---
 
@@ -12263,7 +12295,7 @@ MinDomains *f64
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#min_domains StatefulSet#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#min_domains StatefulSet#min_domains}
 
 ---
 
@@ -12277,7 +12309,7 @@ NodeAffinityPolicy *string
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#node_affinity_policy StatefulSet#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_affinity_policy StatefulSet#node_affinity_policy}
 
 ---
 
@@ -12291,7 +12323,7 @@ NodeTaintsPolicy *string
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#node_taints_policy StatefulSet#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_taints_policy StatefulSet#node_taints_policy}
 
 ---
 
@@ -12307,7 +12339,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 
 ---
 
@@ -12321,7 +12353,7 @@ WhenUnsatisfiable *string
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#when_unsatisfiable StatefulSet#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#when_unsatisfiable StatefulSet#when_unsatisfiable}
 
 ---
 
@@ -12330,7 +12362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelector {
 	MatchExpressions: interface{},
@@ -12357,7 +12389,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -12373,7 +12405,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -12382,7 +12414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions {
 	Key: *string,
@@ -12411,7 +12443,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -12425,7 +12457,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -12441,7 +12473,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -12450,37 +12482,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolume {
-	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStore,
-	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeAzureDisk,
-	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeAzureFile,
-	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeCephFs,
-	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeCinder,
-	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeConfigMap,
-	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeCsi,
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApi,
-	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeEmptyDir,
-	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeral,
-	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeFc,
-	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeFlexVolume,
-	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeFlocker,
-	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeGcePersistentDisk,
-	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeGitRepo,
-	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeGlusterfs,
-	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeHostPath,
-	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeIscsi,
-	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeLocal,
+	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStore,
+	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeAzureDisk,
+	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeAzureFile,
+	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeCephFs,
+	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeCinder,
+	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeConfigMap,
+	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeCsi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApi,
+	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeEmptyDir,
+	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeral,
+	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeFc,
+	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeFlexVolume,
+	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeFlocker,
+	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeGcePersistentDisk,
+	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeGitRepo,
+	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeGlusterfs,
+	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeHostPath,
+	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeIscsi,
+	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeLocal,
 	Name: *string,
-	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeNfs,
-	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumePersistentVolumeClaim,
-	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumePhotonPersistentDisk,
+	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeNfs,
+	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumePersistentVolumeClaim,
+	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumePhotonPersistentDisk,
 	Projected: interface{},
-	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeQuobyte,
-	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeRbd,
-	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeSecret,
-	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeVsphereVolume,
+	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeQuobyte,
+	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeRbd,
+	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeSecret,
+	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeVsphereVolume,
 }
 ```
 
@@ -12529,7 +12561,7 @@ AwsElasticBlockStore StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStore
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#aws_elastic_block_store StatefulSet#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#aws_elastic_block_store StatefulSet#aws_elastic_block_store}
 
 ---
 
@@ -12543,7 +12575,7 @@ AzureDisk StatefulSetSpecTemplateSpecVolumeAzureDisk
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#azure_disk StatefulSet#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#azure_disk StatefulSet#azure_disk}
 
 ---
 
@@ -12557,7 +12589,7 @@ AzureFile StatefulSetSpecTemplateSpecVolumeAzureFile
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#azure_file StatefulSet#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#azure_file StatefulSet#azure_file}
 
 ---
 
@@ -12571,7 +12603,7 @@ CephFs StatefulSetSpecTemplateSpecVolumeCephFs
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#ceph_fs StatefulSet#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#ceph_fs StatefulSet#ceph_fs}
 
 ---
 
@@ -12585,7 +12617,7 @@ Cinder StatefulSetSpecTemplateSpecVolumeCinder
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#cinder StatefulSet#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#cinder StatefulSet#cinder}
 
 ---
 
@@ -12599,7 +12631,7 @@ ConfigMap StatefulSetSpecTemplateSpecVolumeConfigMap
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#config_map StatefulSet#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map StatefulSet#config_map}
 
 ---
 
@@ -12613,7 +12645,7 @@ Csi StatefulSetSpecTemplateSpecVolumeCsi
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#csi StatefulSet#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#csi StatefulSet#csi}
 
 ---
 
@@ -12627,7 +12659,7 @@ DownwardApi StatefulSetSpecTemplateSpecVolumeDownwardApi
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#downward_api StatefulSet#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#downward_api StatefulSet#downward_api}
 
 ---
 
@@ -12641,7 +12673,7 @@ EmptyDir StatefulSetSpecTemplateSpecVolumeEmptyDir
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#empty_dir StatefulSet#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#empty_dir StatefulSet#empty_dir}
 
 ---
 
@@ -12655,7 +12687,7 @@ Ephemeral StatefulSetSpecTemplateSpecVolumeEphemeral
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#ephemeral StatefulSet#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#ephemeral StatefulSet#ephemeral}
 
 ---
 
@@ -12669,7 +12701,7 @@ Fc StatefulSetSpecTemplateSpecVolumeFc
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fc StatefulSet#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fc StatefulSet#fc}
 
 ---
 
@@ -12683,7 +12715,7 @@ FlexVolume StatefulSetSpecTemplateSpecVolumeFlexVolume
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#flex_volume StatefulSet#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#flex_volume StatefulSet#flex_volume}
 
 ---
 
@@ -12697,7 +12729,7 @@ Flocker StatefulSetSpecTemplateSpecVolumeFlocker
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#flocker StatefulSet#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#flocker StatefulSet#flocker}
 
 ---
 
@@ -12711,7 +12743,7 @@ GcePersistentDisk StatefulSetSpecTemplateSpecVolumeGcePersistentDisk
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#gce_persistent_disk StatefulSet#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#gce_persistent_disk StatefulSet#gce_persistent_disk}
 
 ---
 
@@ -12725,7 +12757,7 @@ GitRepo StatefulSetSpecTemplateSpecVolumeGitRepo
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#git_repo StatefulSet#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#git_repo StatefulSet#git_repo}
 
 ---
 
@@ -12739,7 +12771,7 @@ Glusterfs StatefulSetSpecTemplateSpecVolumeGlusterfs
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#glusterfs StatefulSet#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#glusterfs StatefulSet#glusterfs}
 
 ---
 
@@ -12753,7 +12785,7 @@ HostPath StatefulSetSpecTemplateSpecVolumeHostPath
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#host_path StatefulSet#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_path StatefulSet#host_path}
 
 ---
 
@@ -12767,7 +12799,7 @@ Iscsi StatefulSetSpecTemplateSpecVolumeIscsi
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#iscsi StatefulSet#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#iscsi StatefulSet#iscsi}
 
 ---
 
@@ -12781,7 +12813,7 @@ Local StatefulSetSpecTemplateSpecVolumeLocal
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#local StatefulSet#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#local StatefulSet#local}
 
 ---
 
@@ -12795,7 +12827,7 @@ Name *string
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -12809,7 +12841,7 @@ Nfs StatefulSetSpecTemplateSpecVolumeNfs
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#nfs StatefulSet#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#nfs StatefulSet#nfs}
 
 ---
 
@@ -12823,7 +12855,7 @@ PersistentVolumeClaim StatefulSetSpecTemplateSpecVolumePersistentVolumeClaim
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#persistent_volume_claim StatefulSet#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#persistent_volume_claim StatefulSet#persistent_volume_claim}
 
 ---
 
@@ -12837,7 +12869,7 @@ PhotonPersistentDisk StatefulSetSpecTemplateSpecVolumePhotonPersistentDisk
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#photon_persistent_disk StatefulSet#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#photon_persistent_disk StatefulSet#photon_persistent_disk}
 
 ---
 
@@ -12851,7 +12883,7 @@ Projected interface{}
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#projected StatefulSet#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#projected StatefulSet#projected}
 
 ---
 
@@ -12865,7 +12897,7 @@ Quobyte StatefulSetSpecTemplateSpecVolumeQuobyte
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#quobyte StatefulSet#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#quobyte StatefulSet#quobyte}
 
 ---
 
@@ -12879,7 +12911,7 @@ Rbd StatefulSetSpecTemplateSpecVolumeRbd
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#rbd StatefulSet#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#rbd StatefulSet#rbd}
 
 ---
 
@@ -12893,7 +12925,7 @@ Secret StatefulSetSpecTemplateSpecVolumeSecret
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret StatefulSet#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret StatefulSet#secret}
 
 ---
 
@@ -12907,7 +12939,7 @@ VsphereVolume StatefulSetSpecTemplateSpecVolumeVsphereVolume
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#vsphere_volume StatefulSet#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#vsphere_volume StatefulSet#vsphere_volume}
 
 ---
 
@@ -12916,7 +12948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStore {
 	VolumeId: *string,
@@ -12947,7 +12979,7 @@ VolumeId *string
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_id StatefulSet#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_id StatefulSet#volume_id}
 
 ---
 
@@ -12963,7 +12995,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -12979,7 +13011,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#partition StatefulSet#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#partition StatefulSet#partition}
 
 ---
 
@@ -12993,7 +13025,7 @@ ReadOnly interface{}
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -13002,7 +13034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeAzureDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeAzureDisk {
 	CachingMode: *string,
@@ -13037,7 +13069,7 @@ CachingMode *string
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#caching_mode StatefulSet#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#caching_mode StatefulSet#caching_mode}
 
 ---
 
@@ -13051,7 +13083,7 @@ DataDiskUri *string
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#data_disk_uri StatefulSet#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#data_disk_uri StatefulSet#data_disk_uri}
 
 ---
 
@@ -13065,7 +13097,7 @@ DiskName *string
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#disk_name StatefulSet#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#disk_name StatefulSet#disk_name}
 
 ---
 
@@ -13081,7 +13113,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -13095,7 +13127,7 @@ Kind *string
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#kind StatefulSet#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#kind StatefulSet#kind}
 
 ---
 
@@ -13109,7 +13141,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -13118,7 +13150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeAzureFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeAzureFile {
 	SecretName: *string,
@@ -13149,7 +13181,7 @@ SecretName *string
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_name StatefulSet#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_name StatefulSet#secret_name}
 
 ---
 
@@ -13163,7 +13195,7 @@ ShareName *string
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#share_name StatefulSet#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#share_name StatefulSet#share_name}
 
 ---
 
@@ -13177,7 +13209,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -13193,7 +13225,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_namespace StatefulSet#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_namespace StatefulSet#secret_namespace}
 
 ---
 
@@ -13202,14 +13234,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeCephFs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeCephFs {
 	Monitors: *[]*string,
 	Path: *string,
 	ReadOnly: interface{},
 	SecretFile: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeCephFsSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeCephFsSecretRef,
 	User: *string,
 }
 ```
@@ -13237,7 +13269,7 @@ Monitors *[]*string
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#monitors StatefulSet#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#monitors StatefulSet#monitors}
 
 ---
 
@@ -13251,7 +13283,7 @@ Path *string
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -13265,7 +13297,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -13279,7 +13311,7 @@ SecretFile *string
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_file StatefulSet#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_file StatefulSet#secret_file}
 
 ---
 
@@ -13293,7 +13325,7 @@ SecretRef StatefulSetSpecTemplateSpecVolumeCephFsSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
 
 ---
 
@@ -13307,7 +13339,7 @@ User *string
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#user StatefulSet#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#user StatefulSet#user}
 
 ---
 
@@ -13316,7 +13348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeCephFsSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeCephFsSecretRef {
 	Name: *string,
@@ -13343,7 +13375,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -13357,7 +13389,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -13366,7 +13398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeCinder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeCinder {
 	VolumeId: *string,
@@ -13395,7 +13427,7 @@ VolumeId *string
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_id StatefulSet#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_id StatefulSet#volume_id}
 
 ---
 
@@ -13411,7 +13443,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -13425,7 +13457,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -13434,7 +13466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeConfigMap {
 	DefaultMode: *string,
@@ -13467,7 +13499,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
 
 ---
 
@@ -13481,7 +13513,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -13495,7 +13527,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -13509,7 +13541,7 @@ Optional interface{}
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -13518,7 +13550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeConfigMapItems {
 	Key: *string,
@@ -13547,7 +13579,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -13563,7 +13595,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -13579,7 +13611,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -13588,12 +13620,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeCsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeCsi {
 	Driver: *string,
 	FsType: *string,
-	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRef,
+	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRef,
 	ReadOnly: interface{},
 	VolumeAttributes: *map[string]*string,
 }
@@ -13621,7 +13653,7 @@ Driver *string
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#driver StatefulSet#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#driver StatefulSet#driver}
 
 ---
 
@@ -13637,7 +13669,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -13651,7 +13683,7 @@ NodePublishSecretRef StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRef
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#node_publish_secret_ref StatefulSet#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_publish_secret_ref StatefulSet#node_publish_secret_ref}
 
 ---
 
@@ -13665,7 +13697,7 @@ ReadOnly interface{}
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -13679,7 +13711,7 @@ VolumeAttributes *map[string]*string
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_attributes StatefulSet#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_attributes StatefulSet#volume_attributes}
 
 ---
 
@@ -13688,7 +13720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRef {
 	Name: *string,
@@ -13713,7 +13745,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -13722,7 +13754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeDownwardApi {
 	DefaultMode: *string,
@@ -13751,7 +13783,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
 
 ---
 
@@ -13765,7 +13797,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -13774,13 +13806,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeDownwardApiItems {
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsFieldRef,
 	Path: *string,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -13805,7 +13837,7 @@ FieldRef StatefulSetSpecTemplateSpecVolumeDownwardApiItemsFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
 
 ---
 
@@ -13821,7 +13853,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -13837,7 +13869,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -13851,7 +13883,7 @@ ResourceFieldRef StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldR
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
 
 ---
 
@@ -13860,7 +13892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -13887,7 +13919,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
 
 ---
 
@@ -13901,7 +13933,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
 
 ---
 
@@ -13910,7 +13942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -13923,9 +13955,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
 
 ---
 
@@ -13937,7 +13969,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
 
 ---
 
@@ -13951,7 +13983,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resource StatefulSet#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource StatefulSet#resource}
 
 ---
 
@@ -13963,7 +13995,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
 
 ---
 
@@ -13972,7 +14004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeEmptyDir {
 	Medium: *string,
@@ -14001,7 +14033,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#medium StatefulSet#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#medium StatefulSet#medium}
 
 ---
 
@@ -14015,7 +14047,7 @@ SizeLimit *string
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#size_limit StatefulSet#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#size_limit StatefulSet#size_limit}
 
 ---
 
@@ -14024,10 +14056,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeral.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeEphemeral {
-	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
+	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
 }
 ```
 
@@ -14049,7 +14081,7 @@ VolumeClaimTemplate StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplat
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
 
 ---
 
@@ -14058,11 +14090,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate {
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
 }
 ```
 
@@ -14085,7 +14117,7 @@ Spec StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#spec StatefulSet#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#spec StatefulSet#spec}
 
 ---
 
@@ -14099,7 +14131,7 @@ Metadata StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
 
 ---
 
@@ -14108,7 +14140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -14137,7 +14169,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
 
 ---
 
@@ -14153,7 +14185,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#labels StatefulSet#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#labels StatefulSet#labels}
 
 ---
 
@@ -14162,12 +14194,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec {
 	AccessModes: *[]*string,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
 	StorageClassName: *string,
 	VolumeMode: *string,
 	VolumeName: *string,
@@ -14197,7 +14229,7 @@ AccessModes *[]*string
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#access_modes StatefulSet#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#access_modes StatefulSet#access_modes}
 
 ---
 
@@ -14211,7 +14243,7 @@ Resources StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResou
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resources StatefulSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resources StatefulSet#resources}
 
 ---
 
@@ -14225,7 +14257,7 @@ Selector StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelect
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#selector StatefulSet#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#selector StatefulSet#selector}
 
 ---
 
@@ -14239,7 +14271,7 @@ StorageClassName *string
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#storage_class_name StatefulSet#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#storage_class_name StatefulSet#storage_class_name}
 
 ---
 
@@ -14253,7 +14285,7 @@ VolumeMode *string
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_mode StatefulSet#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_mode StatefulSet#volume_mode}
 
 ---
 
@@ -14267,7 +14299,7 @@ VolumeName *string
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_name StatefulSet#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_name StatefulSet#volume_name}
 
 ---
 
@@ -14276,7 +14308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources {
 	Limits: *map[string]*string,
@@ -14303,7 +14335,7 @@ Limits *map[string]*string
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#limits StatefulSet#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#limits StatefulSet#limits}
 
 ---
 
@@ -14319,7 +14351,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#requests StatefulSet#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#requests StatefulSet#requests}
 
 ---
 
@@ -14328,7 +14360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector {
 	MatchExpressions: interface{},
@@ -14355,7 +14387,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -14371,7 +14403,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -14380,7 +14412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions {
 	Key: *string,
@@ -14409,7 +14441,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -14423,7 +14455,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -14439,7 +14471,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -14448,7 +14480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeFc {
 	Lun: *f64,
@@ -14479,7 +14511,7 @@ Lun *f64
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#lun StatefulSet#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#lun StatefulSet#lun}
 
 ---
 
@@ -14493,7 +14525,7 @@ TargetWwNs *[]*string
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#target_ww_ns StatefulSet#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#target_ww_ns StatefulSet#target_ww_ns}
 
 ---
 
@@ -14509,7 +14541,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -14523,7 +14555,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -14532,14 +14564,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFlexVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeFlexVolume {
 	Driver: *string,
 	FsType: *string,
 	Options: *map[string]*string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRef,
 }
 ```
 
@@ -14565,7 +14597,7 @@ Driver *string
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#driver StatefulSet#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#driver StatefulSet#driver}
 
 ---
 
@@ -14581,7 +14613,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -14595,7 +14627,7 @@ Options *map[string]*string
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#options StatefulSet#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#options StatefulSet#options}
 
 ---
 
@@ -14609,7 +14641,7 @@ ReadOnly interface{}
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -14623,7 +14655,7 @@ SecretRef StatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
 
 ---
 
@@ -14632,7 +14664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRef {
 	Name: *string,
@@ -14659,7 +14691,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -14673,7 +14705,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -14682,7 +14714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFlocker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeFlocker {
 	DatasetName: *string,
@@ -14709,7 +14741,7 @@ DatasetName *string
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#dataset_name StatefulSet#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#dataset_name StatefulSet#dataset_name}
 
 ---
 
@@ -14723,7 +14755,7 @@ DatasetUuid *string
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#dataset_uuid StatefulSet#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#dataset_uuid StatefulSet#dataset_uuid}
 
 ---
 
@@ -14732,7 +14764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeGcePersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeGcePersistentDisk {
 	PdName: *string,
@@ -14763,7 +14795,7 @@ PdName *string
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#pd_name StatefulSet#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pd_name StatefulSet#pd_name}
 
 ---
 
@@ -14779,7 +14811,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -14795,7 +14827,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#partition StatefulSet#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#partition StatefulSet#partition}
 
 ---
 
@@ -14809,7 +14841,7 @@ ReadOnly interface{}
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -14818,7 +14850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeGitRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeGitRepo {
 	Directory: *string,
@@ -14849,7 +14881,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#directory StatefulSet#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#directory StatefulSet#directory}
 
 ---
 
@@ -14863,7 +14895,7 @@ Repository *string
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#repository StatefulSet#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#repository StatefulSet#repository}
 
 ---
 
@@ -14877,7 +14909,7 @@ Revision *string
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#revision StatefulSet#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#revision StatefulSet#revision}
 
 ---
 
@@ -14886,7 +14918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeGlusterfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeGlusterfs {
 	EndpointsName: *string,
@@ -14915,7 +14947,7 @@ EndpointsName *string
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#endpoints_name StatefulSet#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#endpoints_name StatefulSet#endpoints_name}
 
 ---
 
@@ -14929,7 +14961,7 @@ Path *string
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -14943,7 +14975,7 @@ ReadOnly interface{}
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -14952,7 +14984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeHostPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeHostPath {
 	Path: *string,
@@ -14979,7 +15011,7 @@ Path *string
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -14993,7 +15025,7 @@ Type *string
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -15002,7 +15034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeIscsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeIscsi {
 	Iqn: *string,
@@ -15037,7 +15069,7 @@ Iqn *string
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#iqn StatefulSet#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#iqn StatefulSet#iqn}
 
 ---
 
@@ -15053,7 +15085,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#target_portal StatefulSet#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#target_portal StatefulSet#target_portal}
 
 ---
 
@@ -15069,7 +15101,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -15083,7 +15115,7 @@ IscsiInterface *string
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#iscsi_interface StatefulSet#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#iscsi_interface StatefulSet#iscsi_interface}
 
 ---
 
@@ -15097,7 +15129,7 @@ Lun *f64
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#lun StatefulSet#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#lun StatefulSet#lun}
 
 ---
 
@@ -15111,7 +15143,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -15120,7 +15152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeLocal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeLocal {
 	Path: *string,
@@ -15145,7 +15177,7 @@ Path *string
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -15154,7 +15186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeNfs {
 	Path: *string,
@@ -15183,7 +15215,7 @@ Path *string
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -15197,7 +15229,7 @@ Server *string
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#server StatefulSet#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#server StatefulSet#server}
 
 ---
 
@@ -15211,7 +15243,7 @@ ReadOnly interface{}
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -15220,7 +15252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumePersistentVolumeClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumePersistentVolumeClaim {
 	ClaimName: *string,
@@ -15247,7 +15279,7 @@ ClaimName *string
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#claim_name StatefulSet#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#claim_name StatefulSet#claim_name}
 
 ---
 
@@ -15261,7 +15293,7 @@ ReadOnly interface{}
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -15270,7 +15302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumePhotonPersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumePhotonPersistentDisk {
 	PdId: *string,
@@ -15297,7 +15329,7 @@ PdId *string
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#pd_id StatefulSet#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pd_id StatefulSet#pd_id}
 
 ---
 
@@ -15313,7 +15345,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -15322,7 +15354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjected.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjected {
 	Sources: interface{},
@@ -15349,7 +15381,7 @@ Sources interface{}
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#sources StatefulSet#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sources StatefulSet#sources}
 
 ---
 
@@ -15365,7 +15397,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
 
 ---
 
@@ -15374,13 +15406,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjectedSources {
 	ConfigMap: interface{},
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApi,
 	Secret: interface{},
-	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
+	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
 }
 ```
 
@@ -15405,7 +15437,7 @@ ConfigMap interface{}
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#config_map StatefulSet#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map StatefulSet#config_map}
 
 ---
 
@@ -15419,7 +15451,7 @@ DownwardApi StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApi
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#downward_api StatefulSet#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#downward_api StatefulSet#downward_api}
 
 ---
 
@@ -15433,7 +15465,7 @@ Secret interface{}
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret StatefulSet#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret StatefulSet#secret}
 
 ---
 
@@ -15447,7 +15479,7 @@ ServiceAccountToken StatefulSetSpecTemplateSpecVolumeProjectedSourcesServiceAcco
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#service_account_token StatefulSet#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service_account_token StatefulSet#service_account_token}
 
 ---
 
@@ -15456,7 +15488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMap {
 	Items: interface{},
@@ -15485,7 +15517,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -15499,7 +15531,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -15513,7 +15545,7 @@ Optional interface{}
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -15522,7 +15554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapItems {
 	Key: *string,
@@ -15551,7 +15583,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -15567,7 +15599,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -15583,7 +15615,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -15592,7 +15624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApi {
 	Items: interface{},
@@ -15617,7 +15649,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -15626,13 +15658,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems {
 	Path: *string,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -15659,7 +15691,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -15673,7 +15705,7 @@ FieldRef StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldR
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
 
 ---
 
@@ -15689,7 +15721,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -15703,7 +15735,7 @@ ResourceFieldRef StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiIte
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
 
 ---
 
@@ -15712,7 +15744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -15739,7 +15771,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
 
 ---
 
@@ -15753,7 +15785,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
 
 ---
 
@@ -15762,7 +15794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -15775,9 +15807,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
 
 ---
 
@@ -15789,7 +15821,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
 
 ---
 
@@ -15803,7 +15835,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resource StatefulSet#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource StatefulSet#resource}
 
 ---
 
@@ -15815,7 +15847,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
 
 ---
 
@@ -15824,7 +15856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecret {
 	Items: interface{},
@@ -15853,7 +15885,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -15867,7 +15899,7 @@ Name *string
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -15881,7 +15913,7 @@ Optional interface{}
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -15890,7 +15922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItems {
 	Key: *string,
@@ -15919,7 +15951,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -15935,7 +15967,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -15951,7 +15983,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -15960,7 +15992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken {
 	Path: *string,
@@ -15989,7 +16021,7 @@ Path *string
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -16003,7 +16035,7 @@ Audience *string
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#audience StatefulSet#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#audience StatefulSet#audience}
 
 ---
 
@@ -16019,7 +16051,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#expiration_seconds StatefulSet#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#expiration_seconds StatefulSet#expiration_seconds}
 
 ---
 
@@ -16028,7 +16060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeQuobyte.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeQuobyte {
 	Registry: *string,
@@ -16061,7 +16093,7 @@ Registry *string
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#registry StatefulSet#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#registry StatefulSet#registry}
 
 ---
 
@@ -16075,7 +16107,7 @@ Volume *string
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume StatefulSet#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume StatefulSet#volume}
 
 ---
 
@@ -16089,7 +16121,7 @@ Group *string
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#group StatefulSet#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#group StatefulSet#group}
 
 ---
 
@@ -16103,7 +16135,7 @@ ReadOnly interface{}
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -16117,7 +16149,7 @@ User *string
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#user StatefulSet#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#user StatefulSet#user}
 
 ---
 
@@ -16126,7 +16158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeRbd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeRbd {
 	CephMonitors: *[]*string,
@@ -16136,7 +16168,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 	RadosUser: *string,
 	RbdPool: *string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecTemplateSpecVolumeRbdSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecTemplateSpecVolumeRbdSecretRef,
 }
 ```
 
@@ -16165,7 +16197,7 @@ CephMonitors *[]*string
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#ceph_monitors StatefulSet#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#ceph_monitors StatefulSet#ceph_monitors}
 
 ---
 
@@ -16179,7 +16211,7 @@ RbdImage *string
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#rbd_image StatefulSet#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#rbd_image StatefulSet#rbd_image}
 
 ---
 
@@ -16195,7 +16227,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -16209,7 +16241,7 @@ Keyring *string
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#keyring StatefulSet#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#keyring StatefulSet#keyring}
 
 ---
 
@@ -16223,7 +16255,7 @@ RadosUser *string
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#rados_user StatefulSet#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#rados_user StatefulSet#rados_user}
 
 ---
 
@@ -16237,7 +16269,7 @@ RbdPool *string
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#rbd_pool StatefulSet#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#rbd_pool StatefulSet#rbd_pool}
 
 ---
 
@@ -16251,7 +16283,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -16265,7 +16297,7 @@ SecretRef StatefulSetSpecTemplateSpecVolumeRbdSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
 
 ---
 
@@ -16274,7 +16306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeRbdSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeRbdSecretRef {
 	Name: *string,
@@ -16301,7 +16333,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -16315,7 +16347,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -16324,7 +16356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeSecret {
 	DefaultMode: *string,
@@ -16357,7 +16389,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
 
 ---
 
@@ -16371,7 +16403,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -16385,7 +16417,7 @@ Optional interface{}
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -16399,7 +16431,7 @@ SecretName *string
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#secret_name StatefulSet#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_name StatefulSet#secret_name}
 
 ---
 
@@ -16408,7 +16440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeSecretItems {
 	Key: *string,
@@ -16437,7 +16469,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -16453,7 +16485,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -16469,7 +16501,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -16478,7 +16510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeVsphereVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecTemplateSpecVolumeVsphereVolume {
 	VolumePath: *string,
@@ -16505,7 +16537,7 @@ VolumePath *string
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_path StatefulSet#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_path StatefulSet#volume_path}
 
 ---
 
@@ -16521,7 +16553,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -16530,7 +16562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecUpdateStrategy {
 	RollingUpdate: interface{},
@@ -16557,7 +16589,7 @@ RollingUpdate interface{}
 
 rolling_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#rolling_update StatefulSet#rolling_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#rolling_update StatefulSet#rolling_update}
 
 ---
 
@@ -16571,7 +16603,7 @@ Type *string
 
 Indicates the type of the StatefulSet update strategy. Default is RollingUpdate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -16580,7 +16612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecUpdateStrategyRollingUpdate {
 	Partition: *f64,
@@ -16605,7 +16637,7 @@ Partition *f64
 
 Indicates the ordinal at which the StatefulSet should be partitioned. Default value is 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#partition StatefulSet#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#partition StatefulSet#partition}
 
 ---
 
@@ -16614,11 +16646,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecVolumeClaimTemplate {
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecVolumeClaimTemplateMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecVolumeClaimTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecVolumeClaimTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecVolumeClaimTemplateSpec,
 }
 ```
 
@@ -16641,7 +16673,7 @@ Metadata StatefulSetSpecVolumeClaimTemplateMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
 
 ---
 
@@ -16655,7 +16687,7 @@ Spec StatefulSetSpecVolumeClaimTemplateSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#spec StatefulSet#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#spec StatefulSet#spec}
 
 ---
 
@@ -16664,7 +16696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecVolumeClaimTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -16699,7 +16731,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
 
 ---
 
@@ -16715,7 +16747,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
 
 ---
 
@@ -16731,7 +16763,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#labels StatefulSet#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#labels StatefulSet#labels}
 
 ---
 
@@ -16745,7 +16777,7 @@ Name *string
 
 Name of the persistent volume claim, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -16759,7 +16791,7 @@ Namespace *string
 
 Namespace defines the space within which name of the persistent volume claim must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -16768,12 +16800,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecVolumeClaimTemplateSpec {
 	AccessModes: *[]*string,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecResources,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecSelector,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecResources,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecSelector,
 	StorageClassName: *string,
 	VolumeMode: *string,
 	VolumeName: *string,
@@ -16803,7 +16835,7 @@ AccessModes *[]*string
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#access_modes StatefulSet#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#access_modes StatefulSet#access_modes}
 
 ---
 
@@ -16817,7 +16849,7 @@ Resources StatefulSetSpecVolumeClaimTemplateSpecResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#resources StatefulSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resources StatefulSet#resources}
 
 ---
 
@@ -16831,7 +16863,7 @@ Selector StatefulSetSpecVolumeClaimTemplateSpecSelector
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#selector StatefulSet#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#selector StatefulSet#selector}
 
 ---
 
@@ -16845,7 +16877,7 @@ StorageClassName *string
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#storage_class_name StatefulSet#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#storage_class_name StatefulSet#storage_class_name}
 
 ---
 
@@ -16859,7 +16891,7 @@ VolumeMode *string
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_mode StatefulSet#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_mode StatefulSet#volume_mode}
 
 ---
 
@@ -16873,7 +16905,7 @@ VolumeName *string
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#volume_name StatefulSet#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_name StatefulSet#volume_name}
 
 ---
 
@@ -16882,7 +16914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecVolumeClaimTemplateSpecResources {
 	Limits: *map[string]*string,
@@ -16909,7 +16941,7 @@ Limits *map[string]*string
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#limits StatefulSet#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#limits StatefulSet#limits}
 
 ---
 
@@ -16925,7 +16957,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#requests StatefulSet#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#requests StatefulSet#requests}
 
 ---
 
@@ -16934,7 +16966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecVolumeClaimTemplateSpecSelector {
 	MatchExpressions: interface{},
@@ -16961,7 +16993,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -16977,7 +17009,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -16986,7 +17018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressions {
 	Key: *string,
@@ -17015,7 +17047,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -17029,7 +17061,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -17045,7 +17077,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -17054,7 +17086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 &statefulset.StatefulSetTimeouts {
 	Create: *string,
@@ -17068,10 +17100,10 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/stateful
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#create StatefulSet#create}. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#delete StatefulSet#delete}. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read StatefulSet#read}. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#update StatefulSet#update}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#create StatefulSet#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#delete StatefulSet#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read StatefulSet#read}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#update StatefulSet#update}. |
 
 ---
 
@@ -17083,7 +17115,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#create StatefulSet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#create StatefulSet#create}.
 
 ---
 
@@ -17095,7 +17127,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#delete StatefulSet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#delete StatefulSet#delete}.
 
 ---
 
@@ -17107,7 +17139,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#read StatefulSet#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read StatefulSet#read}.
 
 ---
 
@@ -17119,7 +17151,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/stateful_set#update StatefulSet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#update StatefulSet#update}.
 
 ---
 
@@ -17130,7 +17162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetMetadataOutputReference
 ```
@@ -17557,7 +17589,7 @@ func InternalValue() StatefulSetMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecOutputReference
 ```
@@ -18140,7 +18172,7 @@ func InternalValue() StatefulSetSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecPersistentVolumeClaimRetentionPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecPersistentVolumeClaimRetentionPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecPersistentVolumeClaimRetentionPolicyList
 ```
@@ -18300,7 +18332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecPersistentVolumeClaimRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecPersistentVolumeClaimRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecPersistentVolumeClaimRetentionPolicyOutputReference
 ```
@@ -18625,7 +18657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecSelectorMatchExpressionsList
 ```
@@ -18785,7 +18817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecSelectorMatchExpressionsOutputReference
 ```
@@ -19139,7 +19171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecSelectorOutputReference
 ```
@@ -19459,7 +19491,7 @@ func InternalValue() StatefulSetSpecSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateMetadataOutputReference
 ```
@@ -19886,7 +19918,7 @@ func InternalValue() StatefulSetSpecTemplateMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateOutputReference
 ```
@@ -20212,7 +20244,7 @@ func InternalValue() StatefulSetSpecTemplate
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecAffinityNodeAffinityOutputReference
 ```
@@ -20545,7 +20577,7 @@ func InternalValue() StatefulSetSpecTemplateSpecAffinityNodeAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -20705,7 +20737,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -21029,7 +21061,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList
 ```
@@ -21189,7 +21221,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference
 ```
@@ -21543,7 +21575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList
 ```
@@ -21703,7 +21735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference
 ```
@@ -22043,7 +22075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference
 ```
@@ -22376,7 +22408,7 @@ func InternalValue() StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDur
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList
 ```
@@ -22536,7 +22568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList
 ```
@@ -22696,7 +22728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference
 ```
@@ -23050,7 +23082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
 ```
@@ -23210,7 +23242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference
 ```
@@ -23550,7 +23582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference
 ```
@@ -23901,7 +23933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -24192,7 +24224,7 @@ func InternalValue() StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuri
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecAffinityOutputReference
 ```
@@ -24567,7 +24599,7 @@ func InternalValue() StatefulSetSpecTemplateSpecAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecAffinityPodAffinityOutputReference
 ```
@@ -24900,7 +24932,7 @@ func InternalValue() StatefulSetSpecTemplateSpecAffinityPodAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -25060,7 +25092,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -25384,7 +25416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -25544,7 +25576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -25704,7 +25736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -26058,7 +26090,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -26396,7 +26428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -26556,7 +26588,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -26716,7 +26748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -27070,7 +27102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -27408,7 +27440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -27792,7 +27824,7 @@ func InternalValue() StatefulSetSpecTemplateSpecAffinityPodAffinityPreferredDuri
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -27952,7 +27984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -28112,7 +28144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -28466,7 +28498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -28804,7 +28836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -28964,7 +28996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -29124,7 +29156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -29284,7 +29316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -29638,7 +29670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -29976,7 +30008,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -30378,7 +30410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityOutputReference
 ```
@@ -30711,7 +30743,7 @@ func InternalValue() StatefulSetSpecTemplateSpecAffinityPodAntiAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -30871,7 +30903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -31195,7 +31227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -31355,7 +31387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -31515,7 +31547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -31869,7 +31901,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -32207,7 +32239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -32367,7 +32399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -32527,7 +32559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -32881,7 +32913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -33219,7 +33251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -33603,7 +33635,7 @@ func InternalValue() StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferred
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -33763,7 +33795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -33923,7 +33955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -34277,7 +34309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -34615,7 +34647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -34775,7 +34807,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -34935,7 +34967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -35095,7 +35127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -35449,7 +35481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -35787,7 +35819,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -36189,7 +36221,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference
 ```
@@ -36489,7 +36521,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerEnvFromList
 ```
@@ -36649,7 +36681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerEnvFromOutputReference
 ```
@@ -37029,7 +37061,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerEnvFromSecretRefOutputReference
 ```
@@ -37329,7 +37361,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerEnvFromSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerEnvList
 ```
@@ -37489,7 +37521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerEnvOutputReference
 ```
@@ -37849,7 +37881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -38185,7 +38217,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerEnvValueFromConfigMapKe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference
 ```
@@ -38492,7 +38524,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerEnvValueFromFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerEnvValueFromOutputReference
 ```
@@ -38909,7 +38941,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerEnvValueFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -39238,7 +39270,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFie
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -39574,7 +39606,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerLifecycleOutputReference
 ```
@@ -39907,7 +39939,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerLifecyclePostStartExecOutputReference
 ```
@@ -40185,7 +40217,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerLifecyclePostStartExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -40345,7 +40377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -40670,7 +40702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -41077,7 +41109,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerLifecyclePostStartHttpG
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePostStartList
 ```
@@ -41237,7 +41269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePostStartOutputReference
 ```
@@ -41630,7 +41662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePostStartTcpSocketList
 ```
@@ -41790,7 +41822,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -42079,7 +42111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerLifecyclePreStopExecOutputReference
 ```
@@ -42357,7 +42389,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerLifecyclePreStopExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -42517,7 +42549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -42842,7 +42874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -43249,7 +43281,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePreStopList
 ```
@@ -43409,7 +43441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePreStopOutputReference
 ```
@@ -43802,7 +43834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePreStopTcpSocketList
 ```
@@ -43962,7 +43994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -44251,7 +44283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerList
 ```
@@ -44411,7 +44443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerLivenessProbeExecOutputReference
 ```
@@ -44689,7 +44721,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerLivenessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerLivenessProbeGrpcList
 ```
@@ -44849,7 +44881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerLivenessProbeGrpcOutputReference
 ```
@@ -45167,7 +45199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -45327,7 +45359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -45652,7 +45684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference
 ```
@@ -46059,7 +46091,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerLivenessProbeOutputReference
 ```
@@ -46621,7 +46653,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerLivenessProbeTcpSocketList
 ```
@@ -46781,7 +46813,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -47070,7 +47102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerOutputReference
 ```
@@ -47155,6 +47187,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.resetReadinessProbe">ResetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.resetRestartPolicy">ResetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.resetSecurityContext">ResetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.resetStartupProbe">ResetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.resetStdin">ResetStdin</a></code> | *No description.* |
@@ -47516,6 +47549,12 @@ func ResetReadinessProbe()
 func ResetResources()
 ```
 
+##### `ResetRestartPolicy` <a name="ResetRestartPolicy" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.resetRestartPolicy"></a>
+
+```go
+func ResetRestartPolicy()
+```
+
 ##### `ResetSecurityContext` <a name="ResetSecurityContext" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.resetSecurityContext"></a>
 
 ```go
@@ -47606,6 +47645,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.portInput">PortInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.readinessProbeInput">ReadinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbe">StatefulSetSpecTemplateSpecContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerResources">StatefulSetSpecTemplateSpecContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.restartPolicyInput">RestartPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.securityContextInput">SecurityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContext">StatefulSetSpecTemplateSpecContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.startupProbeInput">StartupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbe">StatefulSetSpecTemplateSpecContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.stdinInput">StdinInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -47621,6 +47661,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.image">Image</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.imagePullPolicy">ImagePullPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.stdin">Stdin</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.stdinOnce">StdinOnce</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.terminationMessagePath">TerminationMessagePath</a></code> | <code>*string</code> | *No description.* |
@@ -47885,6 +47926,16 @@ func ResourcesInput() StatefulSetSpecTemplateSpecContainerResources
 
 ---
 
+##### `RestartPolicyInput`<sup>Optional</sup> <a name="RestartPolicyInput" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.restartPolicyInput"></a>
+
+```go
+func RestartPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SecurityContextInput`<sup>Optional</sup> <a name="SecurityContextInput" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.securityContextInput"></a>
 
 ```go
@@ -48035,6 +48086,16 @@ func Name() *string
 
 ---
 
+##### `RestartPolicy`<sup>Required</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.restartPolicy"></a>
+
+```go
+func RestartPolicy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Stdin`<sup>Required</sup> <a name="Stdin" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerOutputReference.property.stdin"></a>
 
 ```go
@@ -48111,7 +48172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerPortList
 ```
@@ -48271,7 +48332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerPortOutputReference
 ```
@@ -48676,7 +48737,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerReadinessProbeExecOutputReference
 ```
@@ -48954,7 +49015,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerReadinessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerReadinessProbeGrpcList
 ```
@@ -49114,7 +49175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerReadinessProbeGrpcOutputReference
 ```
@@ -49432,7 +49493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -49592,7 +49653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -49917,7 +49978,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference
 ```
@@ -50324,7 +50385,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerReadinessProbeOutputReference
 ```
@@ -50886,7 +50947,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerReadinessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerReadinessProbeTcpSocketList
 ```
@@ -51046,7 +51107,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -51335,7 +51396,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerResourcesOutputReference
 ```
@@ -51642,7 +51703,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -51949,7 +52010,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerSecurityContextCapabili
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference
 ```
@@ -52498,7 +52559,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -52805,7 +52866,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerSecurityContextSeccompP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -53170,7 +53231,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerSecurityContextSeLinuxO
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerStartupProbeExecOutputReference
 ```
@@ -53448,7 +53509,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerStartupProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerStartupProbeGrpcList
 ```
@@ -53608,7 +53669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerStartupProbeGrpcOutputReference
 ```
@@ -53926,7 +53987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -54086,7 +54147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -54411,7 +54472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetOutputReference
 ```
@@ -54818,7 +54879,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerStartupProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecContainerStartupProbeOutputReference
 ```
@@ -55380,7 +55441,7 @@ func InternalValue() StatefulSetSpecTemplateSpecContainerStartupProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerStartupProbeTcpSocketList
 ```
@@ -55540,7 +55601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference
 ```
@@ -55829,7 +55890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerVolumeDeviceList
 ```
@@ -55989,7 +56050,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerVolumeDeviceOutputReference
 ```
@@ -56300,7 +56361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerVolumeMountList
 ```
@@ -56460,7 +56521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecContainerVolumeMountOutputReference
 ```
@@ -56887,7 +56948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecDnsConfigOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecDnsConfigOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecDnsConfigOptionList
 ```
@@ -57047,7 +57108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecDnsConfigOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecDnsConfigOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecDnsConfigOptionOutputReference
 ```
@@ -57365,7 +57426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecDnsConfigOutputReference
 ```
@@ -57714,7 +57775,7 @@ func InternalValue() StatefulSetSpecTemplateSpecDnsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecHostAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecHostAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecHostAliasesList
 ```
@@ -57874,7 +57935,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecHostAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecHostAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecHostAliasesOutputReference
 ```
@@ -58185,7 +58246,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecImagePullSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecImagePullSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecImagePullSecretsList
 ```
@@ -58345,7 +58406,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecImagePullSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecImagePullSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecImagePullSecretsOutputReference
 ```
@@ -58634,7 +58695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference
 ```
@@ -58934,7 +58995,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerEnvFromConfigMapRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerEnvFromList
 ```
@@ -59094,7 +59155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerEnvFromOutputReference
 ```
@@ -59474,7 +59535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference
 ```
@@ -59774,7 +59835,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerEnvFromSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerEnvList
 ```
@@ -59934,7 +59995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerEnvOutputReference
 ```
@@ -60294,7 +60355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -60630,7 +60691,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerEnvValueFromConfigM
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference
 ```
@@ -60937,7 +60998,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerEnvValueFromFieldRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerEnvValueFromOutputReference
 ```
@@ -61354,7 +61415,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerEnvValueFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -61683,7 +61744,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -62019,7 +62080,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerEnvValueFromSecretK
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerLifecycleOutputReference
 ```
@@ -62352,7 +62413,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference
 ```
@@ -62630,7 +62691,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartE
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -62790,7 +62851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -63115,7 +63176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -63522,7 +63583,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartH
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartList
 ```
@@ -63682,7 +63743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartOutputReference
 ```
@@ -64075,7 +64136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList
 ```
@@ -64235,7 +64296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -64524,7 +64585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference
 ```
@@ -64802,7 +64863,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopExe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -64962,7 +65023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -65287,7 +65348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -65694,7 +65755,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopHtt
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopList
 ```
@@ -65854,7 +65915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopOutputReference
 ```
@@ -66247,7 +66308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList
 ```
@@ -66407,7 +66468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -66696,7 +66757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerList
 ```
@@ -66856,7 +66917,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerLivenessProbeExecOutputReference
 ```
@@ -67134,7 +67195,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerLivenessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpcList
 ```
@@ -67294,7 +67355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference
 ```
@@ -67612,7 +67673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -67772,7 +67833,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -68097,7 +68158,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference
 ```
@@ -68504,7 +68565,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputReference
 ```
@@ -69066,7 +69127,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerLivenessProbeTcpSocketList
 ```
@@ -69226,7 +69287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -69515,7 +69576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerOutputReference
 ```
@@ -69600,6 +69661,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.resetReadinessProbe">ResetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy">ResetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.resetSecurityContext">ResetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.resetStartupProbe">ResetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.resetStdin">ResetStdin</a></code> | *No description.* |
@@ -69961,6 +70023,12 @@ func ResetReadinessProbe()
 func ResetResources()
 ```
 
+##### `ResetRestartPolicy` <a name="ResetRestartPolicy" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy"></a>
+
+```go
+func ResetRestartPolicy()
+```
+
 ##### `ResetSecurityContext` <a name="ResetSecurityContext" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.resetSecurityContext"></a>
 
 ```go
@@ -70051,6 +70119,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.portInput">PortInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.readinessProbeInput">ReadinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbe">StatefulSetSpecTemplateSpecInitContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerResources">StatefulSetSpecTemplateSpecInitContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput">RestartPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.securityContextInput">SecurityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContext">StatefulSetSpecTemplateSpecInitContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.startupProbeInput">StartupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbe">StatefulSetSpecTemplateSpecInitContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.stdinInput">StdinInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -70066,6 +70135,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.image">Image</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.imagePullPolicy">ImagePullPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.stdin">Stdin</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.stdinOnce">StdinOnce</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.terminationMessagePath">TerminationMessagePath</a></code> | <code>*string</code> | *No description.* |
@@ -70330,6 +70400,16 @@ func ResourcesInput() StatefulSetSpecTemplateSpecInitContainerResources
 
 ---
 
+##### `RestartPolicyInput`<sup>Optional</sup> <a name="RestartPolicyInput" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput"></a>
+
+```go
+func RestartPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SecurityContextInput`<sup>Optional</sup> <a name="SecurityContextInput" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.securityContextInput"></a>
 
 ```go
@@ -70480,6 +70560,16 @@ func Name() *string
 
 ---
 
+##### `RestartPolicy`<sup>Required</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.restartPolicy"></a>
+
+```go
+func RestartPolicy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Stdin`<sup>Required</sup> <a name="Stdin" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerOutputReference.property.stdin"></a>
 
 ```go
@@ -70556,7 +70646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerPortList
 ```
@@ -70716,7 +70806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerPortOutputReference
 ```
@@ -71121,7 +71211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerReadinessProbeExecOutputReference
 ```
@@ -71399,7 +71489,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerReadinessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerReadinessProbeGrpcList
 ```
@@ -71559,7 +71649,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference
 ```
@@ -71877,7 +71967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -72037,7 +72127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -72362,7 +72452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference
 ```
@@ -72769,7 +72859,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpG
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerReadinessProbeOutputReference
 ```
@@ -73331,7 +73421,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerReadinessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerReadinessProbeTcpSocketList
 ```
@@ -73491,7 +73581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -73780,7 +73870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerResourcesOutputReference
 ```
@@ -74087,7 +74177,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -74394,7 +74484,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerSecurityContextCapa
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerSecurityContextOutputReference
 ```
@@ -74943,7 +75033,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -75250,7 +75340,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerSecurityContextSecc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -75615,7 +75705,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerSecurityContextSeLi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerStartupProbeExecOutputReference
 ```
@@ -75893,7 +75983,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerStartupProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerStartupProbeGrpcList
 ```
@@ -76053,7 +76143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference
 ```
@@ -76371,7 +76461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -76531,7 +76621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -76856,7 +76946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference
 ```
@@ -77263,7 +77353,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecInitContainerStartupProbeOutputReference
 ```
@@ -77825,7 +77915,7 @@ func InternalValue() StatefulSetSpecTemplateSpecInitContainerStartupProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketList
 ```
@@ -77985,7 +78075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference
 ```
@@ -78274,7 +78364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerVolumeDeviceList
 ```
@@ -78434,7 +78524,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerVolumeDeviceOutputReference
 ```
@@ -78745,7 +78835,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecInitContainerVolumeMountList
 ```
@@ -78905,7 +78995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecInitContainerVolumeMountOutputReference
 ```
@@ -79332,7 +79422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecOsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecOsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecOsOutputReference
 ```
@@ -79603,7 +79693,7 @@ func InternalValue() StatefulSetSpecTemplateSpecOs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecOutputReference
 ```
@@ -80878,7 +80968,7 @@ func InternalValue() StatefulSetSpecTemplateSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecReadinessGateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecReadinessGateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecReadinessGateList
 ```
@@ -81038,7 +81128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecReadinessGateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecReadinessGateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecReadinessGateOutputReference
 ```
@@ -81327,7 +81417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecSecurityContextOutputReference
 ```
@@ -81918,7 +82008,7 @@ func InternalValue() StatefulSetSpecTemplateSpecSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecSecurityContextSeccompProfileOutputReference
 ```
@@ -82225,7 +82315,7 @@ func InternalValue() StatefulSetSpecTemplateSpecSecurityContextSeccompProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -82590,7 +82680,7 @@ func InternalValue() StatefulSetSpecTemplateSpecSecurityContextSeLinuxOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSysctlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecSecurityContextSysctlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecSecurityContextSysctlList
 ```
@@ -82750,7 +82840,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSysctlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecSecurityContextSysctlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecSecurityContextSysctlOutputReference
 ```
@@ -83061,7 +83151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextWindowsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecSecurityContextWindowsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecSecurityContextWindowsOptionsOutputReference
 ```
@@ -83426,7 +83516,7 @@ func InternalValue() StatefulSetSpecTemplateSpecSecurityContextWindowsOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTolerationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecTolerationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecTolerationList
 ```
@@ -83586,7 +83676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTolerationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecTolerationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecTolerationOutputReference
 ```
@@ -83998,7 +84088,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorList
 ```
@@ -84158,7 +84248,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList
 ```
@@ -84318,7 +84408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference
 ```
@@ -84672,7 +84762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference
 ```
@@ -85010,7 +85100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTopologySpreadConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecTopologySpreadConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecTopologySpreadConstraintList
 ```
@@ -85170,7 +85260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference
 ```
@@ -85682,7 +85772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference
 ```
@@ -86040,7 +86130,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStore
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeAzureDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeAzureDiskOutputReference
 ```
@@ -86442,7 +86532,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeAzureDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeAzureFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeAzureFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeAzureFileOutputReference
 ```
@@ -86793,7 +86883,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeAzureFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeCephFsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeCephFsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeCephFsOutputReference
 ```
@@ -87222,7 +87312,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeCephFs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeCephFsSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeCephFsSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeCephFsSecretRefOutputReference
 ```
@@ -87529,7 +87619,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeCephFsSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeCinderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeCinderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeCinderOutputReference
 ```
@@ -87858,7 +87948,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeCinder
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeConfigMapItemsList
 ```
@@ -88018,7 +88108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeConfigMapItemsOutputReference
 ```
@@ -88372,7 +88462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeConfigMapOutputReference
 ```
@@ -88750,7 +88840,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeConfigMap
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference
 ```
@@ -89028,7 +89118,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeCsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeCsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeCsiOutputReference
 ```
@@ -89428,7 +89518,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeCsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference
 ```
@@ -89735,7 +89825,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeDownwardApiItemsFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeDownwardApiItemsList
 ```
@@ -89895,7 +89985,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeDownwardApiItemsOutputReference
 ```
@@ -90290,7 +90380,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -90612,7 +90702,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeDownwardApiOutputReference
 ```
@@ -90932,7 +91022,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeEmptyDirOutputReference
 ```
@@ -91239,7 +91329,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeEmptyDir
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeEphemeralOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeEphemeralOutputReference
 ```
@@ -91523,7 +91613,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeEphemeral
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference
 ```
@@ -91830,7 +91920,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTempla
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference
 ```
@@ -92156,7 +92246,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTempla
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference
 ```
@@ -92591,7 +92681,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTempla
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference
 ```
@@ -92898,7 +92988,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTempla
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList
 ```
@@ -93058,7 +93148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference
 ```
@@ -93412,7 +93502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference
 ```
@@ -93732,7 +93822,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTempla
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeFcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeFcOutputReference
 ```
@@ -94083,7 +94173,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeFc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFlexVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeFlexVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeFlexVolumeOutputReference
 ```
@@ -94483,7 +94573,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeFlexVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference
 ```
@@ -94790,7 +94880,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFlockerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeFlockerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeFlockerOutputReference
 ```
@@ -95097,7 +95187,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeFlocker
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeGcePersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeGcePersistentDiskOutputReference
 ```
@@ -95455,7 +95545,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeGcePersistentDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeGitRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeGitRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeGitRepoOutputReference
 ```
@@ -95791,7 +95881,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeGitRepo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeGlusterfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeGlusterfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeGlusterfsOutputReference
 ```
@@ -96113,7 +96203,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeGlusterfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeHostPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeHostPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeHostPathOutputReference
 ```
@@ -96420,7 +96510,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeHostPath
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeIscsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeIscsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeIscsiOutputReference
 ```
@@ -96829,7 +96919,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeIscsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeList
 ```
@@ -96989,7 +97079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeLocalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeLocalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeLocalOutputReference
 ```
@@ -97267,7 +97357,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeLocal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeNfsOutputReference
 ```
@@ -97589,7 +97679,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeNfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeOutputReference
 ```
@@ -99019,7 +99109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumePersistentVolumeClaimOutputReference
 ```
@@ -99326,7 +99416,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumePersistentVolumeClaim
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumePhotonPersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumePhotonPersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumePhotonPersistentDiskOutputReference
 ```
@@ -99626,7 +99716,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumePhotonPersistentDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedList
 ```
@@ -99786,7 +99876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedOutputReference
 ```
@@ -100117,7 +100207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList
 ```
@@ -100277,7 +100367,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference
 ```
@@ -100631,7 +100721,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapList
 ```
@@ -100791,7 +100881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference
 ```
@@ -101158,7 +101248,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference
 ```
@@ -101465,7 +101555,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardAp
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList
 ```
@@ -101625,7 +101715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference
 ```
@@ -102027,7 +102117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -102349,7 +102439,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardAp
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference
 ```
@@ -102640,7 +102730,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardAp
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesList
 ```
@@ -102800,7 +102890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesOutputReference
 ```
@@ -103235,7 +103325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsList
 ```
@@ -103395,7 +103485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference
 ```
@@ -103749,7 +103839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretList
 ```
@@ -103909,7 +103999,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference
 ```
@@ -104276,7 +104366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference
 ```
@@ -104605,7 +104695,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeProjectedSourcesServiceAcc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeQuobyteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeQuobyteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeQuobyteOutputReference
 ```
@@ -104985,7 +105075,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeQuobyte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeRbdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeRbdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeRbdOutputReference
 ```
@@ -105465,7 +105555,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeRbd
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeRbdSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeRbdSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeRbdSecretRefOutputReference
 ```
@@ -105772,7 +105862,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeRbdSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecVolumeSecretItemsList
 ```
@@ -105932,7 +106022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeSecretItemsOutputReference
 ```
@@ -106286,7 +106376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeSecretOutputReference
 ```
@@ -106664,7 +106754,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeVsphereVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecTemplateSpecVolumeVsphereVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecVolumeVsphereVolumeOutputReference
 ```
@@ -106964,7 +107054,7 @@ func InternalValue() StatefulSetSpecTemplateSpecVolumeVsphereVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecUpdateStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecUpdateStrategyList
 ```
@@ -107124,7 +107214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecUpdateStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecUpdateStrategyOutputReference
 ```
@@ -107462,7 +107552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecUpdateStrategyRollingUpdateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecUpdateStrategyRollingUpdateList
 ```
@@ -107622,7 +107712,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyRollingUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecUpdateStrategyRollingUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecUpdateStrategyRollingUpdateOutputReference
 ```
@@ -107918,7 +108008,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecVolumeClaimTemplateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecVolumeClaimTemplateList
 ```
@@ -108078,7 +108168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecVolumeClaimTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecVolumeClaimTemplateMetadataOutputReference
 ```
@@ -108505,7 +108595,7 @@ func InternalValue() StatefulSetSpecVolumeClaimTemplateMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecVolumeClaimTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecVolumeClaimTemplateOutputReference
 ```
@@ -108842,7 +108932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecVolumeClaimTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecVolumeClaimTemplateSpecOutputReference
 ```
@@ -109277,7 +109367,7 @@ func InternalValue() StatefulSetSpecVolumeClaimTemplateSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecVolumeClaimTemplateSpecResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecVolumeClaimTemplateSpecResourcesOutputReference
 ```
@@ -109584,7 +109674,7 @@ func InternalValue() StatefulSetSpecVolumeClaimTemplateSpecResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList
 ```
@@ -109744,7 +109834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference
 ```
@@ -110098,7 +110188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecVolumeClaimTemplateSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetSpecVolumeClaimTemplateSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetSpecVolumeClaimTemplateSpecSelectorOutputReference
 ```
@@ -110418,7 +110508,7 @@ func InternalValue() StatefulSetSpecVolumeClaimTemplateSpecSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/statefulset"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/statefulset"
 
 statefulset.NewStatefulSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StatefulSetTimeoutsOutputReference
 ```

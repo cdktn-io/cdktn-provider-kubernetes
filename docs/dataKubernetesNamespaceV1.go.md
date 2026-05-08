@@ -4,12 +4,12 @@
 
 ### DataKubernetesNamespaceV1 <a name="DataKubernetesNamespaceV1" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/namespace_v1 kubernetes_namespace_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/namespace_v1 kubernetes_namespace_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 datakubernetesnamespacev1.NewDataKubernetesNamespaceV1(scope Construct, id *string, config DataKubernetesNamespaceV1Config) DataKubernetesNamespaceV1
 ```
@@ -318,7 +318,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 datakubernetesnamespacev1.DataKubernetesNamespaceV1_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 datakubernetesnamespacev1.DataKubernetesNamespaceV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datakubernetesnamespacev1.DataKubernetesNamespaceV1_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 datakubernetesnamespacev1.DataKubernetesNamespaceV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datakubernetesnamespacev1.DataKubernetesNamespaceV1_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 datakubernetesnamespacev1.DataKubernetesNamespaceV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataKubernetesNamespaceV1 
 
 The id of the existing DataKubernetesNamespaceV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/namespace_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/namespace_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -640,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 &datakubernetesnamespacev1.DataKubernetesNamespaceV1Config {
 	Connection: interface{},
@@ -650,7 +650,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakube
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Metadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Metadata,
 	Id: *string,
 }
 ```
@@ -667,7 +667,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakube
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Config.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Metadata">DataKubernetesNamespaceV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/namespace_v1#id DataKubernetesNamespaceV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/namespace_v1#id DataKubernetesNamespaceV1#id}. |
 
 ---
 
@@ -751,7 +751,7 @@ Metadata DataKubernetesNamespaceV1Metadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/namespace_v1#metadata DataKubernetesNamespaceV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/namespace_v1#metadata DataKubernetesNamespaceV1#metadata}
 
 ---
 
@@ -763,7 +763,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/namespace_v1#id DataKubernetesNamespaceV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/namespace_v1#id DataKubernetesNamespaceV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 &datakubernetesnamespacev1.DataKubernetesNamespaceV1Metadata {
 	Annotations: *map[string]*string,
@@ -806,7 +806,7 @@ An unstructured key value map stored with the namespace that may be used to stor
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/namespace_v1#annotations DataKubernetesNamespaceV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/namespace_v1#annotations DataKubernetesNamespaceV1#annotations}
 
 ---
 
@@ -822,7 +822,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/namespace_v1#labels DataKubernetesNamespaceV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/namespace_v1#labels DataKubernetesNamespaceV1#labels}
 
 ---
 
@@ -836,7 +836,7 @@ Name *string
 
 Name of the namespace, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/namespace_v1#name DataKubernetesNamespaceV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/namespace_v1#name DataKubernetesNamespaceV1#name}
 
 ---
 
@@ -845,7 +845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1Spec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 &datakubernetesnamespacev1.DataKubernetesNamespaceV1Spec {
 
@@ -860,7 +860,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakube
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 datakubernetesnamespacev1.NewDataKubernetesNamespaceV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataKubernetesNamespaceV1MetadataOutputReference
 ```
@@ -1229,7 +1229,7 @@ func InternalValue() DataKubernetesNamespaceV1Metadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 datakubernetesnamespacev1.NewDataKubernetesNamespaceV1SpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesNamespaceV1SpecList
 ```
@@ -1378,7 +1378,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetesnamespacev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesnamespacev1"
 
 datakubernetesnamespacev1.NewDataKubernetesNamespaceV1SpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataKubernetesNamespaceV1SpecOutputReference
 ```
