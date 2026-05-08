@@ -4,12 +4,12 @@
 
 ### DataKubernetesPersistentVolumeClaim <a name="DataKubernetesPersistentVolumeClaim" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim kubernetes_persistent_volume_claim}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim kubernetes_persistent_volume_claim}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.NewDataKubernetesPersistentVolumeClaim(scope Construct, id *string, config DataKubernetesPersistentVolumeClaimConfig) DataKubernetesPersistentVolumeClaim
 ```
@@ -338,7 +338,7 @@ func ResetSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaim_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaim_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaim_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaim_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaim_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaim_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataKubernetesPersistentVo
 
 The id of the existing DataKubernetesPersistentVolumeClaim that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 &datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaimConfig {
 	Connection: interface{},
@@ -681,7 +681,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakube
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadata,
 	Id: *string,
 	Spec: interface{},
 }
@@ -699,7 +699,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakube
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadata">DataKubernetesPersistentVolumeClaimMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#id DataKubernetesPersistentVolumeClaim#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#id DataKubernetesPersistentVolumeClaim#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimConfig.property.spec">Spec</a></code> | <code>interface{}</code> | spec block. |
 
 ---
@@ -784,7 +784,7 @@ Metadata DataKubernetesPersistentVolumeClaimMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#metadata DataKubernetesPersistentVolumeClaim#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#metadata DataKubernetesPersistentVolumeClaim#metadata}
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#id DataKubernetesPersistentVolumeClaim#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#id DataKubernetesPersistentVolumeClaim#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -813,7 +813,7 @@ Spec interface{}
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#spec DataKubernetesPersistentVolumeClaim#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#spec DataKubernetesPersistentVolumeClaim#spec}
 
 ---
 
@@ -822,7 +822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 &datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaimMetadata {
 	Annotations: *map[string]*string,
@@ -857,7 +857,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#annotations DataKubernetesPersistentVolumeClaim#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#annotations DataKubernetesPersistentVolumeClaim#annotations}
 
 ---
 
@@ -873,7 +873,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#generate_name DataKubernetesPersistentVolumeClaim#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#generate_name DataKubernetesPersistentVolumeClaim#generate_name}
 
 ---
 
@@ -889,7 +889,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#labels DataKubernetesPersistentVolumeClaim#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#labels DataKubernetesPersistentVolumeClaim#labels}
 
 ---
 
@@ -903,7 +903,7 @@ Name *string
 
 Name of the persistent volume claim, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#name DataKubernetesPersistentVolumeClaim#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#name DataKubernetesPersistentVolumeClaim#name}
 
 ---
 
@@ -917,7 +917,7 @@ Namespace *string
 
 Namespace defines the space within which name of the persistent volume claim must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#namespace DataKubernetesPersistentVolumeClaim#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#namespace DataKubernetesPersistentVolumeClaim#namespace}
 
 ---
 
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 &datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaimSpec {
 	Selector: interface{},
@@ -957,7 +957,7 @@ Selector interface{}
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#selector DataKubernetesPersistentVolumeClaim#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#selector DataKubernetesPersistentVolumeClaim#selector}
 
 ---
 
@@ -971,7 +971,7 @@ StorageClassName *string
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#storage_class_name DataKubernetesPersistentVolumeClaim#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#storage_class_name DataKubernetesPersistentVolumeClaim#storage_class_name}
 
 ---
 
@@ -985,7 +985,7 @@ VolumeMode *string
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#volume_mode DataKubernetesPersistentVolumeClaim#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#volume_mode DataKubernetesPersistentVolumeClaim#volume_mode}
 
 ---
 
@@ -999,7 +999,7 @@ VolumeName *string
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#volume_name DataKubernetesPersistentVolumeClaim#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#volume_name DataKubernetesPersistentVolumeClaim#volume_name}
 
 ---
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 &datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaimSpecResources {
 
@@ -1021,7 +1021,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakube
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 &datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaimSpecSelector {
 	MatchExpressions: interface{},
@@ -1048,7 +1048,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#match_expressions DataKubernetesPersistentVolumeClaim#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#match_expressions DataKubernetesPersistentVolumeClaim#match_expressions}
 
 ---
 
@@ -1064,7 +1064,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#match_labels DataKubernetesPersistentVolumeClaim#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#match_labels DataKubernetesPersistentVolumeClaim#match_labels}
 
 ---
 
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 &datakubernetespersistentvolumeclaim.DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressions {
 	Key: *string,
@@ -1102,7 +1102,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#key DataKubernetesPersistentVolumeClaim#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#key DataKubernetesPersistentVolumeClaim#key}
 
 ---
 
@@ -1116,7 +1116,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#operator DataKubernetesPersistentVolumeClaim#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#operator DataKubernetesPersistentVolumeClaim#operator}
 
 ---
 
@@ -1132,7 +1132,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/persistent_volume_claim#values DataKubernetesPersistentVolumeClaim#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/persistent_volume_claim#values DataKubernetesPersistentVolumeClaim#values}
 
 ---
 
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.NewDataKubernetesPersistentVolumeClaimMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataKubernetesPersistentVolumeClaimMetadataOutputReference
 ```
@@ -1570,7 +1570,7 @@ func InternalValue() DataKubernetesPersistentVolumeClaimMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.NewDataKubernetesPersistentVolumeClaimSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesPersistentVolumeClaimSpecList
 ```
@@ -1730,7 +1730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.NewDataKubernetesPersistentVolumeClaimSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataKubernetesPersistentVolumeClaimSpecOutputReference
 ```
@@ -2148,7 +2148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.NewDataKubernetesPersistentVolumeClaimSpecResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesPersistentVolumeClaimSpecResourcesList
 ```
@@ -2297,7 +2297,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.NewDataKubernetesPersistentVolumeClaimSpecResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataKubernetesPersistentVolumeClaimSpecResourcesOutputReference
 ```
@@ -2586,7 +2586,7 @@ func InternalValue() DataKubernetesPersistentVolumeClaimSpecResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.NewDataKubernetesPersistentVolumeClaimSpecSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesPersistentVolumeClaimSpecSelectorList
 ```
@@ -2746,7 +2746,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.NewDataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsList
 ```
@@ -2906,7 +2906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.NewDataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference
 ```
@@ -3260,7 +3260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/datakubernetespersistentvolumeclaim"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetespersistentvolumeclaim"
 
 datakubernetespersistentvolumeclaim.NewDataKubernetesPersistentVolumeClaimSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference
 ```

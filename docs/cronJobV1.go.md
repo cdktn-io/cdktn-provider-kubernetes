@@ -4,12 +4,12 @@
 
 ### CronJobV1 <a name="CronJobV1" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1(scope Construct, id *string, config CronJobV1Config) CronJobV1
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.CronJobV1_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.CronJobV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ cronjobv1.CronJobV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.CronJobV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ cronjobv1.CronJobV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.CronJobV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -542,7 +542,7 @@ The construct id used in the generated config for the CronJobV1 to import.
 
 The id of the existing CronJobV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1Config {
 	Connection: interface{},
@@ -840,10 +840,10 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1Metadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1Spec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1Metadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1Spec,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1Timeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1Timeouts,
 }
 ```
 
@@ -860,7 +860,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Metadata">CronJobV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Spec">CronJobV1Spec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#id CronJobV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#id CronJobV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Timeouts">CronJobV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -945,7 +945,7 @@ Metadata CronJobV1Metadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
 
 ---
 
@@ -959,7 +959,7 @@ Spec CronJobV1Spec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
 
 ---
 
@@ -971,7 +971,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#id CronJobV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#id CronJobV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +988,7 @@ Timeouts CronJobV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeouts CronJobV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeouts CronJobV1#timeouts}
 
 ---
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1Metadata {
 	Annotations: *map[string]*string,
@@ -1032,7 +1032,7 @@ An unstructured key value map stored with the cronjob that may be used to store 
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
 
 ---
 
@@ -1048,7 +1048,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
 
 ---
 
@@ -1064,7 +1064,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
 
 ---
 
@@ -1078,7 +1078,7 @@ Name *string
 
 Name of the cronjob, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -1092,7 +1092,7 @@ Namespace *string
 
 Namespace defines the space within which name of the cronjob must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
 
 ---
 
@@ -1101,10 +1101,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1Spec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1Spec {
-	JobTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplate,
+	JobTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplate,
 	Schedule: *string,
 	ConcurrencyPolicy: *string,
 	FailedJobsHistoryLimit: *f64,
@@ -1140,7 +1140,7 @@ JobTemplate CronJobV1SpecJobTemplate
 
 job_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#job_template CronJobV1#job_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#job_template CronJobV1#job_template}
 
 ---
 
@@ -1166,7 +1166,7 @@ ConcurrencyPolicy *string
 
 Specifies how to treat concurrent executions of a Job. Defaults to Allow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#concurrency_policy CronJobV1#concurrency_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#concurrency_policy CronJobV1#concurrency_policy}
 
 ---
 
@@ -1182,7 +1182,7 @@ The number of failed finished jobs to retain.
 
 This is a pointer to distinguish between explicit zero and not specified. Defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failed_jobs_history_limit CronJobV1#failed_jobs_history_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failed_jobs_history_limit CronJobV1#failed_jobs_history_limit}
 
 ---
 
@@ -1198,7 +1198,7 @@ Optional deadline in seconds for starting the job if it misses scheduled time fo
 
 Missed jobs executions will be counted as failed ones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#starting_deadline_seconds CronJobV1#starting_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#starting_deadline_seconds CronJobV1#starting_deadline_seconds}
 
 ---
 
@@ -1212,7 +1212,7 @@ SuccessfulJobsHistoryLimit *f64
 
 The number of successful finished jobs to retain. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#successful_jobs_history_limit CronJobV1#successful_jobs_history_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#successful_jobs_history_limit CronJobV1#successful_jobs_history_limit}
 
 ---
 
@@ -1228,7 +1228,7 @@ This flag tells the controller to suspend subsequent executions, it does not app
 
 Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#suspend CronJobV1#suspend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#suspend CronJobV1#suspend}
 
 ---
 
@@ -1244,7 +1244,7 @@ The time zone for the given schedule.
 
 If not specified, this will rely on the time zone of the kube-controller-manager process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timezone CronJobV1#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timezone CronJobV1#timezone}
 
 ---
 
@@ -1253,11 +1253,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplate {
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpec,
 }
 ```
 
@@ -1280,7 +1280,7 @@ Metadata CronJobV1SpecJobTemplateMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
 
 ---
 
@@ -1294,7 +1294,7 @@ Spec CronJobV1SpecJobTemplateSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
 
 ---
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -1338,7 +1338,7 @@ An unstructured key value map stored with the jobTemplateSpec that may be used t
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
 
 ---
 
@@ -1354,7 +1354,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
 
 ---
 
@@ -1370,7 +1370,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
 
 ---
 
@@ -1384,7 +1384,7 @@ Name *string
 
 Name of the jobTemplateSpec, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -1398,7 +1398,7 @@ Namespace *string
 
 Namespace defines the space within which name of the jobTemplateSpec must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
 
 ---
 
@@ -1407,10 +1407,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpec {
-	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplate,
+	Template: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplate,
 	ActiveDeadlineSeconds: *f64,
 	BackoffLimit: *f64,
 	BackoffLimitPerIndex: *f64,
@@ -1419,8 +1419,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 	ManualSelector: interface{},
 	MaxFailedIndexes: *f64,
 	Parallelism: *f64,
-	PodFailurePolicy: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicy,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecSelector,
+	PodFailurePolicy: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicy,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecSelector,
 	TtlSecondsAfterFinished: *string,
 }
 ```
@@ -1454,7 +1454,7 @@ Template CronJobV1SpecJobTemplateSpecTemplate
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#template CronJobV1#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#template CronJobV1#template}
 
 ---
 
@@ -1470,7 +1470,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#active_deadline_seconds CronJobV1#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#active_deadline_seconds CronJobV1#active_deadline_seconds}
 
 ---
 
@@ -1484,7 +1484,7 @@ BackoffLimit *f64
 
 Specifies the number of retries before marking this job failed. Defaults to 6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#backoff_limit CronJobV1#backoff_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#backoff_limit CronJobV1#backoff_limit}
 
 ---
 
@@ -1500,7 +1500,7 @@ Specifies the limit for the number of retries within an index before marking thi
 
 When enabled the number of failures per index is kept in the pod's batch.kubernetes.io/job-index-failure-count annotation. It can only be set when Job's completionMode=Indexed, and the Pod's restart policy is Never. The field is immutable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#backoff_limit_per_index CronJobV1#backoff_limit_per_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#backoff_limit_per_index CronJobV1#backoff_limit_per_index}
 
 ---
 
@@ -1514,7 +1514,7 @@ CompletionMode *string
 
 Specifies how Pod completions are tracked. It can be `NonIndexed` (default) or `Indexed`. More info: https://kubernetes.io/docs/concepts/workloads/controllers/job/#completion-mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#completion_mode CronJobV1#completion_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#completion_mode CronJobV1#completion_mode}
 
 ---
 
@@ -1530,7 +1530,7 @@ Specifies the desired number of successfully finished pods the job should be run
 
 Setting to nil means that the success of any pod signals the success of all pods, and allows parallelism to have any positive value. Setting to 1 means that parallelism is limited to 1 and the success of that pod signals the success of the job. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#completions CronJobV1#completions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#completions CronJobV1#completions}
 
 ---
 
@@ -1546,7 +1546,7 @@ Controls generation of pod labels and pod selectors.
 
 Leave unset unless you are certain what you are doing. When false or unset, the system pick labels unique to this job and appends those labels to the pod template. When true, the user is responsible for picking unique labels and specifying the selector. Failure to pick a unique label may cause this and other jobs to not function correctly. More info: https://git.k8s.io/community/contributors/design-proposals/selector-generation.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#manual_selector CronJobV1#manual_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#manual_selector CronJobV1#manual_selector}
 
 ---
 
@@ -1562,7 +1562,7 @@ Controls generation of pod labels and pod selectors.
 
 Leave unset unless you are certain what you are doing. When false or unset, the system pick labels unique to this job and appends those labels to the pod template. When true, the user is responsible for picking unique labels and specifying the selector. Failure to pick a unique label may cause this and other jobs to not function correctly. More info: https://git.k8s.io/community/contributors/design-proposals/selector-generation.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#max_failed_indexes CronJobV1#max_failed_indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#max_failed_indexes CronJobV1#max_failed_indexes}
 
 ---
 
@@ -1578,7 +1578,7 @@ Specifies the maximum desired number of pods the job should run at any given tim
 
 The actual number of pods running in steady state will be less than this number when ((.spec.completions - .status.successful) < .spec.parallelism), i.e. when the work left to do is less than max parallelism. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#parallelism CronJobV1#parallelism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#parallelism CronJobV1#parallelism}
 
 ---
 
@@ -1592,7 +1592,7 @@ PodFailurePolicy CronJobV1SpecJobTemplateSpecPodFailurePolicy
 
 pod_failure_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pod_failure_policy CronJobV1#pod_failure_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pod_failure_policy CronJobV1#pod_failure_policy}
 
 ---
 
@@ -1606,7 +1606,7 @@ Selector CronJobV1SpecJobTemplateSpecSelector
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#selector CronJobV1#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#selector CronJobV1#selector}
 
 ---
 
@@ -1622,7 +1622,7 @@ ttlSecondsAfterFinished limits the lifetime of a Job that has finished execution
 
 If this field is set, ttlSecondsAfterFinished after the Job finishes, it is eligible to be automatically deleted. When the Job is being deleted, its lifecycle guarantees (e.g. finalizers) will be honored. If this field is unset, the Job won't be automatically deleted. If this field is set to zero, the Job becomes eligible to be deleted immediately after it finishes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#ttl_seconds_after_finished CronJobV1#ttl_seconds_after_finished}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#ttl_seconds_after_finished CronJobV1#ttl_seconds_after_finished}
 
 ---
 
@@ -1631,7 +1631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecPodFailurePolicy {
 	Rule: interface{},
@@ -1656,7 +1656,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#rule CronJobV1#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#rule CronJobV1#rule}
 
 ---
 
@@ -1665,11 +1665,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRule {
 	Action: *string,
-	OnExitCodes: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes,
+	OnExitCodes: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes,
 	OnPodCondition: interface{},
 }
 ```
@@ -1678,7 +1678,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRule.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#action CronJobV1#action}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRule.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#action CronJobV1#action}. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRule.property.onExitCodes">OnExitCodes</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes">CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes</a></code> | on_exit_codes block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRule.property.onPodCondition">OnPodCondition</a></code> | <code>interface{}</code> | on_pod_condition block. |
 
@@ -1692,7 +1692,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#action CronJobV1#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#action CronJobV1#action}.
 
 ---
 
@@ -1706,7 +1706,7 @@ OnExitCodes CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes
 
 on_exit_codes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#on_exit_codes CronJobV1#on_exit_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#on_exit_codes CronJobV1#on_exit_codes}
 
 ---
 
@@ -1720,7 +1720,7 @@ OnPodCondition interface{}
 
 on_pod_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#on_pod_condition CronJobV1#on_pod_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#on_pod_condition CronJobV1#on_pod_condition}
 
 ---
 
@@ -1729,7 +1729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes {
 	Values: *[]*f64,
@@ -1742,9 +1742,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}. |
 
 ---
 
@@ -1756,7 +1756,7 @@ Values *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}.
 
 ---
 
@@ -1768,7 +1768,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
 
 ---
 
@@ -1780,7 +1780,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}.
 
 ---
 
@@ -1789,7 +1789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition {
 	Status: *string,
@@ -1801,8 +1801,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#status CronJobV1#status}. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#status CronJobV1#status}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}. |
 
 ---
 
@@ -1814,7 +1814,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#status CronJobV1#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#status CronJobV1#status}.
 
 ---
 
@@ -1826,7 +1826,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}.
 
 ---
 
@@ -1835,7 +1835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecSelector {
 	MatchExpressions: interface{},
@@ -1862,7 +1862,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -1878,7 +1878,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -1887,7 +1887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecSelectorMatchExpressions {
 	Key: *string,
@@ -1916,7 +1916,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -1930,7 +1930,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -1946,7 +1946,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -1955,11 +1955,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplate {
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpec,
 }
 ```
 
@@ -1982,7 +1982,7 @@ Metadata CronJobV1SpecJobTemplateSpecTemplateMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
 
 ---
 
@@ -1996,7 +1996,7 @@ Spec CronJobV1SpecJobTemplateSpecTemplateSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
 
 ---
 
@@ -2005,7 +2005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -2038,7 +2038,7 @@ An unstructured key value map stored with the job that may be used to store arbi
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
 
 ---
 
@@ -2054,7 +2054,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
 
 ---
 
@@ -2070,7 +2070,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
 
 ---
 
@@ -2084,7 +2084,7 @@ Name *string
 
 Name of the job, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -2093,14 +2093,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpec {
 	ActiveDeadlineSeconds: *f64,
-	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinity,
+	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinity,
 	AutomountServiceAccountToken: interface{},
 	Container: interface{},
-	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig,
+	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig,
 	DnsPolicy: *string,
 	EnableServiceLinks: interface{},
 	HostAliases: interface{},
@@ -2112,13 +2112,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 	InitContainer: interface{},
 	NodeName: *string,
 	NodeSelector: *map[string]*string,
-	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecOs,
+	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecOs,
 	PriorityClassName: *string,
 	ReadinessGate: interface{},
 	RestartPolicy: *string,
 	RuntimeClassName: *string,
 	SchedulerName: *string,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext,
 	ServiceAccountName: *string,
 	ShareProcessNamespace: interface{},
 	Subdomain: *string,
@@ -2178,7 +2178,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#active_deadline_seconds CronJobV1#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#active_deadline_seconds CronJobV1#active_deadline_seconds}
 
 ---
 
@@ -2192,7 +2192,7 @@ Affinity CronJobV1SpecJobTemplateSpecTemplateSpecAffinity
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#affinity CronJobV1#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#affinity CronJobV1#affinity}
 
 ---
 
@@ -2206,7 +2206,7 @@ AutomountServiceAccountToken interface{}
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#automount_service_account_token CronJobV1#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#automount_service_account_token CronJobV1#automount_service_account_token}
 
 ---
 
@@ -2220,7 +2220,7 @@ Container interface{}
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container CronJobV1#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container CronJobV1#container}
 
 ---
 
@@ -2234,7 +2234,7 @@ DnsConfig CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#dns_config CronJobV1#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#dns_config CronJobV1#dns_config}
 
 ---
 
@@ -2250,7 +2250,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#dns_policy CronJobV1#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#dns_policy CronJobV1#dns_policy}
 
 ---
 
@@ -2264,7 +2264,7 @@ EnableServiceLinks interface{}
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#enable_service_links CronJobV1#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#enable_service_links CronJobV1#enable_service_links}
 
 ---
 
@@ -2278,7 +2278,7 @@ HostAliases interface{}
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_aliases CronJobV1#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_aliases CronJobV1#host_aliases}
 
 ---
 
@@ -2292,7 +2292,7 @@ HostIpc interface{}
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_ipc CronJobV1#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_ipc CronJobV1#host_ipc}
 
 ---
 
@@ -2306,7 +2306,7 @@ Hostname *string
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#hostname CronJobV1#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#hostname CronJobV1#hostname}
 
 ---
 
@@ -2322,7 +2322,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_network CronJobV1#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_network CronJobV1#host_network}
 
 ---
 
@@ -2336,7 +2336,7 @@ HostPid interface{}
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_pid CronJobV1#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_pid CronJobV1#host_pid}
 
 ---
 
@@ -2350,7 +2350,7 @@ ImagePullSecrets interface{}
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image_pull_secrets CronJobV1#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#image_pull_secrets CronJobV1#image_pull_secrets}
 
 ---
 
@@ -2364,7 +2364,7 @@ InitContainer interface{}
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#init_container CronJobV1#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#init_container CronJobV1#init_container}
 
 ---
 
@@ -2380,7 +2380,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_name CronJobV1#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_name CronJobV1#node_name}
 
 ---
 
@@ -2396,7 +2396,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_selector CronJobV1#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_selector CronJobV1#node_selector}
 
 ---
 
@@ -2410,7 +2410,7 @@ Os CronJobV1SpecJobTemplateSpecTemplateSpecOs
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#os CronJobV1#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#os CronJobV1#os}
 
 ---
 
@@ -2426,7 +2426,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#priority_class_name CronJobV1#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#priority_class_name CronJobV1#priority_class_name}
 
 ---
 
@@ -2440,7 +2440,7 @@ ReadinessGate interface{}
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#readiness_gate CronJobV1#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#readiness_gate CronJobV1#readiness_gate}
 
 ---
 
@@ -2454,7 +2454,7 @@ RestartPolicy *string
 
 Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#restart_policy CronJobV1#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#restart_policy CronJobV1#restart_policy}
 
 ---
 
@@ -2470,7 +2470,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#runtime_class_name CronJobV1#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#runtime_class_name CronJobV1#runtime_class_name}
 
 ---
 
@@ -2486,7 +2486,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheduler_name CronJobV1#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheduler_name CronJobV1#scheduler_name}
 
 ---
 
@@ -2500,7 +2500,7 @@ SecurityContext CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
 
 ---
 
@@ -2514,7 +2514,7 @@ ServiceAccountName *string
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service_account_name CronJobV1#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service_account_name CronJobV1#service_account_name}
 
 ---
 
@@ -2530,7 +2530,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#share_process_namespace CronJobV1#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#share_process_namespace CronJobV1#share_process_namespace}
 
 ---
 
@@ -2544,7 +2544,7 @@ Subdomain *string
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#subdomain CronJobV1#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#subdomain CronJobV1#subdomain}
 
 ---
 
@@ -2560,7 +2560,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#termination_grace_period_seconds CronJobV1#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#termination_grace_period_seconds CronJobV1#termination_grace_period_seconds}
 
 ---
 
@@ -2574,7 +2574,7 @@ Toleration interface{}
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#toleration CronJobV1#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#toleration CronJobV1#toleration}
 
 ---
 
@@ -2588,7 +2588,7 @@ TopologySpreadConstraint interface{}
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_spread_constraint CronJobV1#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_spread_constraint CronJobV1#topology_spread_constraint}
 
 ---
 
@@ -2602,7 +2602,7 @@ Volume interface{}
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume CronJobV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume CronJobV1#volume}
 
 ---
 
@@ -2611,12 +2611,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinity {
-	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinity,
-	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity,
-	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinity,
+	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinity,
+	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity,
+	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinity,
 }
 ```
 
@@ -2640,7 +2640,7 @@ NodeAffinity CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinity
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_affinity CronJobV1#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_affinity CronJobV1#node_affinity}
 
 ---
 
@@ -2654,7 +2654,7 @@ PodAffinity CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pod_affinity CronJobV1#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pod_affinity CronJobV1#pod_affinity}
 
 ---
 
@@ -2668,7 +2668,7 @@ PodAntiAffinity CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinity
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pod_anti_affinity CronJobV1#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pod_anti_affinity CronJobV1#pod_anti_affinity}
 
 ---
 
@@ -2677,11 +2677,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
-	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
+	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
 }
 ```
 
@@ -2704,7 +2704,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2718,7 +2718,7 @@ RequiredDuringSchedulingIgnoredDuringExecution CronJobV1SpecJobTemplateSpecTempl
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2727,10 +2727,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
+	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
 	Weight: *f64,
 }
 ```
@@ -2754,7 +2754,7 @@ Preference CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferred
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#preference CronJobV1#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#preference CronJobV1#preference}
 
 ---
 
@@ -2768,7 +2768,7 @@ Weight *f64
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
 
 ---
 
@@ -2777,7 +2777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference {
 	MatchExpressions: interface{},
@@ -2804,7 +2804,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -2818,7 +2818,7 @@ MatchFields interface{}
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_fields CronJobV1#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_fields CronJobV1#match_fields}
 
 ---
 
@@ -2827,7 +2827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions {
 	Key: *string,
@@ -2856,7 +2856,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -2872,7 +2872,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -2888,7 +2888,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -2897,7 +2897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields {
 	Key: *string,
@@ -2926,7 +2926,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -2940,7 +2940,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -2956,7 +2956,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -2965,7 +2965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	NodeSelectorTerm: interface{},
@@ -2990,7 +2990,7 @@ NodeSelectorTerm interface{}
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_selector_term CronJobV1#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_selector_term CronJobV1#node_selector_term}
 
 ---
 
@@ -2999,7 +2999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm {
 	MatchExpressions: interface{},
@@ -3026,7 +3026,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -3040,7 +3040,7 @@ MatchFields interface{}
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_fields CronJobV1#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_fields CronJobV1#match_fields}
 
 ---
 
@@ -3049,7 +3049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions {
 	Key: *string,
@@ -3078,7 +3078,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3094,7 +3094,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3110,7 +3110,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3119,7 +3119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields {
 	Key: *string,
@@ -3148,7 +3148,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3162,7 +3162,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3178,7 +3178,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3187,7 +3187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -3214,7 +3214,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3228,7 +3228,7 @@ RequiredDuringSchedulingIgnoredDuringExecution interface{}
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3237,10 +3237,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -3264,7 +3264,7 @@ PodAffinityTerm CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPrefe
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pod_affinity_term CronJobV1#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pod_affinity_term CronJobV1#pod_affinity_term}
 
 ---
 
@@ -3278,7 +3278,7 @@ Weight *f64
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
 
 ---
 
@@ -3287,7 +3287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -3318,7 +3318,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
 
 ---
 
@@ -3332,7 +3332,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
 
 ---
 
@@ -3346,7 +3346,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
 
 ---
 
@@ -3360,7 +3360,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
 
 ---
 
@@ -3369,7 +3369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -3396,7 +3396,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -3412,7 +3412,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -3421,7 +3421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3450,7 +3450,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3464,7 +3464,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3480,7 +3480,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3489,7 +3489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3516,7 +3516,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -3532,7 +3532,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -3541,7 +3541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3570,7 +3570,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3584,7 +3584,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3600,7 +3600,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3609,7 +3609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -3640,7 +3640,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
 
 ---
 
@@ -3654,7 +3654,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
 
 ---
 
@@ -3668,7 +3668,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
 
 ---
 
@@ -3682,7 +3682,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
 
 ---
 
@@ -3691,7 +3691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -3718,7 +3718,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -3734,7 +3734,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -3743,7 +3743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3772,7 +3772,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3786,7 +3786,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3802,7 +3802,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3811,7 +3811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3838,7 +3838,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -3854,7 +3854,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -3863,7 +3863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3892,7 +3892,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3906,7 +3906,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3922,7 +3922,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3931,7 +3931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -3958,7 +3958,7 @@ PreferredDuringSchedulingIgnoredDuringExecution interface{}
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3972,7 +3972,7 @@ RequiredDuringSchedulingIgnoredDuringExecution interface{}
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3981,10 +3981,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -4008,7 +4008,7 @@ PodAffinityTerm CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityP
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pod_affinity_term CronJobV1#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pod_affinity_term CronJobV1#pod_affinity_term}
 
 ---
 
@@ -4022,7 +4022,7 @@ Weight *f64
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
 
 ---
 
@@ -4031,7 +4031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -4062,7 +4062,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
 
 ---
 
@@ -4076,7 +4076,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
 
 ---
 
@@ -4090,7 +4090,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
 
 ---
 
@@ -4104,7 +4104,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
 
 ---
 
@@ -4113,7 +4113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -4140,7 +4140,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -4156,7 +4156,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -4165,7 +4165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -4194,7 +4194,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -4208,7 +4208,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -4224,7 +4224,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -4233,7 +4233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -4260,7 +4260,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -4276,7 +4276,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -4285,7 +4285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -4314,7 +4314,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -4328,7 +4328,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -4344,7 +4344,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -4353,7 +4353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -4384,7 +4384,7 @@ TopologyKey *string
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
 
 ---
 
@@ -4398,7 +4398,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
 
 ---
 
@@ -4412,7 +4412,7 @@ Namespaces *[]*string
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
 
 ---
 
@@ -4426,7 +4426,7 @@ NamespaceSelector interface{}
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
 
 ---
 
@@ -4435,7 +4435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -4462,7 +4462,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -4478,7 +4478,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -4487,7 +4487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -4516,7 +4516,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -4530,7 +4530,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -4546,7 +4546,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -4555,7 +4555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -4582,7 +4582,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -4598,7 +4598,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -4607,7 +4607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -4636,7 +4636,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -4650,7 +4650,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -4666,7 +4666,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -4675,7 +4675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer {
 	Name: *string,
@@ -4685,13 +4685,14 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources,
+	RestartPolicy: *string,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -4719,6 +4720,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.port">Port</a></code> | <code>interface{}</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.readinessProbe">ReadinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe">CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources">CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.securityContext">SecurityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext">CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.startupProbe">StartupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe">CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.stdin">Stdin</a></code> | <code>interface{}</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -4744,7 +4746,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -4760,7 +4762,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#args CronJobV1#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#args CronJobV1#args}
 
 ---
 
@@ -4776,7 +4778,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -4790,7 +4792,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#env CronJobV1#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#env CronJobV1#env}
 
 ---
 
@@ -4804,7 +4806,7 @@ EnvFrom interface{}
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#env_from CronJobV1#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#env_from CronJobV1#env_from}
 
 ---
 
@@ -4818,7 +4820,7 @@ Image *string
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image CronJobV1#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#image CronJobV1#image}
 
 ---
 
@@ -4834,7 +4836,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image_pull_policy CronJobV1#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#image_pull_policy CronJobV1#image_pull_policy}
 
 ---
 
@@ -4848,7 +4850,7 @@ Lifecycle CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#lifecycle CronJobV1#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#lifecycle CronJobV1#lifecycle}
 
 ---
 
@@ -4862,7 +4864,7 @@ LivenessProbe CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbe
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#liveness_probe CronJobV1#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#liveness_probe CronJobV1#liveness_probe}
 
 ---
 
@@ -4876,7 +4878,7 @@ Port interface{}
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -4890,7 +4892,7 @@ ReadinessProbe CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#readiness_probe CronJobV1#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#readiness_probe CronJobV1#readiness_probe}
 
 ---
 
@@ -4904,7 +4906,21 @@ Resources CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+
+---
+
+##### `RestartPolicy`<sup>Optional</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.restartPolicy"></a>
+
+```go
+RestartPolicy *string
+```
+
+- *Type:* *string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#restart_policy CronJobV1#restart_policy}
 
 ---
 
@@ -4918,7 +4934,7 @@ SecurityContext CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
 
 ---
 
@@ -4932,7 +4948,7 @@ StartupProbe CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#startup_probe CronJobV1#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#startup_probe CronJobV1#startup_probe}
 
 ---
 
@@ -4948,7 +4964,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#stdin CronJobV1#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#stdin CronJobV1#stdin}
 
 ---
 
@@ -4964,7 +4980,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#stdin_once CronJobV1#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#stdin_once CronJobV1#stdin_once}
 
 ---
 
@@ -4980,7 +4996,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#termination_message_path CronJobV1#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#termination_message_path CronJobV1#termination_message_path}
 
 ---
 
@@ -4996,7 +5012,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#termination_message_policy CronJobV1#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#termination_message_policy CronJobV1#termination_message_policy}
 
 ---
 
@@ -5010,7 +5026,7 @@ Tty interface{}
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tty CronJobV1#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tty CronJobV1#tty}
 
 ---
 
@@ -5024,7 +5040,7 @@ VolumeDevice interface{}
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_device CronJobV1#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_device CronJobV1#volume_device}
 
 ---
 
@@ -5038,7 +5054,7 @@ VolumeMount interface{}
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_mount CronJobV1#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_mount CronJobV1#volume_mount}
 
 ---
 
@@ -5054,7 +5070,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#working_dir CronJobV1#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#working_dir CronJobV1#working_dir}
 
 ---
 
@@ -5063,12 +5079,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom,
 }
 ```
 
@@ -5092,7 +5108,7 @@ Name *string
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5108,7 +5124,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -5122,7 +5138,7 @@ ValueFrom CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value_from CronJobV1#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value_from CronJobV1#value_from}
 
 ---
 
@@ -5131,12 +5147,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRef,
 }
 ```
 
@@ -5160,7 +5176,7 @@ ConfigMapRef CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRe
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map_ref CronJobV1#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map_ref CronJobV1#config_map_ref}
 
 ---
 
@@ -5174,7 +5190,7 @@ Prefix *string
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#prefix CronJobV1#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#prefix CronJobV1#prefix}
 
 ---
 
@@ -5188,7 +5204,7 @@ SecretRef CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
 
 ---
 
@@ -5197,7 +5213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -5224,7 +5240,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5238,7 +5254,7 @@ Optional interface{}
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -5247,7 +5263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRef {
 	Name: *string,
@@ -5274,7 +5290,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5288,7 +5304,7 @@ Optional interface{}
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -5297,13 +5313,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -5328,7 +5344,7 @@ ConfigMapKeyRef CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromCon
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map_key_ref CronJobV1#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map_key_ref CronJobV1#config_map_key_ref}
 
 ---
 
@@ -5342,7 +5358,7 @@ FieldRef CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
 
 ---
 
@@ -5356,7 +5372,7 @@ ResourceFieldRef CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromRe
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
 
 ---
 
@@ -5370,7 +5386,7 @@ SecretKeyRef CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecret
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_key_ref CronJobV1#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_key_ref CronJobV1#secret_key_ref}
 
 ---
 
@@ -5379,7 +5395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -5408,7 +5424,7 @@ Key *string
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -5422,7 +5438,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5436,7 +5452,7 @@ Optional interface{}
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -5445,7 +5461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -5472,7 +5488,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
 
 ---
 
@@ -5486,7 +5502,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
 
 ---
 
@@ -5495,7 +5511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -5509,8 +5525,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
 
 ---
 
@@ -5524,7 +5540,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
 
 ---
 
@@ -5536,7 +5552,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
 
 ---
 
@@ -5548,7 +5564,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
 
 ---
 
@@ -5557,7 +5573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -5586,7 +5602,7 @@ Key *string
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -5600,7 +5616,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5614,7 +5630,7 @@ Optional interface{}
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -5623,7 +5639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle {
 	PostStart: interface{},
@@ -5650,7 +5666,7 @@ PostStart interface{}
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#post_start CronJobV1#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#post_start CronJobV1#post_start}
 
 ---
 
@@ -5664,7 +5680,7 @@ PreStop interface{}
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pre_stop CronJobV1#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pre_stop CronJobV1#pre_stop}
 
 ---
 
@@ -5673,11 +5689,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5702,7 +5718,7 @@ Exec CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -5716,7 +5732,7 @@ HttpGet CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpG
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -5730,7 +5746,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -5739,7 +5755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -5766,7 +5782,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -5775,7 +5791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -5808,7 +5824,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -5822,7 +5838,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -5836,7 +5852,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -5852,7 +5868,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -5866,7 +5882,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -5875,7 +5891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -5902,7 +5918,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5916,7 +5932,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -5925,7 +5941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -5952,7 +5968,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -5961,11 +5977,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5990,7 +6006,7 @@ Exec CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -6004,7 +6020,7 @@ HttpGet CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -6018,7 +6034,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -6027,7 +6043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -6054,7 +6070,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -6063,7 +6079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -6096,7 +6112,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -6110,7 +6126,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -6124,7 +6140,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -6140,7 +6156,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6154,7 +6170,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -6163,7 +6179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -6190,7 +6206,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -6204,7 +6220,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -6213,7 +6229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -6240,7 +6256,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6249,13 +6265,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -6290,7 +6306,7 @@ Exec CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -6304,7 +6320,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -6318,7 +6334,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -6332,7 +6348,7 @@ HttpGet CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -6346,7 +6362,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -6360,7 +6376,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -6374,7 +6390,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -6388,7 +6404,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -6402,7 +6418,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -6411,7 +6427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -6438,7 +6454,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -6447,7 +6463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -6474,7 +6490,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6488,7 +6504,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -6497,7 +6513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -6530,7 +6546,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -6544,7 +6560,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -6558,7 +6574,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -6574,7 +6590,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6588,7 +6604,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -6597,7 +6613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -6624,7 +6640,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -6638,7 +6654,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -6647,7 +6663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -6674,7 +6690,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6683,7 +6699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPort {
 	ContainerPort: *f64,
@@ -6718,7 +6734,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_port CronJobV1#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_port CronJobV1#container_port}
 
 ---
 
@@ -6732,7 +6748,7 @@ HostIp *string
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_ip CronJobV1#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_ip CronJobV1#host_ip}
 
 ---
 
@@ -6748,7 +6764,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_port CronJobV1#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_port CronJobV1#host_port}
 
 ---
 
@@ -6764,7 +6780,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -6778,7 +6794,7 @@ Protocol *string
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#protocol CronJobV1#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#protocol CronJobV1#protocol}
 
 ---
 
@@ -6787,13 +6803,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -6828,7 +6844,7 @@ Exec CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -6842,7 +6858,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -6856,7 +6872,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -6870,7 +6886,7 @@ HttpGet CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -6884,7 +6900,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -6898,7 +6914,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -6912,7 +6928,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -6926,7 +6942,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -6940,7 +6956,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -6949,7 +6965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -6976,7 +6992,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -6985,7 +7001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -7012,7 +7028,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -7026,7 +7042,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -7035,7 +7051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -7068,7 +7084,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -7082,7 +7098,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -7096,7 +7112,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -7112,7 +7128,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -7126,7 +7142,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -7135,7 +7151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -7162,7 +7178,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -7176,7 +7192,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -7185,7 +7201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -7212,7 +7228,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -7221,7 +7237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources {
 	Limits: *map[string]*string,
@@ -7248,7 +7264,7 @@ Limits *map[string]*string
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
 
 ---
 
@@ -7264,7 +7280,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
 
 ---
 
@@ -7273,18 +7289,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -7316,7 +7332,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#allow_privilege_escalation CronJobV1#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#allow_privilege_escalation CronJobV1#allow_privilege_escalation}
 
 ---
 
@@ -7330,7 +7346,7 @@ Capabilities CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCap
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#capabilities CronJobV1#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#capabilities CronJobV1#capabilities}
 
 ---
 
@@ -7346,7 +7362,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#privileged CronJobV1#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#privileged CronJobV1#privileged}
 
 ---
 
@@ -7360,7 +7376,7 @@ ReadOnlyRootFilesystem interface{}
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only_root_filesystem CronJobV1#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only_root_filesystem CronJobV1#read_only_root_filesystem}
 
 ---
 
@@ -7376,7 +7392,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
 
 ---
 
@@ -7392,7 +7408,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
 
 ---
 
@@ -7408,7 +7424,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
 
 ---
 
@@ -7422,7 +7438,7 @@ SeccompProfile CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextS
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
 
 ---
 
@@ -7436,7 +7452,7 @@ SeLinuxOptions CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextS
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
 
 ---
 
@@ -7445,7 +7461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -7472,7 +7488,7 @@ Add *[]*string
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#add CronJobV1#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#add CronJobV1#add}
 
 ---
 
@@ -7486,7 +7502,7 @@ Drop *[]*string
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#drop CronJobV1#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#drop CronJobV1#drop}
 
 ---
 
@@ -7495,7 +7511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -7524,7 +7540,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
 
 ---
 
@@ -7538,7 +7554,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -7547,7 +7563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -7578,7 +7594,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#level CronJobV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#level CronJobV1#level}
 
 ---
 
@@ -7592,7 +7608,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#role CronJobV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#role CronJobV1#role}
 
 ---
 
@@ -7606,7 +7622,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -7620,7 +7636,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#user CronJobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#user CronJobV1#user}
 
 ---
 
@@ -7629,13 +7645,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -7670,7 +7686,7 @@ Exec CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -7684,7 +7700,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -7698,7 +7714,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -7712,7 +7728,7 @@ HttpGet CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -7726,7 +7742,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -7740,7 +7756,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -7754,7 +7770,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -7768,7 +7784,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -7782,7 +7798,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -7791,7 +7807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExec {
 	Command: *[]*string,
@@ -7818,7 +7834,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -7827,7 +7843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeGrpc {
 	Port: *f64,
@@ -7854,7 +7870,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -7868,7 +7884,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -7877,7 +7893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGet {
 	Host: *string,
@@ -7910,7 +7926,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -7924,7 +7940,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -7938,7 +7954,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -7954,7 +7970,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -7968,7 +7984,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -7977,7 +7993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -8004,7 +8020,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8018,7 +8034,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -8027,7 +8043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -8054,7 +8070,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -8063,7 +8079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeDevice {
 	DevicePath: *string,
@@ -8090,7 +8106,7 @@ DevicePath *string
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#device_path CronJobV1#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#device_path CronJobV1#device_path}
 
 ---
 
@@ -8104,7 +8120,7 @@ Name *string
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8113,7 +8129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMount {
 	MountPath: *string,
@@ -8148,7 +8164,7 @@ MountPath *string
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mount_path CronJobV1#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mount_path CronJobV1#mount_path}
 
 ---
 
@@ -8162,7 +8178,7 @@ Name *string
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8178,7 +8194,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mount_propagation CronJobV1#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mount_propagation CronJobV1#mount_propagation}
 
 ---
 
@@ -8192,7 +8208,7 @@ ReadOnly interface{}
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -8206,7 +8222,7 @@ SubPath *string
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sub_path CronJobV1#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sub_path CronJobV1#sub_path}
 
 ---
 
@@ -8220,7 +8236,7 @@ SubPathExpr *string
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sub_path_expr CronJobV1#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sub_path_expr CronJobV1#sub_path_expr}
 
 ---
 
@@ -8229,7 +8245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig {
 	Nameservers: *[]*string,
@@ -8260,7 +8276,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#nameservers CronJobV1#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#nameservers CronJobV1#nameservers}
 
 ---
 
@@ -8274,7 +8290,7 @@ Option interface{}
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#option CronJobV1#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#option CronJobV1#option}
 
 ---
 
@@ -8290,7 +8306,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#searches CronJobV1#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#searches CronJobV1#searches}
 
 ---
 
@@ -8299,7 +8315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOption {
 	Name: *string,
@@ -8326,7 +8342,7 @@ Name *string
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8340,7 +8356,7 @@ Value *string
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -8349,7 +8365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases {
 	Hostnames: *[]*string,
@@ -8376,7 +8392,7 @@ Hostnames *[]*string
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#hostnames CronJobV1#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#hostnames CronJobV1#hostnames}
 
 ---
 
@@ -8390,7 +8406,7 @@ Ip *string
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#ip CronJobV1#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#ip CronJobV1#ip}
 
 ---
 
@@ -8399,7 +8415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecrets {
 	Name: *string,
@@ -8424,7 +8440,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8433,7 +8449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer {
 	Name: *string,
@@ -8443,13 +8459,14 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources,
+	RestartPolicy: *string,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -8477,6 +8494,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.port">Port</a></code> | <code>interface{}</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.readinessProbe">ReadinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.securityContext">SecurityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.startupProbe">StartupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.stdin">Stdin</a></code> | <code>interface{}</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -8502,7 +8520,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8518,7 +8536,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#args CronJobV1#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#args CronJobV1#args}
 
 ---
 
@@ -8534,7 +8552,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -8548,7 +8566,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#env CronJobV1#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#env CronJobV1#env}
 
 ---
 
@@ -8562,7 +8580,7 @@ EnvFrom interface{}
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#env_from CronJobV1#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#env_from CronJobV1#env_from}
 
 ---
 
@@ -8576,7 +8594,7 @@ Image *string
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image CronJobV1#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#image CronJobV1#image}
 
 ---
 
@@ -8592,7 +8610,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image_pull_policy CronJobV1#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#image_pull_policy CronJobV1#image_pull_policy}
 
 ---
 
@@ -8606,7 +8624,7 @@ Lifecycle CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#lifecycle CronJobV1#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#lifecycle CronJobV1#lifecycle}
 
 ---
 
@@ -8620,7 +8638,7 @@ LivenessProbe CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbe
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#liveness_probe CronJobV1#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#liveness_probe CronJobV1#liveness_probe}
 
 ---
 
@@ -8634,7 +8652,7 @@ Port interface{}
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -8648,7 +8666,7 @@ ReadinessProbe CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessPro
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#readiness_probe CronJobV1#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#readiness_probe CronJobV1#readiness_probe}
 
 ---
 
@@ -8662,7 +8680,21 @@ Resources CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+
+---
+
+##### `RestartPolicy`<sup>Optional</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.restartPolicy"></a>
+
+```go
+RestartPolicy *string
+```
+
+- *Type:* *string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#restart_policy CronJobV1#restart_policy}
 
 ---
 
@@ -8676,7 +8708,7 @@ SecurityContext CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCon
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
 
 ---
 
@@ -8690,7 +8722,7 @@ StartupProbe CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#startup_probe CronJobV1#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#startup_probe CronJobV1#startup_probe}
 
 ---
 
@@ -8706,7 +8738,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#stdin CronJobV1#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#stdin CronJobV1#stdin}
 
 ---
 
@@ -8722,7 +8754,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#stdin_once CronJobV1#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#stdin_once CronJobV1#stdin_once}
 
 ---
 
@@ -8738,7 +8770,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#termination_message_path CronJobV1#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#termination_message_path CronJobV1#termination_message_path}
 
 ---
 
@@ -8754,7 +8786,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#termination_message_policy CronJobV1#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#termination_message_policy CronJobV1#termination_message_policy}
 
 ---
 
@@ -8768,7 +8800,7 @@ Tty interface{}
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tty CronJobV1#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tty CronJobV1#tty}
 
 ---
 
@@ -8782,7 +8814,7 @@ VolumeDevice interface{}
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_device CronJobV1#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_device CronJobV1#volume_device}
 
 ---
 
@@ -8796,7 +8828,7 @@ VolumeMount interface{}
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_mount CronJobV1#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_mount CronJobV1#volume_mount}
 
 ---
 
@@ -8812,7 +8844,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#working_dir CronJobV1#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#working_dir CronJobV1#working_dir}
 
 ---
 
@@ -8821,12 +8853,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFrom,
 }
 ```
 
@@ -8850,7 +8882,7 @@ Name *string
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8866,7 +8898,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -8880,7 +8912,7 @@ ValueFrom CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFrom
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value_from CronJobV1#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value_from CronJobV1#value_from}
 
 ---
 
@@ -8889,12 +8921,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRef,
 }
 ```
 
@@ -8918,7 +8950,7 @@ ConfigMapRef CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigM
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map_ref CronJobV1#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map_ref CronJobV1#config_map_ref}
 
 ---
 
@@ -8932,7 +8964,7 @@ Prefix *string
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#prefix CronJobV1#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#prefix CronJobV1#prefix}
 
 ---
 
@@ -8946,7 +8978,7 @@ SecretRef CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
 
 ---
 
@@ -8955,7 +8987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -8982,7 +9014,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8996,7 +9028,7 @@ Optional interface{}
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -9005,7 +9037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRef {
 	Name: *string,
@@ -9032,7 +9064,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -9046,7 +9078,7 @@ Optional interface{}
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -9055,13 +9087,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -9086,7 +9118,7 @@ ConfigMapKeyRef CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFro
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map_key_ref CronJobV1#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map_key_ref CronJobV1#config_map_key_ref}
 
 ---
 
@@ -9100,7 +9132,7 @@ FieldRef CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldR
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
 
 ---
 
@@ -9114,7 +9146,7 @@ ResourceFieldRef CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFr
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
 
 ---
 
@@ -9128,7 +9160,7 @@ SecretKeyRef CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSe
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_key_ref CronJobV1#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_key_ref CronJobV1#secret_key_ref}
 
 ---
 
@@ -9137,7 +9169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -9166,7 +9198,7 @@ Key *string
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -9180,7 +9212,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -9194,7 +9226,7 @@ Optional interface{}
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -9203,7 +9235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -9230,7 +9262,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
 
 ---
 
@@ -9244,7 +9276,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
 
 ---
 
@@ -9253,7 +9285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -9267,8 +9299,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
 
 ---
 
@@ -9282,7 +9314,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
 
 ---
 
@@ -9294,7 +9326,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
 
 ---
 
@@ -9306,7 +9338,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
 
 ---
 
@@ -9315,7 +9347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -9344,7 +9376,7 @@ Key *string
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -9358,7 +9390,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -9372,7 +9404,7 @@ Optional interface{}
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -9381,7 +9413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle {
 	PostStart: interface{},
@@ -9408,7 +9440,7 @@ PostStart interface{}
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#post_start CronJobV1#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#post_start CronJobV1#post_start}
 
 ---
 
@@ -9422,7 +9454,7 @@ PreStop interface{}
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pre_stop CronJobV1#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pre_stop CronJobV1#pre_stop}
 
 ---
 
@@ -9431,11 +9463,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -9460,7 +9492,7 @@ Exec CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -9474,7 +9506,7 @@ HttpGet CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartH
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -9488,7 +9520,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -9497,7 +9529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -9524,7 +9556,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -9533,7 +9565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -9566,7 +9598,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -9580,7 +9612,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -9594,7 +9626,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -9610,7 +9642,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -9624,7 +9656,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -9633,7 +9665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -9660,7 +9692,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -9674,7 +9706,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -9683,7 +9715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -9710,7 +9742,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -9719,11 +9751,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -9748,7 +9780,7 @@ Exec CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -9762,7 +9794,7 @@ HttpGet CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHtt
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -9776,7 +9808,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -9785,7 +9817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -9812,7 +9844,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -9821,7 +9853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -9854,7 +9886,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -9868,7 +9900,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -9882,7 +9914,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -9898,7 +9930,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -9912,7 +9944,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -9921,7 +9953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -9948,7 +9980,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -9962,7 +9994,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -9971,7 +10003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -9998,7 +10030,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10007,13 +10039,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -10048,7 +10080,7 @@ Exec CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -10062,7 +10094,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -10076,7 +10108,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -10090,7 +10122,7 @@ HttpGet CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGe
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -10104,7 +10136,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -10118,7 +10150,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -10132,7 +10164,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -10146,7 +10178,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -10160,7 +10192,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -10169,7 +10201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -10196,7 +10228,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -10205,7 +10237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -10232,7 +10264,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10246,7 +10278,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -10255,7 +10287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -10288,7 +10320,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -10302,7 +10334,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -10316,7 +10348,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -10332,7 +10364,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10346,7 +10378,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -10355,7 +10387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -10382,7 +10414,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -10396,7 +10428,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -10405,7 +10437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -10432,7 +10464,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10441,7 +10473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort {
 	ContainerPort: *f64,
@@ -10476,7 +10508,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_port CronJobV1#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_port CronJobV1#container_port}
 
 ---
 
@@ -10490,7 +10522,7 @@ HostIp *string
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_ip CronJobV1#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_ip CronJobV1#host_ip}
 
 ---
 
@@ -10506,7 +10538,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_port CronJobV1#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_port CronJobV1#host_port}
 
 ---
 
@@ -10522,7 +10554,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -10536,7 +10568,7 @@ Protocol *string
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#protocol CronJobV1#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#protocol CronJobV1#protocol}
 
 ---
 
@@ -10545,13 +10577,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -10586,7 +10618,7 @@ Exec CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -10600,7 +10632,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -10614,7 +10646,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -10628,7 +10660,7 @@ HttpGet CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpG
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -10642,7 +10674,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -10656,7 +10688,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -10670,7 +10702,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -10684,7 +10716,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -10698,7 +10730,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -10707,7 +10739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -10734,7 +10766,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -10743,7 +10775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -10770,7 +10802,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10784,7 +10816,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -10793,7 +10825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -10826,7 +10858,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -10840,7 +10872,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -10854,7 +10886,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -10870,7 +10902,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10884,7 +10916,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -10893,7 +10925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -10920,7 +10952,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -10934,7 +10966,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -10943,7 +10975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -10970,7 +11002,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10979,7 +11011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources {
 	Limits: *map[string]*string,
@@ -11006,7 +11038,7 @@ Limits *map[string]*string
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
 
 ---
 
@@ -11022,7 +11054,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
 
 ---
 
@@ -11031,18 +11063,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -11074,7 +11106,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#allow_privilege_escalation CronJobV1#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#allow_privilege_escalation CronJobV1#allow_privilege_escalation}
 
 ---
 
@@ -11088,7 +11120,7 @@ Capabilities CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContex
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#capabilities CronJobV1#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#capabilities CronJobV1#capabilities}
 
 ---
 
@@ -11104,7 +11136,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#privileged CronJobV1#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#privileged CronJobV1#privileged}
 
 ---
 
@@ -11118,7 +11150,7 @@ ReadOnlyRootFilesystem interface{}
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only_root_filesystem CronJobV1#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only_root_filesystem CronJobV1#read_only_root_filesystem}
 
 ---
 
@@ -11134,7 +11166,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
 
 ---
 
@@ -11150,7 +11182,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
 
 ---
 
@@ -11166,7 +11198,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
 
 ---
 
@@ -11180,7 +11212,7 @@ SeccompProfile CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCont
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
 
 ---
 
@@ -11194,7 +11226,7 @@ SeLinuxOptions CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityCont
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
 
 ---
 
@@ -11203,7 +11235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -11230,7 +11262,7 @@ Add *[]*string
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#add CronJobV1#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#add CronJobV1#add}
 
 ---
 
@@ -11244,7 +11276,7 @@ Drop *[]*string
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#drop CronJobV1#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#drop CronJobV1#drop}
 
 ---
 
@@ -11253,7 +11285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -11282,7 +11314,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
 
 ---
 
@@ -11296,7 +11328,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -11305,7 +11337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -11336,7 +11368,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#level CronJobV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#level CronJobV1#level}
 
 ---
 
@@ -11350,7 +11382,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#role CronJobV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#role CronJobV1#role}
 
 ---
 
@@ -11364,7 +11396,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -11378,7 +11410,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#user CronJobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#user CronJobV1#user}
 
 ---
 
@@ -11387,13 +11419,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -11428,7 +11460,7 @@ Exec CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -11442,7 +11474,7 @@ FailureThreshold *f64
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -11456,7 +11488,7 @@ Grpc interface{}
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -11470,7 +11502,7 @@ HttpGet CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -11484,7 +11516,7 @@ InitialDelaySeconds *f64
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -11498,7 +11530,7 @@ PeriodSeconds *f64
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -11512,7 +11544,7 @@ SuccessThreshold *f64
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -11526,7 +11558,7 @@ TcpSocket interface{}
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -11540,7 +11572,7 @@ TimeoutSeconds *f64
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -11549,7 +11581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExec {
 	Command: *[]*string,
@@ -11576,7 +11608,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -11585,7 +11617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpc {
 	Port: *f64,
@@ -11612,7 +11644,7 @@ Port *f64
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -11626,7 +11658,7 @@ Service *string
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -11635,7 +11667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGet {
 	Host: *string,
@@ -11668,7 +11700,7 @@ Host *string
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -11682,7 +11714,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -11696,7 +11728,7 @@ Path *string
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -11712,7 +11744,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -11726,7 +11758,7 @@ Scheme *string
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -11735,7 +11767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -11762,7 +11794,7 @@ Name *string
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -11776,7 +11808,7 @@ Value *string
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -11785,7 +11817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -11812,7 +11844,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -11821,7 +11853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDevice {
 	DevicePath: *string,
@@ -11848,7 +11880,7 @@ DevicePath *string
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#device_path CronJobV1#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#device_path CronJobV1#device_path}
 
 ---
 
@@ -11862,7 +11894,7 @@ Name *string
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -11871,7 +11903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount {
 	MountPath: *string,
@@ -11906,7 +11938,7 @@ MountPath *string
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mount_path CronJobV1#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mount_path CronJobV1#mount_path}
 
 ---
 
@@ -11920,7 +11952,7 @@ Name *string
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -11936,7 +11968,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mount_propagation CronJobV1#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mount_propagation CronJobV1#mount_propagation}
 
 ---
 
@@ -11950,7 +11982,7 @@ ReadOnly interface{}
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -11964,7 +11996,7 @@ SubPath *string
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sub_path CronJobV1#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sub_path CronJobV1#sub_path}
 
 ---
 
@@ -11978,7 +12010,7 @@ SubPathExpr *string
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sub_path_expr CronJobV1#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sub_path_expr CronJobV1#sub_path_expr}
 
 ---
 
@@ -11987,7 +12019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecOs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecOs {
 	Name: *string,
@@ -12012,7 +12044,7 @@ Name *string
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -12021,7 +12053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate {
 	ConditionType: *string,
@@ -12046,7 +12078,7 @@ ConditionType *string
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#condition_type CronJobV1#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#condition_type CronJobV1#condition_type}
 
 ---
 
@@ -12055,7 +12087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext {
 	FsGroup: *string,
@@ -12063,11 +12095,11 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptions,
 	SupplementalGroups: *[]*f64,
 	Sysctl: interface{},
-	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptions,
+	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptions,
 }
 ```
 
@@ -12100,7 +12132,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_group CronJobV1#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_group CronJobV1#fs_group}
 
 ---
 
@@ -12116,7 +12148,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_group_change_policy CronJobV1#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_group_change_policy CronJobV1#fs_group_change_policy}
 
 ---
 
@@ -12132,7 +12164,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
 
 ---
 
@@ -12148,7 +12180,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
 
 ---
 
@@ -12164,7 +12196,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
 
 ---
 
@@ -12178,7 +12210,7 @@ SeccompProfile CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompPro
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
 
 ---
 
@@ -12192,7 +12224,7 @@ SeLinuxOptions CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOpt
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
 
 ---
 
@@ -12208,7 +12240,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#supplemental_groups CronJobV1#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#supplemental_groups CronJobV1#supplemental_groups}
 
 ---
 
@@ -12222,7 +12254,7 @@ Sysctl interface{}
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sysctl CronJobV1#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sysctl CronJobV1#sysctl}
 
 ---
 
@@ -12236,7 +12268,7 @@ WindowsOptions CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOpt
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#windows_options CronJobV1#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#windows_options CronJobV1#windows_options}
 
 ---
 
@@ -12245,7 +12277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -12274,7 +12306,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
 
 ---
 
@@ -12288,7 +12320,7 @@ Type *string
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -12297,7 +12329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -12328,7 +12360,7 @@ Level *string
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#level CronJobV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#level CronJobV1#level}
 
 ---
 
@@ -12342,7 +12374,7 @@ Role *string
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#role CronJobV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#role CronJobV1#role}
 
 ---
 
@@ -12356,7 +12388,7 @@ Type *string
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -12370,7 +12402,7 @@ User *string
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#user CronJobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#user CronJobV1#user}
 
 ---
 
@@ -12379,7 +12411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl {
 	Name: *string,
@@ -12406,7 +12438,7 @@ Name *string
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -12420,7 +12452,7 @@ Value *string
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -12429,7 +12461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptions {
 	GmsaCredentialSpec: *string,
@@ -12460,7 +12492,7 @@ GmsaCredentialSpec *string
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#gmsa_credential_spec CronJobV1#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#gmsa_credential_spec CronJobV1#gmsa_credential_spec}
 
 ---
 
@@ -12474,7 +12506,7 @@ GmsaCredentialSpecName *string
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#gmsa_credential_spec_name CronJobV1#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#gmsa_credential_spec_name CronJobV1#gmsa_credential_spec_name}
 
 ---
 
@@ -12488,7 +12520,7 @@ HostProcess interface{}
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_process CronJobV1#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_process CronJobV1#host_process}
 
 ---
 
@@ -12504,7 +12536,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_username CronJobV1#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_username CronJobV1#run_as_username}
 
 ---
 
@@ -12513,7 +12545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecToleration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecToleration {
 	Effect: *string,
@@ -12548,7 +12580,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#effect CronJobV1#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#effect CronJobV1#effect}
 
 ---
 
@@ -12564,7 +12596,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -12580,7 +12612,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -12596,7 +12628,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#toleration_seconds CronJobV1#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#toleration_seconds CronJobV1#toleration_seconds}
 
 ---
 
@@ -12612,7 +12644,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -12621,7 +12653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint {
 	LabelSelector: interface{},
@@ -12660,7 +12692,7 @@ LabelSelector interface{}
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
 
 ---
 
@@ -12674,7 +12706,7 @@ MatchLabelKeys *[]*string
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_label_keys CronJobV1#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_label_keys CronJobV1#match_label_keys}
 
 ---
 
@@ -12688,7 +12720,7 @@ MaxSkew *f64
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#max_skew CronJobV1#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#max_skew CronJobV1#max_skew}
 
 ---
 
@@ -12702,7 +12734,7 @@ MinDomains *f64
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#min_domains CronJobV1#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#min_domains CronJobV1#min_domains}
 
 ---
 
@@ -12716,7 +12748,7 @@ NodeAffinityPolicy *string
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_affinity_policy CronJobV1#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_affinity_policy CronJobV1#node_affinity_policy}
 
 ---
 
@@ -12730,7 +12762,7 @@ NodeTaintsPolicy *string
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_taints_policy CronJobV1#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_taints_policy CronJobV1#node_taints_policy}
 
 ---
 
@@ -12746,7 +12778,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
 
 ---
 
@@ -12760,7 +12792,7 @@ WhenUnsatisfiable *string
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#when_unsatisfiable CronJobV1#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#when_unsatisfiable CronJobV1#when_unsatisfiable}
 
 ---
 
@@ -12769,7 +12801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector {
 	MatchExpressions: interface{},
@@ -12796,7 +12828,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -12812,7 +12844,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -12821,7 +12853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions {
 	Key: *string,
@@ -12850,7 +12882,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -12864,7 +12896,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -12880,7 +12912,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -12889,37 +12921,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolume {
-	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore,
-	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk,
-	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile,
-	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs,
-	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder,
-	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap,
-	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi,
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi,
-	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir,
-	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeral,
-	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc,
-	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume,
-	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker,
-	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDisk,
-	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo,
-	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs,
-	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath,
-	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi,
-	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal,
+	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore,
+	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk,
+	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile,
+	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs,
+	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder,
+	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap,
+	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi,
+	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir,
+	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeral,
+	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc,
+	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume,
+	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker,
+	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDisk,
+	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo,
+	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs,
+	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath,
+	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi,
+	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal,
 	Name: *string,
-	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs,
-	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaim,
-	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDisk,
+	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs,
+	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaim,
+	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDisk,
 	Projected: interface{},
-	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte,
-	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd,
-	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret,
-	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume,
+	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte,
+	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd,
+	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret,
+	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume,
 }
 ```
 
@@ -12968,7 +13000,7 @@ AwsElasticBlockStore CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlo
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#aws_elastic_block_store CronJobV1#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#aws_elastic_block_store CronJobV1#aws_elastic_block_store}
 
 ---
 
@@ -12982,7 +13014,7 @@ AzureDisk CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#azure_disk CronJobV1#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#azure_disk CronJobV1#azure_disk}
 
 ---
 
@@ -12996,7 +13028,7 @@ AzureFile CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#azure_file CronJobV1#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#azure_file CronJobV1#azure_file}
 
 ---
 
@@ -13010,7 +13042,7 @@ CephFs CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#ceph_fs CronJobV1#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#ceph_fs CronJobV1#ceph_fs}
 
 ---
 
@@ -13024,7 +13056,7 @@ Cinder CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#cinder CronJobV1#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#cinder CronJobV1#cinder}
 
 ---
 
@@ -13038,7 +13070,7 @@ ConfigMap CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map CronJobV1#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map CronJobV1#config_map}
 
 ---
 
@@ -13052,7 +13084,7 @@ Csi CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#csi CronJobV1#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#csi CronJobV1#csi}
 
 ---
 
@@ -13066,7 +13098,7 @@ DownwardApi CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#downward_api CronJobV1#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#downward_api CronJobV1#downward_api}
 
 ---
 
@@ -13080,7 +13112,7 @@ EmptyDir CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#empty_dir CronJobV1#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#empty_dir CronJobV1#empty_dir}
 
 ---
 
@@ -13094,7 +13126,7 @@ Ephemeral CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeral
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#ephemeral CronJobV1#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#ephemeral CronJobV1#ephemeral}
 
 ---
 
@@ -13108,7 +13140,7 @@ Fc CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fc CronJobV1#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fc CronJobV1#fc}
 
 ---
 
@@ -13122,7 +13154,7 @@ FlexVolume CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#flex_volume CronJobV1#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#flex_volume CronJobV1#flex_volume}
 
 ---
 
@@ -13136,7 +13168,7 @@ Flocker CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#flocker CronJobV1#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#flocker CronJobV1#flocker}
 
 ---
 
@@ -13150,7 +13182,7 @@ GcePersistentDisk CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDis
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#gce_persistent_disk CronJobV1#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#gce_persistent_disk CronJobV1#gce_persistent_disk}
 
 ---
 
@@ -13164,7 +13196,7 @@ GitRepo CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#git_repo CronJobV1#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#git_repo CronJobV1#git_repo}
 
 ---
 
@@ -13178,7 +13210,7 @@ Glusterfs CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#glusterfs CronJobV1#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#glusterfs CronJobV1#glusterfs}
 
 ---
 
@@ -13192,7 +13224,7 @@ HostPath CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_path CronJobV1#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_path CronJobV1#host_path}
 
 ---
 
@@ -13206,7 +13238,7 @@ Iscsi CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#iscsi CronJobV1#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#iscsi CronJobV1#iscsi}
 
 ---
 
@@ -13220,7 +13252,7 @@ Local CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#local CronJobV1#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#local CronJobV1#local}
 
 ---
 
@@ -13234,7 +13266,7 @@ Name *string
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -13248,7 +13280,7 @@ Nfs CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#nfs CronJobV1#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#nfs CronJobV1#nfs}
 
 ---
 
@@ -13262,7 +13294,7 @@ PersistentVolumeClaim CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVo
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#persistent_volume_claim CronJobV1#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#persistent_volume_claim CronJobV1#persistent_volume_claim}
 
 ---
 
@@ -13276,7 +13308,7 @@ PhotonPersistentDisk CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersist
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#photon_persistent_disk CronJobV1#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#photon_persistent_disk CronJobV1#photon_persistent_disk}
 
 ---
 
@@ -13290,7 +13322,7 @@ Projected interface{}
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#projected CronJobV1#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#projected CronJobV1#projected}
 
 ---
 
@@ -13304,7 +13336,7 @@ Quobyte CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#quobyte CronJobV1#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#quobyte CronJobV1#quobyte}
 
 ---
 
@@ -13318,7 +13350,7 @@ Rbd CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#rbd CronJobV1#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#rbd CronJobV1#rbd}
 
 ---
 
@@ -13332,7 +13364,7 @@ Secret CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret CronJobV1#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret CronJobV1#secret}
 
 ---
 
@@ -13346,7 +13378,7 @@ VsphereVolume CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#vsphere_volume CronJobV1#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#vsphere_volume CronJobV1#vsphere_volume}
 
 ---
 
@@ -13355,7 +13387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore {
 	VolumeId: *string,
@@ -13386,7 +13418,7 @@ VolumeId *string
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_id CronJobV1#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_id CronJobV1#volume_id}
 
 ---
 
@@ -13402,7 +13434,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -13418,7 +13450,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#partition CronJobV1#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#partition CronJobV1#partition}
 
 ---
 
@@ -13432,7 +13464,7 @@ ReadOnly interface{}
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -13441,7 +13473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk {
 	CachingMode: *string,
@@ -13476,7 +13508,7 @@ CachingMode *string
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#caching_mode CronJobV1#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#caching_mode CronJobV1#caching_mode}
 
 ---
 
@@ -13490,7 +13522,7 @@ DataDiskUri *string
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#data_disk_uri CronJobV1#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#data_disk_uri CronJobV1#data_disk_uri}
 
 ---
 
@@ -13504,7 +13536,7 @@ DiskName *string
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#disk_name CronJobV1#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#disk_name CronJobV1#disk_name}
 
 ---
 
@@ -13520,7 +13552,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -13534,7 +13566,7 @@ Kind *string
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#kind CronJobV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#kind CronJobV1#kind}
 
 ---
 
@@ -13548,7 +13580,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -13557,7 +13589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile {
 	SecretName: *string,
@@ -13588,7 +13620,7 @@ SecretName *string
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_name CronJobV1#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_name CronJobV1#secret_name}
 
 ---
 
@@ -13602,7 +13634,7 @@ ShareName *string
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#share_name CronJobV1#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#share_name CronJobV1#share_name}
 
 ---
 
@@ -13616,7 +13648,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -13632,7 +13664,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_namespace CronJobV1#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_namespace CronJobV1#secret_namespace}
 
 ---
 
@@ -13641,14 +13673,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs {
 	Monitors: *[]*string,
 	Path: *string,
 	ReadOnly: interface{},
 	SecretFile: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef,
 	User: *string,
 }
 ```
@@ -13676,7 +13708,7 @@ Monitors *[]*string
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#monitors CronJobV1#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#monitors CronJobV1#monitors}
 
 ---
 
@@ -13690,7 +13722,7 @@ Path *string
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -13704,7 +13736,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -13718,7 +13750,7 @@ SecretFile *string
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_file CronJobV1#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_file CronJobV1#secret_file}
 
 ---
 
@@ -13732,7 +13764,7 @@ SecretRef CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
 
 ---
 
@@ -13746,7 +13778,7 @@ User *string
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#user CronJobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#user CronJobV1#user}
 
 ---
 
@@ -13755,7 +13787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef {
 	Name: *string,
@@ -13782,7 +13814,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -13796,7 +13828,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
 
 ---
 
@@ -13805,7 +13837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder {
 	VolumeId: *string,
@@ -13834,7 +13866,7 @@ VolumeId *string
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_id CronJobV1#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_id CronJobV1#volume_id}
 
 ---
 
@@ -13850,7 +13882,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -13864,7 +13896,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -13873,7 +13905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap {
 	DefaultMode: *string,
@@ -13906,7 +13938,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
 
 ---
 
@@ -13920,7 +13952,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -13934,7 +13966,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -13948,7 +13980,7 @@ Optional interface{}
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -13957,7 +13989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems {
 	Key: *string,
@@ -13986,7 +14018,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -14002,7 +14034,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -14018,7 +14050,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -14027,12 +14059,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi {
 	Driver: *string,
 	FsType: *string,
-	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRef,
+	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRef,
 	ReadOnly: interface{},
 	VolumeAttributes: *map[string]*string,
 }
@@ -14060,7 +14092,7 @@ Driver *string
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#driver CronJobV1#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#driver CronJobV1#driver}
 
 ---
 
@@ -14076,7 +14108,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -14090,7 +14122,7 @@ NodePublishSecretRef CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublis
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_publish_secret_ref CronJobV1#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_publish_secret_ref CronJobV1#node_publish_secret_ref}
 
 ---
 
@@ -14104,7 +14136,7 @@ ReadOnly interface{}
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -14118,7 +14150,7 @@ VolumeAttributes *map[string]*string
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_attributes CronJobV1#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_attributes CronJobV1#volume_attributes}
 
 ---
 
@@ -14127,7 +14159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRef {
 	Name: *string,
@@ -14152,7 +14184,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -14161,7 +14193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi {
 	DefaultMode: *string,
@@ -14190,7 +14222,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
 
 ---
 
@@ -14204,7 +14236,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -14213,13 +14245,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems {
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRef,
 	Path: *string,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -14244,7 +14276,7 @@ FieldRef CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
 
 ---
 
@@ -14260,7 +14292,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -14276,7 +14308,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -14290,7 +14322,7 @@ ResourceFieldRef CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsR
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
 
 ---
 
@@ -14299,7 +14331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -14326,7 +14358,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
 
 ---
 
@@ -14340,7 +14372,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
 
 ---
 
@@ -14349,7 +14381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -14362,9 +14394,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
 
 ---
 
@@ -14376,7 +14408,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
 
 ---
 
@@ -14390,7 +14422,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
 
 ---
 
@@ -14402,7 +14434,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
 
 ---
 
@@ -14411,7 +14443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir {
 	Medium: *string,
@@ -14440,7 +14472,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#medium CronJobV1#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#medium CronJobV1#medium}
 
 ---
 
@@ -14454,7 +14486,7 @@ SizeLimit *string
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#size_limit CronJobV1#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#size_limit CronJobV1#size_limit}
 
 ---
 
@@ -14463,10 +14495,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeral.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeral {
-	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
+	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate,
 }
 ```
 
@@ -14488,7 +14520,7 @@ VolumeClaimTemplate CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolum
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_claim_template CronJobV1#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_claim_template CronJobV1#volume_claim_template}
 
 ---
 
@@ -14497,11 +14529,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate {
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata,
 }
 ```
 
@@ -14524,7 +14556,7 @@ Spec CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateS
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
 
 ---
 
@@ -14538,7 +14570,7 @@ Metadata CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTempl
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
 
 ---
 
@@ -14547,7 +14579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -14576,7 +14608,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
 
 ---
 
@@ -14592,7 +14624,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
 
 ---
 
@@ -14601,12 +14633,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec {
 	AccessModes: *[]*string,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
 	StorageClassName: *string,
 	VolumeMode: *string,
 	VolumeName: *string,
@@ -14636,7 +14668,7 @@ AccessModes *[]*string
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#access_modes CronJobV1#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#access_modes CronJobV1#access_modes}
 
 ---
 
@@ -14650,7 +14682,7 @@ Resources CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemp
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
 
 ---
 
@@ -14664,7 +14696,7 @@ Selector CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTempl
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#selector CronJobV1#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#selector CronJobV1#selector}
 
 ---
 
@@ -14678,7 +14710,7 @@ StorageClassName *string
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#storage_class_name CronJobV1#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#storage_class_name CronJobV1#storage_class_name}
 
 ---
 
@@ -14692,7 +14724,7 @@ VolumeMode *string
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_mode CronJobV1#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_mode CronJobV1#volume_mode}
 
 ---
 
@@ -14706,7 +14738,7 @@ VolumeName *string
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_name CronJobV1#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_name CronJobV1#volume_name}
 
 ---
 
@@ -14715,7 +14747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources {
 	Limits: *map[string]*string,
@@ -14742,7 +14774,7 @@ Limits *map[string]*string
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
 
 ---
 
@@ -14758,7 +14790,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
 
 ---
 
@@ -14767,7 +14799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector {
 	MatchExpressions: interface{},
@@ -14794,7 +14826,7 @@ MatchExpressions interface{}
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -14810,7 +14842,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -14819,7 +14851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions {
 	Key: *string,
@@ -14848,7 +14880,7 @@ Key *string
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -14862,7 +14894,7 @@ Operator *string
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -14878,7 +14910,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -14887,7 +14919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc {
 	Lun: *f64,
@@ -14918,7 +14950,7 @@ Lun *f64
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#lun CronJobV1#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#lun CronJobV1#lun}
 
 ---
 
@@ -14932,7 +14964,7 @@ TargetWwNs *[]*string
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#target_ww_ns CronJobV1#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#target_ww_ns CronJobV1#target_ww_ns}
 
 ---
 
@@ -14948,7 +14980,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -14962,7 +14994,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -14971,14 +15003,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume {
 	Driver: *string,
 	FsType: *string,
 	Options: *map[string]*string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef,
 }
 ```
 
@@ -15004,7 +15036,7 @@ Driver *string
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#driver CronJobV1#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#driver CronJobV1#driver}
 
 ---
 
@@ -15020,7 +15052,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -15034,7 +15066,7 @@ Options *map[string]*string
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#options CronJobV1#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#options CronJobV1#options}
 
 ---
 
@@ -15048,7 +15080,7 @@ ReadOnly interface{}
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -15062,7 +15094,7 @@ SecretRef CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
 
 ---
 
@@ -15071,7 +15103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef {
 	Name: *string,
@@ -15098,7 +15130,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -15112,7 +15144,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
 
 ---
 
@@ -15121,7 +15153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker {
 	DatasetName: *string,
@@ -15148,7 +15180,7 @@ DatasetName *string
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#dataset_name CronJobV1#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#dataset_name CronJobV1#dataset_name}
 
 ---
 
@@ -15162,7 +15194,7 @@ DatasetUuid *string
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#dataset_uuid CronJobV1#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#dataset_uuid CronJobV1#dataset_uuid}
 
 ---
 
@@ -15171,7 +15203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDisk {
 	PdName: *string,
@@ -15202,7 +15234,7 @@ PdName *string
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pd_name CronJobV1#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pd_name CronJobV1#pd_name}
 
 ---
 
@@ -15218,7 +15250,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -15234,7 +15266,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#partition CronJobV1#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#partition CronJobV1#partition}
 
 ---
 
@@ -15248,7 +15280,7 @@ ReadOnly interface{}
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -15257,7 +15289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo {
 	Directory: *string,
@@ -15288,7 +15320,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#directory CronJobV1#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#directory CronJobV1#directory}
 
 ---
 
@@ -15302,7 +15334,7 @@ Repository *string
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#repository CronJobV1#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#repository CronJobV1#repository}
 
 ---
 
@@ -15316,7 +15348,7 @@ Revision *string
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#revision CronJobV1#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#revision CronJobV1#revision}
 
 ---
 
@@ -15325,7 +15357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs {
 	EndpointsName: *string,
@@ -15354,7 +15386,7 @@ EndpointsName *string
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#endpoints_name CronJobV1#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#endpoints_name CronJobV1#endpoints_name}
 
 ---
 
@@ -15368,7 +15400,7 @@ Path *string
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -15382,7 +15414,7 @@ ReadOnly interface{}
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -15391,7 +15423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath {
 	Path: *string,
@@ -15418,7 +15450,7 @@ Path *string
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -15432,7 +15464,7 @@ Type *string
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -15441,7 +15473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi {
 	Iqn: *string,
@@ -15476,7 +15508,7 @@ Iqn *string
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#iqn CronJobV1#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#iqn CronJobV1#iqn}
 
 ---
 
@@ -15492,7 +15524,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#target_portal CronJobV1#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#target_portal CronJobV1#target_portal}
 
 ---
 
@@ -15508,7 +15540,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -15522,7 +15554,7 @@ IscsiInterface *string
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#iscsi_interface CronJobV1#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#iscsi_interface CronJobV1#iscsi_interface}
 
 ---
 
@@ -15536,7 +15568,7 @@ Lun *f64
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#lun CronJobV1#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#lun CronJobV1#lun}
 
 ---
 
@@ -15550,7 +15582,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -15559,7 +15591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal {
 	Path: *string,
@@ -15584,7 +15616,7 @@ Path *string
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -15593,7 +15625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs {
 	Path: *string,
@@ -15622,7 +15654,7 @@ Path *string
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -15636,7 +15668,7 @@ Server *string
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#server CronJobV1#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#server CronJobV1#server}
 
 ---
 
@@ -15650,7 +15682,7 @@ ReadOnly interface{}
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -15659,7 +15691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaim {
 	ClaimName: *string,
@@ -15686,7 +15718,7 @@ ClaimName *string
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#claim_name CronJobV1#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#claim_name CronJobV1#claim_name}
 
 ---
 
@@ -15700,7 +15732,7 @@ ReadOnly interface{}
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -15709,7 +15741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDisk {
 	PdId: *string,
@@ -15736,7 +15768,7 @@ PdId *string
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pd_id CronJobV1#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pd_id CronJobV1#pd_id}
 
 ---
 
@@ -15752,7 +15784,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -15761,7 +15793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected {
 	Sources: interface{},
@@ -15788,7 +15820,7 @@ Sources interface{}
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sources CronJobV1#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sources CronJobV1#sources}
 
 ---
 
@@ -15804,7 +15836,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
 
 ---
 
@@ -15813,13 +15845,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources {
 	ConfigMap: interface{},
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApi,
 	Secret: interface{},
-	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
+	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken,
 }
 ```
 
@@ -15844,7 +15876,7 @@ ConfigMap interface{}
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map CronJobV1#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map CronJobV1#config_map}
 
 ---
 
@@ -15858,7 +15890,7 @@ DownwardApi CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwa
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#downward_api CronJobV1#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#downward_api CronJobV1#downward_api}
 
 ---
 
@@ -15872,7 +15904,7 @@ Secret interface{}
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret CronJobV1#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret CronJobV1#secret}
 
 ---
 
@@ -15886,7 +15918,7 @@ ServiceAccountToken CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourc
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service_account_token CronJobV1#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service_account_token CronJobV1#service_account_token}
 
 ---
 
@@ -15895,7 +15927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap {
 	Items: interface{},
@@ -15924,7 +15956,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -15938,7 +15970,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -15952,7 +15984,7 @@ Optional interface{}
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -15961,7 +15993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems {
 	Key: *string,
@@ -15990,7 +16022,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -16006,7 +16038,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -16022,7 +16054,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -16031,7 +16063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApi {
 	Items: interface{},
@@ -16056,7 +16088,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -16065,13 +16097,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems {
 	Path: *string,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -16098,7 +16130,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -16112,7 +16144,7 @@ FieldRef CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardA
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
 
 ---
 
@@ -16128,7 +16160,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -16142,7 +16174,7 @@ ResourceFieldRef CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesD
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
 
 ---
 
@@ -16151,7 +16183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -16178,7 +16210,7 @@ ApiVersion *string
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
 
 ---
 
@@ -16192,7 +16224,7 @@ FieldPath *string
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
 
 ---
 
@@ -16201,7 +16233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -16214,9 +16246,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">Resource</a></code> | <code>*string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
 
 ---
 
@@ -16228,7 +16260,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
 
 ---
 
@@ -16242,7 +16274,7 @@ Resource *string
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
 
 ---
 
@@ -16254,7 +16286,7 @@ Divisor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
 
 ---
 
@@ -16263,7 +16295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret {
 	Items: interface{},
@@ -16292,7 +16324,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -16306,7 +16338,7 @@ Name *string
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -16320,7 +16352,7 @@ Optional interface{}
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -16329,7 +16361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems {
 	Key: *string,
@@ -16358,7 +16390,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -16374,7 +16406,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -16390,7 +16422,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -16399,7 +16431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken {
 	Path: *string,
@@ -16428,7 +16460,7 @@ Path *string
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -16442,7 +16474,7 @@ Audience *string
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#audience CronJobV1#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#audience CronJobV1#audience}
 
 ---
 
@@ -16458,7 +16490,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#expiration_seconds CronJobV1#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#expiration_seconds CronJobV1#expiration_seconds}
 
 ---
 
@@ -16467,7 +16499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte {
 	Registry: *string,
@@ -16500,7 +16532,7 @@ Registry *string
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#registry CronJobV1#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#registry CronJobV1#registry}
 
 ---
 
@@ -16514,7 +16546,7 @@ Volume *string
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume CronJobV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume CronJobV1#volume}
 
 ---
 
@@ -16528,7 +16560,7 @@ Group *string
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#group CronJobV1#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#group CronJobV1#group}
 
 ---
 
@@ -16542,7 +16574,7 @@ ReadOnly interface{}
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -16556,7 +16588,7 @@ User *string
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#user CronJobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#user CronJobV1#user}
 
 ---
 
@@ -16565,7 +16597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd {
 	CephMonitors: *[]*string,
@@ -16575,7 +16607,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 	RadosUser: *string,
 	RbdPool: *string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef,
 }
 ```
 
@@ -16604,7 +16636,7 @@ CephMonitors *[]*string
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#ceph_monitors CronJobV1#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#ceph_monitors CronJobV1#ceph_monitors}
 
 ---
 
@@ -16618,7 +16650,7 @@ RbdImage *string
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#rbd_image CronJobV1#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#rbd_image CronJobV1#rbd_image}
 
 ---
 
@@ -16634,7 +16666,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -16648,7 +16680,7 @@ Keyring *string
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#keyring CronJobV1#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#keyring CronJobV1#keyring}
 
 ---
 
@@ -16662,7 +16694,7 @@ RadosUser *string
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#rados_user CronJobV1#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#rados_user CronJobV1#rados_user}
 
 ---
 
@@ -16676,7 +16708,7 @@ RbdPool *string
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#rbd_pool CronJobV1#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#rbd_pool CronJobV1#rbd_pool}
 
 ---
 
@@ -16690,7 +16722,7 @@ ReadOnly interface{}
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -16704,7 +16736,7 @@ SecretRef CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
 
 ---
 
@@ -16713,7 +16745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef {
 	Name: *string,
@@ -16740,7 +16772,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -16754,7 +16786,7 @@ Namespace *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
 
 ---
 
@@ -16763,7 +16795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret {
 	DefaultMode: *string,
@@ -16796,7 +16828,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
 
 ---
 
@@ -16810,7 +16842,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -16824,7 +16856,7 @@ Optional interface{}
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -16838,7 +16870,7 @@ SecretName *string
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_name CronJobV1#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_name CronJobV1#secret_name}
 
 ---
 
@@ -16847,7 +16879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems {
 	Key: *string,
@@ -16876,7 +16908,7 @@ Key *string
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -16892,7 +16924,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -16908,7 +16940,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -16917,7 +16949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume {
 	VolumePath: *string,
@@ -16944,7 +16976,7 @@ VolumePath *string
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_path CronJobV1#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_path CronJobV1#volume_path}
 
 ---
 
@@ -16960,7 +16992,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -16969,7 +17001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 &cronjobv1.CronJobV1Timeouts {
 	Delete: *string,
@@ -16980,7 +17012,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#delete CronJobV1#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#delete CronJobV1#delete}. |
 
 ---
 
@@ -16992,7 +17024,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#delete CronJobV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#delete CronJobV1#delete}.
 
 ---
 
@@ -17003,7 +17035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1MetadataOutputReference
 ```
@@ -17430,7 +17462,7 @@ func InternalValue() CronJobV1Metadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateMetadataOutputReference
 ```
@@ -17857,7 +17889,7 @@ func InternalValue() CronJobV1SpecJobTemplateMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateOutputReference
 ```
@@ -18176,7 +18208,7 @@ func InternalValue() CronJobV1SpecJobTemplate
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecOutputReference
 ```
@@ -18805,7 +18837,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecPodFailurePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecPodFailurePolicyOutputReference
 ```
@@ -19089,7 +19121,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecPodFailurePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecPodFailurePolicyRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleList
 ```
@@ -19249,7 +19281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodesOutputReference
 ```
@@ -19578,7 +19610,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodConditionList
 ```
@@ -19738,7 +19770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodConditionOutputReference
 ```
@@ -20063,7 +20095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOutputReference
 ```
@@ -20443,7 +20475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecSelectorMatchExpressionsList
 ```
@@ -20603,7 +20635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecSelectorMatchExpressionsOutputReference
 ```
@@ -20957,7 +20989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecSelectorOutputReference
 ```
@@ -21277,7 +21309,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference
 ```
@@ -21675,7 +21707,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateOutputReference
 ```
@@ -22001,7 +22033,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplate
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutputReference
 ```
@@ -22334,7 +22366,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinit
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -22494,7 +22526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -22818,7 +22850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList
 ```
@@ -22978,7 +23010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference
 ```
@@ -23332,7 +23364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList
 ```
@@ -23492,7 +23524,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference
 ```
@@ -23832,7 +23864,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference
 ```
@@ -24165,7 +24197,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinit
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList
 ```
@@ -24325,7 +24357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList
 ```
@@ -24485,7 +24517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference
 ```
@@ -24839,7 +24871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
 ```
@@ -24999,7 +25031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference
 ```
@@ -25339,7 +25371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference
 ```
@@ -25690,7 +25722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -25981,7 +26013,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinit
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityOutputReference
 ```
@@ -26356,7 +26388,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityOutputReference
 ```
@@ -26689,7 +26721,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -26849,7 +26881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -27173,7 +27205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -27333,7 +27365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -27493,7 +27525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -27847,7 +27879,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -28185,7 +28217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -28345,7 +28377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -28505,7 +28537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -28859,7 +28891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -29197,7 +29229,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -29581,7 +29613,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -29741,7 +29773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -29901,7 +29933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -30255,7 +30287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -30593,7 +30625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -30753,7 +30785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -30913,7 +30945,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -31073,7 +31105,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -31427,7 +31459,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -31765,7 +31797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -32167,7 +32199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityOutputReference
 ```
@@ -32500,7 +32532,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -32660,7 +32692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -32984,7 +33016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -33144,7 +33176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -33304,7 +33336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -33658,7 +33690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -33996,7 +34028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -34156,7 +34188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -34316,7 +34348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -34670,7 +34702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -35008,7 +35040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -35392,7 +35424,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -35552,7 +35584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -35712,7 +35744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -36066,7 +36098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -36404,7 +36436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -36564,7 +36596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -36724,7 +36756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -36884,7 +36916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -37238,7 +37270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -37576,7 +37608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -37978,7 +38010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference
 ```
@@ -38278,7 +38310,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromList
 ```
@@ -38438,7 +38470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromOutputReference
 ```
@@ -38818,7 +38850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRefOutputReference
 ```
@@ -39118,7 +39150,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvList
 ```
@@ -39278,7 +39310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvOutputReference
 ```
@@ -39638,7 +39670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -39974,7 +40006,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference
 ```
@@ -40281,7 +40313,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromOutputReference
 ```
@@ -40698,7 +40730,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -41027,7 +41059,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -41363,7 +41395,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleOutputReference
 ```
@@ -41696,7 +41728,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExecOutputReference
 ```
@@ -41974,7 +42006,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -42134,7 +42166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -42459,7 +42491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -42866,7 +42898,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartList
 ```
@@ -43026,7 +43058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartOutputReference
 ```
@@ -43419,7 +43451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketList
 ```
@@ -43579,7 +43611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -43868,7 +43900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExecOutputReference
 ```
@@ -44146,7 +44178,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -44306,7 +44338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -44631,7 +44663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -45038,7 +45070,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList
 ```
@@ -45198,7 +45230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopOutputReference
 ```
@@ -45591,7 +45623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketList
 ```
@@ -45751,7 +45783,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -46040,7 +46072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerList
 ```
@@ -46200,7 +46232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExecOutputReference
 ```
@@ -46478,7 +46510,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeGrpcList
 ```
@@ -46638,7 +46670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeGrpcOutputReference
 ```
@@ -46956,7 +46988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -47116,7 +47148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -47441,7 +47473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference
 ```
@@ -47848,7 +47880,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeOutputReference
 ```
@@ -48410,7 +48442,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessPr
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList
 ```
@@ -48570,7 +48602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -48859,7 +48891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference
 ```
@@ -48944,6 +48976,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetReadinessProbe">ResetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetRestartPolicy">ResetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetSecurityContext">ResetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetStartupProbe">ResetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetStdin">ResetStdin</a></code> | *No description.* |
@@ -49305,6 +49338,12 @@ func ResetReadinessProbe()
 func ResetResources()
 ```
 
+##### `ResetRestartPolicy` <a name="ResetRestartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetRestartPolicy"></a>
+
+```go
+func ResetRestartPolicy()
+```
+
 ##### `ResetSecurityContext` <a name="ResetSecurityContext" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetSecurityContext"></a>
 
 ```go
@@ -49395,6 +49434,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.portInput">PortInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.readinessProbeInput">ReadinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe">CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources">CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.restartPolicyInput">RestartPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.securityContextInput">SecurityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext">CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.startupProbeInput">StartupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe">CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.stdinInput">StdinInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -49410,6 +49450,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.image">Image</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.imagePullPolicy">ImagePullPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.stdin">Stdin</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.stdinOnce">StdinOnce</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.terminationMessagePath">TerminationMessagePath</a></code> | <code>*string</code> | *No description.* |
@@ -49674,6 +49715,16 @@ func ResourcesInput() CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources
 
 ---
 
+##### `RestartPolicyInput`<sup>Optional</sup> <a name="RestartPolicyInput" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.restartPolicyInput"></a>
+
+```go
+func RestartPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SecurityContextInput`<sup>Optional</sup> <a name="SecurityContextInput" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.securityContextInput"></a>
 
 ```go
@@ -49824,6 +49875,16 @@ func Name() *string
 
 ---
 
+##### `RestartPolicy`<sup>Required</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.restartPolicy"></a>
+
+```go
+func RestartPolicy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Stdin`<sup>Required</sup> <a name="Stdin" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.stdin"></a>
 
 ```go
@@ -49900,7 +49961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortList
 ```
@@ -50060,7 +50121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortOutputReference
 ```
@@ -50465,7 +50526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExecOutputReference
 ```
@@ -50743,7 +50804,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeGrpcList
 ```
@@ -50903,7 +50964,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeGrpcOutputReference
 ```
@@ -51221,7 +51282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -51381,7 +51442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -51706,7 +51767,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference
 ```
@@ -52113,7 +52174,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference
 ```
@@ -52675,7 +52736,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessP
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketList
 ```
@@ -52835,7 +52896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -53124,7 +53185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerResourcesOutputReference
 ```
@@ -53431,7 +53492,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -53738,7 +53799,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextOutputReference
 ```
@@ -54287,7 +54348,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -54594,7 +54655,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -54959,7 +55020,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExecOutputReference
 ```
@@ -55237,7 +55298,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupPro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeGrpcList
 ```
@@ -55397,7 +55458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeGrpcOutputReference
 ```
@@ -55715,7 +55776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -55875,7 +55936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -56200,7 +56261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference
 ```
@@ -56607,7 +56668,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupPro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeOutputReference
 ```
@@ -57169,7 +57230,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupPro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketList
 ```
@@ -57329,7 +57390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference
 ```
@@ -57618,7 +57679,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeDeviceList
 ```
@@ -57778,7 +57839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeDeviceOutputReference
 ```
@@ -58089,7 +58150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountList
 ```
@@ -58249,7 +58310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountOutputReference
 ```
@@ -58676,7 +58737,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionList
 ```
@@ -58836,7 +58897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference
 ```
@@ -59154,7 +59215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOutputReference
 ```
@@ -59503,7 +59564,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesList
 ```
@@ -59663,7 +59724,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesOutputReference
 ```
@@ -59974,7 +60035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsList
 ```
@@ -60134,7 +60195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsOutputReference
 ```
@@ -60423,7 +60484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference
 ```
@@ -60723,7 +60784,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromList
 ```
@@ -60883,7 +60944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromOutputReference
 ```
@@ -61263,7 +61324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference
 ```
@@ -61563,7 +61624,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFro
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvList
 ```
@@ -61723,7 +61784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvOutputReference
 ```
@@ -62083,7 +62144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -62419,7 +62480,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvVal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference
 ```
@@ -62726,7 +62787,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvVal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference
 ```
@@ -63143,7 +63204,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvVal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -63472,7 +63533,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvVal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -63808,7 +63869,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvVal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutputReference
 ```
@@ -64141,7 +64202,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecy
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference
 ```
@@ -64419,7 +64480,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecy
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -64579,7 +64640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -64904,7 +64965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -65311,7 +65372,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecy
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartList
 ```
@@ -65471,7 +65532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference
 ```
@@ -65864,7 +65925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList
 ```
@@ -66024,7 +66085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -66313,7 +66374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference
 ```
@@ -66591,7 +66652,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecy
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -66751,7 +66812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -67076,7 +67137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -67483,7 +67544,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecy
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopList
 ```
@@ -67643,7 +67704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopOutputReference
 ```
@@ -68036,7 +68097,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList
 ```
@@ -68196,7 +68257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -68485,7 +68546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerList
 ```
@@ -68645,7 +68706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecOutputReference
 ```
@@ -68923,7 +68984,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivene
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcList
 ```
@@ -69083,7 +69144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcOutputReference
 ```
@@ -69401,7 +69462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -69561,7 +69622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -69886,7 +69947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference
 ```
@@ -70293,7 +70354,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivene
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference
 ```
@@ -70855,7 +70916,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivene
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketList
 ```
@@ -71015,7 +71076,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -71304,7 +71365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference
 ```
@@ -71389,6 +71450,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetReadinessProbe">ResetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy">ResetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetSecurityContext">ResetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetStartupProbe">ResetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetStdin">ResetStdin</a></code> | *No description.* |
@@ -71750,6 +71812,12 @@ func ResetReadinessProbe()
 func ResetResources()
 ```
 
+##### `ResetRestartPolicy` <a name="ResetRestartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy"></a>
+
+```go
+func ResetRestartPolicy()
+```
+
 ##### `ResetSecurityContext` <a name="ResetSecurityContext" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetSecurityContext"></a>
 
 ```go
@@ -71840,6 +71908,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.portInput">PortInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.readinessProbeInput">ReadinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput">RestartPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.securityContextInput">SecurityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.startupProbeInput">StartupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.stdinInput">StdinInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -71855,6 +71924,7 @@ func ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.image">Image</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.imagePullPolicy">ImagePullPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.restartPolicy">RestartPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.stdin">Stdin</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.stdinOnce">StdinOnce</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.terminationMessagePath">TerminationMessagePath</a></code> | <code>*string</code> | *No description.* |
@@ -72119,6 +72189,16 @@ func ResourcesInput() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResou
 
 ---
 
+##### `RestartPolicyInput`<sup>Optional</sup> <a name="RestartPolicyInput" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput"></a>
+
+```go
+func RestartPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SecurityContextInput`<sup>Optional</sup> <a name="SecurityContextInput" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.securityContextInput"></a>
 
 ```go
@@ -72269,6 +72349,16 @@ func Name() *string
 
 ---
 
+##### `RestartPolicy`<sup>Required</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.restartPolicy"></a>
+
+```go
+func RestartPolicy() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Stdin`<sup>Required</sup> <a name="Stdin" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.stdin"></a>
 
 ```go
@@ -72345,7 +72435,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortList
 ```
@@ -72505,7 +72595,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputReference
 ```
@@ -72910,7 +73000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference
 ```
@@ -73188,7 +73278,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadin
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcList
 ```
@@ -73348,7 +73438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeGrpcOutputReference
 ```
@@ -73666,7 +73756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -73826,7 +73916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -74151,7 +74241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference
 ```
@@ -74558,7 +74648,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadin
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeOutputReference
 ```
@@ -75120,7 +75210,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadin
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketList
 ```
@@ -75280,7 +75370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -75569,7 +75659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesOutputReference
 ```
@@ -75876,7 +75966,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResour
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -76183,7 +76273,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecuri
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference
 ```
@@ -76732,7 +76822,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecuri
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -77039,7 +77129,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecuri
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -77404,7 +77494,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecuri
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecOutputReference
 ```
@@ -77682,7 +77772,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcList
 ```
@@ -77842,7 +77932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeGrpcOutputReference
 ```
@@ -78160,7 +78250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -78320,7 +78410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -78645,7 +78735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference
 ```
@@ -79052,7 +79142,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOutputReference
 ```
@@ -79614,7 +79704,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketList
 ```
@@ -79774,7 +79864,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference
 ```
@@ -80063,7 +80153,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceList
 ```
@@ -80223,7 +80313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceOutputReference
 ```
@@ -80534,7 +80624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountList
 ```
@@ -80694,7 +80784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOutputReference
 ```
@@ -81121,7 +81211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecOsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecOsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecOsOutputReference
 ```
@@ -81392,7 +81482,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecOs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference
 ```
@@ -82667,7 +82757,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateList
 ```
@@ -82827,7 +82917,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReference
 ```
@@ -83116,7 +83206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference
 ```
@@ -83707,7 +83797,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference
 ```
@@ -84014,7 +84104,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSecc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -84379,7 +84469,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList
 ```
@@ -84539,7 +84629,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutputReference
 ```
@@ -84850,7 +84940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptionsOutputReference
 ```
@@ -85215,7 +85305,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWind
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTolerationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecTolerationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecTolerationList
 ```
@@ -85375,7 +85465,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference
 ```
@@ -85787,7 +85877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList
 ```
@@ -85947,7 +86037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList
 ```
@@ -86107,7 +86197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference
 ```
@@ -86461,7 +86551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference
 ```
@@ -86799,7 +86889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintList
 ```
@@ -86959,7 +87049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference
 ```
@@ -87471,7 +87561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference
 ```
@@ -87829,7 +87919,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputReference
 ```
@@ -88231,7 +88321,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference
 ```
@@ -88582,7 +88672,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference
 ```
@@ -89011,7 +89101,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefOutputReference
 ```
@@ -89318,7 +89408,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretR
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference
 ```
@@ -89647,7 +89737,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsList
 ```
@@ -89807,7 +89897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference
 ```
@@ -90161,7 +90251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputReference
 ```
@@ -90539,7 +90629,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference
 ```
@@ -90817,7 +90907,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublis
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference
 ```
@@ -91217,7 +91307,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference
 ```
@@ -91524,7 +91614,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiIt
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList
 ```
@@ -91684,7 +91774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutputReference
 ```
@@ -92079,7 +92169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -92401,7 +92491,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiIt
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputReference
 ```
@@ -92721,7 +92811,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference
 ```
@@ -93028,7 +93118,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralOutputReference
 ```
@@ -93312,7 +93402,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeral
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference
 ```
@@ -93619,7 +93709,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference
 ```
@@ -93945,7 +94035,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference
 ```
@@ -94380,7 +94470,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference
 ```
@@ -94687,7 +94777,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList
 ```
@@ -94847,7 +94937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference
 ```
@@ -95201,7 +95291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference
 ```
@@ -95521,7 +95611,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolu
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference
 ```
@@ -95872,7 +95962,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference
 ```
@@ -96272,7 +96362,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference
 ```
@@ -96579,7 +96669,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerOutputReference
 ```
@@ -96886,7 +96976,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutputReference
 ```
@@ -97244,7 +97334,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistent
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoOutputReference
 ```
@@ -97580,7 +97670,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputReference
 ```
@@ -97902,7 +97992,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathOutputReference
 ```
@@ -98209,7 +98299,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference
 ```
@@ -98618,7 +98708,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeList
 ```
@@ -98778,7 +98868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference
 ```
@@ -99056,7 +99146,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference
 ```
@@ -99378,7 +99468,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference
 ```
@@ -100808,7 +100898,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference
 ```
@@ -101115,7 +101205,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVol
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskOutputReference
 ```
@@ -101415,7 +101505,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersist
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedList
 ```
@@ -101575,7 +101665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputReference
 ```
@@ -101906,7 +101996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList
 ```
@@ -102066,7 +102156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference
 ```
@@ -102420,7 +102510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapList
 ```
@@ -102580,7 +102670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference
 ```
@@ -102947,7 +103037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference
 ```
@@ -103254,7 +103344,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSour
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList
 ```
@@ -103414,7 +103504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference
 ```
@@ -103816,7 +103906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -104138,7 +104228,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSour
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference
 ```
@@ -104429,7 +104519,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSour
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList
 ```
@@ -104589,7 +104679,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutputReference
 ```
@@ -105024,7 +105114,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsList
 ```
@@ -105184,7 +105274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference
 ```
@@ -105538,7 +105628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretList
 ```
@@ -105698,7 +105788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference
 ```
@@ -106065,7 +106155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference
 ```
@@ -106394,7 +106484,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSour
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReference
 ```
@@ -106774,7 +106864,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference
 ```
@@ -107254,7 +107344,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefOutputReference
 ```
@@ -107561,7 +107651,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsList
 ```
@@ -107721,7 +107811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputReference
 ```
@@ -108075,7 +108165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference
 ```
@@ -108453,7 +108543,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeOutputReference
 ```
@@ -108753,7 +108843,7 @@ func InternalValue() CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1SpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1SpecOutputReference
 ```
@@ -109233,7 +109323,7 @@ func InternalValue() CronJobV1Spec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/cronjobv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/cronjobv1"
 
 cronjobv1.NewCronJobV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CronJobV1TimeoutsOutputReference
 ```

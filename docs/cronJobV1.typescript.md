@@ -4,7 +4,7 @@
 
 ### CronJobV1 <a name="CronJobV1" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1.Initializer"></a>
 
@@ -542,7 +542,7 @@ The construct id used in the generated config for the CronJobV1 to import.
 
 The id of the existing CronJobV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ const cronJobV1Config: cronJobV1.CronJobV1Config = { ... }
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Metadata">CronJobV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Spec">CronJobV1Spec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#id CronJobV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#id CronJobV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Timeouts">CronJobV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -933,7 +933,7 @@ public readonly metadata: CronJobV1Metadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
 
 ---
 
@@ -947,7 +947,7 @@ public readonly spec: CronJobV1Spec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
 
 ---
 
@@ -959,7 +959,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#id CronJobV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#id CronJobV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -976,7 +976,7 @@ public readonly timeouts: CronJobV1Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeouts CronJobV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeouts CronJobV1#timeouts}
 
 ---
 
@@ -1014,7 +1014,7 @@ An unstructured key value map stored with the cronjob that may be used to store 
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
 
 ---
 
@@ -1030,7 +1030,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
 
 ---
 
@@ -1046,7 +1046,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly name: string;
 
 Name of the cronjob, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly namespace: string;
 
 Namespace defines the space within which name of the cronjob must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
 
 ---
 
@@ -1113,7 +1113,7 @@ public readonly jobTemplate: CronJobV1SpecJobTemplate;
 
 job_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#job_template CronJobV1#job_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#job_template CronJobV1#job_template}
 
 ---
 
@@ -1139,7 +1139,7 @@ public readonly concurrencyPolicy: string;
 
 Specifies how to treat concurrent executions of a Job. Defaults to Allow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#concurrency_policy CronJobV1#concurrency_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#concurrency_policy CronJobV1#concurrency_policy}
 
 ---
 
@@ -1155,7 +1155,7 @@ The number of failed finished jobs to retain.
 
 This is a pointer to distinguish between explicit zero and not specified. Defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failed_jobs_history_limit CronJobV1#failed_jobs_history_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failed_jobs_history_limit CronJobV1#failed_jobs_history_limit}
 
 ---
 
@@ -1171,7 +1171,7 @@ Optional deadline in seconds for starting the job if it misses scheduled time fo
 
 Missed jobs executions will be counted as failed ones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#starting_deadline_seconds CronJobV1#starting_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#starting_deadline_seconds CronJobV1#starting_deadline_seconds}
 
 ---
 
@@ -1185,7 +1185,7 @@ public readonly successfulJobsHistoryLimit: number;
 
 The number of successful finished jobs to retain. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#successful_jobs_history_limit CronJobV1#successful_jobs_history_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#successful_jobs_history_limit CronJobV1#successful_jobs_history_limit}
 
 ---
 
@@ -1201,7 +1201,7 @@ This flag tells the controller to suspend subsequent executions, it does not app
 
 Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#suspend CronJobV1#suspend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#suspend CronJobV1#suspend}
 
 ---
 
@@ -1217,7 +1217,7 @@ The time zone for the given schedule.
 
 If not specified, this will rely on the time zone of the kube-controller-manager process. 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timezone CronJobV1#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timezone CronJobV1#timezone}
 
 ---
 
@@ -1250,7 +1250,7 @@ public readonly metadata: CronJobV1SpecJobTemplateMetadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
 
 ---
 
@@ -1264,7 +1264,7 @@ public readonly spec: CronJobV1SpecJobTemplateSpec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
 
 ---
 
@@ -1302,7 +1302,7 @@ An unstructured key value map stored with the jobTemplateSpec that may be used t
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
 
 ---
 
@@ -1318,7 +1318,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
 
 ---
 
@@ -1334,7 +1334,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
 
 ---
 
@@ -1348,7 +1348,7 @@ public readonly name: string;
 
 Name of the jobTemplateSpec, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly namespace: string;
 
 Namespace defines the space within which name of the jobTemplateSpec must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
 
 ---
 
@@ -1405,7 +1405,7 @@ public readonly template: CronJobV1SpecJobTemplateSpecTemplate;
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#template CronJobV1#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#template CronJobV1#template}
 
 ---
 
@@ -1421,7 +1421,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#active_deadline_seconds CronJobV1#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#active_deadline_seconds CronJobV1#active_deadline_seconds}
 
 ---
 
@@ -1435,7 +1435,7 @@ public readonly backoffLimit: number;
 
 Specifies the number of retries before marking this job failed. Defaults to 6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#backoff_limit CronJobV1#backoff_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#backoff_limit CronJobV1#backoff_limit}
 
 ---
 
@@ -1451,7 +1451,7 @@ Specifies the limit for the number of retries within an index before marking thi
 
 When enabled the number of failures per index is kept in the pod's batch.kubernetes.io/job-index-failure-count annotation. It can only be set when Job's completionMode=Indexed, and the Pod's restart policy is Never. The field is immutable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#backoff_limit_per_index CronJobV1#backoff_limit_per_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#backoff_limit_per_index CronJobV1#backoff_limit_per_index}
 
 ---
 
@@ -1465,7 +1465,7 @@ public readonly completionMode: string;
 
 Specifies how Pod completions are tracked. It can be `NonIndexed` (default) or `Indexed`. More info: https://kubernetes.io/docs/concepts/workloads/controllers/job/#completion-mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#completion_mode CronJobV1#completion_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#completion_mode CronJobV1#completion_mode}
 
 ---
 
@@ -1481,7 +1481,7 @@ Specifies the desired number of successfully finished pods the job should be run
 
 Setting to nil means that the success of any pod signals the success of all pods, and allows parallelism to have any positive value. Setting to 1 means that parallelism is limited to 1 and the success of that pod signals the success of the job. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#completions CronJobV1#completions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#completions CronJobV1#completions}
 
 ---
 
@@ -1497,7 +1497,7 @@ Controls generation of pod labels and pod selectors.
 
 Leave unset unless you are certain what you are doing. When false or unset, the system pick labels unique to this job and appends those labels to the pod template. When true, the user is responsible for picking unique labels and specifying the selector. Failure to pick a unique label may cause this and other jobs to not function correctly. More info: https://git.k8s.io/community/contributors/design-proposals/selector-generation.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#manual_selector CronJobV1#manual_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#manual_selector CronJobV1#manual_selector}
 
 ---
 
@@ -1513,7 +1513,7 @@ Controls generation of pod labels and pod selectors.
 
 Leave unset unless you are certain what you are doing. When false or unset, the system pick labels unique to this job and appends those labels to the pod template. When true, the user is responsible for picking unique labels and specifying the selector. Failure to pick a unique label may cause this and other jobs to not function correctly. More info: https://git.k8s.io/community/contributors/design-proposals/selector-generation.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#max_failed_indexes CronJobV1#max_failed_indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#max_failed_indexes CronJobV1#max_failed_indexes}
 
 ---
 
@@ -1529,7 +1529,7 @@ Specifies the maximum desired number of pods the job should run at any given tim
 
 The actual number of pods running in steady state will be less than this number when ((.spec.completions - .status.successful) < .spec.parallelism), i.e. when the work left to do is less than max parallelism. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#parallelism CronJobV1#parallelism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#parallelism CronJobV1#parallelism}
 
 ---
 
@@ -1543,7 +1543,7 @@ public readonly podFailurePolicy: CronJobV1SpecJobTemplateSpecPodFailurePolicy;
 
 pod_failure_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pod_failure_policy CronJobV1#pod_failure_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pod_failure_policy CronJobV1#pod_failure_policy}
 
 ---
 
@@ -1557,7 +1557,7 @@ public readonly selector: CronJobV1SpecJobTemplateSpecSelector;
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#selector CronJobV1#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#selector CronJobV1#selector}
 
 ---
 
@@ -1573,7 +1573,7 @@ ttlSecondsAfterFinished limits the lifetime of a Job that has finished execution
 
 If this field is set, ttlSecondsAfterFinished after the Job finishes, it is eligible to be automatically deleted. When the Job is being deleted, its lifecycle guarantees (e.g. finalizers) will be honored. If this field is unset, the Job won't be automatically deleted. If this field is set to zero, the Job becomes eligible to be deleted immediately after it finishes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#ttl_seconds_after_finished CronJobV1#ttl_seconds_after_finished}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#ttl_seconds_after_finished CronJobV1#ttl_seconds_after_finished}
 
 ---
 
@@ -1605,7 +1605,7 @@ public readonly rule: IResolvable | CronJobV1SpecJobTemplateSpecPodFailurePolicy
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#rule CronJobV1#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#rule CronJobV1#rule}
 
 ---
 
@@ -1623,7 +1623,7 @@ const cronJobV1SpecJobTemplateSpecPodFailurePolicyRule: cronJobV1.CronJobV1SpecJ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRule.property.action">action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#action CronJobV1#action}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRule.property.action">action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#action CronJobV1#action}. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRule.property.onExitCodes">onExitCodes</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes">CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes</a></code> | on_exit_codes block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRule.property.onPodCondition">onPodCondition</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition">CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition</a>[]</code> | on_pod_condition block. |
 
@@ -1637,7 +1637,7 @@ public readonly action: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#action CronJobV1#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#action CronJobV1#action}.
 
 ---
 
@@ -1651,7 +1651,7 @@ public readonly onExitCodes: CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnE
 
 on_exit_codes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#on_exit_codes CronJobV1#on_exit_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#on_exit_codes CronJobV1#on_exit_codes}
 
 ---
 
@@ -1665,7 +1665,7 @@ public readonly onPodCondition: IResolvable | CronJobV1SpecJobTemplateSpecPodFai
 
 on_pod_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#on_pod_condition CronJobV1#on_pod_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#on_pod_condition CronJobV1#on_pod_condition}
 
 ---
 
@@ -1683,9 +1683,9 @@ const cronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes: cronJobV1.Cro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.values">values</a></code> | <code>number[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.operator">operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.values">values</a></code> | <code>number[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes.property.operator">operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}. |
 
 ---
 
@@ -1697,7 +1697,7 @@ public readonly values: number[];
 
 - *Type:* number[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}.
 
 ---
 
@@ -1709,7 +1709,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
 
 ---
 
@@ -1721,7 +1721,7 @@ public readonly operator: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}.
 
 ---
 
@@ -1739,8 +1739,8 @@ const cronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition: cronJobV1.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#status CronJobV1#status}. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#status CronJobV1#status}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}. |
 
 ---
 
@@ -1752,7 +1752,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#status CronJobV1#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#status CronJobV1#status}.
 
 ---
 
@@ -1764,7 +1764,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}.
 
 ---
 
@@ -1797,7 +1797,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecSele
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -1813,7 +1813,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -1847,7 +1847,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -1861,7 +1861,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -1877,7 +1877,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -1910,7 +1910,7 @@ public readonly metadata: CronJobV1SpecJobTemplateSpecTemplateMetadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
 
 ---
 
@@ -1924,7 +1924,7 @@ public readonly spec: CronJobV1SpecJobTemplateSpecTemplateSpec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
 
 ---
 
@@ -1961,7 +1961,7 @@ An unstructured key value map stored with the job that may be used to store arbi
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
 
 ---
 
@@ -1977,7 +1977,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#generate_name CronJobV1#generate_name}
 
 ---
 
@@ -1993,7 +1993,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
 
 ---
 
@@ -2007,7 +2007,7 @@ public readonly name: string;
 
 Name of the job, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -2070,7 +2070,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#active_deadline_seconds CronJobV1#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#active_deadline_seconds CronJobV1#active_deadline_seconds}
 
 ---
 
@@ -2084,7 +2084,7 @@ public readonly affinity: CronJobV1SpecJobTemplateSpecTemplateSpecAffinity;
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#affinity CronJobV1#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#affinity CronJobV1#affinity}
 
 ---
 
@@ -2098,7 +2098,7 @@ public readonly automountServiceAccountToken: boolean | IResolvable;
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#automount_service_account_token CronJobV1#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#automount_service_account_token CronJobV1#automount_service_account_token}
 
 ---
 
@@ -2112,7 +2112,7 @@ public readonly container: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container CronJobV1#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container CronJobV1#container}
 
 ---
 
@@ -2126,7 +2126,7 @@ public readonly dnsConfig: CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig;
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#dns_config CronJobV1#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#dns_config CronJobV1#dns_config}
 
 ---
 
@@ -2142,7 +2142,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#dns_policy CronJobV1#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#dns_policy CronJobV1#dns_policy}
 
 ---
 
@@ -2156,7 +2156,7 @@ public readonly enableServiceLinks: boolean | IResolvable;
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#enable_service_links CronJobV1#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#enable_service_links CronJobV1#enable_service_links}
 
 ---
 
@@ -2170,7 +2170,7 @@ public readonly hostAliases: IResolvable | CronJobV1SpecJobTemplateSpecTemplateS
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_aliases CronJobV1#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_aliases CronJobV1#host_aliases}
 
 ---
 
@@ -2184,7 +2184,7 @@ public readonly hostIpc: boolean | IResolvable;
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_ipc CronJobV1#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_ipc CronJobV1#host_ipc}
 
 ---
 
@@ -2198,7 +2198,7 @@ public readonly hostname: string;
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#hostname CronJobV1#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#hostname CronJobV1#hostname}
 
 ---
 
@@ -2214,7 +2214,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_network CronJobV1#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_network CronJobV1#host_network}
 
 ---
 
@@ -2228,7 +2228,7 @@ public readonly hostPid: boolean | IResolvable;
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_pid CronJobV1#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_pid CronJobV1#host_pid}
 
 ---
 
@@ -2242,7 +2242,7 @@ public readonly imagePullSecrets: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image_pull_secrets CronJobV1#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#image_pull_secrets CronJobV1#image_pull_secrets}
 
 ---
 
@@ -2256,7 +2256,7 @@ public readonly initContainer: IResolvable | CronJobV1SpecJobTemplateSpecTemplat
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#init_container CronJobV1#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#init_container CronJobV1#init_container}
 
 ---
 
@@ -2272,7 +2272,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_name CronJobV1#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_name CronJobV1#node_name}
 
 ---
 
@@ -2288,7 +2288,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_selector CronJobV1#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_selector CronJobV1#node_selector}
 
 ---
 
@@ -2302,7 +2302,7 @@ public readonly os: CronJobV1SpecJobTemplateSpecTemplateSpecOs;
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#os CronJobV1#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#os CronJobV1#os}
 
 ---
 
@@ -2318,7 +2318,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#priority_class_name CronJobV1#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#priority_class_name CronJobV1#priority_class_name}
 
 ---
 
@@ -2332,7 +2332,7 @@ public readonly readinessGate: IResolvable | CronJobV1SpecJobTemplateSpecTemplat
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#readiness_gate CronJobV1#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#readiness_gate CronJobV1#readiness_gate}
 
 ---
 
@@ -2346,7 +2346,7 @@ public readonly restartPolicy: string;
 
 Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#restart_policy CronJobV1#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#restart_policy CronJobV1#restart_policy}
 
 ---
 
@@ -2362,7 +2362,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#runtime_class_name CronJobV1#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#runtime_class_name CronJobV1#runtime_class_name}
 
 ---
 
@@ -2378,7 +2378,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheduler_name CronJobV1#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheduler_name CronJobV1#scheduler_name}
 
 ---
 
@@ -2392,7 +2392,7 @@ public readonly securityContext: CronJobV1SpecJobTemplateSpecTemplateSpecSecurit
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
 
 ---
 
@@ -2406,7 +2406,7 @@ public readonly serviceAccountName: string;
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service_account_name CronJobV1#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service_account_name CronJobV1#service_account_name}
 
 ---
 
@@ -2422,7 +2422,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#share_process_namespace CronJobV1#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#share_process_namespace CronJobV1#share_process_namespace}
 
 ---
 
@@ -2436,7 +2436,7 @@ public readonly subdomain: string;
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#subdomain CronJobV1#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#subdomain CronJobV1#subdomain}
 
 ---
 
@@ -2452,7 +2452,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#termination_grace_period_seconds CronJobV1#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#termination_grace_period_seconds CronJobV1#termination_grace_period_seconds}
 
 ---
 
@@ -2466,7 +2466,7 @@ public readonly toleration: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#toleration CronJobV1#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#toleration CronJobV1#toleration}
 
 ---
 
@@ -2480,7 +2480,7 @@ public readonly topologySpreadConstraint: IResolvable | CronJobV1SpecJobTemplate
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_spread_constraint CronJobV1#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_spread_constraint CronJobV1#topology_spread_constraint}
 
 ---
 
@@ -2494,7 +2494,7 @@ public readonly volume: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecVo
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume CronJobV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume CronJobV1#volume}
 
 ---
 
@@ -2528,7 +2528,7 @@ public readonly nodeAffinity: CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNo
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_affinity CronJobV1#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_affinity CronJobV1#node_affinity}
 
 ---
 
@@ -2542,7 +2542,7 @@ public readonly podAffinity: CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPod
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pod_affinity CronJobV1#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pod_affinity CronJobV1#pod_affinity}
 
 ---
 
@@ -2556,7 +2556,7 @@ public readonly podAntiAffinity: CronJobV1SpecJobTemplateSpecTemplateSpecAffinit
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pod_anti_affinity CronJobV1#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pod_anti_affinity CronJobV1#pod_anti_affinity}
 
 ---
 
@@ -2589,7 +2589,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | C
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2603,7 +2603,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: CronJobV1SpecJob
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2636,7 +2636,7 @@ public readonly preference: CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNode
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#preference CronJobV1#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#preference CronJobV1#preference}
 
 ---
 
@@ -2650,7 +2650,7 @@ public readonly weight: number;
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
 
 ---
 
@@ -2683,7 +2683,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -2697,7 +2697,7 @@ public readonly matchFields: IResolvable | CronJobV1SpecJobTemplateSpecTemplateS
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_fields CronJobV1#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_fields CronJobV1#match_fields}
 
 ---
 
@@ -2731,7 +2731,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -2747,7 +2747,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -2763,7 +2763,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -2797,7 +2797,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -2811,7 +2811,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -2827,7 +2827,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -2859,7 +2859,7 @@ public readonly nodeSelectorTerm: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_selector_term CronJobV1#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_selector_term CronJobV1#node_selector_term}
 
 ---
 
@@ -2892,7 +2892,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -2906,7 +2906,7 @@ public readonly matchFields: IResolvable | CronJobV1SpecJobTemplateSpecTemplateS
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_fields CronJobV1#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_fields CronJobV1#match_fields}
 
 ---
 
@@ -2940,7 +2940,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -2956,7 +2956,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -2972,7 +2972,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3006,7 +3006,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3020,7 +3020,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3036,7 +3036,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3069,7 +3069,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | C
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3083,7 +3083,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: IResolvable | Cr
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3116,7 +3116,7 @@ public readonly podAffinityTerm: CronJobV1SpecJobTemplateSpecTemplateSpecAffinit
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pod_affinity_term CronJobV1#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pod_affinity_term CronJobV1#pod_affinity_term}
 
 ---
 
@@ -3130,7 +3130,7 @@ public readonly weight: number;
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
 
 ---
 
@@ -3165,7 +3165,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
 
 ---
 
@@ -3179,7 +3179,7 @@ public readonly labelSelector: IResolvable | CronJobV1SpecJobTemplateSpecTemplat
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
 
 ---
 
@@ -3193,7 +3193,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
 
 ---
 
@@ -3207,7 +3207,7 @@ public readonly namespaceSelector: IResolvable | CronJobV1SpecJobTemplateSpecTem
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
 
 ---
 
@@ -3240,7 +3240,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -3256,7 +3256,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -3290,7 +3290,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3304,7 +3304,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3320,7 +3320,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3353,7 +3353,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -3369,7 +3369,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -3403,7 +3403,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3417,7 +3417,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3433,7 +3433,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3468,7 +3468,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
 
 ---
 
@@ -3482,7 +3482,7 @@ public readonly labelSelector: IResolvable | CronJobV1SpecJobTemplateSpecTemplat
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
 
 ---
 
@@ -3496,7 +3496,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
 
 ---
 
@@ -3510,7 +3510,7 @@ public readonly namespaceSelector: IResolvable | CronJobV1SpecJobTemplateSpecTem
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
 
 ---
 
@@ -3543,7 +3543,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -3559,7 +3559,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -3593,7 +3593,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3607,7 +3607,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3623,7 +3623,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3656,7 +3656,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -3672,7 +3672,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -3706,7 +3706,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -3720,7 +3720,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -3736,7 +3736,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -3769,7 +3769,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | C
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#preferred_during_scheduling_ignored_during_execution CronJobV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3783,7 +3783,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: IResolvable | Cr
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#required_during_scheduling_ignored_during_execution CronJobV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3816,7 +3816,7 @@ public readonly podAffinityTerm: CronJobV1SpecJobTemplateSpecTemplateSpecAffinit
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pod_affinity_term CronJobV1#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pod_affinity_term CronJobV1#pod_affinity_term}
 
 ---
 
@@ -3830,7 +3830,7 @@ public readonly weight: number;
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#weight CronJobV1#weight}
 
 ---
 
@@ -3865,7 +3865,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
 
 ---
 
@@ -3879,7 +3879,7 @@ public readonly labelSelector: IResolvable | CronJobV1SpecJobTemplateSpecTemplat
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
 
 ---
 
@@ -3893,7 +3893,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
 
 ---
 
@@ -3907,7 +3907,7 @@ public readonly namespaceSelector: IResolvable | CronJobV1SpecJobTemplateSpecTem
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
 
 ---
 
@@ -3940,7 +3940,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -3956,7 +3956,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -3990,7 +3990,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -4004,7 +4004,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -4020,7 +4020,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -4053,7 +4053,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -4069,7 +4069,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -4103,7 +4103,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -4117,7 +4117,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -4133,7 +4133,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -4168,7 +4168,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
 
 ---
 
@@ -4182,7 +4182,7 @@ public readonly labelSelector: IResolvable | CronJobV1SpecJobTemplateSpecTemplat
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
 
 ---
 
@@ -4196,7 +4196,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespaces CronJobV1#namespaces}
 
 ---
 
@@ -4210,7 +4210,7 @@ public readonly namespaceSelector: IResolvable | CronJobV1SpecJobTemplateSpecTem
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace_selector CronJobV1#namespace_selector}
 
 ---
 
@@ -4243,7 +4243,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -4259,7 +4259,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -4293,7 +4293,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -4307,7 +4307,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -4323,7 +4323,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -4356,7 +4356,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -4372,7 +4372,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -4406,7 +4406,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -4420,7 +4420,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -4436,7 +4436,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -4466,6 +4466,7 @@ const cronJobV1SpecJobTemplateSpecTemplateSpecContainer: cronJobV1.CronJobV1Spec
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.port">port</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPort">CronJobV1SpecJobTemplateSpecTemplateSpecContainerPort</a>[]</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.readinessProbe">readinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe">CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources">CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.restartPolicy">restartPolicy</a></code> | <code>string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.securityContext">securityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext">CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe">CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.stdin">stdin</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -4491,7 +4492,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -4507,7 +4508,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#args CronJobV1#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#args CronJobV1#args}
 
 ---
 
@@ -4523,7 +4524,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -4537,7 +4538,7 @@ public readonly env: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecConta
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#env CronJobV1#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#env CronJobV1#env}
 
 ---
 
@@ -4551,7 +4552,7 @@ public readonly envFrom: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecC
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#env_from CronJobV1#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#env_from CronJobV1#env_from}
 
 ---
 
@@ -4565,7 +4566,7 @@ public readonly image: string;
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image CronJobV1#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#image CronJobV1#image}
 
 ---
 
@@ -4581,7 +4582,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image_pull_policy CronJobV1#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#image_pull_policy CronJobV1#image_pull_policy}
 
 ---
 
@@ -4595,7 +4596,7 @@ public readonly lifecycle: CronJobV1SpecJobTemplateSpecTemplateSpecContainerLife
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#lifecycle CronJobV1#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#lifecycle CronJobV1#lifecycle}
 
 ---
 
@@ -4609,7 +4610,7 @@ public readonly livenessProbe: CronJobV1SpecJobTemplateSpecTemplateSpecContainer
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#liveness_probe CronJobV1#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#liveness_probe CronJobV1#liveness_probe}
 
 ---
 
@@ -4623,7 +4624,7 @@ public readonly port: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecCont
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -4637,7 +4638,7 @@ public readonly readinessProbe: CronJobV1SpecJobTemplateSpecTemplateSpecContaine
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#readiness_probe CronJobV1#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#readiness_probe CronJobV1#readiness_probe}
 
 ---
 
@@ -4651,7 +4652,21 @@ public readonly resources: CronJobV1SpecJobTemplateSpecTemplateSpecContainerReso
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+
+---
+
+##### `restartPolicy`<sup>Optional</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer.property.restartPolicy"></a>
+
+```typescript
+public readonly restartPolicy: string;
+```
+
+- *Type:* string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#restart_policy CronJobV1#restart_policy}
 
 ---
 
@@ -4665,7 +4680,7 @@ public readonly securityContext: CronJobV1SpecJobTemplateSpecTemplateSpecContain
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
 
 ---
 
@@ -4679,7 +4694,7 @@ public readonly startupProbe: CronJobV1SpecJobTemplateSpecTemplateSpecContainerS
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#startup_probe CronJobV1#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#startup_probe CronJobV1#startup_probe}
 
 ---
 
@@ -4695,7 +4710,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF. 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#stdin CronJobV1#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#stdin CronJobV1#stdin}
 
 ---
 
@@ -4711,7 +4726,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#stdin_once CronJobV1#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#stdin_once CronJobV1#stdin_once}
 
 ---
 
@@ -4727,7 +4742,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#termination_message_path CronJobV1#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#termination_message_path CronJobV1#termination_message_path}
 
 ---
 
@@ -4743,7 +4758,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#termination_message_policy CronJobV1#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#termination_message_policy CronJobV1#termination_message_policy}
 
 ---
 
@@ -4757,7 +4772,7 @@ public readonly tty: boolean | IResolvable;
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tty CronJobV1#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tty CronJobV1#tty}
 
 ---
 
@@ -4771,7 +4786,7 @@ public readonly volumeDevice: IResolvable | CronJobV1SpecJobTemplateSpecTemplate
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_device CronJobV1#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_device CronJobV1#volume_device}
 
 ---
 
@@ -4785,7 +4800,7 @@ public readonly volumeMount: IResolvable | CronJobV1SpecJobTemplateSpecTemplateS
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_mount CronJobV1#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_mount CronJobV1#volume_mount}
 
 ---
 
@@ -4801,7 +4816,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#working_dir CronJobV1#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#working_dir CronJobV1#working_dir}
 
 ---
 
@@ -4835,7 +4850,7 @@ public readonly name: string;
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -4851,7 +4866,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -4865,7 +4880,7 @@ public readonly valueFrom: CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvV
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value_from CronJobV1#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value_from CronJobV1#value_from}
 
 ---
 
@@ -4899,7 +4914,7 @@ public readonly configMapRef: CronJobV1SpecJobTemplateSpecTemplateSpecContainerE
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map_ref CronJobV1#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map_ref CronJobV1#config_map_ref}
 
 ---
 
@@ -4913,7 +4928,7 @@ public readonly prefix: string;
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#prefix CronJobV1#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#prefix CronJobV1#prefix}
 
 ---
 
@@ -4927,7 +4942,7 @@ public readonly secretRef: CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvF
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
 
 ---
 
@@ -4960,7 +4975,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -4974,7 +4989,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -5007,7 +5022,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5021,7 +5036,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -5056,7 +5071,7 @@ public readonly configMapKeyRef: CronJobV1SpecJobTemplateSpecTemplateSpecContain
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map_key_ref CronJobV1#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map_key_ref CronJobV1#config_map_key_ref}
 
 ---
 
@@ -5070,7 +5085,7 @@ public readonly fieldRef: CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvVa
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
 
 ---
 
@@ -5084,7 +5099,7 @@ public readonly resourceFieldRef: CronJobV1SpecJobTemplateSpecTemplateSpecContai
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
 
 ---
 
@@ -5098,7 +5113,7 @@ public readonly secretKeyRef: CronJobV1SpecJobTemplateSpecTemplateSpecContainerE
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_key_ref CronJobV1#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_key_ref CronJobV1#secret_key_ref}
 
 ---
 
@@ -5132,7 +5147,7 @@ public readonly key: string;
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -5146,7 +5161,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5160,7 +5175,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -5193,7 +5208,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
 
 ---
 
@@ -5207,7 +5222,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
 
 ---
 
@@ -5226,8 +5241,8 @@ const cronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceField
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
 
 ---
 
@@ -5241,7 +5256,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
 
 ---
 
@@ -5253,7 +5268,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
 
 ---
 
@@ -5265,7 +5280,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
 
 ---
 
@@ -5299,7 +5314,7 @@ public readonly key: string;
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -5313,7 +5328,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5327,7 +5342,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -5360,7 +5375,7 @@ public readonly postStart: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#post_start CronJobV1#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#post_start CronJobV1#post_start}
 
 ---
 
@@ -5374,7 +5389,7 @@ public readonly preStop: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecC
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pre_stop CronJobV1#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pre_stop CronJobV1#pre_stop}
 
 ---
 
@@ -5408,7 +5423,7 @@ public readonly exec: CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -5422,7 +5437,7 @@ public readonly httpGet: CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecy
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -5436,7 +5451,7 @@ public readonly tcpSocket: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -5470,7 +5485,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -5506,7 +5521,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -5520,7 +5535,7 @@ public readonly httpHeader: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -5534,7 +5549,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -5550,7 +5565,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -5564,7 +5579,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -5597,7 +5612,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5611,7 +5626,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -5645,7 +5660,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -5679,7 +5694,7 @@ public readonly exec: CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -5693,7 +5708,7 @@ public readonly httpGet: CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecy
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -5707,7 +5722,7 @@ public readonly tcpSocket: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -5741,7 +5756,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -5777,7 +5792,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -5791,7 +5806,7 @@ public readonly httpHeader: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -5805,7 +5820,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -5821,7 +5836,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -5835,7 +5850,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -5868,7 +5883,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -5882,7 +5897,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -5916,7 +5931,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -5956,7 +5971,7 @@ public readonly exec: CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessP
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -5970,7 +5985,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -5984,7 +5999,7 @@ public readonly grpc: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecCont
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -5998,7 +6013,7 @@ public readonly httpGet: CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivene
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -6012,7 +6027,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -6026,7 +6041,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -6040,7 +6055,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -6054,7 +6069,7 @@ public readonly tcpSocket: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -6068,7 +6083,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -6102,7 +6117,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -6135,7 +6150,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6149,7 +6164,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -6185,7 +6200,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -6199,7 +6214,7 @@ public readonly httpHeader: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -6213,7 +6228,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -6229,7 +6244,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6243,7 +6258,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -6276,7 +6291,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -6290,7 +6305,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -6324,7 +6339,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6362,7 +6377,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_port CronJobV1#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_port CronJobV1#container_port}
 
 ---
 
@@ -6376,7 +6391,7 @@ public readonly hostIp: string;
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_ip CronJobV1#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_ip CronJobV1#host_ip}
 
 ---
 
@@ -6392,7 +6407,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_port CronJobV1#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_port CronJobV1#host_port}
 
 ---
 
@@ -6408,7 +6423,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -6422,7 +6437,7 @@ public readonly protocol: string;
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#protocol CronJobV1#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#protocol CronJobV1#protocol}
 
 ---
 
@@ -6462,7 +6477,7 @@ public readonly exec: CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadiness
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -6476,7 +6491,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -6490,7 +6505,7 @@ public readonly grpc: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecCont
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -6504,7 +6519,7 @@ public readonly httpGet: CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadin
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -6518,7 +6533,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -6532,7 +6547,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -6546,7 +6561,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -6560,7 +6575,7 @@ public readonly tcpSocket: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -6574,7 +6589,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -6608,7 +6623,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -6641,7 +6656,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6655,7 +6670,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -6691,7 +6706,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -6705,7 +6720,7 @@ public readonly httpHeader: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -6719,7 +6734,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -6735,7 +6750,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6749,7 +6764,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -6782,7 +6797,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -6796,7 +6811,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -6830,7 +6845,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -6863,7 +6878,7 @@ public readonly limits: {[ key: string ]: string};
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
 
 ---
 
@@ -6879,7 +6894,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
 
 ---
 
@@ -6921,7 +6936,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#allow_privilege_escalation CronJobV1#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#allow_privilege_escalation CronJobV1#allow_privilege_escalation}
 
 ---
 
@@ -6935,7 +6950,7 @@ public readonly capabilities: CronJobV1SpecJobTemplateSpecTemplateSpecContainerS
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#capabilities CronJobV1#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#capabilities CronJobV1#capabilities}
 
 ---
 
@@ -6951,7 +6966,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#privileged CronJobV1#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#privileged CronJobV1#privileged}
 
 ---
 
@@ -6965,7 +6980,7 @@ public readonly readOnlyRootFilesystem: boolean | IResolvable;
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only_root_filesystem CronJobV1#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only_root_filesystem CronJobV1#read_only_root_filesystem}
 
 ---
 
@@ -6981,7 +6996,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
 
 ---
 
@@ -6997,7 +7012,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
 
 ---
 
@@ -7013,7 +7028,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
 
 ---
 
@@ -7027,7 +7042,7 @@ public readonly seccompProfile: CronJobV1SpecJobTemplateSpecTemplateSpecContaine
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
 
 ---
 
@@ -7041,7 +7056,7 @@ public readonly seLinuxOptions: CronJobV1SpecJobTemplateSpecTemplateSpecContaine
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
 
 ---
 
@@ -7074,7 +7089,7 @@ public readonly add: string[];
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#add CronJobV1#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#add CronJobV1#add}
 
 ---
 
@@ -7088,7 +7103,7 @@ public readonly drop: string[];
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#drop CronJobV1#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#drop CronJobV1#drop}
 
 ---
 
@@ -7123,7 +7138,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
 
 ---
 
@@ -7137,7 +7152,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -7172,7 +7187,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#level CronJobV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#level CronJobV1#level}
 
 ---
 
@@ -7186,7 +7201,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#role CronJobV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#role CronJobV1#role}
 
 ---
 
@@ -7200,7 +7215,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -7214,7 +7229,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#user CronJobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#user CronJobV1#user}
 
 ---
 
@@ -7254,7 +7269,7 @@ public readonly exec: CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupPr
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -7268,7 +7283,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -7282,7 +7297,7 @@ public readonly grpc: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecCont
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -7296,7 +7311,7 @@ public readonly httpGet: CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartu
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -7310,7 +7325,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -7324,7 +7339,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -7338,7 +7353,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -7352,7 +7367,7 @@ public readonly tcpSocket: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -7366,7 +7381,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -7400,7 +7415,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -7433,7 +7448,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -7447,7 +7462,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -7483,7 +7498,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -7497,7 +7512,7 @@ public readonly httpHeader: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -7511,7 +7526,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -7527,7 +7542,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -7541,7 +7556,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -7574,7 +7589,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -7588,7 +7603,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -7622,7 +7637,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -7655,7 +7670,7 @@ public readonly devicePath: string;
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#device_path CronJobV1#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#device_path CronJobV1#device_path}
 
 ---
 
@@ -7669,7 +7684,7 @@ public readonly name: string;
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -7706,7 +7721,7 @@ public readonly mountPath: string;
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mount_path CronJobV1#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mount_path CronJobV1#mount_path}
 
 ---
 
@@ -7720,7 +7735,7 @@ public readonly name: string;
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -7736,7 +7751,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mount_propagation CronJobV1#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mount_propagation CronJobV1#mount_propagation}
 
 ---
 
@@ -7750,7 +7765,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -7764,7 +7779,7 @@ public readonly subPath: string;
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sub_path CronJobV1#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sub_path CronJobV1#sub_path}
 
 ---
 
@@ -7778,7 +7793,7 @@ public readonly subPathExpr: string;
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sub_path_expr CronJobV1#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sub_path_expr CronJobV1#sub_path_expr}
 
 ---
 
@@ -7814,7 +7829,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#nameservers CronJobV1#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#nameservers CronJobV1#nameservers}
 
 ---
 
@@ -7828,7 +7843,7 @@ public readonly option: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecDn
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#option CronJobV1#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#option CronJobV1#option}
 
 ---
 
@@ -7844,7 +7859,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#searches CronJobV1#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#searches CronJobV1#searches}
 
 ---
 
@@ -7877,7 +7892,7 @@ public readonly name: string;
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -7891,7 +7906,7 @@ public readonly value: string;
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -7924,7 +7939,7 @@ public readonly hostnames: string[];
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#hostnames CronJobV1#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#hostnames CronJobV1#hostnames}
 
 ---
 
@@ -7938,7 +7953,7 @@ public readonly ip: string;
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#ip CronJobV1#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#ip CronJobV1#ip}
 
 ---
 
@@ -7970,7 +7985,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8000,6 +8015,7 @@ const cronJobV1SpecJobTemplateSpecTemplateSpecInitContainer: cronJobV1.CronJobV1
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.port">port</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort</a>[]</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.readinessProbe">readinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.restartPolicy">restartPolicy</a></code> | <code>string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.securityContext">securityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.stdin">stdin</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -8025,7 +8041,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8041,7 +8057,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#args CronJobV1#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#args CronJobV1#args}
 
 ---
 
@@ -8057,7 +8073,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -8071,7 +8087,7 @@ public readonly env: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecInitC
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#env CronJobV1#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#env CronJobV1#env}
 
 ---
 
@@ -8085,7 +8101,7 @@ public readonly envFrom: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecI
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#env_from CronJobV1#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#env_from CronJobV1#env_from}
 
 ---
 
@@ -8099,7 +8115,7 @@ public readonly image: string;
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image CronJobV1#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#image CronJobV1#image}
 
 ---
 
@@ -8115,7 +8131,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#image_pull_policy CronJobV1#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#image_pull_policy CronJobV1#image_pull_policy}
 
 ---
 
@@ -8129,7 +8145,7 @@ public readonly lifecycle: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#lifecycle CronJobV1#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#lifecycle CronJobV1#lifecycle}
 
 ---
 
@@ -8143,7 +8159,7 @@ public readonly livenessProbe: CronJobV1SpecJobTemplateSpecTemplateSpecInitConta
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#liveness_probe CronJobV1#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#liveness_probe CronJobV1#liveness_probe}
 
 ---
 
@@ -8157,7 +8173,7 @@ public readonly port: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecInit
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -8171,7 +8187,7 @@ public readonly readinessProbe: CronJobV1SpecJobTemplateSpecTemplateSpecInitCont
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#readiness_probe CronJobV1#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#readiness_probe CronJobV1#readiness_probe}
 
 ---
 
@@ -8185,7 +8201,21 @@ public readonly resources: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+
+---
+
+##### `restartPolicy`<sup>Optional</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer.property.restartPolicy"></a>
+
+```typescript
+public readonly restartPolicy: string;
+```
+
+- *Type:* string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#restart_policy CronJobV1#restart_policy}
 
 ---
 
@@ -8199,7 +8229,7 @@ public readonly securityContext: CronJobV1SpecJobTemplateSpecTemplateSpecInitCon
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#security_context CronJobV1#security_context}
 
 ---
 
@@ -8213,7 +8243,7 @@ public readonly startupProbe: CronJobV1SpecJobTemplateSpecTemplateSpecInitContai
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#startup_probe CronJobV1#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#startup_probe CronJobV1#startup_probe}
 
 ---
 
@@ -8229,7 +8259,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF. 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#stdin CronJobV1#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#stdin CronJobV1#stdin}
 
 ---
 
@@ -8245,7 +8275,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#stdin_once CronJobV1#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#stdin_once CronJobV1#stdin_once}
 
 ---
 
@@ -8261,7 +8291,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#termination_message_path CronJobV1#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#termination_message_path CronJobV1#termination_message_path}
 
 ---
 
@@ -8277,7 +8307,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#termination_message_policy CronJobV1#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#termination_message_policy CronJobV1#termination_message_policy}
 
 ---
 
@@ -8291,7 +8321,7 @@ public readonly tty: boolean | IResolvable;
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tty CronJobV1#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tty CronJobV1#tty}
 
 ---
 
@@ -8305,7 +8335,7 @@ public readonly volumeDevice: IResolvable | CronJobV1SpecJobTemplateSpecTemplate
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_device CronJobV1#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_device CronJobV1#volume_device}
 
 ---
 
@@ -8319,7 +8349,7 @@ public readonly volumeMount: IResolvable | CronJobV1SpecJobTemplateSpecTemplateS
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_mount CronJobV1#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_mount CronJobV1#volume_mount}
 
 ---
 
@@ -8335,7 +8365,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#working_dir CronJobV1#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#working_dir CronJobV1#working_dir}
 
 ---
 
@@ -8369,7 +8399,7 @@ public readonly name: string;
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8385,7 +8415,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -8399,7 +8429,7 @@ public readonly valueFrom: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value_from CronJobV1#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value_from CronJobV1#value_from}
 
 ---
 
@@ -8433,7 +8463,7 @@ public readonly configMapRef: CronJobV1SpecJobTemplateSpecTemplateSpecInitContai
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map_ref CronJobV1#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map_ref CronJobV1#config_map_ref}
 
 ---
 
@@ -8447,7 +8477,7 @@ public readonly prefix: string;
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#prefix CronJobV1#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#prefix CronJobV1#prefix}
 
 ---
 
@@ -8461,7 +8491,7 @@ public readonly secretRef: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
 
 ---
 
@@ -8494,7 +8524,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8508,7 +8538,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -8541,7 +8571,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8555,7 +8585,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -8590,7 +8620,7 @@ public readonly configMapKeyRef: CronJobV1SpecJobTemplateSpecTemplateSpecInitCon
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map_key_ref CronJobV1#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map_key_ref CronJobV1#config_map_key_ref}
 
 ---
 
@@ -8604,7 +8634,7 @@ public readonly fieldRef: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerE
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
 
 ---
 
@@ -8618,7 +8648,7 @@ public readonly resourceFieldRef: CronJobV1SpecJobTemplateSpecTemplateSpecInitCo
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
 
 ---
 
@@ -8632,7 +8662,7 @@ public readonly secretKeyRef: CronJobV1SpecJobTemplateSpecTemplateSpecInitContai
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_key_ref CronJobV1#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_key_ref CronJobV1#secret_key_ref}
 
 ---
 
@@ -8666,7 +8696,7 @@ public readonly key: string;
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -8680,7 +8710,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8694,7 +8724,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -8727,7 +8757,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
 
 ---
 
@@ -8741,7 +8771,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
 
 ---
 
@@ -8760,8 +8790,8 @@ const cronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceF
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
 
 ---
 
@@ -8775,7 +8805,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
 
 ---
 
@@ -8787,7 +8817,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
 
 ---
 
@@ -8799,7 +8829,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
 
 ---
 
@@ -8833,7 +8863,7 @@ public readonly key: string;
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -8847,7 +8877,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -8861,7 +8891,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -8894,7 +8924,7 @@ public readonly postStart: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#post_start CronJobV1#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#post_start CronJobV1#post_start}
 
 ---
 
@@ -8908,7 +8938,7 @@ public readonly preStop: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecI
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pre_stop CronJobV1#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pre_stop CronJobV1#pre_stop}
 
 ---
 
@@ -8942,7 +8972,7 @@ public readonly exec: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -8956,7 +8986,7 @@ public readonly httpGet: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLi
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -8970,7 +9000,7 @@ public readonly tcpSocket: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -9004,7 +9034,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -9040,7 +9070,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -9054,7 +9084,7 @@ public readonly httpHeader: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -9068,7 +9098,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -9084,7 +9114,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -9098,7 +9128,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -9131,7 +9161,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -9145,7 +9175,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -9179,7 +9209,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -9213,7 +9243,7 @@ public readonly exec: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -9227,7 +9257,7 @@ public readonly httpGet: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLi
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -9241,7 +9271,7 @@ public readonly tcpSocket: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -9275,7 +9305,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -9311,7 +9341,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -9325,7 +9355,7 @@ public readonly httpHeader: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -9339,7 +9369,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -9355,7 +9385,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -9369,7 +9399,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -9402,7 +9432,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -9416,7 +9446,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -9450,7 +9480,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -9490,7 +9520,7 @@ public readonly exec: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLiven
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -9504,7 +9534,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -9518,7 +9548,7 @@ public readonly grpc: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecInit
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -9532,7 +9562,7 @@ public readonly httpGet: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLi
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -9546,7 +9576,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -9560,7 +9590,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -9574,7 +9604,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -9588,7 +9618,7 @@ public readonly tcpSocket: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -9602,7 +9632,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -9636,7 +9666,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -9669,7 +9699,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -9683,7 +9713,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -9719,7 +9749,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -9733,7 +9763,7 @@ public readonly httpHeader: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -9747,7 +9777,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -9763,7 +9793,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -9777,7 +9807,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -9810,7 +9840,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -9824,7 +9854,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -9858,7 +9888,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -9896,7 +9926,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_port CronJobV1#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_port CronJobV1#container_port}
 
 ---
 
@@ -9910,7 +9940,7 @@ public readonly hostIp: string;
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_ip CronJobV1#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_ip CronJobV1#host_ip}
 
 ---
 
@@ -9926,7 +9956,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_port CronJobV1#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_port CronJobV1#host_port}
 
 ---
 
@@ -9942,7 +9972,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -9956,7 +9986,7 @@ public readonly protocol: string;
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#protocol CronJobV1#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#protocol CronJobV1#protocol}
 
 ---
 
@@ -9996,7 +10026,7 @@ public readonly exec: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadi
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -10010,7 +10040,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -10024,7 +10054,7 @@ public readonly grpc: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecInit
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -10038,7 +10068,7 @@ public readonly httpGet: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerRe
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -10052,7 +10082,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -10066,7 +10096,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -10080,7 +10110,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -10094,7 +10124,7 @@ public readonly tcpSocket: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -10108,7 +10138,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -10142,7 +10172,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -10175,7 +10205,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10189,7 +10219,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -10225,7 +10255,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -10239,7 +10269,7 @@ public readonly httpHeader: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -10253,7 +10283,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -10269,7 +10299,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10283,7 +10313,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -10316,7 +10346,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -10330,7 +10360,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -10364,7 +10394,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10397,7 +10427,7 @@ public readonly limits: {[ key: string ]: string};
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
 
 ---
 
@@ -10413,7 +10443,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
 
 ---
 
@@ -10455,7 +10485,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#allow_privilege_escalation CronJobV1#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#allow_privilege_escalation CronJobV1#allow_privilege_escalation}
 
 ---
 
@@ -10469,7 +10499,7 @@ public readonly capabilities: CronJobV1SpecJobTemplateSpecTemplateSpecInitContai
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#capabilities CronJobV1#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#capabilities CronJobV1#capabilities}
 
 ---
 
@@ -10485,7 +10515,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#privileged CronJobV1#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#privileged CronJobV1#privileged}
 
 ---
 
@@ -10499,7 +10529,7 @@ public readonly readOnlyRootFilesystem: boolean | IResolvable;
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only_root_filesystem CronJobV1#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only_root_filesystem CronJobV1#read_only_root_filesystem}
 
 ---
 
@@ -10515,7 +10545,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
 
 ---
 
@@ -10531,7 +10561,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
 
 ---
 
@@ -10547,7 +10577,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
 
 ---
 
@@ -10561,7 +10591,7 @@ public readonly seccompProfile: CronJobV1SpecJobTemplateSpecTemplateSpecInitCont
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
 
 ---
 
@@ -10575,7 +10605,7 @@ public readonly seLinuxOptions: CronJobV1SpecJobTemplateSpecTemplateSpecInitCont
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
 
 ---
 
@@ -10608,7 +10638,7 @@ public readonly add: string[];
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#add CronJobV1#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#add CronJobV1#add}
 
 ---
 
@@ -10622,7 +10652,7 @@ public readonly drop: string[];
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#drop CronJobV1#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#drop CronJobV1#drop}
 
 ---
 
@@ -10657,7 +10687,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
 
 ---
 
@@ -10671,7 +10701,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -10706,7 +10736,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#level CronJobV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#level CronJobV1#level}
 
 ---
 
@@ -10720,7 +10750,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#role CronJobV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#role CronJobV1#role}
 
 ---
 
@@ -10734,7 +10764,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -10748,7 +10778,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#user CronJobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#user CronJobV1#user}
 
 ---
 
@@ -10788,7 +10818,7 @@ public readonly exec: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStart
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#exec CronJobV1#exec}
 
 ---
 
@@ -10802,7 +10832,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#failure_threshold CronJobV1#failure_threshold}
 
 ---
 
@@ -10816,7 +10846,7 @@ public readonly grpc: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecInit
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#grpc CronJobV1#grpc}
 
 ---
 
@@ -10830,7 +10860,7 @@ public readonly httpGet: CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSt
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_get CronJobV1#http_get}
 
 ---
 
@@ -10844,7 +10874,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#initial_delay_seconds CronJobV1#initial_delay_seconds}
 
 ---
 
@@ -10858,7 +10888,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#period_seconds CronJobV1#period_seconds}
 
 ---
 
@@ -10872,7 +10902,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#success_threshold CronJobV1#success_threshold}
 
 ---
 
@@ -10886,7 +10916,7 @@ public readonly tcpSocket: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#tcp_socket CronJobV1#tcp_socket}
 
 ---
 
@@ -10900,7 +10930,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#timeout_seconds CronJobV1#timeout_seconds}
 
 ---
 
@@ -10934,7 +10964,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#command CronJobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#command CronJobV1#command}
 
 ---
 
@@ -10967,7 +10997,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -10981,7 +11011,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service CronJobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service CronJobV1#service}
 
 ---
 
@@ -11017,7 +11047,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host CronJobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host CronJobV1#host}
 
 ---
 
@@ -11031,7 +11061,7 @@ public readonly httpHeader: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#http_header CronJobV1#http_header}
 
 ---
 
@@ -11045,7 +11075,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -11061,7 +11091,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -11075,7 +11105,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#scheme CronJobV1#scheme}
 
 ---
 
@@ -11108,7 +11138,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -11122,7 +11152,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -11156,7 +11186,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#port CronJobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#port CronJobV1#port}
 
 ---
 
@@ -11189,7 +11219,7 @@ public readonly devicePath: string;
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#device_path CronJobV1#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#device_path CronJobV1#device_path}
 
 ---
 
@@ -11203,7 +11233,7 @@ public readonly name: string;
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -11240,7 +11270,7 @@ public readonly mountPath: string;
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mount_path CronJobV1#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mount_path CronJobV1#mount_path}
 
 ---
 
@@ -11254,7 +11284,7 @@ public readonly name: string;
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -11270,7 +11300,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mount_propagation CronJobV1#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mount_propagation CronJobV1#mount_propagation}
 
 ---
 
@@ -11284,7 +11314,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -11298,7 +11328,7 @@ public readonly subPath: string;
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sub_path CronJobV1#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sub_path CronJobV1#sub_path}
 
 ---
 
@@ -11312,7 +11342,7 @@ public readonly subPathExpr: string;
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sub_path_expr CronJobV1#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sub_path_expr CronJobV1#sub_path_expr}
 
 ---
 
@@ -11344,7 +11374,7 @@ public readonly name: string;
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -11376,7 +11406,7 @@ public readonly conditionType: string;
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#condition_type CronJobV1#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#condition_type CronJobV1#condition_type}
 
 ---
 
@@ -11419,7 +11449,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_group CronJobV1#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_group CronJobV1#fs_group}
 
 ---
 
@@ -11435,7 +11465,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_group_change_policy CronJobV1#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_group_change_policy CronJobV1#fs_group_change_policy}
 
 ---
 
@@ -11451,7 +11481,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_group CronJobV1#run_as_group}
 
 ---
 
@@ -11467,7 +11497,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_non_root CronJobV1#run_as_non_root}
 
 ---
 
@@ -11483,7 +11513,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_user CronJobV1#run_as_user}
 
 ---
 
@@ -11497,7 +11527,7 @@ public readonly seccompProfile: CronJobV1SpecJobTemplateSpecTemplateSpecSecurity
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#seccomp_profile CronJobV1#seccomp_profile}
 
 ---
 
@@ -11511,7 +11541,7 @@ public readonly seLinuxOptions: CronJobV1SpecJobTemplateSpecTemplateSpecSecurity
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#se_linux_options CronJobV1#se_linux_options}
 
 ---
 
@@ -11527,7 +11557,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#supplemental_groups CronJobV1#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#supplemental_groups CronJobV1#supplemental_groups}
 
 ---
 
@@ -11541,7 +11571,7 @@ public readonly sysctl: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecSe
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sysctl CronJobV1#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sysctl CronJobV1#sysctl}
 
 ---
 
@@ -11555,7 +11585,7 @@ public readonly windowsOptions: CronJobV1SpecJobTemplateSpecTemplateSpecSecurity
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#windows_options CronJobV1#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#windows_options CronJobV1#windows_options}
 
 ---
 
@@ -11590,7 +11620,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
 
 ---
 
@@ -11604,7 +11634,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -11639,7 +11669,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#level CronJobV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#level CronJobV1#level}
 
 ---
 
@@ -11653,7 +11683,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#role CronJobV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#role CronJobV1#role}
 
 ---
 
@@ -11667,7 +11697,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -11681,7 +11711,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#user CronJobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#user CronJobV1#user}
 
 ---
 
@@ -11714,7 +11744,7 @@ public readonly name: string;
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -11728,7 +11758,7 @@ public readonly value: string;
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -11763,7 +11793,7 @@ public readonly gmsaCredentialSpec: string;
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#gmsa_credential_spec CronJobV1#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#gmsa_credential_spec CronJobV1#gmsa_credential_spec}
 
 ---
 
@@ -11777,7 +11807,7 @@ public readonly gmsaCredentialSpecName: string;
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#gmsa_credential_spec_name CronJobV1#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#gmsa_credential_spec_name CronJobV1#gmsa_credential_spec_name}
 
 ---
 
@@ -11791,7 +11821,7 @@ public readonly hostProcess: boolean | IResolvable;
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_process CronJobV1#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_process CronJobV1#host_process}
 
 ---
 
@@ -11807,7 +11837,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#run_as_username CronJobV1#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#run_as_username CronJobV1#run_as_username}
 
 ---
 
@@ -11845,7 +11875,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#effect CronJobV1#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#effect CronJobV1#effect}
 
 ---
 
@@ -11861,7 +11891,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -11877,7 +11907,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -11893,7 +11923,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#toleration_seconds CronJobV1#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#toleration_seconds CronJobV1#toleration_seconds}
 
 ---
 
@@ -11909,7 +11939,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#value CronJobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#value CronJobV1#value}
 
 ---
 
@@ -11948,7 +11978,7 @@ public readonly labelSelector: IResolvable | CronJobV1SpecJobTemplateSpecTemplat
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#label_selector CronJobV1#label_selector}
 
 ---
 
@@ -11962,7 +11992,7 @@ public readonly matchLabelKeys: string[];
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_label_keys CronJobV1#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_label_keys CronJobV1#match_label_keys}
 
 ---
 
@@ -11976,7 +12006,7 @@ public readonly maxSkew: number;
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#max_skew CronJobV1#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#max_skew CronJobV1#max_skew}
 
 ---
 
@@ -11990,7 +12020,7 @@ public readonly minDomains: number;
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#min_domains CronJobV1#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#min_domains CronJobV1#min_domains}
 
 ---
 
@@ -12004,7 +12034,7 @@ public readonly nodeAffinityPolicy: string;
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_affinity_policy CronJobV1#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_affinity_policy CronJobV1#node_affinity_policy}
 
 ---
 
@@ -12018,7 +12048,7 @@ public readonly nodeTaintsPolicy: string;
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_taints_policy CronJobV1#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_taints_policy CronJobV1#node_taints_policy}
 
 ---
 
@@ -12034,7 +12064,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#topology_key CronJobV1#topology_key}
 
 ---
 
@@ -12048,7 +12078,7 @@ public readonly whenUnsatisfiable: string;
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#when_unsatisfiable CronJobV1#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#when_unsatisfiable CronJobV1#when_unsatisfiable}
 
 ---
 
@@ -12081,7 +12111,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -12097,7 +12127,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -12131,7 +12161,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -12145,7 +12175,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -12161,7 +12191,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -12220,7 +12250,7 @@ public readonly awsElasticBlockStore: CronJobV1SpecJobTemplateSpecTemplateSpecVo
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#aws_elastic_block_store CronJobV1#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#aws_elastic_block_store CronJobV1#aws_elastic_block_store}
 
 ---
 
@@ -12234,7 +12264,7 @@ public readonly azureDisk: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDi
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#azure_disk CronJobV1#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#azure_disk CronJobV1#azure_disk}
 
 ---
 
@@ -12248,7 +12278,7 @@ public readonly azureFile: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFi
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#azure_file CronJobV1#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#azure_file CronJobV1#azure_file}
 
 ---
 
@@ -12262,7 +12292,7 @@ public readonly cephFs: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs;
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#ceph_fs CronJobV1#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#ceph_fs CronJobV1#ceph_fs}
 
 ---
 
@@ -12276,7 +12306,7 @@ public readonly cinder: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder;
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#cinder CronJobV1#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#cinder CronJobV1#cinder}
 
 ---
 
@@ -12290,7 +12320,7 @@ public readonly configMap: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigM
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map CronJobV1#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map CronJobV1#config_map}
 
 ---
 
@@ -12304,7 +12334,7 @@ public readonly csi: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi;
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#csi CronJobV1#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#csi CronJobV1#csi}
 
 ---
 
@@ -12318,7 +12348,7 @@ public readonly downwardApi: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownw
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#downward_api CronJobV1#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#downward_api CronJobV1#downward_api}
 
 ---
 
@@ -12332,7 +12362,7 @@ public readonly emptyDir: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#empty_dir CronJobV1#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#empty_dir CronJobV1#empty_dir}
 
 ---
 
@@ -12346,7 +12376,7 @@ public readonly ephemeral: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemer
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#ephemeral CronJobV1#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#ephemeral CronJobV1#ephemeral}
 
 ---
 
@@ -12360,7 +12390,7 @@ public readonly fc: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc;
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fc CronJobV1#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fc CronJobV1#fc}
 
 ---
 
@@ -12374,7 +12404,7 @@ public readonly flexVolume: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVo
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#flex_volume CronJobV1#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#flex_volume CronJobV1#flex_volume}
 
 ---
 
@@ -12388,7 +12418,7 @@ public readonly flocker: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker;
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#flocker CronJobV1#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#flocker CronJobV1#flocker}
 
 ---
 
@@ -12402,7 +12432,7 @@ public readonly gcePersistentDisk: CronJobV1SpecJobTemplateSpecTemplateSpecVolum
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#gce_persistent_disk CronJobV1#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#gce_persistent_disk CronJobV1#gce_persistent_disk}
 
 ---
 
@@ -12416,7 +12446,7 @@ public readonly gitRepo: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo;
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#git_repo CronJobV1#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#git_repo CronJobV1#git_repo}
 
 ---
 
@@ -12430,7 +12460,7 @@ public readonly glusterfs: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGluster
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#glusterfs CronJobV1#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#glusterfs CronJobV1#glusterfs}
 
 ---
 
@@ -12444,7 +12474,7 @@ public readonly hostPath: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#host_path CronJobV1#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#host_path CronJobV1#host_path}
 
 ---
 
@@ -12458,7 +12488,7 @@ public readonly iscsi: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi;
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#iscsi CronJobV1#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#iscsi CronJobV1#iscsi}
 
 ---
 
@@ -12472,7 +12502,7 @@ public readonly local: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal;
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#local CronJobV1#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#local CronJobV1#local}
 
 ---
 
@@ -12486,7 +12516,7 @@ public readonly name: string;
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -12500,7 +12530,7 @@ public readonly nfs: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs;
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#nfs CronJobV1#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#nfs CronJobV1#nfs}
 
 ---
 
@@ -12514,7 +12544,7 @@ public readonly persistentVolumeClaim: CronJobV1SpecJobTemplateSpecTemplateSpecV
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#persistent_volume_claim CronJobV1#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#persistent_volume_claim CronJobV1#persistent_volume_claim}
 
 ---
 
@@ -12528,7 +12558,7 @@ public readonly photonPersistentDisk: CronJobV1SpecJobTemplateSpecTemplateSpecVo
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#photon_persistent_disk CronJobV1#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#photon_persistent_disk CronJobV1#photon_persistent_disk}
 
 ---
 
@@ -12542,7 +12572,7 @@ public readonly projected: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#projected CronJobV1#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#projected CronJobV1#projected}
 
 ---
 
@@ -12556,7 +12586,7 @@ public readonly quobyte: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte;
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#quobyte CronJobV1#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#quobyte CronJobV1#quobyte}
 
 ---
 
@@ -12570,7 +12600,7 @@ public readonly rbd: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd;
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#rbd CronJobV1#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#rbd CronJobV1#rbd}
 
 ---
 
@@ -12584,7 +12614,7 @@ public readonly secret: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret;
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret CronJobV1#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret CronJobV1#secret}
 
 ---
 
@@ -12598,7 +12628,7 @@ public readonly vsphereVolume: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsp
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#vsphere_volume CronJobV1#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#vsphere_volume CronJobV1#vsphere_volume}
 
 ---
 
@@ -12633,7 +12663,7 @@ public readonly volumeId: string;
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_id CronJobV1#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_id CronJobV1#volume_id}
 
 ---
 
@@ -12649,7 +12679,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -12665,7 +12695,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#partition CronJobV1#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#partition CronJobV1#partition}
 
 ---
 
@@ -12679,7 +12709,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -12716,7 +12746,7 @@ public readonly cachingMode: string;
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#caching_mode CronJobV1#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#caching_mode CronJobV1#caching_mode}
 
 ---
 
@@ -12730,7 +12760,7 @@ public readonly dataDiskUri: string;
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#data_disk_uri CronJobV1#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#data_disk_uri CronJobV1#data_disk_uri}
 
 ---
 
@@ -12744,7 +12774,7 @@ public readonly diskName: string;
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#disk_name CronJobV1#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#disk_name CronJobV1#disk_name}
 
 ---
 
@@ -12760,7 +12790,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -12774,7 +12804,7 @@ public readonly kind: string;
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#kind CronJobV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#kind CronJobV1#kind}
 
 ---
 
@@ -12788,7 +12818,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -12823,7 +12853,7 @@ public readonly secretName: string;
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_name CronJobV1#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_name CronJobV1#secret_name}
 
 ---
 
@@ -12837,7 +12867,7 @@ public readonly shareName: string;
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#share_name CronJobV1#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#share_name CronJobV1#share_name}
 
 ---
 
@@ -12851,7 +12881,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -12867,7 +12897,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_namespace CronJobV1#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_namespace CronJobV1#secret_namespace}
 
 ---
 
@@ -12904,7 +12934,7 @@ public readonly monitors: string[];
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#monitors CronJobV1#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#monitors CronJobV1#monitors}
 
 ---
 
@@ -12918,7 +12948,7 @@ public readonly path: string;
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -12932,7 +12962,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -12946,7 +12976,7 @@ public readonly secretFile: string;
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_file CronJobV1#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_file CronJobV1#secret_file}
 
 ---
 
@@ -12960,7 +12990,7 @@ public readonly secretRef: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsS
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
 
 ---
 
@@ -12974,7 +13004,7 @@ public readonly user: string;
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#user CronJobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#user CronJobV1#user}
 
 ---
 
@@ -13007,7 +13037,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -13021,7 +13051,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
 
 ---
 
@@ -13055,7 +13085,7 @@ public readonly volumeId: string;
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_id CronJobV1#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_id CronJobV1#volume_id}
 
 ---
 
@@ -13071,7 +13101,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -13085,7 +13115,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -13122,7 +13152,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
 
 ---
 
@@ -13136,7 +13166,7 @@ public readonly items: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecVol
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -13150,7 +13180,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -13164,7 +13194,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -13198,7 +13228,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -13214,7 +13244,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -13230,7 +13260,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -13266,7 +13296,7 @@ public readonly driver: string;
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#driver CronJobV1#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#driver CronJobV1#driver}
 
 ---
 
@@ -13282,7 +13312,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -13296,7 +13326,7 @@ public readonly nodePublishSecretRef: CronJobV1SpecJobTemplateSpecTemplateSpecVo
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#node_publish_secret_ref CronJobV1#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#node_publish_secret_ref CronJobV1#node_publish_secret_ref}
 
 ---
 
@@ -13310,7 +13340,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -13324,7 +13354,7 @@ public readonly volumeAttributes: {[ key: string ]: string};
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_attributes CronJobV1#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_attributes CronJobV1#volume_attributes}
 
 ---
 
@@ -13356,7 +13386,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -13391,7 +13421,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
 
 ---
 
@@ -13405,7 +13435,7 @@ public readonly items: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecVol
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -13440,7 +13470,7 @@ public readonly fieldRef: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownward
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
 
 ---
 
@@ -13456,7 +13486,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -13472,7 +13502,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -13486,7 +13516,7 @@ public readonly resourceFieldRef: CronJobV1SpecJobTemplateSpecTemplateSpecVolume
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
 
 ---
 
@@ -13519,7 +13549,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
 
 ---
 
@@ -13533,7 +13563,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
 
 ---
 
@@ -13551,9 +13581,9 @@ const cronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFiel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
 
 ---
 
@@ -13565,7 +13595,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
 
 ---
 
@@ -13579,7 +13609,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
 
 ---
 
@@ -13591,7 +13621,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
 
 ---
 
@@ -13626,7 +13656,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#medium CronJobV1#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#medium CronJobV1#medium}
 
 ---
 
@@ -13640,7 +13670,7 @@ public readonly sizeLimit: string;
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#size_limit CronJobV1#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#size_limit CronJobV1#size_limit}
 
 ---
 
@@ -13672,7 +13702,7 @@ public readonly volumeClaimTemplate: CronJobV1SpecJobTemplateSpecTemplateSpecVol
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_claim_template CronJobV1#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_claim_template CronJobV1#volume_claim_template}
 
 ---
 
@@ -13705,7 +13735,7 @@ public readonly spec: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVol
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#spec CronJobV1#spec}
 
 ---
 
@@ -13719,7 +13749,7 @@ public readonly metadata: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemera
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#metadata CronJobV1#metadata}
 
 ---
 
@@ -13754,7 +13784,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#annotations CronJobV1#annotations}
 
 ---
 
@@ -13770,7 +13800,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#labels CronJobV1#labels}
 
 ---
 
@@ -13807,7 +13837,7 @@ public readonly accessModes: string[];
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#access_modes CronJobV1#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#access_modes CronJobV1#access_modes}
 
 ---
 
@@ -13821,7 +13851,7 @@ public readonly resources: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemer
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
 
 ---
 
@@ -13835,7 +13865,7 @@ public readonly selector: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemera
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#selector CronJobV1#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#selector CronJobV1#selector}
 
 ---
 
@@ -13849,7 +13879,7 @@ public readonly storageClassName: string;
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#storage_class_name CronJobV1#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#storage_class_name CronJobV1#storage_class_name}
 
 ---
 
@@ -13863,7 +13893,7 @@ public readonly volumeMode: string;
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_mode CronJobV1#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_mode CronJobV1#volume_mode}
 
 ---
 
@@ -13877,7 +13907,7 @@ public readonly volumeName: string;
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_name CronJobV1#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_name CronJobV1#volume_name}
 
 ---
 
@@ -13910,7 +13940,7 @@ public readonly limits: {[ key: string ]: string};
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#limits CronJobV1#limits}
 
 ---
 
@@ -13926,7 +13956,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#requests CronJobV1#requests}
 
 ---
 
@@ -13959,7 +13989,7 @@ public readonly matchExpressions: IResolvable | CronJobV1SpecJobTemplateSpecTemp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_expressions CronJobV1#match_expressions}
 
 ---
 
@@ -13975,7 +14005,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#match_labels CronJobV1#match_labels}
 
 ---
 
@@ -14009,7 +14039,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -14023,7 +14053,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#operator CronJobV1#operator}
 
 ---
 
@@ -14039,7 +14069,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#values CronJobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#values CronJobV1#values}
 
 ---
 
@@ -14074,7 +14104,7 @@ public readonly lun: number;
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#lun CronJobV1#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#lun CronJobV1#lun}
 
 ---
 
@@ -14088,7 +14118,7 @@ public readonly targetWwNs: string[];
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#target_ww_ns CronJobV1#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#target_ww_ns CronJobV1#target_ww_ns}
 
 ---
 
@@ -14104,7 +14134,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -14118,7 +14148,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -14154,7 +14184,7 @@ public readonly driver: string;
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#driver CronJobV1#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#driver CronJobV1#driver}
 
 ---
 
@@ -14170,7 +14200,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -14184,7 +14214,7 @@ public readonly options: {[ key: string ]: string};
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#options CronJobV1#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#options CronJobV1#options}
 
 ---
 
@@ -14198,7 +14228,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -14212,7 +14242,7 @@ public readonly secretRef: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVol
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
 
 ---
 
@@ -14245,7 +14275,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -14259,7 +14289,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
 
 ---
 
@@ -14292,7 +14322,7 @@ public readonly datasetName: string;
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#dataset_name CronJobV1#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#dataset_name CronJobV1#dataset_name}
 
 ---
 
@@ -14306,7 +14336,7 @@ public readonly datasetUuid: string;
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#dataset_uuid CronJobV1#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#dataset_uuid CronJobV1#dataset_uuid}
 
 ---
 
@@ -14341,7 +14371,7 @@ public readonly pdName: string;
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pd_name CronJobV1#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pd_name CronJobV1#pd_name}
 
 ---
 
@@ -14357,7 +14387,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -14373,7 +14403,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#partition CronJobV1#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#partition CronJobV1#partition}
 
 ---
 
@@ -14387,7 +14417,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -14423,7 +14453,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#directory CronJobV1#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#directory CronJobV1#directory}
 
 ---
 
@@ -14437,7 +14467,7 @@ public readonly repository: string;
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#repository CronJobV1#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#repository CronJobV1#repository}
 
 ---
 
@@ -14451,7 +14481,7 @@ public readonly revision: string;
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#revision CronJobV1#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#revision CronJobV1#revision}
 
 ---
 
@@ -14485,7 +14515,7 @@ public readonly endpointsName: string;
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#endpoints_name CronJobV1#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#endpoints_name CronJobV1#endpoints_name}
 
 ---
 
@@ -14499,7 +14529,7 @@ public readonly path: string;
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -14513,7 +14543,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -14546,7 +14576,7 @@ public readonly path: string;
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -14560,7 +14590,7 @@ public readonly type: string;
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#type CronJobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#type CronJobV1#type}
 
 ---
 
@@ -14597,7 +14627,7 @@ public readonly iqn: string;
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#iqn CronJobV1#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#iqn CronJobV1#iqn}
 
 ---
 
@@ -14613,7 +14643,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#target_portal CronJobV1#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#target_portal CronJobV1#target_portal}
 
 ---
 
@@ -14629,7 +14659,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -14643,7 +14673,7 @@ public readonly iscsiInterface: string;
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#iscsi_interface CronJobV1#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#iscsi_interface CronJobV1#iscsi_interface}
 
 ---
 
@@ -14657,7 +14687,7 @@ public readonly lun: number;
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#lun CronJobV1#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#lun CronJobV1#lun}
 
 ---
 
@@ -14671,7 +14701,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -14703,7 +14733,7 @@ public readonly path: string;
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -14737,7 +14767,7 @@ public readonly path: string;
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -14751,7 +14781,7 @@ public readonly server: string;
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#server CronJobV1#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#server CronJobV1#server}
 
 ---
 
@@ -14765,7 +14795,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -14798,7 +14828,7 @@ public readonly claimName: string;
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#claim_name CronJobV1#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#claim_name CronJobV1#claim_name}
 
 ---
 
@@ -14812,7 +14842,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -14845,7 +14875,7 @@ public readonly pdId: string;
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#pd_id CronJobV1#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#pd_id CronJobV1#pd_id}
 
 ---
 
@@ -14861,7 +14891,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -14894,7 +14924,7 @@ public readonly sources: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecV
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#sources CronJobV1#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#sources CronJobV1#sources}
 
 ---
 
@@ -14910,7 +14940,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
 
 ---
 
@@ -14945,7 +14975,7 @@ public readonly configMap: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpe
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map CronJobV1#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#config_map CronJobV1#config_map}
 
 ---
 
@@ -14959,7 +14989,7 @@ public readonly downwardApi: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProje
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#downward_api CronJobV1#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#downward_api CronJobV1#downward_api}
 
 ---
 
@@ -14973,7 +15003,7 @@ public readonly secret: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecVo
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret CronJobV1#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret CronJobV1#secret}
 
 ---
 
@@ -14987,7 +15017,7 @@ public readonly serviceAccountToken: CronJobV1SpecJobTemplateSpecTemplateSpecVol
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#service_account_token CronJobV1#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#service_account_token CronJobV1#service_account_token}
 
 ---
 
@@ -15021,7 +15051,7 @@ public readonly items: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecVol
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -15035,7 +15065,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -15049,7 +15079,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -15083,7 +15113,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -15099,7 +15129,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -15115,7 +15145,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -15147,7 +15177,7 @@ public readonly items: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecVol
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -15184,7 +15214,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -15198,7 +15228,7 @@ public readonly fieldRef: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjecte
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
 
 ---
 
@@ -15214,7 +15244,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -15228,7 +15258,7 @@ public readonly resourceFieldRef: CronJobV1SpecJobTemplateSpecTemplateSpecVolume
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
 
 ---
 
@@ -15261,7 +15291,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#api_version CronJobV1#api_version}
 
 ---
 
@@ -15275,7 +15305,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#field_path CronJobV1#field_path}
 
 ---
 
@@ -15293,9 +15323,9 @@ const cronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}. |
 
 ---
 
@@ -15307,7 +15337,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#container_name CronJobV1#container_name}.
 
 ---
 
@@ -15321,7 +15351,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#resource CronJobV1#resource}
 
 ---
 
@@ -15333,7 +15363,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#divisor CronJobV1#divisor}.
 
 ---
 
@@ -15367,7 +15397,7 @@ public readonly items: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecVol
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -15381,7 +15411,7 @@ public readonly name: string;
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -15395,7 +15425,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -15429,7 +15459,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -15445,7 +15475,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -15461,7 +15491,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -15495,7 +15525,7 @@ public readonly path: string;
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -15509,7 +15539,7 @@ public readonly audience: string;
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#audience CronJobV1#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#audience CronJobV1#audience}
 
 ---
 
@@ -15525,7 +15555,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#expiration_seconds CronJobV1#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#expiration_seconds CronJobV1#expiration_seconds}
 
 ---
 
@@ -15561,7 +15591,7 @@ public readonly registry: string;
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#registry CronJobV1#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#registry CronJobV1#registry}
 
 ---
 
@@ -15575,7 +15605,7 @@ public readonly volume: string;
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume CronJobV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume CronJobV1#volume}
 
 ---
 
@@ -15589,7 +15619,7 @@ public readonly group: string;
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#group CronJobV1#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#group CronJobV1#group}
 
 ---
 
@@ -15603,7 +15633,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -15617,7 +15647,7 @@ public readonly user: string;
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#user CronJobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#user CronJobV1#user}
 
 ---
 
@@ -15656,7 +15686,7 @@ public readonly cephMonitors: string[];
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#ceph_monitors CronJobV1#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#ceph_monitors CronJobV1#ceph_monitors}
 
 ---
 
@@ -15670,7 +15700,7 @@ public readonly rbdImage: string;
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#rbd_image CronJobV1#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#rbd_image CronJobV1#rbd_image}
 
 ---
 
@@ -15686,7 +15716,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -15700,7 +15730,7 @@ public readonly keyring: string;
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#keyring CronJobV1#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#keyring CronJobV1#keyring}
 
 ---
 
@@ -15714,7 +15744,7 @@ public readonly radosUser: string;
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#rados_user CronJobV1#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#rados_user CronJobV1#rados_user}
 
 ---
 
@@ -15728,7 +15758,7 @@ public readonly rbdPool: string;
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#rbd_pool CronJobV1#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#rbd_pool CronJobV1#rbd_pool}
 
 ---
 
@@ -15742,7 +15772,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#read_only CronJobV1#read_only}
 
 ---
 
@@ -15756,7 +15786,7 @@ public readonly secretRef: CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecr
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_ref CronJobV1#secret_ref}
 
 ---
 
@@ -15789,7 +15819,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#name CronJobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#name CronJobV1#name}
 
 ---
 
@@ -15803,7 +15833,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#namespace CronJobV1#namespace}
 
 ---
 
@@ -15840,7 +15870,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#default_mode CronJobV1#default_mode}
 
 ---
 
@@ -15854,7 +15884,7 @@ public readonly items: IResolvable | CronJobV1SpecJobTemplateSpecTemplateSpecVol
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#items CronJobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#items CronJobV1#items}
 
 ---
 
@@ -15868,7 +15898,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#optional CronJobV1#optional}
 
 ---
 
@@ -15882,7 +15912,7 @@ public readonly secretName: string;
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_name CronJobV1#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#secret_name CronJobV1#secret_name}
 
 ---
 
@@ -15916,7 +15946,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#key CronJobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#key CronJobV1#key}
 
 ---
 
@@ -15932,7 +15962,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#mode CronJobV1#mode}
 
 ---
 
@@ -15948,7 +15978,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#path CronJobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#path CronJobV1#path}
 
 ---
 
@@ -15981,7 +16011,7 @@ public readonly volumePath: string;
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#volume_path CronJobV1#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#volume_path CronJobV1#volume_path}
 
 ---
 
@@ -15997,7 +16027,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#fs_type CronJobV1#fs_type}
 
 ---
 
@@ -16015,7 +16045,7 @@ const cronJobV1Timeouts: cronJobV1.CronJobV1Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#delete CronJobV1#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#delete CronJobV1#delete}. |
 
 ---
 
@@ -16027,7 +16057,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#delete CronJobV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cron_job_v1#delete CronJobV1#delete}.
 
 ---
 
@@ -47979,6 +48009,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetPort">resetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetReadinessProbe">resetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetResources">resetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetRestartPolicy">resetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetSecurityContext">resetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetStartupProbe">resetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetStdin">resetStdin</a></code> | *No description.* |
@@ -48340,6 +48371,12 @@ public resetReadinessProbe(): void
 public resetResources(): void
 ```
 
+##### `resetRestartPolicy` <a name="resetRestartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetRestartPolicy"></a>
+
+```typescript
+public resetRestartPolicy(): void
+```
+
 ##### `resetSecurityContext` <a name="resetSecurityContext" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.resetSecurityContext"></a>
 
 ```typescript
@@ -48430,6 +48467,7 @@ public resetWorkingDir(): void
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.portInput">portInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPort">CronJobV1SpecJobTemplateSpecTemplateSpecContainerPort</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe">CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.resourcesInput">resourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources">CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.restartPolicyInput">restartPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.securityContextInput">securityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext">CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe">CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.stdinInput">stdinInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -48445,6 +48483,7 @@ public resetWorkingDir(): void
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.image">image</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.imagePullPolicy">imagePullPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.restartPolicy">restartPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.stdin">stdin</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.stdinOnce">stdinOnce</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.terminationMessagePath">terminationMessagePath</a></code> | <code>string</code> | *No description.* |
@@ -48709,6 +48748,16 @@ public readonly resourcesInput: CronJobV1SpecJobTemplateSpecTemplateSpecContaine
 
 ---
 
+##### `restartPolicyInput`<sup>Optional</sup> <a name="restartPolicyInput" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.restartPolicyInput"></a>
+
+```typescript
+public readonly restartPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `securityContextInput`<sup>Optional</sup> <a name="securityContextInput" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.securityContextInput"></a>
 
 ```typescript
@@ -48853,6 +48902,16 @@ public readonly imagePullPolicy: string;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `restartPolicy`<sup>Required</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference.property.restartPolicy"></a>
+
+```typescript
+public readonly restartPolicy: string;
 ```
 
 - *Type:* string
@@ -70424,6 +70483,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetPort">resetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetReadinessProbe">resetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetResources">resetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy">resetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetSecurityContext">resetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetStartupProbe">resetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetStdin">resetStdin</a></code> | *No description.* |
@@ -70785,6 +70845,12 @@ public resetReadinessProbe(): void
 public resetResources(): void
 ```
 
+##### `resetRestartPolicy` <a name="resetRestartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy"></a>
+
+```typescript
+public resetRestartPolicy(): void
+```
+
 ##### `resetSecurityContext` <a name="resetSecurityContext" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.resetSecurityContext"></a>
 
 ```typescript
@@ -70875,6 +70941,7 @@ public resetWorkingDir(): void
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.portInput">portInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.resourcesInput">resourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput">restartPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.securityContextInput">securityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe">CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.stdinInput">stdinInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -70890,6 +70957,7 @@ public resetWorkingDir(): void
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.image">image</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.imagePullPolicy">imagePullPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.restartPolicy">restartPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.stdin">stdin</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.stdinOnce">stdinOnce</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.terminationMessagePath">terminationMessagePath</a></code> | <code>string</code> | *No description.* |
@@ -71154,6 +71222,16 @@ public readonly resourcesInput: CronJobV1SpecJobTemplateSpecTemplateSpecInitCont
 
 ---
 
+##### `restartPolicyInput`<sup>Optional</sup> <a name="restartPolicyInput" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput"></a>
+
+```typescript
+public readonly restartPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `securityContextInput`<sup>Optional</sup> <a name="securityContextInput" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.securityContextInput"></a>
 
 ```typescript
@@ -71298,6 +71376,16 @@ public readonly imagePullPolicy: string;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `restartPolicy`<sup>Required</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference.property.restartPolicy"></a>
+
+```typescript
+public readonly restartPolicy: string;
 ```
 
 - *Type:* string

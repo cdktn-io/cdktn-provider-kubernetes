@@ -4,7 +4,7 @@
 
 ### JobV1 <a name="JobV1" id="@cdktn/provider-kubernetes.jobV1.JobV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1 kubernetes_job_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1 kubernetes_job_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.jobV1.JobV1.Initializer"></a>
 
@@ -40,9 +40,9 @@ JobV1.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Metadata">JobV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Spec">JobV1Spec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#id JobV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#id JobV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Timeouts">JobV1Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1.Initializer.parameter.waitForCompletion">waitForCompletion</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#wait_for_completion JobV1#wait_for_completion}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1.Initializer.parameter.waitForCompletion">waitForCompletion</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#wait_for_completion JobV1#wait_for_completion}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#metadata JobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#metadata JobV1#metadata}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#spec JobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#spec JobV1#spec}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#id JobV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#id JobV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#timeouts JobV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#timeouts JobV1#timeouts}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#wait_for_completion JobV1#wait_for_completion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#wait_for_completion JobV1#wait_for_completion}.
 
 ---
 
@@ -660,7 +660,7 @@ The construct id used in the generated config for the JobV1 to import.
 
 The id of the existing JobV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1001,9 +1001,9 @@ JobV1Config.builder()
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Config.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Metadata">JobV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Config.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Spec">JobV1Spec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#id JobV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#id JobV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Timeouts">JobV1Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Config.property.waitForCompletion">waitForCompletion</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#wait_for_completion JobV1#wait_for_completion}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Config.property.waitForCompletion">waitForCompletion</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#wait_for_completion JobV1#wait_for_completion}. |
 
 ---
 
@@ -1087,7 +1087,7 @@ public JobV1Metadata getMetadata();
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#metadata JobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#metadata JobV1#metadata}
 
 ---
 
@@ -1101,7 +1101,7 @@ public JobV1Spec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#spec JobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#spec JobV1#spec}
 
 ---
 
@@ -1113,7 +1113,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#id JobV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#id JobV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1130,7 +1130,7 @@ public JobV1Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#timeouts JobV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#timeouts JobV1#timeouts}
 
 ---
 
@@ -1142,7 +1142,7 @@ public java.lang.Boolean|IResolvable getWaitForCompletion();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#wait_for_completion JobV1#wait_for_completion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#wait_for_completion JobV1#wait_for_completion}.
 
 ---
 
@@ -1186,7 +1186,7 @@ An unstructured key value map stored with the job that may be used to store arbi
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#annotations JobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#annotations JobV1#annotations}
 
 ---
 
@@ -1202,7 +1202,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#generate_name JobV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#generate_name JobV1#generate_name}
 
 ---
 
@@ -1218,7 +1218,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#labels JobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#labels JobV1#labels}
 
 ---
 
@@ -1232,7 +1232,7 @@ public java.lang.String getName();
 
 Name of the job, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -1246,7 +1246,7 @@ public java.lang.String getNamespace();
 
 Namespace defines the space within which name of the job must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespace JobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespace JobV1#namespace}
 
 ---
 
@@ -1302,7 +1302,7 @@ public JobV1SpecTemplate getTemplate();
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#template JobV1#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#template JobV1#template}
 
 ---
 
@@ -1318,7 +1318,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#active_deadline_seconds JobV1#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#active_deadline_seconds JobV1#active_deadline_seconds}
 
 ---
 
@@ -1332,7 +1332,7 @@ public java.lang.Number getBackoffLimit();
 
 Specifies the number of retries before marking this job failed. Defaults to 6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#backoff_limit JobV1#backoff_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#backoff_limit JobV1#backoff_limit}
 
 ---
 
@@ -1348,7 +1348,7 @@ Specifies the limit for the number of retries within an index before marking thi
 
 When enabled the number of failures per index is kept in the pod's batch.kubernetes.io/job-index-failure-count annotation. It can only be set when Job's completionMode=Indexed, and the Pod's restart policy is Never. The field is immutable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#backoff_limit_per_index JobV1#backoff_limit_per_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#backoff_limit_per_index JobV1#backoff_limit_per_index}
 
 ---
 
@@ -1362,7 +1362,7 @@ public java.lang.String getCompletionMode();
 
 Specifies how Pod completions are tracked. It can be `NonIndexed` (default) or `Indexed`. More info: https://kubernetes.io/docs/concepts/workloads/controllers/job/#completion-mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#completion_mode JobV1#completion_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#completion_mode JobV1#completion_mode}
 
 ---
 
@@ -1378,7 +1378,7 @@ Specifies the desired number of successfully finished pods the job should be run
 
 Setting to nil means that the success of any pod signals the success of all pods, and allows parallelism to have any positive value. Setting to 1 means that parallelism is limited to 1 and the success of that pod signals the success of the job. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#completions JobV1#completions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#completions JobV1#completions}
 
 ---
 
@@ -1394,7 +1394,7 @@ Controls generation of pod labels and pod selectors.
 
 Leave unset unless you are certain what you are doing. When false or unset, the system pick labels unique to this job and appends those labels to the pod template. When true, the user is responsible for picking unique labels and specifying the selector. Failure to pick a unique label may cause this and other jobs to not function correctly. More info: https://git.k8s.io/community/contributors/design-proposals/selector-generation.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#manual_selector JobV1#manual_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#manual_selector JobV1#manual_selector}
 
 ---
 
@@ -1410,7 +1410,7 @@ Controls generation of pod labels and pod selectors.
 
 Leave unset unless you are certain what you are doing. When false or unset, the system pick labels unique to this job and appends those labels to the pod template. When true, the user is responsible for picking unique labels and specifying the selector. Failure to pick a unique label may cause this and other jobs to not function correctly. More info: https://git.k8s.io/community/contributors/design-proposals/selector-generation.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#max_failed_indexes JobV1#max_failed_indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#max_failed_indexes JobV1#max_failed_indexes}
 
 ---
 
@@ -1426,7 +1426,7 @@ Specifies the maximum desired number of pods the job should run at any given tim
 
 The actual number of pods running in steady state will be less than this number when ((.spec.completions - .status.successful) < .spec.parallelism), i.e. when the work left to do is less than max parallelism. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#parallelism JobV1#parallelism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#parallelism JobV1#parallelism}
 
 ---
 
@@ -1440,7 +1440,7 @@ public JobV1SpecPodFailurePolicy getPodFailurePolicy();
 
 pod_failure_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#pod_failure_policy JobV1#pod_failure_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#pod_failure_policy JobV1#pod_failure_policy}
 
 ---
 
@@ -1454,7 +1454,7 @@ public JobV1SpecSelector getSelector();
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#selector JobV1#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#selector JobV1#selector}
 
 ---
 
@@ -1470,7 +1470,7 @@ ttlSecondsAfterFinished limits the lifetime of a Job that has finished execution
 
 If this field is set, ttlSecondsAfterFinished after the Job finishes, it is eligible to be automatically deleted. When the Job is being deleted, its lifecycle guarantees (e.g. finalizers) will be honored. If this field is unset, the Job won't be automatically deleted. If this field is set to zero, the Job becomes eligible to be deleted immediately after it finishes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#ttl_seconds_after_finished JobV1#ttl_seconds_after_finished}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#ttl_seconds_after_finished JobV1#ttl_seconds_after_finished}
 
 ---
 
@@ -1504,7 +1504,7 @@ public IResolvable|java.util.List<JobV1SpecPodFailurePolicyRule> getRule();
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#rule JobV1#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#rule JobV1#rule}
 
 ---
 
@@ -1526,7 +1526,7 @@ JobV1SpecPodFailurePolicyRule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRule.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#action JobV1#action}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRule.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#action JobV1#action}. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRule.property.onExitCodes">onExitCodes</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnExitCodes">JobV1SpecPodFailurePolicyRuleOnExitCodes</a></code> | on_exit_codes block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRule.property.onPodCondition">onPodCondition</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnPodCondition">JobV1SpecPodFailurePolicyRuleOnPodCondition</a>></code> | on_pod_condition block. |
 
@@ -1540,7 +1540,7 @@ public java.lang.String getAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#action JobV1#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#action JobV1#action}.
 
 ---
 
@@ -1554,7 +1554,7 @@ public JobV1SpecPodFailurePolicyRuleOnExitCodes getOnExitCodes();
 
 on_exit_codes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#on_exit_codes JobV1#on_exit_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#on_exit_codes JobV1#on_exit_codes}
 
 ---
 
@@ -1568,7 +1568,7 @@ public IResolvable|java.util.List<JobV1SpecPodFailurePolicyRuleOnPodCondition> g
 
 on_pod_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#on_pod_condition JobV1#on_pod_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#on_pod_condition JobV1#on_pod_condition}
 
 ---
 
@@ -1590,9 +1590,9 @@ JobV1SpecPodFailurePolicyRuleOnExitCodes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnExitCodes.property.values">values</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnExitCodes.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_name JobV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnExitCodes.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnExitCodes.property.values">values</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnExitCodes.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_name JobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnExitCodes.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}. |
 
 ---
 
@@ -1604,7 +1604,7 @@ public java.util.List<java.lang.Number> getValues();
 
 - *Type:* java.util.List<java.lang.Number>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}.
 
 ---
 
@@ -1616,7 +1616,7 @@ public java.lang.String getContainerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_name JobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_name JobV1#container_name}.
 
 ---
 
@@ -1628,7 +1628,7 @@ public java.lang.String getOperator();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}.
 
 ---
 
@@ -1649,8 +1649,8 @@ JobV1SpecPodFailurePolicyRuleOnPodCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnPodCondition.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#status JobV1#status}. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnPodCondition.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#type JobV1#type}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnPodCondition.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#status JobV1#status}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecPodFailurePolicyRuleOnPodCondition.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#type JobV1#type}. |
 
 ---
 
@@ -1662,7 +1662,7 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#status JobV1#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#status JobV1#status}.
 
 ---
 
@@ -1674,7 +1674,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#type JobV1#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#type JobV1#type}.
 
 ---
 
@@ -1710,7 +1710,7 @@ public IResolvable|java.util.List<JobV1SpecSelectorMatchExpressions> getMatchExp
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -1726,7 +1726,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -1764,7 +1764,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -1778,7 +1778,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -1794,7 +1794,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -1830,7 +1830,7 @@ public JobV1SpecTemplateMetadata getMetadata();
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#metadata JobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#metadata JobV1#metadata}
 
 ---
 
@@ -1844,7 +1844,7 @@ public JobV1SpecTemplateSpec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#spec JobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#spec JobV1#spec}
 
 ---
 
@@ -1886,7 +1886,7 @@ An unstructured key value map stored with the job that may be used to store arbi
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#annotations JobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#annotations JobV1#annotations}
 
 ---
 
@@ -1902,7 +1902,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#generate_name JobV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#generate_name JobV1#generate_name}
 
 ---
 
@@ -1918,7 +1918,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#labels JobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#labels JobV1#labels}
 
 ---
 
@@ -1932,7 +1932,7 @@ public java.lang.String getName();
 
 Name of the job, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -2026,7 +2026,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#active_deadline_seconds JobV1#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#active_deadline_seconds JobV1#active_deadline_seconds}
 
 ---
 
@@ -2040,7 +2040,7 @@ public JobV1SpecTemplateSpecAffinity getAffinity();
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#affinity JobV1#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#affinity JobV1#affinity}
 
 ---
 
@@ -2054,7 +2054,7 @@ public java.lang.Boolean|IResolvable getAutomountServiceAccountToken();
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#automount_service_account_token JobV1#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#automount_service_account_token JobV1#automount_service_account_token}
 
 ---
 
@@ -2068,7 +2068,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainer> getContainer()
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container JobV1#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container JobV1#container}
 
 ---
 
@@ -2082,7 +2082,7 @@ public JobV1SpecTemplateSpecDnsConfig getDnsConfig();
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#dns_config JobV1#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#dns_config JobV1#dns_config}
 
 ---
 
@@ -2098,7 +2098,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#dns_policy JobV1#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#dns_policy JobV1#dns_policy}
 
 ---
 
@@ -2112,7 +2112,7 @@ public java.lang.Boolean|IResolvable getEnableServiceLinks();
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#enable_service_links JobV1#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#enable_service_links JobV1#enable_service_links}
 
 ---
 
@@ -2126,7 +2126,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecHostAliases> getHostAlias
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host_aliases JobV1#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host_aliases JobV1#host_aliases}
 
 ---
 
@@ -2140,7 +2140,7 @@ public java.lang.Boolean|IResolvable getHostIpc();
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host_ipc JobV1#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host_ipc JobV1#host_ipc}
 
 ---
 
@@ -2154,7 +2154,7 @@ public java.lang.String getHostname();
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#hostname JobV1#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#hostname JobV1#hostname}
 
 ---
 
@@ -2170,7 +2170,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host_network JobV1#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host_network JobV1#host_network}
 
 ---
 
@@ -2184,7 +2184,7 @@ public java.lang.Boolean|IResolvable getHostPid();
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host_pid JobV1#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host_pid JobV1#host_pid}
 
 ---
 
@@ -2198,7 +2198,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecImagePullSecrets> getImag
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#image_pull_secrets JobV1#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#image_pull_secrets JobV1#image_pull_secrets}
 
 ---
 
@@ -2212,7 +2212,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainer> getInitCon
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#init_container JobV1#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#init_container JobV1#init_container}
 
 ---
 
@@ -2228,7 +2228,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#node_name JobV1#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#node_name JobV1#node_name}
 
 ---
 
@@ -2244,7 +2244,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#node_selector JobV1#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#node_selector JobV1#node_selector}
 
 ---
 
@@ -2258,7 +2258,7 @@ public JobV1SpecTemplateSpecOs getOs();
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#os JobV1#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#os JobV1#os}
 
 ---
 
@@ -2274,7 +2274,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#priority_class_name JobV1#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#priority_class_name JobV1#priority_class_name}
 
 ---
 
@@ -2288,7 +2288,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecReadinessGate> getReadine
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#readiness_gate JobV1#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#readiness_gate JobV1#readiness_gate}
 
 ---
 
@@ -2302,7 +2302,7 @@ public java.lang.String getRestartPolicy();
 
 Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#restart_policy JobV1#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#restart_policy JobV1#restart_policy}
 
 ---
 
@@ -2318,7 +2318,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#runtime_class_name JobV1#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#runtime_class_name JobV1#runtime_class_name}
 
 ---
 
@@ -2334,7 +2334,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheduler_name JobV1#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheduler_name JobV1#scheduler_name}
 
 ---
 
@@ -2348,7 +2348,7 @@ public JobV1SpecTemplateSpecSecurityContext getSecurityContext();
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#security_context JobV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#security_context JobV1#security_context}
 
 ---
 
@@ -2362,7 +2362,7 @@ public java.lang.String getServiceAccountName();
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#service_account_name JobV1#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#service_account_name JobV1#service_account_name}
 
 ---
 
@@ -2378,7 +2378,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#share_process_namespace JobV1#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#share_process_namespace JobV1#share_process_namespace}
 
 ---
 
@@ -2392,7 +2392,7 @@ public java.lang.String getSubdomain();
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#subdomain JobV1#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#subdomain JobV1#subdomain}
 
 ---
 
@@ -2408,7 +2408,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#termination_grace_period_seconds JobV1#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#termination_grace_period_seconds JobV1#termination_grace_period_seconds}
 
 ---
 
@@ -2422,7 +2422,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecToleration> getToleration
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#toleration JobV1#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#toleration JobV1#toleration}
 
 ---
 
@@ -2436,7 +2436,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecTopologySpreadConstraint>
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#topology_spread_constraint JobV1#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#topology_spread_constraint JobV1#topology_spread_constraint}
 
 ---
 
@@ -2450,7 +2450,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolume> getVolume();
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume JobV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume JobV1#volume}
 
 ---
 
@@ -2488,7 +2488,7 @@ public JobV1SpecTemplateSpecAffinityNodeAffinity getNodeAffinity();
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#node_affinity JobV1#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#node_affinity JobV1#node_affinity}
 
 ---
 
@@ -2502,7 +2502,7 @@ public JobV1SpecTemplateSpecAffinityPodAffinity getPodAffinity();
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#pod_affinity JobV1#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#pod_affinity JobV1#pod_affinity}
 
 ---
 
@@ -2516,7 +2516,7 @@ public JobV1SpecTemplateSpecAffinityPodAntiAffinity getPodAntiAffinity();
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#pod_anti_affinity JobV1#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#pod_anti_affinity JobV1#pod_anti_affinity}
 
 ---
 
@@ -2552,7 +2552,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityNodeAffinityPrefe
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#preferred_during_scheduling_ignored_during_execution JobV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#preferred_during_scheduling_ignored_during_execution JobV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2566,7 +2566,7 @@ public JobV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredD
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#required_during_scheduling_ignored_during_execution JobV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#required_during_scheduling_ignored_during_execution JobV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2602,7 +2602,7 @@ public JobV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnored
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#preference JobV1#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#preference JobV1#preference}
 
 ---
 
@@ -2616,7 +2616,7 @@ public java.lang.Number getWeight();
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#weight JobV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#weight JobV1#weight}
 
 ---
 
@@ -2652,7 +2652,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityNodeAffinityPrefe
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -2666,7 +2666,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityNodeAffinityPrefe
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_fields JobV1#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_fields JobV1#match_fields}
 
 ---
 
@@ -2704,7 +2704,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -2720,7 +2720,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -2736,7 +2736,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -2774,7 +2774,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -2788,7 +2788,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -2804,7 +2804,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -2838,7 +2838,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityNodeAffinityRequi
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#node_selector_term JobV1#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#node_selector_term JobV1#node_selector_term}
 
 ---
 
@@ -2874,7 +2874,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityNodeAffinityRequi
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -2888,7 +2888,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityNodeAffinityRequi
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_fields JobV1#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_fields JobV1#match_fields}
 
 ---
 
@@ -2926,7 +2926,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -2942,7 +2942,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -2958,7 +2958,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -2996,7 +2996,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -3010,7 +3010,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -3026,7 +3026,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -3062,7 +3062,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAffinityPrefer
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#preferred_during_scheduling_ignored_during_execution JobV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#preferred_during_scheduling_ignored_during_execution JobV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3076,7 +3076,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAffinityRequir
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#required_during_scheduling_ignored_during_execution JobV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#required_during_scheduling_ignored_during_execution JobV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3112,7 +3112,7 @@ public JobV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredD
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#pod_affinity_term JobV1#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#pod_affinity_term JobV1#pod_affinity_term}
 
 ---
 
@@ -3126,7 +3126,7 @@ public java.lang.Number getWeight();
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#weight JobV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#weight JobV1#weight}
 
 ---
 
@@ -3166,7 +3166,7 @@ public java.lang.String getTopologyKey();
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#topology_key JobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#topology_key JobV1#topology_key}
 
 ---
 
@@ -3180,7 +3180,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAffinityPrefer
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#label_selector JobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#label_selector JobV1#label_selector}
 
 ---
 
@@ -3194,7 +3194,7 @@ public java.util.List<java.lang.String> getNamespaces();
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespaces JobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespaces JobV1#namespaces}
 
 ---
 
@@ -3208,7 +3208,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAffinityPrefer
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespace_selector JobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespace_selector JobV1#namespace_selector}
 
 ---
 
@@ -3244,7 +3244,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAffinityPrefer
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -3260,7 +3260,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -3298,7 +3298,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -3312,7 +3312,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -3328,7 +3328,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -3364,7 +3364,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAffinityPrefer
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -3380,7 +3380,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -3418,7 +3418,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -3432,7 +3432,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -3448,7 +3448,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -3488,7 +3488,7 @@ public java.lang.String getTopologyKey();
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#topology_key JobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#topology_key JobV1#topology_key}
 
 ---
 
@@ -3502,7 +3502,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAffinityRequir
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#label_selector JobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#label_selector JobV1#label_selector}
 
 ---
 
@@ -3516,7 +3516,7 @@ public java.util.List<java.lang.String> getNamespaces();
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespaces JobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespaces JobV1#namespaces}
 
 ---
 
@@ -3530,7 +3530,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAffinityRequir
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespace_selector JobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespace_selector JobV1#namespace_selector}
 
 ---
 
@@ -3566,7 +3566,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAffinityRequir
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -3582,7 +3582,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -3620,7 +3620,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -3634,7 +3634,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -3650,7 +3650,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -3686,7 +3686,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAffinityRequir
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -3702,7 +3702,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -3740,7 +3740,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -3754,7 +3754,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -3770,7 +3770,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -3806,7 +3806,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAntiAffinityPr
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#preferred_during_scheduling_ignored_during_execution JobV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#preferred_during_scheduling_ignored_during_execution JobV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3820,7 +3820,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAntiAffinityRe
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#required_during_scheduling_ignored_during_execution JobV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#required_during_scheduling_ignored_during_execution JobV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3856,7 +3856,7 @@ public JobV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgno
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#pod_affinity_term JobV1#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#pod_affinity_term JobV1#pod_affinity_term}
 
 ---
 
@@ -3870,7 +3870,7 @@ public java.lang.Number getWeight();
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#weight JobV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#weight JobV1#weight}
 
 ---
 
@@ -3910,7 +3910,7 @@ public java.lang.String getTopologyKey();
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#topology_key JobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#topology_key JobV1#topology_key}
 
 ---
 
@@ -3924,7 +3924,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAntiAffinityPr
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#label_selector JobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#label_selector JobV1#label_selector}
 
 ---
 
@@ -3938,7 +3938,7 @@ public java.util.List<java.lang.String> getNamespaces();
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespaces JobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespaces JobV1#namespaces}
 
 ---
 
@@ -3952,7 +3952,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAntiAffinityPr
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespace_selector JobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespace_selector JobV1#namespace_selector}
 
 ---
 
@@ -3988,7 +3988,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAntiAffinityPr
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -4004,7 +4004,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -4042,7 +4042,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -4056,7 +4056,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -4072,7 +4072,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -4108,7 +4108,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAntiAffinityPr
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -4124,7 +4124,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -4162,7 +4162,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -4176,7 +4176,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -4192,7 +4192,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -4232,7 +4232,7 @@ public java.lang.String getTopologyKey();
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#topology_key JobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#topology_key JobV1#topology_key}
 
 ---
 
@@ -4246,7 +4246,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAntiAffinityRe
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#label_selector JobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#label_selector JobV1#label_selector}
 
 ---
 
@@ -4260,7 +4260,7 @@ public java.util.List<java.lang.String> getNamespaces();
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespaces JobV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespaces JobV1#namespaces}
 
 ---
 
@@ -4274,7 +4274,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAntiAffinityRe
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespace_selector JobV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespace_selector JobV1#namespace_selector}
 
 ---
 
@@ -4310,7 +4310,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAntiAffinityRe
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -4326,7 +4326,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -4364,7 +4364,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -4378,7 +4378,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -4394,7 +4394,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -4430,7 +4430,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecAffinityPodAntiAffinityRe
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -4446,7 +4446,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -4484,7 +4484,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -4498,7 +4498,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -4514,7 +4514,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -4538,6 +4538,7 @@ JobV1SpecTemplateSpecContainer.builder()
 //  .port(IResolvable|java.util.List<JobV1SpecTemplateSpecContainerPort>)
 //  .readinessProbe(JobV1SpecTemplateSpecContainerReadinessProbe)
 //  .resources(JobV1SpecTemplateSpecContainerResources)
+//  .restartPolicy(java.lang.String)
 //  .securityContext(JobV1SpecTemplateSpecContainerSecurityContext)
 //  .startupProbe(JobV1SpecTemplateSpecContainerStartupProbe)
 //  .stdin(java.lang.Boolean|IResolvable)
@@ -4567,6 +4568,7 @@ JobV1SpecTemplateSpecContainer.builder()
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainer.property.port">port</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerPort">JobV1SpecTemplateSpecContainerPort</a>></code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainer.property.readinessProbe">readinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerReadinessProbe">JobV1SpecTemplateSpecContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainer.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerResources">JobV1SpecTemplateSpecContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainer.property.restartPolicy">restartPolicy</a></code> | <code>java.lang.String</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainer.property.securityContext">securityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerSecurityContext">JobV1SpecTemplateSpecContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainer.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerStartupProbe">JobV1SpecTemplateSpecContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainer.property.stdin">stdin</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -4592,7 +4594,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -4608,7 +4610,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#args JobV1#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#args JobV1#args}
 
 ---
 
@@ -4624,7 +4626,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -4638,7 +4640,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerEnv> getEnv();
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#env JobV1#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#env JobV1#env}
 
 ---
 
@@ -4652,7 +4654,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerEnvFrom> getEnvF
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#env_from JobV1#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#env_from JobV1#env_from}
 
 ---
 
@@ -4666,7 +4668,7 @@ public java.lang.String getImage();
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#image JobV1#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#image JobV1#image}
 
 ---
 
@@ -4682,7 +4684,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#image_pull_policy JobV1#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#image_pull_policy JobV1#image_pull_policy}
 
 ---
 
@@ -4696,7 +4698,7 @@ public JobV1SpecTemplateSpecContainerLifecycle getLifecycle();
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#lifecycle JobV1#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#lifecycle JobV1#lifecycle}
 
 ---
 
@@ -4710,7 +4712,7 @@ public JobV1SpecTemplateSpecContainerLivenessProbe getLivenessProbe();
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#liveness_probe JobV1#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#liveness_probe JobV1#liveness_probe}
 
 ---
 
@@ -4724,7 +4726,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerPort> getPort();
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -4738,7 +4740,7 @@ public JobV1SpecTemplateSpecContainerReadinessProbe getReadinessProbe();
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#readiness_probe JobV1#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#readiness_probe JobV1#readiness_probe}
 
 ---
 
@@ -4752,7 +4754,21 @@ public JobV1SpecTemplateSpecContainerResources getResources();
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resources JobV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resources JobV1#resources}
+
+---
+
+##### `restartPolicy`<sup>Optional</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainer.property.restartPolicy"></a>
+
+```java
+public java.lang.String getRestartPolicy();
+```
+
+- *Type:* java.lang.String
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#restart_policy JobV1#restart_policy}
 
 ---
 
@@ -4766,7 +4782,7 @@ public JobV1SpecTemplateSpecContainerSecurityContext getSecurityContext();
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#security_context JobV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#security_context JobV1#security_context}
 
 ---
 
@@ -4780,7 +4796,7 @@ public JobV1SpecTemplateSpecContainerStartupProbe getStartupProbe();
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#startup_probe JobV1#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#startup_probe JobV1#startup_probe}
 
 ---
 
@@ -4796,7 +4812,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#stdin JobV1#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#stdin JobV1#stdin}
 
 ---
 
@@ -4812,7 +4828,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#stdin_once JobV1#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#stdin_once JobV1#stdin_once}
 
 ---
 
@@ -4828,7 +4844,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#termination_message_path JobV1#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#termination_message_path JobV1#termination_message_path}
 
 ---
 
@@ -4844,7 +4860,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#termination_message_policy JobV1#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#termination_message_policy JobV1#termination_message_policy}
 
 ---
 
@@ -4858,7 +4874,7 @@ public java.lang.Boolean|IResolvable getTty();
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tty JobV1#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tty JobV1#tty}
 
 ---
 
@@ -4872,7 +4888,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerVolumeDevice> ge
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_device JobV1#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_device JobV1#volume_device}
 
 ---
 
@@ -4886,7 +4902,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerVolumeMount> get
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_mount JobV1#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_mount JobV1#volume_mount}
 
 ---
 
@@ -4902,7 +4918,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#working_dir JobV1#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#working_dir JobV1#working_dir}
 
 ---
 
@@ -4940,7 +4956,7 @@ public java.lang.String getName();
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -4956,7 +4972,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -4970,7 +4986,7 @@ public JobV1SpecTemplateSpecContainerEnvValueFrom getValueFrom();
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value_from JobV1#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value_from JobV1#value_from}
 
 ---
 
@@ -5008,7 +5024,7 @@ public JobV1SpecTemplateSpecContainerEnvFromConfigMapRef getConfigMapRef();
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#config_map_ref JobV1#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#config_map_ref JobV1#config_map_ref}
 
 ---
 
@@ -5022,7 +5038,7 @@ public java.lang.String getPrefix();
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#prefix JobV1#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#prefix JobV1#prefix}
 
 ---
 
@@ -5036,7 +5052,7 @@ public JobV1SpecTemplateSpecContainerEnvFromSecretRef getSecretRef();
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_ref JobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_ref JobV1#secret_ref}
 
 ---
 
@@ -5072,7 +5088,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -5086,7 +5102,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -5122,7 +5138,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -5136,7 +5152,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -5176,7 +5192,7 @@ public JobV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef getConfigMapKey
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#config_map_key_ref JobV1#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#config_map_key_ref JobV1#config_map_key_ref}
 
 ---
 
@@ -5190,7 +5206,7 @@ public JobV1SpecTemplateSpecContainerEnvValueFromFieldRef getFieldRef();
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#field_ref JobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#field_ref JobV1#field_ref}
 
 ---
 
@@ -5204,7 +5220,7 @@ public JobV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef getResourceFie
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resource_field_ref JobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resource_field_ref JobV1#resource_field_ref}
 
 ---
 
@@ -5218,7 +5234,7 @@ public JobV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef getSecretKeyRef();
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_key_ref JobV1#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_key_ref JobV1#secret_key_ref}
 
 ---
 
@@ -5256,7 +5272,7 @@ public java.lang.String getKey();
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -5270,7 +5286,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -5284,7 +5300,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -5320,7 +5336,7 @@ public java.lang.String getApiVersion();
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#api_version JobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#api_version JobV1#api_version}
 
 ---
 
@@ -5334,7 +5350,7 @@ public java.lang.String getFieldPath();
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#field_path JobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#field_path JobV1#field_path}
 
 ---
 
@@ -5357,8 +5373,8 @@ JobV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>java.lang.String</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_name JobV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#divisor JobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_name JobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#divisor JobV1#divisor}. |
 
 ---
 
@@ -5372,7 +5388,7 @@ public java.lang.String getResource();
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resource JobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resource JobV1#resource}
 
 ---
 
@@ -5384,7 +5400,7 @@ public java.lang.String getContainerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_name JobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_name JobV1#container_name}.
 
 ---
 
@@ -5396,7 +5412,7 @@ public java.lang.String getDivisor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#divisor JobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#divisor JobV1#divisor}.
 
 ---
 
@@ -5434,7 +5450,7 @@ public java.lang.String getKey();
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -5448,7 +5464,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -5462,7 +5478,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -5498,7 +5514,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerLifecyclePostSta
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#post_start JobV1#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#post_start JobV1#post_start}
 
 ---
 
@@ -5512,7 +5528,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerLifecyclePreStop
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#pre_stop JobV1#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#pre_stop JobV1#pre_stop}
 
 ---
 
@@ -5550,7 +5566,7 @@ public JobV1SpecTemplateSpecContainerLifecyclePostStartExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#exec JobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#exec JobV1#exec}
 
 ---
 
@@ -5564,7 +5580,7 @@ public JobV1SpecTemplateSpecContainerLifecyclePostStartHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_get JobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_get JobV1#http_get}
 
 ---
 
@@ -5578,7 +5594,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerLifecyclePostSta
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
 
 ---
 
@@ -5614,7 +5630,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -5656,7 +5672,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host JobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host JobV1#host}
 
 ---
 
@@ -5670,7 +5686,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerLifecyclePostSta
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_header JobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_header JobV1#http_header}
 
 ---
 
@@ -5684,7 +5700,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -5700,7 +5716,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -5714,7 +5730,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheme JobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheme JobV1#scheme}
 
 ---
 
@@ -5750,7 +5766,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -5764,7 +5780,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -5800,7 +5816,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -5838,7 +5854,7 @@ public JobV1SpecTemplateSpecContainerLifecyclePreStopExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#exec JobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#exec JobV1#exec}
 
 ---
 
@@ -5852,7 +5868,7 @@ public JobV1SpecTemplateSpecContainerLifecyclePreStopHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_get JobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_get JobV1#http_get}
 
 ---
 
@@ -5866,7 +5882,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerLifecyclePreStop
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
 
 ---
 
@@ -5902,7 +5918,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -5944,7 +5960,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host JobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host JobV1#host}
 
 ---
 
@@ -5958,7 +5974,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerLifecyclePreStop
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_header JobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_header JobV1#http_header}
 
 ---
 
@@ -5972,7 +5988,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -5988,7 +6004,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -6002,7 +6018,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheme JobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheme JobV1#scheme}
 
 ---
 
@@ -6038,7 +6054,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -6052,7 +6068,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -6088,7 +6104,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -6138,7 +6154,7 @@ public JobV1SpecTemplateSpecContainerLivenessProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#exec JobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#exec JobV1#exec}
 
 ---
 
@@ -6152,7 +6168,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
 
 ---
 
@@ -6166,7 +6182,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerLivenessProbeGrp
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#grpc JobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#grpc JobV1#grpc}
 
 ---
 
@@ -6180,7 +6196,7 @@ public JobV1SpecTemplateSpecContainerLivenessProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_get JobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_get JobV1#http_get}
 
 ---
 
@@ -6194,7 +6210,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
 
 ---
 
@@ -6208,7 +6224,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
 
 ---
 
@@ -6222,7 +6238,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
 
 ---
 
@@ -6236,7 +6252,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerLivenessProbeTcp
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
 
 ---
 
@@ -6250,7 +6266,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
 
 ---
 
@@ -6286,7 +6302,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -6322,7 +6338,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -6336,7 +6352,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#service JobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#service JobV1#service}
 
 ---
 
@@ -6378,7 +6394,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host JobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host JobV1#host}
 
 ---
 
@@ -6392,7 +6408,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerLivenessProbeHtt
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_header JobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_header JobV1#http_header}
 
 ---
 
@@ -6406,7 +6422,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -6422,7 +6438,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -6436,7 +6452,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheme JobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheme JobV1#scheme}
 
 ---
 
@@ -6472,7 +6488,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -6486,7 +6502,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -6522,7 +6538,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -6566,7 +6582,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_port JobV1#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_port JobV1#container_port}
 
 ---
 
@@ -6580,7 +6596,7 @@ public java.lang.String getHostIp();
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host_ip JobV1#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host_ip JobV1#host_ip}
 
 ---
 
@@ -6596,7 +6612,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host_port JobV1#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host_port JobV1#host_port}
 
 ---
 
@@ -6612,7 +6628,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -6626,7 +6642,7 @@ public java.lang.String getProtocol();
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#protocol JobV1#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#protocol JobV1#protocol}
 
 ---
 
@@ -6676,7 +6692,7 @@ public JobV1SpecTemplateSpecContainerReadinessProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#exec JobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#exec JobV1#exec}
 
 ---
 
@@ -6690,7 +6706,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
 
 ---
 
@@ -6704,7 +6720,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerReadinessProbeGr
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#grpc JobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#grpc JobV1#grpc}
 
 ---
 
@@ -6718,7 +6734,7 @@ public JobV1SpecTemplateSpecContainerReadinessProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_get JobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_get JobV1#http_get}
 
 ---
 
@@ -6732,7 +6748,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
 
 ---
 
@@ -6746,7 +6762,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
 
 ---
 
@@ -6760,7 +6776,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
 
 ---
 
@@ -6774,7 +6790,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerReadinessProbeTc
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
 
 ---
 
@@ -6788,7 +6804,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
 
 ---
 
@@ -6824,7 +6840,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -6860,7 +6876,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -6874,7 +6890,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#service JobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#service JobV1#service}
 
 ---
 
@@ -6916,7 +6932,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host JobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host JobV1#host}
 
 ---
 
@@ -6930,7 +6946,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerReadinessProbeHt
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_header JobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_header JobV1#http_header}
 
 ---
 
@@ -6944,7 +6960,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -6960,7 +6976,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -6974,7 +6990,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheme JobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheme JobV1#scheme}
 
 ---
 
@@ -7010,7 +7026,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -7024,7 +7040,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -7060,7 +7076,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -7096,7 +7112,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLimits();
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#limits JobV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#limits JobV1#limits}
 
 ---
 
@@ -7112,7 +7128,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#requests JobV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#requests JobV1#requests}
 
 ---
 
@@ -7164,7 +7180,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#allow_privilege_escalation JobV1#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#allow_privilege_escalation JobV1#allow_privilege_escalation}
 
 ---
 
@@ -7178,7 +7194,7 @@ public JobV1SpecTemplateSpecContainerSecurityContextCapabilities getCapabilities
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#capabilities JobV1#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#capabilities JobV1#capabilities}
 
 ---
 
@@ -7194,7 +7210,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#privileged JobV1#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#privileged JobV1#privileged}
 
 ---
 
@@ -7208,7 +7224,7 @@ public java.lang.Boolean|IResolvable getReadOnlyRootFilesystem();
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only_root_filesystem JobV1#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only_root_filesystem JobV1#read_only_root_filesystem}
 
 ---
 
@@ -7224,7 +7240,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#run_as_group JobV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#run_as_group JobV1#run_as_group}
 
 ---
 
@@ -7240,7 +7256,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#run_as_non_root JobV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#run_as_non_root JobV1#run_as_non_root}
 
 ---
 
@@ -7256,7 +7272,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#run_as_user JobV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#run_as_user JobV1#run_as_user}
 
 ---
 
@@ -7270,7 +7286,7 @@ public JobV1SpecTemplateSpecContainerSecurityContextSeccompProfile getSeccompPro
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#seccomp_profile JobV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#seccomp_profile JobV1#seccomp_profile}
 
 ---
 
@@ -7284,7 +7300,7 @@ public JobV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions getSeLinuxOpt
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#se_linux_options JobV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#se_linux_options JobV1#se_linux_options}
 
 ---
 
@@ -7320,7 +7336,7 @@ public java.util.List<java.lang.String> getAdd();
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#add JobV1#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#add JobV1#add}
 
 ---
 
@@ -7334,7 +7350,7 @@ public java.util.List<java.lang.String> getDrop();
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#drop JobV1#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#drop JobV1#drop}
 
 ---
 
@@ -7372,7 +7388,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#localhost_profile JobV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#localhost_profile JobV1#localhost_profile}
 
 ---
 
@@ -7386,7 +7402,7 @@ public java.lang.String getType();
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#type JobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#type JobV1#type}
 
 ---
 
@@ -7426,7 +7442,7 @@ public java.lang.String getLevel();
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#level JobV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#level JobV1#level}
 
 ---
 
@@ -7440,7 +7456,7 @@ public java.lang.String getRole();
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#role JobV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#role JobV1#role}
 
 ---
 
@@ -7454,7 +7470,7 @@ public java.lang.String getType();
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#type JobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#type JobV1#type}
 
 ---
 
@@ -7468,7 +7484,7 @@ public java.lang.String getUser();
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#user JobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#user JobV1#user}
 
 ---
 
@@ -7518,7 +7534,7 @@ public JobV1SpecTemplateSpecContainerStartupProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#exec JobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#exec JobV1#exec}
 
 ---
 
@@ -7532,7 +7548,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
 
 ---
 
@@ -7546,7 +7562,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerStartupProbeGrpc
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#grpc JobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#grpc JobV1#grpc}
 
 ---
 
@@ -7560,7 +7576,7 @@ public JobV1SpecTemplateSpecContainerStartupProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_get JobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_get JobV1#http_get}
 
 ---
 
@@ -7574,7 +7590,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
 
 ---
 
@@ -7588,7 +7604,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
 
 ---
 
@@ -7602,7 +7618,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
 
 ---
 
@@ -7616,7 +7632,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerStartupProbeTcpS
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
 
 ---
 
@@ -7630,7 +7646,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
 
 ---
 
@@ -7666,7 +7682,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -7702,7 +7718,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -7716,7 +7732,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#service JobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#service JobV1#service}
 
 ---
 
@@ -7758,7 +7774,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host JobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host JobV1#host}
 
 ---
 
@@ -7772,7 +7788,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecContainerStartupProbeHttp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_header JobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_header JobV1#http_header}
 
 ---
 
@@ -7786,7 +7802,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -7802,7 +7818,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -7816,7 +7832,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheme JobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheme JobV1#scheme}
 
 ---
 
@@ -7852,7 +7868,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -7866,7 +7882,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -7902,7 +7918,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -7938,7 +7954,7 @@ public java.lang.String getDevicePath();
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#device_path JobV1#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#device_path JobV1#device_path}
 
 ---
 
@@ -7952,7 +7968,7 @@ public java.lang.String getName();
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -7996,7 +8012,7 @@ public java.lang.String getMountPath();
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#mount_path JobV1#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#mount_path JobV1#mount_path}
 
 ---
 
@@ -8010,7 +8026,7 @@ public java.lang.String getName();
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -8026,7 +8042,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#mount_propagation JobV1#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#mount_propagation JobV1#mount_propagation}
 
 ---
 
@@ -8040,7 +8056,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -8054,7 +8070,7 @@ public java.lang.String getSubPath();
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#sub_path JobV1#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#sub_path JobV1#sub_path}
 
 ---
 
@@ -8068,7 +8084,7 @@ public java.lang.String getSubPathExpr();
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#sub_path_expr JobV1#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#sub_path_expr JobV1#sub_path_expr}
 
 ---
 
@@ -8108,7 +8124,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#nameservers JobV1#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#nameservers JobV1#nameservers}
 
 ---
 
@@ -8122,7 +8138,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecDnsConfigOption> getOptio
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#option JobV1#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#option JobV1#option}
 
 ---
 
@@ -8138,7 +8154,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#searches JobV1#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#searches JobV1#searches}
 
 ---
 
@@ -8174,7 +8190,7 @@ public java.lang.String getName();
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -8188,7 +8204,7 @@ public java.lang.String getValue();
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -8224,7 +8240,7 @@ public java.util.List<java.lang.String> getHostnames();
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#hostnames JobV1#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#hostnames JobV1#hostnames}
 
 ---
 
@@ -8238,7 +8254,7 @@ public java.lang.String getIp();
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#ip JobV1#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#ip JobV1#ip}
 
 ---
 
@@ -8272,7 +8288,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -8296,6 +8312,7 @@ JobV1SpecTemplateSpecInitContainer.builder()
 //  .port(IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerPort>)
 //  .readinessProbe(JobV1SpecTemplateSpecInitContainerReadinessProbe)
 //  .resources(JobV1SpecTemplateSpecInitContainerResources)
+//  .restartPolicy(java.lang.String)
 //  .securityContext(JobV1SpecTemplateSpecInitContainerSecurityContext)
 //  .startupProbe(JobV1SpecTemplateSpecInitContainerStartupProbe)
 //  .stdin(java.lang.Boolean|IResolvable)
@@ -8325,6 +8342,7 @@ JobV1SpecTemplateSpecInitContainer.builder()
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainer.property.port">port</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerPort">JobV1SpecTemplateSpecInitContainerPort</a>></code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainer.property.readinessProbe">readinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerReadinessProbe">JobV1SpecTemplateSpecInitContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainer.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerResources">JobV1SpecTemplateSpecInitContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainer.property.restartPolicy">restartPolicy</a></code> | <code>java.lang.String</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainer.property.securityContext">securityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerSecurityContext">JobV1SpecTemplateSpecInitContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainer.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerStartupProbe">JobV1SpecTemplateSpecInitContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainer.property.stdin">stdin</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -8350,7 +8368,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -8366,7 +8384,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#args JobV1#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#args JobV1#args}
 
 ---
 
@@ -8382,7 +8400,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -8396,7 +8414,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerEnv> getEnv(
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#env JobV1#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#env JobV1#env}
 
 ---
 
@@ -8410,7 +8428,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerEnvFrom> get
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#env_from JobV1#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#env_from JobV1#env_from}
 
 ---
 
@@ -8424,7 +8442,7 @@ public java.lang.String getImage();
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#image JobV1#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#image JobV1#image}
 
 ---
 
@@ -8440,7 +8458,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#image_pull_policy JobV1#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#image_pull_policy JobV1#image_pull_policy}
 
 ---
 
@@ -8454,7 +8472,7 @@ public JobV1SpecTemplateSpecInitContainerLifecycle getLifecycle();
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#lifecycle JobV1#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#lifecycle JobV1#lifecycle}
 
 ---
 
@@ -8468,7 +8486,7 @@ public JobV1SpecTemplateSpecInitContainerLivenessProbe getLivenessProbe();
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#liveness_probe JobV1#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#liveness_probe JobV1#liveness_probe}
 
 ---
 
@@ -8482,7 +8500,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerPort> getPor
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -8496,7 +8514,7 @@ public JobV1SpecTemplateSpecInitContainerReadinessProbe getReadinessProbe();
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#readiness_probe JobV1#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#readiness_probe JobV1#readiness_probe}
 
 ---
 
@@ -8510,7 +8528,21 @@ public JobV1SpecTemplateSpecInitContainerResources getResources();
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resources JobV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resources JobV1#resources}
+
+---
+
+##### `restartPolicy`<sup>Optional</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainer.property.restartPolicy"></a>
+
+```java
+public java.lang.String getRestartPolicy();
+```
+
+- *Type:* java.lang.String
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#restart_policy JobV1#restart_policy}
 
 ---
 
@@ -8524,7 +8556,7 @@ public JobV1SpecTemplateSpecInitContainerSecurityContext getSecurityContext();
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#security_context JobV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#security_context JobV1#security_context}
 
 ---
 
@@ -8538,7 +8570,7 @@ public JobV1SpecTemplateSpecInitContainerStartupProbe getStartupProbe();
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#startup_probe JobV1#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#startup_probe JobV1#startup_probe}
 
 ---
 
@@ -8554,7 +8586,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#stdin JobV1#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#stdin JobV1#stdin}
 
 ---
 
@@ -8570,7 +8602,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#stdin_once JobV1#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#stdin_once JobV1#stdin_once}
 
 ---
 
@@ -8586,7 +8618,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#termination_message_path JobV1#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#termination_message_path JobV1#termination_message_path}
 
 ---
 
@@ -8602,7 +8634,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#termination_message_policy JobV1#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#termination_message_policy JobV1#termination_message_policy}
 
 ---
 
@@ -8616,7 +8648,7 @@ public java.lang.Boolean|IResolvable getTty();
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tty JobV1#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tty JobV1#tty}
 
 ---
 
@@ -8630,7 +8662,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerVolumeDevice
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_device JobV1#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_device JobV1#volume_device}
 
 ---
 
@@ -8644,7 +8676,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerVolumeMount>
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_mount JobV1#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_mount JobV1#volume_mount}
 
 ---
 
@@ -8660,7 +8692,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#working_dir JobV1#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#working_dir JobV1#working_dir}
 
 ---
 
@@ -8698,7 +8730,7 @@ public java.lang.String getName();
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -8714,7 +8746,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -8728,7 +8760,7 @@ public JobV1SpecTemplateSpecInitContainerEnvValueFrom getValueFrom();
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value_from JobV1#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value_from JobV1#value_from}
 
 ---
 
@@ -8766,7 +8798,7 @@ public JobV1SpecTemplateSpecInitContainerEnvFromConfigMapRef getConfigMapRef();
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#config_map_ref JobV1#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#config_map_ref JobV1#config_map_ref}
 
 ---
 
@@ -8780,7 +8812,7 @@ public java.lang.String getPrefix();
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#prefix JobV1#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#prefix JobV1#prefix}
 
 ---
 
@@ -8794,7 +8826,7 @@ public JobV1SpecTemplateSpecInitContainerEnvFromSecretRef getSecretRef();
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_ref JobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_ref JobV1#secret_ref}
 
 ---
 
@@ -8830,7 +8862,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -8844,7 +8876,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -8880,7 +8912,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -8894,7 +8926,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -8934,7 +8966,7 @@ public JobV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef getConfigMa
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#config_map_key_ref JobV1#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#config_map_key_ref JobV1#config_map_key_ref}
 
 ---
 
@@ -8948,7 +8980,7 @@ public JobV1SpecTemplateSpecInitContainerEnvValueFromFieldRef getFieldRef();
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#field_ref JobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#field_ref JobV1#field_ref}
 
 ---
 
@@ -8962,7 +8994,7 @@ public JobV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef getResourc
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resource_field_ref JobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resource_field_ref JobV1#resource_field_ref}
 
 ---
 
@@ -8976,7 +9008,7 @@ public JobV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef getSecretKeyRe
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_key_ref JobV1#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_key_ref JobV1#secret_key_ref}
 
 ---
 
@@ -9014,7 +9046,7 @@ public java.lang.String getKey();
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -9028,7 +9060,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -9042,7 +9074,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -9078,7 +9110,7 @@ public java.lang.String getApiVersion();
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#api_version JobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#api_version JobV1#api_version}
 
 ---
 
@@ -9092,7 +9124,7 @@ public java.lang.String getFieldPath();
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#field_path JobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#field_path JobV1#field_path}
 
 ---
 
@@ -9115,8 +9147,8 @@ JobV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>java.lang.String</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_name JobV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#divisor JobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_name JobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#divisor JobV1#divisor}. |
 
 ---
 
@@ -9130,7 +9162,7 @@ public java.lang.String getResource();
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resource JobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resource JobV1#resource}
 
 ---
 
@@ -9142,7 +9174,7 @@ public java.lang.String getContainerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_name JobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_name JobV1#container_name}.
 
 ---
 
@@ -9154,7 +9186,7 @@ public java.lang.String getDivisor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#divisor JobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#divisor JobV1#divisor}.
 
 ---
 
@@ -9192,7 +9224,7 @@ public java.lang.String getKey();
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -9206,7 +9238,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -9220,7 +9252,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -9256,7 +9288,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerLifecyclePos
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#post_start JobV1#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#post_start JobV1#post_start}
 
 ---
 
@@ -9270,7 +9302,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerLifecyclePre
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#pre_stop JobV1#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#pre_stop JobV1#pre_stop}
 
 ---
 
@@ -9308,7 +9340,7 @@ public JobV1SpecTemplateSpecInitContainerLifecyclePostStartExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#exec JobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#exec JobV1#exec}
 
 ---
 
@@ -9322,7 +9354,7 @@ public JobV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_get JobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_get JobV1#http_get}
 
 ---
 
@@ -9336,7 +9368,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerLifecyclePos
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
 
 ---
 
@@ -9372,7 +9404,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -9414,7 +9446,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host JobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host JobV1#host}
 
 ---
 
@@ -9428,7 +9460,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerLifecyclePos
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_header JobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_header JobV1#http_header}
 
 ---
 
@@ -9442,7 +9474,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -9458,7 +9490,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -9472,7 +9504,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheme JobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheme JobV1#scheme}
 
 ---
 
@@ -9508,7 +9540,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -9522,7 +9554,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -9558,7 +9590,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -9596,7 +9628,7 @@ public JobV1SpecTemplateSpecInitContainerLifecyclePreStopExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#exec JobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#exec JobV1#exec}
 
 ---
 
@@ -9610,7 +9642,7 @@ public JobV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_get JobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_get JobV1#http_get}
 
 ---
 
@@ -9624,7 +9656,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerLifecyclePre
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
 
 ---
 
@@ -9660,7 +9692,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -9702,7 +9734,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host JobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host JobV1#host}
 
 ---
 
@@ -9716,7 +9748,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerLifecyclePre
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_header JobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_header JobV1#http_header}
 
 ---
 
@@ -9730,7 +9762,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -9746,7 +9778,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -9760,7 +9792,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheme JobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheme JobV1#scheme}
 
 ---
 
@@ -9796,7 +9828,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -9810,7 +9842,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -9846,7 +9878,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -9896,7 +9928,7 @@ public JobV1SpecTemplateSpecInitContainerLivenessProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#exec JobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#exec JobV1#exec}
 
 ---
 
@@ -9910,7 +9942,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
 
 ---
 
@@ -9924,7 +9956,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerLivenessProb
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#grpc JobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#grpc JobV1#grpc}
 
 ---
 
@@ -9938,7 +9970,7 @@ public JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_get JobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_get JobV1#http_get}
 
 ---
 
@@ -9952,7 +9984,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
 
 ---
 
@@ -9966,7 +9998,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
 
 ---
 
@@ -9980,7 +10012,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
 
 ---
 
@@ -9994,7 +10026,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerLivenessProb
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
 
 ---
 
@@ -10008,7 +10040,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
 
 ---
 
@@ -10044,7 +10076,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -10080,7 +10112,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -10094,7 +10126,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#service JobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#service JobV1#service}
 
 ---
 
@@ -10136,7 +10168,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host JobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host JobV1#host}
 
 ---
 
@@ -10150,7 +10182,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerLivenessProb
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_header JobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_header JobV1#http_header}
 
 ---
 
@@ -10164,7 +10196,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -10180,7 +10212,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -10194,7 +10226,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheme JobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheme JobV1#scheme}
 
 ---
 
@@ -10230,7 +10262,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -10244,7 +10276,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -10280,7 +10312,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -10324,7 +10356,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_port JobV1#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_port JobV1#container_port}
 
 ---
 
@@ -10338,7 +10370,7 @@ public java.lang.String getHostIp();
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host_ip JobV1#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host_ip JobV1#host_ip}
 
 ---
 
@@ -10354,7 +10386,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host_port JobV1#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host_port JobV1#host_port}
 
 ---
 
@@ -10370,7 +10402,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -10384,7 +10416,7 @@ public java.lang.String getProtocol();
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#protocol JobV1#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#protocol JobV1#protocol}
 
 ---
 
@@ -10434,7 +10466,7 @@ public JobV1SpecTemplateSpecInitContainerReadinessProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#exec JobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#exec JobV1#exec}
 
 ---
 
@@ -10448,7 +10480,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
 
 ---
 
@@ -10462,7 +10494,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerReadinessPro
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#grpc JobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#grpc JobV1#grpc}
 
 ---
 
@@ -10476,7 +10508,7 @@ public JobV1SpecTemplateSpecInitContainerReadinessProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_get JobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_get JobV1#http_get}
 
 ---
 
@@ -10490,7 +10522,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
 
 ---
 
@@ -10504,7 +10536,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
 
 ---
 
@@ -10518,7 +10550,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
 
 ---
 
@@ -10532,7 +10564,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerReadinessPro
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
 
 ---
 
@@ -10546,7 +10578,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
 
 ---
 
@@ -10582,7 +10614,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -10618,7 +10650,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -10632,7 +10664,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#service JobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#service JobV1#service}
 
 ---
 
@@ -10674,7 +10706,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host JobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host JobV1#host}
 
 ---
 
@@ -10688,7 +10720,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerReadinessPro
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_header JobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_header JobV1#http_header}
 
 ---
 
@@ -10702,7 +10734,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -10718,7 +10750,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -10732,7 +10764,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheme JobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheme JobV1#scheme}
 
 ---
 
@@ -10768,7 +10800,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -10782,7 +10814,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -10818,7 +10850,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -10854,7 +10886,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLimits();
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#limits JobV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#limits JobV1#limits}
 
 ---
 
@@ -10870,7 +10902,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#requests JobV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#requests JobV1#requests}
 
 ---
 
@@ -10922,7 +10954,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#allow_privilege_escalation JobV1#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#allow_privilege_escalation JobV1#allow_privilege_escalation}
 
 ---
 
@@ -10936,7 +10968,7 @@ public JobV1SpecTemplateSpecInitContainerSecurityContextCapabilities getCapabili
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#capabilities JobV1#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#capabilities JobV1#capabilities}
 
 ---
 
@@ -10952,7 +10984,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#privileged JobV1#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#privileged JobV1#privileged}
 
 ---
 
@@ -10966,7 +10998,7 @@ public java.lang.Boolean|IResolvable getReadOnlyRootFilesystem();
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only_root_filesystem JobV1#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only_root_filesystem JobV1#read_only_root_filesystem}
 
 ---
 
@@ -10982,7 +11014,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#run_as_group JobV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#run_as_group JobV1#run_as_group}
 
 ---
 
@@ -10998,7 +11030,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#run_as_non_root JobV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#run_as_non_root JobV1#run_as_non_root}
 
 ---
 
@@ -11014,7 +11046,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#run_as_user JobV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#run_as_user JobV1#run_as_user}
 
 ---
 
@@ -11028,7 +11060,7 @@ public JobV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile getSeccom
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#seccomp_profile JobV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#seccomp_profile JobV1#seccomp_profile}
 
 ---
 
@@ -11042,7 +11074,7 @@ public JobV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions getSeLinu
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#se_linux_options JobV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#se_linux_options JobV1#se_linux_options}
 
 ---
 
@@ -11078,7 +11110,7 @@ public java.util.List<java.lang.String> getAdd();
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#add JobV1#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#add JobV1#add}
 
 ---
 
@@ -11092,7 +11124,7 @@ public java.util.List<java.lang.String> getDrop();
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#drop JobV1#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#drop JobV1#drop}
 
 ---
 
@@ -11130,7 +11162,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#localhost_profile JobV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#localhost_profile JobV1#localhost_profile}
 
 ---
 
@@ -11144,7 +11176,7 @@ public java.lang.String getType();
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#type JobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#type JobV1#type}
 
 ---
 
@@ -11184,7 +11216,7 @@ public java.lang.String getLevel();
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#level JobV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#level JobV1#level}
 
 ---
 
@@ -11198,7 +11230,7 @@ public java.lang.String getRole();
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#role JobV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#role JobV1#role}
 
 ---
 
@@ -11212,7 +11244,7 @@ public java.lang.String getType();
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#type JobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#type JobV1#type}
 
 ---
 
@@ -11226,7 +11258,7 @@ public java.lang.String getUser();
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#user JobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#user JobV1#user}
 
 ---
 
@@ -11276,7 +11308,7 @@ public JobV1SpecTemplateSpecInitContainerStartupProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#exec JobV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#exec JobV1#exec}
 
 ---
 
@@ -11290,7 +11322,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#failure_threshold JobV1#failure_threshold}
 
 ---
 
@@ -11304,7 +11336,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerStartupProbe
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#grpc JobV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#grpc JobV1#grpc}
 
 ---
 
@@ -11318,7 +11350,7 @@ public JobV1SpecTemplateSpecInitContainerStartupProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_get JobV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_get JobV1#http_get}
 
 ---
 
@@ -11332,7 +11364,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#initial_delay_seconds JobV1#initial_delay_seconds}
 
 ---
 
@@ -11346,7 +11378,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#period_seconds JobV1#period_seconds}
 
 ---
 
@@ -11360,7 +11392,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#success_threshold JobV1#success_threshold}
 
 ---
 
@@ -11374,7 +11406,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerStartupProbe
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#tcp_socket JobV1#tcp_socket}
 
 ---
 
@@ -11388,7 +11420,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#timeout_seconds JobV1#timeout_seconds}
 
 ---
 
@@ -11424,7 +11456,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#command JobV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#command JobV1#command}
 
 ---
 
@@ -11460,7 +11492,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -11474,7 +11506,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#service JobV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#service JobV1#service}
 
 ---
 
@@ -11516,7 +11548,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host JobV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host JobV1#host}
 
 ---
 
@@ -11530,7 +11562,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecInitContainerStartupProbe
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#http_header JobV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#http_header JobV1#http_header}
 
 ---
 
@@ -11544,7 +11576,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -11560,7 +11592,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -11574,7 +11606,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#scheme JobV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#scheme JobV1#scheme}
 
 ---
 
@@ -11610,7 +11642,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -11624,7 +11656,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -11660,7 +11692,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#port JobV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#port JobV1#port}
 
 ---
 
@@ -11696,7 +11728,7 @@ public java.lang.String getDevicePath();
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#device_path JobV1#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#device_path JobV1#device_path}
 
 ---
 
@@ -11710,7 +11742,7 @@ public java.lang.String getName();
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -11754,7 +11786,7 @@ public java.lang.String getMountPath();
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#mount_path JobV1#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#mount_path JobV1#mount_path}
 
 ---
 
@@ -11768,7 +11800,7 @@ public java.lang.String getName();
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -11784,7 +11816,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#mount_propagation JobV1#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#mount_propagation JobV1#mount_propagation}
 
 ---
 
@@ -11798,7 +11830,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -11812,7 +11844,7 @@ public java.lang.String getSubPath();
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#sub_path JobV1#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#sub_path JobV1#sub_path}
 
 ---
 
@@ -11826,7 +11858,7 @@ public java.lang.String getSubPathExpr();
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#sub_path_expr JobV1#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#sub_path_expr JobV1#sub_path_expr}
 
 ---
 
@@ -11860,7 +11892,7 @@ public java.lang.String getName();
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -11894,7 +11926,7 @@ public java.lang.String getConditionType();
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#condition_type JobV1#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#condition_type JobV1#condition_type}
 
 ---
 
@@ -11948,7 +11980,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_group JobV1#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_group JobV1#fs_group}
 
 ---
 
@@ -11964,7 +11996,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_group_change_policy JobV1#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_group_change_policy JobV1#fs_group_change_policy}
 
 ---
 
@@ -11980,7 +12012,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#run_as_group JobV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#run_as_group JobV1#run_as_group}
 
 ---
 
@@ -11996,7 +12028,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#run_as_non_root JobV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#run_as_non_root JobV1#run_as_non_root}
 
 ---
 
@@ -12012,7 +12044,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#run_as_user JobV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#run_as_user JobV1#run_as_user}
 
 ---
 
@@ -12026,7 +12058,7 @@ public JobV1SpecTemplateSpecSecurityContextSeccompProfile getSeccompProfile();
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#seccomp_profile JobV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#seccomp_profile JobV1#seccomp_profile}
 
 ---
 
@@ -12040,7 +12072,7 @@ public JobV1SpecTemplateSpecSecurityContextSeLinuxOptions getSeLinuxOptions();
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#se_linux_options JobV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#se_linux_options JobV1#se_linux_options}
 
 ---
 
@@ -12056,7 +12088,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#supplemental_groups JobV1#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#supplemental_groups JobV1#supplemental_groups}
 
 ---
 
@@ -12070,7 +12102,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecSecurityContextSysctl> ge
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#sysctl JobV1#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#sysctl JobV1#sysctl}
 
 ---
 
@@ -12084,7 +12116,7 @@ public JobV1SpecTemplateSpecSecurityContextWindowsOptions getWindowsOptions();
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#windows_options JobV1#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#windows_options JobV1#windows_options}
 
 ---
 
@@ -12122,7 +12154,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#localhost_profile JobV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#localhost_profile JobV1#localhost_profile}
 
 ---
 
@@ -12136,7 +12168,7 @@ public java.lang.String getType();
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#type JobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#type JobV1#type}
 
 ---
 
@@ -12176,7 +12208,7 @@ public java.lang.String getLevel();
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#level JobV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#level JobV1#level}
 
 ---
 
@@ -12190,7 +12222,7 @@ public java.lang.String getRole();
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#role JobV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#role JobV1#role}
 
 ---
 
@@ -12204,7 +12236,7 @@ public java.lang.String getType();
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#type JobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#type JobV1#type}
 
 ---
 
@@ -12218,7 +12250,7 @@ public java.lang.String getUser();
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#user JobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#user JobV1#user}
 
 ---
 
@@ -12254,7 +12286,7 @@ public java.lang.String getName();
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -12268,7 +12300,7 @@ public java.lang.String getValue();
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -12308,7 +12340,7 @@ public java.lang.String getGmsaCredentialSpec();
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#gmsa_credential_spec JobV1#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#gmsa_credential_spec JobV1#gmsa_credential_spec}
 
 ---
 
@@ -12322,7 +12354,7 @@ public java.lang.String getGmsaCredentialSpecName();
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#gmsa_credential_spec_name JobV1#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#gmsa_credential_spec_name JobV1#gmsa_credential_spec_name}
 
 ---
 
@@ -12336,7 +12368,7 @@ public java.lang.Boolean|IResolvable getHostProcess();
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host_process JobV1#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host_process JobV1#host_process}
 
 ---
 
@@ -12352,7 +12384,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#run_as_username JobV1#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#run_as_username JobV1#run_as_username}
 
 ---
 
@@ -12396,7 +12428,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#effect JobV1#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#effect JobV1#effect}
 
 ---
 
@@ -12412,7 +12444,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -12428,7 +12460,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -12444,7 +12476,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#toleration_seconds JobV1#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#toleration_seconds JobV1#toleration_seconds}
 
 ---
 
@@ -12460,7 +12492,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#value JobV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#value JobV1#value}
 
 ---
 
@@ -12508,7 +12540,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecTopologySpreadConstraintL
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#label_selector JobV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#label_selector JobV1#label_selector}
 
 ---
 
@@ -12522,7 +12554,7 @@ public java.util.List<java.lang.String> getMatchLabelKeys();
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_label_keys JobV1#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_label_keys JobV1#match_label_keys}
 
 ---
 
@@ -12536,7 +12568,7 @@ public java.lang.Number getMaxSkew();
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#max_skew JobV1#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#max_skew JobV1#max_skew}
 
 ---
 
@@ -12550,7 +12582,7 @@ public java.lang.Number getMinDomains();
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#min_domains JobV1#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#min_domains JobV1#min_domains}
 
 ---
 
@@ -12564,7 +12596,7 @@ public java.lang.String getNodeAffinityPolicy();
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#node_affinity_policy JobV1#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#node_affinity_policy JobV1#node_affinity_policy}
 
 ---
 
@@ -12578,7 +12610,7 @@ public java.lang.String getNodeTaintsPolicy();
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#node_taints_policy JobV1#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#node_taints_policy JobV1#node_taints_policy}
 
 ---
 
@@ -12594,7 +12626,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#topology_key JobV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#topology_key JobV1#topology_key}
 
 ---
 
@@ -12608,7 +12640,7 @@ public java.lang.String getWhenUnsatisfiable();
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#when_unsatisfiable JobV1#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#when_unsatisfiable JobV1#when_unsatisfiable}
 
 ---
 
@@ -12644,7 +12676,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecTopologySpreadConstraintL
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -12660,7 +12692,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -12698,7 +12730,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -12712,7 +12744,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -12728,7 +12760,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -12816,7 +12848,7 @@ public JobV1SpecTemplateSpecVolumeAwsElasticBlockStore getAwsElasticBlockStore()
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#aws_elastic_block_store JobV1#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#aws_elastic_block_store JobV1#aws_elastic_block_store}
 
 ---
 
@@ -12830,7 +12862,7 @@ public JobV1SpecTemplateSpecVolumeAzureDisk getAzureDisk();
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#azure_disk JobV1#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#azure_disk JobV1#azure_disk}
 
 ---
 
@@ -12844,7 +12876,7 @@ public JobV1SpecTemplateSpecVolumeAzureFile getAzureFile();
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#azure_file JobV1#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#azure_file JobV1#azure_file}
 
 ---
 
@@ -12858,7 +12890,7 @@ public JobV1SpecTemplateSpecVolumeCephFs getCephFs();
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#ceph_fs JobV1#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#ceph_fs JobV1#ceph_fs}
 
 ---
 
@@ -12872,7 +12904,7 @@ public JobV1SpecTemplateSpecVolumeCinder getCinder();
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#cinder JobV1#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#cinder JobV1#cinder}
 
 ---
 
@@ -12886,7 +12918,7 @@ public JobV1SpecTemplateSpecVolumeConfigMap getConfigMap();
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#config_map JobV1#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#config_map JobV1#config_map}
 
 ---
 
@@ -12900,7 +12932,7 @@ public JobV1SpecTemplateSpecVolumeCsi getCsi();
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#csi JobV1#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#csi JobV1#csi}
 
 ---
 
@@ -12914,7 +12946,7 @@ public JobV1SpecTemplateSpecVolumeDownwardApi getDownwardApi();
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#downward_api JobV1#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#downward_api JobV1#downward_api}
 
 ---
 
@@ -12928,7 +12960,7 @@ public JobV1SpecTemplateSpecVolumeEmptyDir getEmptyDir();
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#empty_dir JobV1#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#empty_dir JobV1#empty_dir}
 
 ---
 
@@ -12942,7 +12974,7 @@ public JobV1SpecTemplateSpecVolumeEphemeral getEphemeral();
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#ephemeral JobV1#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#ephemeral JobV1#ephemeral}
 
 ---
 
@@ -12956,7 +12988,7 @@ public JobV1SpecTemplateSpecVolumeFc getFc();
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fc JobV1#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fc JobV1#fc}
 
 ---
 
@@ -12970,7 +13002,7 @@ public JobV1SpecTemplateSpecVolumeFlexVolume getFlexVolume();
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#flex_volume JobV1#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#flex_volume JobV1#flex_volume}
 
 ---
 
@@ -12984,7 +13016,7 @@ public JobV1SpecTemplateSpecVolumeFlocker getFlocker();
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#flocker JobV1#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#flocker JobV1#flocker}
 
 ---
 
@@ -12998,7 +13030,7 @@ public JobV1SpecTemplateSpecVolumeGcePersistentDisk getGcePersistentDisk();
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#gce_persistent_disk JobV1#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#gce_persistent_disk JobV1#gce_persistent_disk}
 
 ---
 
@@ -13012,7 +13044,7 @@ public JobV1SpecTemplateSpecVolumeGitRepo getGitRepo();
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#git_repo JobV1#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#git_repo JobV1#git_repo}
 
 ---
 
@@ -13026,7 +13058,7 @@ public JobV1SpecTemplateSpecVolumeGlusterfs getGlusterfs();
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#glusterfs JobV1#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#glusterfs JobV1#glusterfs}
 
 ---
 
@@ -13040,7 +13072,7 @@ public JobV1SpecTemplateSpecVolumeHostPath getHostPath();
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#host_path JobV1#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#host_path JobV1#host_path}
 
 ---
 
@@ -13054,7 +13086,7 @@ public JobV1SpecTemplateSpecVolumeIscsi getIscsi();
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#iscsi JobV1#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#iscsi JobV1#iscsi}
 
 ---
 
@@ -13068,7 +13100,7 @@ public JobV1SpecTemplateSpecVolumeLocal getLocal();
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#local JobV1#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#local JobV1#local}
 
 ---
 
@@ -13082,7 +13114,7 @@ public java.lang.String getName();
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -13096,7 +13128,7 @@ public JobV1SpecTemplateSpecVolumeNfs getNfs();
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#nfs JobV1#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#nfs JobV1#nfs}
 
 ---
 
@@ -13110,7 +13142,7 @@ public JobV1SpecTemplateSpecVolumePersistentVolumeClaim getPersistentVolumeClaim
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#persistent_volume_claim JobV1#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#persistent_volume_claim JobV1#persistent_volume_claim}
 
 ---
 
@@ -13124,7 +13156,7 @@ public JobV1SpecTemplateSpecVolumePhotonPersistentDisk getPhotonPersistentDisk()
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#photon_persistent_disk JobV1#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#photon_persistent_disk JobV1#photon_persistent_disk}
 
 ---
 
@@ -13138,7 +13170,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeProjected> getProje
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#projected JobV1#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#projected JobV1#projected}
 
 ---
 
@@ -13152,7 +13184,7 @@ public JobV1SpecTemplateSpecVolumeQuobyte getQuobyte();
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#quobyte JobV1#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#quobyte JobV1#quobyte}
 
 ---
 
@@ -13166,7 +13198,7 @@ public JobV1SpecTemplateSpecVolumeRbd getRbd();
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#rbd JobV1#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#rbd JobV1#rbd}
 
 ---
 
@@ -13180,7 +13212,7 @@ public JobV1SpecTemplateSpecVolumeSecret getSecret();
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret JobV1#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret JobV1#secret}
 
 ---
 
@@ -13194,7 +13226,7 @@ public JobV1SpecTemplateSpecVolumeVsphereVolume getVsphereVolume();
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#vsphere_volume JobV1#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#vsphere_volume JobV1#vsphere_volume}
 
 ---
 
@@ -13234,7 +13266,7 @@ public java.lang.String getVolumeId();
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_id JobV1#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_id JobV1#volume_id}
 
 ---
 
@@ -13250,7 +13282,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -13266,7 +13298,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#partition JobV1#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#partition JobV1#partition}
 
 ---
 
@@ -13280,7 +13312,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -13324,7 +13356,7 @@ public java.lang.String getCachingMode();
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#caching_mode JobV1#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#caching_mode JobV1#caching_mode}
 
 ---
 
@@ -13338,7 +13370,7 @@ public java.lang.String getDataDiskUri();
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#data_disk_uri JobV1#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#data_disk_uri JobV1#data_disk_uri}
 
 ---
 
@@ -13352,7 +13384,7 @@ public java.lang.String getDiskName();
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#disk_name JobV1#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#disk_name JobV1#disk_name}
 
 ---
 
@@ -13368,7 +13400,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -13382,7 +13414,7 @@ public java.lang.String getKind();
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#kind JobV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#kind JobV1#kind}
 
 ---
 
@@ -13396,7 +13428,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -13436,7 +13468,7 @@ public java.lang.String getSecretName();
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_name JobV1#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_name JobV1#secret_name}
 
 ---
 
@@ -13450,7 +13482,7 @@ public java.lang.String getShareName();
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#share_name JobV1#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#share_name JobV1#share_name}
 
 ---
 
@@ -13464,7 +13496,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -13480,7 +13512,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_namespace JobV1#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_namespace JobV1#secret_namespace}
 
 ---
 
@@ -13524,7 +13556,7 @@ public java.util.List<java.lang.String> getMonitors();
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#monitors JobV1#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#monitors JobV1#monitors}
 
 ---
 
@@ -13538,7 +13570,7 @@ public java.lang.String getPath();
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -13552,7 +13584,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -13566,7 +13598,7 @@ public java.lang.String getSecretFile();
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_file JobV1#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_file JobV1#secret_file}
 
 ---
 
@@ -13580,7 +13612,7 @@ public JobV1SpecTemplateSpecVolumeCephFsSecretRef getSecretRef();
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_ref JobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_ref JobV1#secret_ref}
 
 ---
 
@@ -13594,7 +13626,7 @@ public java.lang.String getUser();
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#user JobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#user JobV1#user}
 
 ---
 
@@ -13630,7 +13662,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -13644,7 +13676,7 @@ public java.lang.String getNamespace();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespace JobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespace JobV1#namespace}
 
 ---
 
@@ -13682,7 +13714,7 @@ public java.lang.String getVolumeId();
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_id JobV1#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_id JobV1#volume_id}
 
 ---
 
@@ -13698,7 +13730,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -13712,7 +13744,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -13754,7 +13786,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#default_mode JobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#default_mode JobV1#default_mode}
 
 ---
 
@@ -13768,7 +13800,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeConfigMapItems> get
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#items JobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#items JobV1#items}
 
 ---
 
@@ -13782,7 +13814,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -13796,7 +13828,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -13834,7 +13866,7 @@ public java.lang.String getKey();
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -13850,7 +13882,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#mode JobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#mode JobV1#mode}
 
 ---
 
@@ -13866,7 +13898,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -13908,7 +13940,7 @@ public java.lang.String getDriver();
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#driver JobV1#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#driver JobV1#driver}
 
 ---
 
@@ -13924,7 +13956,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -13938,7 +13970,7 @@ public JobV1SpecTemplateSpecVolumeCsiNodePublishSecretRef getNodePublishSecretRe
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#node_publish_secret_ref JobV1#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#node_publish_secret_ref JobV1#node_publish_secret_ref}
 
 ---
 
@@ -13952,7 +13984,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -13966,7 +13998,7 @@ public java.util.Map<java.lang.String, java.lang.String> getVolumeAttributes();
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_attributes JobV1#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_attributes JobV1#volume_attributes}
 
 ---
 
@@ -14000,7 +14032,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -14038,7 +14070,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#default_mode JobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#default_mode JobV1#default_mode}
 
 ---
 
@@ -14052,7 +14084,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeDownwardApiItems> g
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#items JobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#items JobV1#items}
 
 ---
 
@@ -14092,7 +14124,7 @@ public JobV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef getFieldRef();
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#field_ref JobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#field_ref JobV1#field_ref}
 
 ---
 
@@ -14108,7 +14140,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -14124,7 +14156,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#mode JobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#mode JobV1#mode}
 
 ---
 
@@ -14138,7 +14170,7 @@ public JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef getResourceFi
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resource_field_ref JobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resource_field_ref JobV1#resource_field_ref}
 
 ---
 
@@ -14174,7 +14206,7 @@ public java.lang.String getApiVersion();
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#api_version JobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#api_version JobV1#api_version}
 
 ---
 
@@ -14188,7 +14220,7 @@ public java.lang.String getFieldPath();
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#field_path JobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#field_path JobV1#field_path}
 
 ---
 
@@ -14210,9 +14242,9 @@ JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_name JobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_name JobV1#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>java.lang.String</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#divisor JobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#divisor JobV1#divisor}. |
 
 ---
 
@@ -14224,7 +14256,7 @@ public java.lang.String getContainerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_name JobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_name JobV1#container_name}.
 
 ---
 
@@ -14238,7 +14270,7 @@ public java.lang.String getResource();
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resource JobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resource JobV1#resource}
 
 ---
 
@@ -14250,7 +14282,7 @@ public java.lang.String getDivisor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#divisor JobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#divisor JobV1#divisor}.
 
 ---
 
@@ -14288,7 +14320,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#medium JobV1#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#medium JobV1#medium}
 
 ---
 
@@ -14302,7 +14334,7 @@ public java.lang.String getSizeLimit();
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#size_limit JobV1#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#size_limit JobV1#size_limit}
 
 ---
 
@@ -14336,7 +14368,7 @@ public JobV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate getVolumeClaimTem
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_claim_template JobV1#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_claim_template JobV1#volume_claim_template}
 
 ---
 
@@ -14372,7 +14404,7 @@ public JobV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#spec JobV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#spec JobV1#spec}
 
 ---
 
@@ -14386,7 +14418,7 @@ public JobV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata getMetada
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#metadata JobV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#metadata JobV1#metadata}
 
 ---
 
@@ -14424,7 +14456,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#annotations JobV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#annotations JobV1#annotations}
 
 ---
 
@@ -14440,7 +14472,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#labels JobV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#labels JobV1#labels}
 
 ---
 
@@ -14484,7 +14516,7 @@ public java.util.List<java.lang.String> getAccessModes();
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#access_modes JobV1#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#access_modes JobV1#access_modes}
 
 ---
 
@@ -14498,7 +14530,7 @@ public JobV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources getR
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resources JobV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resources JobV1#resources}
 
 ---
 
@@ -14512,7 +14544,7 @@ public JobV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector getSe
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#selector JobV1#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#selector JobV1#selector}
 
 ---
 
@@ -14526,7 +14558,7 @@ public java.lang.String getStorageClassName();
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#storage_class_name JobV1#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#storage_class_name JobV1#storage_class_name}
 
 ---
 
@@ -14540,7 +14572,7 @@ public java.lang.String getVolumeMode();
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_mode JobV1#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_mode JobV1#volume_mode}
 
 ---
 
@@ -14554,7 +14586,7 @@ public java.lang.String getVolumeName();
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_name JobV1#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_name JobV1#volume_name}
 
 ---
 
@@ -14590,7 +14622,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLimits();
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#limits JobV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#limits JobV1#limits}
 
 ---
 
@@ -14606,7 +14638,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#requests JobV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#requests JobV1#requests}
 
 ---
 
@@ -14642,7 +14674,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeEphemeralVolumeClai
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_expressions JobV1#match_expressions}
 
 ---
 
@@ -14658,7 +14690,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#match_labels JobV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#match_labels JobV1#match_labels}
 
 ---
 
@@ -14696,7 +14728,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -14710,7 +14742,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#operator JobV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#operator JobV1#operator}
 
 ---
 
@@ -14726,7 +14758,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#values JobV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#values JobV1#values}
 
 ---
 
@@ -14766,7 +14798,7 @@ public java.lang.Number getLun();
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#lun JobV1#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#lun JobV1#lun}
 
 ---
 
@@ -14780,7 +14812,7 @@ public java.util.List<java.lang.String> getTargetWwNs();
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#target_ww_ns JobV1#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#target_ww_ns JobV1#target_ww_ns}
 
 ---
 
@@ -14796,7 +14828,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -14810,7 +14842,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -14852,7 +14884,7 @@ public java.lang.String getDriver();
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#driver JobV1#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#driver JobV1#driver}
 
 ---
 
@@ -14868,7 +14900,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -14882,7 +14914,7 @@ public java.util.Map<java.lang.String, java.lang.String> getOptions();
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#options JobV1#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#options JobV1#options}
 
 ---
 
@@ -14896,7 +14928,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -14910,7 +14942,7 @@ public JobV1SpecTemplateSpecVolumeFlexVolumeSecretRef getSecretRef();
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_ref JobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_ref JobV1#secret_ref}
 
 ---
 
@@ -14946,7 +14978,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -14960,7 +14992,7 @@ public java.lang.String getNamespace();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespace JobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespace JobV1#namespace}
 
 ---
 
@@ -14996,7 +15028,7 @@ public java.lang.String getDatasetName();
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#dataset_name JobV1#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#dataset_name JobV1#dataset_name}
 
 ---
 
@@ -15010,7 +15042,7 @@ public java.lang.String getDatasetUuid();
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#dataset_uuid JobV1#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#dataset_uuid JobV1#dataset_uuid}
 
 ---
 
@@ -15050,7 +15082,7 @@ public java.lang.String getPdName();
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#pd_name JobV1#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#pd_name JobV1#pd_name}
 
 ---
 
@@ -15066,7 +15098,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -15082,7 +15114,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#partition JobV1#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#partition JobV1#partition}
 
 ---
 
@@ -15096,7 +15128,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -15136,7 +15168,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#directory JobV1#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#directory JobV1#directory}
 
 ---
 
@@ -15150,7 +15182,7 @@ public java.lang.String getRepository();
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#repository JobV1#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#repository JobV1#repository}
 
 ---
 
@@ -15164,7 +15196,7 @@ public java.lang.String getRevision();
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#revision JobV1#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#revision JobV1#revision}
 
 ---
 
@@ -15202,7 +15234,7 @@ public java.lang.String getEndpointsName();
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#endpoints_name JobV1#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#endpoints_name JobV1#endpoints_name}
 
 ---
 
@@ -15216,7 +15248,7 @@ public java.lang.String getPath();
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -15230,7 +15262,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -15266,7 +15298,7 @@ public java.lang.String getPath();
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -15280,7 +15312,7 @@ public java.lang.String getType();
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#type JobV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#type JobV1#type}
 
 ---
 
@@ -15324,7 +15356,7 @@ public java.lang.String getIqn();
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#iqn JobV1#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#iqn JobV1#iqn}
 
 ---
 
@@ -15340,7 +15372,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#target_portal JobV1#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#target_portal JobV1#target_portal}
 
 ---
 
@@ -15356,7 +15388,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -15370,7 +15402,7 @@ public java.lang.String getIscsiInterface();
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#iscsi_interface JobV1#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#iscsi_interface JobV1#iscsi_interface}
 
 ---
 
@@ -15384,7 +15416,7 @@ public java.lang.Number getLun();
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#lun JobV1#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#lun JobV1#lun}
 
 ---
 
@@ -15398,7 +15430,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -15432,7 +15464,7 @@ public java.lang.String getPath();
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -15470,7 +15502,7 @@ public java.lang.String getPath();
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -15484,7 +15516,7 @@ public java.lang.String getServer();
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#server JobV1#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#server JobV1#server}
 
 ---
 
@@ -15498,7 +15530,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -15534,7 +15566,7 @@ public java.lang.String getClaimName();
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#claim_name JobV1#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#claim_name JobV1#claim_name}
 
 ---
 
@@ -15548,7 +15580,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -15584,7 +15616,7 @@ public java.lang.String getPdId();
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#pd_id JobV1#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#pd_id JobV1#pd_id}
 
 ---
 
@@ -15600,7 +15632,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -15636,7 +15668,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeProjectedSources> g
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#sources JobV1#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#sources JobV1#sources}
 
 ---
 
@@ -15652,7 +15684,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#default_mode JobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#default_mode JobV1#default_mode}
 
 ---
 
@@ -15692,7 +15724,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeProjectedSourcesCon
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#config_map JobV1#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#config_map JobV1#config_map}
 
 ---
 
@@ -15706,7 +15738,7 @@ public JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi getDownwardApi();
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#downward_api JobV1#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#downward_api JobV1#downward_api}
 
 ---
 
@@ -15720,7 +15752,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeProjectedSourcesSec
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret JobV1#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret JobV1#secret}
 
 ---
 
@@ -15734,7 +15766,7 @@ public JobV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken getService
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#service_account_token JobV1#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#service_account_token JobV1#service_account_token}
 
 ---
 
@@ -15772,7 +15804,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeProjectedSourcesCon
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#items JobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#items JobV1#items}
 
 ---
 
@@ -15786,7 +15818,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -15800,7 +15832,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -15838,7 +15870,7 @@ public java.lang.String getKey();
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -15854,7 +15886,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#mode JobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#mode JobV1#mode}
 
 ---
 
@@ -15870,7 +15902,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -15904,7 +15936,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeProjectedSourcesDow
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#items JobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#items JobV1#items}
 
 ---
 
@@ -15946,7 +15978,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -15960,7 +15992,7 @@ public JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef getFi
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#field_ref JobV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#field_ref JobV1#field_ref}
 
 ---
 
@@ -15976,7 +16008,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#mode JobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#mode JobV1#mode}
 
 ---
 
@@ -15990,7 +16022,7 @@ public JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldR
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resource_field_ref JobV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resource_field_ref JobV1#resource_field_ref}
 
 ---
 
@@ -16026,7 +16058,7 @@ public java.lang.String getApiVersion();
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#api_version JobV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#api_version JobV1#api_version}
 
 ---
 
@@ -16040,7 +16072,7 @@ public java.lang.String getFieldPath();
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#field_path JobV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#field_path JobV1#field_path}
 
 ---
 
@@ -16062,9 +16094,9 @@ JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.buil
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_name JobV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_name JobV1#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>java.lang.String</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#divisor JobV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#divisor JobV1#divisor}. |
 
 ---
 
@@ -16076,7 +16108,7 @@ public java.lang.String getContainerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#container_name JobV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#container_name JobV1#container_name}.
 
 ---
 
@@ -16090,7 +16122,7 @@ public java.lang.String getResource();
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#resource JobV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#resource JobV1#resource}
 
 ---
 
@@ -16102,7 +16134,7 @@ public java.lang.String getDivisor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#divisor JobV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#divisor JobV1#divisor}.
 
 ---
 
@@ -16140,7 +16172,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeProjectedSourcesSec
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#items JobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#items JobV1#items}
 
 ---
 
@@ -16154,7 +16186,7 @@ public java.lang.String getName();
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -16168,7 +16200,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -16206,7 +16238,7 @@ public java.lang.String getKey();
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -16222,7 +16254,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#mode JobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#mode JobV1#mode}
 
 ---
 
@@ -16238,7 +16270,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -16276,7 +16308,7 @@ public java.lang.String getPath();
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -16290,7 +16322,7 @@ public java.lang.String getAudience();
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#audience JobV1#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#audience JobV1#audience}
 
 ---
 
@@ -16306,7 +16338,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#expiration_seconds JobV1#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#expiration_seconds JobV1#expiration_seconds}
 
 ---
 
@@ -16348,7 +16380,7 @@ public java.lang.String getRegistry();
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#registry JobV1#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#registry JobV1#registry}
 
 ---
 
@@ -16362,7 +16394,7 @@ public java.lang.String getVolume();
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume JobV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume JobV1#volume}
 
 ---
 
@@ -16376,7 +16408,7 @@ public java.lang.String getGroup();
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#group JobV1#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#group JobV1#group}
 
 ---
 
@@ -16390,7 +16422,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -16404,7 +16436,7 @@ public java.lang.String getUser();
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#user JobV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#user JobV1#user}
 
 ---
 
@@ -16452,7 +16484,7 @@ public java.util.List<java.lang.String> getCephMonitors();
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#ceph_monitors JobV1#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#ceph_monitors JobV1#ceph_monitors}
 
 ---
 
@@ -16466,7 +16498,7 @@ public java.lang.String getRbdImage();
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#rbd_image JobV1#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#rbd_image JobV1#rbd_image}
 
 ---
 
@@ -16482,7 +16514,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -16496,7 +16528,7 @@ public java.lang.String getKeyring();
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#keyring JobV1#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#keyring JobV1#keyring}
 
 ---
 
@@ -16510,7 +16542,7 @@ public java.lang.String getRadosUser();
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#rados_user JobV1#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#rados_user JobV1#rados_user}
 
 ---
 
@@ -16524,7 +16556,7 @@ public java.lang.String getRbdPool();
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#rbd_pool JobV1#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#rbd_pool JobV1#rbd_pool}
 
 ---
 
@@ -16538,7 +16570,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#read_only JobV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#read_only JobV1#read_only}
 
 ---
 
@@ -16552,7 +16584,7 @@ public JobV1SpecTemplateSpecVolumeRbdSecretRef getSecretRef();
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_ref JobV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_ref JobV1#secret_ref}
 
 ---
 
@@ -16588,7 +16620,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#name JobV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#name JobV1#name}
 
 ---
 
@@ -16602,7 +16634,7 @@ public java.lang.String getNamespace();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#namespace JobV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#namespace JobV1#namespace}
 
 ---
 
@@ -16644,7 +16676,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#default_mode JobV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#default_mode JobV1#default_mode}
 
 ---
 
@@ -16658,7 +16690,7 @@ public IResolvable|java.util.List<JobV1SpecTemplateSpecVolumeSecretItems> getIte
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#items JobV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#items JobV1#items}
 
 ---
 
@@ -16672,7 +16704,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#optional JobV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#optional JobV1#optional}
 
 ---
 
@@ -16686,7 +16718,7 @@ public java.lang.String getSecretName();
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#secret_name JobV1#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#secret_name JobV1#secret_name}
 
 ---
 
@@ -16724,7 +16756,7 @@ public java.lang.String getKey();
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#key JobV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#key JobV1#key}
 
 ---
 
@@ -16740,7 +16772,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#mode JobV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#mode JobV1#mode}
 
 ---
 
@@ -16756,7 +16788,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#path JobV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#path JobV1#path}
 
 ---
 
@@ -16792,7 +16824,7 @@ public java.lang.String getVolumePath();
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#volume_path JobV1#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#volume_path JobV1#volume_path}
 
 ---
 
@@ -16808,7 +16840,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#fs_type JobV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#fs_type JobV1#fs_type}
 
 ---
 
@@ -16830,9 +16862,9 @@ JobV1Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#create JobV1#create}. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#delete JobV1#delete}. |
-| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#update JobV1#update}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#create JobV1#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#delete JobV1#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#update JobV1#update}. |
 
 ---
 
@@ -16844,7 +16876,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#create JobV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#create JobV1#create}.
 
 ---
 
@@ -16856,7 +16888,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#delete JobV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#delete JobV1#delete}.
 
 ---
 
@@ -16868,7 +16900,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job_v1#update JobV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/job_v1#update JobV1#update}.
 
 ---
 
@@ -48074,6 +48106,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.resetPort">resetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.resetReadinessProbe">resetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.resetResources">resetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.resetRestartPolicy">resetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.resetSecurityContext">resetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.resetStartupProbe">resetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.resetStdin">resetStdin</a></code> | *No description.* |
@@ -48435,6 +48468,12 @@ public void resetReadinessProbe()
 public void resetResources()
 ```
 
+##### `resetRestartPolicy` <a name="resetRestartPolicy" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.resetRestartPolicy"></a>
+
+```java
+public void resetRestartPolicy()
+```
+
 ##### `resetSecurityContext` <a name="resetSecurityContext" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.resetSecurityContext"></a>
 
 ```java
@@ -48525,6 +48564,7 @@ public void resetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.portInput">portInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerPort">JobV1SpecTemplateSpecContainerPort</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerReadinessProbe">JobV1SpecTemplateSpecContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.resourcesInput">resourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerResources">JobV1SpecTemplateSpecContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.restartPolicyInput">restartPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.securityContextInput">securityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerSecurityContext">JobV1SpecTemplateSpecContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerStartupProbe">JobV1SpecTemplateSpecContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.stdinInput">stdinInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -48540,6 +48580,7 @@ public void resetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.image">image</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.imagePullPolicy">imagePullPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.restartPolicy">restartPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.stdin">stdin</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.stdinOnce">stdinOnce</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.terminationMessagePath">terminationMessagePath</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -48804,6 +48845,16 @@ public JobV1SpecTemplateSpecContainerResources getResourcesInput();
 
 ---
 
+##### `restartPolicyInput`<sup>Optional</sup> <a name="restartPolicyInput" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.restartPolicyInput"></a>
+
+```java
+public java.lang.String getRestartPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `securityContextInput`<sup>Optional</sup> <a name="securityContextInput" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.securityContextInput"></a>
 
 ```java
@@ -48948,6 +48999,16 @@ public java.lang.String getImagePullPolicy();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `restartPolicy`<sup>Required</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerOutputReference.property.restartPolicy"></a>
+
+```java
+public java.lang.String getRestartPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -70519,6 +70580,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.resetPort">resetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.resetReadinessProbe">resetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.resetResources">resetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.resetRestartPolicy">resetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.resetSecurityContext">resetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.resetStartupProbe">resetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.resetStdin">resetStdin</a></code> | *No description.* |
@@ -70880,6 +70942,12 @@ public void resetReadinessProbe()
 public void resetResources()
 ```
 
+##### `resetRestartPolicy` <a name="resetRestartPolicy" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.resetRestartPolicy"></a>
+
+```java
+public void resetRestartPolicy()
+```
+
 ##### `resetSecurityContext` <a name="resetSecurityContext" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.resetSecurityContext"></a>
 
 ```java
@@ -70970,6 +71038,7 @@ public void resetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.portInput">portInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerPort">JobV1SpecTemplateSpecInitContainerPort</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerReadinessProbe">JobV1SpecTemplateSpecInitContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.resourcesInput">resourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerResources">JobV1SpecTemplateSpecInitContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput">restartPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.securityContextInput">securityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerSecurityContext">JobV1SpecTemplateSpecInitContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerStartupProbe">JobV1SpecTemplateSpecInitContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.stdinInput">stdinInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -70985,6 +71054,7 @@ public void resetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.image">image</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.imagePullPolicy">imagePullPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.restartPolicy">restartPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.stdin">stdin</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.stdinOnce">stdinOnce</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.terminationMessagePath">terminationMessagePath</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -71249,6 +71319,16 @@ public JobV1SpecTemplateSpecInitContainerResources getResourcesInput();
 
 ---
 
+##### `restartPolicyInput`<sup>Optional</sup> <a name="restartPolicyInput" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput"></a>
+
+```java
+public java.lang.String getRestartPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `securityContextInput`<sup>Optional</sup> <a name="securityContextInput" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.securityContextInput"></a>
 
 ```java
@@ -71393,6 +71473,16 @@ public java.lang.String getImagePullPolicy();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `restartPolicy`<sup>Required</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerOutputReference.property.restartPolicy"></a>
+
+```java
+public java.lang.String getRestartPolicy();
 ```
 
 - *Type:* java.lang.String

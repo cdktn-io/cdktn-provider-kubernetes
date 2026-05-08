@@ -4,7 +4,7 @@
 
 ### DataKubernetesPod <a name="DataKubernetesPod" id="@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPod"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod kubernetes_pod}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod kubernetes_pod}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPod.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataKubernetesPod.DataKubernetesPod(
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPod.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPod.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPod.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodMetadata">DataKubernetesPodMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPod.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#id DataKubernetesPod#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPod.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#id DataKubernetesPod#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#metadata DataKubernetesPod#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#metadata DataKubernetesPod#metadata}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#id DataKubernetesPod#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#id DataKubernetesPod#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -410,7 +410,7 @@ An unstructured key value map stored with the pod that may be used to store arbi
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#annotations DataKubernetesPod#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#annotations DataKubernetesPod#annotations}
 
 ---
 
@@ -422,7 +422,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#generate_name DataKubernetesPod#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#generate_name DataKubernetesPod#generate_name}
 
 ---
 
@@ -434,7 +434,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#labels DataKubernetesPod#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#labels DataKubernetesPod#labels}
 
 ---
 
@@ -444,7 +444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the pod, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#name DataKubernetesPod#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#name DataKubernetesPod#name}
 
 ---
 
@@ -454,7 +454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Namespace defines the space within which name of the pod must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#namespace DataKubernetesPod#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#namespace DataKubernetesPod#namespace}
 
 ---
 
@@ -578,7 +578,7 @@ The construct id used in the generated config for the DataKubernetesPod to impor
 
 The id of the existing DataKubernetesPod that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -849,7 +849,7 @@ dataKubernetesPod.DataKubernetesPodConfig(
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodMetadata">DataKubernetesPodMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#id DataKubernetesPod#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#id DataKubernetesPod#id}. |
 
 ---
 
@@ -933,7 +933,7 @@ metadata: DataKubernetesPodMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#metadata DataKubernetesPod#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#metadata DataKubernetesPod#metadata}
 
 ---
 
@@ -945,7 +945,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#id DataKubernetesPod#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#id DataKubernetesPod#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -992,7 +992,7 @@ An unstructured key value map stored with the pod that may be used to store arbi
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#annotations DataKubernetesPod#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#annotations DataKubernetesPod#annotations}
 
 ---
 
@@ -1008,7 +1008,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#generate_name DataKubernetesPod#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#generate_name DataKubernetesPod#generate_name}
 
 ---
 
@@ -1024,7 +1024,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#labels DataKubernetesPod#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#labels DataKubernetesPod#labels}
 
 ---
 
@@ -1038,7 +1038,7 @@ name: str
 
 Name of the pod, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#name DataKubernetesPod#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#name DataKubernetesPod#name}
 
 ---
 
@@ -1052,7 +1052,7 @@ namespace: str
 
 Namespace defines the space within which name of the pod must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/data-sources/pod#namespace DataKubernetesPod#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/pod#namespace DataKubernetesPod#namespace}
 
 ---
 
@@ -33032,6 +33032,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerOutputReference.property.port">port</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerPortList">DataKubernetesPodSpecContainerPortList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerOutputReference.property.readinessProbe">readiness_probe</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerReadinessProbeList">DataKubernetesPodSpecContainerReadinessProbeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerOutputReference.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerResourcesList">DataKubernetesPodSpecContainerResourcesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerOutputReference.property.restartPolicy">restart_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerOutputReference.property.securityContext">security_context</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerSecurityContextList">DataKubernetesPodSpecContainerSecurityContextList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerOutputReference.property.startupProbe">startup_probe</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerStartupProbeList">DataKubernetesPodSpecContainerStartupProbeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerOutputReference.property.stdin">stdin</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -33187,6 +33188,16 @@ resources: DataKubernetesPodSpecContainerResourcesList
 ```
 
 - *Type:* <a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerResourcesList">DataKubernetesPodSpecContainerResourcesList</a>
+
+---
+
+##### `restart_policy`<sup>Required</sup> <a name="restart_policy" id="@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerOutputReference.property.restartPolicy"></a>
+
+```python
+restart_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -58038,6 +58049,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerOutputReference.property.port">port</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerPortList">DataKubernetesPodSpecInitContainerPortList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerOutputReference.property.readinessProbe">readiness_probe</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerReadinessProbeList">DataKubernetesPodSpecInitContainerReadinessProbeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerOutputReference.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerResourcesList">DataKubernetesPodSpecInitContainerResourcesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerOutputReference.property.restartPolicy">restart_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerOutputReference.property.securityContext">security_context</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerSecurityContextList">DataKubernetesPodSpecInitContainerSecurityContextList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerOutputReference.property.startupProbe">startup_probe</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerStartupProbeList">DataKubernetesPodSpecInitContainerStartupProbeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerOutputReference.property.stdin">stdin</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -58193,6 +58205,16 @@ resources: DataKubernetesPodSpecInitContainerResourcesList
 ```
 
 - *Type:* <a href="#@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerResourcesList">DataKubernetesPodSpecInitContainerResourcesList</a>
+
+---
+
+##### `restart_policy`<sup>Required</sup> <a name="restart_policy" id="@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerOutputReference.property.restartPolicy"></a>
+
+```python
+restart_policy: str
+```
+
+- *Type:* str
 
 ---
 

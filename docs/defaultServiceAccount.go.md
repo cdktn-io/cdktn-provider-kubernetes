@@ -4,12 +4,12 @@
 
 ### DefaultServiceAccount <a name="DefaultServiceAccount" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account kubernetes_default_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account kubernetes_default_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.NewDefaultServiceAccount(scope Construct, id *string, config DefaultServiceAccountConfig) DefaultServiceAccount
 ```
@@ -487,7 +487,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.DefaultServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.DefaultServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ defaultserviceaccount.DefaultServiceAccount_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.DefaultServiceAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ defaultserviceaccount.DefaultServiceAccount_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.DefaultServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -576,7 +576,7 @@ The construct id used in the generated config for the DefaultServiceAccount to i
 
 The id of the existing DefaultServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 &defaultserviceaccount.DefaultServiceAccountConfig {
 	Connection: interface{},
@@ -929,12 +929,12 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaults
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.defaultServiceAccount.DefaultServiceAccountMetadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.defaultServiceAccount.DefaultServiceAccountMetadata,
 	AutomountServiceAccountToken: interface{},
 	Id: *string,
 	ImagePullSecret: interface{},
 	Secret: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.defaultServiceAccount.DefaultServiceAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.defaultServiceAccount.DefaultServiceAccountTimeouts,
 }
 ```
 
@@ -951,7 +951,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaults
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadata">DefaultServiceAccountMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.automountServiceAccountToken">AutomountServiceAccountToken</a></code> | <code>interface{}</code> | Enable automatic mounting of the service account token. |
-| <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#id DefaultServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#id DefaultServiceAccount#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.imagePullSecret">ImagePullSecret</a></code> | <code>interface{}</code> | image_pull_secret block. |
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.secret">Secret</a></code> | <code>interface{}</code> | secret block. |
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts">DefaultServiceAccountTimeouts</a></code> | timeouts block. |
@@ -1038,7 +1038,7 @@ Metadata DefaultServiceAccountMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#metadata DefaultServiceAccount#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#metadata DefaultServiceAccount#metadata}
 
 ---
 
@@ -1052,7 +1052,7 @@ AutomountServiceAccountToken interface{}
 
 Enable automatic mounting of the service account token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#automount_service_account_token DefaultServiceAccount#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#automount_service_account_token DefaultServiceAccount#automount_service_account_token}
 
 ---
 
@@ -1064,7 +1064,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#id DefaultServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#id DefaultServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1081,7 +1081,7 @@ ImagePullSecret interface{}
 
 image_pull_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#image_pull_secret DefaultServiceAccount#image_pull_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#image_pull_secret DefaultServiceAccount#image_pull_secret}
 
 ---
 
@@ -1095,7 +1095,7 @@ Secret interface{}
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#secret DefaultServiceAccount#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#secret DefaultServiceAccount#secret}
 
 ---
 
@@ -1109,7 +1109,7 @@ Timeouts DefaultServiceAccountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#timeouts DefaultServiceAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#timeouts DefaultServiceAccount#timeouts}
 
 ---
 
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 &defaultserviceaccount.DefaultServiceAccountImagePullSecret {
 	Name: *string,
@@ -1143,7 +1143,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
 
 ---
 
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 &defaultserviceaccount.DefaultServiceAccountMetadata {
 	Annotations: *map[string]*string,
@@ -1185,7 +1185,7 @@ An unstructured key value map stored with the service account that may be used t
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#annotations DefaultServiceAccount#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#annotations DefaultServiceAccount#annotations}
 
 ---
 
@@ -1201,7 +1201,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#labels DefaultServiceAccount#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#labels DefaultServiceAccount#labels}
 
 ---
 
@@ -1215,7 +1215,7 @@ Name *string
 
 Name of the service account, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
 
 ---
 
@@ -1229,7 +1229,7 @@ Namespace *string
 
 Namespace defines the space within which name of the service account must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#namespace DefaultServiceAccount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#namespace DefaultServiceAccount#namespace}
 
 ---
 
@@ -1238,7 +1238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 &defaultserviceaccount.DefaultServiceAccountSecret {
 	Name: *string,
@@ -1263,7 +1263,7 @@ Name *string
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
 
 ---
 
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 &defaultserviceaccount.DefaultServiceAccountTimeouts {
 	Create: *string,
@@ -1283,7 +1283,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaults
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#create DefaultServiceAccount#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#create DefaultServiceAccount#create}. |
 
 ---
 
@@ -1295,7 +1295,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/default_service_account#create DefaultServiceAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#create DefaultServiceAccount#create}.
 
 ---
 
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.NewDefaultServiceAccountImagePullSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DefaultServiceAccountImagePullSecretList
 ```
@@ -1466,7 +1466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.NewDefaultServiceAccountImagePullSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DefaultServiceAccountImagePullSecretOutputReference
 ```
@@ -1762,7 +1762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.NewDefaultServiceAccountMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DefaultServiceAccountMetadataOutputReference
 ```
@@ -2160,7 +2160,7 @@ func InternalValue() DefaultServiceAccountMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.NewDefaultServiceAccountSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DefaultServiceAccountSecretList
 ```
@@ -2320,7 +2320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.NewDefaultServiceAccountSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DefaultServiceAccountSecretOutputReference
 ```
@@ -2616,7 +2616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/defaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/defaultserviceaccount"
 
 defaultserviceaccount.NewDefaultServiceAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DefaultServiceAccountTimeoutsOutputReference
 ```

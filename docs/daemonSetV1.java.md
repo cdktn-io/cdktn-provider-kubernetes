@@ -4,7 +4,7 @@
 
 ### DaemonSetV1 <a name="DaemonSetV1" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1 kubernetes_daemon_set_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1 kubernetes_daemon_set_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.Initializer"></a>
 
@@ -40,7 +40,7 @@ DaemonSetV1.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Metadata">DaemonSetV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Spec">DaemonSetV1Spec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#id DaemonSetV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#id DaemonSetV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Timeouts">DaemonSetV1Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1.Initializer.parameter.waitForRollout">waitForRollout</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Wait for the rollout of the deployment to complete. Defaults to true. |
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#metadata DaemonSetV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#metadata DaemonSetV1#metadata}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#spec DaemonSetV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#spec DaemonSetV1#spec}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#id DaemonSetV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#id DaemonSetV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#timeouts DaemonSetV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#timeouts DaemonSetV1#timeouts}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Wait for the rollout of the deployment to complete. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#wait_for_rollout DaemonSetV1#wait_for_rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#wait_for_rollout DaemonSetV1#wait_for_rollout}
 
 ---
 
@@ -662,7 +662,7 @@ The construct id used in the generated config for the DaemonSetV1 to import.
 
 The id of the existing DaemonSetV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1003,7 +1003,7 @@ DaemonSetV1Config.builder()
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Config.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Metadata">DaemonSetV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Config.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Spec">DaemonSetV1Spec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#id DaemonSetV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#id DaemonSetV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Timeouts">DaemonSetV1Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Config.property.waitForRollout">waitForRollout</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Wait for the rollout of the deployment to complete. Defaults to true. |
 
@@ -1089,7 +1089,7 @@ public DaemonSetV1Metadata getMetadata();
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#metadata DaemonSetV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#metadata DaemonSetV1#metadata}
 
 ---
 
@@ -1103,7 +1103,7 @@ public DaemonSetV1Spec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#spec DaemonSetV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#spec DaemonSetV1#spec}
 
 ---
 
@@ -1115,7 +1115,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#id DaemonSetV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#id DaemonSetV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,7 +1132,7 @@ public DaemonSetV1Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#timeouts DaemonSetV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#timeouts DaemonSetV1#timeouts}
 
 ---
 
@@ -1146,7 +1146,7 @@ public java.lang.Boolean|IResolvable getWaitForRollout();
 
 Wait for the rollout of the deployment to complete. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#wait_for_rollout DaemonSetV1#wait_for_rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#wait_for_rollout DaemonSetV1#wait_for_rollout}
 
 ---
 
@@ -1190,7 +1190,7 @@ An unstructured key value map stored with the daemonset that may be used to stor
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#annotations DaemonSetV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#annotations DaemonSetV1#annotations}
 
 ---
 
@@ -1206,7 +1206,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#generate_name DaemonSetV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#generate_name DaemonSetV1#generate_name}
 
 ---
 
@@ -1222,7 +1222,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#labels DaemonSetV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#labels DaemonSetV1#labels}
 
 ---
 
@@ -1236,7 +1236,7 @@ public java.lang.String getName();
 
 Name of the daemonset, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -1250,7 +1250,7 @@ public java.lang.String getNamespace();
 
 Namespace defines the space within which name of the daemonset must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespace DaemonSetV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespace DaemonSetV1#namespace}
 
 ---
 
@@ -1292,7 +1292,7 @@ public DaemonSetV1SpecTemplate getTemplate();
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#template DaemonSetV1#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#template DaemonSetV1#template}
 
 ---
 
@@ -1308,7 +1308,7 @@ Minimum number of seconds for which a newly created pod should be ready without 
 
 Defaults to 0 (pod will be considered available as soon as it is ready)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#min_ready_seconds DaemonSetV1#min_ready_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#min_ready_seconds DaemonSetV1#min_ready_seconds}
 
 ---
 
@@ -1324,7 +1324,7 @@ The number of old ReplicaSets to retain to allow rollback.
 
 This is a pointer to distinguish between explicit zero and not specified. Defaults to 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#revision_history_limit DaemonSetV1#revision_history_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#revision_history_limit DaemonSetV1#revision_history_limit}
 
 ---
 
@@ -1338,7 +1338,7 @@ public DaemonSetV1SpecSelector getSelector();
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#selector DaemonSetV1#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#selector DaemonSetV1#selector}
 
 ---
 
@@ -1352,7 +1352,7 @@ public DaemonSetV1SpecStrategy getStrategy();
 
 strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#strategy DaemonSetV1#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#strategy DaemonSetV1#strategy}
 
 ---
 
@@ -1388,7 +1388,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecSelectorMatchExpressions> getMa
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -1404,7 +1404,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -1442,7 +1442,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -1456,7 +1456,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -1472,7 +1472,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -1508,7 +1508,7 @@ public DaemonSetV1SpecStrategyRollingUpdate getRollingUpdate();
 
 rolling_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#rolling_update DaemonSetV1#rolling_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#rolling_update DaemonSetV1#rolling_update}
 
 ---
 
@@ -1522,7 +1522,7 @@ public java.lang.String getType();
 
 Type of deployment. Can be 'RollingUpdate' or 'OnDelete'. Default is RollingUpdate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
 
 ---
 
@@ -1560,7 +1560,7 @@ The maximum number of nodes with an existing available DaemonSet pod that can ha
 
 Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%). This can not be 0 if MaxUnavailable is 0. Absolute number is calculated from percentage by rounding up to a minimum of 1. Default value is 0. Example: when this is set to 30%, at most 30% of the total number of nodes that should be running the daemon pod (i.e. status.desiredNumberScheduled) can have their a new pod created before the old pod is marked as deleted. The update starts by launching new pods on 30% of nodes. Once an updated pod is available (Ready for at least minReadySeconds) the old DaemonSet pod on that node is marked deleted. If the old pod becomes unavailable for any reason Ready transitions to false, is evicted, or is drained) an updated pod is immediatedly created on that node without considering surge limits. Allowing surge implies the possibility that the resources consumed by the daemonset on any given node can double if the readiness check fails, and so resource intensive daemonsets should take into account that they may cause evictionsduring disruption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#max_surge DaemonSetV1#max_surge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#max_surge DaemonSetV1#max_surge}
 
 ---
 
@@ -1576,7 +1576,7 @@ The maximum number of DaemonSet pods that can be unavailable during the update.
 
 Value can be an absolute number (ex: 5) or a percentage of total number of DaemonSet pods at the start of the update (ex: 10%). Absolute number is calculated from percentage by rounding up. This cannot be 0 if MaxSurge is 0 Default value is 1. Example: when this is set to 30%, at most 30% of the total number of nodes that should be running the daemon pod (i.e. status.desiredNumberScheduled) can have their pods stopped for an update at any given time. The update starts by stopping at most 30% of those DaemonSet pods and then brings up new DaemonSet pods in their place. Once the new pods are available, it then proceeds onto other DaemonSet pods, thus ensuring that at least 70% of original number of DaemonSet pods are available at all times during the update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#max_unavailable DaemonSetV1#max_unavailable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#max_unavailable DaemonSetV1#max_unavailable}
 
 ---
 
@@ -1612,7 +1612,7 @@ public DaemonSetV1SpecTemplateMetadata getMetadata();
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#metadata DaemonSetV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#metadata DaemonSetV1#metadata}
 
 ---
 
@@ -1626,7 +1626,7 @@ public DaemonSetV1SpecTemplateSpec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#spec DaemonSetV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#spec DaemonSetV1#spec}
 
 ---
 
@@ -1670,7 +1670,7 @@ An unstructured key value map stored with the daemon set that may be used to sto
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#annotations DaemonSetV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#annotations DaemonSetV1#annotations}
 
 ---
 
@@ -1686,7 +1686,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#generate_name DaemonSetV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#generate_name DaemonSetV1#generate_name}
 
 ---
 
@@ -1702,7 +1702,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#labels DaemonSetV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#labels DaemonSetV1#labels}
 
 ---
 
@@ -1716,7 +1716,7 @@ public java.lang.String getName();
 
 Name of the daemon set, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -1730,7 +1730,7 @@ public java.lang.String getNamespace();
 
 Namespace defines the space within which name of the daemon set must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespace DaemonSetV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespace DaemonSetV1#namespace}
 
 ---
 
@@ -1824,7 +1824,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#active_deadline_seconds DaemonSetV1#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#active_deadline_seconds DaemonSetV1#active_deadline_seconds}
 
 ---
 
@@ -1838,7 +1838,7 @@ public DaemonSetV1SpecTemplateSpecAffinity getAffinity();
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#affinity DaemonSetV1#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#affinity DaemonSetV1#affinity}
 
 ---
 
@@ -1852,7 +1852,7 @@ public java.lang.Boolean|IResolvable getAutomountServiceAccountToken();
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#automount_service_account_token DaemonSetV1#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#automount_service_account_token DaemonSetV1#automount_service_account_token}
 
 ---
 
@@ -1866,7 +1866,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainer> getConta
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container DaemonSetV1#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container DaemonSetV1#container}
 
 ---
 
@@ -1880,7 +1880,7 @@ public DaemonSetV1SpecTemplateSpecDnsConfig getDnsConfig();
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#dns_config DaemonSetV1#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#dns_config DaemonSetV1#dns_config}
 
 ---
 
@@ -1896,7 +1896,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#dns_policy DaemonSetV1#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#dns_policy DaemonSetV1#dns_policy}
 
 ---
 
@@ -1910,7 +1910,7 @@ public java.lang.Boolean|IResolvable getEnableServiceLinks();
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#enable_service_links DaemonSetV1#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#enable_service_links DaemonSetV1#enable_service_links}
 
 ---
 
@@ -1924,7 +1924,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecHostAliases> getHos
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host_aliases DaemonSetV1#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host_aliases DaemonSetV1#host_aliases}
 
 ---
 
@@ -1938,7 +1938,7 @@ public java.lang.Boolean|IResolvable getHostIpc();
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host_ipc DaemonSetV1#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host_ipc DaemonSetV1#host_ipc}
 
 ---
 
@@ -1952,7 +1952,7 @@ public java.lang.String getHostname();
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#hostname DaemonSetV1#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#hostname DaemonSetV1#hostname}
 
 ---
 
@@ -1968,7 +1968,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host_network DaemonSetV1#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host_network DaemonSetV1#host_network}
 
 ---
 
@@ -1982,7 +1982,7 @@ public java.lang.Boolean|IResolvable getHostPid();
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host_pid DaemonSetV1#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host_pid DaemonSetV1#host_pid}
 
 ---
 
@@ -1996,7 +1996,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecImagePullSecrets> g
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#image_pull_secrets DaemonSetV1#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#image_pull_secrets DaemonSetV1#image_pull_secrets}
 
 ---
 
@@ -2010,7 +2010,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainer> getI
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#init_container DaemonSetV1#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#init_container DaemonSetV1#init_container}
 
 ---
 
@@ -2026,7 +2026,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#node_name DaemonSetV1#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#node_name DaemonSetV1#node_name}
 
 ---
 
@@ -2042,7 +2042,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#node_selector DaemonSetV1#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#node_selector DaemonSetV1#node_selector}
 
 ---
 
@@ -2056,7 +2056,7 @@ public DaemonSetV1SpecTemplateSpecOs getOs();
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#os DaemonSetV1#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#os DaemonSetV1#os}
 
 ---
 
@@ -2072,7 +2072,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#priority_class_name DaemonSetV1#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#priority_class_name DaemonSetV1#priority_class_name}
 
 ---
 
@@ -2086,7 +2086,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecReadinessGate> getR
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#readiness_gate DaemonSetV1#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#readiness_gate DaemonSetV1#readiness_gate}
 
 ---
 
@@ -2100,7 +2100,7 @@ public java.lang.String getRestartPolicy();
 
 Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#restart_policy DaemonSetV1#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#restart_policy DaemonSetV1#restart_policy}
 
 ---
 
@@ -2116,7 +2116,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#runtime_class_name DaemonSetV1#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#runtime_class_name DaemonSetV1#runtime_class_name}
 
 ---
 
@@ -2132,7 +2132,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheduler_name DaemonSetV1#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheduler_name DaemonSetV1#scheduler_name}
 
 ---
 
@@ -2146,7 +2146,7 @@ public DaemonSetV1SpecTemplateSpecSecurityContext getSecurityContext();
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#security_context DaemonSetV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#security_context DaemonSetV1#security_context}
 
 ---
 
@@ -2160,7 +2160,7 @@ public java.lang.String getServiceAccountName();
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#service_account_name DaemonSetV1#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#service_account_name DaemonSetV1#service_account_name}
 
 ---
 
@@ -2176,7 +2176,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#share_process_namespace DaemonSetV1#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#share_process_namespace DaemonSetV1#share_process_namespace}
 
 ---
 
@@ -2190,7 +2190,7 @@ public java.lang.String getSubdomain();
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#subdomain DaemonSetV1#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#subdomain DaemonSetV1#subdomain}
 
 ---
 
@@ -2206,7 +2206,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#termination_grace_period_seconds DaemonSetV1#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#termination_grace_period_seconds DaemonSetV1#termination_grace_period_seconds}
 
 ---
 
@@ -2220,7 +2220,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecToleration> getTole
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#toleration DaemonSetV1#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#toleration DaemonSetV1#toleration}
 
 ---
 
@@ -2234,7 +2234,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecTopologySpreadConst
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#topology_spread_constraint DaemonSetV1#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#topology_spread_constraint DaemonSetV1#topology_spread_constraint}
 
 ---
 
@@ -2248,7 +2248,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolume> getVolume()
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume DaemonSetV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume DaemonSetV1#volume}
 
 ---
 
@@ -2286,7 +2286,7 @@ public DaemonSetV1SpecTemplateSpecAffinityNodeAffinity getNodeAffinity();
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#node_affinity DaemonSetV1#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#node_affinity DaemonSetV1#node_affinity}
 
 ---
 
@@ -2300,7 +2300,7 @@ public DaemonSetV1SpecTemplateSpecAffinityPodAffinity getPodAffinity();
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#pod_affinity DaemonSetV1#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#pod_affinity DaemonSetV1#pod_affinity}
 
 ---
 
@@ -2314,7 +2314,7 @@ public DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinity getPodAntiAffinity();
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#pod_anti_affinity DaemonSetV1#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#pod_anti_affinity DaemonSetV1#pod_anti_affinity}
 
 ---
 
@@ -2350,7 +2350,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityNodeAffinit
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#preferred_during_scheduling_ignored_during_execution DaemonSetV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#preferred_during_scheduling_ignored_during_execution DaemonSetV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2364,7 +2364,7 @@ public DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIg
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#required_during_scheduling_ignored_during_execution DaemonSetV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#required_during_scheduling_ignored_during_execution DaemonSetV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2400,7 +2400,7 @@ public DaemonSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingI
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#preference DaemonSetV1#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#preference DaemonSetV1#preference}
 
 ---
 
@@ -2414,7 +2414,7 @@ public java.lang.Number getWeight();
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#weight DaemonSetV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#weight DaemonSetV1#weight}
 
 ---
 
@@ -2450,7 +2450,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityNodeAffinit
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -2464,7 +2464,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityNodeAffinit
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_fields DaemonSetV1#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_fields DaemonSetV1#match_fields}
 
 ---
 
@@ -2502,7 +2502,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -2518,7 +2518,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -2534,7 +2534,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -2572,7 +2572,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -2586,7 +2586,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -2602,7 +2602,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -2636,7 +2636,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityNodeAffinit
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#node_selector_term DaemonSetV1#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#node_selector_term DaemonSetV1#node_selector_term}
 
 ---
 
@@ -2672,7 +2672,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityNodeAffinit
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -2686,7 +2686,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityNodeAffinit
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_fields DaemonSetV1#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_fields DaemonSetV1#match_fields}
 
 ---
 
@@ -2724,7 +2724,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -2740,7 +2740,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -2756,7 +2756,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -2794,7 +2794,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -2808,7 +2808,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -2824,7 +2824,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -2860,7 +2860,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#preferred_during_scheduling_ignored_during_execution DaemonSetV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#preferred_during_scheduling_ignored_during_execution DaemonSetV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2874,7 +2874,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#required_during_scheduling_ignored_during_execution DaemonSetV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#required_during_scheduling_ignored_during_execution DaemonSetV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2910,7 +2910,7 @@ public DaemonSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIg
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#pod_affinity_term DaemonSetV1#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#pod_affinity_term DaemonSetV1#pod_affinity_term}
 
 ---
 
@@ -2924,7 +2924,7 @@ public java.lang.Number getWeight();
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#weight DaemonSetV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#weight DaemonSetV1#weight}
 
 ---
 
@@ -2964,7 +2964,7 @@ public java.lang.String getTopologyKey();
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#topology_key DaemonSetV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#topology_key DaemonSetV1#topology_key}
 
 ---
 
@@ -2978,7 +2978,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#label_selector DaemonSetV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#label_selector DaemonSetV1#label_selector}
 
 ---
 
@@ -2992,7 +2992,7 @@ public java.util.List<java.lang.String> getNamespaces();
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespaces DaemonSetV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespaces DaemonSetV1#namespaces}
 
 ---
 
@@ -3006,7 +3006,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespace_selector DaemonSetV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespace_selector DaemonSetV1#namespace_selector}
 
 ---
 
@@ -3042,7 +3042,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -3058,7 +3058,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -3096,7 +3096,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -3110,7 +3110,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -3126,7 +3126,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -3162,7 +3162,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -3178,7 +3178,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -3216,7 +3216,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -3230,7 +3230,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -3246,7 +3246,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -3286,7 +3286,7 @@ public java.lang.String getTopologyKey();
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#topology_key DaemonSetV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#topology_key DaemonSetV1#topology_key}
 
 ---
 
@@ -3300,7 +3300,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#label_selector DaemonSetV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#label_selector DaemonSetV1#label_selector}
 
 ---
 
@@ -3314,7 +3314,7 @@ public java.util.List<java.lang.String> getNamespaces();
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespaces DaemonSetV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespaces DaemonSetV1#namespaces}
 
 ---
 
@@ -3328,7 +3328,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespace_selector DaemonSetV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespace_selector DaemonSetV1#namespace_selector}
 
 ---
 
@@ -3364,7 +3364,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -3380,7 +3380,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -3418,7 +3418,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -3432,7 +3432,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -3448,7 +3448,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -3484,7 +3484,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAffinity
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -3500,7 +3500,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -3538,7 +3538,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -3552,7 +3552,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -3568,7 +3568,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -3604,7 +3604,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAntiAffi
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#preferred_during_scheduling_ignored_during_execution DaemonSetV1#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#preferred_during_scheduling_ignored_during_execution DaemonSetV1#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3618,7 +3618,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAntiAffi
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#required_during_scheduling_ignored_during_execution DaemonSetV1#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#required_during_scheduling_ignored_during_execution DaemonSetV1#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3654,7 +3654,7 @@ public DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringScheduli
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#pod_affinity_term DaemonSetV1#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#pod_affinity_term DaemonSetV1#pod_affinity_term}
 
 ---
 
@@ -3668,7 +3668,7 @@ public java.lang.Number getWeight();
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#weight DaemonSetV1#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#weight DaemonSetV1#weight}
 
 ---
 
@@ -3708,7 +3708,7 @@ public java.lang.String getTopologyKey();
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#topology_key DaemonSetV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#topology_key DaemonSetV1#topology_key}
 
 ---
 
@@ -3722,7 +3722,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAntiAffi
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#label_selector DaemonSetV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#label_selector DaemonSetV1#label_selector}
 
 ---
 
@@ -3736,7 +3736,7 @@ public java.util.List<java.lang.String> getNamespaces();
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespaces DaemonSetV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespaces DaemonSetV1#namespaces}
 
 ---
 
@@ -3750,7 +3750,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAntiAffi
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespace_selector DaemonSetV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespace_selector DaemonSetV1#namespace_selector}
 
 ---
 
@@ -3786,7 +3786,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAntiAffi
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -3802,7 +3802,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -3840,7 +3840,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -3854,7 +3854,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -3870,7 +3870,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -3906,7 +3906,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAntiAffi
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -3922,7 +3922,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -3960,7 +3960,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -3974,7 +3974,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -3990,7 +3990,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -4030,7 +4030,7 @@ public java.lang.String getTopologyKey();
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#topology_key DaemonSetV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#topology_key DaemonSetV1#topology_key}
 
 ---
 
@@ -4044,7 +4044,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAntiAffi
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#label_selector DaemonSetV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#label_selector DaemonSetV1#label_selector}
 
 ---
 
@@ -4058,7 +4058,7 @@ public java.util.List<java.lang.String> getNamespaces();
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespaces DaemonSetV1#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespaces DaemonSetV1#namespaces}
 
 ---
 
@@ -4072,7 +4072,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAntiAffi
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespace_selector DaemonSetV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespace_selector DaemonSetV1#namespace_selector}
 
 ---
 
@@ -4108,7 +4108,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAntiAffi
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -4124,7 +4124,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -4162,7 +4162,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -4176,7 +4176,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -4192,7 +4192,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -4228,7 +4228,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecAffinityPodAntiAffi
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -4244,7 +4244,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -4282,7 +4282,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -4296,7 +4296,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -4312,7 +4312,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -4336,6 +4336,7 @@ DaemonSetV1SpecTemplateSpecContainer.builder()
 //  .port(IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerPort>)
 //  .readinessProbe(DaemonSetV1SpecTemplateSpecContainerReadinessProbe)
 //  .resources(DaemonSetV1SpecTemplateSpecContainerResources)
+//  .restartPolicy(java.lang.String)
 //  .securityContext(DaemonSetV1SpecTemplateSpecContainerSecurityContext)
 //  .startupProbe(DaemonSetV1SpecTemplateSpecContainerStartupProbe)
 //  .stdin(java.lang.Boolean|IResolvable)
@@ -4365,6 +4366,7 @@ DaemonSetV1SpecTemplateSpecContainer.builder()
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainer.property.port">port</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPort">DaemonSetV1SpecTemplateSpecContainerPort</a>></code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainer.property.readinessProbe">readinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbe">DaemonSetV1SpecTemplateSpecContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainer.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerResources">DaemonSetV1SpecTemplateSpecContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainer.property.restartPolicy">restartPolicy</a></code> | <code>java.lang.String</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainer.property.securityContext">securityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContext">DaemonSetV1SpecTemplateSpecContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainer.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbe">DaemonSetV1SpecTemplateSpecContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainer.property.stdin">stdin</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -4390,7 +4392,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -4406,7 +4408,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#args DaemonSetV1#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#args DaemonSetV1#args}
 
 ---
 
@@ -4422,7 +4424,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -4436,7 +4438,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerEnv> getEn
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#env DaemonSetV1#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#env DaemonSetV1#env}
 
 ---
 
@@ -4450,7 +4452,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerEnvFrom> g
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#env_from DaemonSetV1#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#env_from DaemonSetV1#env_from}
 
 ---
 
@@ -4464,7 +4466,7 @@ public java.lang.String getImage();
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#image DaemonSetV1#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#image DaemonSetV1#image}
 
 ---
 
@@ -4480,7 +4482,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#image_pull_policy DaemonSetV1#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#image_pull_policy DaemonSetV1#image_pull_policy}
 
 ---
 
@@ -4494,7 +4496,7 @@ public DaemonSetV1SpecTemplateSpecContainerLifecycle getLifecycle();
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#lifecycle DaemonSetV1#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#lifecycle DaemonSetV1#lifecycle}
 
 ---
 
@@ -4508,7 +4510,7 @@ public DaemonSetV1SpecTemplateSpecContainerLivenessProbe getLivenessProbe();
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#liveness_probe DaemonSetV1#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#liveness_probe DaemonSetV1#liveness_probe}
 
 ---
 
@@ -4522,7 +4524,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerPort> getP
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -4536,7 +4538,7 @@ public DaemonSetV1SpecTemplateSpecContainerReadinessProbe getReadinessProbe();
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#readiness_probe DaemonSetV1#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#readiness_probe DaemonSetV1#readiness_probe}
 
 ---
 
@@ -4550,7 +4552,21 @@ public DaemonSetV1SpecTemplateSpecContainerResources getResources();
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resources DaemonSetV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resources DaemonSetV1#resources}
+
+---
+
+##### `restartPolicy`<sup>Optional</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainer.property.restartPolicy"></a>
+
+```java
+public java.lang.String getRestartPolicy();
+```
+
+- *Type:* java.lang.String
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#restart_policy DaemonSetV1#restart_policy}
 
 ---
 
@@ -4564,7 +4580,7 @@ public DaemonSetV1SpecTemplateSpecContainerSecurityContext getSecurityContext();
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#security_context DaemonSetV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#security_context DaemonSetV1#security_context}
 
 ---
 
@@ -4578,7 +4594,7 @@ public DaemonSetV1SpecTemplateSpecContainerStartupProbe getStartupProbe();
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#startup_probe DaemonSetV1#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#startup_probe DaemonSetV1#startup_probe}
 
 ---
 
@@ -4594,7 +4610,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#stdin DaemonSetV1#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#stdin DaemonSetV1#stdin}
 
 ---
 
@@ -4610,7 +4626,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#stdin_once DaemonSetV1#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#stdin_once DaemonSetV1#stdin_once}
 
 ---
 
@@ -4626,7 +4642,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#termination_message_path DaemonSetV1#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#termination_message_path DaemonSetV1#termination_message_path}
 
 ---
 
@@ -4642,7 +4658,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#termination_message_policy DaemonSetV1#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#termination_message_policy DaemonSetV1#termination_message_policy}
 
 ---
 
@@ -4656,7 +4672,7 @@ public java.lang.Boolean|IResolvable getTty();
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tty DaemonSetV1#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tty DaemonSetV1#tty}
 
 ---
 
@@ -4670,7 +4686,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerVolumeDevi
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_device DaemonSetV1#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_device DaemonSetV1#volume_device}
 
 ---
 
@@ -4684,7 +4700,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerVolumeMoun
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_mount DaemonSetV1#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_mount DaemonSetV1#volume_mount}
 
 ---
 
@@ -4700,7 +4716,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#working_dir DaemonSetV1#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#working_dir DaemonSetV1#working_dir}
 
 ---
 
@@ -4738,7 +4754,7 @@ public java.lang.String getName();
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -4754,7 +4770,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -4768,7 +4784,7 @@ public DaemonSetV1SpecTemplateSpecContainerEnvValueFrom getValueFrom();
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value_from DaemonSetV1#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value_from DaemonSetV1#value_from}
 
 ---
 
@@ -4806,7 +4822,7 @@ public DaemonSetV1SpecTemplateSpecContainerEnvFromConfigMapRef getConfigMapRef()
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#config_map_ref DaemonSetV1#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#config_map_ref DaemonSetV1#config_map_ref}
 
 ---
 
@@ -4820,7 +4836,7 @@ public java.lang.String getPrefix();
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#prefix DaemonSetV1#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#prefix DaemonSetV1#prefix}
 
 ---
 
@@ -4834,7 +4850,7 @@ public DaemonSetV1SpecTemplateSpecContainerEnvFromSecretRef getSecretRef();
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_ref DaemonSetV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_ref DaemonSetV1#secret_ref}
 
 ---
 
@@ -4870,7 +4886,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -4884,7 +4900,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -4920,7 +4936,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -4934,7 +4950,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -4974,7 +4990,7 @@ public DaemonSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef getConfig
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#config_map_key_ref DaemonSetV1#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#config_map_key_ref DaemonSetV1#config_map_key_ref}
 
 ---
 
@@ -4988,7 +5004,7 @@ public DaemonSetV1SpecTemplateSpecContainerEnvValueFromFieldRef getFieldRef();
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#field_ref DaemonSetV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#field_ref DaemonSetV1#field_ref}
 
 ---
 
@@ -5002,7 +5018,7 @@ public DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef getResou
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resource_field_ref DaemonSetV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resource_field_ref DaemonSetV1#resource_field_ref}
 
 ---
 
@@ -5016,7 +5032,7 @@ public DaemonSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef getSecretKey
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_key_ref DaemonSetV1#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_key_ref DaemonSetV1#secret_key_ref}
 
 ---
 
@@ -5054,7 +5070,7 @@ public java.lang.String getKey();
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -5068,7 +5084,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -5082,7 +5098,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -5118,7 +5134,7 @@ public java.lang.String getApiVersion();
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#api_version DaemonSetV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#api_version DaemonSetV1#api_version}
 
 ---
 
@@ -5132,7 +5148,7 @@ public java.lang.String getFieldPath();
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#field_path DaemonSetV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#field_path DaemonSetV1#field_path}
 
 ---
 
@@ -5155,8 +5171,8 @@ DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>java.lang.String</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}. |
 
 ---
 
@@ -5170,7 +5186,7 @@ public java.lang.String getResource();
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resource DaemonSetV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resource DaemonSetV1#resource}
 
 ---
 
@@ -5182,7 +5198,7 @@ public java.lang.String getContainerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}.
 
 ---
 
@@ -5194,7 +5210,7 @@ public java.lang.String getDivisor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}.
 
 ---
 
@@ -5232,7 +5248,7 @@ public java.lang.String getKey();
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -5246,7 +5262,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -5260,7 +5276,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -5296,7 +5312,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerLifecycleP
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#post_start DaemonSetV1#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#post_start DaemonSetV1#post_start}
 
 ---
 
@@ -5310,7 +5326,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerLifecycleP
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#pre_stop DaemonSetV1#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#pre_stop DaemonSetV1#pre_stop}
 
 ---
 
@@ -5348,7 +5364,7 @@ public DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
 
 ---
 
@@ -5362,7 +5378,7 @@ public DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGet getHttpGet(
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
 
 ---
 
@@ -5376,7 +5392,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerLifecycleP
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
 
 ---
 
@@ -5412,7 +5428,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -5454,7 +5470,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
 
 ---
 
@@ -5468,7 +5484,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerLifecycleP
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
 
 ---
 
@@ -5482,7 +5498,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -5498,7 +5514,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -5512,7 +5528,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 
 ---
 
@@ -5548,7 +5564,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -5562,7 +5578,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -5598,7 +5614,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -5636,7 +5652,7 @@ public DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
 
 ---
 
@@ -5650,7 +5666,7 @@ public DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
 
 ---
 
@@ -5664,7 +5680,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerLifecycleP
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
 
 ---
 
@@ -5700,7 +5716,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -5742,7 +5758,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
 
 ---
 
@@ -5756,7 +5772,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerLifecycleP
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
 
 ---
 
@@ -5770,7 +5786,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -5786,7 +5802,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -5800,7 +5816,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 
 ---
 
@@ -5836,7 +5852,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -5850,7 +5866,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -5886,7 +5902,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -5936,7 +5952,7 @@ public DaemonSetV1SpecTemplateSpecContainerLivenessProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
 
 ---
 
@@ -5950,7 +5966,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
 
 ---
 
@@ -5964,7 +5980,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerLivenessPr
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
 
 ---
 
@@ -5978,7 +5994,7 @@ public DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
 
 ---
 
@@ -5992,7 +6008,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
 
 ---
 
@@ -6006,7 +6022,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
 
 ---
 
@@ -6020,7 +6036,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
 
 ---
 
@@ -6034,7 +6050,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerLivenessPr
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
 
 ---
 
@@ -6048,7 +6064,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
 
 ---
 
@@ -6084,7 +6100,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -6120,7 +6136,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -6134,7 +6150,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
 
 ---
 
@@ -6176,7 +6192,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
 
 ---
 
@@ -6190,7 +6206,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerLivenessPr
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
 
 ---
 
@@ -6204,7 +6220,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -6220,7 +6236,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -6234,7 +6250,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 
 ---
 
@@ -6270,7 +6286,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -6284,7 +6300,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -6320,7 +6336,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -6364,7 +6380,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container_port DaemonSetV1#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container_port DaemonSetV1#container_port}
 
 ---
 
@@ -6378,7 +6394,7 @@ public java.lang.String getHostIp();
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host_ip DaemonSetV1#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host_ip DaemonSetV1#host_ip}
 
 ---
 
@@ -6394,7 +6410,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host_port DaemonSetV1#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host_port DaemonSetV1#host_port}
 
 ---
 
@@ -6410,7 +6426,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -6424,7 +6440,7 @@ public java.lang.String getProtocol();
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#protocol DaemonSetV1#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#protocol DaemonSetV1#protocol}
 
 ---
 
@@ -6474,7 +6490,7 @@ public DaemonSetV1SpecTemplateSpecContainerReadinessProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
 
 ---
 
@@ -6488,7 +6504,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
 
 ---
 
@@ -6502,7 +6518,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerReadinessP
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
 
 ---
 
@@ -6516,7 +6532,7 @@ public DaemonSetV1SpecTemplateSpecContainerReadinessProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
 
 ---
 
@@ -6530,7 +6546,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
 
 ---
 
@@ -6544,7 +6560,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
 
 ---
 
@@ -6558,7 +6574,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
 
 ---
 
@@ -6572,7 +6588,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerReadinessP
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
 
 ---
 
@@ -6586,7 +6602,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
 
 ---
 
@@ -6622,7 +6638,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -6658,7 +6674,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -6672,7 +6688,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
 
 ---
 
@@ -6714,7 +6730,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
 
 ---
 
@@ -6728,7 +6744,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerReadinessP
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
 
 ---
 
@@ -6742,7 +6758,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -6758,7 +6774,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -6772,7 +6788,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 
 ---
 
@@ -6808,7 +6824,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -6822,7 +6838,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -6858,7 +6874,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -6894,7 +6910,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLimits();
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#limits DaemonSetV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#limits DaemonSetV1#limits}
 
 ---
 
@@ -6910,7 +6926,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#requests DaemonSetV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#requests DaemonSetV1#requests}
 
 ---
 
@@ -6962,7 +6978,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#allow_privilege_escalation DaemonSetV1#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#allow_privilege_escalation DaemonSetV1#allow_privilege_escalation}
 
 ---
 
@@ -6976,7 +6992,7 @@ public DaemonSetV1SpecTemplateSpecContainerSecurityContextCapabilities getCapabi
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#capabilities DaemonSetV1#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#capabilities DaemonSetV1#capabilities}
 
 ---
 
@@ -6992,7 +7008,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#privileged DaemonSetV1#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#privileged DaemonSetV1#privileged}
 
 ---
 
@@ -7006,7 +7022,7 @@ public java.lang.Boolean|IResolvable getReadOnlyRootFilesystem();
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only_root_filesystem DaemonSetV1#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only_root_filesystem DaemonSetV1#read_only_root_filesystem}
 
 ---
 
@@ -7022,7 +7038,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#run_as_group DaemonSetV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#run_as_group DaemonSetV1#run_as_group}
 
 ---
 
@@ -7038,7 +7054,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#run_as_non_root DaemonSetV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#run_as_non_root DaemonSetV1#run_as_non_root}
 
 ---
 
@@ -7054,7 +7070,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#run_as_user DaemonSetV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#run_as_user DaemonSetV1#run_as_user}
 
 ---
 
@@ -7068,7 +7084,7 @@ public DaemonSetV1SpecTemplateSpecContainerSecurityContextSeccompProfile getSecc
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#seccomp_profile DaemonSetV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#seccomp_profile DaemonSetV1#seccomp_profile}
 
 ---
 
@@ -7082,7 +7098,7 @@ public DaemonSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions getSeLi
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#se_linux_options DaemonSetV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#se_linux_options DaemonSetV1#se_linux_options}
 
 ---
 
@@ -7118,7 +7134,7 @@ public java.util.List<java.lang.String> getAdd();
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#add DaemonSetV1#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#add DaemonSetV1#add}
 
 ---
 
@@ -7132,7 +7148,7 @@ public java.util.List<java.lang.String> getDrop();
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#drop DaemonSetV1#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#drop DaemonSetV1#drop}
 
 ---
 
@@ -7170,7 +7186,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#localhost_profile DaemonSetV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#localhost_profile DaemonSetV1#localhost_profile}
 
 ---
 
@@ -7184,7 +7200,7 @@ public java.lang.String getType();
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
 
 ---
 
@@ -7224,7 +7240,7 @@ public java.lang.String getLevel();
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#level DaemonSetV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#level DaemonSetV1#level}
 
 ---
 
@@ -7238,7 +7254,7 @@ public java.lang.String getRole();
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#role DaemonSetV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#role DaemonSetV1#role}
 
 ---
 
@@ -7252,7 +7268,7 @@ public java.lang.String getType();
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
 
 ---
 
@@ -7266,7 +7282,7 @@ public java.lang.String getUser();
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#user DaemonSetV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#user DaemonSetV1#user}
 
 ---
 
@@ -7316,7 +7332,7 @@ public DaemonSetV1SpecTemplateSpecContainerStartupProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
 
 ---
 
@@ -7330,7 +7346,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
 
 ---
 
@@ -7344,7 +7360,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerStartupPro
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
 
 ---
 
@@ -7358,7 +7374,7 @@ public DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
 
 ---
 
@@ -7372,7 +7388,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
 
 ---
 
@@ -7386,7 +7402,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
 
 ---
 
@@ -7400,7 +7416,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
 
 ---
 
@@ -7414,7 +7430,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerStartupPro
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
 
 ---
 
@@ -7428,7 +7444,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
 
 ---
 
@@ -7464,7 +7480,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -7500,7 +7516,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -7514,7 +7530,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
 
 ---
 
@@ -7556,7 +7572,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
 
 ---
 
@@ -7570,7 +7586,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecContainerStartupPro
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
 
 ---
 
@@ -7584,7 +7600,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -7600,7 +7616,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -7614,7 +7630,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 
 ---
 
@@ -7650,7 +7666,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -7664,7 +7680,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -7700,7 +7716,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -7736,7 +7752,7 @@ public java.lang.String getDevicePath();
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#device_path DaemonSetV1#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#device_path DaemonSetV1#device_path}
 
 ---
 
@@ -7750,7 +7766,7 @@ public java.lang.String getName();
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -7794,7 +7810,7 @@ public java.lang.String getMountPath();
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#mount_path DaemonSetV1#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#mount_path DaemonSetV1#mount_path}
 
 ---
 
@@ -7808,7 +7824,7 @@ public java.lang.String getName();
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -7824,7 +7840,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#mount_propagation DaemonSetV1#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#mount_propagation DaemonSetV1#mount_propagation}
 
 ---
 
@@ -7838,7 +7854,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -7852,7 +7868,7 @@ public java.lang.String getSubPath();
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#sub_path DaemonSetV1#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#sub_path DaemonSetV1#sub_path}
 
 ---
 
@@ -7866,7 +7882,7 @@ public java.lang.String getSubPathExpr();
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#sub_path_expr DaemonSetV1#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#sub_path_expr DaemonSetV1#sub_path_expr}
 
 ---
 
@@ -7906,7 +7922,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#nameservers DaemonSetV1#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#nameservers DaemonSetV1#nameservers}
 
 ---
 
@@ -7920,7 +7936,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecDnsConfigOption> ge
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#option DaemonSetV1#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#option DaemonSetV1#option}
 
 ---
 
@@ -7936,7 +7952,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#searches DaemonSetV1#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#searches DaemonSetV1#searches}
 
 ---
 
@@ -7972,7 +7988,7 @@ public java.lang.String getName();
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -7986,7 +8002,7 @@ public java.lang.String getValue();
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -8022,7 +8038,7 @@ public java.util.List<java.lang.String> getHostnames();
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#hostnames DaemonSetV1#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#hostnames DaemonSetV1#hostnames}
 
 ---
 
@@ -8036,7 +8052,7 @@ public java.lang.String getIp();
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#ip DaemonSetV1#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#ip DaemonSetV1#ip}
 
 ---
 
@@ -8070,7 +8086,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -8094,6 +8110,7 @@ DaemonSetV1SpecTemplateSpecInitContainer.builder()
 //  .port(IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerPort>)
 //  .readinessProbe(DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe)
 //  .resources(DaemonSetV1SpecTemplateSpecInitContainerResources)
+//  .restartPolicy(java.lang.String)
 //  .securityContext(DaemonSetV1SpecTemplateSpecInitContainerSecurityContext)
 //  .startupProbe(DaemonSetV1SpecTemplateSpecInitContainerStartupProbe)
 //  .stdin(java.lang.Boolean|IResolvable)
@@ -8123,6 +8140,7 @@ DaemonSetV1SpecTemplateSpecInitContainer.builder()
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainer.property.port">port</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerPort">DaemonSetV1SpecTemplateSpecInitContainerPort</a>></code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainer.property.readinessProbe">readinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe">DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainer.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerResources">DaemonSetV1SpecTemplateSpecInitContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainer.property.restartPolicy">restartPolicy</a></code> | <code>java.lang.String</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainer.property.securityContext">securityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContext">DaemonSetV1SpecTemplateSpecInitContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainer.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbe">DaemonSetV1SpecTemplateSpecInitContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainer.property.stdin">stdin</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -8148,7 +8166,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -8164,7 +8182,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#args DaemonSetV1#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#args DaemonSetV1#args}
 
 ---
 
@@ -8180,7 +8198,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -8194,7 +8212,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerEnv> g
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#env DaemonSetV1#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#env DaemonSetV1#env}
 
 ---
 
@@ -8208,7 +8226,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerEnvFro
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#env_from DaemonSetV1#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#env_from DaemonSetV1#env_from}
 
 ---
 
@@ -8222,7 +8240,7 @@ public java.lang.String getImage();
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#image DaemonSetV1#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#image DaemonSetV1#image}
 
 ---
 
@@ -8238,7 +8256,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#image_pull_policy DaemonSetV1#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#image_pull_policy DaemonSetV1#image_pull_policy}
 
 ---
 
@@ -8252,7 +8270,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerLifecycle getLifecycle();
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#lifecycle DaemonSetV1#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#lifecycle DaemonSetV1#lifecycle}
 
 ---
 
@@ -8266,7 +8284,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerLivenessProbe getLivenessProbe();
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#liveness_probe DaemonSetV1#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#liveness_probe DaemonSetV1#liveness_probe}
 
 ---
 
@@ -8280,7 +8298,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerPort> 
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -8294,7 +8312,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe getReadinessProbe(
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#readiness_probe DaemonSetV1#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#readiness_probe DaemonSetV1#readiness_probe}
 
 ---
 
@@ -8308,7 +8326,21 @@ public DaemonSetV1SpecTemplateSpecInitContainerResources getResources();
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resources DaemonSetV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resources DaemonSetV1#resources}
+
+---
+
+##### `restartPolicy`<sup>Optional</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainer.property.restartPolicy"></a>
+
+```java
+public java.lang.String getRestartPolicy();
+```
+
+- *Type:* java.lang.String
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#restart_policy DaemonSetV1#restart_policy}
 
 ---
 
@@ -8322,7 +8354,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerSecurityContext getSecurityContex
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#security_context DaemonSetV1#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#security_context DaemonSetV1#security_context}
 
 ---
 
@@ -8336,7 +8368,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerStartupProbe getStartupProbe();
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#startup_probe DaemonSetV1#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#startup_probe DaemonSetV1#startup_probe}
 
 ---
 
@@ -8352,7 +8384,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#stdin DaemonSetV1#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#stdin DaemonSetV1#stdin}
 
 ---
 
@@ -8368,7 +8400,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#stdin_once DaemonSetV1#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#stdin_once DaemonSetV1#stdin_once}
 
 ---
 
@@ -8384,7 +8416,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#termination_message_path DaemonSetV1#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#termination_message_path DaemonSetV1#termination_message_path}
 
 ---
 
@@ -8400,7 +8432,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#termination_message_policy DaemonSetV1#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#termination_message_policy DaemonSetV1#termination_message_policy}
 
 ---
 
@@ -8414,7 +8446,7 @@ public java.lang.Boolean|IResolvable getTty();
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tty DaemonSetV1#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tty DaemonSetV1#tty}
 
 ---
 
@@ -8428,7 +8460,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerVolume
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_device DaemonSetV1#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_device DaemonSetV1#volume_device}
 
 ---
 
@@ -8442,7 +8474,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerVolume
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_mount DaemonSetV1#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_mount DaemonSetV1#volume_mount}
 
 ---
 
@@ -8458,7 +8490,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#working_dir DaemonSetV1#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#working_dir DaemonSetV1#working_dir}
 
 ---
 
@@ -8496,7 +8528,7 @@ public java.lang.String getName();
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -8512,7 +8544,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -8526,7 +8558,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerEnvValueFrom getValueFrom();
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value_from DaemonSetV1#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value_from DaemonSetV1#value_from}
 
 ---
 
@@ -8564,7 +8596,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRef getConfigMapR
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#config_map_ref DaemonSetV1#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#config_map_ref DaemonSetV1#config_map_ref}
 
 ---
 
@@ -8578,7 +8610,7 @@ public java.lang.String getPrefix();
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#prefix DaemonSetV1#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#prefix DaemonSetV1#prefix}
 
 ---
 
@@ -8592,7 +8624,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerEnvFromSecretRef getSecretRef();
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_ref DaemonSetV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_ref DaemonSetV1#secret_ref}
 
 ---
 
@@ -8628,7 +8660,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -8642,7 +8674,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -8678,7 +8710,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -8692,7 +8724,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -8732,7 +8764,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef getCo
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#config_map_key_ref DaemonSetV1#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#config_map_key_ref DaemonSetV1#config_map_key_ref}
 
 ---
 
@@ -8746,7 +8778,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRef getFieldRef(
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#field_ref DaemonSetV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#field_ref DaemonSetV1#field_ref}
 
 ---
 
@@ -8760,7 +8792,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef getR
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resource_field_ref DaemonSetV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resource_field_ref DaemonSetV1#resource_field_ref}
 
 ---
 
@@ -8774,7 +8806,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef getSecre
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_key_ref DaemonSetV1#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_key_ref DaemonSetV1#secret_key_ref}
 
 ---
 
@@ -8812,7 +8844,7 @@ public java.lang.String getKey();
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -8826,7 +8858,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -8840,7 +8872,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -8876,7 +8908,7 @@ public java.lang.String getApiVersion();
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#api_version DaemonSetV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#api_version DaemonSetV1#api_version}
 
 ---
 
@@ -8890,7 +8922,7 @@ public java.lang.String getFieldPath();
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#field_path DaemonSetV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#field_path DaemonSetV1#field_path}
 
 ---
 
@@ -8913,8 +8945,8 @@ DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>java.lang.String</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}. |
 
 ---
 
@@ -8928,7 +8960,7 @@ public java.lang.String getResource();
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resource DaemonSetV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resource DaemonSetV1#resource}
 
 ---
 
@@ -8940,7 +8972,7 @@ public java.lang.String getContainerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}.
 
 ---
 
@@ -8952,7 +8984,7 @@ public java.lang.String getDivisor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}.
 
 ---
 
@@ -8990,7 +9022,7 @@ public java.lang.String getKey();
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -9004,7 +9036,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -9018,7 +9050,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -9054,7 +9086,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerLifecy
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#post_start DaemonSetV1#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#post_start DaemonSetV1#post_start}
 
 ---
 
@@ -9068,7 +9100,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerLifecy
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#pre_stop DaemonSetV1#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#pre_stop DaemonSetV1#pre_stop}
 
 ---
 
@@ -9106,7 +9138,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
 
 ---
 
@@ -9120,7 +9152,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet getHttp
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
 
 ---
 
@@ -9134,7 +9166,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerLifecy
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
 
 ---
 
@@ -9170,7 +9202,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -9212,7 +9244,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
 
 ---
 
@@ -9226,7 +9258,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerLifecy
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
 
 ---
 
@@ -9240,7 +9272,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -9256,7 +9288,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -9270,7 +9302,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 
 ---
 
@@ -9306,7 +9338,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -9320,7 +9352,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -9356,7 +9388,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -9394,7 +9426,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
 
 ---
 
@@ -9408,7 +9440,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet getHttpGe
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
 
 ---
 
@@ -9422,7 +9454,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerLifecy
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
 
 ---
 
@@ -9458,7 +9490,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -9500,7 +9532,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
 
 ---
 
@@ -9514,7 +9546,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerLifecy
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
 
 ---
 
@@ -9528,7 +9560,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -9544,7 +9576,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -9558,7 +9590,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 
 ---
 
@@ -9594,7 +9626,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -9608,7 +9640,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -9644,7 +9676,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -9694,7 +9726,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
 
 ---
 
@@ -9708,7 +9740,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
 
 ---
 
@@ -9722,7 +9754,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerLivene
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
 
 ---
 
@@ -9736,7 +9768,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet getHttpGet()
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
 
 ---
 
@@ -9750,7 +9782,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
 
 ---
 
@@ -9764,7 +9796,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
 
 ---
 
@@ -9778,7 +9810,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
 
 ---
 
@@ -9792,7 +9824,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerLivene
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
 
 ---
 
@@ -9806,7 +9838,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
 
 ---
 
@@ -9842,7 +9874,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -9878,7 +9910,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -9892,7 +9924,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
 
 ---
 
@@ -9934,7 +9966,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
 
 ---
 
@@ -9948,7 +9980,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerLivene
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
 
 ---
 
@@ -9962,7 +9994,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -9978,7 +10010,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -9992,7 +10024,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 
 ---
 
@@ -10028,7 +10060,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -10042,7 +10074,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -10078,7 +10110,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -10122,7 +10154,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container_port DaemonSetV1#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container_port DaemonSetV1#container_port}
 
 ---
 
@@ -10136,7 +10168,7 @@ public java.lang.String getHostIp();
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host_ip DaemonSetV1#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host_ip DaemonSetV1#host_ip}
 
 ---
 
@@ -10152,7 +10184,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host_port DaemonSetV1#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host_port DaemonSetV1#host_port}
 
 ---
 
@@ -10168,7 +10200,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -10182,7 +10214,7 @@ public java.lang.String getProtocol();
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#protocol DaemonSetV1#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#protocol DaemonSetV1#protocol}
 
 ---
 
@@ -10232,7 +10264,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
 
 ---
 
@@ -10246,7 +10278,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
 
 ---
 
@@ -10260,7 +10292,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerReadin
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
 
 ---
 
@@ -10274,7 +10306,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet getHttpGet(
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
 
 ---
 
@@ -10288,7 +10320,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
 
 ---
 
@@ -10302,7 +10334,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
 
 ---
 
@@ -10316,7 +10348,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
 
 ---
 
@@ -10330,7 +10362,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerReadin
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
 
 ---
 
@@ -10344,7 +10376,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
 
 ---
 
@@ -10380,7 +10412,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -10416,7 +10448,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -10430,7 +10462,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
 
 ---
 
@@ -10472,7 +10504,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
 
 ---
 
@@ -10486,7 +10518,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerReadin
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
 
 ---
 
@@ -10500,7 +10532,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -10516,7 +10548,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -10530,7 +10562,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 
 ---
 
@@ -10566,7 +10598,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -10580,7 +10612,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -10616,7 +10648,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -10652,7 +10684,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLimits();
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#limits DaemonSetV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#limits DaemonSetV1#limits}
 
 ---
 
@@ -10668,7 +10700,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#requests DaemonSetV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#requests DaemonSetV1#requests}
 
 ---
 
@@ -10720,7 +10752,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#allow_privilege_escalation DaemonSetV1#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#allow_privilege_escalation DaemonSetV1#allow_privilege_escalation}
 
 ---
 
@@ -10734,7 +10766,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerSecurityContextCapabilities getCa
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#capabilities DaemonSetV1#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#capabilities DaemonSetV1#capabilities}
 
 ---
 
@@ -10750,7 +10782,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#privileged DaemonSetV1#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#privileged DaemonSetV1#privileged}
 
 ---
 
@@ -10764,7 +10796,7 @@ public java.lang.Boolean|IResolvable getReadOnlyRootFilesystem();
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only_root_filesystem DaemonSetV1#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only_root_filesystem DaemonSetV1#read_only_root_filesystem}
 
 ---
 
@@ -10780,7 +10812,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#run_as_group DaemonSetV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#run_as_group DaemonSetV1#run_as_group}
 
 ---
 
@@ -10796,7 +10828,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#run_as_non_root DaemonSetV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#run_as_non_root DaemonSetV1#run_as_non_root}
 
 ---
 
@@ -10812,7 +10844,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#run_as_user DaemonSetV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#run_as_user DaemonSetV1#run_as_user}
 
 ---
 
@@ -10826,7 +10858,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile get
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#seccomp_profile DaemonSetV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#seccomp_profile DaemonSetV1#seccomp_profile}
 
 ---
 
@@ -10840,7 +10872,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions get
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#se_linux_options DaemonSetV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#se_linux_options DaemonSetV1#se_linux_options}
 
 ---
 
@@ -10876,7 +10908,7 @@ public java.util.List<java.lang.String> getAdd();
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#add DaemonSetV1#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#add DaemonSetV1#add}
 
 ---
 
@@ -10890,7 +10922,7 @@ public java.util.List<java.lang.String> getDrop();
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#drop DaemonSetV1#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#drop DaemonSetV1#drop}
 
 ---
 
@@ -10928,7 +10960,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#localhost_profile DaemonSetV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#localhost_profile DaemonSetV1#localhost_profile}
 
 ---
 
@@ -10942,7 +10974,7 @@ public java.lang.String getType();
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
 
 ---
 
@@ -10982,7 +11014,7 @@ public java.lang.String getLevel();
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#level DaemonSetV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#level DaemonSetV1#level}
 
 ---
 
@@ -10996,7 +11028,7 @@ public java.lang.String getRole();
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#role DaemonSetV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#role DaemonSetV1#role}
 
 ---
 
@@ -11010,7 +11042,7 @@ public java.lang.String getType();
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
 
 ---
 
@@ -11024,7 +11056,7 @@ public java.lang.String getUser();
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#user DaemonSetV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#user DaemonSetV1#user}
 
 ---
 
@@ -11074,7 +11106,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerStartupProbeExec getExec();
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#exec DaemonSetV1#exec}
 
 ---
 
@@ -11088,7 +11120,7 @@ public java.lang.Number getFailureThreshold();
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#failure_threshold DaemonSetV1#failure_threshold}
 
 ---
 
@@ -11102,7 +11134,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerStartu
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#grpc DaemonSetV1#grpc}
 
 ---
 
@@ -11116,7 +11148,7 @@ public DaemonSetV1SpecTemplateSpecInitContainerStartupProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_get DaemonSetV1#http_get}
 
 ---
 
@@ -11130,7 +11162,7 @@ public java.lang.Number getInitialDelaySeconds();
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#initial_delay_seconds DaemonSetV1#initial_delay_seconds}
 
 ---
 
@@ -11144,7 +11176,7 @@ public java.lang.Number getPeriodSeconds();
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#period_seconds DaemonSetV1#period_seconds}
 
 ---
 
@@ -11158,7 +11190,7 @@ public java.lang.Number getSuccessThreshold();
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#success_threshold DaemonSetV1#success_threshold}
 
 ---
 
@@ -11172,7 +11204,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerStartu
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#tcp_socket DaemonSetV1#tcp_socket}
 
 ---
 
@@ -11186,7 +11218,7 @@ public java.lang.Number getTimeoutSeconds();
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#timeout_seconds DaemonSetV1#timeout_seconds}
 
 ---
 
@@ -11222,7 +11254,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#command DaemonSetV1#command}
 
 ---
 
@@ -11258,7 +11290,7 @@ public java.lang.Number getPort();
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -11272,7 +11304,7 @@ public java.lang.String getService();
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#service DaemonSetV1#service}
 
 ---
 
@@ -11314,7 +11346,7 @@ public java.lang.String getHost();
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host DaemonSetV1#host}
 
 ---
 
@@ -11328,7 +11360,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecInitContainerStartu
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
 
 ---
 
@@ -11342,7 +11374,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -11358,7 +11390,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -11372,7 +11404,7 @@ public java.lang.String getScheme();
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 
 ---
 
@@ -11408,7 +11440,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -11422,7 +11454,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -11458,7 +11490,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#port DaemonSetV1#port}
 
 ---
 
@@ -11494,7 +11526,7 @@ public java.lang.String getDevicePath();
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#device_path DaemonSetV1#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#device_path DaemonSetV1#device_path}
 
 ---
 
@@ -11508,7 +11540,7 @@ public java.lang.String getName();
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -11552,7 +11584,7 @@ public java.lang.String getMountPath();
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#mount_path DaemonSetV1#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#mount_path DaemonSetV1#mount_path}
 
 ---
 
@@ -11566,7 +11598,7 @@ public java.lang.String getName();
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -11582,7 +11614,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#mount_propagation DaemonSetV1#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#mount_propagation DaemonSetV1#mount_propagation}
 
 ---
 
@@ -11596,7 +11628,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -11610,7 +11642,7 @@ public java.lang.String getSubPath();
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#sub_path DaemonSetV1#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#sub_path DaemonSetV1#sub_path}
 
 ---
 
@@ -11624,7 +11656,7 @@ public java.lang.String getSubPathExpr();
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#sub_path_expr DaemonSetV1#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#sub_path_expr DaemonSetV1#sub_path_expr}
 
 ---
 
@@ -11658,7 +11690,7 @@ public java.lang.String getName();
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -11692,7 +11724,7 @@ public java.lang.String getConditionType();
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#condition_type DaemonSetV1#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#condition_type DaemonSetV1#condition_type}
 
 ---
 
@@ -11746,7 +11778,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_group DaemonSetV1#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_group DaemonSetV1#fs_group}
 
 ---
 
@@ -11762,7 +11794,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_group_change_policy DaemonSetV1#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_group_change_policy DaemonSetV1#fs_group_change_policy}
 
 ---
 
@@ -11778,7 +11810,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#run_as_group DaemonSetV1#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#run_as_group DaemonSetV1#run_as_group}
 
 ---
 
@@ -11794,7 +11826,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#run_as_non_root DaemonSetV1#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#run_as_non_root DaemonSetV1#run_as_non_root}
 
 ---
 
@@ -11810,7 +11842,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#run_as_user DaemonSetV1#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#run_as_user DaemonSetV1#run_as_user}
 
 ---
 
@@ -11824,7 +11856,7 @@ public DaemonSetV1SpecTemplateSpecSecurityContextSeccompProfile getSeccompProfil
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#seccomp_profile DaemonSetV1#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#seccomp_profile DaemonSetV1#seccomp_profile}
 
 ---
 
@@ -11838,7 +11870,7 @@ public DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptions getSeLinuxOption
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#se_linux_options DaemonSetV1#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#se_linux_options DaemonSetV1#se_linux_options}
 
 ---
 
@@ -11854,7 +11886,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#supplemental_groups DaemonSetV1#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#supplemental_groups DaemonSetV1#supplemental_groups}
 
 ---
 
@@ -11868,7 +11900,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecSecurityContextSysc
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#sysctl DaemonSetV1#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#sysctl DaemonSetV1#sysctl}
 
 ---
 
@@ -11882,7 +11914,7 @@ public DaemonSetV1SpecTemplateSpecSecurityContextWindowsOptions getWindowsOption
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#windows_options DaemonSetV1#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#windows_options DaemonSetV1#windows_options}
 
 ---
 
@@ -11920,7 +11952,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#localhost_profile DaemonSetV1#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#localhost_profile DaemonSetV1#localhost_profile}
 
 ---
 
@@ -11934,7 +11966,7 @@ public java.lang.String getType();
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
 
 ---
 
@@ -11974,7 +12006,7 @@ public java.lang.String getLevel();
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#level DaemonSetV1#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#level DaemonSetV1#level}
 
 ---
 
@@ -11988,7 +12020,7 @@ public java.lang.String getRole();
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#role DaemonSetV1#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#role DaemonSetV1#role}
 
 ---
 
@@ -12002,7 +12034,7 @@ public java.lang.String getType();
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
 
 ---
 
@@ -12016,7 +12048,7 @@ public java.lang.String getUser();
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#user DaemonSetV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#user DaemonSetV1#user}
 
 ---
 
@@ -12052,7 +12084,7 @@ public java.lang.String getName();
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -12066,7 +12098,7 @@ public java.lang.String getValue();
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -12106,7 +12138,7 @@ public java.lang.String getGmsaCredentialSpec();
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#gmsa_credential_spec DaemonSetV1#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#gmsa_credential_spec DaemonSetV1#gmsa_credential_spec}
 
 ---
 
@@ -12120,7 +12152,7 @@ public java.lang.String getGmsaCredentialSpecName();
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#gmsa_credential_spec_name DaemonSetV1#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#gmsa_credential_spec_name DaemonSetV1#gmsa_credential_spec_name}
 
 ---
 
@@ -12134,7 +12166,7 @@ public java.lang.Boolean|IResolvable getHostProcess();
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host_process DaemonSetV1#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host_process DaemonSetV1#host_process}
 
 ---
 
@@ -12150,7 +12182,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#run_as_username DaemonSetV1#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#run_as_username DaemonSetV1#run_as_username}
 
 ---
 
@@ -12194,7 +12226,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#effect DaemonSetV1#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#effect DaemonSetV1#effect}
 
 ---
 
@@ -12210,7 +12242,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -12226,7 +12258,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -12242,7 +12274,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#toleration_seconds DaemonSetV1#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#toleration_seconds DaemonSetV1#toleration_seconds}
 
 ---
 
@@ -12258,7 +12290,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 
 ---
 
@@ -12306,7 +12338,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecTopologySpreadConst
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#label_selector DaemonSetV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#label_selector DaemonSetV1#label_selector}
 
 ---
 
@@ -12320,7 +12352,7 @@ public java.util.List<java.lang.String> getMatchLabelKeys();
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_label_keys DaemonSetV1#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_label_keys DaemonSetV1#match_label_keys}
 
 ---
 
@@ -12334,7 +12366,7 @@ public java.lang.Number getMaxSkew();
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#max_skew DaemonSetV1#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#max_skew DaemonSetV1#max_skew}
 
 ---
 
@@ -12348,7 +12380,7 @@ public java.lang.Number getMinDomains();
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#min_domains DaemonSetV1#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#min_domains DaemonSetV1#min_domains}
 
 ---
 
@@ -12362,7 +12394,7 @@ public java.lang.String getNodeAffinityPolicy();
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#node_affinity_policy DaemonSetV1#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#node_affinity_policy DaemonSetV1#node_affinity_policy}
 
 ---
 
@@ -12376,7 +12408,7 @@ public java.lang.String getNodeTaintsPolicy();
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#node_taints_policy DaemonSetV1#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#node_taints_policy DaemonSetV1#node_taints_policy}
 
 ---
 
@@ -12392,7 +12424,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#topology_key DaemonSetV1#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#topology_key DaemonSetV1#topology_key}
 
 ---
 
@@ -12406,7 +12438,7 @@ public java.lang.String getWhenUnsatisfiable();
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#when_unsatisfiable DaemonSetV1#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#when_unsatisfiable DaemonSetV1#when_unsatisfiable}
 
 ---
 
@@ -12442,7 +12474,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecTopologySpreadConst
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -12458,7 +12490,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -12496,7 +12528,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -12510,7 +12542,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -12526,7 +12558,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -12614,7 +12646,7 @@ public DaemonSetV1SpecTemplateSpecVolumeAwsElasticBlockStore getAwsElasticBlockS
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#aws_elastic_block_store DaemonSetV1#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#aws_elastic_block_store DaemonSetV1#aws_elastic_block_store}
 
 ---
 
@@ -12628,7 +12660,7 @@ public DaemonSetV1SpecTemplateSpecVolumeAzureDisk getAzureDisk();
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#azure_disk DaemonSetV1#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#azure_disk DaemonSetV1#azure_disk}
 
 ---
 
@@ -12642,7 +12674,7 @@ public DaemonSetV1SpecTemplateSpecVolumeAzureFile getAzureFile();
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#azure_file DaemonSetV1#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#azure_file DaemonSetV1#azure_file}
 
 ---
 
@@ -12656,7 +12688,7 @@ public DaemonSetV1SpecTemplateSpecVolumeCephFs getCephFs();
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#ceph_fs DaemonSetV1#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#ceph_fs DaemonSetV1#ceph_fs}
 
 ---
 
@@ -12670,7 +12702,7 @@ public DaemonSetV1SpecTemplateSpecVolumeCinder getCinder();
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#cinder DaemonSetV1#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#cinder DaemonSetV1#cinder}
 
 ---
 
@@ -12684,7 +12716,7 @@ public DaemonSetV1SpecTemplateSpecVolumeConfigMap getConfigMap();
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#config_map DaemonSetV1#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#config_map DaemonSetV1#config_map}
 
 ---
 
@@ -12698,7 +12730,7 @@ public DaemonSetV1SpecTemplateSpecVolumeCsi getCsi();
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#csi DaemonSetV1#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#csi DaemonSetV1#csi}
 
 ---
 
@@ -12712,7 +12744,7 @@ public DaemonSetV1SpecTemplateSpecVolumeDownwardApi getDownwardApi();
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#downward_api DaemonSetV1#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#downward_api DaemonSetV1#downward_api}
 
 ---
 
@@ -12726,7 +12758,7 @@ public DaemonSetV1SpecTemplateSpecVolumeEmptyDir getEmptyDir();
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#empty_dir DaemonSetV1#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#empty_dir DaemonSetV1#empty_dir}
 
 ---
 
@@ -12740,7 +12772,7 @@ public DaemonSetV1SpecTemplateSpecVolumeEphemeral getEphemeral();
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#ephemeral DaemonSetV1#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#ephemeral DaemonSetV1#ephemeral}
 
 ---
 
@@ -12754,7 +12786,7 @@ public DaemonSetV1SpecTemplateSpecVolumeFc getFc();
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fc DaemonSetV1#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fc DaemonSetV1#fc}
 
 ---
 
@@ -12768,7 +12800,7 @@ public DaemonSetV1SpecTemplateSpecVolumeFlexVolume getFlexVolume();
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#flex_volume DaemonSetV1#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#flex_volume DaemonSetV1#flex_volume}
 
 ---
 
@@ -12782,7 +12814,7 @@ public DaemonSetV1SpecTemplateSpecVolumeFlocker getFlocker();
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#flocker DaemonSetV1#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#flocker DaemonSetV1#flocker}
 
 ---
 
@@ -12796,7 +12828,7 @@ public DaemonSetV1SpecTemplateSpecVolumeGcePersistentDisk getGcePersistentDisk()
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#gce_persistent_disk DaemonSetV1#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#gce_persistent_disk DaemonSetV1#gce_persistent_disk}
 
 ---
 
@@ -12810,7 +12842,7 @@ public DaemonSetV1SpecTemplateSpecVolumeGitRepo getGitRepo();
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#git_repo DaemonSetV1#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#git_repo DaemonSetV1#git_repo}
 
 ---
 
@@ -12824,7 +12856,7 @@ public DaemonSetV1SpecTemplateSpecVolumeGlusterfs getGlusterfs();
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#glusterfs DaemonSetV1#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#glusterfs DaemonSetV1#glusterfs}
 
 ---
 
@@ -12838,7 +12870,7 @@ public DaemonSetV1SpecTemplateSpecVolumeHostPath getHostPath();
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#host_path DaemonSetV1#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#host_path DaemonSetV1#host_path}
 
 ---
 
@@ -12852,7 +12884,7 @@ public DaemonSetV1SpecTemplateSpecVolumeIscsi getIscsi();
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#iscsi DaemonSetV1#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#iscsi DaemonSetV1#iscsi}
 
 ---
 
@@ -12866,7 +12898,7 @@ public DaemonSetV1SpecTemplateSpecVolumeLocal getLocal();
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#local DaemonSetV1#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#local DaemonSetV1#local}
 
 ---
 
@@ -12880,7 +12912,7 @@ public java.lang.String getName();
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -12894,7 +12926,7 @@ public DaemonSetV1SpecTemplateSpecVolumeNfs getNfs();
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#nfs DaemonSetV1#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#nfs DaemonSetV1#nfs}
 
 ---
 
@@ -12908,7 +12940,7 @@ public DaemonSetV1SpecTemplateSpecVolumePersistentVolumeClaim getPersistentVolum
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#persistent_volume_claim DaemonSetV1#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#persistent_volume_claim DaemonSetV1#persistent_volume_claim}
 
 ---
 
@@ -12922,7 +12954,7 @@ public DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDisk getPhotonPersistent
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#photon_persistent_disk DaemonSetV1#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#photon_persistent_disk DaemonSetV1#photon_persistent_disk}
 
 ---
 
@@ -12936,7 +12968,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeProjected> ge
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#projected DaemonSetV1#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#projected DaemonSetV1#projected}
 
 ---
 
@@ -12950,7 +12982,7 @@ public DaemonSetV1SpecTemplateSpecVolumeQuobyte getQuobyte();
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#quobyte DaemonSetV1#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#quobyte DaemonSetV1#quobyte}
 
 ---
 
@@ -12964,7 +12996,7 @@ public DaemonSetV1SpecTemplateSpecVolumeRbd getRbd();
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#rbd DaemonSetV1#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#rbd DaemonSetV1#rbd}
 
 ---
 
@@ -12978,7 +13010,7 @@ public DaemonSetV1SpecTemplateSpecVolumeSecret getSecret();
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret DaemonSetV1#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret DaemonSetV1#secret}
 
 ---
 
@@ -12992,7 +13024,7 @@ public DaemonSetV1SpecTemplateSpecVolumeVsphereVolume getVsphereVolume();
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#vsphere_volume DaemonSetV1#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#vsphere_volume DaemonSetV1#vsphere_volume}
 
 ---
 
@@ -13032,7 +13064,7 @@ public java.lang.String getVolumeId();
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_id DaemonSetV1#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_id DaemonSetV1#volume_id}
 
 ---
 
@@ -13048,7 +13080,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -13064,7 +13096,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#partition DaemonSetV1#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#partition DaemonSetV1#partition}
 
 ---
 
@@ -13078,7 +13110,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -13122,7 +13154,7 @@ public java.lang.String getCachingMode();
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#caching_mode DaemonSetV1#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#caching_mode DaemonSetV1#caching_mode}
 
 ---
 
@@ -13136,7 +13168,7 @@ public java.lang.String getDataDiskUri();
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#data_disk_uri DaemonSetV1#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#data_disk_uri DaemonSetV1#data_disk_uri}
 
 ---
 
@@ -13150,7 +13182,7 @@ public java.lang.String getDiskName();
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#disk_name DaemonSetV1#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#disk_name DaemonSetV1#disk_name}
 
 ---
 
@@ -13166,7 +13198,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -13180,7 +13212,7 @@ public java.lang.String getKind();
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#kind DaemonSetV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#kind DaemonSetV1#kind}
 
 ---
 
@@ -13194,7 +13226,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -13234,7 +13266,7 @@ public java.lang.String getSecretName();
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_name DaemonSetV1#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_name DaemonSetV1#secret_name}
 
 ---
 
@@ -13248,7 +13280,7 @@ public java.lang.String getShareName();
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#share_name DaemonSetV1#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#share_name DaemonSetV1#share_name}
 
 ---
 
@@ -13262,7 +13294,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -13278,7 +13310,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_namespace DaemonSetV1#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_namespace DaemonSetV1#secret_namespace}
 
 ---
 
@@ -13322,7 +13354,7 @@ public java.util.List<java.lang.String> getMonitors();
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#monitors DaemonSetV1#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#monitors DaemonSetV1#monitors}
 
 ---
 
@@ -13336,7 +13368,7 @@ public java.lang.String getPath();
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -13350,7 +13382,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -13364,7 +13396,7 @@ public java.lang.String getSecretFile();
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_file DaemonSetV1#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_file DaemonSetV1#secret_file}
 
 ---
 
@@ -13378,7 +13410,7 @@ public DaemonSetV1SpecTemplateSpecVolumeCephFsSecretRef getSecretRef();
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_ref DaemonSetV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_ref DaemonSetV1#secret_ref}
 
 ---
 
@@ -13392,7 +13424,7 @@ public java.lang.String getUser();
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#user DaemonSetV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#user DaemonSetV1#user}
 
 ---
 
@@ -13428,7 +13460,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -13442,7 +13474,7 @@ public java.lang.String getNamespace();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespace DaemonSetV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespace DaemonSetV1#namespace}
 
 ---
 
@@ -13480,7 +13512,7 @@ public java.lang.String getVolumeId();
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_id DaemonSetV1#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_id DaemonSetV1#volume_id}
 
 ---
 
@@ -13496,7 +13528,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -13510,7 +13542,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -13552,7 +13584,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#default_mode DaemonSetV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#default_mode DaemonSetV1#default_mode}
 
 ---
 
@@ -13566,7 +13598,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeConfigMapItem
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
 
 ---
 
@@ -13580,7 +13612,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -13594,7 +13626,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -13632,7 +13664,7 @@ public java.lang.String getKey();
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -13648,7 +13680,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
 
 ---
 
@@ -13664,7 +13696,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -13706,7 +13738,7 @@ public java.lang.String getDriver();
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#driver DaemonSetV1#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#driver DaemonSetV1#driver}
 
 ---
 
@@ -13722,7 +13754,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -13736,7 +13768,7 @@ public DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRef getNodePublishSe
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#node_publish_secret_ref DaemonSetV1#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#node_publish_secret_ref DaemonSetV1#node_publish_secret_ref}
 
 ---
 
@@ -13750,7 +13782,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -13764,7 +13796,7 @@ public java.util.Map<java.lang.String, java.lang.String> getVolumeAttributes();
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_attributes DaemonSetV1#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_attributes DaemonSetV1#volume_attributes}
 
 ---
 
@@ -13798,7 +13830,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -13836,7 +13868,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#default_mode DaemonSetV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#default_mode DaemonSetV1#default_mode}
 
 ---
 
@@ -13850,7 +13882,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeDownwardApiIt
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
 
 ---
 
@@ -13890,7 +13922,7 @@ public DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef getFieldRef();
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#field_ref DaemonSetV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#field_ref DaemonSetV1#field_ref}
 
 ---
 
@@ -13906,7 +13938,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -13922,7 +13954,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
 
 ---
 
@@ -13936,7 +13968,7 @@ public DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef getReso
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resource_field_ref DaemonSetV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resource_field_ref DaemonSetV1#resource_field_ref}
 
 ---
 
@@ -13972,7 +14004,7 @@ public java.lang.String getApiVersion();
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#api_version DaemonSetV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#api_version DaemonSetV1#api_version}
 
 ---
 
@@ -13986,7 +14018,7 @@ public java.lang.String getFieldPath();
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#field_path DaemonSetV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#field_path DaemonSetV1#field_path}
 
 ---
 
@@ -14008,9 +14040,9 @@ DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>java.lang.String</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}. |
 
 ---
 
@@ -14022,7 +14054,7 @@ public java.lang.String getContainerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}.
 
 ---
 
@@ -14036,7 +14068,7 @@ public java.lang.String getResource();
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resource DaemonSetV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resource DaemonSetV1#resource}
 
 ---
 
@@ -14048,7 +14080,7 @@ public java.lang.String getDivisor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}.
 
 ---
 
@@ -14086,7 +14118,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#medium DaemonSetV1#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#medium DaemonSetV1#medium}
 
 ---
 
@@ -14100,7 +14132,7 @@ public java.lang.String getSizeLimit();
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#size_limit DaemonSetV1#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#size_limit DaemonSetV1#size_limit}
 
 ---
 
@@ -14134,7 +14166,7 @@ public DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate getVolumeCl
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_claim_template DaemonSetV1#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_claim_template DaemonSetV1#volume_claim_template}
 
 ---
 
@@ -14170,7 +14202,7 @@ public DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec getSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#spec DaemonSetV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#spec DaemonSetV1#spec}
 
 ---
 
@@ -14184,7 +14216,7 @@ public DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata get
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#metadata DaemonSetV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#metadata DaemonSetV1#metadata}
 
 ---
 
@@ -14222,7 +14254,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#annotations DaemonSetV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#annotations DaemonSetV1#annotations}
 
 ---
 
@@ -14238,7 +14270,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#labels DaemonSetV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#labels DaemonSetV1#labels}
 
 ---
 
@@ -14282,7 +14314,7 @@ public java.util.List<java.lang.String> getAccessModes();
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#access_modes DaemonSetV1#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#access_modes DaemonSetV1#access_modes}
 
 ---
 
@@ -14296,7 +14328,7 @@ public DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResource
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resources DaemonSetV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resources DaemonSetV1#resources}
 
 ---
 
@@ -14310,7 +14342,7 @@ public DaemonSetV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#selector DaemonSetV1#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#selector DaemonSetV1#selector}
 
 ---
 
@@ -14324,7 +14356,7 @@ public java.lang.String getStorageClassName();
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#storage_class_name DaemonSetV1#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#storage_class_name DaemonSetV1#storage_class_name}
 
 ---
 
@@ -14338,7 +14370,7 @@ public java.lang.String getVolumeMode();
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_mode DaemonSetV1#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_mode DaemonSetV1#volume_mode}
 
 ---
 
@@ -14352,7 +14384,7 @@ public java.lang.String getVolumeName();
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_name DaemonSetV1#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_name DaemonSetV1#volume_name}
 
 ---
 
@@ -14388,7 +14420,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLimits();
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#limits DaemonSetV1#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#limits DaemonSetV1#limits}
 
 ---
 
@@ -14404,7 +14436,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#requests DaemonSetV1#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#requests DaemonSetV1#requests}
 
 ---
 
@@ -14440,7 +14472,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeEphemeralVolu
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_expressions DaemonSetV1#match_expressions}
 
 ---
 
@@ -14456,7 +14488,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#match_labels DaemonSetV1#match_labels}
 
 ---
 
@@ -14494,7 +14526,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -14508,7 +14540,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#operator DaemonSetV1#operator}
 
 ---
 
@@ -14524,7 +14556,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#values DaemonSetV1#values}
 
 ---
 
@@ -14564,7 +14596,7 @@ public java.lang.Number getLun();
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#lun DaemonSetV1#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#lun DaemonSetV1#lun}
 
 ---
 
@@ -14578,7 +14610,7 @@ public java.util.List<java.lang.String> getTargetWwNs();
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#target_ww_ns DaemonSetV1#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#target_ww_ns DaemonSetV1#target_ww_ns}
 
 ---
 
@@ -14594,7 +14626,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -14608,7 +14640,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -14650,7 +14682,7 @@ public java.lang.String getDriver();
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#driver DaemonSetV1#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#driver DaemonSetV1#driver}
 
 ---
 
@@ -14666,7 +14698,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -14680,7 +14712,7 @@ public java.util.Map<java.lang.String, java.lang.String> getOptions();
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#options DaemonSetV1#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#options DaemonSetV1#options}
 
 ---
 
@@ -14694,7 +14726,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -14708,7 +14740,7 @@ public DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRef getSecretRef();
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_ref DaemonSetV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_ref DaemonSetV1#secret_ref}
 
 ---
 
@@ -14744,7 +14776,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -14758,7 +14790,7 @@ public java.lang.String getNamespace();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespace DaemonSetV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespace DaemonSetV1#namespace}
 
 ---
 
@@ -14794,7 +14826,7 @@ public java.lang.String getDatasetName();
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#dataset_name DaemonSetV1#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#dataset_name DaemonSetV1#dataset_name}
 
 ---
 
@@ -14808,7 +14840,7 @@ public java.lang.String getDatasetUuid();
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#dataset_uuid DaemonSetV1#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#dataset_uuid DaemonSetV1#dataset_uuid}
 
 ---
 
@@ -14848,7 +14880,7 @@ public java.lang.String getPdName();
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#pd_name DaemonSetV1#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#pd_name DaemonSetV1#pd_name}
 
 ---
 
@@ -14864,7 +14896,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -14880,7 +14912,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#partition DaemonSetV1#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#partition DaemonSetV1#partition}
 
 ---
 
@@ -14894,7 +14926,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -14934,7 +14966,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#directory DaemonSetV1#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#directory DaemonSetV1#directory}
 
 ---
 
@@ -14948,7 +14980,7 @@ public java.lang.String getRepository();
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#repository DaemonSetV1#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#repository DaemonSetV1#repository}
 
 ---
 
@@ -14962,7 +14994,7 @@ public java.lang.String getRevision();
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#revision DaemonSetV1#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#revision DaemonSetV1#revision}
 
 ---
 
@@ -15000,7 +15032,7 @@ public java.lang.String getEndpointsName();
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#endpoints_name DaemonSetV1#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#endpoints_name DaemonSetV1#endpoints_name}
 
 ---
 
@@ -15014,7 +15046,7 @@ public java.lang.String getPath();
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -15028,7 +15060,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -15064,7 +15096,7 @@ public java.lang.String getPath();
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -15078,7 +15110,7 @@ public java.lang.String getType();
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#type DaemonSetV1#type}
 
 ---
 
@@ -15122,7 +15154,7 @@ public java.lang.String getIqn();
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#iqn DaemonSetV1#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#iqn DaemonSetV1#iqn}
 
 ---
 
@@ -15138,7 +15170,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#target_portal DaemonSetV1#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#target_portal DaemonSetV1#target_portal}
 
 ---
 
@@ -15154,7 +15186,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -15168,7 +15200,7 @@ public java.lang.String getIscsiInterface();
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#iscsi_interface DaemonSetV1#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#iscsi_interface DaemonSetV1#iscsi_interface}
 
 ---
 
@@ -15182,7 +15214,7 @@ public java.lang.Number getLun();
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#lun DaemonSetV1#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#lun DaemonSetV1#lun}
 
 ---
 
@@ -15196,7 +15228,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -15230,7 +15262,7 @@ public java.lang.String getPath();
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -15268,7 +15300,7 @@ public java.lang.String getPath();
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -15282,7 +15314,7 @@ public java.lang.String getServer();
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#server DaemonSetV1#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#server DaemonSetV1#server}
 
 ---
 
@@ -15296,7 +15328,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -15332,7 +15364,7 @@ public java.lang.String getClaimName();
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#claim_name DaemonSetV1#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#claim_name DaemonSetV1#claim_name}
 
 ---
 
@@ -15346,7 +15378,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -15382,7 +15414,7 @@ public java.lang.String getPdId();
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#pd_id DaemonSetV1#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#pd_id DaemonSetV1#pd_id}
 
 ---
 
@@ -15398,7 +15430,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -15434,7 +15466,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeProjectedSour
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#sources DaemonSetV1#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#sources DaemonSetV1#sources}
 
 ---
 
@@ -15450,7 +15482,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#default_mode DaemonSetV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#default_mode DaemonSetV1#default_mode}
 
 ---
 
@@ -15490,7 +15522,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeProjectedSour
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#config_map DaemonSetV1#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#config_map DaemonSetV1#config_map}
 
 ---
 
@@ -15504,7 +15536,7 @@ public DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi getDownwardA
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#downward_api DaemonSetV1#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#downward_api DaemonSetV1#downward_api}
 
 ---
 
@@ -15518,7 +15550,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeProjectedSour
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret DaemonSetV1#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret DaemonSetV1#secret}
 
 ---
 
@@ -15532,7 +15564,7 @@ public DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken getS
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#service_account_token DaemonSetV1#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#service_account_token DaemonSetV1#service_account_token}
 
 ---
 
@@ -15570,7 +15602,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeProjectedSour
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
 
 ---
 
@@ -15584,7 +15616,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -15598,7 +15630,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -15636,7 +15668,7 @@ public java.lang.String getKey();
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -15652,7 +15684,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
 
 ---
 
@@ -15668,7 +15700,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -15702,7 +15734,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeProjectedSour
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
 
 ---
 
@@ -15744,7 +15776,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -15758,7 +15790,7 @@ public DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#field_ref DaemonSetV1#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#field_ref DaemonSetV1#field_ref}
 
 ---
 
@@ -15774,7 +15806,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
 
 ---
 
@@ -15788,7 +15820,7 @@ public DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResource
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resource_field_ref DaemonSetV1#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resource_field_ref DaemonSetV1#resource_field_ref}
 
 ---
 
@@ -15824,7 +15856,7 @@ public java.lang.String getApiVersion();
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#api_version DaemonSetV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#api_version DaemonSetV1#api_version}
 
 ---
 
@@ -15838,7 +15870,7 @@ public java.lang.String getFieldPath();
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#field_path DaemonSetV1#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#field_path DaemonSetV1#field_path}
 
 ---
 
@@ -15860,9 +15892,9 @@ DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>java.lang.String</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}. |
 
 ---
 
@@ -15874,7 +15906,7 @@ public java.lang.String getContainerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#container_name DaemonSetV1#container_name}.
 
 ---
 
@@ -15888,7 +15920,7 @@ public java.lang.String getResource();
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#resource DaemonSetV1#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#resource DaemonSetV1#resource}
 
 ---
 
@@ -15900,7 +15932,7 @@ public java.lang.String getDivisor();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#divisor DaemonSetV1#divisor}.
 
 ---
 
@@ -15938,7 +15970,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeProjectedSour
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
 
 ---
 
@@ -15952,7 +15984,7 @@ public java.lang.String getName();
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -15966,7 +15998,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -16004,7 +16036,7 @@ public java.lang.String getKey();
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -16020,7 +16052,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
 
 ---
 
@@ -16036,7 +16068,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -16074,7 +16106,7 @@ public java.lang.String getPath();
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -16088,7 +16120,7 @@ public java.lang.String getAudience();
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#audience DaemonSetV1#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#audience DaemonSetV1#audience}
 
 ---
 
@@ -16104,7 +16136,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#expiration_seconds DaemonSetV1#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#expiration_seconds DaemonSetV1#expiration_seconds}
 
 ---
 
@@ -16146,7 +16178,7 @@ public java.lang.String getRegistry();
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#registry DaemonSetV1#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#registry DaemonSetV1#registry}
 
 ---
 
@@ -16160,7 +16192,7 @@ public java.lang.String getVolume();
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume DaemonSetV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume DaemonSetV1#volume}
 
 ---
 
@@ -16174,7 +16206,7 @@ public java.lang.String getGroup();
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#group DaemonSetV1#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#group DaemonSetV1#group}
 
 ---
 
@@ -16188,7 +16220,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -16202,7 +16234,7 @@ public java.lang.String getUser();
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#user DaemonSetV1#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#user DaemonSetV1#user}
 
 ---
 
@@ -16250,7 +16282,7 @@ public java.util.List<java.lang.String> getCephMonitors();
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#ceph_monitors DaemonSetV1#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#ceph_monitors DaemonSetV1#ceph_monitors}
 
 ---
 
@@ -16264,7 +16296,7 @@ public java.lang.String getRbdImage();
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#rbd_image DaemonSetV1#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#rbd_image DaemonSetV1#rbd_image}
 
 ---
 
@@ -16280,7 +16312,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -16294,7 +16326,7 @@ public java.lang.String getKeyring();
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#keyring DaemonSetV1#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#keyring DaemonSetV1#keyring}
 
 ---
 
@@ -16308,7 +16340,7 @@ public java.lang.String getRadosUser();
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#rados_user DaemonSetV1#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#rados_user DaemonSetV1#rados_user}
 
 ---
 
@@ -16322,7 +16354,7 @@ public java.lang.String getRbdPool();
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#rbd_pool DaemonSetV1#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#rbd_pool DaemonSetV1#rbd_pool}
 
 ---
 
@@ -16336,7 +16368,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#read_only DaemonSetV1#read_only}
 
 ---
 
@@ -16350,7 +16382,7 @@ public DaemonSetV1SpecTemplateSpecVolumeRbdSecretRef getSecretRef();
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_ref DaemonSetV1#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_ref DaemonSetV1#secret_ref}
 
 ---
 
@@ -16386,7 +16418,7 @@ public java.lang.String getName();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 
 ---
 
@@ -16400,7 +16432,7 @@ public java.lang.String getNamespace();
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#namespace DaemonSetV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#namespace DaemonSetV1#namespace}
 
 ---
 
@@ -16442,7 +16474,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#default_mode DaemonSetV1#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#default_mode DaemonSetV1#default_mode}
 
 ---
 
@@ -16456,7 +16488,7 @@ public IResolvable|java.util.List<DaemonSetV1SpecTemplateSpecVolumeSecretItems> 
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#items DaemonSetV1#items}
 
 ---
 
@@ -16470,7 +16502,7 @@ public java.lang.Boolean|IResolvable getOptional();
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#optional DaemonSetV1#optional}
 
 ---
 
@@ -16484,7 +16516,7 @@ public java.lang.String getSecretName();
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#secret_name DaemonSetV1#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#secret_name DaemonSetV1#secret_name}
 
 ---
 
@@ -16522,7 +16554,7 @@ public java.lang.String getKey();
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#key DaemonSetV1#key}
 
 ---
 
@@ -16538,7 +16570,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#mode DaemonSetV1#mode}
 
 ---
 
@@ -16554,7 +16586,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
 
 ---
 
@@ -16590,7 +16622,7 @@ public java.lang.String getVolumePath();
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#volume_path DaemonSetV1#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#volume_path DaemonSetV1#volume_path}
 
 ---
 
@@ -16606,7 +16638,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#fs_type DaemonSetV1#fs_type}
 
 ---
 
@@ -16628,9 +16660,9 @@ DaemonSetV1Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#create DaemonSetV1#create}. |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#delete DaemonSetV1#delete}. |
-| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#update DaemonSetV1#update}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#create DaemonSetV1#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#delete DaemonSetV1#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#update DaemonSetV1#update}. |
 
 ---
 
@@ -16642,7 +16674,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#create DaemonSetV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#create DaemonSetV1#create}.
 
 ---
 
@@ -16654,7 +16686,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#delete DaemonSetV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#delete DaemonSetV1#delete}.
 
 ---
 
@@ -16666,7 +16698,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/daemon_set_v1#update DaemonSetV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/daemon_set_v1#update DaemonSetV1#update}.
 
 ---
 
@@ -46687,6 +46719,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.resetPort">resetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.resetReadinessProbe">resetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.resetResources">resetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.resetRestartPolicy">resetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.resetSecurityContext">resetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.resetStartupProbe">resetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.resetStdin">resetStdin</a></code> | *No description.* |
@@ -47048,6 +47081,12 @@ public void resetReadinessProbe()
 public void resetResources()
 ```
 
+##### `resetRestartPolicy` <a name="resetRestartPolicy" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.resetRestartPolicy"></a>
+
+```java
+public void resetRestartPolicy()
+```
+
 ##### `resetSecurityContext` <a name="resetSecurityContext" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.resetSecurityContext"></a>
 
 ```java
@@ -47138,6 +47177,7 @@ public void resetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.portInput">portInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPort">DaemonSetV1SpecTemplateSpecContainerPort</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerReadinessProbe">DaemonSetV1SpecTemplateSpecContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.resourcesInput">resourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerResources">DaemonSetV1SpecTemplateSpecContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.restartPolicyInput">restartPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.securityContextInput">securityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerSecurityContext">DaemonSetV1SpecTemplateSpecContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerStartupProbe">DaemonSetV1SpecTemplateSpecContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.stdinInput">stdinInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -47153,6 +47193,7 @@ public void resetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.image">image</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.imagePullPolicy">imagePullPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.restartPolicy">restartPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.stdin">stdin</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.stdinOnce">stdinOnce</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.terminationMessagePath">terminationMessagePath</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -47417,6 +47458,16 @@ public DaemonSetV1SpecTemplateSpecContainerResources getResourcesInput();
 
 ---
 
+##### `restartPolicyInput`<sup>Optional</sup> <a name="restartPolicyInput" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.restartPolicyInput"></a>
+
+```java
+public java.lang.String getRestartPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `securityContextInput`<sup>Optional</sup> <a name="securityContextInput" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.securityContextInput"></a>
 
 ```java
@@ -47561,6 +47612,16 @@ public java.lang.String getImagePullPolicy();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `restartPolicy`<sup>Required</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerOutputReference.property.restartPolicy"></a>
+
+```java
+public java.lang.String getRestartPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -69132,6 +69193,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.resetPort">resetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.resetReadinessProbe">resetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.resetResources">resetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.resetRestartPolicy">resetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.resetSecurityContext">resetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.resetStartupProbe">resetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.resetStdin">resetStdin</a></code> | *No description.* |
@@ -69493,6 +69555,12 @@ public void resetReadinessProbe()
 public void resetResources()
 ```
 
+##### `resetRestartPolicy` <a name="resetRestartPolicy" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.resetRestartPolicy"></a>
+
+```java
+public void resetRestartPolicy()
+```
+
 ##### `resetSecurityContext` <a name="resetSecurityContext" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.resetSecurityContext"></a>
 
 ```java
@@ -69583,6 +69651,7 @@ public void resetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.portInput">portInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerPort">DaemonSetV1SpecTemplateSpecInitContainerPort</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe">DaemonSetV1SpecTemplateSpecInitContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.resourcesInput">resourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerResources">DaemonSetV1SpecTemplateSpecInitContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput">restartPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.securityContextInput">securityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerSecurityContext">DaemonSetV1SpecTemplateSpecInitContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerStartupProbe">DaemonSetV1SpecTemplateSpecInitContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.stdinInput">stdinInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -69598,6 +69667,7 @@ public void resetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.image">image</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.imagePullPolicy">imagePullPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.restartPolicy">restartPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.stdin">stdin</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.stdinOnce">stdinOnce</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.terminationMessagePath">terminationMessagePath</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -69862,6 +69932,16 @@ public DaemonSetV1SpecTemplateSpecInitContainerResources getResourcesInput();
 
 ---
 
+##### `restartPolicyInput`<sup>Optional</sup> <a name="restartPolicyInput" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput"></a>
+
+```java
+public java.lang.String getRestartPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `securityContextInput`<sup>Optional</sup> <a name="securityContextInput" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.securityContextInput"></a>
 
 ```java
@@ -70006,6 +70086,16 @@ public java.lang.String getImagePullPolicy();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `restartPolicy`<sup>Required</sup> <a name="restartPolicy" id="@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerOutputReference.property.restartPolicy"></a>
+
+```java
+public java.lang.String getRestartPolicy();
 ```
 
 - *Type:* java.lang.String

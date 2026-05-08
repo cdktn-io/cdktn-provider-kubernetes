@@ -4,12 +4,12 @@
 
 ### PriorityClassV1 <a name="PriorityClassV1" id="@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1 kubernetes_priority_class_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1 kubernetes_priority_class_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/priorityclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/priorityclassv1"
 
 priorityclassv1.NewPriorityClassV1(scope Construct, id *string, config PriorityClassV1Config) PriorityClassV1
 ```
@@ -441,7 +441,7 @@ func ResetPreemptionPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/priorityclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/priorityclassv1"
 
 priorityclassv1.PriorityClassV1_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/priorityclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/priorityclassv1"
 
 priorityclassv1.PriorityClassV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ priorityclassv1.PriorityClassV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/priorityclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/priorityclassv1"
 
 priorityclassv1.PriorityClassV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ priorityclassv1.PriorityClassV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/priorityclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/priorityclassv1"
 
 priorityclassv1.PriorityClassV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the PriorityClassV1 to import.
 
 The id of the existing PriorityClassV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/priorityclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/priorityclassv1"
 
 &priorityclassv1.PriorityClassV1Config {
 	Connection: interface{},
@@ -872,7 +872,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/priority
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.priorityClassV1.PriorityClassV1Metadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.priorityClassV1.PriorityClassV1Metadata,
 	Value: *f64,
 	Description: *string,
 	GlobalDefault: interface{},
@@ -896,7 +896,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/priority
 | <code><a href="#@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1Config.property.value">Value</a></code> | <code>*f64</code> | The value of this priority class. |
 | <code><a href="#@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1Config.property.description">Description</a></code> | <code>*string</code> | An arbitrary string that usually provides guidelines on when this priority class should be used. |
 | <code><a href="#@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1Config.property.globalDefault">GlobalDefault</a></code> | <code>interface{}</code> | Specifies whether this PriorityClass should be considered as the default priority for pods that do not have any priority class. |
-| <code><a href="#@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#id PriorityClassV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#id PriorityClassV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1Config.property.preemptionPolicy">PreemptionPolicy</a></code> | <code>*string</code> | PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never, PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. |
 
 ---
@@ -981,7 +981,7 @@ Metadata PriorityClassV1Metadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#metadata PriorityClassV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#metadata PriorityClassV1#metadata}
 
 ---
 
@@ -997,7 +997,7 @@ The value of this priority class.
 
 This is the actual priority that pods receive when they have the name of this class in their pod spec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#value PriorityClassV1#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#value PriorityClassV1#value}
 
 ---
 
@@ -1011,7 +1011,7 @@ Description *string
 
 An arbitrary string that usually provides guidelines on when this priority class should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#description PriorityClassV1#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#description PriorityClassV1#description}
 
 ---
 
@@ -1027,7 +1027,7 @@ Specifies whether this PriorityClass should be considered as the default priorit
 
 Only one PriorityClass can be marked as `globalDefault`. However, if more than one PriorityClasses exists with their `globalDefault` field set to true, the smallest value of such global default PriorityClasses will be used as the default priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#global_default PriorityClassV1#global_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#global_default PriorityClassV1#global_default}
 
 ---
 
@@ -1039,7 +1039,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#id PriorityClassV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#id PriorityClassV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1056,7 +1056,7 @@ PreemptionPolicy *string
 
 PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never, PreemptLowerPriority. Defaults to PreemptLowerPriority if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#preemption_policy PriorityClassV1#preemption_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#preemption_policy PriorityClassV1#preemption_policy}
 
 ---
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/priorityclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/priorityclassv1"
 
 &priorityclassv1.PriorityClassV1Metadata {
 	Annotations: *map[string]*string,
@@ -1098,7 +1098,7 @@ An unstructured key value map stored with the priority class that may be used to
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#annotations PriorityClassV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#annotations PriorityClassV1#annotations}
 
 ---
 
@@ -1114,7 +1114,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#generate_name PriorityClassV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#generate_name PriorityClassV1#generate_name}
 
 ---
 
@@ -1130,7 +1130,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#labels PriorityClassV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#labels PriorityClassV1#labels}
 
 ---
 
@@ -1144,7 +1144,7 @@ Name *string
 
 Name of the priority class, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/priority_class_v1#name PriorityClassV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/priority_class_v1#name PriorityClassV1#name}
 
 ---
 
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.priorityClassV1.PriorityClassV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/priorityclassv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/priorityclassv1"
 
 priorityclassv1.NewPriorityClassV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PriorityClassV1MetadataOutputReference
 ```

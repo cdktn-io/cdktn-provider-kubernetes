@@ -4,12 +4,12 @@
 
 ### ClusterRoleBinding <a name="ClusterRoleBinding" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding kubernetes_cluster_role_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding kubernetes_cluster_role_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 clusterrolebinding.NewClusterRoleBinding(scope Construct, id *string, config ClusterRoleBindingConfig) ClusterRoleBinding
 ```
@@ -446,7 +446,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 clusterrolebinding.ClusterRoleBinding_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 clusterrolebinding.ClusterRoleBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ clusterrolebinding.ClusterRoleBinding_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 clusterrolebinding.ClusterRoleBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ clusterrolebinding.ClusterRoleBinding_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 clusterrolebinding.ClusterRoleBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the ClusterRoleBinding to impo
 
 The id of the existing ClusterRoleBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -823,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 &clusterrolebinding.ClusterRoleBindingConfig {
 	Connection: interface{},
@@ -833,8 +833,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterr
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.clusterRoleBinding.ClusterRoleBindingMetadata,
-	RoleRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14.clusterRoleBinding.ClusterRoleBindingRoleRef,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.clusterRoleBinding.ClusterRoleBindingMetadata,
+	RoleRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.clusterRoleBinding.ClusterRoleBindingRoleRef,
 	Subject: interface{},
 	Id: *string,
 }
@@ -854,7 +854,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterr
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingMetadata">ClusterRoleBindingMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingConfig.property.roleRef">RoleRef</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingRoleRef">ClusterRoleBindingRoleRef</a></code> | role_ref block. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingConfig.property.subject">Subject</a></code> | <code>interface{}</code> | subject block. |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#id ClusterRoleBinding#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#id ClusterRoleBinding#id}. |
 
 ---
 
@@ -938,7 +938,7 @@ Metadata ClusterRoleBindingMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#metadata ClusterRoleBinding#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#metadata ClusterRoleBinding#metadata}
 
 ---
 
@@ -952,7 +952,7 @@ RoleRef ClusterRoleBindingRoleRef
 
 role_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#role_ref ClusterRoleBinding#role_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#role_ref ClusterRoleBinding#role_ref}
 
 ---
 
@@ -966,7 +966,7 @@ Subject interface{}
 
 subject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#subject ClusterRoleBinding#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#subject ClusterRoleBinding#subject}
 
 ---
 
@@ -978,7 +978,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#id ClusterRoleBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#id ClusterRoleBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -990,7 +990,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 &clusterrolebinding.ClusterRoleBindingMetadata {
 	Annotations: *map[string]*string,
@@ -1023,7 +1023,7 @@ An unstructured key value map stored with the clusterRoleBinding that may be use
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#annotations ClusterRoleBinding#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#annotations ClusterRoleBinding#annotations}
 
 ---
 
@@ -1039,7 +1039,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#generate_name ClusterRoleBinding#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#generate_name ClusterRoleBinding#generate_name}
 
 ---
 
@@ -1055,7 +1055,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#labels ClusterRoleBinding#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#labels ClusterRoleBinding#labels}
 
 ---
 
@@ -1069,7 +1069,7 @@ Name *string
 
 Name of the clusterRoleBinding, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#name ClusterRoleBinding#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#name ClusterRoleBinding#name}
 
 ---
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingRoleRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 &clusterrolebinding.ClusterRoleBindingRoleRef {
 	ApiGroup: *string,
@@ -1107,7 +1107,7 @@ ApiGroup *string
 
 The API group of the user. The only value possible at the moment is `rbac.authorization.k8s.io`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#api_group ClusterRoleBinding#api_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#api_group ClusterRoleBinding#api_group}
 
 ---
 
@@ -1121,7 +1121,7 @@ Kind *string
 
 The kind of resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#kind ClusterRoleBinding#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#kind ClusterRoleBinding#kind}
 
 ---
 
@@ -1135,7 +1135,7 @@ Name *string
 
 The name of the User to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#name ClusterRoleBinding#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#name ClusterRoleBinding#name}
 
 ---
 
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingSubject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 &clusterrolebinding.ClusterRoleBindingSubject {
 	Kind: *string,
@@ -1175,7 +1175,7 @@ Kind *string
 
 The kind of resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#kind ClusterRoleBinding#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#kind ClusterRoleBinding#kind}
 
 ---
 
@@ -1189,7 +1189,7 @@ Name *string
 
 The name of the resource to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#name ClusterRoleBinding#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#name ClusterRoleBinding#name}
 
 ---
 
@@ -1203,7 +1203,7 @@ ApiGroup *string
 
 The API group of the subject resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#api_group ClusterRoleBinding#api_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#api_group ClusterRoleBinding#api_group}
 
 ---
 
@@ -1217,7 +1217,7 @@ Namespace *string
 
 The Namespace of the subject resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cluster_role_binding#namespace ClusterRoleBinding#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/cluster_role_binding#namespace ClusterRoleBinding#namespace}
 
 ---
 
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 clusterrolebinding.NewClusterRoleBindingMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterRoleBindingMetadataOutputReference
 ```
@@ -1626,7 +1626,7 @@ func InternalValue() ClusterRoleBindingMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingRoleRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 clusterrolebinding.NewClusterRoleBindingRoleRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterRoleBindingRoleRefOutputReference
 ```
@@ -1941,7 +1941,7 @@ func InternalValue() ClusterRoleBindingRoleRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingSubjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 clusterrolebinding.NewClusterRoleBindingSubjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterRoleBindingSubjectList
 ```
@@ -2101,7 +2101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingSubjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v14/clusterrolebinding"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterrolebinding"
 
 clusterrolebinding.NewClusterRoleBindingSubjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterRoleBindingSubjectOutputReference
 ```

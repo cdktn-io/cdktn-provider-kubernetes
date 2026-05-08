@@ -4,7 +4,7 @@
 
 ### Deployment <a name="Deployment" id="@cdktn/provider-kubernetes.deployment.Deployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment kubernetes_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment kubernetes_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.deployment.Deployment.Initializer"></a>
 
@@ -549,7 +549,7 @@ The construct id used in the generated config for the Deployment to import.
 
 The id of the existing Deployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ new DeploymentConfig {
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentMetadata">DeploymentMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpec">DeploymentSpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#id Deployment#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#id Deployment#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts">DeploymentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentConfig.property.waitForRollout">WaitForRollout</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Wait for the rollout of the deployment to complete. Defaults to true. |
 
@@ -976,7 +976,7 @@ public DeploymentMetadata Metadata { get; set; }
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#metadata Deployment#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#metadata Deployment#metadata}
 
 ---
 
@@ -990,7 +990,7 @@ public DeploymentSpec Spec { get; set; }
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#spec Deployment#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#spec Deployment#spec}
 
 ---
 
@@ -1002,7 +1002,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#id Deployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#id Deployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1019,7 +1019,7 @@ public DeploymentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeouts Deployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeouts Deployment#timeouts}
 
 ---
 
@@ -1033,7 +1033,7 @@ public bool|IResolvable WaitForRollout { get; set; }
 
 Wait for the rollout of the deployment to complete. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#wait_for_rollout Deployment#wait_for_rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#wait_for_rollout Deployment#wait_for_rollout}
 
 ---
 
@@ -1077,7 +1077,7 @@ An unstructured key value map stored with the deployment that may be used to sto
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#annotations Deployment#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#annotations Deployment#annotations}
 
 ---
 
@@ -1093,7 +1093,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#generate_name Deployment#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#generate_name Deployment#generate_name}
 
 ---
 
@@ -1109,7 +1109,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#labels Deployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#labels Deployment#labels}
 
 ---
 
@@ -1123,7 +1123,7 @@ public string Name { get; set; }
 
 Name of the deployment, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -1137,7 +1137,7 @@ public string Namespace { get; set; }
 
 Namespace defines the space within which name of the deployment must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace Deployment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace Deployment#namespace}
 
 ---
 
@@ -1185,7 +1185,7 @@ public DeploymentSpecTemplate Template { get; set; }
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#template Deployment#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#template Deployment#template}
 
 ---
 
@@ -1201,7 +1201,7 @@ Minimum number of seconds for which a newly created pod should be ready without 
 
 Defaults to 0 (pod will be considered available as soon as it is ready)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#min_ready_seconds Deployment#min_ready_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#min_ready_seconds Deployment#min_ready_seconds}
 
 ---
 
@@ -1215,7 +1215,7 @@ public bool|IResolvable Paused { get; set; }
 
 Indicates that the deployment is paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#paused Deployment#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#paused Deployment#paused}
 
 ---
 
@@ -1231,7 +1231,7 @@ The maximum time in seconds for a deployment to make progress before it is consi
 
 The deployment controller will continue to process failed deployments and a condition with a ProgressDeadlineExceeded reason will be surfaced in the deployment status. Note that progress will not be estimated during the time a deployment is paused. Defaults to 600s.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#progress_deadline_seconds Deployment#progress_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#progress_deadline_seconds Deployment#progress_deadline_seconds}
 
 ---
 
@@ -1245,7 +1245,7 @@ public string Replicas { get; set; }
 
 Number of desired pods. This is a string to be able to distinguish between explicit zero and not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#replicas Deployment#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#replicas Deployment#replicas}
 
 ---
 
@@ -1261,7 +1261,7 @@ The number of old ReplicaSets to retain to allow rollback.
 
 This is a pointer to distinguish between explicit zero and not specified. Defaults to 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#revision_history_limit Deployment#revision_history_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#revision_history_limit Deployment#revision_history_limit}
 
 ---
 
@@ -1275,7 +1275,7 @@ public DeploymentSpecSelector Selector { get; set; }
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#selector Deployment#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#selector Deployment#selector}
 
 ---
 
@@ -1289,7 +1289,7 @@ public DeploymentSpecStrategy Strategy { get; set; }
 
 strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#strategy Deployment#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#strategy Deployment#strategy}
 
 ---
 
@@ -1325,7 +1325,7 @@ public IResolvable|DeploymentSpecSelectorMatchExpressions[] MatchExpressions { g
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -1341,7 +1341,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -1379,7 +1379,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -1393,7 +1393,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -1409,7 +1409,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -1445,7 +1445,7 @@ public DeploymentSpecStrategyRollingUpdate RollingUpdate { get; set; }
 
 rolling_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#rolling_update Deployment#rolling_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#rolling_update Deployment#rolling_update}
 
 ---
 
@@ -1459,7 +1459,7 @@ public string Type { get; set; }
 
 Type of deployment. Can be 'Recreate' or 'RollingUpdate'. Default is RollingUpdate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -1497,7 +1497,7 @@ The maximum number of pods that can be scheduled above the desired number of pod
 
 Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%). This can not be 0 if MaxUnavailable is 0. Absolute number is calculated from percentage by rounding up. Defaults to 25%. Example: when this is set to 30%, the new RC can be scaled up immediately when the rolling update starts, such that the total number of old and new pods do not exceed 130% of desired pods. Once old pods have been killed, new RC can be scaled up further, ensuring that total number of pods running at any time during the update is atmost 130% of desired pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#max_surge Deployment#max_surge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#max_surge Deployment#max_surge}
 
 ---
 
@@ -1513,7 +1513,7 @@ The maximum number of pods that can be unavailable during the update.
 
 Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%). Absolute number is calculated from percentage by rounding down. This can not be 0 if MaxSurge is 0. Defaults to 25%. Example: when this is set to 30%, the old RC can be scaled down to 70% of desired pods immediately when the rolling update starts. Once new pods are ready, old RC can be scaled down further, followed by scaling up the new RC, ensuring that the total number of pods available at all times during the update is at least 70% of desired pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#max_unavailable Deployment#max_unavailable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#max_unavailable Deployment#max_unavailable}
 
 ---
 
@@ -1549,7 +1549,7 @@ public DeploymentSpecTemplateMetadata Metadata { get; set; }
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#metadata Deployment#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#metadata Deployment#metadata}
 
 ---
 
@@ -1563,7 +1563,7 @@ public DeploymentSpecTemplateSpec Spec { get; set; }
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#spec Deployment#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#spec Deployment#spec}
 
 ---
 
@@ -1607,7 +1607,7 @@ An unstructured key value map stored with the pod that may be used to store arbi
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#annotations Deployment#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#annotations Deployment#annotations}
 
 ---
 
@@ -1623,7 +1623,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#generate_name Deployment#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#generate_name Deployment#generate_name}
 
 ---
 
@@ -1639,7 +1639,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#labels Deployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#labels Deployment#labels}
 
 ---
 
@@ -1653,7 +1653,7 @@ public string Name { get; set; }
 
 Name of the pod, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -1667,7 +1667,7 @@ public string Namespace { get; set; }
 
 Namespace defines the space within which name of the pod must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace Deployment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace Deployment#namespace}
 
 ---
 
@@ -1761,7 +1761,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#active_deadline_seconds Deployment#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#active_deadline_seconds Deployment#active_deadline_seconds}
 
 ---
 
@@ -1775,7 +1775,7 @@ public DeploymentSpecTemplateSpecAffinity Affinity { get; set; }
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#affinity Deployment#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#affinity Deployment#affinity}
 
 ---
 
@@ -1789,7 +1789,7 @@ public bool|IResolvable AutomountServiceAccountToken { get; set; }
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#automount_service_account_token Deployment#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#automount_service_account_token Deployment#automount_service_account_token}
 
 ---
 
@@ -1803,7 +1803,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainer[] Container { get; set; }
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container Deployment#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container Deployment#container}
 
 ---
 
@@ -1817,7 +1817,7 @@ public DeploymentSpecTemplateSpecDnsConfig DnsConfig { get; set; }
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#dns_config Deployment#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#dns_config Deployment#dns_config}
 
 ---
 
@@ -1833,7 +1833,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#dns_policy Deployment#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#dns_policy Deployment#dns_policy}
 
 ---
 
@@ -1847,7 +1847,7 @@ public bool|IResolvable EnableServiceLinks { get; set; }
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#enable_service_links Deployment#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#enable_service_links Deployment#enable_service_links}
 
 ---
 
@@ -1861,7 +1861,7 @@ public IResolvable|DeploymentSpecTemplateSpecHostAliases[] HostAliases { get; se
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_aliases Deployment#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_aliases Deployment#host_aliases}
 
 ---
 
@@ -1875,7 +1875,7 @@ public bool|IResolvable HostIpc { get; set; }
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_ipc Deployment#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_ipc Deployment#host_ipc}
 
 ---
 
@@ -1889,7 +1889,7 @@ public string Hostname { get; set; }
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#hostname Deployment#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#hostname Deployment#hostname}
 
 ---
 
@@ -1905,7 +1905,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_network Deployment#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_network Deployment#host_network}
 
 ---
 
@@ -1919,7 +1919,7 @@ public bool|IResolvable HostPid { get; set; }
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_pid Deployment#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_pid Deployment#host_pid}
 
 ---
 
@@ -1933,7 +1933,7 @@ public IResolvable|DeploymentSpecTemplateSpecImagePullSecrets[] ImagePullSecrets
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#image_pull_secrets Deployment#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#image_pull_secrets Deployment#image_pull_secrets}
 
 ---
 
@@ -1947,7 +1947,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainer[] InitContainer { get
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#init_container Deployment#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#init_container Deployment#init_container}
 
 ---
 
@@ -1963,7 +1963,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_name Deployment#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_name Deployment#node_name}
 
 ---
 
@@ -1979,7 +1979,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_selector Deployment#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_selector Deployment#node_selector}
 
 ---
 
@@ -1993,7 +1993,7 @@ public DeploymentSpecTemplateSpecOs Os { get; set; }
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#os Deployment#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#os Deployment#os}
 
 ---
 
@@ -2009,7 +2009,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#priority_class_name Deployment#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#priority_class_name Deployment#priority_class_name}
 
 ---
 
@@ -2023,7 +2023,7 @@ public IResolvable|DeploymentSpecTemplateSpecReadinessGate[] ReadinessGate { get
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#readiness_gate Deployment#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#readiness_gate Deployment#readiness_gate}
 
 ---
 
@@ -2037,7 +2037,7 @@ public string RestartPolicy { get; set; }
 
 Restart policy for all containers within the pod. Defaults to Always as the only option. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#restart_policy Deployment#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#restart_policy Deployment#restart_policy}
 
 ---
 
@@ -2053,7 +2053,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#runtime_class_name Deployment#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#runtime_class_name Deployment#runtime_class_name}
 
 ---
 
@@ -2069,7 +2069,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheduler_name Deployment#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheduler_name Deployment#scheduler_name}
 
 ---
 
@@ -2083,7 +2083,7 @@ public DeploymentSpecTemplateSpecSecurityContext SecurityContext { get; set; }
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#security_context Deployment#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#security_context Deployment#security_context}
 
 ---
 
@@ -2097,7 +2097,7 @@ public string ServiceAccountName { get; set; }
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service_account_name Deployment#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service_account_name Deployment#service_account_name}
 
 ---
 
@@ -2113,7 +2113,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#share_process_namespace Deployment#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#share_process_namespace Deployment#share_process_namespace}
 
 ---
 
@@ -2127,7 +2127,7 @@ public string Subdomain { get; set; }
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#subdomain Deployment#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#subdomain Deployment#subdomain}
 
 ---
 
@@ -2143,7 +2143,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#termination_grace_period_seconds Deployment#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#termination_grace_period_seconds Deployment#termination_grace_period_seconds}
 
 ---
 
@@ -2157,7 +2157,7 @@ public IResolvable|DeploymentSpecTemplateSpecToleration[] Toleration { get; set;
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#toleration Deployment#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#toleration Deployment#toleration}
 
 ---
 
@@ -2171,7 +2171,7 @@ public IResolvable|DeploymentSpecTemplateSpecTopologySpreadConstraint[] Topology
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_spread_constraint Deployment#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_spread_constraint Deployment#topology_spread_constraint}
 
 ---
 
@@ -2185,7 +2185,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolume[] Volume { get; set; }
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume Deployment#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume Deployment#volume}
 
 ---
 
@@ -2223,7 +2223,7 @@ public DeploymentSpecTemplateSpecAffinityNodeAffinity NodeAffinity { get; set; }
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_affinity Deployment#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_affinity Deployment#node_affinity}
 
 ---
 
@@ -2237,7 +2237,7 @@ public DeploymentSpecTemplateSpecAffinityPodAffinity PodAffinity { get; set; }
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pod_affinity Deployment#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pod_affinity Deployment#pod_affinity}
 
 ---
 
@@ -2251,7 +2251,7 @@ public DeploymentSpecTemplateSpecAffinityPodAntiAffinity PodAntiAffinity { get; 
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pod_anti_affinity Deployment#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pod_anti_affinity Deployment#pod_anti_affinity}
 
 ---
 
@@ -2287,7 +2287,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuring
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2301,7 +2301,7 @@ public DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgn
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2337,7 +2337,7 @@ public DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIg
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#preference Deployment#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#preference Deployment#preference}
 
 ---
 
@@ -2351,7 +2351,7 @@ public double Weight { get; set; }
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#weight Deployment#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#weight Deployment#weight}
 
 ---
 
@@ -2387,7 +2387,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuring
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -2401,7 +2401,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityNodeAffinityPreferredDuring
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_fields Deployment#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_fields Deployment#match_fields}
 
 ---
 
@@ -2439,7 +2439,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -2455,7 +2455,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -2471,7 +2471,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -2509,7 +2509,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -2523,7 +2523,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -2539,7 +2539,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -2573,7 +2573,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringS
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_selector_term Deployment#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_selector_term Deployment#node_selector_term}
 
 ---
 
@@ -2609,7 +2609,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringS
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -2623,7 +2623,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringS
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_fields Deployment#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_fields Deployment#match_fields}
 
 ---
 
@@ -2661,7 +2661,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -2677,7 +2677,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -2693,7 +2693,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -2731,7 +2731,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -2745,7 +2745,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -2761,7 +2761,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -2797,7 +2797,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringS
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2811,7 +2811,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSc
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2847,7 +2847,7 @@ public DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgn
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pod_affinity_term Deployment#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pod_affinity_term Deployment#pod_affinity_term}
 
 ---
 
@@ -2861,7 +2861,7 @@ public double Weight { get; set; }
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#weight Deployment#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#weight Deployment#weight}
 
 ---
 
@@ -2901,7 +2901,7 @@ public string TopologyKey { get; set; }
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_key Deployment#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_key Deployment#topology_key}
 
 ---
 
@@ -2915,7 +2915,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringS
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#label_selector Deployment#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#label_selector Deployment#label_selector}
 
 ---
 
@@ -2929,7 +2929,7 @@ public string[] Namespaces { get; set; }
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespaces Deployment#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespaces Deployment#namespaces}
 
 ---
 
@@ -2943,7 +2943,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringS
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
 
 ---
 
@@ -2979,7 +2979,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringS
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -2995,7 +2995,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3033,7 +3033,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3047,7 +3047,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3063,7 +3063,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3099,7 +3099,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAffinityPreferredDuringS
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -3115,7 +3115,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3153,7 +3153,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3167,7 +3167,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3183,7 +3183,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3223,7 +3223,7 @@ public string TopologyKey { get; set; }
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_key Deployment#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_key Deployment#topology_key}
 
 ---
 
@@ -3237,7 +3237,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSc
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#label_selector Deployment#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#label_selector Deployment#label_selector}
 
 ---
 
@@ -3251,7 +3251,7 @@ public string[] Namespaces { get; set; }
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespaces Deployment#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespaces Deployment#namespaces}
 
 ---
 
@@ -3265,7 +3265,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSc
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
 
 ---
 
@@ -3301,7 +3301,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSc
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -3317,7 +3317,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3355,7 +3355,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3369,7 +3369,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3385,7 +3385,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3421,7 +3421,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAffinityRequiredDuringSc
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -3437,7 +3437,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3475,7 +3475,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3489,7 +3489,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3505,7 +3505,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3541,7 +3541,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDur
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#preferred_during_scheduling_ignored_during_execution Deployment#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3555,7 +3555,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuri
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#required_during_scheduling_ignored_during_execution Deployment#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3591,7 +3591,7 @@ public DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulin
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pod_affinity_term Deployment#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pod_affinity_term Deployment#pod_affinity_term}
 
 ---
 
@@ -3605,7 +3605,7 @@ public double Weight { get; set; }
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#weight Deployment#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#weight Deployment#weight}
 
 ---
 
@@ -3645,7 +3645,7 @@ public string TopologyKey { get; set; }
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_key Deployment#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_key Deployment#topology_key}
 
 ---
 
@@ -3659,7 +3659,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDur
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#label_selector Deployment#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#label_selector Deployment#label_selector}
 
 ---
 
@@ -3673,7 +3673,7 @@ public string[] Namespaces { get; set; }
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespaces Deployment#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespaces Deployment#namespaces}
 
 ---
 
@@ -3687,7 +3687,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDur
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
 
 ---
 
@@ -3723,7 +3723,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDur
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -3739,7 +3739,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3777,7 +3777,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3791,7 +3791,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3807,7 +3807,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3843,7 +3843,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAntiAffinityPreferredDur
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -3859,7 +3859,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -3897,7 +3897,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -3911,7 +3911,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -3927,7 +3927,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -3967,7 +3967,7 @@ public string TopologyKey { get; set; }
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_key Deployment#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_key Deployment#topology_key}
 
 ---
 
@@ -3981,7 +3981,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuri
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#label_selector Deployment#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#label_selector Deployment#label_selector}
 
 ---
 
@@ -3995,7 +3995,7 @@ public string[] Namespaces { get; set; }
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespaces Deployment#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespaces Deployment#namespaces}
 
 ---
 
@@ -4009,7 +4009,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuri
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace_selector Deployment#namespace_selector}
 
 ---
 
@@ -4045,7 +4045,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuri
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -4061,7 +4061,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -4099,7 +4099,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -4113,7 +4113,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -4129,7 +4129,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -4165,7 +4165,7 @@ public IResolvable|DeploymentSpecTemplateSpecAffinityPodAntiAffinityRequiredDuri
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -4181,7 +4181,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -4219,7 +4219,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -4233,7 +4233,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -4249,7 +4249,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -4273,6 +4273,7 @@ new DeploymentSpecTemplateSpecContainer {
     IResolvable|DeploymentSpecTemplateSpecContainerPort[] Port = null,
     DeploymentSpecTemplateSpecContainerReadinessProbe ReadinessProbe = null,
     DeploymentSpecTemplateSpecContainerResources Resources = null,
+    string RestartPolicy = null,
     DeploymentSpecTemplateSpecContainerSecurityContext SecurityContext = null,
     DeploymentSpecTemplateSpecContainerStartupProbe StartupProbe = null,
     bool|IResolvable Stdin = null,
@@ -4302,6 +4303,7 @@ new DeploymentSpecTemplateSpecContainer {
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.port">Port</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerPort">DeploymentSpecTemplateSpecContainerPort</a>[]</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.readinessProbe">ReadinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbe">DeploymentSpecTemplateSpecContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerResources">DeploymentSpecTemplateSpecContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.restartPolicy">RestartPolicy</a></code> | <code>string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.securityContext">SecurityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContext">DeploymentSpecTemplateSpecContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.startupProbe">StartupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbe">DeploymentSpecTemplateSpecContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.stdin">Stdin</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -4327,7 +4329,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -4343,7 +4345,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#args Deployment#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#args Deployment#args}
 
 ---
 
@@ -4359,7 +4361,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -4373,7 +4375,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerEnv[] Env { get; set; }
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#env Deployment#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#env Deployment#env}
 
 ---
 
@@ -4387,7 +4389,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerEnvFrom[] EnvFrom { get; s
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#env_from Deployment#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#env_from Deployment#env_from}
 
 ---
 
@@ -4401,7 +4403,7 @@ public string Image { get; set; }
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#image Deployment#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#image Deployment#image}
 
 ---
 
@@ -4417,7 +4419,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#image_pull_policy Deployment#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#image_pull_policy Deployment#image_pull_policy}
 
 ---
 
@@ -4431,7 +4433,7 @@ public DeploymentSpecTemplateSpecContainerLifecycle Lifecycle { get; set; }
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#lifecycle Deployment#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#lifecycle Deployment#lifecycle}
 
 ---
 
@@ -4445,7 +4447,7 @@ public DeploymentSpecTemplateSpecContainerLivenessProbe LivenessProbe { get; set
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#liveness_probe Deployment#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#liveness_probe Deployment#liveness_probe}
 
 ---
 
@@ -4459,7 +4461,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerPort[] Port { get; set; }
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -4473,7 +4475,7 @@ public DeploymentSpecTemplateSpecContainerReadinessProbe ReadinessProbe { get; s
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#readiness_probe Deployment#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#readiness_probe Deployment#readiness_probe}
 
 ---
 
@@ -4487,7 +4489,21 @@ public DeploymentSpecTemplateSpecContainerResources Resources { get; set; }
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resources Deployment#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resources Deployment#resources}
+
+---
+
+##### `RestartPolicy`<sup>Optional</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainer.property.restartPolicy"></a>
+
+```csharp
+public string RestartPolicy { get; set; }
+```
+
+- *Type:* string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#restart_policy Deployment#restart_policy}
 
 ---
 
@@ -4501,7 +4517,7 @@ public DeploymentSpecTemplateSpecContainerSecurityContext SecurityContext { get;
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#security_context Deployment#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#security_context Deployment#security_context}
 
 ---
 
@@ -4515,7 +4531,7 @@ public DeploymentSpecTemplateSpecContainerStartupProbe StartupProbe { get; set; 
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#startup_probe Deployment#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#startup_probe Deployment#startup_probe}
 
 ---
 
@@ -4531,7 +4547,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#stdin Deployment#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#stdin Deployment#stdin}
 
 ---
 
@@ -4547,7 +4563,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#stdin_once Deployment#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#stdin_once Deployment#stdin_once}
 
 ---
 
@@ -4563,7 +4579,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#termination_message_path Deployment#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#termination_message_path Deployment#termination_message_path}
 
 ---
 
@@ -4579,7 +4595,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#termination_message_policy Deployment#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#termination_message_policy Deployment#termination_message_policy}
 
 ---
 
@@ -4593,7 +4609,7 @@ public bool|IResolvable Tty { get; set; }
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tty Deployment#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tty Deployment#tty}
 
 ---
 
@@ -4607,7 +4623,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerVolumeDevice[] VolumeDevic
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_device Deployment#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_device Deployment#volume_device}
 
 ---
 
@@ -4621,7 +4637,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerVolumeMount[] VolumeMount 
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_mount Deployment#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_mount Deployment#volume_mount}
 
 ---
 
@@ -4637,7 +4653,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#working_dir Deployment#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#working_dir Deployment#working_dir}
 
 ---
 
@@ -4675,7 +4691,7 @@ public string Name { get; set; }
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -4691,7 +4707,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -4705,7 +4721,7 @@ public DeploymentSpecTemplateSpecContainerEnvValueFrom ValueFrom { get; set; }
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value_from Deployment#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value_from Deployment#value_from}
 
 ---
 
@@ -4743,7 +4759,7 @@ public DeploymentSpecTemplateSpecContainerEnvFromConfigMapRef ConfigMapRef { get
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map_ref Deployment#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map_ref Deployment#config_map_ref}
 
 ---
 
@@ -4757,7 +4773,7 @@ public string Prefix { get; set; }
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#prefix Deployment#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#prefix Deployment#prefix}
 
 ---
 
@@ -4771,7 +4787,7 @@ public DeploymentSpecTemplateSpecContainerEnvFromSecretRef SecretRef { get; set;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
 
 ---
 
@@ -4807,7 +4823,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -4821,7 +4837,7 @@ public bool|IResolvable Optional { get; set; }
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -4857,7 +4873,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -4871,7 +4887,7 @@ public bool|IResolvable Optional { get; set; }
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -4911,7 +4927,7 @@ public DeploymentSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef ConfigMapK
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map_key_ref Deployment#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map_key_ref Deployment#config_map_key_ref}
 
 ---
 
@@ -4925,7 +4941,7 @@ public DeploymentSpecTemplateSpecContainerEnvValueFromFieldRef FieldRef { get; s
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_ref Deployment#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_ref Deployment#field_ref}
 
 ---
 
@@ -4939,7 +4955,7 @@ public DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef ResourceF
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
 
 ---
 
@@ -4953,7 +4969,7 @@ public DeploymentSpecTemplateSpecContainerEnvValueFromSecretKeyRef SecretKeyRef 
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_key_ref Deployment#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_key_ref Deployment#secret_key_ref}
 
 ---
 
@@ -4991,7 +5007,7 @@ public string Key { get; set; }
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -5005,7 +5021,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -5019,7 +5035,7 @@ public bool|IResolvable Optional { get; set; }
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -5055,7 +5071,7 @@ public string ApiVersion { get; set; }
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#api_version Deployment#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#api_version Deployment#api_version}
 
 ---
 
@@ -5069,7 +5085,7 @@ public string FieldPath { get; set; }
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_path Deployment#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_path Deployment#field_path}
 
 ---
 
@@ -5092,8 +5108,8 @@ new DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.resource">Resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}. |
 
 ---
 
@@ -5107,7 +5123,7 @@ public string Resource { get; set; }
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource Deployment#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource Deployment#resource}
 
 ---
 
@@ -5119,7 +5135,7 @@ public string ContainerName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}.
 
 ---
 
@@ -5131,7 +5147,7 @@ public string Divisor { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}.
 
 ---
 
@@ -5169,7 +5185,7 @@ public string Key { get; set; }
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -5183,7 +5199,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -5197,7 +5213,7 @@ public bool|IResolvable Optional { get; set; }
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -5233,7 +5249,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerLifecyclePostStart[] PostS
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#post_start Deployment#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#post_start Deployment#post_start}
 
 ---
 
@@ -5247,7 +5263,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerLifecyclePreStop[] PreStop
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pre_stop Deployment#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pre_stop Deployment#pre_stop}
 
 ---
 
@@ -5285,7 +5301,7 @@ public DeploymentSpecTemplateSpecContainerLifecyclePostStartExec Exec { get; set
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -5299,7 +5315,7 @@ public DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGet HttpGet { ge
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -5313,7 +5329,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocke
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -5349,7 +5365,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -5391,7 +5407,7 @@ public string Host { get; set; }
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -5405,7 +5421,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerLifecyclePostStartHttpGetH
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -5419,7 +5435,7 @@ public string Path { get; set; }
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -5435,7 +5451,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -5449,7 +5465,7 @@ public string Scheme { get; set; }
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -5485,7 +5501,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -5499,7 +5515,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -5535,7 +5551,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -5573,7 +5589,7 @@ public DeploymentSpecTemplateSpecContainerLifecyclePreStopExec Exec { get; set; 
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -5587,7 +5603,7 @@ public DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGet HttpGet { get;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -5601,7 +5617,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerLifecyclePreStopTcpSocket[
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -5637,7 +5653,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -5679,7 +5695,7 @@ public string Host { get; set; }
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -5693,7 +5709,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHtt
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -5707,7 +5723,7 @@ public string Path { get; set; }
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -5723,7 +5739,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -5737,7 +5753,7 @@ public string Scheme { get; set; }
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -5773,7 +5789,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -5787,7 +5803,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -5823,7 +5839,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -5873,7 +5889,7 @@ public DeploymentSpecTemplateSpecContainerLivenessProbeExec Exec { get; set; }
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -5887,7 +5903,7 @@ public double FailureThreshold { get; set; }
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -5901,7 +5917,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerLivenessProbeGrpc[] Grpc {
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -5915,7 +5931,7 @@ public DeploymentSpecTemplateSpecContainerLivenessProbeHttpGet HttpGet { get; se
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -5929,7 +5945,7 @@ public double InitialDelaySeconds { get; set; }
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -5943,7 +5959,7 @@ public double PeriodSeconds { get; set; }
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -5957,7 +5973,7 @@ public double SuccessThreshold { get; set; }
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -5971,7 +5987,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocket[] T
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -5985,7 +6001,7 @@ public double TimeoutSeconds { get; set; }
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -6021,7 +6037,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -6057,7 +6073,7 @@ public double Port { get; set; }
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6071,7 +6087,7 @@ public string Service { get; set; }
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -6113,7 +6129,7 @@ public string Host { get; set; }
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -6127,7 +6143,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHe
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -6141,7 +6157,7 @@ public string Path { get; set; }
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -6157,7 +6173,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6171,7 +6187,7 @@ public string Scheme { get; set; }
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -6207,7 +6223,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -6221,7 +6237,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -6257,7 +6273,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6301,7 +6317,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_port Deployment#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_port Deployment#container_port}
 
 ---
 
@@ -6315,7 +6331,7 @@ public string HostIp { get; set; }
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_ip Deployment#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_ip Deployment#host_ip}
 
 ---
 
@@ -6331,7 +6347,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_port Deployment#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_port Deployment#host_port}
 
 ---
 
@@ -6347,7 +6363,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -6361,7 +6377,7 @@ public string Protocol { get; set; }
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#protocol Deployment#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#protocol Deployment#protocol}
 
 ---
 
@@ -6411,7 +6427,7 @@ public DeploymentSpecTemplateSpecContainerReadinessProbeExec Exec { get; set; }
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -6425,7 +6441,7 @@ public double FailureThreshold { get; set; }
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -6439,7 +6455,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerReadinessProbeGrpc[] Grpc 
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -6453,7 +6469,7 @@ public DeploymentSpecTemplateSpecContainerReadinessProbeHttpGet HttpGet { get; s
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -6467,7 +6483,7 @@ public double InitialDelaySeconds { get; set; }
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -6481,7 +6497,7 @@ public double PeriodSeconds { get; set; }
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -6495,7 +6511,7 @@ public double SuccessThreshold { get; set; }
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -6509,7 +6525,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerReadinessProbeTcpSocket[] 
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -6523,7 +6539,7 @@ public double TimeoutSeconds { get; set; }
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -6559,7 +6575,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -6595,7 +6611,7 @@ public double Port { get; set; }
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6609,7 +6625,7 @@ public string Service { get; set; }
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -6651,7 +6667,7 @@ public string Host { get; set; }
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -6665,7 +6681,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpH
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -6679,7 +6695,7 @@ public string Path { get; set; }
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -6695,7 +6711,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6709,7 +6725,7 @@ public string Scheme { get; set; }
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -6745,7 +6761,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -6759,7 +6775,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -6795,7 +6811,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -6831,7 +6847,7 @@ public System.Collections.Generic.IDictionary<string, string> Limits { get; set;
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#limits Deployment#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#limits Deployment#limits}
 
 ---
 
@@ -6847,7 +6863,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#requests Deployment#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#requests Deployment#requests}
 
 ---
 
@@ -6899,7 +6915,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#allow_privilege_escalation Deployment#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#allow_privilege_escalation Deployment#allow_privilege_escalation}
 
 ---
 
@@ -6913,7 +6929,7 @@ public DeploymentSpecTemplateSpecContainerSecurityContextCapabilities Capabiliti
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#capabilities Deployment#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#capabilities Deployment#capabilities}
 
 ---
 
@@ -6929,7 +6945,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#privileged Deployment#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#privileged Deployment#privileged}
 
 ---
 
@@ -6943,7 +6959,7 @@ public bool|IResolvable ReadOnlyRootFilesystem { get; set; }
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only_root_filesystem Deployment#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only_root_filesystem Deployment#read_only_root_filesystem}
 
 ---
 
@@ -6959,7 +6975,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
 
 ---
 
@@ -6975,7 +6991,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
 
 ---
 
@@ -6991,7 +7007,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
 
 ---
 
@@ -7005,7 +7021,7 @@ public DeploymentSpecTemplateSpecContainerSecurityContextSeccompProfile SeccompP
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
 
 ---
 
@@ -7019,7 +7035,7 @@ public DeploymentSpecTemplateSpecContainerSecurityContextSeLinuxOptions SeLinuxO
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
 
 ---
 
@@ -7055,7 +7071,7 @@ public string[] Add { get; set; }
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#add Deployment#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#add Deployment#add}
 
 ---
 
@@ -7069,7 +7085,7 @@ public string[] Drop { get; set; }
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#drop Deployment#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#drop Deployment#drop}
 
 ---
 
@@ -7107,7 +7123,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
 
 ---
 
@@ -7121,7 +7137,7 @@ public string Type { get; set; }
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -7161,7 +7177,7 @@ public string Level { get; set; }
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#level Deployment#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#level Deployment#level}
 
 ---
 
@@ -7175,7 +7191,7 @@ public string Role { get; set; }
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#role Deployment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#role Deployment#role}
 
 ---
 
@@ -7189,7 +7205,7 @@ public string Type { get; set; }
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -7203,7 +7219,7 @@ public string User { get; set; }
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#user Deployment#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#user Deployment#user}
 
 ---
 
@@ -7253,7 +7269,7 @@ public DeploymentSpecTemplateSpecContainerStartupProbeExec Exec { get; set; }
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -7267,7 +7283,7 @@ public double FailureThreshold { get; set; }
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -7281,7 +7297,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerStartupProbeGrpc[] Grpc { 
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -7295,7 +7311,7 @@ public DeploymentSpecTemplateSpecContainerStartupProbeHttpGet HttpGet { get; set
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -7309,7 +7325,7 @@ public double InitialDelaySeconds { get; set; }
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -7323,7 +7339,7 @@ public double PeriodSeconds { get; set; }
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -7337,7 +7353,7 @@ public double SuccessThreshold { get; set; }
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -7351,7 +7367,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerStartupProbeTcpSocket[] Tc
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -7365,7 +7381,7 @@ public double TimeoutSeconds { get; set; }
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -7401,7 +7417,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -7437,7 +7453,7 @@ public double Port { get; set; }
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -7451,7 +7467,7 @@ public string Service { get; set; }
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -7493,7 +7509,7 @@ public string Host { get; set; }
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -7507,7 +7523,7 @@ public IResolvable|DeploymentSpecTemplateSpecContainerStartupProbeHttpGetHttpHea
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -7521,7 +7537,7 @@ public string Path { get; set; }
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -7537,7 +7553,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -7551,7 +7567,7 @@ public string Scheme { get; set; }
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -7587,7 +7603,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -7601,7 +7617,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -7637,7 +7653,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -7673,7 +7689,7 @@ public string DevicePath { get; set; }
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#device_path Deployment#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#device_path Deployment#device_path}
 
 ---
 
@@ -7687,7 +7703,7 @@ public string Name { get; set; }
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -7731,7 +7747,7 @@ public string MountPath { get; set; }
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mount_path Deployment#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mount_path Deployment#mount_path}
 
 ---
 
@@ -7745,7 +7761,7 @@ public string Name { get; set; }
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -7761,7 +7777,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mount_propagation Deployment#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mount_propagation Deployment#mount_propagation}
 
 ---
 
@@ -7775,7 +7791,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -7789,7 +7805,7 @@ public string SubPath { get; set; }
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sub_path Deployment#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sub_path Deployment#sub_path}
 
 ---
 
@@ -7803,7 +7819,7 @@ public string SubPathExpr { get; set; }
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sub_path_expr Deployment#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sub_path_expr Deployment#sub_path_expr}
 
 ---
 
@@ -7843,7 +7859,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#nameservers Deployment#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#nameservers Deployment#nameservers}
 
 ---
 
@@ -7857,7 +7873,7 @@ public IResolvable|DeploymentSpecTemplateSpecDnsConfigOption[] Option { get; set
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#option Deployment#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#option Deployment#option}
 
 ---
 
@@ -7873,7 +7889,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#searches Deployment#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#searches Deployment#searches}
 
 ---
 
@@ -7909,7 +7925,7 @@ public string Name { get; set; }
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -7923,7 +7939,7 @@ public string Value { get; set; }
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -7959,7 +7975,7 @@ public string[] Hostnames { get; set; }
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#hostnames Deployment#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#hostnames Deployment#hostnames}
 
 ---
 
@@ -7973,7 +7989,7 @@ public string Ip { get; set; }
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#ip Deployment#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#ip Deployment#ip}
 
 ---
 
@@ -8007,7 +8023,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8031,6 +8047,7 @@ new DeploymentSpecTemplateSpecInitContainer {
     IResolvable|DeploymentSpecTemplateSpecInitContainerPort[] Port = null,
     DeploymentSpecTemplateSpecInitContainerReadinessProbe ReadinessProbe = null,
     DeploymentSpecTemplateSpecInitContainerResources Resources = null,
+    string RestartPolicy = null,
     DeploymentSpecTemplateSpecInitContainerSecurityContext SecurityContext = null,
     DeploymentSpecTemplateSpecInitContainerStartupProbe StartupProbe = null,
     bool|IResolvable Stdin = null,
@@ -8060,6 +8077,7 @@ new DeploymentSpecTemplateSpecInitContainer {
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.port">Port</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerPort">DeploymentSpecTemplateSpecInitContainerPort</a>[]</code> | port block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.readinessProbe">ReadinessProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbe">DeploymentSpecTemplateSpecInitContainerReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.resources">Resources</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerResources">DeploymentSpecTemplateSpecInitContainerResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.restartPolicy">RestartPolicy</a></code> | <code>string</code> | Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.securityContext">SecurityContext</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContext">DeploymentSpecTemplateSpecInitContainerSecurityContext</a></code> | security_context block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.startupProbe">StartupProbe</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbe">DeploymentSpecTemplateSpecInitContainerStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.stdin">Stdin</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether this container should allocate a buffer for stdin in the container runtime. |
@@ -8085,7 +8103,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8101,7 +8119,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#args Deployment#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#args Deployment#args}
 
 ---
 
@@ -8117,7 +8135,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -8131,7 +8149,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerEnv[] Env { get; set; 
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#env Deployment#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#env Deployment#env}
 
 ---
 
@@ -8145,7 +8163,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerEnvFrom[] EnvFrom { ge
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#env_from Deployment#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#env_from Deployment#env_from}
 
 ---
 
@@ -8159,7 +8177,7 @@ public string Image { get; set; }
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#image Deployment#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#image Deployment#image}
 
 ---
 
@@ -8175,7 +8193,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#image_pull_policy Deployment#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#image_pull_policy Deployment#image_pull_policy}
 
 ---
 
@@ -8189,7 +8207,7 @@ public DeploymentSpecTemplateSpecInitContainerLifecycle Lifecycle { get; set; }
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#lifecycle Deployment#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#lifecycle Deployment#lifecycle}
 
 ---
 
@@ -8203,7 +8221,7 @@ public DeploymentSpecTemplateSpecInitContainerLivenessProbe LivenessProbe { get;
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#liveness_probe Deployment#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#liveness_probe Deployment#liveness_probe}
 
 ---
 
@@ -8217,7 +8235,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerPort[] Port { get; set
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -8231,7 +8249,7 @@ public DeploymentSpecTemplateSpecInitContainerReadinessProbe ReadinessProbe { ge
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#readiness_probe Deployment#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#readiness_probe Deployment#readiness_probe}
 
 ---
 
@@ -8245,7 +8263,21 @@ public DeploymentSpecTemplateSpecInitContainerResources Resources { get; set; }
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resources Deployment#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resources Deployment#resources}
+
+---
+
+##### `RestartPolicy`<sup>Optional</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainer.property.restartPolicy"></a>
+
+```csharp
+public string RestartPolicy { get; set; }
+```
+
+- *Type:* string
+
+Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#restart_policy Deployment#restart_policy}
 
 ---
 
@@ -8259,7 +8291,7 @@ public DeploymentSpecTemplateSpecInitContainerSecurityContext SecurityContext { 
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#security_context Deployment#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#security_context Deployment#security_context}
 
 ---
 
@@ -8273,7 +8305,7 @@ public DeploymentSpecTemplateSpecInitContainerStartupProbe StartupProbe { get; s
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#startup_probe Deployment#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#startup_probe Deployment#startup_probe}
 
 ---
 
@@ -8289,7 +8321,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#stdin Deployment#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#stdin Deployment#stdin}
 
 ---
 
@@ -8305,7 +8337,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#stdin_once Deployment#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#stdin_once Deployment#stdin_once}
 
 ---
 
@@ -8321,7 +8353,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#termination_message_path Deployment#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#termination_message_path Deployment#termination_message_path}
 
 ---
 
@@ -8337,7 +8369,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#termination_message_policy Deployment#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#termination_message_policy Deployment#termination_message_policy}
 
 ---
 
@@ -8351,7 +8383,7 @@ public bool|IResolvable Tty { get; set; }
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tty Deployment#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tty Deployment#tty}
 
 ---
 
@@ -8365,7 +8397,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerVolumeDevice[] VolumeD
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_device Deployment#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_device Deployment#volume_device}
 
 ---
 
@@ -8379,7 +8411,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerVolumeMount[] VolumeMo
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_mount Deployment#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_mount Deployment#volume_mount}
 
 ---
 
@@ -8395,7 +8427,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#working_dir Deployment#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#working_dir Deployment#working_dir}
 
 ---
 
@@ -8433,7 +8465,7 @@ public string Name { get; set; }
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8449,7 +8481,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -8463,7 +8495,7 @@ public DeploymentSpecTemplateSpecInitContainerEnvValueFrom ValueFrom { get; set;
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value_from Deployment#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value_from Deployment#value_from}
 
 ---
 
@@ -8501,7 +8533,7 @@ public DeploymentSpecTemplateSpecInitContainerEnvFromConfigMapRef ConfigMapRef {
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map_ref Deployment#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map_ref Deployment#config_map_ref}
 
 ---
 
@@ -8515,7 +8547,7 @@ public string Prefix { get; set; }
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#prefix Deployment#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#prefix Deployment#prefix}
 
 ---
 
@@ -8529,7 +8561,7 @@ public DeploymentSpecTemplateSpecInitContainerEnvFromSecretRef SecretRef { get; 
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
 
 ---
 
@@ -8565,7 +8597,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8579,7 +8611,7 @@ public bool|IResolvable Optional { get; set; }
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -8615,7 +8647,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8629,7 +8661,7 @@ public bool|IResolvable Optional { get; set; }
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -8669,7 +8701,7 @@ public DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef Config
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map_key_ref Deployment#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map_key_ref Deployment#config_map_key_ref}
 
 ---
 
@@ -8683,7 +8715,7 @@ public DeploymentSpecTemplateSpecInitContainerEnvValueFromFieldRef FieldRef { ge
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_ref Deployment#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_ref Deployment#field_ref}
 
 ---
 
@@ -8697,7 +8729,7 @@ public DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef Resou
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
 
 ---
 
@@ -8711,7 +8743,7 @@ public DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef SecretKey
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_key_ref Deployment#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_key_ref Deployment#secret_key_ref}
 
 ---
 
@@ -8749,7 +8781,7 @@ public string Key { get; set; }
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -8763,7 +8795,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8777,7 +8809,7 @@ public bool|IResolvable Optional { get; set; }
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -8813,7 +8845,7 @@ public string ApiVersion { get; set; }
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#api_version Deployment#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#api_version Deployment#api_version}
 
 ---
 
@@ -8827,7 +8859,7 @@ public string FieldPath { get; set; }
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_path Deployment#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_path Deployment#field_path}
 
 ---
 
@@ -8850,8 +8882,8 @@ new DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.resource">Resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">Divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}. |
 
 ---
 
@@ -8865,7 +8897,7 @@ public string Resource { get; set; }
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource Deployment#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource Deployment#resource}
 
 ---
 
@@ -8877,7 +8909,7 @@ public string ContainerName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}.
 
 ---
 
@@ -8889,7 +8921,7 @@ public string Divisor { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}.
 
 ---
 
@@ -8927,7 +8959,7 @@ public string Key { get; set; }
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -8941,7 +8973,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -8955,7 +8987,7 @@ public bool|IResolvable Optional { get; set; }
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -8991,7 +9023,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerLifecyclePostStart[] P
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#post_start Deployment#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#post_start Deployment#post_start}
 
 ---
 
@@ -9005,7 +9037,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerLifecyclePreStop[] Pre
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pre_stop Deployment#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pre_stop Deployment#pre_stop}
 
 ---
 
@@ -9043,7 +9075,7 @@ public DeploymentSpecTemplateSpecInitContainerLifecyclePostStartExec Exec { get;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -9057,7 +9089,7 @@ public DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttpGet HttpGet 
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -9071,7 +9103,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerLifecyclePostStartTcpS
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -9107,7 +9139,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -9149,7 +9181,7 @@ public string Host { get; set; }
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -9163,7 +9195,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerLifecyclePostStartHttp
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -9177,7 +9209,7 @@ public string Path { get; set; }
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -9193,7 +9225,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9207,7 +9239,7 @@ public string Scheme { get; set; }
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -9243,7 +9275,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -9257,7 +9289,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -9293,7 +9325,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9331,7 +9363,7 @@ public DeploymentSpecTemplateSpecInitContainerLifecyclePreStopExec Exec { get; s
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -9345,7 +9377,7 @@ public DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGet HttpGet { 
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -9359,7 +9391,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerLifecyclePreStopTcpSoc
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -9395,7 +9427,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -9437,7 +9469,7 @@ public string Host { get; set; }
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -9451,7 +9483,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerLifecyclePreStopHttpGe
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -9465,7 +9497,7 @@ public string Path { get; set; }
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -9481,7 +9513,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9495,7 +9527,7 @@ public string Scheme { get; set; }
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -9531,7 +9563,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -9545,7 +9577,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -9581,7 +9613,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9631,7 +9663,7 @@ public DeploymentSpecTemplateSpecInitContainerLivenessProbeExec Exec { get; set;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -9645,7 +9677,7 @@ public double FailureThreshold { get; set; }
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -9659,7 +9691,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerLivenessProbeGrpc[] Gr
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -9673,7 +9705,7 @@ public DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGet HttpGet { get
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -9687,7 +9719,7 @@ public double InitialDelaySeconds { get; set; }
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -9701,7 +9733,7 @@ public double PeriodSeconds { get; set; }
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -9715,7 +9747,7 @@ public double SuccessThreshold { get; set; }
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -9729,7 +9761,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerLivenessProbeTcpSocket
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -9743,7 +9775,7 @@ public double TimeoutSeconds { get; set; }
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -9779,7 +9811,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -9815,7 +9847,7 @@ public double Port { get; set; }
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9829,7 +9861,7 @@ public string Service { get; set; }
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -9871,7 +9903,7 @@ public string Host { get; set; }
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -9885,7 +9917,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHt
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -9899,7 +9931,7 @@ public string Path { get; set; }
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -9915,7 +9947,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -9929,7 +9961,7 @@ public string Scheme { get; set; }
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -9965,7 +9997,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -9979,7 +10011,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -10015,7 +10047,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -10059,7 +10091,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_port Deployment#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_port Deployment#container_port}
 
 ---
 
@@ -10073,7 +10105,7 @@ public string HostIp { get; set; }
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_ip Deployment#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_ip Deployment#host_ip}
 
 ---
 
@@ -10089,7 +10121,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_port Deployment#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_port Deployment#host_port}
 
 ---
 
@@ -10105,7 +10137,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -10119,7 +10151,7 @@ public string Protocol { get; set; }
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#protocol Deployment#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#protocol Deployment#protocol}
 
 ---
 
@@ -10169,7 +10201,7 @@ public DeploymentSpecTemplateSpecInitContainerReadinessProbeExec Exec { get; set
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -10183,7 +10215,7 @@ public double FailureThreshold { get; set; }
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -10197,7 +10229,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerReadinessProbeGrpc[] G
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -10211,7 +10243,7 @@ public DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGet HttpGet { ge
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -10225,7 +10257,7 @@ public double InitialDelaySeconds { get; set; }
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -10239,7 +10271,7 @@ public double PeriodSeconds { get; set; }
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -10253,7 +10285,7 @@ public double SuccessThreshold { get; set; }
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -10267,7 +10299,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerReadinessProbeTcpSocke
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -10281,7 +10313,7 @@ public double TimeoutSeconds { get; set; }
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -10317,7 +10349,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -10353,7 +10385,7 @@ public double Port { get; set; }
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -10367,7 +10399,7 @@ public string Service { get; set; }
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -10409,7 +10441,7 @@ public string Host { get; set; }
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -10423,7 +10455,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerReadinessProbeHttpGetH
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -10437,7 +10469,7 @@ public string Path { get; set; }
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -10453,7 +10485,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -10467,7 +10499,7 @@ public string Scheme { get; set; }
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -10503,7 +10535,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -10517,7 +10549,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -10553,7 +10585,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -10589,7 +10621,7 @@ public System.Collections.Generic.IDictionary<string, string> Limits { get; set;
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#limits Deployment#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#limits Deployment#limits}
 
 ---
 
@@ -10605,7 +10637,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#requests Deployment#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#requests Deployment#requests}
 
 ---
 
@@ -10657,7 +10689,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#allow_privilege_escalation Deployment#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#allow_privilege_escalation Deployment#allow_privilege_escalation}
 
 ---
 
@@ -10671,7 +10703,7 @@ public DeploymentSpecTemplateSpecInitContainerSecurityContextCapabilities Capabi
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#capabilities Deployment#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#capabilities Deployment#capabilities}
 
 ---
 
@@ -10687,7 +10719,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#privileged Deployment#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#privileged Deployment#privileged}
 
 ---
 
@@ -10701,7 +10733,7 @@ public bool|IResolvable ReadOnlyRootFilesystem { get; set; }
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only_root_filesystem Deployment#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only_root_filesystem Deployment#read_only_root_filesystem}
 
 ---
 
@@ -10717,7 +10749,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
 
 ---
 
@@ -10733,7 +10765,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
 
 ---
 
@@ -10749,7 +10781,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
 
 ---
 
@@ -10763,7 +10795,7 @@ public DeploymentSpecTemplateSpecInitContainerSecurityContextSeccompProfile Secc
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
 
 ---
 
@@ -10777,7 +10809,7 @@ public DeploymentSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions SeLi
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
 
 ---
 
@@ -10813,7 +10845,7 @@ public string[] Add { get; set; }
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#add Deployment#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#add Deployment#add}
 
 ---
 
@@ -10827,7 +10859,7 @@ public string[] Drop { get; set; }
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#drop Deployment#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#drop Deployment#drop}
 
 ---
 
@@ -10865,7 +10897,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
 
 ---
 
@@ -10879,7 +10911,7 @@ public string Type { get; set; }
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -10919,7 +10951,7 @@ public string Level { get; set; }
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#level Deployment#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#level Deployment#level}
 
 ---
 
@@ -10933,7 +10965,7 @@ public string Role { get; set; }
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#role Deployment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#role Deployment#role}
 
 ---
 
@@ -10947,7 +10979,7 @@ public string Type { get; set; }
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -10961,7 +10993,7 @@ public string User { get; set; }
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#user Deployment#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#user Deployment#user}
 
 ---
 
@@ -11011,7 +11043,7 @@ public DeploymentSpecTemplateSpecInitContainerStartupProbeExec Exec { get; set; 
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#exec Deployment#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#exec Deployment#exec}
 
 ---
 
@@ -11025,7 +11057,7 @@ public double FailureThreshold { get; set; }
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#failure_threshold Deployment#failure_threshold}
 
 ---
 
@@ -11039,7 +11071,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerStartupProbeGrpc[] Grp
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#grpc Deployment#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#grpc Deployment#grpc}
 
 ---
 
@@ -11053,7 +11085,7 @@ public DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGet HttpGet { get;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_get Deployment#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_get Deployment#http_get}
 
 ---
 
@@ -11067,7 +11099,7 @@ public double InitialDelaySeconds { get; set; }
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#initial_delay_seconds Deployment#initial_delay_seconds}
 
 ---
 
@@ -11081,7 +11113,7 @@ public double PeriodSeconds { get; set; }
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#period_seconds Deployment#period_seconds}
 
 ---
 
@@ -11095,7 +11127,7 @@ public double SuccessThreshold { get; set; }
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#success_threshold Deployment#success_threshold}
 
 ---
 
@@ -11109,7 +11141,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocket[
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#tcp_socket Deployment#tcp_socket}
 
 ---
 
@@ -11123,7 +11155,7 @@ public double TimeoutSeconds { get; set; }
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#timeout_seconds Deployment#timeout_seconds}
 
 ---
 
@@ -11159,7 +11191,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#command Deployment#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#command Deployment#command}
 
 ---
 
@@ -11195,7 +11227,7 @@ public double Port { get; set; }
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -11209,7 +11241,7 @@ public string Service { get; set; }
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service Deployment#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service Deployment#service}
 
 ---
 
@@ -11251,7 +11283,7 @@ public string Host { get; set; }
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host Deployment#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host Deployment#host}
 
 ---
 
@@ -11265,7 +11297,7 @@ public IResolvable|DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGetHtt
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#http_header Deployment#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#http_header Deployment#http_header}
 
 ---
 
@@ -11279,7 +11311,7 @@ public string Path { get; set; }
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -11295,7 +11327,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -11309,7 +11341,7 @@ public string Scheme { get; set; }
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#scheme Deployment#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#scheme Deployment#scheme}
 
 ---
 
@@ -11345,7 +11377,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -11359,7 +11391,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -11395,7 +11427,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#port Deployment#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#port Deployment#port}
 
 ---
 
@@ -11431,7 +11463,7 @@ public string DevicePath { get; set; }
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#device_path Deployment#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#device_path Deployment#device_path}
 
 ---
 
@@ -11445,7 +11477,7 @@ public string Name { get; set; }
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -11489,7 +11521,7 @@ public string MountPath { get; set; }
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mount_path Deployment#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mount_path Deployment#mount_path}
 
 ---
 
@@ -11503,7 +11535,7 @@ public string Name { get; set; }
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -11519,7 +11551,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mount_propagation Deployment#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mount_propagation Deployment#mount_propagation}
 
 ---
 
@@ -11533,7 +11565,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -11547,7 +11579,7 @@ public string SubPath { get; set; }
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sub_path Deployment#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sub_path Deployment#sub_path}
 
 ---
 
@@ -11561,7 +11593,7 @@ public string SubPathExpr { get; set; }
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sub_path_expr Deployment#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sub_path_expr Deployment#sub_path_expr}
 
 ---
 
@@ -11595,7 +11627,7 @@ public string Name { get; set; }
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -11629,7 +11661,7 @@ public string ConditionType { get; set; }
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#condition_type Deployment#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#condition_type Deployment#condition_type}
 
 ---
 
@@ -11683,7 +11715,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_group Deployment#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_group Deployment#fs_group}
 
 ---
 
@@ -11699,7 +11731,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_group_change_policy Deployment#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_group_change_policy Deployment#fs_group_change_policy}
 
 ---
 
@@ -11715,7 +11747,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_group Deployment#run_as_group}
 
 ---
 
@@ -11731,7 +11763,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_non_root Deployment#run_as_non_root}
 
 ---
 
@@ -11747,7 +11779,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_user Deployment#run_as_user}
 
 ---
 
@@ -11761,7 +11793,7 @@ public DeploymentSpecTemplateSpecSecurityContextSeccompProfile SeccompProfile { 
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#seccomp_profile Deployment#seccomp_profile}
 
 ---
 
@@ -11775,7 +11807,7 @@ public DeploymentSpecTemplateSpecSecurityContextSeLinuxOptions SeLinuxOptions { 
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#se_linux_options Deployment#se_linux_options}
 
 ---
 
@@ -11791,7 +11823,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#supplemental_groups Deployment#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#supplemental_groups Deployment#supplemental_groups}
 
 ---
 
@@ -11805,7 +11837,7 @@ public IResolvable|DeploymentSpecTemplateSpecSecurityContextSysctl[] Sysctl { ge
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sysctl Deployment#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sysctl Deployment#sysctl}
 
 ---
 
@@ -11819,7 +11851,7 @@ public DeploymentSpecTemplateSpecSecurityContextWindowsOptions WindowsOptions { 
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#windows_options Deployment#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#windows_options Deployment#windows_options}
 
 ---
 
@@ -11857,7 +11889,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#localhost_profile Deployment#localhost_profile}
 
 ---
 
@@ -11871,7 +11903,7 @@ public string Type { get; set; }
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -11911,7 +11943,7 @@ public string Level { get; set; }
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#level Deployment#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#level Deployment#level}
 
 ---
 
@@ -11925,7 +11957,7 @@ public string Role { get; set; }
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#role Deployment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#role Deployment#role}
 
 ---
 
@@ -11939,7 +11971,7 @@ public string Type { get; set; }
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -11953,7 +11985,7 @@ public string User { get; set; }
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#user Deployment#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#user Deployment#user}
 
 ---
 
@@ -11989,7 +12021,7 @@ public string Name { get; set; }
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -12003,7 +12035,7 @@ public string Value { get; set; }
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -12043,7 +12075,7 @@ public string GmsaCredentialSpec { get; set; }
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#gmsa_credential_spec Deployment#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#gmsa_credential_spec Deployment#gmsa_credential_spec}
 
 ---
 
@@ -12057,7 +12089,7 @@ public string GmsaCredentialSpecName { get; set; }
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#gmsa_credential_spec_name Deployment#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#gmsa_credential_spec_name Deployment#gmsa_credential_spec_name}
 
 ---
 
@@ -12071,7 +12103,7 @@ public bool|IResolvable HostProcess { get; set; }
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_process Deployment#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_process Deployment#host_process}
 
 ---
 
@@ -12087,7 +12119,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#run_as_username Deployment#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#run_as_username Deployment#run_as_username}
 
 ---
 
@@ -12131,7 +12163,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#effect Deployment#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#effect Deployment#effect}
 
 ---
 
@@ -12147,7 +12179,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -12163,7 +12195,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -12179,7 +12211,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#toleration_seconds Deployment#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#toleration_seconds Deployment#toleration_seconds}
 
 ---
 
@@ -12195,7 +12227,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#value Deployment#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#value Deployment#value}
 
 ---
 
@@ -12243,7 +12275,7 @@ public IResolvable|DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelect
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#label_selector Deployment#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#label_selector Deployment#label_selector}
 
 ---
 
@@ -12257,7 +12289,7 @@ public string[] MatchLabelKeys { get; set; }
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_label_keys Deployment#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_label_keys Deployment#match_label_keys}
 
 ---
 
@@ -12271,7 +12303,7 @@ public double MaxSkew { get; set; }
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#max_skew Deployment#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#max_skew Deployment#max_skew}
 
 ---
 
@@ -12285,7 +12317,7 @@ public double MinDomains { get; set; }
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#min_domains Deployment#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#min_domains Deployment#min_domains}
 
 ---
 
@@ -12299,7 +12331,7 @@ public string NodeAffinityPolicy { get; set; }
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_affinity_policy Deployment#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_affinity_policy Deployment#node_affinity_policy}
 
 ---
 
@@ -12313,7 +12345,7 @@ public string NodeTaintsPolicy { get; set; }
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_taints_policy Deployment#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_taints_policy Deployment#node_taints_policy}
 
 ---
 
@@ -12329,7 +12361,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#topology_key Deployment#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#topology_key Deployment#topology_key}
 
 ---
 
@@ -12343,7 +12375,7 @@ public string WhenUnsatisfiable { get; set; }
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#when_unsatisfiable Deployment#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#when_unsatisfiable Deployment#when_unsatisfiable}
 
 ---
 
@@ -12379,7 +12411,7 @@ public IResolvable|DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelect
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -12395,7 +12427,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -12433,7 +12465,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -12447,7 +12479,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -12463,7 +12495,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -12551,7 +12583,7 @@ public DeploymentSpecTemplateSpecVolumeAwsElasticBlockStore AwsElasticBlockStore
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#aws_elastic_block_store Deployment#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#aws_elastic_block_store Deployment#aws_elastic_block_store}
 
 ---
 
@@ -12565,7 +12597,7 @@ public DeploymentSpecTemplateSpecVolumeAzureDisk AzureDisk { get; set; }
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#azure_disk Deployment#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#azure_disk Deployment#azure_disk}
 
 ---
 
@@ -12579,7 +12611,7 @@ public DeploymentSpecTemplateSpecVolumeAzureFile AzureFile { get; set; }
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#azure_file Deployment#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#azure_file Deployment#azure_file}
 
 ---
 
@@ -12593,7 +12625,7 @@ public DeploymentSpecTemplateSpecVolumeCephFs CephFs { get; set; }
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#ceph_fs Deployment#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#ceph_fs Deployment#ceph_fs}
 
 ---
 
@@ -12607,7 +12639,7 @@ public DeploymentSpecTemplateSpecVolumeCinder Cinder { get; set; }
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#cinder Deployment#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#cinder Deployment#cinder}
 
 ---
 
@@ -12621,7 +12653,7 @@ public DeploymentSpecTemplateSpecVolumeConfigMap ConfigMap { get; set; }
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map Deployment#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map Deployment#config_map}
 
 ---
 
@@ -12635,7 +12667,7 @@ public DeploymentSpecTemplateSpecVolumeCsi Csi { get; set; }
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#csi Deployment#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#csi Deployment#csi}
 
 ---
 
@@ -12649,7 +12681,7 @@ public DeploymentSpecTemplateSpecVolumeDownwardApi DownwardApi { get; set; }
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#downward_api Deployment#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#downward_api Deployment#downward_api}
 
 ---
 
@@ -12663,7 +12695,7 @@ public DeploymentSpecTemplateSpecVolumeEmptyDir EmptyDir { get; set; }
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#empty_dir Deployment#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#empty_dir Deployment#empty_dir}
 
 ---
 
@@ -12677,7 +12709,7 @@ public DeploymentSpecTemplateSpecVolumeEphemeral Ephemeral { get; set; }
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#ephemeral Deployment#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#ephemeral Deployment#ephemeral}
 
 ---
 
@@ -12691,7 +12723,7 @@ public DeploymentSpecTemplateSpecVolumeFc Fc { get; set; }
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fc Deployment#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fc Deployment#fc}
 
 ---
 
@@ -12705,7 +12737,7 @@ public DeploymentSpecTemplateSpecVolumeFlexVolume FlexVolume { get; set; }
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#flex_volume Deployment#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#flex_volume Deployment#flex_volume}
 
 ---
 
@@ -12719,7 +12751,7 @@ public DeploymentSpecTemplateSpecVolumeFlocker Flocker { get; set; }
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#flocker Deployment#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#flocker Deployment#flocker}
 
 ---
 
@@ -12733,7 +12765,7 @@ public DeploymentSpecTemplateSpecVolumeGcePersistentDisk GcePersistentDisk { get
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#gce_persistent_disk Deployment#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#gce_persistent_disk Deployment#gce_persistent_disk}
 
 ---
 
@@ -12747,7 +12779,7 @@ public DeploymentSpecTemplateSpecVolumeGitRepo GitRepo { get; set; }
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#git_repo Deployment#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#git_repo Deployment#git_repo}
 
 ---
 
@@ -12761,7 +12793,7 @@ public DeploymentSpecTemplateSpecVolumeGlusterfs Glusterfs { get; set; }
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#glusterfs Deployment#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#glusterfs Deployment#glusterfs}
 
 ---
 
@@ -12775,7 +12807,7 @@ public DeploymentSpecTemplateSpecVolumeHostPath HostPath { get; set; }
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#host_path Deployment#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#host_path Deployment#host_path}
 
 ---
 
@@ -12789,7 +12821,7 @@ public DeploymentSpecTemplateSpecVolumeIscsi Iscsi { get; set; }
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#iscsi Deployment#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#iscsi Deployment#iscsi}
 
 ---
 
@@ -12803,7 +12835,7 @@ public DeploymentSpecTemplateSpecVolumeLocal Local { get; set; }
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#local Deployment#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#local Deployment#local}
 
 ---
 
@@ -12817,7 +12849,7 @@ public string Name { get; set; }
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -12831,7 +12863,7 @@ public DeploymentSpecTemplateSpecVolumeNfs Nfs { get; set; }
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#nfs Deployment#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#nfs Deployment#nfs}
 
 ---
 
@@ -12845,7 +12877,7 @@ public DeploymentSpecTemplateSpecVolumePersistentVolumeClaim PersistentVolumeCla
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#persistent_volume_claim Deployment#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#persistent_volume_claim Deployment#persistent_volume_claim}
 
 ---
 
@@ -12859,7 +12891,7 @@ public DeploymentSpecTemplateSpecVolumePhotonPersistentDisk PhotonPersistentDisk
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#photon_persistent_disk Deployment#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#photon_persistent_disk Deployment#photon_persistent_disk}
 
 ---
 
@@ -12873,7 +12905,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeProjected[] Projected { get; 
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#projected Deployment#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#projected Deployment#projected}
 
 ---
 
@@ -12887,7 +12919,7 @@ public DeploymentSpecTemplateSpecVolumeQuobyte Quobyte { get; set; }
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#quobyte Deployment#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#quobyte Deployment#quobyte}
 
 ---
 
@@ -12901,7 +12933,7 @@ public DeploymentSpecTemplateSpecVolumeRbd Rbd { get; set; }
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#rbd Deployment#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#rbd Deployment#rbd}
 
 ---
 
@@ -12915,7 +12947,7 @@ public DeploymentSpecTemplateSpecVolumeSecret Secret { get; set; }
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret Deployment#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret Deployment#secret}
 
 ---
 
@@ -12929,7 +12961,7 @@ public DeploymentSpecTemplateSpecVolumeVsphereVolume VsphereVolume { get; set; }
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#vsphere_volume Deployment#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#vsphere_volume Deployment#vsphere_volume}
 
 ---
 
@@ -12969,7 +13001,7 @@ public string VolumeId { get; set; }
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_id Deployment#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_id Deployment#volume_id}
 
 ---
 
@@ -12985,7 +13017,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -13001,7 +13033,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#partition Deployment#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#partition Deployment#partition}
 
 ---
 
@@ -13015,7 +13047,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13059,7 +13091,7 @@ public string CachingMode { get; set; }
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#caching_mode Deployment#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#caching_mode Deployment#caching_mode}
 
 ---
 
@@ -13073,7 +13105,7 @@ public string DataDiskUri { get; set; }
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#data_disk_uri Deployment#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#data_disk_uri Deployment#data_disk_uri}
 
 ---
 
@@ -13087,7 +13119,7 @@ public string DiskName { get; set; }
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#disk_name Deployment#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#disk_name Deployment#disk_name}
 
 ---
 
@@ -13103,7 +13135,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -13117,7 +13149,7 @@ public string Kind { get; set; }
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#kind Deployment#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#kind Deployment#kind}
 
 ---
 
@@ -13131,7 +13163,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13171,7 +13203,7 @@ public string SecretName { get; set; }
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_name Deployment#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_name Deployment#secret_name}
 
 ---
 
@@ -13185,7 +13217,7 @@ public string ShareName { get; set; }
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#share_name Deployment#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#share_name Deployment#share_name}
 
 ---
 
@@ -13199,7 +13231,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13215,7 +13247,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_namespace Deployment#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_namespace Deployment#secret_namespace}
 
 ---
 
@@ -13259,7 +13291,7 @@ public string[] Monitors { get; set; }
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#monitors Deployment#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#monitors Deployment#monitors}
 
 ---
 
@@ -13273,7 +13305,7 @@ public string Path { get; set; }
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -13287,7 +13319,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13301,7 +13333,7 @@ public string SecretFile { get; set; }
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_file Deployment#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_file Deployment#secret_file}
 
 ---
 
@@ -13315,7 +13347,7 @@ public DeploymentSpecTemplateSpecVolumeCephFsSecretRef SecretRef { get; set; }
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
 
 ---
 
@@ -13329,7 +13361,7 @@ public string User { get; set; }
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#user Deployment#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#user Deployment#user}
 
 ---
 
@@ -13365,7 +13397,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -13379,7 +13411,7 @@ public string Namespace { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace Deployment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace Deployment#namespace}
 
 ---
 
@@ -13417,7 +13449,7 @@ public string VolumeId { get; set; }
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_id Deployment#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_id Deployment#volume_id}
 
 ---
 
@@ -13433,7 +13465,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -13447,7 +13479,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13489,7 +13521,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#default_mode Deployment#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#default_mode Deployment#default_mode}
 
 ---
 
@@ -13503,7 +13535,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeConfigMapItems[] Items { get;
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -13517,7 +13549,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -13531,7 +13563,7 @@ public bool|IResolvable Optional { get; set; }
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -13569,7 +13601,7 @@ public string Key { get; set; }
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -13585,7 +13617,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -13601,7 +13633,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -13643,7 +13675,7 @@ public string Driver { get; set; }
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#driver Deployment#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#driver Deployment#driver}
 
 ---
 
@@ -13659,7 +13691,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -13673,7 +13705,7 @@ public DeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRef NodePublishSecret
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#node_publish_secret_ref Deployment#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#node_publish_secret_ref Deployment#node_publish_secret_ref}
 
 ---
 
@@ -13687,7 +13719,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -13701,7 +13733,7 @@ public System.Collections.Generic.IDictionary<string, string> VolumeAttributes {
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_attributes Deployment#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_attributes Deployment#volume_attributes}
 
 ---
 
@@ -13735,7 +13767,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -13773,7 +13805,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#default_mode Deployment#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#default_mode Deployment#default_mode}
 
 ---
 
@@ -13787,7 +13819,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeDownwardApiItems[] Items { ge
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -13827,7 +13859,7 @@ public DeploymentSpecTemplateSpecVolumeDownwardApiItemsFieldRef FieldRef { get; 
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_ref Deployment#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_ref Deployment#field_ref}
 
 ---
 
@@ -13843,7 +13875,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -13859,7 +13891,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -13873,7 +13905,7 @@ public DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef Resource
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
 
 ---
 
@@ -13909,7 +13941,7 @@ public string ApiVersion { get; set; }
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#api_version Deployment#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#api_version Deployment#api_version}
 
 ---
 
@@ -13923,7 +13955,7 @@ public string FieldPath { get; set; }
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_path Deployment#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_path Deployment#field_path}
 
 ---
 
@@ -13945,9 +13977,9 @@ new DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.resource">Resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}. |
 
 ---
 
@@ -13959,7 +13991,7 @@ public string ContainerName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}.
 
 ---
 
@@ -13973,7 +14005,7 @@ public string Resource { get; set; }
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource Deployment#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource Deployment#resource}
 
 ---
 
@@ -13985,7 +14017,7 @@ public string Divisor { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}.
 
 ---
 
@@ -14023,7 +14055,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#medium Deployment#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#medium Deployment#medium}
 
 ---
 
@@ -14037,7 +14069,7 @@ public string SizeLimit { get; set; }
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#size_limit Deployment#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#size_limit Deployment#size_limit}
 
 ---
 
@@ -14071,7 +14103,7 @@ public DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate VolumeClaimT
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_claim_template Deployment#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_claim_template Deployment#volume_claim_template}
 
 ---
 
@@ -14107,7 +14139,7 @@ public DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec Spec { g
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#spec Deployment#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#spec Deployment#spec}
 
 ---
 
@@ -14121,7 +14153,7 @@ public DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata Meta
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#metadata Deployment#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#metadata Deployment#metadata}
 
 ---
 
@@ -14159,7 +14191,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#annotations Deployment#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#annotations Deployment#annotations}
 
 ---
 
@@ -14175,7 +14207,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#labels Deployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#labels Deployment#labels}
 
 ---
 
@@ -14219,7 +14251,7 @@ public string[] AccessModes { get; set; }
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#access_modes Deployment#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#access_modes Deployment#access_modes}
 
 ---
 
@@ -14233,7 +14265,7 @@ public DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resources Deployment#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resources Deployment#resources}
 
 ---
 
@@ -14247,7 +14279,7 @@ public DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector 
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#selector Deployment#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#selector Deployment#selector}
 
 ---
 
@@ -14261,7 +14293,7 @@ public string StorageClassName { get; set; }
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#storage_class_name Deployment#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#storage_class_name Deployment#storage_class_name}
 
 ---
 
@@ -14275,7 +14307,7 @@ public string VolumeMode { get; set; }
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_mode Deployment#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_mode Deployment#volume_mode}
 
 ---
 
@@ -14289,7 +14321,7 @@ public string VolumeName { get; set; }
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_name Deployment#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_name Deployment#volume_name}
 
 ---
 
@@ -14325,7 +14357,7 @@ public System.Collections.Generic.IDictionary<string, string> Limits { get; set;
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#limits Deployment#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#limits Deployment#limits}
 
 ---
 
@@ -14341,7 +14373,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#requests Deployment#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#requests Deployment#requests}
 
 ---
 
@@ -14377,7 +14409,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateS
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_expressions Deployment#match_expressions}
 
 ---
 
@@ -14393,7 +14425,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#match_labels Deployment#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#match_labels Deployment#match_labels}
 
 ---
 
@@ -14431,7 +14463,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -14445,7 +14477,7 @@ public string Operator { get; set; }
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#operator Deployment#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#operator Deployment#operator}
 
 ---
 
@@ -14461,7 +14493,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#values Deployment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#values Deployment#values}
 
 ---
 
@@ -14501,7 +14533,7 @@ public double Lun { get; set; }
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#lun Deployment#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#lun Deployment#lun}
 
 ---
 
@@ -14515,7 +14547,7 @@ public string[] TargetWwNs { get; set; }
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#target_ww_ns Deployment#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#target_ww_ns Deployment#target_ww_ns}
 
 ---
 
@@ -14531,7 +14563,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -14545,7 +14577,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -14587,7 +14619,7 @@ public string Driver { get; set; }
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#driver Deployment#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#driver Deployment#driver}
 
 ---
 
@@ -14603,7 +14635,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -14617,7 +14649,7 @@ public System.Collections.Generic.IDictionary<string, string> Options { get; set
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#options Deployment#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#options Deployment#options}
 
 ---
 
@@ -14631,7 +14663,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -14645,7 +14677,7 @@ public DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRef SecretRef { get; set;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
 
 ---
 
@@ -14681,7 +14713,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -14695,7 +14727,7 @@ public string Namespace { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace Deployment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace Deployment#namespace}
 
 ---
 
@@ -14731,7 +14763,7 @@ public string DatasetName { get; set; }
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#dataset_name Deployment#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#dataset_name Deployment#dataset_name}
 
 ---
 
@@ -14745,7 +14777,7 @@ public string DatasetUuid { get; set; }
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#dataset_uuid Deployment#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#dataset_uuid Deployment#dataset_uuid}
 
 ---
 
@@ -14785,7 +14817,7 @@ public string PdName { get; set; }
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pd_name Deployment#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pd_name Deployment#pd_name}
 
 ---
 
@@ -14801,7 +14833,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -14817,7 +14849,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#partition Deployment#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#partition Deployment#partition}
 
 ---
 
@@ -14831,7 +14863,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -14871,7 +14903,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#directory Deployment#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#directory Deployment#directory}
 
 ---
 
@@ -14885,7 +14917,7 @@ public string Repository { get; set; }
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#repository Deployment#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#repository Deployment#repository}
 
 ---
 
@@ -14899,7 +14931,7 @@ public string Revision { get; set; }
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#revision Deployment#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#revision Deployment#revision}
 
 ---
 
@@ -14937,7 +14969,7 @@ public string EndpointsName { get; set; }
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#endpoints_name Deployment#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#endpoints_name Deployment#endpoints_name}
 
 ---
 
@@ -14951,7 +14983,7 @@ public string Path { get; set; }
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -14965,7 +14997,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -15001,7 +15033,7 @@ public string Path { get; set; }
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15015,7 +15047,7 @@ public string Type { get; set; }
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#type Deployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#type Deployment#type}
 
 ---
 
@@ -15059,7 +15091,7 @@ public string Iqn { get; set; }
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#iqn Deployment#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#iqn Deployment#iqn}
 
 ---
 
@@ -15075,7 +15107,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#target_portal Deployment#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#target_portal Deployment#target_portal}
 
 ---
 
@@ -15091,7 +15123,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -15105,7 +15137,7 @@ public string IscsiInterface { get; set; }
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#iscsi_interface Deployment#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#iscsi_interface Deployment#iscsi_interface}
 
 ---
 
@@ -15119,7 +15151,7 @@ public double Lun { get; set; }
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#lun Deployment#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#lun Deployment#lun}
 
 ---
 
@@ -15133,7 +15165,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -15167,7 +15199,7 @@ public string Path { get; set; }
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15205,7 +15237,7 @@ public string Path { get; set; }
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15219,7 +15251,7 @@ public string Server { get; set; }
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#server Deployment#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#server Deployment#server}
 
 ---
 
@@ -15233,7 +15265,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -15269,7 +15301,7 @@ public string ClaimName { get; set; }
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#claim_name Deployment#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#claim_name Deployment#claim_name}
 
 ---
 
@@ -15283,7 +15315,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -15319,7 +15351,7 @@ public string PdId { get; set; }
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#pd_id Deployment#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#pd_id Deployment#pd_id}
 
 ---
 
@@ -15335,7 +15367,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -15371,7 +15403,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeProjectedSources[] Sources { 
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#sources Deployment#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#sources Deployment#sources}
 
 ---
 
@@ -15387,7 +15419,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#default_mode Deployment#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#default_mode Deployment#default_mode}
 
 ---
 
@@ -15427,7 +15459,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMap[] C
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#config_map Deployment#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#config_map Deployment#config_map}
 
 ---
 
@@ -15441,7 +15473,7 @@ public DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApi DownwardApi {
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#downward_api Deployment#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#downward_api Deployment#downward_api}
 
 ---
 
@@ -15455,7 +15487,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeProjectedSourcesSecret[] Secr
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret Deployment#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret Deployment#secret}
 
 ---
 
@@ -15469,7 +15501,7 @@ public DeploymentSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken Servi
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#service_account_token Deployment#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#service_account_token Deployment#service_account_token}
 
 ---
 
@@ -15507,7 +15539,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItem
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -15521,7 +15553,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -15535,7 +15567,7 @@ public bool|IResolvable Optional { get; set; }
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -15573,7 +15605,7 @@ public string Key { get; set; }
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -15589,7 +15621,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -15605,7 +15637,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15639,7 +15671,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiIt
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -15681,7 +15713,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -15695,7 +15727,7 @@ public DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef 
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_ref Deployment#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_ref Deployment#field_ref}
 
 ---
 
@@ -15711,7 +15743,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -15725,7 +15757,7 @@ public DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceF
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource_field_ref Deployment#resource_field_ref}
 
 ---
 
@@ -15761,7 +15793,7 @@ public string ApiVersion { get; set; }
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#api_version Deployment#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#api_version Deployment#api_version}
 
 ---
 
@@ -15775,7 +15807,7 @@ public string FieldPath { get; set; }
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#field_path Deployment#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#field_path Deployment#field_path}
 
 ---
 
@@ -15797,9 +15829,9 @@ new DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFiel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">Resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">Divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}. |
 
 ---
 
@@ -15811,7 +15843,7 @@ public string ContainerName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#container_name Deployment#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#container_name Deployment#container_name}.
 
 ---
 
@@ -15825,7 +15857,7 @@ public string Resource { get; set; }
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#resource Deployment#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#resource Deployment#resource}
 
 ---
 
@@ -15837,7 +15869,7 @@ public string Divisor { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#divisor Deployment#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#divisor Deployment#divisor}.
 
 ---
 
@@ -15875,7 +15907,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeProjectedSourcesSecretItems[]
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -15889,7 +15921,7 @@ public string Name { get; set; }
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -15903,7 +15935,7 @@ public bool|IResolvable Optional { get; set; }
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -15941,7 +15973,7 @@ public string Key { get; set; }
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -15957,7 +15989,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -15973,7 +16005,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -16011,7 +16043,7 @@ public string Path { get; set; }
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -16025,7 +16057,7 @@ public string Audience { get; set; }
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#audience Deployment#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#audience Deployment#audience}
 
 ---
 
@@ -16041,7 +16073,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#expiration_seconds Deployment#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#expiration_seconds Deployment#expiration_seconds}
 
 ---
 
@@ -16083,7 +16115,7 @@ public string Registry { get; set; }
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#registry Deployment#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#registry Deployment#registry}
 
 ---
 
@@ -16097,7 +16129,7 @@ public string Volume { get; set; }
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume Deployment#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume Deployment#volume}
 
 ---
 
@@ -16111,7 +16143,7 @@ public string Group { get; set; }
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#group Deployment#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#group Deployment#group}
 
 ---
 
@@ -16125,7 +16157,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -16139,7 +16171,7 @@ public string User { get; set; }
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#user Deployment#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#user Deployment#user}
 
 ---
 
@@ -16187,7 +16219,7 @@ public string[] CephMonitors { get; set; }
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#ceph_monitors Deployment#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#ceph_monitors Deployment#ceph_monitors}
 
 ---
 
@@ -16201,7 +16233,7 @@ public string RbdImage { get; set; }
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#rbd_image Deployment#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#rbd_image Deployment#rbd_image}
 
 ---
 
@@ -16217,7 +16249,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -16231,7 +16263,7 @@ public string Keyring { get; set; }
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#keyring Deployment#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#keyring Deployment#keyring}
 
 ---
 
@@ -16245,7 +16277,7 @@ public string RadosUser { get; set; }
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#rados_user Deployment#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#rados_user Deployment#rados_user}
 
 ---
 
@@ -16259,7 +16291,7 @@ public string RbdPool { get; set; }
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#rbd_pool Deployment#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#rbd_pool Deployment#rbd_pool}
 
 ---
 
@@ -16273,7 +16305,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#read_only Deployment#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#read_only Deployment#read_only}
 
 ---
 
@@ -16287,7 +16319,7 @@ public DeploymentSpecTemplateSpecVolumeRbdSecretRef SecretRef { get; set; }
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_ref Deployment#secret_ref}
 
 ---
 
@@ -16323,7 +16355,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#name Deployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#name Deployment#name}
 
 ---
 
@@ -16337,7 +16369,7 @@ public string Namespace { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#namespace Deployment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#namespace Deployment#namespace}
 
 ---
 
@@ -16379,7 +16411,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#default_mode Deployment#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#default_mode Deployment#default_mode}
 
 ---
 
@@ -16393,7 +16425,7 @@ public IResolvable|DeploymentSpecTemplateSpecVolumeSecretItems[] Items { get; se
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#items Deployment#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#items Deployment#items}
 
 ---
 
@@ -16407,7 +16439,7 @@ public bool|IResolvable Optional { get; set; }
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#optional Deployment#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#optional Deployment#optional}
 
 ---
 
@@ -16421,7 +16453,7 @@ public string SecretName { get; set; }
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#secret_name Deployment#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#secret_name Deployment#secret_name}
 
 ---
 
@@ -16459,7 +16491,7 @@ public string Key { get; set; }
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#key Deployment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#key Deployment#key}
 
 ---
 
@@ -16475,7 +16507,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#mode Deployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#mode Deployment#mode}
 
 ---
 
@@ -16491,7 +16523,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#path Deployment#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#path Deployment#path}
 
 ---
 
@@ -16527,7 +16559,7 @@ public string VolumePath { get; set; }
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#volume_path Deployment#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#volume_path Deployment#volume_path}
 
 ---
 
@@ -16543,7 +16575,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#fs_type Deployment#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#fs_type Deployment#fs_type}
 
 ---
 
@@ -16565,9 +16597,9 @@ new DeploymentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#create Deployment#create}. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#delete Deployment#delete}. |
-| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#update Deployment#update}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#create Deployment#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#delete Deployment#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#update Deployment#update}. |
 
 ---
 
@@ -16579,7 +16611,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#create Deployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#create Deployment#create}.
 
 ---
 
@@ -16591,7 +16623,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#delete Deployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#delete Deployment#delete}.
 
 ---
 
@@ -16603,7 +16635,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/deployment#update Deployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/deployment#update Deployment#update}.
 
 ---
 
@@ -46704,6 +46736,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetReadinessProbe">ResetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetRestartPolicy">ResetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetSecurityContext">ResetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetStartupProbe">ResetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetStdin">ResetStdin</a></code> | *No description.* |
@@ -47065,6 +47098,12 @@ private void ResetReadinessProbe()
 private void ResetResources()
 ```
 
+##### `ResetRestartPolicy` <a name="ResetRestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetRestartPolicy"></a>
+
+```csharp
+private void ResetRestartPolicy()
+```
+
 ##### `ResetSecurityContext` <a name="ResetSecurityContext" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.resetSecurityContext"></a>
 
 ```csharp
@@ -47155,6 +47194,7 @@ private void ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.portInput">PortInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerPort">DeploymentSpecTemplateSpecContainerPort</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.readinessProbeInput">ReadinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbe">DeploymentSpecTemplateSpecContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerResources">DeploymentSpecTemplateSpecContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.restartPolicyInput">RestartPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.securityContextInput">SecurityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerSecurityContext">DeploymentSpecTemplateSpecContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.startupProbeInput">StartupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerStartupProbe">DeploymentSpecTemplateSpecContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.stdinInput">StdinInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -47170,6 +47210,7 @@ private void ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.image">Image</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.imagePullPolicy">ImagePullPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.restartPolicy">RestartPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.stdin">Stdin</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.stdinOnce">StdinOnce</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.terminationMessagePath">TerminationMessagePath</a></code> | <code>string</code> | *No description.* |
@@ -47434,6 +47475,16 @@ public DeploymentSpecTemplateSpecContainerResources ResourcesInput { get; }
 
 ---
 
+##### `RestartPolicyInput`<sup>Optional</sup> <a name="RestartPolicyInput" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.restartPolicyInput"></a>
+
+```csharp
+public string RestartPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `SecurityContextInput`<sup>Optional</sup> <a name="SecurityContextInput" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.securityContextInput"></a>
 
 ```csharp
@@ -47578,6 +47629,16 @@ public string ImagePullPolicy { get; }
 
 ```csharp
 public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RestartPolicy`<sup>Required</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerOutputReference.property.restartPolicy"></a>
+
+```csharp
+public string RestartPolicy { get; }
 ```
 
 - *Type:* string
@@ -69149,6 +69210,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetReadinessProbe">ResetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy">ResetRestartPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetSecurityContext">ResetSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetStartupProbe">ResetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetStdin">ResetStdin</a></code> | *No description.* |
@@ -69510,6 +69572,12 @@ private void ResetReadinessProbe()
 private void ResetResources()
 ```
 
+##### `ResetRestartPolicy` <a name="ResetRestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetRestartPolicy"></a>
+
+```csharp
+private void ResetRestartPolicy()
+```
+
 ##### `ResetSecurityContext` <a name="ResetSecurityContext" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.resetSecurityContext"></a>
 
 ```csharp
@@ -69600,6 +69668,7 @@ private void ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.portInput">PortInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerPort">DeploymentSpecTemplateSpecInitContainerPort</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.readinessProbeInput">ReadinessProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbe">DeploymentSpecTemplateSpecInitContainerReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerResources">DeploymentSpecTemplateSpecInitContainerResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput">RestartPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.securityContextInput">SecurityContextInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerSecurityContext">DeploymentSpecTemplateSpecInitContainerSecurityContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.startupProbeInput">StartupProbeInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbe">DeploymentSpecTemplateSpecInitContainerStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.stdinInput">StdinInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -69615,6 +69684,7 @@ private void ResetWorkingDir()
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.image">Image</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.imagePullPolicy">ImagePullPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.restartPolicy">RestartPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.stdin">Stdin</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.stdinOnce">StdinOnce</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.terminationMessagePath">TerminationMessagePath</a></code> | <code>string</code> | *No description.* |
@@ -69879,6 +69949,16 @@ public DeploymentSpecTemplateSpecInitContainerResources ResourcesInput { get; }
 
 ---
 
+##### `RestartPolicyInput`<sup>Optional</sup> <a name="RestartPolicyInput" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.restartPolicyInput"></a>
+
+```csharp
+public string RestartPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `SecurityContextInput`<sup>Optional</sup> <a name="SecurityContextInput" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.securityContextInput"></a>
 
 ```csharp
@@ -70023,6 +70103,16 @@ public string ImagePullPolicy { get; }
 
 ```csharp
 public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RestartPolicy`<sup>Required</sup> <a name="RestartPolicy" id="@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerOutputReference.property.restartPolicy"></a>
+
+```csharp
+public string RestartPolicy { get; }
 ```
 
 - *Type:* string
