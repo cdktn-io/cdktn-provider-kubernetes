@@ -6955,6 +6955,11 @@ export class DataKubernetesPodSpecContainerOutputReference extends cdktn.Complex
     return this._resources;
   }
 
+  // restart_policy - computed: true, optional: false, required: false
+  public get restartPolicy() {
+    return this.getStringAttribute('restart_policy');
+  }
+
   // security_context - computed: true, optional: false, required: false
   private _securityContext = new DataKubernetesPodSpecContainerSecurityContextList(this, "security_context", false);
   public get securityContext() {

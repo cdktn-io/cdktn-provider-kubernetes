@@ -58,8 +58,6 @@ Object.defineProperty(exports, 'persistentVolumeV1', { get: function () { return
 Object.defineProperty(exports, 'pod', { get: function () { return require('./pod'); } });
 Object.defineProperty(exports, 'podDisruptionBudget', { get: function () { return require('./pod-disruption-budget'); } });
 Object.defineProperty(exports, 'podDisruptionBudgetV1', { get: function () { return require('./pod-disruption-budget-v1'); } });
-Object.defineProperty(exports, 'podSecurityPolicy', { get: function () { return require('./pod-security-policy'); } });
-Object.defineProperty(exports, 'podSecurityPolicyV1Beta1', { get: function () { return require('./pod-security-policy-v1beta1'); } });
 Object.defineProperty(exports, 'podV1', { get: function () { return require('./pod-v1'); } });
 Object.defineProperty(exports, 'priorityClass', { get: function () { return require('./priority-class'); } });
 Object.defineProperty(exports, 'priorityClassV1', { get: function () { return require('./priority-class-v1'); } });
@@ -84,11 +82,13 @@ Object.defineProperty(exports, 'statefulSetV1', { get: function () { return requ
 Object.defineProperty(exports, 'storageClass', { get: function () { return require('./storage-class'); } });
 Object.defineProperty(exports, 'storageClassV1', { get: function () { return require('./storage-class-v1'); } });
 Object.defineProperty(exports, 'tokenRequestV1', { get: function () { return require('./token-request-v1'); } });
+Object.defineProperty(exports, 'validatingAdmissionPolicyV1', { get: function () { return require('./validating-admission-policy-v1'); } });
 Object.defineProperty(exports, 'validatingWebhookConfiguration', { get: function () { return require('./validating-webhook-configuration'); } });
 Object.defineProperty(exports, 'validatingWebhookConfigurationV1', { get: function () { return require('./validating-webhook-configuration-v1'); } });
 Object.defineProperty(exports, 'dataKubernetesAllNamespaces', { get: function () { return require('./data-kubernetes-all-namespaces'); } });
 Object.defineProperty(exports, 'dataKubernetesConfigMap', { get: function () { return require('./data-kubernetes-config-map'); } });
 Object.defineProperty(exports, 'dataKubernetesConfigMapV1', { get: function () { return require('./data-kubernetes-config-map-v1'); } });
+Object.defineProperty(exports, 'dataKubernetesEndpointSliceV1', { get: function () { return require('./data-kubernetes-endpoint-slice-v1'); } });
 Object.defineProperty(exports, 'dataKubernetesEndpointsV1', { get: function () { return require('./data-kubernetes-endpoints-v1'); } });
 Object.defineProperty(exports, 'dataKubernetesIngress', { get: function () { return require('./data-kubernetes-ingress'); } });
 Object.defineProperty(exports, 'dataKubernetesIngressV1', { get: function () { return require('./data-kubernetes-ingress-v1'); } });
