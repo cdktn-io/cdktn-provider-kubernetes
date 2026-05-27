@@ -16,8 +16,8 @@ DaemonSetV1SpecOutputReference,
 DaemonSetV1Timeouts, 
 daemonSetV1TimeoutsToTerraform, 
 daemonSetV1TimeoutsToHclTerraform, 
-DaemonSetV1TimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+DaemonSetV1TimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface DaemonSetV1Config extends cdktn.TerraformMetaArguments {

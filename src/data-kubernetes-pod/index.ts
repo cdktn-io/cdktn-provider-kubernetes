@@ -9,8 +9,8 @@ import { DataKubernetesPodSpecList,
 DataKubernetesPodMetadata, 
 dataKubernetesPodMetadataToTerraform, 
 dataKubernetesPodMetadataToHclTerraform, 
-DataKubernetesPodMetadataOutputReference} from './index-structs'
-export * from './index-structs'
+DataKubernetesPodMetadataOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface DataKubernetesPodConfig extends cdktn.TerraformMetaArguments {

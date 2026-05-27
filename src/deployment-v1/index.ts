@@ -16,8 +16,8 @@ DeploymentV1SpecOutputReference,
 DeploymentV1Timeouts, 
 deploymentV1TimeoutsToTerraform, 
 deploymentV1TimeoutsToHclTerraform, 
-DeploymentV1TimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+DeploymentV1TimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface DeploymentV1Config extends cdktn.TerraformMetaArguments {

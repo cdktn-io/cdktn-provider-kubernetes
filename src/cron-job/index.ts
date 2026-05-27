@@ -16,8 +16,8 @@ CronJobSpecOutputReference,
 CronJobTimeouts, 
 cronJobTimeoutsToTerraform, 
 cronJobTimeoutsToHclTerraform, 
-CronJobTimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+CronJobTimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CronJobConfig extends cdktn.TerraformMetaArguments {
