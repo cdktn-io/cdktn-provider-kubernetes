@@ -16,8 +16,8 @@ JobV1SpecOutputReference,
 JobV1Timeouts, 
 jobV1TimeoutsToTerraform, 
 jobV1TimeoutsToHclTerraform, 
-JobV1TimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+JobV1TimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface JobV1Config extends cdktn.TerraformMetaArguments {

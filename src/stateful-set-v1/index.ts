@@ -16,8 +16,8 @@ StatefulSetV1SpecOutputReference,
 StatefulSetV1Timeouts, 
 statefulSetV1TimeoutsToTerraform, 
 statefulSetV1TimeoutsToHclTerraform, 
-StatefulSetV1TimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+StatefulSetV1TimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface StatefulSetV1Config extends cdktn.TerraformMetaArguments {

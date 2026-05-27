@@ -16,8 +16,8 @@ StatefulSetSpecOutputReference,
 StatefulSetTimeouts, 
 statefulSetTimeoutsToTerraform, 
 statefulSetTimeoutsToHclTerraform, 
-StatefulSetTimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+StatefulSetTimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface StatefulSetConfig extends cdktn.TerraformMetaArguments {

@@ -16,8 +16,8 @@ DaemonsetSpecOutputReference,
 DaemonsetTimeouts, 
 daemonsetTimeoutsToTerraform, 
 daemonsetTimeoutsToHclTerraform, 
-DaemonsetTimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+DaemonsetTimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface DaemonsetConfig extends cdktn.TerraformMetaArguments {

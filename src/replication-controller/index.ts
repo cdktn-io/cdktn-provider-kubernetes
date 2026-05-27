@@ -16,8 +16,8 @@ ReplicationControllerSpecOutputReference,
 ReplicationControllerTimeouts, 
 replicationControllerTimeoutsToTerraform, 
 replicationControllerTimeoutsToHclTerraform, 
-ReplicationControllerTimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+ReplicationControllerTimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface ReplicationControllerConfig extends cdktn.TerraformMetaArguments {

@@ -16,8 +16,8 @@ PodV1SpecOutputReference,
 PodV1Timeouts, 
 podV1TimeoutsToTerraform, 
 podV1TimeoutsToHclTerraform, 
-PodV1TimeoutsOutputReference} from './index-structs'
-export * from './index-structs'
+PodV1TimeoutsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface PodV1Config extends cdktn.TerraformMetaArguments {
