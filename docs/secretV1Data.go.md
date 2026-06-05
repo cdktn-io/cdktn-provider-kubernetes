@@ -4,7 +4,7 @@
 
 ### SecretV1Data <a name="SecretV1Data" id="@cdktn/provider-kubernetes.secretV1Data.SecretV1Data"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret_v1_data kubernetes_secret_v1_data}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret_v1_data kubernetes_secret_v1_data}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.secretV1Data.SecretV1Data.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the SecretV1Data to import.
 
 The id of the existing SecretV1Data that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret_v1_data#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret_v1_data#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/secretv1
 | <code><a href="#@cdktn/provider-kubernetes.secretV1Data.SecretV1DataConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.secretV1Data.SecretV1DataMetadata">SecretV1DataMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.secretV1Data.SecretV1DataConfig.property.fieldManager">FieldManager</a></code> | <code>*string</code> | Set the name of the field manager for the specified labels. |
 | <code><a href="#@cdktn/provider-kubernetes.secretV1Data.SecretV1DataConfig.property.force">Force</a></code> | <code>interface{}</code> | Flag to force updates to the Kubernetes Secret. |
-| <code><a href="#@cdktn/provider-kubernetes.secretV1Data.SecretV1DataConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret_v1_data#id SecretV1Data#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.secretV1Data.SecretV1DataConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret_v1_data#id SecretV1Data#id}. |
 
 ---
 
@@ -950,7 +950,7 @@ Data *map[string]*string
 
 Data to be stored in the Kubernetes Secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret_v1_data#data SecretV1Data#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret_v1_data#data SecretV1Data#data}
 
 ---
 
@@ -964,7 +964,7 @@ Metadata SecretV1DataMetadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret_v1_data#metadata SecretV1Data#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret_v1_data#metadata SecretV1Data#metadata}
 
 ---
 
@@ -978,7 +978,7 @@ FieldManager *string
 
 Set the name of the field manager for the specified labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret_v1_data#field_manager SecretV1Data#field_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret_v1_data#field_manager SecretV1Data#field_manager}
 
 ---
 
@@ -992,7 +992,7 @@ Force interface{}
 
 Flag to force updates to the Kubernetes Secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret_v1_data#force SecretV1Data#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret_v1_data#force SecretV1Data#force}
 
 ---
 
@@ -1004,7 +1004,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret_v1_data#id SecretV1Data#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret_v1_data#id SecretV1Data#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1043,7 +1043,7 @@ Name *string
 
 The name of the Secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret_v1_data#name SecretV1Data#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret_v1_data#name SecretV1Data#name}
 
 ---
 
@@ -1057,7 +1057,7 @@ Namespace *string
 
 The namespace of the Secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret_v1_data#namespace SecretV1Data#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret_v1_data#namespace SecretV1Data#namespace}
 
 ---
 

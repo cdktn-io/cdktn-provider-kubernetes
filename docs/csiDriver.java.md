@@ -4,7 +4,7 @@
 
 ### CsiDriver <a name="CsiDriver" id="@cdktn/provider-kubernetes.csiDriver.CsiDriver"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver kubernetes_csi_driver}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver kubernetes_csi_driver}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.csiDriver.CsiDriver.Initializer"></a>
 
@@ -37,7 +37,7 @@ CsiDriver.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriver.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriver.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriver.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriverMetadata">CsiDriverMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriver.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#id CsiDriver#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriver.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#id CsiDriver#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriver.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriverSpec">CsiDriverSpec</a></code> | spec block. |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#metadata CsiDriver#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#metadata CsiDriver#metadata}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#id CsiDriver#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#id CsiDriver#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#spec CsiDriver#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#spec CsiDriver#spec}
 
 ---
 
@@ -618,7 +618,7 @@ The construct id used in the generated config for the CsiDriver to import.
 
 The id of the existing CsiDriver that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,7 +912,7 @@ CsiDriverConfig.builder()
 | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriverConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriverConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriverConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriverMetadata">CsiDriverMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriverConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#id CsiDriver#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriverConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#id CsiDriver#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriverConfig.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.csiDriver.CsiDriverSpec">CsiDriverSpec</a></code> | spec block. |
 
 ---
@@ -997,7 +997,7 @@ public CsiDriverMetadata getMetadata();
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#metadata CsiDriver#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#metadata CsiDriver#metadata}
 
 ---
 
@@ -1009,7 +1009,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#id CsiDriver#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#id CsiDriver#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1026,7 +1026,7 @@ public CsiDriverSpec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#spec CsiDriver#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#spec CsiDriver#spec}
 
 ---
 
@@ -1068,7 +1068,7 @@ An unstructured key value map stored with the csi driver that may be used to sto
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#annotations CsiDriver#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#annotations CsiDriver#annotations}
 
 ---
 
@@ -1084,7 +1084,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#generate_name CsiDriver#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#generate_name CsiDriver#generate_name}
 
 ---
 
@@ -1100,7 +1100,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#labels CsiDriver#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#labels CsiDriver#labels}
 
 ---
 
@@ -1114,7 +1114,7 @@ public java.lang.String getName();
 
 Name of the csi driver, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#name CsiDriver#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#name CsiDriver#name}
 
 ---
 
@@ -1152,7 +1152,7 @@ public java.lang.Boolean|IResolvable getAttachRequired();
 
 Indicates if the CSI volume driver requires an attach operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#attach_required CsiDriver#attach_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#attach_required CsiDriver#attach_required}
 
 ---
 
@@ -1166,7 +1166,7 @@ public java.lang.Boolean|IResolvable getPodInfoOnMount();
 
 Indicates that the CSI volume driver requires additional pod information (like podName, podUID, etc.) during mount operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#pod_info_on_mount CsiDriver#pod_info_on_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#pod_info_on_mount CsiDriver#pod_info_on_mount}
 
 ---
 
@@ -1180,7 +1180,7 @@ public java.util.List<java.lang.String> getVolumeLifecycleModes();
 
 Defines what kind of volumes this CSI volume driver supports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/csi_driver#volume_lifecycle_modes CsiDriver#volume_lifecycle_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/csi_driver#volume_lifecycle_modes CsiDriver#volume_lifecycle_modes}
 
 ---
 

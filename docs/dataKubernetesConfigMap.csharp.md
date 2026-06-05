@@ -4,7 +4,7 @@
 
 ### DataKubernetesConfigMap <a name="DataKubernetesConfigMap" id="@cdktn/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/config_map kubernetes_config_map}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/config_map kubernetes_config_map}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataKubernetesConfigMap to
 
 The id of the existing DataKubernetesConfigMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/config_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/config_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,7 +708,7 @@ new DataKubernetesConfigMapConfig {
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMapConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMapConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMapConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMapMetadata">DataKubernetesConfigMapMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/config_map#id DataKubernetesConfigMap#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/config_map#id DataKubernetesConfigMap#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMapConfig.property.immutable">Immutable</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Immutable, if set to true, ensures that data stored in the ConfigMap cannot be updated (only object metadata can be modified). |
 
 ---
@@ -793,7 +793,7 @@ public DataKubernetesConfigMapMetadata Metadata { get; set; }
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/config_map#metadata DataKubernetesConfigMap#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/config_map#metadata DataKubernetesConfigMap#metadata}
 
 ---
 
@@ -805,7 +805,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/config_map#id DataKubernetesConfigMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/config_map#id DataKubernetesConfigMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -824,7 +824,7 @@ Immutable, if set to true, ensures that data stored in the ConfigMap cannot be u
 
 If not set to true, the field can be modified at any time. Defaulted to nil.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/config_map#immutable DataKubernetesConfigMap#immutable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/config_map#immutable DataKubernetesConfigMap#immutable}
 
 ---
 
@@ -866,7 +866,7 @@ An unstructured key value map stored with the config_map that may be used to sto
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/config_map#annotations DataKubernetesConfigMap#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/config_map#annotations DataKubernetesConfigMap#annotations}
 
 ---
 
@@ -882,7 +882,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/config_map#labels DataKubernetesConfigMap#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/config_map#labels DataKubernetesConfigMap#labels}
 
 ---
 
@@ -896,7 +896,7 @@ public string Name { get; set; }
 
 Name of the config_map, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/config_map#name DataKubernetesConfigMap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/config_map#name DataKubernetesConfigMap#name}
 
 ---
 
@@ -910,7 +910,7 @@ public string Namespace { get; set; }
 
 Namespace defines the space within which name of the config_map must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/config_map#namespace DataKubernetesConfigMap#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/config_map#namespace DataKubernetesConfigMap#namespace}
 
 ---
 
