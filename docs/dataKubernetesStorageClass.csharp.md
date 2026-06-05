@@ -4,7 +4,7 @@
 
 ### DataKubernetesStorageClass <a name="DataKubernetesStorageClass" id="@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class kubernetes_storage_class}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class kubernetes_storage_class}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass.Initializer"></a>
 
@@ -462,7 +462,7 @@ The construct id used in the generated config for the DataKubernetesStorageClass
 
 The id of the existing DataKubernetesStorageClass that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,7 +852,7 @@ public IResolvable|DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressi
 
 match_label_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#match_label_expressions DataKubernetesStorageClass#match_label_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#match_label_expressions DataKubernetesStorageClass#match_label_expressions}
 
 ---
 
@@ -888,7 +888,7 @@ public string Key { get; set; }
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#key DataKubernetesStorageClass#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#key DataKubernetesStorageClass#key}
 
 ---
 
@@ -902,7 +902,7 @@ public string[] Values { get; set; }
 
 An array of string values. One value must match the label to be selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#values DataKubernetesStorageClass#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#values DataKubernetesStorageClass#values}
 
 ---
 
@@ -946,7 +946,7 @@ new DataKubernetesStorageClassConfig {
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassMetadata">DataKubernetesStorageClassMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassConfig.property.allowedTopologies">AllowedTopologies</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassAllowedTopologies">DataKubernetesStorageClassAllowedTopologies</a></code> | allowed_topologies block. |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassConfig.property.allowVolumeExpansion">AllowVolumeExpansion</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Indicates whether the storage class allow volume expand. |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#id DataKubernetesStorageClass#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#id DataKubernetesStorageClass#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassConfig.property.mountOptions">MountOptions</a></code> | <code>string[]</code> | Persistent Volumes that are dynamically created by a storage class will have the mount options specified. |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassConfig.property.parameters">Parameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | The parameters for the provisioner that should create volumes of this storage class. |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassConfig.property.reclaimPolicy">ReclaimPolicy</a></code> | <code>string</code> | Indicates the type of the reclaim policy. |
@@ -1034,7 +1034,7 @@ public DataKubernetesStorageClassMetadata Metadata { get; set; }
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#metadata DataKubernetesStorageClass#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#metadata DataKubernetesStorageClass#metadata}
 
 ---
 
@@ -1048,7 +1048,7 @@ public DataKubernetesStorageClassAllowedTopologies AllowedTopologies { get; set;
 
 allowed_topologies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#allowed_topologies DataKubernetesStorageClass#allowed_topologies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#allowed_topologies DataKubernetesStorageClass#allowed_topologies}
 
 ---
 
@@ -1062,7 +1062,7 @@ public bool|IResolvable AllowVolumeExpansion { get; set; }
 
 Indicates whether the storage class allow volume expand.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#allow_volume_expansion DataKubernetesStorageClass#allow_volume_expansion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#allow_volume_expansion DataKubernetesStorageClass#allow_volume_expansion}
 
 ---
 
@@ -1074,7 +1074,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#id DataKubernetesStorageClass#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#id DataKubernetesStorageClass#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ public string[] MountOptions { get; set; }
 
 Persistent Volumes that are dynamically created by a storage class will have the mount options specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#mount_options DataKubernetesStorageClass#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#mount_options DataKubernetesStorageClass#mount_options}
 
 ---
 
@@ -1105,7 +1105,7 @@ public System.Collections.Generic.IDictionary<string, string> Parameters { get; 
 
 The parameters for the provisioner that should create volumes of this storage class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#parameters DataKubernetesStorageClass#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#parameters DataKubernetesStorageClass#parameters}
 
 ---
 
@@ -1119,7 +1119,7 @@ public string ReclaimPolicy { get; set; }
 
 Indicates the type of the reclaim policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#reclaim_policy DataKubernetesStorageClass#reclaim_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#reclaim_policy DataKubernetesStorageClass#reclaim_policy}
 
 ---
 
@@ -1133,7 +1133,7 @@ public string VolumeBindingMode { get; set; }
 
 Indicates when volume binding and dynamic provisioning should occur.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#volume_binding_mode DataKubernetesStorageClass#volume_binding_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#volume_binding_mode DataKubernetesStorageClass#volume_binding_mode}
 
 ---
 
@@ -1173,7 +1173,7 @@ An unstructured key value map stored with the storage class that may be used to 
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#annotations DataKubernetesStorageClass#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#annotations DataKubernetesStorageClass#annotations}
 
 ---
 
@@ -1189,7 +1189,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#labels DataKubernetesStorageClass#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#labels DataKubernetesStorageClass#labels}
 
 ---
 
@@ -1203,7 +1203,7 @@ public string Name { get; set; }
 
 Name of the storage class, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/data-sources/storage_class#name DataKubernetesStorageClass#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/storage_class#name DataKubernetesStorageClass#name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### NodeTaint <a name="NodeTaint" id="@cdktn/provider-kubernetes.nodeTaint.NodeTaint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint kubernetes_node_taint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint kubernetes_node_taint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.nodeTaint.NodeTaint.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the NodeTaint to import.
 
 The id of the existing NodeTaint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,7 +879,7 @@ new NodeTaintConfig {
 | <code><a href="#@cdktn/provider-kubernetes.nodeTaint.NodeTaintConfig.property.taint">Taint</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.nodeTaint.NodeTaintTaint">NodeTaintTaint</a>[]</code> | taint block. |
 | <code><a href="#@cdktn/provider-kubernetes.nodeTaint.NodeTaintConfig.property.fieldManager">FieldManager</a></code> | <code>string</code> | Set the name of the field manager for the node taint. |
 | <code><a href="#@cdktn/provider-kubernetes.nodeTaint.NodeTaintConfig.property.force">Force</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Force overwriting annotations that were created or edited outside of Terraform. |
-| <code><a href="#@cdktn/provider-kubernetes.nodeTaint.NodeTaintConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#id NodeTaint#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.nodeTaint.NodeTaintConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#id NodeTaint#id}. |
 
 ---
 
@@ -963,7 +963,7 @@ public NodeTaintMetadata Metadata { get; set; }
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#metadata NodeTaint#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#metadata NodeTaint#metadata}
 
 ---
 
@@ -977,7 +977,7 @@ public IResolvable|NodeTaintTaint[] Taint { get; set; }
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#taint NodeTaint#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#taint NodeTaint#taint}
 
 ---
 
@@ -991,7 +991,7 @@ public string FieldManager { get; set; }
 
 Set the name of the field manager for the node taint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#field_manager NodeTaint#field_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#field_manager NodeTaint#field_manager}
 
 ---
 
@@ -1005,7 +1005,7 @@ public bool|IResolvable Force { get; set; }
 
 Force overwriting annotations that were created or edited outside of Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#force NodeTaint#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#force NodeTaint#force}
 
 ---
 
@@ -1017,7 +1017,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#id NodeTaint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#id NodeTaint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1054,7 +1054,7 @@ public string Name { get; set; }
 
 The name of the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#name NodeTaint#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#name NodeTaint#name}
 
 ---
 
@@ -1092,7 +1092,7 @@ public string Effect { get; set; }
 
 The taint effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#effect NodeTaint#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#effect NodeTaint#effect}
 
 ---
 
@@ -1106,7 +1106,7 @@ public string Key { get; set; }
 
 The taint key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#key NodeTaint#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#key NodeTaint#key}
 
 ---
 
@@ -1120,7 +1120,7 @@ public string Value { get; set; }
 
 The taint value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/node_taint#value NodeTaint#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/node_taint#value NodeTaint#value}
 
 ---
 

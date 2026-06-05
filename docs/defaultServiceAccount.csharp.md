@@ -4,7 +4,7 @@
 
 ### DefaultServiceAccount <a name="DefaultServiceAccount" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account kubernetes_default_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account kubernetes_default_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount.Initializer"></a>
 
@@ -576,7 +576,7 @@ The construct id used in the generated config for the DefaultServiceAccount to i
 
 The id of the existing DefaultServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,7 +951,7 @@ new DefaultServiceAccountConfig {
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadata">DefaultServiceAccountMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.automountServiceAccountToken">AutomountServiceAccountToken</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Enable automatic mounting of the service account token. |
-| <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#id DefaultServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#id DefaultServiceAccount#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.imagePullSecret">ImagePullSecret</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecret">DefaultServiceAccountImagePullSecret</a>[]</code> | image_pull_secret block. |
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.secret">Secret</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecret">DefaultServiceAccountSecret</a>[]</code> | secret block. |
 | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts">DefaultServiceAccountTimeouts</a></code> | timeouts block. |
@@ -1038,7 +1038,7 @@ public DefaultServiceAccountMetadata Metadata { get; set; }
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#metadata DefaultServiceAccount#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#metadata DefaultServiceAccount#metadata}
 
 ---
 
@@ -1052,7 +1052,7 @@ public bool|IResolvable AutomountServiceAccountToken { get; set; }
 
 Enable automatic mounting of the service account token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#automount_service_account_token DefaultServiceAccount#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#automount_service_account_token DefaultServiceAccount#automount_service_account_token}
 
 ---
 
@@ -1064,7 +1064,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#id DefaultServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#id DefaultServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1081,7 +1081,7 @@ public IResolvable|DefaultServiceAccountImagePullSecret[] ImagePullSecret { get;
 
 image_pull_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#image_pull_secret DefaultServiceAccount#image_pull_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#image_pull_secret DefaultServiceAccount#image_pull_secret}
 
 ---
 
@@ -1095,7 +1095,7 @@ public IResolvable|DefaultServiceAccountSecret[] Secret { get; set; }
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#secret DefaultServiceAccount#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#secret DefaultServiceAccount#secret}
 
 ---
 
@@ -1109,7 +1109,7 @@ public DefaultServiceAccountTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#timeouts DefaultServiceAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#timeouts DefaultServiceAccount#timeouts}
 
 ---
 
@@ -1143,7 +1143,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
 
 ---
 
@@ -1185,7 +1185,7 @@ An unstructured key value map stored with the service account that may be used t
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#annotations DefaultServiceAccount#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#annotations DefaultServiceAccount#annotations}
 
 ---
 
@@ -1201,7 +1201,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#labels DefaultServiceAccount#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#labels DefaultServiceAccount#labels}
 
 ---
 
@@ -1215,7 +1215,7 @@ public string Name { get; set; }
 
 Name of the service account, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
 
 ---
 
@@ -1229,7 +1229,7 @@ public string Namespace { get; set; }
 
 Namespace defines the space within which name of the service account must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#namespace DefaultServiceAccount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#namespace DefaultServiceAccount#namespace}
 
 ---
 
@@ -1263,7 +1263,7 @@ public string Name { get; set; }
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
 
 ---
 
@@ -1283,7 +1283,7 @@ new DefaultServiceAccountTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#create DefaultServiceAccount#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#create DefaultServiceAccount#create}. |
 
 ---
 
@@ -1295,7 +1295,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/default_service_account#create DefaultServiceAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/default_service_account#create DefaultServiceAccount#create}.
 
 ---
 

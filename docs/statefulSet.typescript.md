@@ -4,7 +4,7 @@
 
 ### StatefulSet <a name="StatefulSet" id="@cdktn/provider-kubernetes.statefulSet.StatefulSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set kubernetes_stateful_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set kubernetes_stateful_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.statefulSet.StatefulSet.Initializer"></a>
 
@@ -549,7 +549,7 @@ The construct id used in the generated config for the StatefulSet to import.
 
 The id of the existing StatefulSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ const statefulSetConfig: statefulSet.StatefulSetConfig = { ... }
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetMetadata">StatefulSetMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpec">StatefulSetSpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#id StatefulSet#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#id StatefulSet#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts">StatefulSetTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetConfig.property.waitForRollout">waitForRollout</a></code> | <code>boolean \| cdktn.IResolvable</code> | Wait for the rollout of the stateful set to complete. Defaults to true. |
 
@@ -963,7 +963,7 @@ public readonly metadata: StatefulSetMetadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
 
 ---
 
@@ -977,7 +977,7 @@ public readonly spec: StatefulSetSpec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#spec StatefulSet#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#spec StatefulSet#spec}
 
 ---
 
@@ -989,7 +989,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#id StatefulSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#id StatefulSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1006,7 +1006,7 @@ public readonly timeouts: StatefulSetTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeouts StatefulSet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#timeouts StatefulSet#timeouts}
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly waitForRollout: boolean | IResolvable;
 
 Wait for the rollout of the stateful set to complete. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#wait_for_rollout StatefulSet#wait_for_rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#wait_for_rollout StatefulSet#wait_for_rollout}
 
 ---
 
@@ -1058,7 +1058,7 @@ An unstructured key value map stored with the stateful set that may be used to s
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
 
 ---
 
@@ -1074,7 +1074,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
 
 ---
 
@@ -1090,7 +1090,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#labels StatefulSet#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#labels StatefulSet#labels}
 
 ---
 
@@ -1104,7 +1104,7 @@ public readonly name: string;
 
 Name of the stateful set, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -1118,7 +1118,7 @@ public readonly namespace: string;
 
 Namespace defines the space within which name of the stateful set must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly selector: StatefulSetSpecSelector;
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#selector StatefulSet#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#selector StatefulSet#selector}
 
 ---
 
@@ -1175,7 +1175,7 @@ The name of the service that governs this StatefulSet.
 
 This service must exist before the StatefulSet, and is responsible for the network identity of the set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service_name StatefulSet#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#service_name StatefulSet#service_name}
 
 ---
 
@@ -1189,7 +1189,7 @@ public readonly template: StatefulSetSpecTemplate;
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#template StatefulSet#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#template StatefulSet#template}
 
 ---
 
@@ -1205,7 +1205,7 @@ Minimum number of seconds for which a newly created pod should be ready without 
 
 Defaults to 0. (pod will be considered available as soon as it is ready)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#min_ready_seconds StatefulSet#min_ready_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#min_ready_seconds StatefulSet#min_ready_seconds}
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly persistentVolumeClaimRetentionPolicy: IResolvable | StatefulSetS
 
 persistent_volume_claim_retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#persistent_volume_claim_retention_policy StatefulSet#persistent_volume_claim_retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#persistent_volume_claim_retention_policy StatefulSet#persistent_volume_claim_retention_policy}
 
 ---
 
@@ -1233,7 +1233,7 @@ public readonly podManagementPolicy: string;
 
 Controls how pods are created during initial scale up, when replacing pods on nodes, or when scaling down.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pod_management_policy StatefulSet#pod_management_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#pod_management_policy StatefulSet#pod_management_policy}
 
 ---
 
@@ -1249,7 +1249,7 @@ The desired number of replicas of the given Template, in the sense that they are
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#replicas StatefulSet#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#replicas StatefulSet#replicas}
 
 ---
 
@@ -1263,7 +1263,7 @@ public readonly revisionHistoryLimit: number;
 
 The maximum number of revisions that will be maintained in the StatefulSet's revision history. The default value is 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#revision_history_limit StatefulSet#revision_history_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#revision_history_limit StatefulSet#revision_history_limit}
 
 ---
 
@@ -1277,7 +1277,7 @@ public readonly updateStrategy: IResolvable | StatefulSetSpecUpdateStrategy[];
 
 update_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#update_strategy StatefulSet#update_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#update_strategy StatefulSet#update_strategy}
 
 ---
 
@@ -1291,7 +1291,7 @@ public readonly volumeClaimTemplate: IResolvable | StatefulSetSpecVolumeClaimTem
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
 
 ---
 
@@ -1324,7 +1324,7 @@ public readonly whenDeleted: string;
 
 This field controls what happens when a Statefulset is deleted. Default is Retain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#when_deleted StatefulSet#when_deleted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#when_deleted StatefulSet#when_deleted}
 
 ---
 
@@ -1338,7 +1338,7 @@ public readonly whenScaled: string;
 
 This field controls what happens when a Statefulset is scaled. Default is Retain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#when_scaled StatefulSet#when_scaled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#when_scaled StatefulSet#when_scaled}
 
 ---
 
@@ -1371,7 +1371,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecSelectorMatchExpr
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -1387,7 +1387,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -1421,7 +1421,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -1435,7 +1435,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -1451,7 +1451,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -1484,7 +1484,7 @@ public readonly metadata: StatefulSetSpecTemplateMetadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
 
 ---
 
@@ -1498,7 +1498,7 @@ public readonly spec: StatefulSetSpecTemplateSpec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#spec StatefulSet#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#spec StatefulSet#spec}
 
 ---
 
@@ -1536,7 +1536,7 @@ An unstructured key value map stored with the stateful set that may be used to s
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
 
 ---
 
@@ -1552,7 +1552,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
 
 ---
 
@@ -1568,7 +1568,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#labels StatefulSet#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#labels StatefulSet#labels}
 
 ---
 
@@ -1582,7 +1582,7 @@ public readonly name: string;
 
 Name of the stateful set, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -1596,7 +1596,7 @@ public readonly namespace: string;
 
 Namespace defines the space within which name of the stateful set must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -1659,7 +1659,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#active_deadline_seconds StatefulSet#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#active_deadline_seconds StatefulSet#active_deadline_seconds}
 
 ---
 
@@ -1673,7 +1673,7 @@ public readonly affinity: StatefulSetSpecTemplateSpecAffinity;
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#affinity StatefulSet#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#affinity StatefulSet#affinity}
 
 ---
 
@@ -1687,7 +1687,7 @@ public readonly automountServiceAccountToken: boolean | IResolvable;
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#automount_service_account_token StatefulSet#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#automount_service_account_token StatefulSet#automount_service_account_token}
 
 ---
 
@@ -1701,7 +1701,7 @@ public readonly container: IResolvable | StatefulSetSpecTemplateSpecContainer[];
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container StatefulSet#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container StatefulSet#container}
 
 ---
 
@@ -1715,7 +1715,7 @@ public readonly dnsConfig: StatefulSetSpecTemplateSpecDnsConfig;
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#dns_config StatefulSet#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#dns_config StatefulSet#dns_config}
 
 ---
 
@@ -1731,7 +1731,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#dns_policy StatefulSet#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#dns_policy StatefulSet#dns_policy}
 
 ---
 
@@ -1745,7 +1745,7 @@ public readonly enableServiceLinks: boolean | IResolvable;
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#enable_service_links StatefulSet#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#enable_service_links StatefulSet#enable_service_links}
 
 ---
 
@@ -1759,7 +1759,7 @@ public readonly hostAliases: IResolvable | StatefulSetSpecTemplateSpecHostAliase
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_aliases StatefulSet#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host_aliases StatefulSet#host_aliases}
 
 ---
 
@@ -1773,7 +1773,7 @@ public readonly hostIpc: boolean | IResolvable;
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_ipc StatefulSet#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host_ipc StatefulSet#host_ipc}
 
 ---
 
@@ -1787,7 +1787,7 @@ public readonly hostname: string;
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#hostname StatefulSet#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#hostname StatefulSet#hostname}
 
 ---
 
@@ -1803,7 +1803,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_network StatefulSet#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host_network StatefulSet#host_network}
 
 ---
 
@@ -1817,7 +1817,7 @@ public readonly hostPid: boolean | IResolvable;
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_pid StatefulSet#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host_pid StatefulSet#host_pid}
 
 ---
 
@@ -1831,7 +1831,7 @@ public readonly imagePullSecrets: IResolvable | StatefulSetSpecTemplateSpecImage
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#image_pull_secrets StatefulSet#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#image_pull_secrets StatefulSet#image_pull_secrets}
 
 ---
 
@@ -1845,7 +1845,7 @@ public readonly initContainer: IResolvable | StatefulSetSpecTemplateSpecInitCont
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#init_container StatefulSet#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#init_container StatefulSet#init_container}
 
 ---
 
@@ -1861,7 +1861,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_name StatefulSet#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#node_name StatefulSet#node_name}
 
 ---
 
@@ -1877,7 +1877,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_selector StatefulSet#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#node_selector StatefulSet#node_selector}
 
 ---
 
@@ -1891,7 +1891,7 @@ public readonly os: StatefulSetSpecTemplateSpecOs;
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#os StatefulSet#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#os StatefulSet#os}
 
 ---
 
@@ -1907,7 +1907,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#priority_class_name StatefulSet#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#priority_class_name StatefulSet#priority_class_name}
 
 ---
 
@@ -1921,7 +1921,7 @@ public readonly readinessGate: IResolvable | StatefulSetSpecTemplateSpecReadines
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#readiness_gate StatefulSet#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#readiness_gate StatefulSet#readiness_gate}
 
 ---
 
@@ -1935,7 +1935,7 @@ public readonly restartPolicy: string;
 
 Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
 
 ---
 
@@ -1951,7 +1951,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#runtime_class_name StatefulSet#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#runtime_class_name StatefulSet#runtime_class_name}
 
 ---
 
@@ -1967,7 +1967,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheduler_name StatefulSet#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheduler_name StatefulSet#scheduler_name}
 
 ---
 
@@ -1981,7 +1981,7 @@ public readonly securityContext: StatefulSetSpecTemplateSpecSecurityContext;
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
 
 ---
 
@@ -1995,7 +1995,7 @@ public readonly serviceAccountName: string;
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service_account_name StatefulSet#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#service_account_name StatefulSet#service_account_name}
 
 ---
 
@@ -2011,7 +2011,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#share_process_namespace StatefulSet#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#share_process_namespace StatefulSet#share_process_namespace}
 
 ---
 
@@ -2025,7 +2025,7 @@ public readonly subdomain: string;
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#subdomain StatefulSet#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#subdomain StatefulSet#subdomain}
 
 ---
 
@@ -2041,7 +2041,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#termination_grace_period_seconds StatefulSet#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#termination_grace_period_seconds StatefulSet#termination_grace_period_seconds}
 
 ---
 
@@ -2055,7 +2055,7 @@ public readonly toleration: IResolvable | StatefulSetSpecTemplateSpecToleration[
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#toleration StatefulSet#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#toleration StatefulSet#toleration}
 
 ---
 
@@ -2069,7 +2069,7 @@ public readonly topologySpreadConstraint: IResolvable | StatefulSetSpecTemplateS
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_spread_constraint StatefulSet#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#topology_spread_constraint StatefulSet#topology_spread_constraint}
 
 ---
 
@@ -2083,7 +2083,7 @@ public readonly volume: IResolvable | StatefulSetSpecTemplateSpecVolume[];
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume StatefulSet#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume StatefulSet#volume}
 
 ---
 
@@ -2117,7 +2117,7 @@ public readonly nodeAffinity: StatefulSetSpecTemplateSpecAffinityNodeAffinity;
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_affinity StatefulSet#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#node_affinity StatefulSet#node_affinity}
 
 ---
 
@@ -2131,7 +2131,7 @@ public readonly podAffinity: StatefulSetSpecTemplateSpecAffinityPodAffinity;
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pod_affinity StatefulSet#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#pod_affinity StatefulSet#pod_affinity}
 
 ---
 
@@ -2145,7 +2145,7 @@ public readonly podAntiAffinity: StatefulSetSpecTemplateSpecAffinityPodAntiAffin
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pod_anti_affinity StatefulSet#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#pod_anti_affinity StatefulSet#pod_anti_affinity}
 
 ---
 
@@ -2178,7 +2178,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | S
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2192,7 +2192,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: StatefulSetSpecT
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2225,7 +2225,7 @@ public readonly preference: StatefulSetSpecTemplateSpecAffinityNodeAffinityPrefe
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#preference StatefulSet#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#preference StatefulSet#preference}
 
 ---
 
@@ -2239,7 +2239,7 @@ public readonly weight: number;
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#weight StatefulSet#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#weight StatefulSet#weight}
 
 ---
 
@@ -2272,7 +2272,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -2286,7 +2286,7 @@ public readonly matchFields: IResolvable | StatefulSetSpecTemplateSpecAffinityNo
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_fields StatefulSet#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_fields StatefulSet#match_fields}
 
 ---
 
@@ -2320,7 +2320,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -2336,7 +2336,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -2352,7 +2352,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -2386,7 +2386,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -2400,7 +2400,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -2416,7 +2416,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -2448,7 +2448,7 @@ public readonly nodeSelectorTerm: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_selector_term StatefulSet#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#node_selector_term StatefulSet#node_selector_term}
 
 ---
 
@@ -2481,7 +2481,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -2495,7 +2495,7 @@ public readonly matchFields: IResolvable | StatefulSetSpecTemplateSpecAffinityNo
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_fields StatefulSet#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_fields StatefulSet#match_fields}
 
 ---
 
@@ -2529,7 +2529,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -2545,7 +2545,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -2561,7 +2561,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -2595,7 +2595,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -2609,7 +2609,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -2625,7 +2625,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -2658,7 +2658,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | S
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2672,7 +2672,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: IResolvable | St
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2705,7 +2705,7 @@ public readonly podAffinityTerm: StatefulSetSpecTemplateSpecAffinityPodAffinityP
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pod_affinity_term StatefulSet#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#pod_affinity_term StatefulSet#pod_affinity_term}
 
 ---
 
@@ -2719,7 +2719,7 @@ public readonly weight: number;
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#weight StatefulSet#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#weight StatefulSet#weight}
 
 ---
 
@@ -2754,7 +2754,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 
 ---
 
@@ -2768,7 +2768,7 @@ public readonly labelSelector: IResolvable | StatefulSetSpecTemplateSpecAffinity
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 
 ---
 
@@ -2782,7 +2782,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
 
 ---
 
@@ -2796,7 +2796,7 @@ public readonly namespaceSelector: IResolvable | StatefulSetSpecTemplateSpecAffi
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
 
 ---
 
@@ -2829,7 +2829,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -2845,7 +2845,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -2879,7 +2879,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -2893,7 +2893,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -2909,7 +2909,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -2942,7 +2942,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -2958,7 +2958,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -2992,7 +2992,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3006,7 +3006,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3022,7 +3022,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3057,7 +3057,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 
 ---
 
@@ -3071,7 +3071,7 @@ public readonly labelSelector: IResolvable | StatefulSetSpecTemplateSpecAffinity
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 
 ---
 
@@ -3085,7 +3085,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
 
 ---
 
@@ -3099,7 +3099,7 @@ public readonly namespaceSelector: IResolvable | StatefulSetSpecTemplateSpecAffi
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
 
 ---
 
@@ -3132,7 +3132,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3148,7 +3148,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3182,7 +3182,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3196,7 +3196,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3212,7 +3212,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3245,7 +3245,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3261,7 +3261,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3295,7 +3295,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3309,7 +3309,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3325,7 +3325,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3358,7 +3358,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | S
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#preferred_during_scheduling_ignored_during_execution StatefulSet#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3372,7 +3372,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: IResolvable | St
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#required_during_scheduling_ignored_during_execution StatefulSet#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3405,7 +3405,7 @@ public readonly podAffinityTerm: StatefulSetSpecTemplateSpecAffinityPodAntiAffin
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pod_affinity_term StatefulSet#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#pod_affinity_term StatefulSet#pod_affinity_term}
 
 ---
 
@@ -3419,7 +3419,7 @@ public readonly weight: number;
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#weight StatefulSet#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#weight StatefulSet#weight}
 
 ---
 
@@ -3454,7 +3454,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 
 ---
 
@@ -3468,7 +3468,7 @@ public readonly labelSelector: IResolvable | StatefulSetSpecTemplateSpecAffinity
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 
 ---
 
@@ -3482,7 +3482,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
 
 ---
 
@@ -3496,7 +3496,7 @@ public readonly namespaceSelector: IResolvable | StatefulSetSpecTemplateSpecAffi
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
 
 ---
 
@@ -3529,7 +3529,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3545,7 +3545,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3579,7 +3579,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3593,7 +3593,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3609,7 +3609,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3642,7 +3642,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3658,7 +3658,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3692,7 +3692,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3706,7 +3706,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3722,7 +3722,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3757,7 +3757,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 
 ---
 
@@ -3771,7 +3771,7 @@ public readonly labelSelector: IResolvable | StatefulSetSpecTemplateSpecAffinity
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 
 ---
 
@@ -3785,7 +3785,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
 
 ---
 
@@ -3799,7 +3799,7 @@ public readonly namespaceSelector: IResolvable | StatefulSetSpecTemplateSpecAffi
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
 
 ---
 
@@ -3832,7 +3832,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3848,7 +3848,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3882,7 +3882,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -3896,7 +3896,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -3912,7 +3912,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -3945,7 +3945,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecAffin
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -3961,7 +3961,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -3995,7 +3995,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -4009,7 +4009,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -4025,7 +4025,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -4081,7 +4081,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4097,7 +4097,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#args StatefulSet#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#args StatefulSet#args}
 
 ---
 
@@ -4113,7 +4113,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -4127,7 +4127,7 @@ public readonly env: IResolvable | StatefulSetSpecTemplateSpecContainerEnv[];
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#env StatefulSet#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#env StatefulSet#env}
 
 ---
 
@@ -4141,7 +4141,7 @@ public readonly envFrom: IResolvable | StatefulSetSpecTemplateSpecContainerEnvFr
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#env_from StatefulSet#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#env_from StatefulSet#env_from}
 
 ---
 
@@ -4155,7 +4155,7 @@ public readonly image: string;
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#image StatefulSet#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#image StatefulSet#image}
 
 ---
 
@@ -4171,7 +4171,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#image_pull_policy StatefulSet#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#image_pull_policy StatefulSet#image_pull_policy}
 
 ---
 
@@ -4185,7 +4185,7 @@ public readonly lifecycle: StatefulSetSpecTemplateSpecContainerLifecycle;
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#lifecycle StatefulSet#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#lifecycle StatefulSet#lifecycle}
 
 ---
 
@@ -4199,7 +4199,7 @@ public readonly livenessProbe: StatefulSetSpecTemplateSpecContainerLivenessProbe
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#liveness_probe StatefulSet#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#liveness_probe StatefulSet#liveness_probe}
 
 ---
 
@@ -4213,7 +4213,7 @@ public readonly port: IResolvable | StatefulSetSpecTemplateSpecContainerPort[];
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -4227,7 +4227,7 @@ public readonly readinessProbe: StatefulSetSpecTemplateSpecContainerReadinessPro
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#readiness_probe StatefulSet#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#readiness_probe StatefulSet#readiness_probe}
 
 ---
 
@@ -4241,7 +4241,7 @@ public readonly resources: StatefulSetSpecTemplateSpecContainerResources;
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resources StatefulSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resources StatefulSet#resources}
 
 ---
 
@@ -4255,7 +4255,7 @@ public readonly restartPolicy: string;
 
 Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
 
 ---
 
@@ -4269,7 +4269,7 @@ public readonly securityContext: StatefulSetSpecTemplateSpecContainerSecurityCon
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
 
 ---
 
@@ -4283,7 +4283,7 @@ public readonly startupProbe: StatefulSetSpecTemplateSpecContainerStartupProbe;
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#startup_probe StatefulSet#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#startup_probe StatefulSet#startup_probe}
 
 ---
 
@@ -4299,7 +4299,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF. 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#stdin StatefulSet#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#stdin StatefulSet#stdin}
 
 ---
 
@@ -4315,7 +4315,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#stdin_once StatefulSet#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#stdin_once StatefulSet#stdin_once}
 
 ---
 
@@ -4331,7 +4331,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#termination_message_path StatefulSet#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#termination_message_path StatefulSet#termination_message_path}
 
 ---
 
@@ -4347,7 +4347,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#termination_message_policy StatefulSet#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#termination_message_policy StatefulSet#termination_message_policy}
 
 ---
 
@@ -4361,7 +4361,7 @@ public readonly tty: boolean | IResolvable;
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tty StatefulSet#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tty StatefulSet#tty}
 
 ---
 
@@ -4375,7 +4375,7 @@ public readonly volumeDevice: IResolvable | StatefulSetSpecTemplateSpecContainer
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_device StatefulSet#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_device StatefulSet#volume_device}
 
 ---
 
@@ -4389,7 +4389,7 @@ public readonly volumeMount: IResolvable | StatefulSetSpecTemplateSpecContainerV
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_mount StatefulSet#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_mount StatefulSet#volume_mount}
 
 ---
 
@@ -4405,7 +4405,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#working_dir StatefulSet#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#working_dir StatefulSet#working_dir}
 
 ---
 
@@ -4439,7 +4439,7 @@ public readonly name: string;
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4455,7 +4455,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -4469,7 +4469,7 @@ public readonly valueFrom: StatefulSetSpecTemplateSpecContainerEnvValueFrom;
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value_from StatefulSet#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value_from StatefulSet#value_from}
 
 ---
 
@@ -4503,7 +4503,7 @@ public readonly configMapRef: StatefulSetSpecTemplateSpecContainerEnvFromConfigM
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map_ref StatefulSet#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#config_map_ref StatefulSet#config_map_ref}
 
 ---
 
@@ -4517,7 +4517,7 @@ public readonly prefix: string;
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#prefix StatefulSet#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#prefix StatefulSet#prefix}
 
 ---
 
@@ -4531,7 +4531,7 @@ public readonly secretRef: StatefulSetSpecTemplateSpecContainerEnvFromSecretRef;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
 
 ---
 
@@ -4564,7 +4564,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4578,7 +4578,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -4611,7 +4611,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4625,7 +4625,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -4660,7 +4660,7 @@ public readonly configMapKeyRef: StatefulSetSpecTemplateSpecContainerEnvValueFro
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map_key_ref StatefulSet#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#config_map_key_ref StatefulSet#config_map_key_ref}
 
 ---
 
@@ -4674,7 +4674,7 @@ public readonly fieldRef: StatefulSetSpecTemplateSpecContainerEnvValueFromFieldR
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
 
 ---
 
@@ -4688,7 +4688,7 @@ public readonly resourceFieldRef: StatefulSetSpecTemplateSpecContainerEnvValueFr
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
 
 ---
 
@@ -4702,7 +4702,7 @@ public readonly secretKeyRef: StatefulSetSpecTemplateSpecContainerEnvValueFromSe
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_key_ref StatefulSet#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_key_ref StatefulSet#secret_key_ref}
 
 ---
 
@@ -4736,7 +4736,7 @@ public readonly key: string;
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -4750,7 +4750,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4764,7 +4764,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -4797,7 +4797,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
 
 ---
 
@@ -4811,7 +4811,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
 
 ---
 
@@ -4830,8 +4830,8 @@ const statefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef: stateful
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
 
 ---
 
@@ -4845,7 +4845,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource StatefulSet#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resource StatefulSet#resource}
 
 ---
 
@@ -4857,7 +4857,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
 
 ---
 
@@ -4869,7 +4869,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
 
 ---
 
@@ -4903,7 +4903,7 @@ public readonly key: string;
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -4917,7 +4917,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -4931,7 +4931,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -4964,7 +4964,7 @@ public readonly postStart: IResolvable | StatefulSetSpecTemplateSpecContainerLif
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#post_start StatefulSet#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#post_start StatefulSet#post_start}
 
 ---
 
@@ -4978,7 +4978,7 @@ public readonly preStop: IResolvable | StatefulSetSpecTemplateSpecContainerLifec
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pre_stop StatefulSet#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#pre_stop StatefulSet#pre_stop}
 
 ---
 
@@ -5012,7 +5012,7 @@ public readonly exec: StatefulSetSpecTemplateSpecContainerLifecyclePostStartExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -5026,7 +5026,7 @@ public readonly httpGet: StatefulSetSpecTemplateSpecContainerLifecyclePostStartH
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -5040,7 +5040,7 @@ public readonly tcpSocket: IResolvable | StatefulSetSpecTemplateSpecContainerLif
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -5074,7 +5074,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -5110,7 +5110,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -5124,7 +5124,7 @@ public readonly httpHeader: IResolvable | StatefulSetSpecTemplateSpecContainerLi
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -5138,7 +5138,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -5154,7 +5154,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5168,7 +5168,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -5201,7 +5201,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -5215,7 +5215,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -5249,7 +5249,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5283,7 +5283,7 @@ public readonly exec: StatefulSetSpecTemplateSpecContainerLifecyclePreStopExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -5297,7 +5297,7 @@ public readonly httpGet: StatefulSetSpecTemplateSpecContainerLifecyclePreStopHtt
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -5311,7 +5311,7 @@ public readonly tcpSocket: IResolvable | StatefulSetSpecTemplateSpecContainerLif
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -5345,7 +5345,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -5381,7 +5381,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -5395,7 +5395,7 @@ public readonly httpHeader: IResolvable | StatefulSetSpecTemplateSpecContainerLi
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -5409,7 +5409,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -5425,7 +5425,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5439,7 +5439,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -5472,7 +5472,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -5486,7 +5486,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -5520,7 +5520,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5560,7 +5560,7 @@ public readonly exec: StatefulSetSpecTemplateSpecContainerLivenessProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -5574,7 +5574,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -5588,7 +5588,7 @@ public readonly grpc: IResolvable | StatefulSetSpecTemplateSpecContainerLiveness
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -5602,7 +5602,7 @@ public readonly httpGet: StatefulSetSpecTemplateSpecContainerLivenessProbeHttpGe
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -5616,7 +5616,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -5630,7 +5630,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -5644,7 +5644,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -5658,7 +5658,7 @@ public readonly tcpSocket: IResolvable | StatefulSetSpecTemplateSpecContainerLiv
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -5672,7 +5672,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -5706,7 +5706,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -5739,7 +5739,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5753,7 +5753,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -5789,7 +5789,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -5803,7 +5803,7 @@ public readonly httpHeader: IResolvable | StatefulSetSpecTemplateSpecContainerLi
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -5817,7 +5817,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -5833,7 +5833,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5847,7 +5847,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -5880,7 +5880,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -5894,7 +5894,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -5928,7 +5928,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -5966,7 +5966,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_port StatefulSet#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container_port StatefulSet#container_port}
 
 ---
 
@@ -5980,7 +5980,7 @@ public readonly hostIp: string;
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_ip StatefulSet#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host_ip StatefulSet#host_ip}
 
 ---
 
@@ -5996,7 +5996,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_port StatefulSet#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host_port StatefulSet#host_port}
 
 ---
 
@@ -6012,7 +6012,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -6026,7 +6026,7 @@ public readonly protocol: string;
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#protocol StatefulSet#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#protocol StatefulSet#protocol}
 
 ---
 
@@ -6066,7 +6066,7 @@ public readonly exec: StatefulSetSpecTemplateSpecContainerReadinessProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -6080,7 +6080,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -6094,7 +6094,7 @@ public readonly grpc: IResolvable | StatefulSetSpecTemplateSpecContainerReadines
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -6108,7 +6108,7 @@ public readonly httpGet: StatefulSetSpecTemplateSpecContainerReadinessProbeHttpG
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -6122,7 +6122,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -6136,7 +6136,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -6150,7 +6150,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -6164,7 +6164,7 @@ public readonly tcpSocket: IResolvable | StatefulSetSpecTemplateSpecContainerRea
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -6178,7 +6178,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -6212,7 +6212,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -6245,7 +6245,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -6259,7 +6259,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -6295,7 +6295,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -6309,7 +6309,7 @@ public readonly httpHeader: IResolvable | StatefulSetSpecTemplateSpecContainerRe
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -6323,7 +6323,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -6339,7 +6339,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -6353,7 +6353,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -6386,7 +6386,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -6400,7 +6400,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -6434,7 +6434,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -6467,7 +6467,7 @@ public readonly limits: {[ key: string ]: string};
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#limits StatefulSet#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#limits StatefulSet#limits}
 
 ---
 
@@ -6483,7 +6483,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#requests StatefulSet#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#requests StatefulSet#requests}
 
 ---
 
@@ -6525,7 +6525,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#allow_privilege_escalation StatefulSet#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#allow_privilege_escalation StatefulSet#allow_privilege_escalation}
 
 ---
 
@@ -6539,7 +6539,7 @@ public readonly capabilities: StatefulSetSpecTemplateSpecContainerSecurityContex
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#capabilities StatefulSet#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#capabilities StatefulSet#capabilities}
 
 ---
 
@@ -6555,7 +6555,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#privileged StatefulSet#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#privileged StatefulSet#privileged}
 
 ---
 
@@ -6569,7 +6569,7 @@ public readonly readOnlyRootFilesystem: boolean | IResolvable;
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only_root_filesystem StatefulSet#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only_root_filesystem StatefulSet#read_only_root_filesystem}
 
 ---
 
@@ -6585,7 +6585,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
 
 ---
 
@@ -6601,7 +6601,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
 
 ---
 
@@ -6617,7 +6617,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
 
 ---
 
@@ -6631,7 +6631,7 @@ public readonly seccompProfile: StatefulSetSpecTemplateSpecContainerSecurityCont
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
 
 ---
 
@@ -6645,7 +6645,7 @@ public readonly seLinuxOptions: StatefulSetSpecTemplateSpecContainerSecurityCont
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
 
 ---
 
@@ -6678,7 +6678,7 @@ public readonly add: string[];
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#add StatefulSet#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#add StatefulSet#add}
 
 ---
 
@@ -6692,7 +6692,7 @@ public readonly drop: string[];
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#drop StatefulSet#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#drop StatefulSet#drop}
 
 ---
 
@@ -6727,7 +6727,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
 
 ---
 
@@ -6741,7 +6741,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -6776,7 +6776,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#level StatefulSet#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#level StatefulSet#level}
 
 ---
 
@@ -6790,7 +6790,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#role StatefulSet#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#role StatefulSet#role}
 
 ---
 
@@ -6804,7 +6804,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -6818,7 +6818,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#user StatefulSet#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#user StatefulSet#user}
 
 ---
 
@@ -6858,7 +6858,7 @@ public readonly exec: StatefulSetSpecTemplateSpecContainerStartupProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -6872,7 +6872,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -6886,7 +6886,7 @@ public readonly grpc: IResolvable | StatefulSetSpecTemplateSpecContainerStartupP
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -6900,7 +6900,7 @@ public readonly httpGet: StatefulSetSpecTemplateSpecContainerStartupProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -6914,7 +6914,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -6928,7 +6928,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -6942,7 +6942,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -6956,7 +6956,7 @@ public readonly tcpSocket: IResolvable | StatefulSetSpecTemplateSpecContainerSta
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -6970,7 +6970,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -7004,7 +7004,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -7037,7 +7037,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -7051,7 +7051,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -7087,7 +7087,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -7101,7 +7101,7 @@ public readonly httpHeader: IResolvable | StatefulSetSpecTemplateSpecContainerSt
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -7115,7 +7115,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -7131,7 +7131,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -7145,7 +7145,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -7178,7 +7178,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7192,7 +7192,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -7226,7 +7226,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -7259,7 +7259,7 @@ public readonly devicePath: string;
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#device_path StatefulSet#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#device_path StatefulSet#device_path}
 
 ---
 
@@ -7273,7 +7273,7 @@ public readonly name: string;
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7310,7 +7310,7 @@ public readonly mountPath: string;
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mount_path StatefulSet#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#mount_path StatefulSet#mount_path}
 
 ---
 
@@ -7324,7 +7324,7 @@ public readonly name: string;
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7340,7 +7340,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mount_propagation StatefulSet#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#mount_propagation StatefulSet#mount_propagation}
 
 ---
 
@@ -7354,7 +7354,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -7368,7 +7368,7 @@ public readonly subPath: string;
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sub_path StatefulSet#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#sub_path StatefulSet#sub_path}
 
 ---
 
@@ -7382,7 +7382,7 @@ public readonly subPathExpr: string;
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sub_path_expr StatefulSet#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#sub_path_expr StatefulSet#sub_path_expr}
 
 ---
 
@@ -7418,7 +7418,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#nameservers StatefulSet#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#nameservers StatefulSet#nameservers}
 
 ---
 
@@ -7432,7 +7432,7 @@ public readonly option: IResolvable | StatefulSetSpecTemplateSpecDnsConfigOption
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#option StatefulSet#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#option StatefulSet#option}
 
 ---
 
@@ -7448,7 +7448,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#searches StatefulSet#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#searches StatefulSet#searches}
 
 ---
 
@@ -7481,7 +7481,7 @@ public readonly name: string;
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7495,7 +7495,7 @@ public readonly value: string;
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -7528,7 +7528,7 @@ public readonly hostnames: string[];
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#hostnames StatefulSet#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#hostnames StatefulSet#hostnames}
 
 ---
 
@@ -7542,7 +7542,7 @@ public readonly ip: string;
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#ip StatefulSet#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#ip StatefulSet#ip}
 
 ---
 
@@ -7574,7 +7574,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7630,7 +7630,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -7646,7 +7646,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#args StatefulSet#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#args StatefulSet#args}
 
 ---
 
@@ -7662,7 +7662,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -7676,7 +7676,7 @@ public readonly env: IResolvable | StatefulSetSpecTemplateSpecInitContainerEnv[]
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#env StatefulSet#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#env StatefulSet#env}
 
 ---
 
@@ -7690,7 +7690,7 @@ public readonly envFrom: IResolvable | StatefulSetSpecTemplateSpecInitContainerE
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#env_from StatefulSet#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#env_from StatefulSet#env_from}
 
 ---
 
@@ -7704,7 +7704,7 @@ public readonly image: string;
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#image StatefulSet#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#image StatefulSet#image}
 
 ---
 
@@ -7720,7 +7720,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#image_pull_policy StatefulSet#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#image_pull_policy StatefulSet#image_pull_policy}
 
 ---
 
@@ -7734,7 +7734,7 @@ public readonly lifecycle: StatefulSetSpecTemplateSpecInitContainerLifecycle;
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#lifecycle StatefulSet#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#lifecycle StatefulSet#lifecycle}
 
 ---
 
@@ -7748,7 +7748,7 @@ public readonly livenessProbe: StatefulSetSpecTemplateSpecInitContainerLivenessP
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#liveness_probe StatefulSet#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#liveness_probe StatefulSet#liveness_probe}
 
 ---
 
@@ -7762,7 +7762,7 @@ public readonly port: IResolvable | StatefulSetSpecTemplateSpecInitContainerPort
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -7776,7 +7776,7 @@ public readonly readinessProbe: StatefulSetSpecTemplateSpecInitContainerReadines
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#readiness_probe StatefulSet#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#readiness_probe StatefulSet#readiness_probe}
 
 ---
 
@@ -7790,7 +7790,7 @@ public readonly resources: StatefulSetSpecTemplateSpecInitContainerResources;
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resources StatefulSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resources StatefulSet#resources}
 
 ---
 
@@ -7804,7 +7804,7 @@ public readonly restartPolicy: string;
 
 Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
 
 ---
 
@@ -7818,7 +7818,7 @@ public readonly securityContext: StatefulSetSpecTemplateSpecInitContainerSecurit
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#security_context StatefulSet#security_context}
 
 ---
 
@@ -7832,7 +7832,7 @@ public readonly startupProbe: StatefulSetSpecTemplateSpecInitContainerStartupPro
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#startup_probe StatefulSet#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#startup_probe StatefulSet#startup_probe}
 
 ---
 
@@ -7848,7 +7848,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF. 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#stdin StatefulSet#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#stdin StatefulSet#stdin}
 
 ---
 
@@ -7864,7 +7864,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#stdin_once StatefulSet#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#stdin_once StatefulSet#stdin_once}
 
 ---
 
@@ -7880,7 +7880,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#termination_message_path StatefulSet#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#termination_message_path StatefulSet#termination_message_path}
 
 ---
 
@@ -7896,7 +7896,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#termination_message_policy StatefulSet#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#termination_message_policy StatefulSet#termination_message_policy}
 
 ---
 
@@ -7910,7 +7910,7 @@ public readonly tty: boolean | IResolvable;
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tty StatefulSet#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tty StatefulSet#tty}
 
 ---
 
@@ -7924,7 +7924,7 @@ public readonly volumeDevice: IResolvable | StatefulSetSpecTemplateSpecInitConta
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_device StatefulSet#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_device StatefulSet#volume_device}
 
 ---
 
@@ -7938,7 +7938,7 @@ public readonly volumeMount: IResolvable | StatefulSetSpecTemplateSpecInitContai
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_mount StatefulSet#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_mount StatefulSet#volume_mount}
 
 ---
 
@@ -7954,7 +7954,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#working_dir StatefulSet#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#working_dir StatefulSet#working_dir}
 
 ---
 
@@ -7988,7 +7988,7 @@ public readonly name: string;
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8004,7 +8004,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -8018,7 +8018,7 @@ public readonly valueFrom: StatefulSetSpecTemplateSpecInitContainerEnvValueFrom;
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value_from StatefulSet#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value_from StatefulSet#value_from}
 
 ---
 
@@ -8052,7 +8052,7 @@ public readonly configMapRef: StatefulSetSpecTemplateSpecInitContainerEnvFromCon
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map_ref StatefulSet#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#config_map_ref StatefulSet#config_map_ref}
 
 ---
 
@@ -8066,7 +8066,7 @@ public readonly prefix: string;
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#prefix StatefulSet#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#prefix StatefulSet#prefix}
 
 ---
 
@@ -8080,7 +8080,7 @@ public readonly secretRef: StatefulSetSpecTemplateSpecInitContainerEnvFromSecret
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
 
 ---
 
@@ -8113,7 +8113,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8127,7 +8127,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -8160,7 +8160,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8174,7 +8174,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -8209,7 +8209,7 @@ public readonly configMapKeyRef: StatefulSetSpecTemplateSpecInitContainerEnvValu
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map_key_ref StatefulSet#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#config_map_key_ref StatefulSet#config_map_key_ref}
 
 ---
 
@@ -8223,7 +8223,7 @@ public readonly fieldRef: StatefulSetSpecTemplateSpecInitContainerEnvValueFromFi
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
 
 ---
 
@@ -8237,7 +8237,7 @@ public readonly resourceFieldRef: StatefulSetSpecTemplateSpecInitContainerEnvVal
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
 
 ---
 
@@ -8251,7 +8251,7 @@ public readonly secretKeyRef: StatefulSetSpecTemplateSpecInitContainerEnvValueFr
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_key_ref StatefulSet#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_key_ref StatefulSet#secret_key_ref}
 
 ---
 
@@ -8285,7 +8285,7 @@ public readonly key: string;
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -8299,7 +8299,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8313,7 +8313,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -8346,7 +8346,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
 
 ---
 
@@ -8360,7 +8360,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
 
 ---
 
@@ -8379,8 +8379,8 @@ const statefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef: stat
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
 
 ---
 
@@ -8394,7 +8394,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource StatefulSet#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resource StatefulSet#resource}
 
 ---
 
@@ -8406,7 +8406,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
 
 ---
 
@@ -8418,7 +8418,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
 
 ---
 
@@ -8452,7 +8452,7 @@ public readonly key: string;
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -8466,7 +8466,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8480,7 +8480,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -8513,7 +8513,7 @@ public readonly postStart: IResolvable | StatefulSetSpecTemplateSpecInitContaine
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#post_start StatefulSet#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#post_start StatefulSet#post_start}
 
 ---
 
@@ -8527,7 +8527,7 @@ public readonly preStop: IResolvable | StatefulSetSpecTemplateSpecInitContainerL
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pre_stop StatefulSet#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#pre_stop StatefulSet#pre_stop}
 
 ---
 
@@ -8561,7 +8561,7 @@ public readonly exec: StatefulSetSpecTemplateSpecInitContainerLifecyclePostStart
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -8575,7 +8575,7 @@ public readonly httpGet: StatefulSetSpecTemplateSpecInitContainerLifecyclePostSt
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -8589,7 +8589,7 @@ public readonly tcpSocket: IResolvable | StatefulSetSpecTemplateSpecInitContaine
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -8623,7 +8623,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -8659,7 +8659,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -8673,7 +8673,7 @@ public readonly httpHeader: IResolvable | StatefulSetSpecTemplateSpecInitContain
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -8687,7 +8687,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -8703,7 +8703,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -8717,7 +8717,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -8750,7 +8750,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -8764,7 +8764,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -8798,7 +8798,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -8832,7 +8832,7 @@ public readonly exec: StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopEx
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -8846,7 +8846,7 @@ public readonly httpGet: StatefulSetSpecTemplateSpecInitContainerLifecyclePreSto
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -8860,7 +8860,7 @@ public readonly tcpSocket: IResolvable | StatefulSetSpecTemplateSpecInitContaine
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -8894,7 +8894,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -8930,7 +8930,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -8944,7 +8944,7 @@ public readonly httpHeader: IResolvable | StatefulSetSpecTemplateSpecInitContain
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -8958,7 +8958,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -8974,7 +8974,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -8988,7 +8988,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -9021,7 +9021,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -9035,7 +9035,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -9069,7 +9069,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9109,7 +9109,7 @@ public readonly exec: StatefulSetSpecTemplateSpecInitContainerLivenessProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -9123,7 +9123,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -9137,7 +9137,7 @@ public readonly grpc: IResolvable | StatefulSetSpecTemplateSpecInitContainerLive
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -9151,7 +9151,7 @@ public readonly httpGet: StatefulSetSpecTemplateSpecInitContainerLivenessProbeHt
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -9165,7 +9165,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -9179,7 +9179,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -9193,7 +9193,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -9207,7 +9207,7 @@ public readonly tcpSocket: IResolvable | StatefulSetSpecTemplateSpecInitContaine
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -9221,7 +9221,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -9255,7 +9255,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -9288,7 +9288,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9302,7 +9302,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -9338,7 +9338,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -9352,7 +9352,7 @@ public readonly httpHeader: IResolvable | StatefulSetSpecTemplateSpecInitContain
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -9366,7 +9366,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -9382,7 +9382,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9396,7 +9396,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -9429,7 +9429,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -9443,7 +9443,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -9477,7 +9477,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9515,7 +9515,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_port StatefulSet#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container_port StatefulSet#container_port}
 
 ---
 
@@ -9529,7 +9529,7 @@ public readonly hostIp: string;
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_ip StatefulSet#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host_ip StatefulSet#host_ip}
 
 ---
 
@@ -9545,7 +9545,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_port StatefulSet#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host_port StatefulSet#host_port}
 
 ---
 
@@ -9561,7 +9561,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -9575,7 +9575,7 @@ public readonly protocol: string;
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#protocol StatefulSet#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#protocol StatefulSet#protocol}
 
 ---
 
@@ -9615,7 +9615,7 @@ public readonly exec: StatefulSetSpecTemplateSpecInitContainerReadinessProbeExec
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -9629,7 +9629,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -9643,7 +9643,7 @@ public readonly grpc: IResolvable | StatefulSetSpecTemplateSpecInitContainerRead
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -9657,7 +9657,7 @@ public readonly httpGet: StatefulSetSpecTemplateSpecInitContainerReadinessProbeH
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -9671,7 +9671,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -9685,7 +9685,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -9699,7 +9699,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -9713,7 +9713,7 @@ public readonly tcpSocket: IResolvable | StatefulSetSpecTemplateSpecInitContaine
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -9727,7 +9727,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -9761,7 +9761,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -9794,7 +9794,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9808,7 +9808,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -9844,7 +9844,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -9858,7 +9858,7 @@ public readonly httpHeader: IResolvable | StatefulSetSpecTemplateSpecInitContain
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -9872,7 +9872,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -9888,7 +9888,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -9902,7 +9902,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -9935,7 +9935,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -9949,7 +9949,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -9983,7 +9983,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -10016,7 +10016,7 @@ public readonly limits: {[ key: string ]: string};
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#limits StatefulSet#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#limits StatefulSet#limits}
 
 ---
 
@@ -10032,7 +10032,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#requests StatefulSet#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#requests StatefulSet#requests}
 
 ---
 
@@ -10074,7 +10074,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#allow_privilege_escalation StatefulSet#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#allow_privilege_escalation StatefulSet#allow_privilege_escalation}
 
 ---
 
@@ -10088,7 +10088,7 @@ public readonly capabilities: StatefulSetSpecTemplateSpecInitContainerSecurityCo
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#capabilities StatefulSet#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#capabilities StatefulSet#capabilities}
 
 ---
 
@@ -10104,7 +10104,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#privileged StatefulSet#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#privileged StatefulSet#privileged}
 
 ---
 
@@ -10118,7 +10118,7 @@ public readonly readOnlyRootFilesystem: boolean | IResolvable;
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only_root_filesystem StatefulSet#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only_root_filesystem StatefulSet#read_only_root_filesystem}
 
 ---
 
@@ -10134,7 +10134,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
 
 ---
 
@@ -10150,7 +10150,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
 
 ---
 
@@ -10166,7 +10166,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
 
 ---
 
@@ -10180,7 +10180,7 @@ public readonly seccompProfile: StatefulSetSpecTemplateSpecInitContainerSecurity
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
 
 ---
 
@@ -10194,7 +10194,7 @@ public readonly seLinuxOptions: StatefulSetSpecTemplateSpecInitContainerSecurity
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
 
 ---
 
@@ -10227,7 +10227,7 @@ public readonly add: string[];
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#add StatefulSet#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#add StatefulSet#add}
 
 ---
 
@@ -10241,7 +10241,7 @@ public readonly drop: string[];
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#drop StatefulSet#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#drop StatefulSet#drop}
 
 ---
 
@@ -10276,7 +10276,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
 
 ---
 
@@ -10290,7 +10290,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -10325,7 +10325,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#level StatefulSet#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#level StatefulSet#level}
 
 ---
 
@@ -10339,7 +10339,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#role StatefulSet#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#role StatefulSet#role}
 
 ---
 
@@ -10353,7 +10353,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -10367,7 +10367,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#user StatefulSet#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#user StatefulSet#user}
 
 ---
 
@@ -10407,7 +10407,7 @@ public readonly exec: StatefulSetSpecTemplateSpecInitContainerStartupProbeExec;
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#exec StatefulSet#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#exec StatefulSet#exec}
 
 ---
 
@@ -10421,7 +10421,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#failure_threshold StatefulSet#failure_threshold}
 
 ---
 
@@ -10435,7 +10435,7 @@ public readonly grpc: IResolvable | StatefulSetSpecTemplateSpecInitContainerStar
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#grpc StatefulSet#grpc}
 
 ---
 
@@ -10449,7 +10449,7 @@ public readonly httpGet: StatefulSetSpecTemplateSpecInitContainerStartupProbeHtt
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_get StatefulSet#http_get}
 
 ---
 
@@ -10463,7 +10463,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#initial_delay_seconds StatefulSet#initial_delay_seconds}
 
 ---
 
@@ -10477,7 +10477,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#period_seconds StatefulSet#period_seconds}
 
 ---
 
@@ -10491,7 +10491,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#success_threshold StatefulSet#success_threshold}
 
 ---
 
@@ -10505,7 +10505,7 @@ public readonly tcpSocket: IResolvable | StatefulSetSpecTemplateSpecInitContaine
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#tcp_socket StatefulSet#tcp_socket}
 
 ---
 
@@ -10519,7 +10519,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#timeout_seconds StatefulSet#timeout_seconds}
 
 ---
 
@@ -10553,7 +10553,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#command StatefulSet#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#command StatefulSet#command}
 
 ---
 
@@ -10586,7 +10586,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -10600,7 +10600,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service StatefulSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#service StatefulSet#service}
 
 ---
 
@@ -10636,7 +10636,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host StatefulSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host StatefulSet#host}
 
 ---
 
@@ -10650,7 +10650,7 @@ public readonly httpHeader: IResolvable | StatefulSetSpecTemplateSpecInitContain
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#http_header StatefulSet#http_header}
 
 ---
 
@@ -10664,7 +10664,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -10680,7 +10680,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -10694,7 +10694,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#scheme StatefulSet#scheme}
 
 ---
 
@@ -10727,7 +10727,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -10741,7 +10741,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -10775,7 +10775,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#port StatefulSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#port StatefulSet#port}
 
 ---
 
@@ -10808,7 +10808,7 @@ public readonly devicePath: string;
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#device_path StatefulSet#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#device_path StatefulSet#device_path}
 
 ---
 
@@ -10822,7 +10822,7 @@ public readonly name: string;
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -10859,7 +10859,7 @@ public readonly mountPath: string;
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mount_path StatefulSet#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#mount_path StatefulSet#mount_path}
 
 ---
 
@@ -10873,7 +10873,7 @@ public readonly name: string;
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -10889,7 +10889,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mount_propagation StatefulSet#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#mount_propagation StatefulSet#mount_propagation}
 
 ---
 
@@ -10903,7 +10903,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -10917,7 +10917,7 @@ public readonly subPath: string;
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sub_path StatefulSet#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#sub_path StatefulSet#sub_path}
 
 ---
 
@@ -10931,7 +10931,7 @@ public readonly subPathExpr: string;
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sub_path_expr StatefulSet#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#sub_path_expr StatefulSet#sub_path_expr}
 
 ---
 
@@ -10963,7 +10963,7 @@ public readonly name: string;
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -10995,7 +10995,7 @@ public readonly conditionType: string;
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#condition_type StatefulSet#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#condition_type StatefulSet#condition_type}
 
 ---
 
@@ -11038,7 +11038,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_group StatefulSet#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_group StatefulSet#fs_group}
 
 ---
 
@@ -11054,7 +11054,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_group_change_policy StatefulSet#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_group_change_policy StatefulSet#fs_group_change_policy}
 
 ---
 
@@ -11070,7 +11070,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#run_as_group StatefulSet#run_as_group}
 
 ---
 
@@ -11086,7 +11086,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#run_as_non_root StatefulSet#run_as_non_root}
 
 ---
 
@@ -11102,7 +11102,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#run_as_user StatefulSet#run_as_user}
 
 ---
 
@@ -11116,7 +11116,7 @@ public readonly seccompProfile: StatefulSetSpecTemplateSpecSecurityContextSeccom
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#seccomp_profile StatefulSet#seccomp_profile}
 
 ---
 
@@ -11130,7 +11130,7 @@ public readonly seLinuxOptions: StatefulSetSpecTemplateSpecSecurityContextSeLinu
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#se_linux_options StatefulSet#se_linux_options}
 
 ---
 
@@ -11146,7 +11146,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#supplemental_groups StatefulSet#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#supplemental_groups StatefulSet#supplemental_groups}
 
 ---
 
@@ -11160,7 +11160,7 @@ public readonly sysctl: IResolvable | StatefulSetSpecTemplateSpecSecurityContext
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sysctl StatefulSet#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#sysctl StatefulSet#sysctl}
 
 ---
 
@@ -11174,7 +11174,7 @@ public readonly windowsOptions: StatefulSetSpecTemplateSpecSecurityContextWindow
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#windows_options StatefulSet#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#windows_options StatefulSet#windows_options}
 
 ---
 
@@ -11209,7 +11209,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#localhost_profile StatefulSet#localhost_profile}
 
 ---
 
@@ -11223,7 +11223,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -11258,7 +11258,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#level StatefulSet#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#level StatefulSet#level}
 
 ---
 
@@ -11272,7 +11272,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#role StatefulSet#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#role StatefulSet#role}
 
 ---
 
@@ -11286,7 +11286,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -11300,7 +11300,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#user StatefulSet#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#user StatefulSet#user}
 
 ---
 
@@ -11333,7 +11333,7 @@ public readonly name: string;
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -11347,7 +11347,7 @@ public readonly value: string;
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -11382,7 +11382,7 @@ public readonly gmsaCredentialSpec: string;
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#gmsa_credential_spec StatefulSet#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#gmsa_credential_spec StatefulSet#gmsa_credential_spec}
 
 ---
 
@@ -11396,7 +11396,7 @@ public readonly gmsaCredentialSpecName: string;
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#gmsa_credential_spec_name StatefulSet#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#gmsa_credential_spec_name StatefulSet#gmsa_credential_spec_name}
 
 ---
 
@@ -11410,7 +11410,7 @@ public readonly hostProcess: boolean | IResolvable;
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_process StatefulSet#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host_process StatefulSet#host_process}
 
 ---
 
@@ -11426,7 +11426,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#run_as_username StatefulSet#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#run_as_username StatefulSet#run_as_username}
 
 ---
 
@@ -11464,7 +11464,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#effect StatefulSet#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#effect StatefulSet#effect}
 
 ---
 
@@ -11480,7 +11480,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -11496,7 +11496,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -11512,7 +11512,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#toleration_seconds StatefulSet#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#toleration_seconds StatefulSet#toleration_seconds}
 
 ---
 
@@ -11528,7 +11528,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#value StatefulSet#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#value StatefulSet#value}
 
 ---
 
@@ -11567,7 +11567,7 @@ public readonly labelSelector: IResolvable | StatefulSetSpecTemplateSpecTopology
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 
 ---
 
@@ -11581,7 +11581,7 @@ public readonly matchLabelKeys: string[];
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_label_keys StatefulSet#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_label_keys StatefulSet#match_label_keys}
 
 ---
 
@@ -11595,7 +11595,7 @@ public readonly maxSkew: number;
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#max_skew StatefulSet#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#max_skew StatefulSet#max_skew}
 
 ---
 
@@ -11609,7 +11609,7 @@ public readonly minDomains: number;
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#min_domains StatefulSet#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#min_domains StatefulSet#min_domains}
 
 ---
 
@@ -11623,7 +11623,7 @@ public readonly nodeAffinityPolicy: string;
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_affinity_policy StatefulSet#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#node_affinity_policy StatefulSet#node_affinity_policy}
 
 ---
 
@@ -11637,7 +11637,7 @@ public readonly nodeTaintsPolicy: string;
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_taints_policy StatefulSet#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#node_taints_policy StatefulSet#node_taints_policy}
 
 ---
 
@@ -11653,7 +11653,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 
 ---
 
@@ -11667,7 +11667,7 @@ public readonly whenUnsatisfiable: string;
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#when_unsatisfiable StatefulSet#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#when_unsatisfiable StatefulSet#when_unsatisfiable}
 
 ---
 
@@ -11700,7 +11700,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecTopol
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -11716,7 +11716,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -11750,7 +11750,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -11764,7 +11764,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -11780,7 +11780,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -11839,7 +11839,7 @@ public readonly awsElasticBlockStore: StatefulSetSpecTemplateSpecVolumeAwsElasti
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#aws_elastic_block_store StatefulSet#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#aws_elastic_block_store StatefulSet#aws_elastic_block_store}
 
 ---
 
@@ -11853,7 +11853,7 @@ public readonly azureDisk: StatefulSetSpecTemplateSpecVolumeAzureDisk;
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#azure_disk StatefulSet#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#azure_disk StatefulSet#azure_disk}
 
 ---
 
@@ -11867,7 +11867,7 @@ public readonly azureFile: StatefulSetSpecTemplateSpecVolumeAzureFile;
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#azure_file StatefulSet#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#azure_file StatefulSet#azure_file}
 
 ---
 
@@ -11881,7 +11881,7 @@ public readonly cephFs: StatefulSetSpecTemplateSpecVolumeCephFs;
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#ceph_fs StatefulSet#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#ceph_fs StatefulSet#ceph_fs}
 
 ---
 
@@ -11895,7 +11895,7 @@ public readonly cinder: StatefulSetSpecTemplateSpecVolumeCinder;
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#cinder StatefulSet#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#cinder StatefulSet#cinder}
 
 ---
 
@@ -11909,7 +11909,7 @@ public readonly configMap: StatefulSetSpecTemplateSpecVolumeConfigMap;
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map StatefulSet#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#config_map StatefulSet#config_map}
 
 ---
 
@@ -11923,7 +11923,7 @@ public readonly csi: StatefulSetSpecTemplateSpecVolumeCsi;
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#csi StatefulSet#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#csi StatefulSet#csi}
 
 ---
 
@@ -11937,7 +11937,7 @@ public readonly downwardApi: StatefulSetSpecTemplateSpecVolumeDownwardApi;
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#downward_api StatefulSet#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#downward_api StatefulSet#downward_api}
 
 ---
 
@@ -11951,7 +11951,7 @@ public readonly emptyDir: StatefulSetSpecTemplateSpecVolumeEmptyDir;
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#empty_dir StatefulSet#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#empty_dir StatefulSet#empty_dir}
 
 ---
 
@@ -11965,7 +11965,7 @@ public readonly ephemeral: StatefulSetSpecTemplateSpecVolumeEphemeral;
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#ephemeral StatefulSet#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#ephemeral StatefulSet#ephemeral}
 
 ---
 
@@ -11979,7 +11979,7 @@ public readonly fc: StatefulSetSpecTemplateSpecVolumeFc;
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fc StatefulSet#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fc StatefulSet#fc}
 
 ---
 
@@ -11993,7 +11993,7 @@ public readonly flexVolume: StatefulSetSpecTemplateSpecVolumeFlexVolume;
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#flex_volume StatefulSet#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#flex_volume StatefulSet#flex_volume}
 
 ---
 
@@ -12007,7 +12007,7 @@ public readonly flocker: StatefulSetSpecTemplateSpecVolumeFlocker;
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#flocker StatefulSet#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#flocker StatefulSet#flocker}
 
 ---
 
@@ -12021,7 +12021,7 @@ public readonly gcePersistentDisk: StatefulSetSpecTemplateSpecVolumeGcePersisten
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#gce_persistent_disk StatefulSet#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#gce_persistent_disk StatefulSet#gce_persistent_disk}
 
 ---
 
@@ -12035,7 +12035,7 @@ public readonly gitRepo: StatefulSetSpecTemplateSpecVolumeGitRepo;
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#git_repo StatefulSet#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#git_repo StatefulSet#git_repo}
 
 ---
 
@@ -12049,7 +12049,7 @@ public readonly glusterfs: StatefulSetSpecTemplateSpecVolumeGlusterfs;
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#glusterfs StatefulSet#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#glusterfs StatefulSet#glusterfs}
 
 ---
 
@@ -12063,7 +12063,7 @@ public readonly hostPath: StatefulSetSpecTemplateSpecVolumeHostPath;
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#host_path StatefulSet#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#host_path StatefulSet#host_path}
 
 ---
 
@@ -12077,7 +12077,7 @@ public readonly iscsi: StatefulSetSpecTemplateSpecVolumeIscsi;
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#iscsi StatefulSet#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#iscsi StatefulSet#iscsi}
 
 ---
 
@@ -12091,7 +12091,7 @@ public readonly local: StatefulSetSpecTemplateSpecVolumeLocal;
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#local StatefulSet#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#local StatefulSet#local}
 
 ---
 
@@ -12105,7 +12105,7 @@ public readonly name: string;
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -12119,7 +12119,7 @@ public readonly nfs: StatefulSetSpecTemplateSpecVolumeNfs;
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#nfs StatefulSet#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#nfs StatefulSet#nfs}
 
 ---
 
@@ -12133,7 +12133,7 @@ public readonly persistentVolumeClaim: StatefulSetSpecTemplateSpecVolumePersiste
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#persistent_volume_claim StatefulSet#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#persistent_volume_claim StatefulSet#persistent_volume_claim}
 
 ---
 
@@ -12147,7 +12147,7 @@ public readonly photonPersistentDisk: StatefulSetSpecTemplateSpecVolumePhotonPer
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#photon_persistent_disk StatefulSet#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#photon_persistent_disk StatefulSet#photon_persistent_disk}
 
 ---
 
@@ -12161,7 +12161,7 @@ public readonly projected: IResolvable | StatefulSetSpecTemplateSpecVolumeProjec
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#projected StatefulSet#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#projected StatefulSet#projected}
 
 ---
 
@@ -12175,7 +12175,7 @@ public readonly quobyte: StatefulSetSpecTemplateSpecVolumeQuobyte;
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#quobyte StatefulSet#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#quobyte StatefulSet#quobyte}
 
 ---
 
@@ -12189,7 +12189,7 @@ public readonly rbd: StatefulSetSpecTemplateSpecVolumeRbd;
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#rbd StatefulSet#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#rbd StatefulSet#rbd}
 
 ---
 
@@ -12203,7 +12203,7 @@ public readonly secret: StatefulSetSpecTemplateSpecVolumeSecret;
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret StatefulSet#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret StatefulSet#secret}
 
 ---
 
@@ -12217,7 +12217,7 @@ public readonly vsphereVolume: StatefulSetSpecTemplateSpecVolumeVsphereVolume;
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#vsphere_volume StatefulSet#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#vsphere_volume StatefulSet#vsphere_volume}
 
 ---
 
@@ -12252,7 +12252,7 @@ public readonly volumeId: string;
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_id StatefulSet#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_id StatefulSet#volume_id}
 
 ---
 
@@ -12268,7 +12268,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -12284,7 +12284,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#partition StatefulSet#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#partition StatefulSet#partition}
 
 ---
 
@@ -12298,7 +12298,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -12335,7 +12335,7 @@ public readonly cachingMode: string;
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#caching_mode StatefulSet#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#caching_mode StatefulSet#caching_mode}
 
 ---
 
@@ -12349,7 +12349,7 @@ public readonly dataDiskUri: string;
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#data_disk_uri StatefulSet#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#data_disk_uri StatefulSet#data_disk_uri}
 
 ---
 
@@ -12363,7 +12363,7 @@ public readonly diskName: string;
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#disk_name StatefulSet#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#disk_name StatefulSet#disk_name}
 
 ---
 
@@ -12379,7 +12379,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -12393,7 +12393,7 @@ public readonly kind: string;
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#kind StatefulSet#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#kind StatefulSet#kind}
 
 ---
 
@@ -12407,7 +12407,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -12442,7 +12442,7 @@ public readonly secretName: string;
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_name StatefulSet#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_name StatefulSet#secret_name}
 
 ---
 
@@ -12456,7 +12456,7 @@ public readonly shareName: string;
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#share_name StatefulSet#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#share_name StatefulSet#share_name}
 
 ---
 
@@ -12470,7 +12470,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -12486,7 +12486,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_namespace StatefulSet#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_namespace StatefulSet#secret_namespace}
 
 ---
 
@@ -12523,7 +12523,7 @@ public readonly monitors: string[];
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#monitors StatefulSet#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#monitors StatefulSet#monitors}
 
 ---
 
@@ -12537,7 +12537,7 @@ public readonly path: string;
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -12551,7 +12551,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -12565,7 +12565,7 @@ public readonly secretFile: string;
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_file StatefulSet#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_file StatefulSet#secret_file}
 
 ---
 
@@ -12579,7 +12579,7 @@ public readonly secretRef: StatefulSetSpecTemplateSpecVolumeCephFsSecretRef;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
 
 ---
 
@@ -12593,7 +12593,7 @@ public readonly user: string;
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#user StatefulSet#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#user StatefulSet#user}
 
 ---
 
@@ -12626,7 +12626,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -12640,7 +12640,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -12674,7 +12674,7 @@ public readonly volumeId: string;
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_id StatefulSet#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_id StatefulSet#volume_id}
 
 ---
 
@@ -12690,7 +12690,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -12704,7 +12704,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -12741,7 +12741,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
 
 ---
 
@@ -12755,7 +12755,7 @@ public readonly items: IResolvable | StatefulSetSpecTemplateSpecVolumeConfigMapI
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -12769,7 +12769,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -12783,7 +12783,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -12817,7 +12817,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -12833,7 +12833,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -12849,7 +12849,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -12885,7 +12885,7 @@ public readonly driver: string;
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#driver StatefulSet#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#driver StatefulSet#driver}
 
 ---
 
@@ -12901,7 +12901,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -12915,7 +12915,7 @@ public readonly nodePublishSecretRef: StatefulSetSpecTemplateSpecVolumeCsiNodePu
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#node_publish_secret_ref StatefulSet#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#node_publish_secret_ref StatefulSet#node_publish_secret_ref}
 
 ---
 
@@ -12929,7 +12929,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -12943,7 +12943,7 @@ public readonly volumeAttributes: {[ key: string ]: string};
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_attributes StatefulSet#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_attributes StatefulSet#volume_attributes}
 
 ---
 
@@ -12975,7 +12975,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -13010,7 +13010,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
 
 ---
 
@@ -13024,7 +13024,7 @@ public readonly items: IResolvable | StatefulSetSpecTemplateSpecVolumeDownwardAp
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -13059,7 +13059,7 @@ public readonly fieldRef: StatefulSetSpecTemplateSpecVolumeDownwardApiItemsField
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
 
 ---
 
@@ -13075,7 +13075,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -13091,7 +13091,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -13105,7 +13105,7 @@ public readonly resourceFieldRef: StatefulSetSpecTemplateSpecVolumeDownwardApiIt
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
 
 ---
 
@@ -13138,7 +13138,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
 
 ---
 
@@ -13152,7 +13152,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
 
 ---
 
@@ -13170,9 +13170,9 @@ const statefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef: statefu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
 
 ---
 
@@ -13184,7 +13184,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
 
 ---
 
@@ -13198,7 +13198,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource StatefulSet#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resource StatefulSet#resource}
 
 ---
 
@@ -13210,7 +13210,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
 
 ---
 
@@ -13245,7 +13245,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#medium StatefulSet#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#medium StatefulSet#medium}
 
 ---
 
@@ -13259,7 +13259,7 @@ public readonly sizeLimit: string;
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#size_limit StatefulSet#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#size_limit StatefulSet#size_limit}
 
 ---
 
@@ -13291,7 +13291,7 @@ public readonly volumeClaimTemplate: StatefulSetSpecTemplateSpecVolumeEphemeralV
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
 
 ---
 
@@ -13324,7 +13324,7 @@ public readonly spec: StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTempl
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#spec StatefulSet#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#spec StatefulSet#spec}
 
 ---
 
@@ -13338,7 +13338,7 @@ public readonly metadata: StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimT
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
 
 ---
 
@@ -13373,7 +13373,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
 
 ---
 
@@ -13389,7 +13389,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#labels StatefulSet#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#labels StatefulSet#labels}
 
 ---
 
@@ -13426,7 +13426,7 @@ public readonly accessModes: string[];
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#access_modes StatefulSet#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#access_modes StatefulSet#access_modes}
 
 ---
 
@@ -13440,7 +13440,7 @@ public readonly resources: StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaim
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resources StatefulSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resources StatefulSet#resources}
 
 ---
 
@@ -13454,7 +13454,7 @@ public readonly selector: StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimT
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#selector StatefulSet#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#selector StatefulSet#selector}
 
 ---
 
@@ -13468,7 +13468,7 @@ public readonly storageClassName: string;
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#storage_class_name StatefulSet#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#storage_class_name StatefulSet#storage_class_name}
 
 ---
 
@@ -13482,7 +13482,7 @@ public readonly volumeMode: string;
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_mode StatefulSet#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_mode StatefulSet#volume_mode}
 
 ---
 
@@ -13496,7 +13496,7 @@ public readonly volumeName: string;
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_name StatefulSet#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_name StatefulSet#volume_name}
 
 ---
 
@@ -13529,7 +13529,7 @@ public readonly limits: {[ key: string ]: string};
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#limits StatefulSet#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#limits StatefulSet#limits}
 
 ---
 
@@ -13545,7 +13545,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#requests StatefulSet#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#requests StatefulSet#requests}
 
 ---
 
@@ -13578,7 +13578,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecTemplateSpecVolum
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -13594,7 +13594,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -13628,7 +13628,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -13642,7 +13642,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -13658,7 +13658,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -13693,7 +13693,7 @@ public readonly lun: number;
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#lun StatefulSet#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#lun StatefulSet#lun}
 
 ---
 
@@ -13707,7 +13707,7 @@ public readonly targetWwNs: string[];
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#target_ww_ns StatefulSet#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#target_ww_ns StatefulSet#target_ww_ns}
 
 ---
 
@@ -13723,7 +13723,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -13737,7 +13737,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -13773,7 +13773,7 @@ public readonly driver: string;
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#driver StatefulSet#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#driver StatefulSet#driver}
 
 ---
 
@@ -13789,7 +13789,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -13803,7 +13803,7 @@ public readonly options: {[ key: string ]: string};
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#options StatefulSet#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#options StatefulSet#options}
 
 ---
 
@@ -13817,7 +13817,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -13831,7 +13831,7 @@ public readonly secretRef: StatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRef;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
 
 ---
 
@@ -13864,7 +13864,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -13878,7 +13878,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -13911,7 +13911,7 @@ public readonly datasetName: string;
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#dataset_name StatefulSet#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#dataset_name StatefulSet#dataset_name}
 
 ---
 
@@ -13925,7 +13925,7 @@ public readonly datasetUuid: string;
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#dataset_uuid StatefulSet#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#dataset_uuid StatefulSet#dataset_uuid}
 
 ---
 
@@ -13960,7 +13960,7 @@ public readonly pdName: string;
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pd_name StatefulSet#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#pd_name StatefulSet#pd_name}
 
 ---
 
@@ -13976,7 +13976,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -13992,7 +13992,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#partition StatefulSet#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#partition StatefulSet#partition}
 
 ---
 
@@ -14006,7 +14006,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -14042,7 +14042,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#directory StatefulSet#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#directory StatefulSet#directory}
 
 ---
 
@@ -14056,7 +14056,7 @@ public readonly repository: string;
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#repository StatefulSet#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#repository StatefulSet#repository}
 
 ---
 
@@ -14070,7 +14070,7 @@ public readonly revision: string;
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#revision StatefulSet#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#revision StatefulSet#revision}
 
 ---
 
@@ -14104,7 +14104,7 @@ public readonly endpointsName: string;
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#endpoints_name StatefulSet#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#endpoints_name StatefulSet#endpoints_name}
 
 ---
 
@@ -14118,7 +14118,7 @@ public readonly path: string;
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -14132,7 +14132,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -14165,7 +14165,7 @@ public readonly path: string;
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -14179,7 +14179,7 @@ public readonly type: string;
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -14216,7 +14216,7 @@ public readonly iqn: string;
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#iqn StatefulSet#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#iqn StatefulSet#iqn}
 
 ---
 
@@ -14232,7 +14232,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#target_portal StatefulSet#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#target_portal StatefulSet#target_portal}
 
 ---
 
@@ -14248,7 +14248,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -14262,7 +14262,7 @@ public readonly iscsiInterface: string;
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#iscsi_interface StatefulSet#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#iscsi_interface StatefulSet#iscsi_interface}
 
 ---
 
@@ -14276,7 +14276,7 @@ public readonly lun: number;
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#lun StatefulSet#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#lun StatefulSet#lun}
 
 ---
 
@@ -14290,7 +14290,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -14322,7 +14322,7 @@ public readonly path: string;
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -14356,7 +14356,7 @@ public readonly path: string;
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -14370,7 +14370,7 @@ public readonly server: string;
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#server StatefulSet#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#server StatefulSet#server}
 
 ---
 
@@ -14384,7 +14384,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -14417,7 +14417,7 @@ public readonly claimName: string;
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#claim_name StatefulSet#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#claim_name StatefulSet#claim_name}
 
 ---
 
@@ -14431,7 +14431,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -14464,7 +14464,7 @@ public readonly pdId: string;
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#pd_id StatefulSet#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#pd_id StatefulSet#pd_id}
 
 ---
 
@@ -14480,7 +14480,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -14513,7 +14513,7 @@ public readonly sources: IResolvable | StatefulSetSpecTemplateSpecVolumeProjecte
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#sources StatefulSet#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#sources StatefulSet#sources}
 
 ---
 
@@ -14529,7 +14529,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
 
 ---
 
@@ -14564,7 +14564,7 @@ public readonly configMap: IResolvable | StatefulSetSpecTemplateSpecVolumeProjec
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#config_map StatefulSet#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#config_map StatefulSet#config_map}
 
 ---
 
@@ -14578,7 +14578,7 @@ public readonly downwardApi: StatefulSetSpecTemplateSpecVolumeProjectedSourcesDo
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#downward_api StatefulSet#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#downward_api StatefulSet#downward_api}
 
 ---
 
@@ -14592,7 +14592,7 @@ public readonly secret: IResolvable | StatefulSetSpecTemplateSpecVolumeProjected
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret StatefulSet#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret StatefulSet#secret}
 
 ---
 
@@ -14606,7 +14606,7 @@ public readonly serviceAccountToken: StatefulSetSpecTemplateSpecVolumeProjectedS
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#service_account_token StatefulSet#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#service_account_token StatefulSet#service_account_token}
 
 ---
 
@@ -14640,7 +14640,7 @@ public readonly items: IResolvable | StatefulSetSpecTemplateSpecVolumeProjectedS
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -14654,7 +14654,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -14668,7 +14668,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -14702,7 +14702,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -14718,7 +14718,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -14734,7 +14734,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -14766,7 +14766,7 @@ public readonly items: IResolvable | StatefulSetSpecTemplateSpecVolumeProjectedS
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -14803,7 +14803,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -14817,7 +14817,7 @@ public readonly fieldRef: StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownw
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#field_ref StatefulSet#field_ref}
 
 ---
 
@@ -14833,7 +14833,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -14847,7 +14847,7 @@ public readonly resourceFieldRef: StatefulSetSpecTemplateSpecVolumeProjectedSour
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resource_field_ref StatefulSet#resource_field_ref}
 
 ---
 
@@ -14880,7 +14880,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#api_version StatefulSet#api_version}
 
 ---
 
@@ -14894,7 +14894,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#field_path StatefulSet#field_path}
 
 ---
 
@@ -14912,9 +14912,9 @@ const statefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceF
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container_name StatefulSet#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#divisor StatefulSet#divisor}. |
 
 ---
 
@@ -14926,7 +14926,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#container_name StatefulSet#container_name}.
 
 ---
 
@@ -14940,7 +14940,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resource StatefulSet#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resource StatefulSet#resource}
 
 ---
 
@@ -14952,7 +14952,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#divisor StatefulSet#divisor}.
 
 ---
 
@@ -14986,7 +14986,7 @@ public readonly items: IResolvable | StatefulSetSpecTemplateSpecVolumeProjectedS
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -15000,7 +15000,7 @@ public readonly name: string;
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -15014,7 +15014,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -15048,7 +15048,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -15064,7 +15064,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -15080,7 +15080,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -15114,7 +15114,7 @@ public readonly path: string;
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -15128,7 +15128,7 @@ public readonly audience: string;
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#audience StatefulSet#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#audience StatefulSet#audience}
 
 ---
 
@@ -15144,7 +15144,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#expiration_seconds StatefulSet#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#expiration_seconds StatefulSet#expiration_seconds}
 
 ---
 
@@ -15180,7 +15180,7 @@ public readonly registry: string;
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#registry StatefulSet#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#registry StatefulSet#registry}
 
 ---
 
@@ -15194,7 +15194,7 @@ public readonly volume: string;
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume StatefulSet#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume StatefulSet#volume}
 
 ---
 
@@ -15208,7 +15208,7 @@ public readonly group: string;
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#group StatefulSet#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#group StatefulSet#group}
 
 ---
 
@@ -15222,7 +15222,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -15236,7 +15236,7 @@ public readonly user: string;
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#user StatefulSet#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#user StatefulSet#user}
 
 ---
 
@@ -15275,7 +15275,7 @@ public readonly cephMonitors: string[];
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#ceph_monitors StatefulSet#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#ceph_monitors StatefulSet#ceph_monitors}
 
 ---
 
@@ -15289,7 +15289,7 @@ public readonly rbdImage: string;
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#rbd_image StatefulSet#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#rbd_image StatefulSet#rbd_image}
 
 ---
 
@@ -15305,7 +15305,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -15319,7 +15319,7 @@ public readonly keyring: string;
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#keyring StatefulSet#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#keyring StatefulSet#keyring}
 
 ---
 
@@ -15333,7 +15333,7 @@ public readonly radosUser: string;
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#rados_user StatefulSet#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#rados_user StatefulSet#rados_user}
 
 ---
 
@@ -15347,7 +15347,7 @@ public readonly rbdPool: string;
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#rbd_pool StatefulSet#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#rbd_pool StatefulSet#rbd_pool}
 
 ---
 
@@ -15361,7 +15361,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read_only StatefulSet#read_only}
 
 ---
 
@@ -15375,7 +15375,7 @@ public readonly secretRef: StatefulSetSpecTemplateSpecVolumeRbdSecretRef;
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_ref StatefulSet#secret_ref}
 
 ---
 
@@ -15408,7 +15408,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -15422,7 +15422,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -15459,7 +15459,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#default_mode StatefulSet#default_mode}
 
 ---
 
@@ -15473,7 +15473,7 @@ public readonly items: IResolvable | StatefulSetSpecTemplateSpecVolumeSecretItem
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#items StatefulSet#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#items StatefulSet#items}
 
 ---
 
@@ -15487,7 +15487,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#optional StatefulSet#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#optional StatefulSet#optional}
 
 ---
 
@@ -15501,7 +15501,7 @@ public readonly secretName: string;
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#secret_name StatefulSet#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#secret_name StatefulSet#secret_name}
 
 ---
 
@@ -15535,7 +15535,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -15551,7 +15551,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#mode StatefulSet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#mode StatefulSet#mode}
 
 ---
 
@@ -15567,7 +15567,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#path StatefulSet#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#path StatefulSet#path}
 
 ---
 
@@ -15600,7 +15600,7 @@ public readonly volumePath: string;
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_path StatefulSet#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_path StatefulSet#volume_path}
 
 ---
 
@@ -15616,7 +15616,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#fs_type StatefulSet#fs_type}
 
 ---
 
@@ -15649,7 +15649,7 @@ public readonly rollingUpdate: IResolvable | StatefulSetSpecUpdateStrategyRollin
 
 rolling_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#rolling_update StatefulSet#rolling_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#rolling_update StatefulSet#rolling_update}
 
 ---
 
@@ -15663,7 +15663,7 @@ public readonly type: string;
 
 Indicates the type of the StatefulSet update strategy. Default is RollingUpdate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#type StatefulSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#type StatefulSet#type}
 
 ---
 
@@ -15695,7 +15695,7 @@ public readonly partition: number;
 
 Indicates the ordinal at which the StatefulSet should be partitioned. Default value is 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#partition StatefulSet#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#partition StatefulSet#partition}
 
 ---
 
@@ -15728,7 +15728,7 @@ public readonly metadata: StatefulSetSpecVolumeClaimTemplateMetadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
 
 ---
 
@@ -15742,7 +15742,7 @@ public readonly spec: StatefulSetSpecVolumeClaimTemplateSpec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#spec StatefulSet#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#spec StatefulSet#spec}
 
 ---
 
@@ -15780,7 +15780,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
 
 ---
 
@@ -15796,7 +15796,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
 
 ---
 
@@ -15812,7 +15812,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#labels StatefulSet#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#labels StatefulSet#labels}
 
 ---
 
@@ -15826,7 +15826,7 @@ public readonly name: string;
 
 Name of the persistent volume claim, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#name StatefulSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#name StatefulSet#name}
 
 ---
 
@@ -15840,7 +15840,7 @@ public readonly namespace: string;
 
 Namespace defines the space within which name of the persistent volume claim must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 
 ---
 
@@ -15877,7 +15877,7 @@ public readonly accessModes: string[];
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#access_modes StatefulSet#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#access_modes StatefulSet#access_modes}
 
 ---
 
@@ -15891,7 +15891,7 @@ public readonly resources: StatefulSetSpecVolumeClaimTemplateSpecResources;
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#resources StatefulSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#resources StatefulSet#resources}
 
 ---
 
@@ -15905,7 +15905,7 @@ public readonly selector: StatefulSetSpecVolumeClaimTemplateSpecSelector;
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#selector StatefulSet#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#selector StatefulSet#selector}
 
 ---
 
@@ -15919,7 +15919,7 @@ public readonly storageClassName: string;
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#storage_class_name StatefulSet#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#storage_class_name StatefulSet#storage_class_name}
 
 ---
 
@@ -15933,7 +15933,7 @@ public readonly volumeMode: string;
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_mode StatefulSet#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_mode StatefulSet#volume_mode}
 
 ---
 
@@ -15947,7 +15947,7 @@ public readonly volumeName: string;
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#volume_name StatefulSet#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#volume_name StatefulSet#volume_name}
 
 ---
 
@@ -15980,7 +15980,7 @@ public readonly limits: {[ key: string ]: string};
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#limits StatefulSet#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#limits StatefulSet#limits}
 
 ---
 
@@ -15996,7 +15996,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#requests StatefulSet#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#requests StatefulSet#requests}
 
 ---
 
@@ -16029,7 +16029,7 @@ public readonly matchExpressions: IResolvable | StatefulSetSpecVolumeClaimTempla
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 
 ---
 
@@ -16045,7 +16045,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#match_labels StatefulSet#match_labels}
 
 ---
 
@@ -16079,7 +16079,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#key StatefulSet#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#key StatefulSet#key}
 
 ---
 
@@ -16093,7 +16093,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#operator StatefulSet#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#operator StatefulSet#operator}
 
 ---
 
@@ -16109,7 +16109,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#values StatefulSet#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#values StatefulSet#values}
 
 ---
 
@@ -16127,10 +16127,10 @@ const statefulSetTimeouts: statefulSet.StatefulSetTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#create StatefulSet#create}. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#delete StatefulSet#delete}. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read StatefulSet#read}. |
-| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#update StatefulSet#update}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#create StatefulSet#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#delete StatefulSet#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read StatefulSet#read}. |
+| <code><a href="#@cdktn/provider-kubernetes.statefulSet.StatefulSetTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#update StatefulSet#update}. |
 
 ---
 
@@ -16142,7 +16142,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#create StatefulSet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#create StatefulSet#create}.
 
 ---
 
@@ -16154,7 +16154,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#delete StatefulSet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#delete StatefulSet#delete}.
 
 ---
 
@@ -16166,7 +16166,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#read StatefulSet#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#read StatefulSet#read}.
 
 ---
 
@@ -16178,7 +16178,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/stateful_set#update StatefulSet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/stateful_set#update StatefulSet#update}.
 
 ---
 
