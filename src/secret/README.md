@@ -1,3 +1,3 @@
 # `kubernetes_secret`
 
-Refer to the Terraform Registry for docs: [`kubernetes_secret`](https://registry.terraform.io/providers/hashicorp/kubernetes/3.1.0/docs/resources/secret).
+Refer to the Terraform Registry for docs: [`kubernetes_secret`](https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/secret).
