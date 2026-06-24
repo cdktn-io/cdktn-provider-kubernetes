@@ -74,7 +74,7 @@ export interface RoleBindingV1Metadata {
 export function roleBindingV1MetadataToTerraform(struct?: RoleBindingV1MetadataOutputReference | RoleBindingV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -89,7 +89,7 @@ export function roleBindingV1MetadataToTerraform(struct?: RoleBindingV1MetadataO
 export function roleBindingV1MetadataToHclTerraform(struct?: RoleBindingV1MetadataOutputReference | RoleBindingV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -303,7 +303,7 @@ export interface RoleBindingV1RoleRef {
 export function roleBindingV1RoleRefToTerraform(struct?: RoleBindingV1RoleRefOutputReference | RoleBindingV1RoleRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_group: cdktn.stringToTerraform(struct!.apiGroup),
@@ -316,7 +316,7 @@ export function roleBindingV1RoleRefToTerraform(struct?: RoleBindingV1RoleRefOut
 export function roleBindingV1RoleRefToHclTerraform(struct?: RoleBindingV1RoleRefOutputReference | RoleBindingV1RoleRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_group: {
@@ -456,7 +456,7 @@ export interface RoleBindingV1Subject {
 export function roleBindingV1SubjectToTerraform(struct?: RoleBindingV1Subject | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_group: cdktn.stringToTerraform(struct!.apiGroup),
@@ -470,7 +470,7 @@ export function roleBindingV1SubjectToTerraform(struct?: RoleBindingV1Subject | 
 export function roleBindingV1SubjectToHclTerraform(struct?: RoleBindingV1Subject | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_group: {

@@ -32,7 +32,7 @@ export interface DataKubernetesEndpointSliceV1EndpointCondition {
 export function dataKubernetesEndpointSliceV1EndpointConditionToTerraform(struct?: DataKubernetesEndpointSliceV1EndpointCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -42,7 +42,7 @@ export function dataKubernetesEndpointSliceV1EndpointConditionToTerraform(struct
 export function dataKubernetesEndpointSliceV1EndpointConditionToHclTerraform(struct?: DataKubernetesEndpointSliceV1EndpointCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -117,7 +117,7 @@ export interface DataKubernetesEndpointSliceV1EndpointTargetRef {
 export function dataKubernetesEndpointSliceV1EndpointTargetRefToTerraform(struct?: DataKubernetesEndpointSliceV1EndpointTargetRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -127,7 +127,7 @@ export function dataKubernetesEndpointSliceV1EndpointTargetRefToTerraform(struct
 export function dataKubernetesEndpointSliceV1EndpointTargetRefToHclTerraform(struct?: DataKubernetesEndpointSliceV1EndpointTargetRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -212,7 +212,7 @@ export interface DataKubernetesEndpointSliceV1Endpoint {
 export function dataKubernetesEndpointSliceV1EndpointToTerraform(struct?: DataKubernetesEndpointSliceV1Endpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -222,7 +222,7 @@ export function dataKubernetesEndpointSliceV1EndpointToTerraform(struct?: DataKu
 export function dataKubernetesEndpointSliceV1EndpointToHclTerraform(struct?: DataKubernetesEndpointSliceV1Endpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -314,7 +314,7 @@ export interface DataKubernetesEndpointSliceV1Port {
 export function dataKubernetesEndpointSliceV1PortToTerraform(struct?: DataKubernetesEndpointSliceV1Port): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -324,7 +324,7 @@ export function dataKubernetesEndpointSliceV1PortToTerraform(struct?: DataKubern
 export function dataKubernetesEndpointSliceV1PortToHclTerraform(struct?: DataKubernetesEndpointSliceV1Port): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -434,7 +434,7 @@ export interface DataKubernetesEndpointSliceV1Metadata {
 export function dataKubernetesEndpointSliceV1MetadataToTerraform(struct?: DataKubernetesEndpointSliceV1MetadataOutputReference | DataKubernetesEndpointSliceV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -449,7 +449,7 @@ export function dataKubernetesEndpointSliceV1MetadataToTerraform(struct?: DataKu
 export function dataKubernetesEndpointSliceV1MetadataToHclTerraform(struct?: DataKubernetesEndpointSliceV1MetadataOutputReference | DataKubernetesEndpointSliceV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {

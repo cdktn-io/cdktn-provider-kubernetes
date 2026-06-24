@@ -80,7 +80,7 @@ export interface PriorityClassV1Metadata {
 export function priorityClassV1MetadataToTerraform(struct?: PriorityClassV1MetadataOutputReference | PriorityClassV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -94,7 +94,7 @@ export function priorityClassV1MetadataToTerraform(struct?: PriorityClassV1Metad
 export function priorityClassV1MetadataToHclTerraform(struct?: PriorityClassV1MetadataOutputReference | PriorityClassV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {

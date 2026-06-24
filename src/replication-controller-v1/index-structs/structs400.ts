@@ -80,7 +80,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerPort {
 export function replicationControllerV1SpecTemplateSpecInitContainerPortToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerPort | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_port: cdktn.numberToTerraform(struct!.containerPort),
@@ -95,7 +95,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerPortToTerraf
 export function replicationControllerV1SpecTemplateSpecInitContainerPortToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerPort | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_port: {
@@ -311,7 +311,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerReadinessPr
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExecToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
@@ -322,7 +322,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerReadinessPro
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExecToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     command: {
@@ -403,7 +403,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerReadinessPr
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpc | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -415,7 +415,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerReadinessPro
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpc | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -553,7 +553,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerReadinessPr
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -565,7 +565,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerReadinessPro
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -724,7 +724,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerReadinessPr
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host: cdktn.stringToTerraform(struct!.host),
@@ -739,7 +739,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerReadinessPro
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host: {
@@ -926,7 +926,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerReadinessPr
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.stringToTerraform(struct!.port),
@@ -937,7 +937,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerReadinessPro
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -1089,7 +1089,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerReadinessPr
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
@@ -1108,7 +1108,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerReadinessPro
 export function replicationControllerV1SpecTemplateSpecInitContainerReadinessProbeToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     failure_threshold: {
@@ -1413,7 +1413,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerResources {
 export function replicationControllerV1SpecTemplateSpecInitContainerResourcesToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerResourcesOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     limits: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.limits),
@@ -1425,7 +1425,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerResourcesToT
 export function replicationControllerV1SpecTemplateSpecInitContainerResourcesToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerResourcesOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     limits: {
@@ -1534,7 +1534,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerSecurityCon
 export function replicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilities): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     add: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.add),
@@ -1546,7 +1546,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerSecurityCont
 export function replicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextCapabilities): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     add: {
@@ -1667,7 +1667,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerSecurityCon
 export function replicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     level: cdktn.stringToTerraform(struct!.level),
@@ -1681,7 +1681,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerSecurityCont
 export function replicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     level: {
@@ -1846,7 +1846,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerSecurityCon
 export function replicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     localhost_profile: cdktn.stringToTerraform(struct!.localhostProfile),
@@ -1858,7 +1858,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerSecurityCont
 export function replicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     localhost_profile: {
@@ -2009,7 +2009,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerSecurityCon
 export function replicationControllerV1SpecTemplateSpecInitContainerSecurityContextToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_privilege_escalation: cdktn.booleanToTerraform(struct!.allowPrivilegeEscalation),
@@ -2028,7 +2028,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerSecurityCont
 export function replicationControllerV1SpecTemplateSpecInitContainerSecurityContextToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContextOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerSecurityContext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_privilege_escalation: {
@@ -2327,7 +2327,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerStartupProb
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeExecToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     command: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.command),
@@ -2338,7 +2338,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbe
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeExecToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeExec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     command: {
@@ -2419,7 +2419,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerStartupProb
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpcToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpc | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.numberToTerraform(struct!.port),
@@ -2431,7 +2431,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbe
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpcToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeGrpc | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -2569,7 +2569,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerStartupProb
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2581,7 +2581,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbe
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2740,7 +2740,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerStartupProb
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host: cdktn.stringToTerraform(struct!.host),
@@ -2755,7 +2755,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbe
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeHttpGet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host: {
@@ -2942,7 +2942,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerStartupProb
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocket | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     port: cdktn.stringToTerraform(struct!.port),
@@ -2953,7 +2953,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbe
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocket | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     port: {
@@ -3105,7 +3105,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerStartupProb
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
@@ -3124,7 +3124,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbe
 export function replicationControllerV1SpecTemplateSpecInitContainerStartupProbeToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeOutputReference | ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbe): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     failure_threshold: {
@@ -3429,7 +3429,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerVolumeDevic
 export function replicationControllerV1SpecTemplateSpecInitContainerVolumeDeviceToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerVolumeDevice | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     device_path: cdktn.stringToTerraform(struct!.devicePath),
@@ -3441,7 +3441,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerVolumeDevice
 export function replicationControllerV1SpecTemplateSpecInitContainerVolumeDeviceToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerVolumeDevice | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     device_path: {
@@ -3600,7 +3600,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainerVolumeMount
 export function replicationControllerV1SpecTemplateSpecInitContainerVolumeMountToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerVolumeMount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mount_path: cdktn.stringToTerraform(struct!.mountPath),
@@ -3616,7 +3616,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerVolumeMountT
 export function replicationControllerV1SpecTemplateSpecInitContainerVolumeMountToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainerVolumeMount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mount_path: {
@@ -3989,7 +3989,7 @@ export interface ReplicationControllerV1SpecTemplateSpecInitContainer {
 export function replicationControllerV1SpecTemplateSpecInitContainerToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
@@ -4022,7 +4022,7 @@ export function replicationControllerV1SpecTemplateSpecInitContainerToTerraform(
 export function replicationControllerV1SpecTemplateSpecInitContainerToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecInitContainer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     args: {
@@ -4742,7 +4742,7 @@ export interface ReplicationControllerV1SpecTemplateSpecOs {
 export function replicationControllerV1SpecTemplateSpecOsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecOsOutputReference | ReplicationControllerV1SpecTemplateSpecOs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -4753,7 +4753,7 @@ export function replicationControllerV1SpecTemplateSpecOsToTerraform(struct?: Re
 export function replicationControllerV1SpecTemplateSpecOsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecOsOutputReference | ReplicationControllerV1SpecTemplateSpecOs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -4825,7 +4825,7 @@ export interface ReplicationControllerV1SpecTemplateSpecReadinessGate {
 export function replicationControllerV1SpecTemplateSpecReadinessGateToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecReadinessGate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition_type: cdktn.stringToTerraform(struct!.conditionType),
@@ -4836,7 +4836,7 @@ export function replicationControllerV1SpecTemplateSpecReadinessGateToTerraform(
 export function replicationControllerV1SpecTemplateSpecReadinessGateToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecReadinessGate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition_type: {
@@ -4958,7 +4958,7 @@ export interface ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOp
 export function replicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference | ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     level: cdktn.stringToTerraform(struct!.level),
@@ -4972,7 +4972,7 @@ export function replicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOpt
 export function replicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference | ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     level: {
@@ -5137,7 +5137,7 @@ export interface ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompPr
 export function replicationControllerV1SpecTemplateSpecSecurityContextSeccompProfileToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference | ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     localhost_profile: cdktn.stringToTerraform(struct!.localhostProfile),
@@ -5149,7 +5149,7 @@ export function replicationControllerV1SpecTemplateSpecSecurityContextSeccompPro
 export function replicationControllerV1SpecTemplateSpecSecurityContextSeccompProfileToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference | ReplicationControllerV1SpecTemplateSpecSecurityContextSeccompProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     localhost_profile: {
@@ -5258,7 +5258,7 @@ export interface ReplicationControllerV1SpecTemplateSpecSecurityContextSysctl {
 export function replicationControllerV1SpecTemplateSpecSecurityContextSysctlToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecSecurityContextSysctl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -5270,7 +5270,7 @@ export function replicationControllerV1SpecTemplateSpecSecurityContextSysctlToTe
 export function replicationControllerV1SpecTemplateSpecSecurityContextSysctlToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecSecurityContextSysctl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -5417,7 +5417,7 @@ export interface ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOp
 export function replicationControllerV1SpecTemplateSpecSecurityContextWindowsOptionsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference | ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     gmsa_credential_spec: cdktn.stringToTerraform(struct!.gmsaCredentialSpec),
@@ -5431,7 +5431,7 @@ export function replicationControllerV1SpecTemplateSpecSecurityContextWindowsOpt
 export function replicationControllerV1SpecTemplateSpecSecurityContextWindowsOptionsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference | ReplicationControllerV1SpecTemplateSpecSecurityContextWindowsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     gmsa_credential_spec: {
@@ -5644,7 +5644,7 @@ export interface ReplicationControllerV1SpecTemplateSpecSecurityContext {
 export function replicationControllerV1SpecTemplateSpecSecurityContextToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecSecurityContextOutputReference | ReplicationControllerV1SpecTemplateSpecSecurityContext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fs_group: cdktn.stringToTerraform(struct!.fsGroup),
@@ -5664,7 +5664,7 @@ export function replicationControllerV1SpecTemplateSpecSecurityContextToTerrafor
 export function replicationControllerV1SpecTemplateSpecSecurityContextToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecSecurityContextOutputReference | ReplicationControllerV1SpecTemplateSpecSecurityContext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fs_group: {
@@ -6015,7 +6015,7 @@ export interface ReplicationControllerV1SpecTemplateSpecToleration {
 export function replicationControllerV1SpecTemplateSpecTolerationToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecToleration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     effect: cdktn.stringToTerraform(struct!.effect),
@@ -6030,7 +6030,7 @@ export function replicationControllerV1SpecTemplateSpecTolerationToTerraform(str
 export function replicationControllerV1SpecTemplateSpecTolerationToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecToleration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     effect: {
@@ -6261,7 +6261,7 @@ export interface ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraint
 export function replicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -6274,7 +6274,7 @@ export function replicationControllerV1SpecTemplateSpecTopologySpreadConstraintL
 export function replicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -6443,7 +6443,7 @@ export interface ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraint
 export function replicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelector | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
@@ -6455,7 +6455,7 @@ export function replicationControllerV1SpecTemplateSpecTopologySpreadConstraintL
 export function replicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelector | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_labels: {
@@ -6632,7 +6632,7 @@ export interface ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraint
 export function replicationControllerV1SpecTemplateSpecTopologySpreadConstraintToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_label_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchLabelKeys),
@@ -6650,7 +6650,7 @@ export function replicationControllerV1SpecTemplateSpecTopologySpreadConstraintT
 export function replicationControllerV1SpecTemplateSpecTopologySpreadConstraintToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_label_keys: {
@@ -6971,7 +6971,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockSto
 export function replicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStoreToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStore): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fs_type: cdktn.stringToTerraform(struct!.fsType),
@@ -6985,7 +6985,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStor
 export function replicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStoreToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeAwsElasticBlockStore): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fs_type: {
@@ -7171,7 +7171,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeAzureDisk {
 export function replicationControllerV1SpecTemplateSpecVolumeAzureDiskToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeAzureDiskOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeAzureDisk): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     caching_mode: cdktn.stringToTerraform(struct!.cachingMode),
@@ -7187,7 +7187,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeAzureDiskToTerrafor
 export function replicationControllerV1SpecTemplateSpecVolumeAzureDiskToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeAzureDiskOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeAzureDisk): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     caching_mode: {
@@ -7411,7 +7411,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeAzureFile {
 export function replicationControllerV1SpecTemplateSpecVolumeAzureFileToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeAzureFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read_only: cdktn.booleanToTerraform(struct!.readOnly),
@@ -7425,7 +7425,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeAzureFileToTerrafor
 export function replicationControllerV1SpecTemplateSpecVolumeAzureFileToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeAzureFileOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeAzureFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read_only: {
@@ -7584,7 +7584,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRef {
 export function replicationControllerV1SpecTemplateSpecVolumeCephFsSecretRefToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -7596,7 +7596,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeCephFsSecretRefToTe
 export function replicationControllerV1SpecTemplateSpecVolumeCephFsSecretRefToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeCephFsSecretRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -7729,7 +7729,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeCephFs {
 export function replicationControllerV1SpecTemplateSpecVolumeCephFsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeCephFsOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeCephFs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     monitors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.monitors),
@@ -7745,7 +7745,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeCephFsToTerraform(s
 export function replicationControllerV1SpecTemplateSpecVolumeCephFsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeCephFsOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeCephFs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     monitors: {
@@ -7969,7 +7969,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeCinder {
 export function replicationControllerV1SpecTemplateSpecVolumeCinderToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeCinder): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fs_type: cdktn.stringToTerraform(struct!.fsType),
@@ -7982,7 +7982,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeCinderToTerraform(s
 export function replicationControllerV1SpecTemplateSpecVolumeCinderToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeCinder): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fs_type: {
@@ -8122,7 +8122,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItems {
 export function replicationControllerV1SpecTemplateSpecVolumeConfigMapItemsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -8135,7 +8135,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeConfigMapItemsToTer
 export function replicationControllerV1SpecTemplateSpecVolumeConfigMapItemsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -8316,7 +8316,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeConfigMap {
 export function replicationControllerV1SpecTemplateSpecVolumeConfigMapToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeConfigMap): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_mode: cdktn.stringToTerraform(struct!.defaultMode),
@@ -8330,7 +8330,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeConfigMapToTerrafor
 export function replicationControllerV1SpecTemplateSpecVolumeConfigMapToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeConfigMap): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_mode: {
@@ -8489,7 +8489,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecr
 export function replicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRefToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -8500,7 +8500,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecre
 export function replicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRefToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeCsiNodePublishSecretRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -8599,7 +8599,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeCsi {
 export function replicationControllerV1SpecTemplateSpecVolumeCsiToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeCsiOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeCsi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     driver: cdktn.stringToTerraform(struct!.driver),
@@ -8614,7 +8614,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeCsiToTerraform(stru
 export function replicationControllerV1SpecTemplateSpecVolumeCsiToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeCsiOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeCsi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     driver: {
@@ -8804,7 +8804,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFi
 export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_version: cdktn.stringToTerraform(struct!.apiVersion),
@@ -8816,7 +8816,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFie
 export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_version: {
@@ -8927,7 +8927,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsRe
 export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_name: cdktn.stringToTerraform(struct!.containerName),
@@ -8940,7 +8940,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsRes
 export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_name: {
@@ -9083,7 +9083,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItems {
 export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -9097,7 +9097,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsToT
 export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -9288,7 +9288,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeDownwardApi {
 export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeDownwardApi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_mode: cdktn.stringToTerraform(struct!.defaultMode),
@@ -9300,7 +9300,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiToTerraf
 export function replicationControllerV1SpecTemplateSpecVolumeDownwardApiToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeDownwardApi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_mode: {
@@ -9409,7 +9409,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeEmptyDir {
 export function replicationControllerV1SpecTemplateSpecVolumeEmptyDirToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEmptyDirOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEmptyDir): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     medium: cdktn.stringToTerraform(struct!.medium),
@@ -9421,7 +9421,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeEmptyDirToTerraform
 export function replicationControllerV1SpecTemplateSpecVolumeEmptyDirToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEmptyDirOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEmptyDir): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     medium: {
@@ -9530,7 +9530,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeCla
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -9542,7 +9542,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClai
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -9651,7 +9651,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeCla
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     limits: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.limits),
@@ -9663,7 +9663,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClai
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     limits: {
@@ -9778,7 +9778,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeCla
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -9791,7 +9791,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClai
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -9960,7 +9960,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeCla
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
@@ -9972,7 +9972,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClai
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_labels: {
@@ -10105,7 +10105,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeCla
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_modes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.accessModes),
@@ -10121,7 +10121,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClai
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_modes: {
@@ -10336,7 +10336,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeCla
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadataToTerraform(struct!.metadata),
@@ -10348,7 +10348,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClai
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -10448,7 +10448,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeEphemeral {
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeral): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     volume_claim_template: replicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateToTerraform(struct!.volumeClaimTemplate),
@@ -10459,7 +10459,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeEphemeralToTerrafor
 export function replicationControllerV1SpecTemplateSpecVolumeEphemeralToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeEphemeralOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeEphemeral): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     volume_claim_template: {
@@ -10549,7 +10549,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeFc {
 export function replicationControllerV1SpecTemplateSpecVolumeFcToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeFcOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeFc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fs_type: cdktn.stringToTerraform(struct!.fsType),
@@ -10563,7 +10563,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeFcToTerraform(struc
 export function replicationControllerV1SpecTemplateSpecVolumeFcToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeFcOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeFc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fs_type: {
@@ -10722,7 +10722,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRe
 export function replicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRefToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -10734,7 +10734,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRef
 export function replicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRefToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeSecretRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -10861,7 +10861,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeFlexVolume {
 export function replicationControllerV1SpecTemplateSpecVolumeFlexVolumeToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeFlexVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     driver: cdktn.stringToTerraform(struct!.driver),
@@ -10876,7 +10876,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeFlexVolumeToTerrafo
 export function replicationControllerV1SpecTemplateSpecVolumeFlexVolumeToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeFlexVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     driver: {
@@ -11066,7 +11066,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeFlocker {
 export function replicationControllerV1SpecTemplateSpecVolumeFlockerToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeFlocker): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dataset_name: cdktn.stringToTerraform(struct!.datasetName),
@@ -11078,7 +11078,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeFlockerToTerraform(
 export function replicationControllerV1SpecTemplateSpecVolumeFlockerToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeFlocker): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dataset_name: {
@@ -11199,7 +11199,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDisk 
 export function replicationControllerV1SpecTemplateSpecVolumeGcePersistentDiskToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDisk): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fs_type: cdktn.stringToTerraform(struct!.fsType),
@@ -11213,7 +11213,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeGcePersistentDiskTo
 export function replicationControllerV1SpecTemplateSpecVolumeGcePersistentDiskToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeGcePersistentDisk): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fs_type: {
@@ -11381,7 +11381,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeGitRepo {
 export function replicationControllerV1SpecTemplateSpecVolumeGitRepoToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeGitRepoOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeGitRepo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     directory: cdktn.stringToTerraform(struct!.directory),
@@ -11394,7 +11394,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeGitRepoToTerraform(
 export function replicationControllerV1SpecTemplateSpecVolumeGitRepoToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeGitRepoOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeGitRepo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     directory: {
@@ -11537,7 +11537,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeGlusterfs {
 export function replicationControllerV1SpecTemplateSpecVolumeGlusterfsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeGlusterfsOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeGlusterfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoints_name: cdktn.stringToTerraform(struct!.endpointsName),
@@ -11550,7 +11550,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeGlusterfsToTerrafor
 export function replicationControllerV1SpecTemplateSpecVolumeGlusterfsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeGlusterfsOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeGlusterfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoints_name: {
@@ -11681,7 +11681,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeHostPath {
 export function replicationControllerV1SpecTemplateSpecVolumeHostPathToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeHostPath): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -11693,7 +11693,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeHostPathToTerraform
 export function replicationControllerV1SpecTemplateSpecVolumeHostPathToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeHostPath): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -11826,7 +11826,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeIscsi {
 export function replicationControllerV1SpecTemplateSpecVolumeIscsiToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeIscsi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fs_type: cdktn.stringToTerraform(struct!.fsType),
@@ -11842,7 +11842,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeIscsiToTerraform(st
 export function replicationControllerV1SpecTemplateSpecVolumeIscsiToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeIscsi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fs_type: {
@@ -12051,7 +12051,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeLocal {
 export function replicationControllerV1SpecTemplateSpecVolumeLocalToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeLocalOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeLocal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -12062,7 +12062,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeLocalToTerraform(st
 export function replicationControllerV1SpecTemplateSpecVolumeLocalToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeLocalOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeLocal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -12149,7 +12149,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeNfs {
 export function replicationControllerV1SpecTemplateSpecVolumeNfsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeNfsOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeNfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -12162,7 +12162,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeNfsToTerraform(stru
 export function replicationControllerV1SpecTemplateSpecVolumeNfsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeNfsOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeNfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -12293,7 +12293,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeCl
 export function replicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaimToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference | ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaim): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     claim_name: cdktn.stringToTerraform(struct!.claimName),
@@ -12305,7 +12305,7 @@ export function replicationControllerV1SpecTemplateSpecVolumePersistentVolumeCla
 export function replicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaimToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference | ReplicationControllerV1SpecTemplateSpecVolumePersistentVolumeClaim): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     claim_name: {
@@ -12414,7 +12414,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDi
 export function replicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference | ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDisk): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fs_type: cdktn.stringToTerraform(struct!.fsType),
@@ -12426,7 +12426,7 @@ export function replicationControllerV1SpecTemplateSpecVolumePhotonPersistentDis
 export function replicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference | ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDisk): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fs_type: {
@@ -12538,7 +12538,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesCo
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -12551,7 +12551,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesCon
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -12726,7 +12726,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesCo
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMap | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -12739,7 +12739,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesCon
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMap | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -12908,7 +12908,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDo
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_version: cdktn.stringToTerraform(struct!.apiVersion),
@@ -12920,7 +12920,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDow
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_version: {
@@ -13031,7 +13031,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDo
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_name: cdktn.stringToTerraform(struct!.containerName),
@@ -13044,7 +13044,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDow
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_name: {
@@ -13187,7 +13187,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDo
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -13201,7 +13201,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDow
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -13389,7 +13389,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDo
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     items: cdktn.listMapper(replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsToTerraform, true)(struct!.items),
@@ -13400,7 +13400,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDow
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     items: {
@@ -13487,7 +13487,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSe
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -13500,7 +13500,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSec
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -13675,7 +13675,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSe
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecret | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -13688,7 +13688,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSec
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecretToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSecret | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -13863,7 +13863,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSe
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audience: cdktn.stringToTerraform(struct!.audience),
@@ -13876,7 +13876,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSer
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audience: {
@@ -14022,7 +14022,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjectedSources {
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSources | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     config_map: cdktn.listMapper(replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesConfigMapToTerraform, true)(struct!.configMap),
@@ -14036,7 +14036,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesToT
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedSourcesToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjectedSources | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     config_map: {
@@ -14233,7 +14233,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeProjected {
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjected | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_mode: cdktn.stringToTerraform(struct!.defaultMode),
@@ -14245,7 +14245,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeProjectedToTerrafor
 export function replicationControllerV1SpecTemplateSpecVolumeProjectedToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeProjected | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_mode: {
@@ -14401,7 +14401,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeQuobyte {
 export function replicationControllerV1SpecTemplateSpecVolumeQuobyteToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeQuobyteOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeQuobyte): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     group: cdktn.stringToTerraform(struct!.group),
@@ -14416,7 +14416,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeQuobyteToTerraform(
 export function replicationControllerV1SpecTemplateSpecVolumeQuobyteToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeQuobyteOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeQuobyte): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     group: {
@@ -14603,7 +14603,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRef {
 export function replicationControllerV1SpecTemplateSpecVolumeRbdSecretRefToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -14615,7 +14615,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeRbdSecretRefToTerra
 export function replicationControllerV1SpecTemplateSpecVolumeRbdSecretRefToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRefOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeRbdSecretRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -14760,7 +14760,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeRbd {
 export function replicationControllerV1SpecTemplateSpecVolumeRbdToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeRbdOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeRbd): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ceph_monitors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cephMonitors),
@@ -14778,7 +14778,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeRbdToTerraform(stru
 export function replicationControllerV1SpecTemplateSpecVolumeRbdToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeRbdOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeRbd): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ceph_monitors: {
@@ -15055,7 +15055,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeSecretItems {
 export function replicationControllerV1SpecTemplateSpecVolumeSecretItemsToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeSecretItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -15068,7 +15068,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeSecretItemsToTerraf
 export function replicationControllerV1SpecTemplateSpecVolumeSecretItemsToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeSecretItems | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -15249,7 +15249,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeSecret {
 export function replicationControllerV1SpecTemplateSpecVolumeSecretToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeSecretOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeSecret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_mode: cdktn.stringToTerraform(struct!.defaultMode),
@@ -15263,7 +15263,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeSecretToTerraform(s
 export function replicationControllerV1SpecTemplateSpecVolumeSecretToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeSecretOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeSecret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_mode: {
@@ -15428,7 +15428,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolume {
 export function replicationControllerV1SpecTemplateSpecVolumeVsphereVolumeToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolumeOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fs_type: cdktn.stringToTerraform(struct!.fsType),
@@ -15440,7 +15440,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeVsphereVolumeToTerr
 export function replicationControllerV1SpecTemplateSpecVolumeVsphereVolumeToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolumeOutputReference | ReplicationControllerV1SpecTemplateSpecVolumeVsphereVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fs_type: {
@@ -15702,7 +15702,7 @@ export interface ReplicationControllerV1SpecTemplateSpecVolume {
 export function replicationControllerV1SpecTemplateSpecVolumeToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolume | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -15740,7 +15740,7 @@ export function replicationControllerV1SpecTemplateSpecVolumeToTerraform(struct?
 export function replicationControllerV1SpecTemplateSpecVolumeToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecVolume | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -16777,7 +16777,7 @@ export interface ReplicationControllerV1SpecTemplateSpec {
 export function replicationControllerV1SpecTemplateSpecToTerraform(struct?: ReplicationControllerV1SpecTemplateSpecOutputReference | ReplicationControllerV1SpecTemplateSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     active_deadline_seconds: cdktn.numberToTerraform(struct!.activeDeadlineSeconds),
@@ -16817,7 +16817,7 @@ export function replicationControllerV1SpecTemplateSpecToTerraform(struct?: Repl
 export function replicationControllerV1SpecTemplateSpecToHclTerraform(struct?: ReplicationControllerV1SpecTemplateSpecOutputReference | ReplicationControllerV1SpecTemplateSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     active_deadline_seconds: {
@@ -17710,7 +17710,7 @@ export interface ReplicationControllerV1SpecTemplate {
 export function replicationControllerV1SpecTemplateToTerraform(struct?: ReplicationControllerV1SpecTemplateOutputReference | ReplicationControllerV1SpecTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metadata: replicationControllerV1SpecTemplateMetadataToTerraform(struct!.metadata),
@@ -17722,7 +17722,7 @@ export function replicationControllerV1SpecTemplateToTerraform(struct?: Replicat
 export function replicationControllerV1SpecTemplateToHclTerraform(struct?: ReplicationControllerV1SpecTemplateOutputReference | ReplicationControllerV1SpecTemplate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metadata: {
@@ -17837,7 +17837,7 @@ export interface ReplicationControllerV1Spec {
 export function replicationControllerV1SpecToTerraform(struct?: ReplicationControllerV1SpecOutputReference | ReplicationControllerV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     min_ready_seconds: cdktn.numberToTerraform(struct!.minReadySeconds),
@@ -17851,7 +17851,7 @@ export function replicationControllerV1SpecToTerraform(struct?: ReplicationContr
 export function replicationControllerV1SpecToHclTerraform(struct?: ReplicationControllerV1SpecOutputReference | ReplicationControllerV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     min_ready_seconds: {
@@ -18010,7 +18010,7 @@ export interface ReplicationControllerV1Timeouts {
 export function replicationControllerV1TimeoutsToTerraform(struct?: ReplicationControllerV1Timeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -18023,7 +18023,7 @@ export function replicationControllerV1TimeoutsToTerraform(struct?: ReplicationC
 export function replicationControllerV1TimeoutsToHclTerraform(struct?: ReplicationControllerV1Timeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

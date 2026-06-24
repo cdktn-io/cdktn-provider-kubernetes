@@ -62,7 +62,7 @@ export interface IngressClassV1Metadata {
 export function ingressClassV1MetadataToTerraform(struct?: IngressClassV1MetadataOutputReference | IngressClassV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -76,7 +76,7 @@ export function ingressClassV1MetadataToTerraform(struct?: IngressClassV1Metadat
 export function ingressClassV1MetadataToHclTerraform(struct?: IngressClassV1MetadataOutputReference | IngressClassV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -270,7 +270,7 @@ export interface IngressClassV1SpecParameters {
 export function ingressClassV1SpecParametersToTerraform(struct?: IngressClassV1SpecParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_group: cdktn.stringToTerraform(struct!.apiGroup),
@@ -285,7 +285,7 @@ export function ingressClassV1SpecParametersToTerraform(struct?: IngressClassV1S
 export function ingressClassV1SpecParametersToHclTerraform(struct?: IngressClassV1SpecParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_group: {
@@ -504,7 +504,7 @@ export interface IngressClassV1Spec {
 export function ingressClassV1SpecToTerraform(struct?: IngressClassV1SpecOutputReference | IngressClassV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     controller: cdktn.stringToTerraform(struct!.controller),
@@ -516,7 +516,7 @@ export function ingressClassV1SpecToTerraform(struct?: IngressClassV1SpecOutputR
 export function ingressClassV1SpecToHclTerraform(struct?: IngressClassV1SpecOutputReference | IngressClassV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     controller: {

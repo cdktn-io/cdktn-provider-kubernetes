@@ -62,7 +62,7 @@ export interface CsiDriverV1Metadata {
 export function csiDriverV1MetadataToTerraform(struct?: CsiDriverV1MetadataOutputReference | CsiDriverV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -76,7 +76,7 @@ export function csiDriverV1MetadataToTerraform(struct?: CsiDriverV1MetadataOutpu
 export function csiDriverV1MetadataToHclTerraform(struct?: CsiDriverV1MetadataOutputReference | CsiDriverV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -262,7 +262,7 @@ export interface CsiDriverV1Spec {
 export function csiDriverV1SpecToTerraform(struct?: CsiDriverV1SpecOutputReference | CsiDriverV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attach_required: cdktn.booleanToTerraform(struct!.attachRequired),
@@ -275,7 +275,7 @@ export function csiDriverV1SpecToTerraform(struct?: CsiDriverV1SpecOutputReferen
 export function csiDriverV1SpecToHclTerraform(struct?: CsiDriverV1SpecOutputReference | CsiDriverV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attach_required: {

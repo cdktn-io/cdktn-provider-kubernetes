@@ -32,7 +32,7 @@ export interface DataKubernetesServiceAccountImagePullSecret {
 export function dataKubernetesServiceAccountImagePullSecretToTerraform(struct?: DataKubernetesServiceAccountImagePullSecret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -42,7 +42,7 @@ export function dataKubernetesServiceAccountImagePullSecretToTerraform(struct?: 
 export function dataKubernetesServiceAccountImagePullSecretToHclTerraform(struct?: DataKubernetesServiceAccountImagePullSecret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -107,7 +107,7 @@ export interface DataKubernetesServiceAccountSecret {
 export function dataKubernetesServiceAccountSecretToTerraform(struct?: DataKubernetesServiceAccountSecret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -117,7 +117,7 @@ export function dataKubernetesServiceAccountSecretToTerraform(struct?: DataKuber
 export function dataKubernetesServiceAccountSecretToHclTerraform(struct?: DataKubernetesServiceAccountSecret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -206,7 +206,7 @@ export interface DataKubernetesServiceAccountMetadata {
 export function dataKubernetesServiceAccountMetadataToTerraform(struct?: DataKubernetesServiceAccountMetadataOutputReference | DataKubernetesServiceAccountMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -220,7 +220,7 @@ export function dataKubernetesServiceAccountMetadataToTerraform(struct?: DataKub
 export function dataKubernetesServiceAccountMetadataToHclTerraform(struct?: DataKubernetesServiceAccountMetadataOutputReference | DataKubernetesServiceAccountMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {

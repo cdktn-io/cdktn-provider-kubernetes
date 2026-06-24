@@ -62,7 +62,7 @@ export interface ApiServiceV1Metadata {
 export function apiServiceV1MetadataToTerraform(struct?: ApiServiceV1MetadataOutputReference | ApiServiceV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -76,7 +76,7 @@ export function apiServiceV1MetadataToTerraform(struct?: ApiServiceV1MetadataOut
 export function apiServiceV1MetadataToHclTerraform(struct?: ApiServiceV1MetadataOutputReference | ApiServiceV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -262,7 +262,7 @@ export interface ApiServiceV1SpecService {
 export function apiServiceV1SpecServiceToTerraform(struct?: ApiServiceV1SpecServiceOutputReference | ApiServiceV1SpecService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -275,7 +275,7 @@ export function apiServiceV1SpecServiceToTerraform(struct?: ApiServiceV1SpecServ
 export function apiServiceV1SpecServiceToHclTerraform(struct?: ApiServiceV1SpecServiceOutputReference | ApiServiceV1SpecService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -436,7 +436,7 @@ export interface ApiServiceV1Spec {
 export function apiServiceV1SpecToTerraform(struct?: ApiServiceV1SpecOutputReference | ApiServiceV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ca_bundle: cdktn.stringToTerraform(struct!.caBundle),
@@ -453,7 +453,7 @@ export function apiServiceV1SpecToTerraform(struct?: ApiServiceV1SpecOutputRefer
 export function apiServiceV1SpecToHclTerraform(struct?: ApiServiceV1SpecOutputReference | ApiServiceV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ca_bundle: {
