@@ -86,7 +86,7 @@ export interface StorageClassAllowedTopologiesMatchLabelExpressions {
 export function storageClassAllowedTopologiesMatchLabelExpressionsToTerraform(struct?: StorageClassAllowedTopologiesMatchLabelExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -98,7 +98,7 @@ export function storageClassAllowedTopologiesMatchLabelExpressionsToTerraform(st
 export function storageClassAllowedTopologiesMatchLabelExpressionsToHclTerraform(struct?: StorageClassAllowedTopologiesMatchLabelExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -233,7 +233,7 @@ export interface StorageClassAllowedTopologies {
 export function storageClassAllowedTopologiesToTerraform(struct?: StorageClassAllowedTopologiesOutputReference | StorageClassAllowedTopologies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_label_expressions: cdktn.listMapper(storageClassAllowedTopologiesMatchLabelExpressionsToTerraform, true)(struct!.matchLabelExpressions),
@@ -244,7 +244,7 @@ export function storageClassAllowedTopologiesToTerraform(struct?: StorageClassAl
 export function storageClassAllowedTopologiesToHclTerraform(struct?: StorageClassAllowedTopologiesOutputReference | StorageClassAllowedTopologies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_label_expressions: {
@@ -337,7 +337,7 @@ export interface StorageClassMetadata {
 export function storageClassMetadataToTerraform(struct?: StorageClassMetadataOutputReference | StorageClassMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -351,7 +351,7 @@ export function storageClassMetadataToTerraform(struct?: StorageClassMetadataOut
 export function storageClassMetadataToHclTerraform(struct?: StorageClassMetadataOutputReference | StorageClassMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {

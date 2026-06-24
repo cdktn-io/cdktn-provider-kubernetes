@@ -80,7 +80,7 @@ export interface AnnotationsMetadata {
 export function annotationsMetadataToTerraform(struct?: AnnotationsMetadataOutputReference | AnnotationsMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -92,7 +92,7 @@ export function annotationsMetadataToTerraform(struct?: AnnotationsMetadataOutpu
 export function annotationsMetadataToHclTerraform(struct?: AnnotationsMetadataOutputReference | AnnotationsMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {

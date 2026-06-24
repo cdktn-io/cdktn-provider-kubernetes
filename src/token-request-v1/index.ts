@@ -68,7 +68,7 @@ export interface TokenRequestV1Metadata {
 export function tokenRequestV1MetadataToTerraform(struct?: TokenRequestV1MetadataOutputReference | TokenRequestV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -83,7 +83,7 @@ export function tokenRequestV1MetadataToTerraform(struct?: TokenRequestV1Metadat
 export function tokenRequestV1MetadataToHclTerraform(struct?: TokenRequestV1MetadataOutputReference | TokenRequestV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -303,7 +303,7 @@ export interface TokenRequestV1SpecBoundObjectRef {
 export function tokenRequestV1SpecBoundObjectRefToTerraform(struct?: TokenRequestV1SpecBoundObjectRefOutputReference | TokenRequestV1SpecBoundObjectRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_version: cdktn.stringToTerraform(struct!.apiVersion),
@@ -317,7 +317,7 @@ export function tokenRequestV1SpecBoundObjectRefToTerraform(struct?: TokenReques
 export function tokenRequestV1SpecBoundObjectRefToHclTerraform(struct?: TokenRequestV1SpecBoundObjectRefOutputReference | TokenRequestV1SpecBoundObjectRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_version: {
@@ -488,7 +488,7 @@ export interface TokenRequestV1Spec {
 export function tokenRequestV1SpecToTerraform(struct?: TokenRequestV1SpecOutputReference | TokenRequestV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.audiences),
@@ -501,7 +501,7 @@ export function tokenRequestV1SpecToTerraform(struct?: TokenRequestV1SpecOutputR
 export function tokenRequestV1SpecToHclTerraform(struct?: TokenRequestV1SpecOutputReference | TokenRequestV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     audiences: {

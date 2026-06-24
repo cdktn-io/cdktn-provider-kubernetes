@@ -62,7 +62,7 @@ export interface ConfigMapV1DataMetadata {
 export function configMapV1DataMetadataToTerraform(struct?: ConfigMapV1DataMetadataOutputReference | ConfigMapV1DataMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -74,7 +74,7 @@ export function configMapV1DataMetadataToTerraform(struct?: ConfigMapV1DataMetad
 export function configMapV1DataMetadataToHclTerraform(struct?: ConfigMapV1DataMetadataOutputReference | ConfigMapV1DataMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {

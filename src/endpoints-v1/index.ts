@@ -68,7 +68,7 @@ export interface EndpointsV1Metadata {
 export function endpointsV1MetadataToTerraform(struct?: EndpointsV1MetadataOutputReference | EndpointsV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -83,7 +83,7 @@ export function endpointsV1MetadataToTerraform(struct?: EndpointsV1MetadataOutpu
 export function endpointsV1MetadataToHclTerraform(struct?: EndpointsV1MetadataOutputReference | EndpointsV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -297,7 +297,7 @@ export interface EndpointsV1SubsetAddress {
 export function endpointsV1SubsetAddressToTerraform(struct?: EndpointsV1SubsetAddress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hostname: cdktn.stringToTerraform(struct!.hostname),
@@ -310,7 +310,7 @@ export function endpointsV1SubsetAddressToTerraform(struct?: EndpointsV1SubsetAd
 export function endpointsV1SubsetAddressToHclTerraform(struct?: EndpointsV1SubsetAddress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hostname: {
@@ -482,7 +482,7 @@ export interface EndpointsV1SubsetNotReadyAddress {
 export function endpointsV1SubsetNotReadyAddressToTerraform(struct?: EndpointsV1SubsetNotReadyAddress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hostname: cdktn.stringToTerraform(struct!.hostname),
@@ -495,7 +495,7 @@ export function endpointsV1SubsetNotReadyAddressToTerraform(struct?: EndpointsV1
 export function endpointsV1SubsetNotReadyAddressToHclTerraform(struct?: EndpointsV1SubsetNotReadyAddress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hostname: {
@@ -667,7 +667,7 @@ export interface EndpointsV1SubsetPort {
 export function endpointsV1SubsetPortToTerraform(struct?: EndpointsV1SubsetPort | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -680,7 +680,7 @@ export function endpointsV1SubsetPortToTerraform(struct?: EndpointsV1SubsetPort 
 export function endpointsV1SubsetPortToHclTerraform(struct?: EndpointsV1SubsetPort | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -852,7 +852,7 @@ export interface EndpointsV1Subset {
 export function endpointsV1SubsetToTerraform(struct?: EndpointsV1Subset | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     address: cdktn.listMapper(endpointsV1SubsetAddressToTerraform, true)(struct!.address),
@@ -865,7 +865,7 @@ export function endpointsV1SubsetToTerraform(struct?: EndpointsV1Subset | cdktn.
 export function endpointsV1SubsetToHclTerraform(struct?: EndpointsV1Subset | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     address: {

@@ -68,7 +68,7 @@ export interface LimitRangeV1Metadata {
 export function limitRangeV1MetadataToTerraform(struct?: LimitRangeV1MetadataOutputReference | LimitRangeV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -83,7 +83,7 @@ export function limitRangeV1MetadataToTerraform(struct?: LimitRangeV1MetadataOut
 export function limitRangeV1MetadataToHclTerraform(struct?: LimitRangeV1MetadataOutputReference | LimitRangeV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -315,7 +315,7 @@ export interface LimitRangeV1SpecLimit {
 export function limitRangeV1SpecLimitToTerraform(struct?: LimitRangeV1SpecLimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.default),
@@ -331,7 +331,7 @@ export function limitRangeV1SpecLimitToTerraform(struct?: LimitRangeV1SpecLimit 
 export function limitRangeV1SpecLimitToHclTerraform(struct?: LimitRangeV1SpecLimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default: {
@@ -578,7 +578,7 @@ export interface LimitRangeV1Spec {
 export function limitRangeV1SpecToTerraform(struct?: LimitRangeV1SpecOutputReference | LimitRangeV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     limit: cdktn.listMapper(limitRangeV1SpecLimitToTerraform, true)(struct!.limit),
@@ -589,7 +589,7 @@ export function limitRangeV1SpecToTerraform(struct?: LimitRangeV1SpecOutputRefer
 export function limitRangeV1SpecToHclTerraform(struct?: LimitRangeV1SpecOutputReference | LimitRangeV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     limit: {

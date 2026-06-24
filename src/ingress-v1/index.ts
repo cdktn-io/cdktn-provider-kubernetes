@@ -50,7 +50,7 @@ export interface IngressV1StatusLoadBalancerIngress {
 export function ingressV1StatusLoadBalancerIngressToTerraform(struct?: IngressV1StatusLoadBalancerIngress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -60,7 +60,7 @@ export function ingressV1StatusLoadBalancerIngressToTerraform(struct?: IngressV1
 export function ingressV1StatusLoadBalancerIngressToHclTerraform(struct?: IngressV1StatusLoadBalancerIngress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -130,7 +130,7 @@ export interface IngressV1StatusLoadBalancer {
 export function ingressV1StatusLoadBalancerToTerraform(struct?: IngressV1StatusLoadBalancer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -140,7 +140,7 @@ export function ingressV1StatusLoadBalancerToTerraform(struct?: IngressV1StatusL
 export function ingressV1StatusLoadBalancerToHclTerraform(struct?: IngressV1StatusLoadBalancer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -206,7 +206,7 @@ export interface IngressV1Status {
 export function ingressV1StatusToTerraform(struct?: IngressV1Status): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -216,7 +216,7 @@ export function ingressV1StatusToTerraform(struct?: IngressV1Status): any {
 export function ingressV1StatusToHclTerraform(struct?: IngressV1Status): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -312,7 +312,7 @@ export interface IngressV1Metadata {
 export function ingressV1MetadataToTerraform(struct?: IngressV1MetadataOutputReference | IngressV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -327,7 +327,7 @@ export function ingressV1MetadataToTerraform(struct?: IngressV1MetadataOutputRef
 export function ingressV1MetadataToHclTerraform(struct?: IngressV1MetadataOutputReference | IngressV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -541,7 +541,7 @@ export interface IngressV1SpecDefaultBackendResource {
 export function ingressV1SpecDefaultBackendResourceToTerraform(struct?: IngressV1SpecDefaultBackendResourceOutputReference | IngressV1SpecDefaultBackendResource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_group: cdktn.stringToTerraform(struct!.apiGroup),
@@ -554,7 +554,7 @@ export function ingressV1SpecDefaultBackendResourceToTerraform(struct?: IngressV
 export function ingressV1SpecDefaultBackendResourceToHclTerraform(struct?: IngressV1SpecDefaultBackendResourceOutputReference | IngressV1SpecDefaultBackendResource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_group: {
@@ -682,7 +682,7 @@ export interface IngressV1SpecDefaultBackendServicePort {
 export function ingressV1SpecDefaultBackendServicePortToTerraform(struct?: IngressV1SpecDefaultBackendServicePortOutputReference | IngressV1SpecDefaultBackendServicePort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -694,7 +694,7 @@ export function ingressV1SpecDefaultBackendServicePortToTerraform(struct?: Ingre
 export function ingressV1SpecDefaultBackendServicePortToHclTerraform(struct?: IngressV1SpecDefaultBackendServicePortOutputReference | IngressV1SpecDefaultBackendServicePort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -803,7 +803,7 @@ export interface IngressV1SpecDefaultBackendService {
 export function ingressV1SpecDefaultBackendServiceToTerraform(struct?: IngressV1SpecDefaultBackendServiceOutputReference | IngressV1SpecDefaultBackendService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -815,7 +815,7 @@ export function ingressV1SpecDefaultBackendServiceToTerraform(struct?: IngressV1
 export function ingressV1SpecDefaultBackendServiceToHclTerraform(struct?: IngressV1SpecDefaultBackendServiceOutputReference | IngressV1SpecDefaultBackendService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -918,7 +918,7 @@ export interface IngressV1SpecDefaultBackend {
 export function ingressV1SpecDefaultBackendToTerraform(struct?: IngressV1SpecDefaultBackendOutputReference | IngressV1SpecDefaultBackend): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     resource: ingressV1SpecDefaultBackendResourceToTerraform(struct!.resource),
@@ -930,7 +930,7 @@ export function ingressV1SpecDefaultBackendToTerraform(struct?: IngressV1SpecDef
 export function ingressV1SpecDefaultBackendToHclTerraform(struct?: IngressV1SpecDefaultBackendOutputReference | IngressV1SpecDefaultBackend): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     resource: {
@@ -1045,7 +1045,7 @@ export interface IngressV1SpecRuleHttpPathBackendResource {
 export function ingressV1SpecRuleHttpPathBackendResourceToTerraform(struct?: IngressV1SpecRuleHttpPathBackendResourceOutputReference | IngressV1SpecRuleHttpPathBackendResource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_group: cdktn.stringToTerraform(struct!.apiGroup),
@@ -1058,7 +1058,7 @@ export function ingressV1SpecRuleHttpPathBackendResourceToTerraform(struct?: Ing
 export function ingressV1SpecRuleHttpPathBackendResourceToHclTerraform(struct?: IngressV1SpecRuleHttpPathBackendResourceOutputReference | IngressV1SpecRuleHttpPathBackendResource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_group: {
@@ -1186,7 +1186,7 @@ export interface IngressV1SpecRuleHttpPathBackendServicePort {
 export function ingressV1SpecRuleHttpPathBackendServicePortToTerraform(struct?: IngressV1SpecRuleHttpPathBackendServicePortOutputReference | IngressV1SpecRuleHttpPathBackendServicePort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1198,7 +1198,7 @@ export function ingressV1SpecRuleHttpPathBackendServicePortToTerraform(struct?: 
 export function ingressV1SpecRuleHttpPathBackendServicePortToHclTerraform(struct?: IngressV1SpecRuleHttpPathBackendServicePortOutputReference | IngressV1SpecRuleHttpPathBackendServicePort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1307,7 +1307,7 @@ export interface IngressV1SpecRuleHttpPathBackendService {
 export function ingressV1SpecRuleHttpPathBackendServiceToTerraform(struct?: IngressV1SpecRuleHttpPathBackendServiceOutputReference | IngressV1SpecRuleHttpPathBackendService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1319,7 +1319,7 @@ export function ingressV1SpecRuleHttpPathBackendServiceToTerraform(struct?: Ingr
 export function ingressV1SpecRuleHttpPathBackendServiceToHclTerraform(struct?: IngressV1SpecRuleHttpPathBackendServiceOutputReference | IngressV1SpecRuleHttpPathBackendService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1422,7 +1422,7 @@ export interface IngressV1SpecRuleHttpPathBackend {
 export function ingressV1SpecRuleHttpPathBackendToTerraform(struct?: IngressV1SpecRuleHttpPathBackendOutputReference | IngressV1SpecRuleHttpPathBackend): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     resource: ingressV1SpecRuleHttpPathBackendResourceToTerraform(struct!.resource),
@@ -1434,7 +1434,7 @@ export function ingressV1SpecRuleHttpPathBackendToTerraform(struct?: IngressV1Sp
 export function ingressV1SpecRuleHttpPathBackendToHclTerraform(struct?: IngressV1SpecRuleHttpPathBackendOutputReference | IngressV1SpecRuleHttpPathBackend): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     resource: {
@@ -1559,7 +1559,7 @@ export interface IngressV1SpecRuleHttpPath {
 export function ingressV1SpecRuleHttpPathToTerraform(struct?: IngressV1SpecRuleHttpPath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -1572,7 +1572,7 @@ export function ingressV1SpecRuleHttpPathToTerraform(struct?: IngressV1SpecRuleH
 export function ingressV1SpecRuleHttpPathToHclTerraform(struct?: IngressV1SpecRuleHttpPath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -1735,7 +1735,7 @@ export interface IngressV1SpecRuleHttp {
 export function ingressV1SpecRuleHttpToTerraform(struct?: IngressV1SpecRuleHttpOutputReference | IngressV1SpecRuleHttp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.listMapper(ingressV1SpecRuleHttpPathToTerraform, true)(struct!.path),
@@ -1746,7 +1746,7 @@ export function ingressV1SpecRuleHttpToTerraform(struct?: IngressV1SpecRuleHttpO
 export function ingressV1SpecRuleHttpToHclTerraform(struct?: IngressV1SpecRuleHttpOutputReference | IngressV1SpecRuleHttp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -1831,7 +1831,7 @@ export interface IngressV1SpecRule {
 export function ingressV1SpecRuleToTerraform(struct?: IngressV1SpecRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host: cdktn.stringToTerraform(struct!.host),
@@ -1843,7 +1843,7 @@ export function ingressV1SpecRuleToTerraform(struct?: IngressV1SpecRule | cdktn.
 export function ingressV1SpecRuleToHclTerraform(struct?: IngressV1SpecRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host: {
@@ -1984,7 +1984,7 @@ export interface IngressV1SpecTls {
 export function ingressV1SpecTlsToTerraform(struct?: IngressV1SpecTls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hosts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hosts),
@@ -1996,7 +1996,7 @@ export function ingressV1SpecTlsToTerraform(struct?: IngressV1SpecTls | cdktn.IR
 export function ingressV1SpecTlsToHclTerraform(struct?: IngressV1SpecTls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hosts: {
@@ -2149,7 +2149,7 @@ export interface IngressV1Spec {
 export function ingressV1SpecToTerraform(struct?: IngressV1SpecOutputReference | IngressV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ingress_class_name: cdktn.stringToTerraform(struct!.ingressClassName),
@@ -2163,7 +2163,7 @@ export function ingressV1SpecToTerraform(struct?: IngressV1SpecOutputReference |
 export function ingressV1SpecToHclTerraform(struct?: IngressV1SpecOutputReference | IngressV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ingress_class_name: {
@@ -2324,7 +2324,7 @@ export interface IngressV1Timeouts {
 export function ingressV1TimeoutsToTerraform(struct?: IngressV1Timeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2336,7 +2336,7 @@ export function ingressV1TimeoutsToTerraform(struct?: IngressV1Timeouts | cdktn.
 export function ingressV1TimeoutsToHclTerraform(struct?: IngressV1Timeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

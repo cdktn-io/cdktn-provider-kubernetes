@@ -32,7 +32,7 @@ export interface DataKubernetesNamespaceV1Spec {
 export function dataKubernetesNamespaceV1SpecToTerraform(struct?: DataKubernetesNamespaceV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -42,7 +42,7 @@ export function dataKubernetesNamespaceV1SpecToTerraform(struct?: DataKubernetes
 export function dataKubernetesNamespaceV1SpecToHclTerraform(struct?: DataKubernetesNamespaceV1Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -125,7 +125,7 @@ export interface DataKubernetesNamespaceV1Metadata {
 export function dataKubernetesNamespaceV1MetadataToTerraform(struct?: DataKubernetesNamespaceV1MetadataOutputReference | DataKubernetesNamespaceV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -138,7 +138,7 @@ export function dataKubernetesNamespaceV1MetadataToTerraform(struct?: DataKubern
 export function dataKubernetesNamespaceV1MetadataToHclTerraform(struct?: DataKubernetesNamespaceV1MetadataOutputReference | DataKubernetesNamespaceV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {

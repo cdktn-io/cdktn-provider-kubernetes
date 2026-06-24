@@ -68,7 +68,7 @@ export interface ClusterRoleBindingMetadata {
 export function clusterRoleBindingMetadataToTerraform(struct?: ClusterRoleBindingMetadataOutputReference | ClusterRoleBindingMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -82,7 +82,7 @@ export function clusterRoleBindingMetadataToTerraform(struct?: ClusterRoleBindin
 export function clusterRoleBindingMetadataToHclTerraform(struct?: ClusterRoleBindingMetadataOutputReference | ClusterRoleBindingMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -268,7 +268,7 @@ export interface ClusterRoleBindingRoleRef {
 export function clusterRoleBindingRoleRefToTerraform(struct?: ClusterRoleBindingRoleRefOutputReference | ClusterRoleBindingRoleRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_group: cdktn.stringToTerraform(struct!.apiGroup),
@@ -281,7 +281,7 @@ export function clusterRoleBindingRoleRefToTerraform(struct?: ClusterRoleBinding
 export function clusterRoleBindingRoleRefToHclTerraform(struct?: ClusterRoleBindingRoleRefOutputReference | ClusterRoleBindingRoleRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_group: {
@@ -421,7 +421,7 @@ export interface ClusterRoleBindingSubject {
 export function clusterRoleBindingSubjectToTerraform(struct?: ClusterRoleBindingSubject | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_group: cdktn.stringToTerraform(struct!.apiGroup),
@@ -435,7 +435,7 @@ export function clusterRoleBindingSubjectToTerraform(struct?: ClusterRoleBinding
 export function clusterRoleBindingSubjectToHclTerraform(struct?: ClusterRoleBindingSubject | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_group: {

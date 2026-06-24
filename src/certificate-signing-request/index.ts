@@ -74,7 +74,7 @@ export interface CertificateSigningRequestMetadata {
 export function certificateSigningRequestMetadataToTerraform(struct?: CertificateSigningRequestMetadataOutputReference | CertificateSigningRequestMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -88,7 +88,7 @@ export function certificateSigningRequestMetadataToTerraform(struct?: Certificat
 export function certificateSigningRequestMetadataToHclTerraform(struct?: CertificateSigningRequestMetadataOutputReference | CertificateSigningRequestMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -301,7 +301,7 @@ export interface CertificateSigningRequestSpec {
 export function certificateSigningRequestSpecToTerraform(struct?: CertificateSigningRequestSpecOutputReference | CertificateSigningRequestSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     request: cdktn.stringToTerraform(struct!.request),
@@ -314,7 +314,7 @@ export function certificateSigningRequestSpecToTerraform(struct?: CertificateSig
 export function certificateSigningRequestSpecToHclTerraform(struct?: CertificateSigningRequestSpecOutputReference | CertificateSigningRequestSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     request: {
@@ -440,7 +440,7 @@ export interface CertificateSigningRequestTimeouts {
 export function certificateSigningRequestTimeoutsToTerraform(struct?: CertificateSigningRequestTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -451,7 +451,7 @@ export function certificateSigningRequestTimeoutsToTerraform(struct?: Certificat
 export function certificateSigningRequestTimeoutsToHclTerraform(struct?: CertificateSigningRequestTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

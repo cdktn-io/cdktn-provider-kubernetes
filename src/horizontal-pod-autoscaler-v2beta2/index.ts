@@ -68,7 +68,7 @@ export interface HorizontalPodAutoscalerV2Beta2Metadata {
 export function horizontalPodAutoscalerV2Beta2MetadataToTerraform(struct?: HorizontalPodAutoscalerV2Beta2MetadataOutputReference | HorizontalPodAutoscalerV2Beta2Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -83,7 +83,7 @@ export function horizontalPodAutoscalerV2Beta2MetadataToTerraform(struct?: Horiz
 export function horizontalPodAutoscalerV2Beta2MetadataToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2MetadataOutputReference | HorizontalPodAutoscalerV2Beta2Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -297,7 +297,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicy {
 export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
@@ -310,7 +310,7 @@ export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyToTerra
 export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     period_seconds: {
@@ -476,7 +476,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDown {
 export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDown | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     select_policy: cdktn.stringToTerraform(struct!.selectPolicy),
@@ -489,7 +489,7 @@ export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownToTerraform(s
 export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDown | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     select_policy: {
@@ -661,7 +661,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicy {
 export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
@@ -674,7 +674,7 @@ export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyToTerrafo
 export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     period_seconds: {
@@ -840,7 +840,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUp {
 export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     select_policy: cdktn.stringToTerraform(struct!.selectPolicy),
@@ -853,7 +853,7 @@ export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpToTerraform(str
 export function horizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     select_policy: {
@@ -1019,7 +1019,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecBehavior {
 export function horizontalPodAutoscalerV2Beta2SpecBehaviorToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecBehaviorOutputReference | HorizontalPodAutoscalerV2Beta2SpecBehavior): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scale_down: cdktn.listMapper(horizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownToTerraform, true)(struct!.scaleDown),
@@ -1031,7 +1031,7 @@ export function horizontalPodAutoscalerV2Beta2SpecBehaviorToTerraform(struct?: H
 export function horizontalPodAutoscalerV2Beta2SpecBehaviorToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecBehaviorOutputReference | HorizontalPodAutoscalerV2Beta2SpecBehavior): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scale_down: {
@@ -1152,7 +1152,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTarget
 export function horizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTargetToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTargetOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     average_utilization: cdktn.numberToTerraform(struct!.averageUtilization),
@@ -1166,7 +1166,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTargetT
 export function horizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTargetToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTargetOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     average_utilization: {
@@ -1334,7 +1334,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricContainerResource {
 export function horizontalPodAutoscalerV2Beta2SpecMetricContainerResourceToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricContainerResource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container: cdktn.stringToTerraform(struct!.container),
@@ -1347,7 +1347,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricContainerResourceToTerra
 export function horizontalPodAutoscalerV2Beta2SpecMetricContainerResourceToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricContainerResourceOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricContainerResource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container: {
@@ -1484,7 +1484,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorM
 export function horizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressionsToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -1497,7 +1497,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMa
 export function horizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressionsToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorMatchExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -1666,7 +1666,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelector 
 export function horizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelector | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
@@ -1678,7 +1678,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorTo
 export function horizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelectorToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricSelector | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_labels: {
@@ -1819,7 +1819,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetric {
 export function horizontalPodAutoscalerV2Beta2SpecMetricExternalMetricToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetric): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1831,7 +1831,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricExternalMetricToTerrafor
 export function horizontalPodAutoscalerV2Beta2SpecMetricExternalMetricToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetricOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricExternalMetric): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1949,7 +1949,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricExternalTarget {
 export function horizontalPodAutoscalerV2Beta2SpecMetricExternalTargetToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricExternalTargetOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricExternalTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     average_utilization: cdktn.numberToTerraform(struct!.averageUtilization),
@@ -1963,7 +1963,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricExternalTargetToTerrafor
 export function horizontalPodAutoscalerV2Beta2SpecMetricExternalTargetToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricExternalTargetOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricExternalTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     average_utilization: {
@@ -2125,7 +2125,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricExternal {
 export function horizontalPodAutoscalerV2Beta2SpecMetricExternalToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricExternalOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricExternal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metric: horizontalPodAutoscalerV2Beta2SpecMetricExternalMetricToTerraform(struct!.metric),
@@ -2137,7 +2137,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricExternalToTerraform(stru
 export function horizontalPodAutoscalerV2Beta2SpecMetricExternalToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricExternalOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricExternal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metric: {
@@ -2249,7 +2249,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObject {
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObjectToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObjectOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_version: cdktn.stringToTerraform(struct!.apiVersion),
@@ -2262,7 +2262,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObjectToT
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObjectToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObjectOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_version: {
@@ -2396,7 +2396,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMat
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressionsToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2409,7 +2409,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatc
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressionsToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorMatchExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2578,7 +2578,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelector {
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelector | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
@@ -2590,7 +2590,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorToTe
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelectorToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricSelector | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_labels: {
@@ -2731,7 +2731,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetric {
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectMetricToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetric): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2743,7 +2743,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricObjectMetricToTerraform(
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectMetricToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetricOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricObjectMetric): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2861,7 +2861,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricObjectTarget {
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectTargetToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectTargetOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricObjectTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     average_utilization: cdktn.numberToTerraform(struct!.averageUtilization),
@@ -2875,7 +2875,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricObjectTargetToTerraform(
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectTargetToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectTargetOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricObjectTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     average_utilization: {
@@ -3043,7 +3043,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricObject {
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     described_object: horizontalPodAutoscalerV2Beta2SpecMetricObjectDescribedObjectToTerraform(struct!.describedObject),
@@ -3056,7 +3056,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricObjectToTerraform(struct
 export function horizontalPodAutoscalerV2Beta2SpecMetricObjectToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricObjectOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     described_object: {
@@ -3193,7 +3193,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatch
 export function horizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressionsToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -3206,7 +3206,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchE
 export function horizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressionsToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorMatchExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -3375,7 +3375,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelector {
 export function horizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelector | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.matchLabels),
@@ -3387,7 +3387,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorToTerr
 export function horizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelectorToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricSelector | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_labels: {
@@ -3528,7 +3528,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetric {
 export function horizontalPodAutoscalerV2Beta2SpecMetricPodsMetricToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetric): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -3540,7 +3540,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricPodsMetricToTerraform(st
 export function horizontalPodAutoscalerV2Beta2SpecMetricPodsMetricToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetricOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricPodsMetric): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -3658,7 +3658,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricPodsTarget {
 export function horizontalPodAutoscalerV2Beta2SpecMetricPodsTargetToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricPodsTargetOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricPodsTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     average_utilization: cdktn.numberToTerraform(struct!.averageUtilization),
@@ -3672,7 +3672,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricPodsTargetToTerraform(st
 export function horizontalPodAutoscalerV2Beta2SpecMetricPodsTargetToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricPodsTargetOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricPodsTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     average_utilization: {
@@ -3834,7 +3834,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricPods {
 export function horizontalPodAutoscalerV2Beta2SpecMetricPodsToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricPodsOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricPods): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metric: horizontalPodAutoscalerV2Beta2SpecMetricPodsMetricToTerraform(struct!.metric),
@@ -3846,7 +3846,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricPodsToTerraform(struct?:
 export function horizontalPodAutoscalerV2Beta2SpecMetricPodsToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricPodsOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricPods): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metric: {
@@ -3964,7 +3964,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricResourceTarget {
 export function horizontalPodAutoscalerV2Beta2SpecMetricResourceTargetToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricResourceTargetOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricResourceTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     average_utilization: cdktn.numberToTerraform(struct!.averageUtilization),
@@ -3978,7 +3978,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricResourceTargetToTerrafor
 export function horizontalPodAutoscalerV2Beta2SpecMetricResourceTargetToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricResourceTargetOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricResourceTarget): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     average_utilization: {
@@ -4140,7 +4140,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetricResource {
 export function horizontalPodAutoscalerV2Beta2SpecMetricResourceToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricResourceOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricResource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -4152,7 +4152,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricResourceToTerraform(stru
 export function horizontalPodAutoscalerV2Beta2SpecMetricResourceToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetricResourceOutputReference | HorizontalPodAutoscalerV2Beta2SpecMetricResource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -4282,7 +4282,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecMetric {
 export function horizontalPodAutoscalerV2Beta2SpecMetricToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetric | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -4298,7 +4298,7 @@ export function horizontalPodAutoscalerV2Beta2SpecMetricToTerraform(struct?: Hor
 export function horizontalPodAutoscalerV2Beta2SpecMetricToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecMetric | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -4554,7 +4554,7 @@ export interface HorizontalPodAutoscalerV2Beta2SpecScaleTargetRef {
 export function horizontalPodAutoscalerV2Beta2SpecScaleTargetRefToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecScaleTargetRefOutputReference | HorizontalPodAutoscalerV2Beta2SpecScaleTargetRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     api_version: cdktn.stringToTerraform(struct!.apiVersion),
@@ -4567,7 +4567,7 @@ export function horizontalPodAutoscalerV2Beta2SpecScaleTargetRefToTerraform(stru
 export function horizontalPodAutoscalerV2Beta2SpecScaleTargetRefToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecScaleTargetRefOutputReference | HorizontalPodAutoscalerV2Beta2SpecScaleTargetRef): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     api_version: {
@@ -4722,7 +4722,7 @@ export interface HorizontalPodAutoscalerV2Beta2Spec {
 export function horizontalPodAutoscalerV2Beta2SpecToTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecOutputReference | HorizontalPodAutoscalerV2Beta2Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_replicas: cdktn.numberToTerraform(struct!.maxReplicas),
@@ -4738,7 +4738,7 @@ export function horizontalPodAutoscalerV2Beta2SpecToTerraform(struct?: Horizonta
 export function horizontalPodAutoscalerV2Beta2SpecToHclTerraform(struct?: HorizontalPodAutoscalerV2Beta2SpecOutputReference | HorizontalPodAutoscalerV2Beta2Spec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_replicas: {

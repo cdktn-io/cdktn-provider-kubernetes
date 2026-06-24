@@ -68,7 +68,7 @@ export interface LimitRangeMetadata {
 export function limitRangeMetadataToTerraform(struct?: LimitRangeMetadataOutputReference | LimitRangeMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -83,7 +83,7 @@ export function limitRangeMetadataToTerraform(struct?: LimitRangeMetadataOutputR
 export function limitRangeMetadataToHclTerraform(struct?: LimitRangeMetadataOutputReference | LimitRangeMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -315,7 +315,7 @@ export interface LimitRangeSpecLimit {
 export function limitRangeSpecLimitToTerraform(struct?: LimitRangeSpecLimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.default),
@@ -331,7 +331,7 @@ export function limitRangeSpecLimitToTerraform(struct?: LimitRangeSpecLimit | cd
 export function limitRangeSpecLimitToHclTerraform(struct?: LimitRangeSpecLimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default: {
@@ -578,7 +578,7 @@ export interface LimitRangeSpec {
 export function limitRangeSpecToTerraform(struct?: LimitRangeSpecOutputReference | LimitRangeSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     limit: cdktn.listMapper(limitRangeSpecLimitToTerraform, true)(struct!.limit),
@@ -589,7 +589,7 @@ export function limitRangeSpecToTerraform(struct?: LimitRangeSpecOutputReference
 export function limitRangeSpecToHclTerraform(struct?: LimitRangeSpecOutputReference | LimitRangeSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     limit: {

@@ -32,7 +32,7 @@ export interface DataKubernetesServiceAccountV1ImagePullSecret {
 export function dataKubernetesServiceAccountV1ImagePullSecretToTerraform(struct?: DataKubernetesServiceAccountV1ImagePullSecret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -42,7 +42,7 @@ export function dataKubernetesServiceAccountV1ImagePullSecretToTerraform(struct?
 export function dataKubernetesServiceAccountV1ImagePullSecretToHclTerraform(struct?: DataKubernetesServiceAccountV1ImagePullSecret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -107,7 +107,7 @@ export interface DataKubernetesServiceAccountV1Secret {
 export function dataKubernetesServiceAccountV1SecretToTerraform(struct?: DataKubernetesServiceAccountV1Secret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -117,7 +117,7 @@ export function dataKubernetesServiceAccountV1SecretToTerraform(struct?: DataKub
 export function dataKubernetesServiceAccountV1SecretToHclTerraform(struct?: DataKubernetesServiceAccountV1Secret): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -206,7 +206,7 @@ export interface DataKubernetesServiceAccountV1Metadata {
 export function dataKubernetesServiceAccountV1MetadataToTerraform(struct?: DataKubernetesServiceAccountV1MetadataOutputReference | DataKubernetesServiceAccountV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -220,7 +220,7 @@ export function dataKubernetesServiceAccountV1MetadataToTerraform(struct?: DataK
 export function dataKubernetesServiceAccountV1MetadataToHclTerraform(struct?: DataKubernetesServiceAccountV1MetadataOutputReference | DataKubernetesServiceAccountV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {

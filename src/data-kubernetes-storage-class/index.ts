@@ -80,7 +80,7 @@ export interface DataKubernetesStorageClassAllowedTopologiesMatchLabelExpression
 export function dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToTerraform(struct?: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -92,7 +92,7 @@ export function dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions
 export function dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToHclTerraform(struct?: DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -227,7 +227,7 @@ export interface DataKubernetesStorageClassAllowedTopologies {
 export function dataKubernetesStorageClassAllowedTopologiesToTerraform(struct?: DataKubernetesStorageClassAllowedTopologiesOutputReference | DataKubernetesStorageClassAllowedTopologies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_label_expressions: cdktn.listMapper(dataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsToTerraform, true)(struct!.matchLabelExpressions),
@@ -238,7 +238,7 @@ export function dataKubernetesStorageClassAllowedTopologiesToTerraform(struct?: 
 export function dataKubernetesStorageClassAllowedTopologiesToHclTerraform(struct?: DataKubernetesStorageClassAllowedTopologiesOutputReference | DataKubernetesStorageClassAllowedTopologies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_label_expressions: {
@@ -325,7 +325,7 @@ export interface DataKubernetesStorageClassMetadata {
 export function dataKubernetesStorageClassMetadataToTerraform(struct?: DataKubernetesStorageClassMetadataOutputReference | DataKubernetesStorageClassMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -338,7 +338,7 @@ export function dataKubernetesStorageClassMetadataToTerraform(struct?: DataKuber
 export function dataKubernetesStorageClassMetadataToHclTerraform(struct?: DataKubernetesStorageClassMetadataOutputReference | DataKubernetesStorageClassMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {

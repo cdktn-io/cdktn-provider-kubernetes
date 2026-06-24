@@ -68,7 +68,7 @@ export interface NamespaceV1Metadata {
 export function namespaceV1MetadataToTerraform(struct?: NamespaceV1MetadataOutputReference | NamespaceV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     annotations: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.annotations),
@@ -82,7 +82,7 @@ export function namespaceV1MetadataToTerraform(struct?: NamespaceV1MetadataOutpu
 export function namespaceV1MetadataToHclTerraform(struct?: NamespaceV1MetadataOutputReference | NamespaceV1Metadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     annotations: {
@@ -254,7 +254,7 @@ export interface NamespaceV1Timeouts {
 export function namespaceV1TimeoutsToTerraform(struct?: NamespaceV1Timeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     delete: cdktn.stringToTerraform(struct!.delete),
@@ -265,7 +265,7 @@ export function namespaceV1TimeoutsToTerraform(struct?: NamespaceV1Timeouts | cd
 export function namespaceV1TimeoutsToHclTerraform(struct?: NamespaceV1Timeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     delete: {
